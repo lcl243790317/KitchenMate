@@ -5,7 +5,7 @@ import {
   makePantryItem,
   normalizeIngredient,
 } from "@/lib/ingredients";
-import { matchRecipe } from "@/lib/matching";
+import { matchRecipe, searchRecipe } from "@/lib/matching";
 import { recipeSchema } from "@/lib/model";
 import {
   canDisplayRecipe,
@@ -124,6 +124,10 @@ describe("source truth contract", () => {
   });
 });
 describe("ingredient semantics", () => {
+  it("finds a source title using the everyday Chinese dish alias", () => {
+    expect(searchRecipe(full, "番茄炒蛋")).toBe(true);
+    expect(searchRecipe(full, "tomato 鸡蛋")).toBe(true);
+  });
   it.each([
     ["2 boneless skinless chicken breasts", "chicken-breast"],
     ["3 medium tomatoes, chopped", "tomato"],

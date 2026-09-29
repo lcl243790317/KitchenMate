@@ -72,6 +72,7 @@ function searchText(recipe: Recipe) {
   const text = normalizeIngredientText(
     [
       recipe.title,
+      recipe.title.replaceAll("西红柿", "番茄").replaceAll("鸡蛋", "蛋"),
       recipe.description,
       recipe.cuisine,
       recipe.category,
