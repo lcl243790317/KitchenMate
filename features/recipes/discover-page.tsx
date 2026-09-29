@@ -1,5 +1,7 @@
 "use client";
 import type { ReactNode } from "react";
+import Link from "next/link";
+import type { Recipe } from "@/lib/model";
 import {
   Heart,
   Search,
@@ -39,6 +41,7 @@ type Props = {
   warning: string;
   resultCount: number;
   cards: ReactNode;
+  recentRecipes: Recipe[];
   aiEnabled: boolean;
   constraints: string;
   setConstraints: TextSetter;
@@ -147,6 +150,22 @@ export function DiscoverPageView(props: Props) {
           </button>
         ))}
       </div>
+      {props.recentRecipes.length > 0 && (
+        <section className="recent-recipes" aria-label="最近看过的菜谱">
+          <strong>最近看过</strong>
+          <div>
+            {props.recentRecipes.map((recipe) => (
+              <Link
+                className="text-link"
+                key={recipe.id}
+                href={`/recipe/${encodeURIComponent(recipe.id)}`}
+              >
+                {recipe.title}
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
       {props.filtersOpen && (
         <div className="filter-panel">
           {filterOptions.map(([label, value, set, options]) => (

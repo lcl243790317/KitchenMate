@@ -6,6 +6,7 @@ export const deviceStateSchema = z.object({
   shopping: z.array(shoppingItemSchema),
   saved: z.array(recipeSchema),
   favorites: z.array(z.string()),
+  recentRecipeIds: z.array(z.string()).max(20).default([]),
   dark: z.boolean(),
 });
 export type DeviceState = z.infer<typeof deviceStateSchema>;

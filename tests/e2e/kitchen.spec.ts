@@ -182,17 +182,35 @@ test("v1 kitchen migrates and JSON backup restores it", async ({ page }) => {
   await expect(
     page.getByRole("button", { name: "番茄", exact: true }),
   ).toHaveAttribute("aria-pressed", "false");
-  await page
-    .getByLabel("选择 KitchenMate 备份")
-    .setInputFiles({
-      name: "backup.json",
-      mimeType: "application/json",
-      buffer: backup,
-    });
+  await page.getByLabel("选择 KitchenMate 备份").setInputFiles({
+    name: "backup.json",
+    mimeType: "application/json",
+    buffer: backup,
+  });
   await expect(page.getByText("将恢复：", { exact: false })).toBeVisible();
   await page.getByRole("button", { name: "确认恢复" }).click();
   await page.reload();
   await expect(
     page.getByRole("button", { name: "番茄", exact: true }),
   ).toHaveAttribute("aria-pressed", "true");
+});
+
+test("recently viewed recipes persist on this device", async ({ page }) => {
+  await page.goto("/discover");
+  await page.getByRole("button", { name: "番茄炒蛋", exact: true }).click();
+  await expect(
+    page.getByRole("heading", { name: "番茄炒蛋", exact: true }),
+  ).toBeVisible();
+  await page.goto("/discover");
+  await expect(
+    page
+      .getByRole("region", { name: "最近看过的菜谱" })
+      .getByRole("link", { name: "番茄炒蛋" }),
+  ).toBeVisible();
+  await page.reload();
+  await expect(
+    page
+      .getByRole("region", { name: "最近看过的菜谱" })
+      .getByRole("link", { name: "番茄炒蛋" }),
+  ).toBeVisible();
 });

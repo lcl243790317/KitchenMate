@@ -2015,3 +2015,5 @@ footer > span {
 .verified-grid small { display: block; color: var(--muted); margin-top: 12px; }
 @media (max-width: 800px) { .verified-grid { grid-template-columns: 1fr; } }
 @media (max-width: 800px) { .import-guide-grid { grid-template-columns: 1fr; } }
+.recent-recipes { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin: 16px 0; }
+.recent-recipes > div { display: flex; flex-wrap: wrap; gap: 12px; }

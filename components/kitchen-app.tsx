@@ -96,6 +96,7 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
   const [saved, setSaved] = useState<Recipe[]>([]);
   const [online, setOnline] = useState<Recipe[]>([]);
   const [favorites, setFavorites] = useState<string[]>([]);
+  const [recentRecipeIds, setRecentRecipeIds] = useState<string[]>([]);
   const [dark, setDark] = useState(false);
   const [message, setMessage] = useState("");
   const [warning, setWarning] = useState("");
@@ -127,7 +128,10 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
       if (!active) return;
       if (data) {
         setPantry(data.pantry); setShopping(data.shopping); setSaved(data.saved);
-        setFavorites(data.favorites); setDark(data.dark);
+        const currentId = window.location.pathname.startsWith("/recipe/") ? decodeURIComponent(window.location.pathname.split("/")[2]) : null;
+        setFavorites(data.favorites);
+        setRecentRecipeIds(currentId ? [currentId, ...data.recentRecipeIds.filter((id) => id !== currentId)].slice(0, 20) : data.recentRecipeIds);
+        setDark(data.dark);
       } else setPantry(demoPantry());
       setReady(true);
     }).catch(() => {
@@ -138,12 +142,12 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
   }, []);
   useLayoutEffect(() => {
     if (ready) {
-      saveDeviceState({ pantry, shopping, saved, favorites, dark }).catch(() => {});
+      saveDeviceState({ pantry, shopping, saved, favorites, recentRecipeIds, dark }).catch(() => {});
       document.documentElement.dataset.theme = dark ? "dark" : "light";
     }
-  }, [ready, pantry, shopping, saved, favorites, dark]);
+  }, [ready, pantry, shopping, saved, favorites, recentRecipeIds, dark]);
   function exportData() {
-    const backup = createBackup({ pantry, shopping, saved, favorites, dark });
+    const backup = createBackup({ pantry, shopping, saved, favorites, recentRecipeIds, dark });
     const href = URL.createObjectURL(new Blob([JSON.stringify(backup, null, 2)], { type: "application/json" }));
     const anchor = document.createElement("a"); anchor.href = href; anchor.download = "kitchenmate-backup.json"; anchor.click();
     setTimeout(() => URL.revokeObjectURL(href), 1000);
@@ -158,7 +162,7 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
   function restoreBackup() {
     if (!backupPreview) return;
     setPantry(backupPreview.pantry); setShopping(backupPreview.shopping); setSaved(backupPreview.saved);
-    setFavorites(backupPreview.favorites); setDark(backupPreview.dark);
+    setFavorites(backupPreview.favorites); setRecentRecipeIds(backupPreview.recentRecipeIds); setDark(backupPreview.dark);
     setBackupPreview(null); setMessage("备份已恢复到这台设备。");
   }
   useEffect(() => {
@@ -264,6 +268,7 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
     );
   }
   function openRecipe(recipe: Recipe) {
+    setRecentRecipeIds((current) => [recipe.id, ...current.filter((id) => id !== recipe.id)].slice(0, 20));
     setServingChoice({ id: recipe.id, value: recipe.servings });
     if (recipe.sourceProvider !== "local")
       setSaved((prev) => [...prev.filter((r) => r.id !== recipe.id), recipe]);
@@ -637,6 +642,7 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
           allergen={allergen} setAllergen={setAllergen}
           equipment={equipment} setEquipment={setEquipment}
           warning={warning} resultCount={matches.length} cards={recipeCards()}
+          recentRecipes={recentRecipeIds.map((id) => allRecipes.find((recipe) => recipe.id === id)).filter((recipe): recipe is Recipe => Boolean(recipe)).slice(0, 5)}
           aiEnabled={aiEnabled} constraints={constraints} setConstraints={setConstraints}
           onGenerateAI={generateAI}
         />}
@@ -674,6 +680,7 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
           onSave={saveImportPreview}
           onView={() => {
             if (!importPreview) return;
+            setRecentRecipeIds((current) => [importPreview.id, ...current.filter((id) => id !== importPreview.id)].slice(0, 20));
             setOnline((prev) => [...prev.filter((r) => r.id !== importPreview.id), importPreview]);
             router.push("/recipe/" + encodeURIComponent(importPreview.id));
           }}
