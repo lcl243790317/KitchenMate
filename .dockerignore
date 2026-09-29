@@ -1,0 +1,10 @@
+node_modules
+.next
+.git
+.pnpm-store
+.env*
+!.env.example
+test-results
+playwright-report
+*.tsbuildinfo
+docs/screenshots

@@ -1,0 +1,109 @@
+import { test, expect } from "@playwright/test";
+test("mobile recommendation and cooking flow", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/");
+  await page.getByRole("link", { name: "看看我能做什么" }).click();
+  await page.getByRole("button", { name: "番茄炒蛋", exact: true }).click();
+  await page.getByLabel("份量", { exact: true }).selectOption("4");
+  await expect(page.getByText("6 个", { exact: true })).toBeVisible();
+  await expect(page.locator("body")).toHaveJSProperty("scrollWidth", 390);
+  await page.screenshot({
+    path: "docs/screenshots/mobile-detail.png",
+    fullPage: true,
+  });
+  await page.getByRole("link", { name: "开始做菜" }).click();
+  await page.getByRole("button", { name: /开始计时/ }).click();
+  await page.getByRole("button", { name: "下一步" }).click();
+  await expect(
+    page.getByRole("heading", { name: "炒出蓬松的鸡蛋" }),
+  ).toBeVisible();
+  await expect(page.locator("body")).toHaveJSProperty("scrollWidth", 390);
+  await page.screenshot({
+    path: "docs/screenshots/mobile-cooking.png",
+    fullPage: true,
+  });
+});
+test("pantry → recommendation → servings → shopping → cooking", async ({
+  page,
+}) => {
+  await page.goto("/pantry");
+  await page.getByRole("button", { name: "清空厨房", exact: true }).click();
+  for (const name of ["番茄", "鸡蛋", "鸡胸肉", "土豆", "洋葱"])
+    await page.getByRole("button", { name, exact: true }).click();
+  await page.reload();
+  await expect(
+    page.getByRole("button", { name: "番茄", exact: true }),
+  ).toHaveAttribute("aria-pressed", "true");
+  await page.getByRole("link", { name: "看看我能做什么" }).click();
+  await page.getByRole("button", { name: "番茄炒蛋", exact: true }).click();
+  await expect(
+    page.getByRole("heading", { name: "番茄炒蛋", exact: true }),
+  ).toBeVisible();
+  await page.getByLabel("份量", { exact: true }).selectOption("4");
+  await expect(page.getByText("6 个", { exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "添加缺少食材到购物清单" }).click();
+  await page
+    .getByRole("link", { name: /购物清单/ })
+    .first()
+    .click();
+  await expect(page.getByText("食用油", { exact: true })).toBeVisible();
+  await page.getByRole("checkbox").first().check();
+  await page.goBack();
+  await page.getByRole("link", { name: "开始做菜" }).click();
+  await expect(
+    page.getByRole("heading", { name: "切好番茄，打散鸡蛋" }),
+  ).toBeVisible();
+  await page.getByRole("button", { name: /开始计时/ }).click();
+  await page.getByRole("button", { name: "下一步" }).click();
+  await page.getByRole("button", { name: /开始计时/ }).click();
+  await expect(page.locator(".timer-list>div")).toHaveCount(2);
+  await page.getByRole("button", { name: "上一步" }).click();
+  await expect(
+    page.getByRole("heading", { name: "切好番茄，打散鸡蛋" }),
+  ).toBeVisible();
+  for (let i = 0; i < 3; i++)
+    await page.getByRole("button", { name: "下一步" }).click();
+  await page.getByRole("button", { name: "完成这道菜" }).click();
+  await expect(
+    page.getByRole("heading", { name: "做好了，趁热吃吧！" }),
+  ).toBeVisible();
+});
+test("mobile home and dark mode have no horizontal overflow", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/");
+  await expect(
+    page.getByRole("heading", { name: "你厨房里现在有什么？" }),
+  ).toBeVisible();
+  await expect(page.locator("body")).toHaveJSProperty("scrollWidth", 390);
+  await page.screenshot({
+    path: "docs/screenshots/mobile.png",
+    fullPage: true,
+  });
+  await page.getByRole("button", { name: "切换深色模式" }).click();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await page.screenshot({
+    path: "docs/screenshots/mobile-dark.png",
+    fullPage: true,
+  });
+});
+test("desktop screenshot and local fallback", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 1050 });
+  await page.goto("/");
+  await expect(
+    page.getByRole("button", { name: "番茄炒蛋", exact: true }),
+  ).toBeVisible();
+  await page.screenshot({
+    path: "docs/screenshots/desktop.png",
+    fullPage: true,
+  });
+  await page
+    .getByRole("link", { name: "发现菜谱", exact: true })
+    .first()
+    .click();
+  await page.getByRole("button", { name: "查找在线菜谱" }).click();
+  await expect(
+    page.getByRole("button", { name: "番茄炒蛋", exact: true }),
+  ).toBeVisible();
+});
