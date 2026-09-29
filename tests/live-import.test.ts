@@ -25,4 +25,5 @@ it.runIf(process.env.LIVE_IMPORT_TESTS === "true")("checks real recipe pages wit
   }));
   for (const result of results) console.log(JSON.stringify(result));
   expect(results.length).toBe(candidates.length);
+  expect(results.filter((result) => result.ok).length).toBeGreaterThanOrEqual(5);
 }, 60000);

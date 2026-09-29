@@ -203,6 +203,12 @@ export function ingredientFromText(text: string) {
   const exact = normalizeIngredient(text);
   if (exact) return exact;
   const normalized = normalizeIngredientText(text);
+  const withoutAmount = normalized
+    .replace(/^\s*[\d½¼¾⅓⅔⅛⅜⅝⅞./\s-]+\s*(?:g|kg|ml|l|克|千克|毫升|升|个|根|瓣|勺|汤匙|茶匙)?\s*/i, "")
+    .replace(/\s*[\d½¼¾⅓⅔⅛⅜⅝⅞./\s-]+\s*(?:g|kg|ml|l|克|千克|毫升|升|个|根|瓣|勺|汤匙|茶匙)?\s*$/i, "")
+    .trim();
+  const stripped = normalizeIngredient(withoutAmount);
+  if (stripped) return stripped;
   return searchableAliases.find(([alias]) =>
     /[\u4e00-\u9fff]/.test(alias)
       ? normalized.includes(alias)

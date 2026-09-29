@@ -39,6 +39,7 @@ export abstract class ExternalRecipeProvider implements RecipeProvider {
   abstract normalizeRecipe(raw: unknown): Recipe;
 }
 type Meal = Record<string, string | null>;
+const pendingMealRequests = new Map<string, Promise<Meal[]>>();
 export class TheMealDBProvider extends ExternalRecipeProvider {
   id = "themealdb";
   name = "TheMealDB";
@@ -51,13 +52,21 @@ export class TheMealDBProvider extends ExternalRecipeProvider {
   enabled = Boolean(this.key);
   async request(path: string) {
     if (!this.enabled) return [];
-    const res = await fetch(
-      `https://www.themealdb.com/api/json/v1/${encodeURIComponent(this.key)}/${path}`,
-      { signal: AbortSignal.timeout(7000), next: { revalidate: 1800 } },
-    );
-    if (!res.ok) throw new Error("TheMealDB unavailable");
-    const body = await res.json();
-    return (body.meals ?? []) as Meal[];
+    const requestKey = `${this.key}:${path}`;
+    const existing = pendingMealRequests.get(requestKey);
+    if (existing) return existing;
+    const pending = (async () => {
+      const res = await fetch(
+        `https://www.themealdb.com/api/json/v1/${encodeURIComponent(this.key)}/${path}`,
+        { signal: AbortSignal.timeout(7000), next: { revalidate: 1800 } },
+      );
+      if (!res.ok) throw new Error("TheMealDB unavailable");
+      const body = await res.json();
+      return (body.meals ?? []) as Meal[];
+    })();
+    pendingMealRequests.set(requestKey, pending);
+    try { return await pending; }
+    finally { pendingMealRequests.delete(requestKey); }
   }
   async search(q: string) {
     return (await this.request(`search.php?s=${encodeURIComponent(q)}`)).map(
@@ -90,9 +99,13 @@ export class TheMealDBProvider extends ExternalRecipeProvider {
       )
     ).flat();
     const unique = [...new Set(hits.map((m) => m.idMeal!))].slice(0, 12);
-    return (await Promise.all(unique.map((id) => this.getRecipe(id)))).filter(
-      (r): r is Recipe => !!r,
-    );
+    const recipes: Recipe[] = [];
+    for (let index = 0; index < unique.length; index += 3) {
+      const batch = await Promise.allSettled(unique.slice(index, index + 3).map((id) => this.getRecipe(id)));
+      recipes.push(...batch.filter((result): result is PromiseFulfilledResult<Recipe | null> => result.status === "fulfilled")
+        .map((result) => result.value).filter((recipe): recipe is Recipe => recipe !== null));
+    }
+    return recipes;
   }
   normalizeRecipe(raw: unknown) {
     const m = raw as Meal;

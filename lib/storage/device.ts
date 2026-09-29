@@ -17,12 +17,14 @@ export const backupSchema = z.object({
 });
 export function parseLegacyState(raw: string | null): DeviceState | null {
   if (!raw) return null;
-  const parsed = JSON.parse(raw);
-  if (!parsed || typeof parsed !== "object") return null;
-  return deviceStateSchema.parse({
-    pantry: parsed.pantry ?? [], shopping: parsed.shopping ?? [],
-    saved: parsed.saved ?? [], favorites: parsed.favorites ?? [], dark: Boolean(parsed.dark),
-  });
+  try {
+    const parsed = JSON.parse(raw);
+    if (!parsed || typeof parsed !== "object") return null;
+    return deviceStateSchema.parse({
+      pantry: parsed.pantry ?? [], shopping: parsed.shopping ?? [],
+      saved: parsed.saved ?? [], favorites: parsed.favorites ?? [], dark: Boolean(parsed.dark),
+    });
+  } catch { return null; }
 }
 function openDatabase(): Promise<IDBDatabase> {
   return new Promise((resolve, reject) => {

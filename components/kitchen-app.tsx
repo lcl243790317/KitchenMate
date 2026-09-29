@@ -1,7 +1,8 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import {
   ArrowRight,
   ArrowLeft,
@@ -29,17 +30,14 @@ import {
 } from "lucide-react";
 import { z } from "zod";
 import { createBackup, loadDeviceState, parseBackup, saveDeviceState, type DeviceState } from "@/lib/storage/device";
-import { verifiedImportExamples } from "@/lib/import-examples";
+import { IngredientPicker } from "@/features/pantry/ingredient-picker";
 import {
-  ingredients,
   ingredientById,
-  normalizeIngredientText,
   ingredientName,
   demoPantry,
   togglePantry,
 } from "@/lib/ingredients";
 import { localRecipes } from "@/lib/seed";
-import { CookingMode } from "@/features/cooking/cooking-mode";
 import { matchRecipe, searchRecipe } from "@/lib/matching";
 import { scaleQuantity } from "@/lib/units";
 import {
@@ -56,7 +54,9 @@ const nav = [
   ["/shopping", "购物清单", ShoppingBasket],
   ["/import", "导入菜谱", Link2],
 ] as const;
-const categories = ["全部", ...new Set(ingredients.map((item) => item.category))];
+const ImportPageView = dynamic(() => import("@/features/import/import-page").then((module) => module.ImportPageView));
+const CookingMode = dynamic(() => import("@/features/cooking/cooking-mode").then((module) => module.CookingMode));
+const ShoppingPageView = dynamic(() => import("@/features/shopping/shopping-page").then((module) => module.ShoppingPageView));
 const foodArt: Record<string, string> = {
   "tomato-eggs": "🍅",
   "beef-potato": "🥔",
@@ -106,9 +106,6 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
   const [warning, setWarning] = useState("");
   const [loading, setLoading] = useState(false);
   const [query, setQuery] = useState("");
-  const [ingredientQuery, setIngredientQuery] = useState("");
-  const [category, setCategory] = useState("全部");
-  const [showAllIngredients, setShowAllIngredients] = useState(false);
   const [mode, setMode] = useState("最匹配");
   const [filters, setFilters] = useState(false);
   const [maxTime, setMaxTime] = useState("");
@@ -144,7 +141,7 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
     });
     return () => { active = false; };
   }, []);
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (ready) {
       saveDeviceState({ pantry, shopping, saved, favorites, dark }).catch(() => {});
       document.documentElement.dataset.theme = dark ? "dark" : "light";
@@ -377,53 +374,7 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
           b.match.score - a.match.score
         : b.match.score - a.match.score,
     );
-  const pantryPicker = (
-    <>
-      <div className="searchbox">
-        <Search size={19} />
-        <input
-          aria-label="搜索食材"
-          placeholder="搜索食材，例如：鸡蛋、西红柿、chicken"
-          value={ingredientQuery}
-          onChange={(e) => setIngredientQuery(e.target.value)}
-        />
-        <span>⌕</span>
-      </div>
-      <div className="ingredient-tools">
-        <label>分类 <select aria-label="食材分类" value={category} onChange={(event) => { setCategory(event.target.value); setShowAllIngredients(false); }}>{categories.map((item) => <option key={item}>{item}</option>)}</select></label>
-        {!ingredientQuery && category === "全部" && <span>常用食材优先 · 搜索可查找全部 {ingredients.length} 种</span>}
-      </div>
-      {!ingredientQuery && category === "全部" && <div className="recent-ingredients"><strong>常用</strong>{["egg", "tomato", "potato", "onion", "chicken-breast"].map((id) => <button key={id} aria-label={`快速添加${ingredientName(id)}`} aria-pressed={pantry.some((item) => item.ingredientId === id)} onClick={() => setPantry((prev) => togglePantry(prev, id))}>{ingredientName(id)}</button>)}</div>}
-      <div className="ingredient-grid">
-        {ingredients
-          .filter(
-            (i) =>
-              (category === "全部" || i.category === category) &&
-              [i.displayNameZh, i.displayNameEn, ...i.aliases]
-                .some((value) => normalizeIngredientText(value).includes(normalizeIngredientText(ingredientQuery))),
-          )
-          .slice(0, showAllIngredients || ingredientQuery || category !== "全部" ? 90 : 36)
-          .map((i) => {
-            const has = pantry.some((p) => p.ingredientId === i.id);
-            return (
-              <button
-                className={`ingredient ${has ? "selected" : ""}`}
-                aria-pressed={has}
-                aria-label={i.displayNameZh}
-                key={i.id}
-                onClick={() => setPantry((p) => togglePantry(p, i.id))}
-              >
-                <span>{i.emoji}</span>
-                <strong>{i.displayNameZh}</strong>
-                <i>{has ? <Check size={14} /> : <Plus size={14} />}</i>
-              </button>
-            );
-          })}
-      </div>
-      {!ingredientQuery && category === "全部" && !showAllIngredients && <button className="text-link" onClick={() => setShowAllIngredients(true)}>显示更多食材 <ArrowRight size={14} /></button>}
-    </>
-  );
-  const recipeCards = (limit?: number) => (
+  const pantryPicker = <IngredientPicker pantry={pantry} onToggle={(id) => setPantry((previous) => togglePantry(previous, id))} />;  const recipeCards = (limit?: number) => (
     <div className="recipe-grid">
       {matches.slice(0, limit ?? visibleRecipes).map(({ recipe: r, match: m }) => (
         <article className="recipe-card" key={r.id}>
@@ -506,6 +457,7 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
         onExit={() => router.push(`/recipe/${encodeURIComponent(selected.id)}`)}
       />
     );
+  if (!ready) return <main aria-live="polite" className="loading-state">正在读取本机厨房数据…</main>;
   return (
     <>
       <header className="site-header">
@@ -1147,134 +1099,21 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
             </Link>
           </div>
         )}
-        {path === "/shopping" && (
-          <>
-            <PageHeading
-              eyebrow="A LITTLE PREPARATION"
-              title="购物清单"
-              description="把缺少的带回家，把美味带上桌。"
-            />
-            <div className="shopping-top">
-              <span>
-                {shopping.filter((i) => !i.checked).length} 项待购买 ·{" "}
-                {shopping.filter((i) => i.checked).length} 项已完成
-              </span>
-              <button
-                className="secondary"
-                onClick={() =>
-                  setShopping((prev) => prev.filter((i) => !i.checked))
-                }
-              >
-                清除已完成
-              </button>
-            </div>
-            {!shopping.length ? (
-              <div className="empty">
-                <ShoppingBasket size={44} />
-                <h2>清单空空的，厨房满满的可能</h2>
-                <p>在菜谱详情中，一键加入缺少的食材。</p>
-                <Link href="/discover" className="primary">
-                  去找一道菜 <ArrowRight size={16} />
-                </Link>
-              </div>
-            ) : (
-              categories
-                .filter((c) => c !== "全部")
-                .map((c) => {
-                  const items = shopping.filter((i) => i.category === c);
-                  return items.length ? (
-                    <section className="shopping-group panel" key={c}>
-                      <h3>
-                        {c} <span className="count">{items.length}</span>
-                      </h3>
-                      {items.map((i) => (
-                        <div className="shopping-row" key={i.id}>
-                          <label className={i.checked ? "done" : ""}>
-                            <input
-                              type="checkbox"
-                              checked={i.checked}
-                              onChange={() =>
-                                setShopping((prev) =>
-                                  prev.map((x) =>
-                                    x.id === i.id
-                                      ? { ...x, checked: !x.checked }
-                                      : x,
-                                  ),
-                                )
-                              }
-                            />
-                            <span>{i.name}</span>
-                          </label>
-                          <span>
-                            {i.quantity ?? "适量"} {i.unit}
-                          </span>
-                          <button
-                            className="icon-button"
-                            aria-label={`移除${i.name}`}
-                            onClick={() =>
-                              setShopping((prev) =>
-                                prev.filter((x) => x.id !== i.id),
-                              )
-                            }
-                          >
-                            <X size={17} />
-                          </button>
-                        </div>
-                      ))}
-                    </section>
-                  ) : null;
-                })
-            )}
-          </>
-        )}
-        {path === "/import" && (
-          <>
-            <PageHeading eyebrow="SAVE A GOOD RECIPE" title="导入网上的菜谱" description="将支持结构化 Recipe 数据的公开菜谱网页保存到 KitchenMate。" />
-            <div className="import-layout">
-              <form className="panel import-form" onSubmit={importRecipe}>
-                <div className="import-icon">
-                  <Link2 size={32} />
-                </div>
-                <h2>粘贴菜谱网页网址</h2>
-                <label htmlFor="recipe-url">菜谱网址</label>
-                <input
-                  id="recipe-url"
-                  type="url"
-                  required
-                  placeholder="https://example.com/recipe/..."
-                  value={importUrl}
-                  onChange={(e) => setImportUrl(e.target.value)}
-                  maxLength={2000}
-                />
-                <p>请输入完整的公开 HTTPS 菜谱网页地址。分析时只会显示真实读取结果。</p>
-                <button className="primary" disabled={loading} type="submit">
-                  {loading ? "正在读取菜谱数据…" : "分析并导入"}{" "}
-                  <ArrowRight size={17} />
-                </button>
-              </form>
-              <aside className="import-info">
-                <h3>怎么导入？</h3>
-                <ol><li>打开一个公开的菜谱网页。</li><li>复制浏览器地址栏中的完整网址。</li><li>粘贴到左侧，再点击「分析并导入」。</li></ol>
-                <p>请使用网页地址，不要粘贴短链接、App 分享口令、截图或搜索结果链接。</p>
-                <div className="subtle">已在本机保存 {saved.length} 道菜谱</div>
-              </aside>
-            </div>
-            {importPreview && <section className="panel import-preview" aria-label="导入预览">
-              <h2>找到了这个菜谱</h2>
-              <h3>{importPreview.title}</h3>
-              {importPreview.image && <img src={importPreview.image} alt={importPreview.title} loading="lazy" referrerPolicy="no-referrer" />}
-              <p>来源：{importPreview.sourceName}{importPreview.sourceAuthor && ` · ${importPreview.sourceAuthor}`}</p>
-              <p>{importPreview.servings} 人份 · {importPreview.ingredients.length} 种食材 · {importPreview.instructions.length} 个步骤</p>
-              <div className="import-preview-actions"><button className="primary" onClick={saveImportPreview}>保存到我的菜谱</button><button className="secondary" onClick={() => {setOnline((prev) => [...prev.filter((r) => r.id !== importPreview.id), importPreview]); router.push(`/recipe/${encodeURIComponent(importPreview.id)}`);}}>直接查看</button><button className="secondary" onClick={() => setImportPreview(null)}>取消</button></div>
-            </section>}
-            <section className="import-guide-grid">
-              <article className="panel"><h2>保证成功的示例</h2><p>本站公开的「番茄炒蛋」菜谱页面包含完整的 Schema.org Recipe 数据。</p><button className="secondary" onClick={() => setImportUrl(`${window.location.origin}/examples/import/tomato-eggs`)}>试试导入这个示例</button><p><Link href="/examples/import/tomato-eggs" className="text-link">先查看示例网页 <ExternalLink size={14} /></Link></p></article>
-              <article className="panel"><h2>什么网页通常可以导入？</h2><p>公开 HTTPS 菜谱网页，包含 Schema.org Recipe 的 JSON-LD 或 Microdata。可读取的字段取决于原网站，通常有菜名、食材、步骤，也可能包含图片、时间、份量和作者。</p></article>
-              <article className="panel"><h2>哪些通常不能导入？</h2><p>登录页、付费墙、只有视频或图片的页面、普通社交笔记、PDF、聊天截图、App 内部链接、搜索结果页、首页和没有 Recipe 数据的文章。网站也可能禁止自动读取。</p><p>KitchenMate 不绕过登录、验证码、付费墙或访问限制。</p></article>
-            </section>
-            <section className="verified-examples"><div className="section-heading"><div><span className="eyebrow">LIVE VERIFIED</span><h2>真实网站示例</h2><p>以下网址曾用 KitchenMate 导入器实际解析成功。点击只会填入网址，由你决定何时导入。</p></div></div><div className="verified-grid">{verifiedImportExamples.map((example) => <article className="panel" key={example.url}><span className="eyebrow">{example.siteName}</span><h3>{example.recipeTitle}</h3><p>{example.fieldsAvailable.map((field) => `✓ ${field}`).join("　")}</p><button className="secondary" onClick={() => { setImportUrl(example.url); setImportPreview(null); window.scrollTo({ top: 0, behavior: "smooth" }); }}>填入这个示例</button><small>最近验证：{example.verifiedAt}{Date.now() - new Date(example.verifiedAt).getTime() > 30 * 86400000 && " · 网站结构可能已变化"}</small></article>)}</div></section>
-          </>
-        )}
+        {path === "/shopping" && <ShoppingPageView shopping={shopping} onChange={setShopping} />}        {path === "/import" && <ImportPageView
+          importUrl={importUrl}
+          setImportUrl={setImportUrl}
+          preview={importPreview}
+          clearPreview={() => setImportPreview(null)}
+          loading={loading}
+          savedCount={saved.length}
+          onImport={importRecipe}
+          onSave={saveImportPreview}
+          onView={() => {
+            if (!importPreview) return;
+            setOnline((prev) => [...prev.filter((r) => r.id !== importPreview.id), importPreview]);
+            router.push("/recipe/" + encodeURIComponent(importPreview.id));
+          }}
+        />}
       </main>
       <footer>
         <Link href="/" className="footer-brand">
@@ -1351,4 +1190,3 @@ function RecipeJsonLd({ recipe: r }: { recipe: Recipe }) {
     />
   );
 }
-

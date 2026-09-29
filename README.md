@@ -1,181 +1,59 @@
-# 今天吃什么 · KitchenMate
+# KitchenMate · 今天吃什么
 
-从自己的厨房出发，找到今晚的一餐。一个中文优先、可运行的 Next.js 全栈 MVP：**Pantry → 食材标准化 → 匹配推荐 → 菜谱详情 → Cooking Mode → 购物清单**。
+无需注册、打开就能用的私人厨房工具。选食材，找菜谱，按步骤做饭；厨房、收藏、购物清单和导入菜谱保存在当前设备。
 
-无数据库、无 API key 也可完整体验核心流程。12 道独立编写的示范菜谱用于离线来源与故障降级，不是业务逻辑的唯一数据源。第一次打开会载入可清空的示范厨房。
+线上地址：https://kitchenmate-production.up.railway.app/
+源代码：https://github.com/lcl243790317/KitchenMate
 
-## Screenshots
+## 当前功能
 
-![桌面首页](docs/screenshots/desktop.png)
+- 约 700 种食材，覆盖 32 类，优先照顾中文家庭厨房。中文别名与常见英文名统一匹配，生抽与老抽等不同食材保留区别。
+- 82 道独立编写的本地菜谱，含快手菜、家常菜、主食和中西常见菜。发现页也可主动搜索 TheMealDB 在线菜谱，来源会明确标注。无 API key 时本地菜谱照常使用。
+- 根据现有食材、缺少食材、临期食材和已知库存数量推荐；支持时间、菜系、难度等筛选、份量换算及购物清单。
+- 做饭模式提供大字步骤、多个独立计时器、进度恢复和 Wake Lock（浏览器支持时）。
+- 网页导入支持公开 HTTPS 菜谱页中的 Schema.org Recipe JSON-LD 或 Microdata。导入页面有操作教程、本站保证成功的示例、经实测的外站示例及保存前预览。外站可能改变结构或拒绝读取；KitchenMate 不绕过登录、付费墙和访问限制。
+- IndexedDB 保存厨房、收藏、购物清单、导入菜谱和做饭进度；localStorage 保存主题与写入保护记录。首次打开新版自动迁移 kitchenmate-v1，旧记录不会删除。可在“我的厨房”导出 JSON 备份、预览并恢复。
+- Service Worker 缓存已访问页面和静态资源。首次使用及在线菜谱请求仍需联网；离线内容取决于此前缓存过的页面。
 
-<details><summary>手机与深色模式</summary>
+## 运行与验证
 
-![手机](docs/screenshots/mobile.png)
-![深色模式](docs/screenshots/mobile-dark.png)
+需要 Node.js 22+，建议 24。使用仓库的 pnpm-lock.yaml。
 
-</details>
+    pnpm install --frozen-lockfile
+    pnpm dev
 
-## 已实现
+打开 http://localhost:3000。部署前验证：
 
-- 49 种常用食材，中英文与别名匹配，类别筛选和即时搜索。
-- 本机 Pantry：数量、单位、保质期、存放位置、创建/更新时间；localStorage 持久化。
-- 四种推荐模式、核心食材高权重、临期库存优先、已有与缺少食材明细。
-- 时间、难度、菜系、饮食标签、过敏原、厨具筛选；菜名/别名/食材/标签搜索与收藏。
-- 详情与动态份量换算；来源标注；只输出掌握的 JSON-LD 数据，不伪造评分、营养或评论。
-- 大字单步烹饪、多独立计时器、上一步/下一步、结束状态及 Wake Lock（浏览器支持时）。计时以绝对截止时间计算，后台节流不会让倒计时变慢。
-- 缺料加入购物清单、同食材同单位合并、分类、勾选与删除。
-- TheMealDB、独立 URL 导入、可选 AI 三候选生成；外部失败保留本地内容。
-- 响应式、深色模式、键盘焦点、语义标签、选中标记；安装 manifest。
+    pnpm lint
+    pnpm typecheck
+    pnpm test
+    pnpm build
+    pnpm test:e2e
 
-## 如何运行
+端到端测试使用本机 Chrome，并要求开发服务器运行在 http://127.0.0.1:3000。外站导入实测需要联网，按需执行：
 
-需要 Node.js 22+，推荐 Node.js 24。
+    $env:LIVE_IMPORT_TESTS='true'
+    pnpm exec vitest run tests/live-import.test.ts --reporter verbose
 
-```bash
-npm install
-npm run dev
-```
+## 配置
 
-打开 http://localhost:3000。也可以用已提交锁文件：
+核心功能不需要数据库或密钥。复制 .env.example 到 .env.local 可启用可选能力。
 
-```bash
-pnpm install --frozen-lockfile
-pnpm dev
-```
+| 变量 | 用途 |
+| --- | --- |
+| THEMEALDB_API_KEY | TheMealDB 正式在线搜索密钥 |
+| THEMEALDB_USE_TEST_KEY | 仅本地开发可用官方测试 key |
+| DATABASE_URL | 可选 PostgreSQL 公共菜谱缓存；不保存个人厨房数据 |
+| ENABLE_AI_RECIPE_GENERATION | 默认关闭，明确设为 true 且配置密钥时才启用可选 AI |
+| LLM_API_KEY / LLM_BASE_URL / LLM_MODEL | 可选 AI 服务配置 |
+| AI_REQUESTS_PER_IP_PER_DAY / AI_REQUESTS_GLOBAL_PER_DAY | AI 每日每客户端及全站额度 |
 
-生产构建：
+AI 与在线来源只在用户主动操作时请求。URL 导入强制外部 HTTPS、公共 IP、逐跳 DNS 校验、限时限长和同源 POST 检查；本站示例由固定路径解析，不经过外网请求。限流是进程内预算，扩展到多实例时需共享限流服务。
 
-```bash
-npm run build
-npm start
-```
+## 代码结构
 
-可部署到 Vercel 的 Next.js Node runtime 或普通 Node 服务。URL 导入使用 DNS/HTTPS Node API，不能放到 Edge runtime。项目没有自动发布到公网。
+app/ 是真实 Next.js 页面与 API；data/ingredients/、data/recipes/ 是经 Zod 校验的内容；lib/ingredients.ts、lib/matching.ts、lib/recipe-parser.ts 负责食材、匹配和导入；features/cooking/、features/import/、features/recipes/ 承载独立功能。公开本地菜谱详情由服务端渲染，导入页与做饭模式按需加载。lib/storage/device.ts 管理 IndexedDB、旧版迁移和备份。
 
-## 环境变量
+Provider 接口与 Aggregator 保持统一 Recipe 模型。LocalRecipeProvider 始终可用，TheMealDBProvider 需要合法密钥，ExternalUrlImportProvider 由用户提交 URL 时触发；XiachufangProvider 是禁用占位，没有使用私有接口。AI 默认关闭，生成结果不混入本地菜谱。
 
-复制 `.env.example` 为 `.env.local`，按需设置，不要提交凭证。
-
-| 变量                     | 默认与用途                                                                             |
-| ------------------------ | -------------------------------------------------------------------------------------- |
-| `DATABASE_URL`           | 空：使用进程内菜谱详情缓存；填写后启用 PostgreSQL Repository。                         |
-| `THEMEALDB_API_KEY`      | 生产 API key，仅服务端读取。                                                           |
-| `THEMEALDB_USE_TEST_KEY` | `false`；本地开发设为 `true` 才使用官方测试 key `1`。生产会忽略这个选项。              |
-| `LLM_API_KEY`            | 可选；无 key 时 AI 按钮明确提示，普通推荐不受影响。                                    |
-| `LLM_BASE_URL`           | 默认为 `https://api.openai.com/v1`；需兼容 Chat Completions + JSON object 输出的服务。 |
-| `LLM_MODEL`              | 示例 `gpt-4.1-mini`，请使用自己账户可访问且支持 JSON 输出的模型。                      |
-
-在线搜索在“发现菜谱 → 查找在线菜谱”显式触发。中文关键词可能不被英文来源理解；空搜索会根据厨房里前 3 种食材查询，或输入英文菜名。环境变量修改后重启开发服务。
-
-## 架构
-
-```text
-app/                  Next.js 路由、API、共享布局
-components/           页面交互与展示
-lib/model.ts          Zod Normalized Recipe / Pantry / Shopping schema
-lib/ingredients.ts    规范食材、别名、类别与示范厨房
-lib/matching.ts       纯函数匹配与搜索
-lib/units.ts          单位、份量与分数数量
-lib/providers.ts      统一接口、Aggregator、Local、TheMealDB、下厨房占位
-lib/url-import-provider.ts / recipe-parser.ts / safe-fetch.ts
-lib/ai-provider.ts    结构化生成、规范化和一次重试
-lib/db/               Repository、Drizzle PostgreSQL schema
-drizzle/              可执行 SQL migration
-tests/                unit / API integration / opt-in live / Playwright
-docs/                 研究、依赖许可、实际截图
-```
-
-共享客户端布局保存当前交互状态；所有来源统一返回 `Recipe`（即 NormalizedRecipe），UI 不依赖 TheMealDB 原始字段。导入与 AI 生成只在用户操作时发生，不参与后台爬取或自动 LLM 请求。外部菜谱详情打开后保存在本机，可刷新恢复。
-
-### Recipe Provider Architecture
-
-`RecipeProvider` 定义 `id / name / enabled / search / getRecipe / searchByIngredients / normalizeRecipe`。`RecipeAggregator` 对启用的搜索来源使用 `Promise.allSettled`，去重并单独返回警告。新增来源只需实现接口并注册，不改核心 UI 或匹配引擎。
-
-| Provider                  | 状态                                                    |
-| ------------------------- | ------------------------------------------------------- |
-| LocalRecipeProvider       | 默认可用，12 道完整示范菜谱。                           |
-| TheMealDBProvider         | 已实现官方 API；线上需合法 key。                        |
-| ExternalUrlImportProvider | 已实现公开 URL 的结构化解析；导入结果存入本机收藏数据。 |
-| AIRecipeProvider          | 已实现可选生成；Zod 校验、最多一次重试、失败降级提示。  |
-| XiachufangProvider        | `enabled=false`，没有爬虫或私有 API。                   |
-
-TheMealDB fetch 结果通过 Next.js Data Cache 缓存 30 分钟；详情 API 使用 Repository 缓存 24 小时，刷新失败可返回旧缓存。未配置数据库的详情缓存只活在当前进程，最多 500 条。个人导入、Pantry、购物清单与收藏是设备本地数据，不假装已同步到账号。
-
-### Ingredient Matching Algorithm
-
-必需核心食材权重 `1`，盐/糖/水/油/黑胡椒权重 `0.15`。匹配分数 = 已有必需食材权重之和 / 全部必需食材权重之和 × 100。可选食材不扣分；未识别食材保留 `unknown:` 标识，不能无故算作已拥有。
-
-“现在就能做”要求缺少核心食材为 0，仍清楚显示缺少的调料。“只差一点”要求缺 1–2 个核心食材。“消耗库存”按已有非基础食材数量加临期使用奖励排序，临期定义为未来 3 天内。数量不参与可做性判断，份量换算不等于库存扣减。过敏原筛选对来源信息不完整的外部菜谱采取保守排除，不提供医疗保证。
-
-## 数据库配置
-
-提供 User、Ingredient、IngredientAlias、PantryItem、Recipe、RecipeIngredient、RecipeInstruction、Favorite、ShoppingList、ShoppingListItem、RecipeImport 共 11 张表。
-
-`canonicalName` 唯一索引；`sourceProvider + externalId` 唯一约束；Pantry 的 user/ingredient、导入的 user/url、步骤的 recipe/step 都有唯一约束；关系使用外键。Recipe 的完整规范化文档保存在 JSONB，支持未知外部食材与未来扩展，避免强行创建错误字典记录。
-
-配置环境变量后运行（Drizzle CLI 从进程读取 `DATABASE_URL`，如使用 `.env.local` 需通过 shell 或 dotenv 载入）：
-
-```bash
-npm run db:migrate
-```
-
-模型变更后运行 `npm run db:generate`。当前 PostgreSQL adapter 用于服务端菜谱缓存。账号认证、用户授权和 Pantry 云同步属于下一阶段；数据库结构已预留，MVP 不开放不安全的匿名用户数据 API。未在此环境连接真实 PostgreSQL，迁移已生成但未实库执行。
-
-## Recipe URL Import 工作方式
-
-1. 服务端限长读取输入，Zod 校验与同源检查。
-2. 只允许 HTTPS 443，无用户名密码；禁止 localhost、私有、环回、链路本地、元数据及保留 IP，覆盖 IPv4/IPv6 与 IPv4-mapped IPv6。
-3. DNS 解析全部地址，任何非公网地址都拒绝；连接固定已验证地址、保留 TLS hostname，防 DNS rebinding。
-4. 重定向最多 3 次，每跳重复检查；请求超时 8 秒、绝对下载期限 10 秒/跳、最大 HTML 2MB、验证 Content-Type。
-5. JSON-LD Recipe 优先，支持 @graph 与 HowToSection；Microdata 后备，OpenGraph 仅补充已有 Recipe 的标题和图片。
-6. 外部文本去除 HTML，仅以文本呈现。JSON-LD 输出转义 `<`，不存在任意外部 HTML 注入。URL SHA-256 作为稳定导入 ID，重复导入更新同一记录。
-
-导入器不是通用网站绕过器，无法解析的页面返回可理解的错误。当前限流为进程内全局预算（搜索 90 次/分钟、导入 10 次、AI 5 次），多实例生产部署应在网关增加共享限流、流量配额和认证后再开放昂贵 AI 能力。
-
-## 图片与数据来源限制
-
-本地菜谱使用标注“食材插画 · 非菜品实拍”的统一占位视觉，没有用随机照片冒充菜品。TheMealDB 图片与其菜谱保持来源关系；导入图片保留原网站来源。代码 MIT 许可不覆盖第三方菜谱、照片、商标或服务条款。
-
-AI 菜谱始终标注生成来源，提醒检查变质、过敏原、加热和特殊人群饮食风险。此环境未提供 LLM key，因此没有做付费模型的真实生成验收；无 key 降级可直接测试。
-
-## Xiachufang Integration
-
-系统已预留 `XiachufangProvider`，默认禁用。只有在拥有符合其服务条款的官方 API / 授权 / 合法数据访问方式后才启用。没有模拟 App 私有接口、绕过登录/验证码或大规模抓取实现。
-
-## 测试
-
-```bash
-npm run lint
-npm run typecheck
-npm test
-npm run build
-```
-
-浏览器测试需要先运行 `npm run dev`，默认使用已安装 Chrome：
-
-```bash
-npm run test:e2e
-```
-
-也可以安装 Playwright Chromium，然后将配置中的 `channel` 改为空。核心流程覆盖清空/添加 Pantry、刷新持久化、推荐、2 → 4 人份、购物清单、两个并发计时器、前后步骤及完成。另测手机无横向溢出、深色模式和桌面截图。
-
-可选联网验收（不在普通 CI 中自动访问外部服务）：
-
-```powershell
-$env:LIVE_PROVIDER_TESTS='true'
-npm test -- tests/live.test.ts
-```
-
-已实际验证官方 TheMealDB 测试 API 与 DNS 固定的公开 HTTPS 下载；故障降级用可重复的测试 Provider 验证。
-
-## MVP 边界与后续路线
-
-- Pantry 与私人菜谱目前是单设备本地数据；下一阶段接入认证、授权和 PostgreSQL 同步。
-- 当前 UI 完整中文；`lib/i18n.ts` 预留 locale 类型，中英文食材已支持；英文 UI 尚未翻译。
-- 有安装 manifest；未实现 Service Worker 离线页面缓存。不能承诺断网刷新页面仍能打开；已打开页面的本地推荐可继续使用。
-- 没有 AI 自动翻译、食材替换、补救问答、库存扣减、周计划、社交或付费功能。
-- 建议下一阶段先做合法中文数据接入、共享限流/服务监控，再做云同步与 AI Cooking Assistant。
-
-## Credits / References / License
-
-参考 [Mealie](https://github.com/mealie-recipes/mealie)、[Tandoor Recipes](https://github.com/TandoorRecipes/recipes)、[RecipeSage](https://github.com/julianpoy/RecipeSage)、[recipe-scrapers](https://github.com/recipe-scrapers/recipe-scrapers)。仅借鉴架构与工作流，没有复制强 copyleft 或商业限制代码。完整研究见 [RESEARCH.md](docs/RESEARCH.md)，直接依赖许可证见 [DEPENDENCIES.md](docs/DEPENDENCIES.md)。本站原创代码采用 [MIT](LICENSE)。
+本地菜谱文字原创；外部菜谱、图片、商标版权属于相应来源。项目代码采用 MIT，研究与依赖说明在 docs/。

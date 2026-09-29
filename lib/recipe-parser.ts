@@ -100,6 +100,8 @@ export function parseRecipeHtml(html: string, url: string) {
       group: "食材",
     };
   });
+  if (!text(d.name) || items.filter((item) => item.originalText).length < 1 || steps(d.recipeInstructions).length < 1)
+    throw new Error("菜谱数据不完整：需要菜名、食材和做法步骤");
   const now = new Date().toISOString();
   const id =
     "import:" + createHash("sha256").update(url).digest("hex").slice(0, 24);

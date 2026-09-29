@@ -107,3 +107,23 @@ test("desktop screenshot and local fallback", async ({ page }) => {
     page.getByRole("button", { name: "番茄炒蛋", exact: true }),
   ).toBeVisible();
 });
+test("Chinese ingredient alias and first-party import survive refresh", async ({ page }) => {
+  await page.setViewportSize({ width: 430, height: 900 });
+  await page.goto("/pantry");
+  await page.getByLabel("搜索食材").fill("西红柿");
+  await expect(page.getByRole("button", { name: "番茄", exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "番茄", exact: true }).click();
+  await page.goto("/import");
+  await page.getByRole("button", { name: "试试导入这个示例" }).click();
+  await expect(page.getByLabel("菜谱网址")).toHaveValue(/examples\/import\/tomato-eggs/);
+  await page.getByRole("button", { name: "分析并导入" }).click();
+  await expect(page.getByRole("heading", { name: "找到了这个菜谱" })).toBeVisible();
+  await page.getByRole("button", { name: "保存到我的菜谱" }).click();
+  await page.reload();
+  await page.getByRole("link", { name: "发现菜谱", exact: true }).first().click();
+  await page.getByRole("button", { name: "我的菜谱", exact: true }).click();
+  await expect(page.getByRole("button", { name: "番茄炒蛋", exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "番茄炒蛋", exact: true }).click();
+  await page.getByRole("link", { name: "开始做菜" }).click();
+  await expect(page.getByRole("heading", { name: "步骤 1" })).toBeVisible();
+});

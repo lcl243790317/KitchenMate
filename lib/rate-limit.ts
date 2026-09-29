@@ -19,5 +19,12 @@ export function rateLimitRequest(request: Request, endpoint: string, limit: numb
 }
 export function sameOrigin(request: Request) {
   const origin = request.headers.get("origin");
-  return !origin || origin === new URL(request.url).origin;
+  if (!origin) return true;
+  try {
+    const parsed = new URL(origin);
+    const host = request.headers.get("host");
+    return parsed.origin === new URL(request.url).origin ||
+      (host !== null && parsed.host === host &&
+        (parsed.protocol === "https:" || parsed.hostname === "localhost" || parsed.hostname === "127.0.0.1"));
+  } catch { return false; }
 }
