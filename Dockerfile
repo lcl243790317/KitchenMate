@@ -15,4 +15,4 @@ COPY --from=build --chown=node:node /app/.next/static ./.next/static
 COPY --from=build --chown=node:node /app/public ./public
 USER node
 EXPOSE 3000
-CMD ["sh", "-c", "PORT=3000 node server.js"]
+CMD ["node", "server.js"]
