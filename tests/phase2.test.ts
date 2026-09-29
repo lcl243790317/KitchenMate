@@ -5,7 +5,7 @@ import {
   normalizeIngredient,
   normalizeSearchQuery,
 } from "@/lib/ingredients";
-import { localRecipes } from "@/lib/seed";
+import { localRecipes } from "@/tests/fixtures/legacy-recipes";
 import { matchRecipe, searchRecipe } from "@/lib/matching";
 import { recipeSchema } from "@/lib/model";
 import {
@@ -77,30 +77,30 @@ describe("recipe library", () => {
     expect(searchRecipe(recipe, "西红柿")).toBe(true);
     expect(searchRecipe(recipe, "tomato 鸡蛋")).toBe(true);
   });
-  it("reports known quantity shortfalls without penalizing unknown stock", () => {
-    const recipe = localRecipes.find((item) => item.id === "tomato-eggs")!;
-    const stock = [
-      {
-        ingredientId: "egg",
-        canonicalName: "egg",
-        displayName: "鸡蛋",
-        category: "蛋奶",
-        quantity: 1,
-        unit: "个",
-        expiryDate: null,
-        storageLocation: "冰箱" as const,
-        createdAt: "2026-09-29",
-        updatedAt: "2026-09-29",
-      },
-    ];
-    expect(
-      matchRecipe(recipe, stock).quantityShortfalls.some(
-        (item) => item.ingredientId === "egg",
-      ),
-    ).toBe(true);
-    expect(
-      matchRecipe(recipe, [{ ...stock[0], quantity: null }]).quantityShortfalls,
-    ).toHaveLength(0);
+  it("migrates obsolete inventory fields to ingredient selection only", () => {
+    const state = parseLegacyState(
+      JSON.stringify({
+        pantry: [
+          {
+            ingredientId: "egg",
+            quantity: 1,
+            unit: "个",
+            expiryDate: "2026-10-02",
+            storageLocation: "冰箱",
+          },
+        ],
+        saved: [],
+        shopping: [],
+        favorites: [],
+        recentRecipeIds: ["saved-id"],
+        dark: false,
+      }),
+    )!;
+    expect(state.pantry).toEqual([{ ingredientId: "egg" }]);
+    expect(state.recentRecipeIds).toEqual(["saved-id"]);
+    expect(matchRecipe(localRecipes[0], state.pantry)).not.toHaveProperty(
+      "quantityShortfalls",
+    );
   });
 });
 describe("local device data", () => {

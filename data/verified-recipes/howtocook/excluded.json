@@ -1,0 +1,34 @@
+[
+  {
+    "path": "dishes/breakfast/空气炸锅面包片.md",
+    "reason": "Error: does not meet full tutorial contract"
+  },
+  {
+    "path": "dishes/semi-finished/炸薯条/炸薯条.md",
+    "reason": "Error: does not meet full tutorial contract"
+  },
+  {
+    "path": "dishes/semi-finished/懒人蛋挞/懒人蛋挞.md",
+    "reason": "Error: does not meet full tutorial contract"
+  },
+  {
+    "path": "dishes/semi-finished/速冻汤圆/速冻汤圆.md",
+    "reason": "Error: does not meet full tutorial contract"
+  },
+  {
+    "path": "dishes/semi-finished/速冻水饺.md",
+    "reason": "Error: does not meet full tutorial contract"
+  },
+  {
+    "path": "dishes/staple/麻辣减脂荞麦面.md",
+    "reason": "[\n  {\n    \"origin\": \"array\",\n    \"code\": \"too_small\",\n    \"minimum\": 1,\n    \"inclusive\": true,\n    \"path\": [\n      \"ingredients\"\n    ],\n    \"message\": \"Too small: expected array to have >=1 items\"\n  }\n]"
+  },
+  {
+    "path": "dishes/vegetable_dish/清蒸南瓜.md",
+    "reason": "Error: does not meet full tutorial contract"
+  },
+  {
+    "path": "dishes/vegetable_dish/炒青菜.md",
+    "reason": "Error: does not meet full tutorial contract"
+  }
+]

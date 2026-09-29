@@ -1,15 +1,18 @@
-import { LocalRecipeProvider, TheMealDBProvider } from "@/lib/providers";
+import { VerifiedRecipeCatalogProvider, TheMealDBProvider } from "@/lib/providers";
 import { recipeRepository } from "@/lib/db/repository";
+import { canDisplayRecipe } from "@/lib/recipe-trust";
 export async function GET(
   _request: Request,
   { params }: { params: Promise<{ id: string }> },
 ) {
-  const { id } = await params;
+  const { id: encodedId } = await params;
+  const id = decodeURIComponent(encodedId);
   let cached: Awaited<ReturnType<typeof recipeRepository.get>> = null;
   try {
-    const local = await new LocalRecipeProvider().getRecipe(id);
+    const local = await new VerifiedRecipeCatalogProvider().getRecipe(id);
     if (local) return Response.json({ recipe: local });
     cached = await recipeRepository.get(id);
+    if (cached && !canDisplayRecipe(cached)) cached = null;
     if (
       cached?.lastFetchedAt &&
       Date.now() - Date.parse(cached.lastFetchedAt) < 86400000
@@ -18,7 +21,7 @@ export async function GET(
     const recipe = id.startsWith("themealdb:")
       ? await new TheMealDBProvider().getRecipe(id)
       : null;
-    if (recipe) {
+    if (recipe && canDisplayRecipe(recipe)) {
       await recipeRepository.save(recipe);
       return Response.json({ recipe });
     }

@@ -1,0 +1,139 @@
+{
+  "provenance": {
+    "type": "FIRST_PARTY_TEST",
+    "sourceName": "",
+    "sourceUrl": null,
+    "sourceRecipeTitle": "",
+    "sourceAuthor": null,
+    "sourceExternalId": null,
+    "verifiedAt": null,
+    "verificationMethod": null,
+    "instructionSource": "none",
+    "imageSource": null,
+    "licenseOrUsageBasis": "Legacy record: no verified usage basis"
+  },
+  "verificationStatus": "unverified",
+  "instructionAvailability": "source-only",
+  "id": "tomato-eggs",
+  "title": "番茄炒蛋",
+  "slug": "tomato-eggs",
+  "description": "酸甜的番茄汁裹住蓬松鸡蛋，是每次回家都想吃的那一口。",
+  "image": null,
+  "sourceProvider": "local",
+  "sourceName": "KitchenMate 原创示范",
+  "sourceUrl": null,
+  "sourceAuthor": "KitchenMate",
+  "externalId": "tomato-eggs",
+  "cuisine": "中餐",
+  "category": "家常菜",
+  "difficulty": "简单",
+  "prepTime": 5,
+  "cookTime": 10,
+  "totalTime": 15,
+  "servings": 2,
+  "ingredients": [
+    {
+      "ingredientId": "tomato",
+      "originalText": "番茄 2个",
+      "quantity": 2,
+      "unit": "个",
+      "optional": false,
+      "group": "主料"
+    },
+    {
+      "ingredientId": "egg",
+      "originalText": "鸡蛋 3个",
+      "quantity": 3,
+      "unit": "个",
+      "optional": false,
+      "group": "主料"
+    },
+    {
+      "ingredientId": "scallion",
+      "originalText": "葱 1根",
+      "quantity": 1,
+      "unit": "根",
+      "optional": true,
+      "group": "调料"
+    },
+    {
+      "ingredientId": "oil",
+      "originalText": "食用油 15ml",
+      "quantity": 15,
+      "unit": "ml",
+      "optional": false,
+      "group": "调料"
+    },
+    {
+      "ingredientId": "salt",
+      "originalText": "盐 2g",
+      "quantity": 2,
+      "unit": "g",
+      "optional": false,
+      "group": "调料"
+    },
+    {
+      "ingredientId": "sugar",
+      "originalText": "糖 3g",
+      "quantity": 3,
+      "unit": "g",
+      "optional": true,
+      "group": "调料"
+    }
+  ],
+  "instructions": [
+    {
+      "stepNumber": 1,
+      "title": "切好番茄，打散鸡蛋",
+      "description": "番茄洗净切块。鸡蛋打入碗中，加一半盐搅散。葱洗净切成葱花。",
+      "durationSeconds": 180,
+      "image": null,
+      "tips": "按实际火力与食材状态调整时间。",
+      "temperature": null
+    },
+    {
+      "stepNumber": 2,
+      "title": "炒出蓬松的鸡蛋",
+      "description": "锅中加入一半油，中火加热。倒入蛋液，边缘凝固时轻推，炒至基本凝固后盛出。",
+      "durationSeconds": 120,
+      "image": null,
+      "tips": "按实际火力与食材状态调整时间。",
+      "temperature": null
+    },
+    {
+      "stepNumber": 3,
+      "title": "炒软番茄",
+      "description": "加入剩余油，下番茄翻炒。加剩余盐，转中小火炒出汁；太干时可加一汤匙水。",
+      "durationSeconds": 180,
+      "image": null,
+      "tips": "按实际火力与食材状态调整时间。",
+      "temperature": null
+    },
+    {
+      "stepNumber": 4,
+      "title": "合炒出锅",
+      "description": "倒回鸡蛋，轻轻翻匀至蛋液完全凝固、番茄软烂。按喜好加糖，撒葱花后关火。",
+      "durationSeconds": 60,
+      "image": null,
+      "tips": "按实际火力与食材状态调整时间。",
+      "temperature": null
+    }
+  ],
+  "equipment": [
+    "炒锅"
+  ],
+  "tags": [
+    "快手菜",
+    "素食",
+    "家常菜"
+  ],
+  "allergens": [
+    "鸡蛋"
+  ],
+  "nutrition": null,
+  "rating": null,
+  "createdAt": "2026-09-28T00:00:00.000Z",
+  "updatedAt": "2026-09-28T00:00:00.000Z",
+  "sourceUpdatedAt": null,
+  "lastFetchedAt": null
+}

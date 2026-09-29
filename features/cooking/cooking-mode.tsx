@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { ArrowLeft, ArrowRight, Check, ChefHat, Timer, X } from "lucide-react";
 import type { Recipe } from "@/lib/model";
 import { loadCookingSnapshot, saveCookingSnapshot } from "@/lib/storage/device";
+import { canCookRecipe } from "@/lib/recipe-trust";
 export function CookingMode({
   recipe,
   onExit,
@@ -21,18 +22,23 @@ export function CookingMode({
   const instruction = recipe.instructions[step];
   useEffect(() => {
     let active = true;
-    loadCookingSnapshot(recipe.id).then((snapshot) => {
-      if (!active) return;
-      if (snapshot && !snapshot.done) {
-        setStep(Math.min(snapshot.step, recipe.instructions.length - 1));
-        setTimers(snapshot.timers);
-      }
-      setRestored(true);
-    }).catch(() => setRestored(true));
-    return () => { active = false; };
+    loadCookingSnapshot(recipe.id)
+      .then((snapshot) => {
+        if (!active) return;
+        if (snapshot && !snapshot.done) {
+          setStep(Math.min(snapshot.step, recipe.instructions.length - 1));
+          setTimers(snapshot.timers);
+        }
+        setRestored(true);
+      })
+      .catch(() => setRestored(true));
+    return () => {
+      active = false;
+    };
   }, [recipe.id, recipe.instructions.length]);
   useEffect(() => {
-    if (restored) saveCookingSnapshot({ recipe, step, timers, done }).catch(() => {});
+    if (restored)
+      saveCookingSnapshot({ recipe, step, timers, done }).catch(() => {});
   }, [recipe, step, timers, done, restored]);
   useEffect(() => {
     const timer = setInterval(() => setNow(Date.now()), 500);
@@ -65,6 +71,13 @@ export function CookingMode({
       document.removeEventListener("visibilitychange", acquire);
     };
   }, []);
+  if (!canCookRecipe(recipe))
+    return (
+      <main>
+        <p>此菜谱没有可验证的完整步骤。</p>
+        <button onClick={onExit}>返回菜谱</button>
+      </main>
+    );
   if (done)
     return (
       <div className="cooking-complete">
@@ -94,6 +107,14 @@ export function CookingMode({
         />
       </div>
       <main>
+        <a
+          className="text-link"
+          href={recipe.sourceUrl!}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          来源：{recipe.sourceName} · 查看原始菜谱
+        </a>
         <p className="eyebrow">
           STEP {String(step + 1).padStart(2, "0")} /{" "}
           {String(recipe.instructions.length).padStart(2, "0")}
@@ -180,4 +201,3 @@ export function CookingMode({
     </div>
   );
 }
-

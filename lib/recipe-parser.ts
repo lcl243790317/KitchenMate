@@ -1,9 +1,8 @@
 import * as cheerio from "cheerio";
 import { createHash } from "node:crypto";
-import { ingredientFromText, ingredients } from "./ingredients";
+import { ingredientFromText, ingredientById } from "./ingredients";
 import { recipeSchema } from "./model";
 import { parseAmount, normalizeUnit } from "./units";
-import { safePublicImage } from "./providers";
 const text = (v: unknown): string =>
   cheerio
     .load(`<body>${typeof v === "string" ? v : ""}</body>`)("body")
@@ -100,30 +99,67 @@ export function parseRecipeHtml(html: string, url: string) {
       group: "食材",
     };
   });
-  if (!text(d.name) || items.filter((item) => item.originalText).length < 1 || steps(d.recipeInstructions).length < 1)
+  if (
+    !text(d.name) ||
+    items.filter((item) => item.originalText).length < 2 ||
+    steps(d.recipeInstructions).length < 1
+  )
     throw new Error("菜谱数据不完整：需要菜名、食材和做法步骤");
   const now = new Date().toISOString();
   const id =
     "import:" + createHash("sha256").update(url).digest("hex").slice(0, 24);
-  const img = Array.isArray(d.image) ? d.image[0] : d.image;
-  const image = typeof img === "object" && img ? (img as Obj).url : img;
+  const authors = Array.isArray(d.author) ? d.author : [d.author];
+  const author =
+    authors
+      .map((a) =>
+        typeof a === "string"
+          ? text(a)
+          : a && typeof a === "object"
+            ? text((a as Obj).name)
+            : "",
+      )
+      .filter(Boolean)
+      .join(", ") || null;
+  const firstParty =
+    new URL(url).pathname === "/examples/import/tomato-eggs" &&
+    [
+      "kitchenmate-production.up.railway.app",
+      "127.0.0.1",
+      "localhost",
+    ].includes(new URL(url).hostname);
   return recipeSchema.parse({
     id,
+    provenance: {
+      type: firstParty ? "FIRST_PARTY_TEST" : "USER_IMPORTED",
+      sourceName: new URL(url).hostname,
+      sourceUrl: url,
+      sourceRecipeTitle: text(d.name),
+      sourceAuthor: author,
+      sourceExternalId: url,
+      verifiedAt: now,
+      verificationMethod: "user-import",
+      instructionSource: "user-import",
+      imageSource: null,
+      licenseOrUsageBasis:
+        "User-requested structured-data snapshot for this device only; no redistribution license asserted; images omitted",
+    },
+    verificationStatus: "verified",
+    instructionAvailability: "full",
+    sourceSnapshot: {
+      url,
+      siteName: new URL(url).hostname,
+      author,
+      importedAt: now,
+      lastCheckedAt: now,
+    },
     slug: id,
     title: text(d.name) || text($('meta[property="og:title"]').attr("content")),
     description: text(d.description),
-    image: safePublicImage(
-      image ?? $('meta[property="og:image"]').attr("content"),
-    ),
+    image: null,
     sourceProvider: "url-import",
     sourceName: new URL(url).hostname,
     sourceUrl: url,
-    sourceAuthor:
-      typeof d.author === "string"
-        ? text(d.author)
-        : d.author && typeof d.author === "object"
-          ? text((d.author as Obj).name)
-          : null,
+    sourceAuthor: author,
     externalId: url,
     cuisine: Array.isArray(d.recipeCuisine)
       ? text(d.recipeCuisine[0])
@@ -150,8 +186,7 @@ export function parseRecipeHtml(html: string, url: string) {
     allergens: [
       ...new Set(
         items.flatMap(
-          (i) =>
-            ingredients.find((x) => x.id === i.ingredientId)?.allergens ?? [],
+          (i) => ingredientById.get(i.ingredientId)?.allergens ?? [],
         ),
       ),
     ],

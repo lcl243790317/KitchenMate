@@ -1,6 +1,4 @@
-import { localRecipeById } from "./seed";
-
-const recipe = localRecipeById.get("tomato-eggs")!;
+import recipe from "@/tests/fixtures/first-party-recipe.json";
 export const exampleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Recipe",
@@ -11,6 +9,7 @@ export const exampleJsonLd = {
   totalTime: "PT15M",
   recipeIngredient: recipe.ingredients.map((item) => item.originalText),
   recipeInstructions: recipe.instructions.map((step) => ({
-    "@type": "HowToStep", text: step.description,
+    "@type": "HowToStep",
+    text: step.description,
   })),
 };

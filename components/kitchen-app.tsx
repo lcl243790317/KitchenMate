@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState, useMemo } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import dynamic from "next/dynamic";
@@ -21,7 +21,13 @@ import {
   Heart,
 } from "lucide-react";
 import { z } from "zod";
-import { createBackup, loadDeviceState, parseBackup, saveDeviceState, type DeviceState } from "@/lib/storage/device";
+import {
+  createBackup,
+  loadDeviceState,
+  parseBackup,
+  saveDeviceState,
+  type DeviceState,
+} from "@/lib/storage/device";
 import { IngredientPicker } from "@/features/pantry/ingredient-picker";
 import {
   ingredientById,
@@ -29,15 +35,15 @@ import {
   demoPantry,
   togglePantry,
 } from "@/lib/ingredients";
-import { localRecipes } from "@/lib/seed";
-import { matchRecipe, searchRecipe } from "@/lib/matching";
-import { scaleQuantity } from "@/lib/units";
+import { verifiedRecipes } from "@/lib/verified-recipes";
+import { canCookRecipe, dedupeRecipes } from "@/lib/recipe-trust";
 import {
-  Recipe,
-  PantryItem,
-  ShoppingItem,
-  recipeSchema,
-} from "@/lib/model";
+  matchRecipe,
+  searchRecipe,
+  selectedIngredientIds,
+} from "@/lib/matching";
+import { scaleQuantity } from "@/lib/units";
+import { Recipe, PantryItem, ShoppingItem, recipeSchema } from "@/lib/model";
 
 const nav = [
   ["/", "今天吃什么", ChefHat],
@@ -46,12 +52,36 @@ const nav = [
   ["/shopping", "购物清单", ShoppingBasket],
   ["/import", "导入菜谱", Link2],
 ] as const;
-const ImportPageView = dynamic(() => import("@/features/import/import-page").then((module) => module.ImportPageView));
-const CookingMode = dynamic(() => import("@/features/cooking/cooking-mode").then((module) => module.CookingMode));
-const ShoppingPageView = dynamic(() => import("@/features/shopping/shopping-page").then((module) => module.ShoppingPageView));
-const RecipeDetailView = dynamic(() => import("@/features/recipes/recipe-detail-view").then((module) => module.RecipeDetailView));
-const PantryPageView = dynamic(() => import("@/features/pantry/pantry-page").then((module) => module.PantryPageView));
-const DiscoverPageView = dynamic(() => import("@/features/recipes/discover-page").then((module) => module.DiscoverPageView));
+const ImportPageView = dynamic(() =>
+  import("@/features/import/import-page").then(
+    (module) => module.ImportPageView,
+  ),
+);
+const CookingMode = dynamic(() =>
+  import("@/features/cooking/cooking-mode").then(
+    (module) => module.CookingMode,
+  ),
+);
+const ShoppingPageView = dynamic(() =>
+  import("@/features/shopping/shopping-page").then(
+    (module) => module.ShoppingPageView,
+  ),
+);
+const RecipeDetailView = dynamic(() =>
+  import("@/features/recipes/recipe-detail-view").then(
+    (module) => module.RecipeDetailView,
+  ),
+);
+const PantryPageView = dynamic(() =>
+  import("@/features/pantry/pantry-page").then(
+    (module) => module.PantryPageView,
+  ),
+);
+const DiscoverPageView = dynamic(() =>
+  import("@/features/recipes/discover-page").then(
+    (module) => module.DiscoverPageView,
+  ),
+);
 const foodArt: Record<string, string> = {
   "tomato-eggs": "🍅",
   "beef-potato": "🥔",
@@ -77,17 +107,25 @@ function FoodImage({ recipe, big = false }: { recipe: Recipe; big?: boolean }) {
     />
   ) : (
     <div
-      className={`food-art ${big ? "big" : ""} art-${localRecipes.findIndex((r) => r.id === recipe.id) % 4}`}
+      className={`food-art ${big ? "big" : ""} art-${verifiedRecipes.findIndex((r) => r.id === recipe.id) % 4}`}
     >
       <div className="plate">
-        <span>{foodArt[recipe.id] ?? "🥣"}</span>
+        <span>
+          {foodArt[recipe.id] ??
+            ingredientById.get(
+              recipe.ingredients.find(
+                (item) => !ingredientById.get(item.ingredientId)?.pantryStaple,
+              )?.ingredientId ?? "",
+            )?.emoji ??
+            "🥣"}
+        </span>
         <i>✦</i>
       </div>
       <span className="illustration-label">食材插画 · 非菜品实拍</span>
     </div>
   );
 }
-export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
+export function KitchenApp() {
   const path = usePathname();
   const router = useRouter();
   const [ready, setReady] = useState(false);
@@ -102,16 +140,15 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
   const [warning, setWarning] = useState("");
   const [loading, setLoading] = useState(false);
   const [query, setQuery] = useState("");
-  const [mode, setMode] = useState("最匹配");
+  const [mode, setMode] = useState("现在就能做");
   const [filters, setFilters] = useState(false);
   const [maxTime, setMaxTime] = useState("");
   const [difficulty, setDifficulty] = useState("");
   const [cuisine, setCuisine] = useState("");
   const [diet, setDiet] = useState("");
-  const [allergen, setAllergen] = useState("");
   const [equipment, setEquipment] = useState("");
   const [onlyFavorites, setOnlyFavorites] = useState(false);
-  const [sourceFilter, setSourceFilter] = useState("全部");
+  const [sourceFilter, setSourceFilter] = useState("为我推荐");
   const [visibleRecipes, setVisibleRecipes] = useState(24);
   const [servingChoice, setServingChoice] = useState<{
     id: string;
@@ -120,36 +157,69 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
   const [importUrl, setImportUrl] = useState("");
   const [importPreview, setImportPreview] = useState<Recipe | null>(null);
   const [backupPreview, setBackupPreview] = useState<DeviceState | null>(null);
-  const [constraints, setConstraints] =
-    useState("30 分钟以内，两人份，不要太辣");
   useEffect(() => {
     let active = true;
-    loadDeviceState().then((data) => {
-      if (!active) return;
-      if (data) {
-        setPantry(data.pantry); setShopping(data.shopping); setSaved(data.saved);
-        const currentId = window.location.pathname.startsWith("/recipe/") ? decodeURIComponent(window.location.pathname.split("/")[2]) : null;
-        setFavorites(data.favorites);
-        setRecentRecipeIds(currentId ? [currentId, ...data.recentRecipeIds.filter((id) => id !== currentId)].slice(0, 20) : data.recentRecipeIds);
-        setDark(data.dark);
-      } else setPantry(demoPantry());
-      setReady(true);
-    }).catch(() => {
-      if (!active) return;
-      setMessage("本地数据无法读取，已保留空厨房。"); setReady(true);
-    });
-    return () => { active = false; };
+    loadDeviceState()
+      .then((data) => {
+        if (!active) return;
+        if (data) {
+          setPantry(data.pantry);
+          setShopping(data.shopping);
+          setSaved(data.saved);
+          const currentId = window.location.pathname.startsWith("/recipe/")
+            ? decodeURIComponent(window.location.pathname.split("/")[2])
+            : null;
+          setFavorites(data.favorites);
+          setRecentRecipeIds(
+            currentId
+              ? [
+                  currentId,
+                  ...data.recentRecipeIds.filter((id) => id !== currentId),
+                ].slice(0, 20)
+              : data.recentRecipeIds,
+          );
+          setDark(data.dark);
+        } else setPantry(demoPantry());
+        setReady(true);
+      })
+      .catch(() => {
+        if (!active) return;
+        setMessage("本地数据无法读取，已保留空厨房。");
+        setReady(true);
+      });
+    return () => {
+      active = false;
+    };
   }, []);
   useLayoutEffect(() => {
     if (ready) {
-      saveDeviceState({ pantry, shopping, saved, favorites, recentRecipeIds, dark }).catch(() => {});
+      saveDeviceState({
+        pantry,
+        shopping,
+        saved,
+        favorites,
+        recentRecipeIds,
+        dark,
+      }).catch(() => {});
       document.documentElement.dataset.theme = dark ? "dark" : "light";
     }
   }, [ready, pantry, shopping, saved, favorites, recentRecipeIds, dark]);
   function exportData() {
-    const backup = createBackup({ pantry, shopping, saved, favorites, recentRecipeIds, dark });
-    const href = URL.createObjectURL(new Blob([JSON.stringify(backup, null, 2)], { type: "application/json" }));
-    const anchor = document.createElement("a"); anchor.href = href; anchor.download = "kitchenmate-backup.json"; anchor.click();
+    const backup = createBackup({
+      pantry,
+      shopping,
+      saved,
+      favorites,
+      recentRecipeIds,
+      dark,
+    });
+    const href = URL.createObjectURL(
+      new Blob([JSON.stringify(backup, null, 2)], { type: "application/json" }),
+    );
+    const anchor = document.createElement("a");
+    anchor.href = href;
+    anchor.download = "kitchenmate-backup.json";
+    anchor.click();
     setTimeout(() => URL.revokeObjectURL(href), 1000);
   }
   async function previewBackup(file: File | undefined) {
@@ -157,24 +227,49 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
     try {
       if (file.size > 5_000_000) throw new Error("备份文件过大");
       setBackupPreview(parseBackup(await file.text()).data);
-    } catch { setMessage("备份格式无效，请选择 KitchenMate 导出的 JSON 文件。"); }
+    } catch {
+      setMessage("备份格式无效，请选择 KitchenMate 导出的 JSON 文件。");
+    }
   }
   function restoreBackup() {
     if (!backupPreview) return;
-    setPantry(backupPreview.pantry); setShopping(backupPreview.shopping); setSaved(backupPreview.saved);
-    setFavorites(backupPreview.favorites); setRecentRecipeIds(backupPreview.recentRecipeIds); setDark(backupPreview.dark);
-    setBackupPreview(null); setMessage("备份已恢复到这台设备。");
+    setPantry(backupPreview.pantry);
+    setShopping(backupPreview.shopping);
+    setSaved(backupPreview.saved);
+    setFavorites(backupPreview.favorites);
+    setRecentRecipeIds(backupPreview.recentRecipeIds);
+    setDark(backupPreview.dark);
+    setBackupPreview(null);
+    setMessage("备份已恢复到这台设备。");
   }
   useEffect(() => {
     if (!message) return;
     const t = setTimeout(() => setMessage(""), 4500);
     return () => clearTimeout(t);
   }, [message]);
-  const allRecipes = [
-    ...new Map(
-      [...localRecipes, ...saved, ...online].map((r) => [r.id, r]),
-    ).values(),
-  ];
+  const allRecipes = useMemo(
+    () => dedupeRecipes([...verifiedRecipes, ...saved, ...online]),
+    [saved, online],
+  );
+  const ingredientIndex = useMemo(() => {
+    const index = new Map<string, Set<string>>();
+    for (const recipe of allRecipes)
+      for (const item of recipe.ingredients) {
+        if (!index.has(item.ingredientId))
+          index.set(item.ingredientId, new Set());
+        index.get(item.ingredientId)!.add(recipe.id);
+      }
+    return index;
+  }, [allRecipes]);
+  const candidates = useMemo(
+    () =>
+      new Set(
+        [...selectedIngredientIds(pantry)].flatMap((id) => [
+          ...(ingredientIndex.get(id) ?? []),
+        ]),
+      ),
+    [pantry, ingredientIndex],
+  );
   const selectedId = path.startsWith("/recipe/")
     ? decodeURIComponent(path.split("/")[2])
     : null;
@@ -214,10 +309,10 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
       if (result.error) throw new Error(result.error);
       setOnline(z.array(recipeSchema).parse(result.recipes));
       setWarning(result.warnings.join(" · "));
-      if (!result.recipes.some((r: Recipe) => r.sourceProvider !== "local"))
-        setMessage("本地菜谱已更新；在线来源未配置或没有匹配结果。");
+      if (!result.recipes.some((r: Recipe) => r.sourceProvider !== "howtocook"))
+        setMessage("已验证菜谱已更新；在线来源未配置或没有匹配结果。");
     } catch {
-      setWarning("在线菜谱暂时不可用，本地菜谱仍可使用。");
+      setWarning("在线菜谱暂时不可用，已验证菜谱仍可使用。");
     } finally {
       setLoading(false);
     }
@@ -253,9 +348,7 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
             quantity,
             id: crypto.randomUUID(),
             name: ingredientName(item.ingredientId),
-            category:
-              ingredientById.get(item.ingredientId)?.category ??
-              "其他",
+            category: ingredientById.get(item.ingredientId)?.category ?? "其他",
             checked: false,
           });
       }
@@ -268,9 +361,11 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
     );
   }
   function openRecipe(recipe: Recipe) {
-    setRecentRecipeIds((current) => [recipe.id, ...current.filter((id) => id !== recipe.id)].slice(0, 20));
+    setRecentRecipeIds((current) =>
+      [recipe.id, ...current.filter((id) => id !== recipe.id)].slice(0, 20),
+    );
     setServingChoice({ id: recipe.id, value: recipe.servings });
-    if (recipe.sourceProvider !== "local")
+    if (recipe.sourceProvider !== "howtocook")
       setSaved((prev) => [...prev.filter((r) => r.id !== recipe.id), recipe]);
     router.push(`/recipe/${encodeURIComponent(recipe.id)}`);
   }
@@ -296,7 +391,10 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
   }
   function saveImportPreview() {
     if (!importPreview) return;
-    setSaved((prev) => [...prev.filter((r) => r.id !== importPreview.id), importPreview]);
+    setSaved((prev) => [
+      ...prev.filter((r) => r.id !== importPreview.id),
+      importPreview,
+    ]);
     setMessage("菜谱已保存到这台设备，刷新页面仍可查看。");
     setImportPreview(null);
   }
@@ -304,43 +402,54 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
     if (!recipe.sourceUrl || recipe.sourceProvider !== "url-import") return;
     setLoading(true);
     try {
-      const response = await fetch("/api/import", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ url: recipe.sourceUrl }) });
-      const data = await response.json();
-      if (!response.ok) throw new Error(data.error);
-      const refreshed = recipeSchema.parse(data.recipe);
-      const changed = JSON.stringify([recipe.title, recipe.ingredients, recipe.instructions]) !== JSON.stringify([refreshed.title, refreshed.ingredients, refreshed.instructions]);
-      setSaved((prev) => [...prev.filter((item) => item.id !== recipe.id), refreshed]);
-      setOnline((prev) => [...prev.filter((item) => item.id !== recipe.id), refreshed]);
-      setMessage(changed ? "原菜谱有更新，已保存新的本地快照。" : "已检查原网页，菜谱内容没有变化。");
-    } catch (error) { setMessage(error instanceof Error ? error.message : "暂时无法检查原网页"); }
-    finally { setLoading(false); }
-  }
-  async function generateAI() {
-    setLoading(true);
-    try {
-      const response = await fetch("/api/ai", {
+      const response = await fetch("/api/import", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ingredients: pantry.map((i) => i.displayName),
-          constraints,
-        }),
+        body: JSON.stringify({ url: recipe.sourceUrl }),
       });
       const data = await response.json();
       if (!response.ok) throw new Error(data.error);
-      const recipes = z.array(recipeSchema).parse(data.recipes);
-      setSaved((prev) => [...prev, ...recipes]);
-      setQuery("");
-      setMode("最匹配");
-      setMessage("已生成 3 道候选菜谱，请检查食材与烹饪安全。");
-      router.push("/discover");
-    } catch (e) {
-      setMessage(e instanceof Error ? e.message : "AI 暂时不可用");
+      const refreshed = recipeSchema.parse(data.recipe);
+      const changed =
+        JSON.stringify([
+          recipe.title,
+          recipe.ingredients,
+          recipe.instructions,
+        ]) !==
+        JSON.stringify([
+          refreshed.title,
+          refreshed.ingredients,
+          refreshed.instructions,
+        ]);
+      setSaved((prev) => [
+        ...prev.filter((item) => item.id !== recipe.id),
+        refreshed,
+      ]);
+      setOnline((prev) => [
+        ...prev.filter((item) => item.id !== recipe.id),
+        refreshed,
+      ]);
+      setMessage(
+        changed
+          ? "原菜谱有更新，已保存新的本地快照。"
+          : "已检查原网页，菜谱内容没有变化。",
+      );
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : "暂时无法检查原网页");
     } finally {
       setLoading(false);
     }
   }
   const matches = allRecipes
+    .filter(
+      (r) =>
+        !(
+          sourceFilter === "为我推荐" &&
+          mode === "现在就能做" &&
+          pantry.length &&
+          !onlyFavorites
+        ) || candidates.has(r.id),
+    )
     .filter(
       (r) =>
         searchRecipe(r, query) &&
@@ -349,115 +458,143 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
         (!difficulty || r.difficulty === difficulty) &&
         (!cuisine || r.cuisine === cuisine) &&
         (!diet || r.tags.includes(diet)) &&
-        (!allergen ||
-          (r.sourceProvider === "local" && !r.allergens.includes(allergen))) &&
         (!equipment || r.equipment.includes(equipment)) &&
         (!onlyFavorites || favorites.includes(r.id)) &&
-        (sourceFilter === "全部" ||
-          (sourceFilter === "KitchenMate" && r.sourceProvider === "local") ||
+        (sourceFilter === "为我推荐" ||
+          (sourceFilter === "已验证菜谱" &&
+            r.provenance.type !== "USER_IMPORTED") ||
           (sourceFilter === "在线菜谱" && r.sourceProvider === "themealdb") ||
-          (sourceFilter === "我的菜谱" && saved.some((item) => item.id === r.id))),
+          (sourceFilter === "我的导入" &&
+            r.provenance.type === "USER_IMPORTED")),
     )
     .map((recipe) => ({ recipe, match: matchRecipe(recipe, pantry) }))
     .filter(({ match, recipe }) =>
-      mode === "我现在就能做"
-        ? match.missingCore === 0
-        : mode === "只差一点"
-          ? match.missingCore >= 1 && match.missingCore <= 2
-          : mode === "快手菜"
-            ? recipe.totalTime !== null && recipe.totalTime <= 30
-          : true,
+      sourceFilter !== "为我推荐" || onlyFavorites
+        ? true
+        : mode === "现在就能做"
+          ? match.missingCore === 0
+          : mode === "只差一样"
+            ? match.missingCore === 1
+            : mode === "只差两样"
+              ? match.missingCore === 2
+              : mode === "快手菜"
+                ? recipe.totalTime !== null && recipe.totalTime <= 30
+                : true,
     )
-    .sort((a, b) =>
-      mode === "消耗库存"
-        ? b.match.inventoryScore - a.match.inventoryScore ||
-          b.match.score - a.match.score
-        : b.match.score - a.match.score,
+    .sort(
+      (a, b) =>
+        a.match.missingCore - b.match.missingCore ||
+        b.match.score - a.match.score ||
+        b.match.selectedIngredientUsage - a.match.selectedIngredientUsage ||
+        Number(canCookRecipe(b.recipe)) - Number(canCookRecipe(a.recipe)),
     );
-  const pantryPicker = <IngredientPicker pantry={pantry} onToggle={(id) => setPantry((previous) => togglePantry(previous, id))} />;  const recipeCards = (limit?: number) => (
+  const pantryPicker = (
+    <IngredientPicker
+      pantry={pantry}
+      onToggle={(id) => setPantry((previous) => togglePantry(previous, id))}
+    />
+  );
+  const recipeCards = (limit?: number) => (
     <div className="recipe-grid">
-      {matches.slice(0, limit ?? visibleRecipes).map(({ recipe: r, match: m }) => (
-        <article className="recipe-card" key={r.id}>
-          <button
-            className="image-button"
-            onClick={() => openRecipe(r)}
-            aria-label={`查看${r.title}`}
-          >
-            <FoodImage recipe={r} />
-            <span className="match-badge">
-              <Leaf size={13} />
-              {m.score}% 食材匹配
-            </span>
-          </button>
-          <button
-            className={`favorite ${favorites.includes(r.id) ? "saved" : ""}`}
-            aria-label={`${favorites.includes(r.id) ? "取消收藏" : "收藏"}${r.title}`}
-            onClick={() =>
-              setFavorites((prev) =>
-                prev.includes(r.id)
-                  ? prev.filter((id) => id !== r.id)
-                  : [...prev, r.id],
-              )
-            }
-          >
-            <Heart size={17} />
-          </button>
-          <div className="recipe-body">
-            <small>
-              {r.cuisine} <span>·</span> {r.sourceName}
-            </small>
-            <button className="recipe-title" onClick={() => openRecipe(r)}>
-              {r.title}
+      {matches
+        .slice(0, limit ?? visibleRecipes)
+        .map(({ recipe: r, match: m }) => (
+          <article className="recipe-card" key={r.id}>
+            <button
+              className="image-button"
+              onClick={() => openRecipe(r)}
+              aria-label={`查看${r.title}`}
+            >
+              <FoodImage recipe={r} />
+              <span className="match-badge">
+                <Leaf size={13} />
+                {m.score}% 食材匹配
+              </span>
             </button>
-            <div className="recipe-meta">
-              <span>
-                <Clock size={14} />
-                {r.totalTime === null ? "时间未知" : `${r.totalTime} 分钟`}
-              </span>
-              <span>
-                <Flame size={14} />
-                {r.difficulty}
-              </span>
+            <button
+              className={`favorite ${favorites.includes(r.id) ? "saved" : ""}`}
+              aria-label={`${favorites.includes(r.id) ? "取消收藏" : "收藏"}${r.title}`}
+              onClick={() =>
+                setFavorites((prev) =>
+                  prev.includes(r.id)
+                    ? prev.filter((id) => id !== r.id)
+                    : [...prev, r.id],
+                )
+              }
+            >
+              <Heart size={17} />
+            </button>
+            <div className="recipe-body">
+              <small>
+                {"来源已验证"} <span>·</span> {r.sourceName}
+              </small>
+              <button className="recipe-title" onClick={() => openRecipe(r)}>
+                {r.title}
+              </button>
+              {r.instructionAvailability === "source-only" && (
+                <p>完整步骤在原网站</p>
+              )}
+              <div className="recipe-meta">
+                <span>
+                  <Clock size={14} />
+                  {r.totalTime === null ? "时间未知" : `${r.totalTime} 分钟`}
+                </span>
+                <span>
+                  <Flame size={14} />
+                  {r.difficulty}
+                </span>
+              </div>
+              <div className="match-line">
+                <span>
+                  已有 {m.available.length} / {m.totalRequiredIngredients} 种
+                </span>
+                <span>
+                  {m.missing.length
+                    ? `还缺 ${m.missing.length} 种`
+                    : "食材已备齐"}
+                </span>
+              </div>
+              <div className="progress">
+                <i style={{ width: `${m.score}%` }} />
+              </div>
+              <p className="available">
+                你已经有：
+                {m.available
+                  .map((i) => ingredientName(i.ingredientId))
+                  .join("、") || "暂未添加"}
+              </p>
+              <p className="missing">
+                还缺：
+                {m.missing
+                  .map((i) => ingredientName(i.ingredientId))
+                  .join("、") || "无"}
+              </p>
             </div>
-            <div className="match-line">
-              <span>
-                已有 {m.available.length} / {m.totalRequiredIngredients} 种
-              </span>
-              <span>
-                {m.missing.length
-                  ? `还缺 ${m.missing.length} 种`
-                  : "食材已备齐"}
-              </span>
-            </div>
-            <div className="progress">
-              <i style={{ width: `${m.score}%` }} />
-            </div>
-            <p className="available">
-              你已经有：
-              {m.available
-                .map((i) => ingredientName(i.ingredientId))
-                .join("、") || "暂未添加"}
-            </p>
-            <p className="missing">
-              还缺：
-              {m.missing
-                .map((i) => ingredientName(i.ingredientId))
-                .join("、") || "无"}
-            </p>
-          </div>
-        </article>
-      ))}
-      {!limit && matches.length > visibleRecipes && <button className="secondary load-more" onClick={() => setVisibleRecipes((count) => count + 24)}>加载更多菜谱</button>}
+          </article>
+        ))}
+      {!limit && matches.length > visibleRecipes && (
+        <button
+          className="secondary load-more"
+          onClick={() => setVisibleRecipes((count) => count + 24)}
+        >
+          加载更多菜谱
+        </button>
+      )}
     </div>
   );
-  if (cooking && selected)
+  if (cooking && selected && canCookRecipe(selected))
     return (
       <CookingMode
         recipe={selected}
         onExit={() => router.push(`/recipe/${encodeURIComponent(selected.id)}`)}
       />
     );
-  if (!ready) return <main aria-live="polite" className="loading-state">正在读取本机厨房数据…</main>;
+  if (!ready)
+    return (
+      <main aria-live="polite" className="loading-state">
+        正在读取本机厨房数据…
+      </main>
+    );
   return (
     <>
       <header className="site-header">
@@ -508,9 +645,9 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
                   <em>厨房里，就有答案。</em>
                 </h1>
                 <p>
-                  看看现有的食材，找到刚刚好的一餐。
+                  选出手头有的食材，找到真实来源的菜谱。
                   <br />
-                  少一点纠结，多一点家的味道。
+                  每份正式教程都能查看原始出处。
                 </p>
                 <a href="#ingredients" className="primary">
                   <Plus size={18} /> 添加我的食材
@@ -572,10 +709,8 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
                           )
                         }
                       >
-                        {
-                          ingredientById.get(p.ingredientId)?.emoji
-                        }{" "}
-                        {p.displayName}
+                        {ingredientById.get(p.ingredientId)?.emoji}{" "}
+                        {ingredientName(p.ingredientId)}
                         <X size={12} />
                       </button>
                     ))
@@ -584,12 +719,12 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
                   )}
                 </div>
                 <Link className="text-link" href="/pantry">
-                  管理数量与保质期 <ArrowRight size={14} />
+                  选择我的食材 <ArrowRight size={14} />
                 </Link>
                 <Link href="/discover" className="primary full">
                   看看我能做什么 <ArrowRight size={18} />
                 </Link>
-                <span className="tiny">无需填数量，也能找到合适的菜</span>
+                <span className="tiny">点选食材，查看真实来源</span>
               </aside>
             </div>
             <section className="recommend-section">
@@ -615,76 +750,121 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
             </section>
           </>
         )}
-        {path === "/pantry" && <PantryPageView
-          pantry={pantry}
-          setPantry={setPantry}
-          picker={pantryPicker}
-          onDemo={() => { setPantry(demoPantry()); setMessage("已装入示范厨房"); }}
-          onExport={exportData}
-          onBackupFile={previewBackup}
-          backupPreview={backupPreview}
-          onRestore={restoreBackup}
-          onCancelRestore={() => setBackupPreview(null)}
-        />}
-        {path === "/discover" && <DiscoverPageView
-          pantryCount={pantry.length}
-          query={query} setQuery={setQuery}
-          loading={loading} onSearch={searchOnline}
-          mode={mode} setMode={setMode}
-          onlyFavorites={onlyFavorites} setOnlyFavorites={setOnlyFavorites}
-          filtersOpen={filters} setFiltersOpen={setFilters}
-          sourceFilter={sourceFilter} setSourceFilter={setSourceFilter}
-          resetVisible={() => setVisibleRecipes(24)}
-          maxTime={maxTime} setMaxTime={setMaxTime}
-          difficulty={difficulty} setDifficulty={setDifficulty}
-          cuisine={cuisine} setCuisine={setCuisine}
-          diet={diet} setDiet={setDiet}
-          allergen={allergen} setAllergen={setAllergen}
-          equipment={equipment} setEquipment={setEquipment}
-          warning={warning} resultCount={matches.length} cards={recipeCards()}
-          recentRecipes={recentRecipeIds.map((id) => allRecipes.find((recipe) => recipe.id === id)).filter((recipe): recipe is Recipe => Boolean(recipe)).slice(0, 5)}
-          aiEnabled={aiEnabled} constraints={constraints} setConstraints={setConstraints}
-          onGenerateAI={generateAI}
-        />}
-        {selected && !cooking && <RecipeDetailView
-          recipe={selected}
-          pantry={pantry}
-          servings={servings}
-          setServings={setServings}
-          loading={loading}
-          onRefresh={() => refreshImportedRecipe(selected)}
-          onAddMissing={() => addMissing(selected)}
-          artwork={<FoodImage recipe={selected} big />}
-          jsonLd={<RecipeJsonLd recipe={selected} />}
-        />}
+        {path === "/pantry" && (
+          <PantryPageView
+            pantry={pantry}
+            setPantry={setPantry}
+            picker={pantryPicker}
+            onDemo={() => {
+              setPantry(demoPantry());
+              setMessage("已装入示范厨房");
+            }}
+            onExport={exportData}
+            onBackupFile={previewBackup}
+            backupPreview={backupPreview}
+            onRestore={restoreBackup}
+            onCancelRestore={() => setBackupPreview(null)}
+          />
+        )}
+        {path === "/discover" && (
+          <DiscoverPageView
+            pantryCount={pantry.length}
+            query={query}
+            setQuery={setQuery}
+            loading={loading}
+            onSearch={searchOnline}
+            mode={mode}
+            setMode={setMode}
+            onlyFavorites={onlyFavorites}
+            setOnlyFavorites={setOnlyFavorites}
+            filtersOpen={filters}
+            setFiltersOpen={setFilters}
+            sourceFilter={sourceFilter}
+            setSourceFilter={setSourceFilter}
+            resetVisible={() => setVisibleRecipes(24)}
+            maxTime={maxTime}
+            setMaxTime={setMaxTime}
+            difficulty={difficulty}
+            setDifficulty={setDifficulty}
+            cuisine={cuisine}
+            setCuisine={setCuisine}
+            diet={diet}
+            setDiet={setDiet}
+            equipment={equipment}
+            setEquipment={setEquipment}
+            warning={warning}
+            resultCount={matches.length}
+            cards={recipeCards()}
+            recentRecipes={recentRecipeIds
+              .map((id) => allRecipes.find((recipe) => recipe.id === id))
+              .filter((recipe): recipe is Recipe => Boolean(recipe))
+              .slice(0, 5)}
+          />
+        )}
+        {selected && cooking && !canCookRecipe(selected) && (
+          <section className="empty">
+            <h2>完整步骤在原网站</h2>
+            <a
+              className="primary"
+              href={selected.sourceUrl!}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              查看原始教程
+            </a>
+          </section>
+        )}
+        {selected && !cooking && (
+          <RecipeDetailView
+            recipe={selected}
+            pantry={pantry}
+            servings={servings}
+            setServings={setServings}
+            loading={loading}
+            onRefresh={() => refreshImportedRecipe(selected)}
+            onAddMissing={() => addMissing(selected)}
+            artwork={<FoodImage recipe={selected} big />}
+            jsonLd={<RecipeJsonLd recipe={selected} />}
+          />
+        )}
         {selectedId && !selected && (
           <div className="empty">
             <h2>正在查找菜谱</h2>
-            <p>
-              如果未能载入，请返回发现页重新选择。导入和 AI 菜谱保存在当前设备。
-            </p>
+            <p>如果未能载入，请返回发现页重新选择。导入菜谱保存在当前设备。</p>
             <Link href="/discover" className="primary">
               返回发现菜谱
             </Link>
           </div>
         )}
-        {path === "/shopping" && <ShoppingPageView shopping={shopping} onChange={setShopping} />}
-        {path === "/import" && <ImportPageView
-          importUrl={importUrl}
-          setImportUrl={setImportUrl}
-          preview={importPreview}
-          clearPreview={() => setImportPreview(null)}
-          loading={loading}
-          savedCount={saved.length}
-          onImport={importRecipe}
-          onSave={saveImportPreview}
-          onView={() => {
-            if (!importPreview) return;
-            setRecentRecipeIds((current) => [importPreview.id, ...current.filter((id) => id !== importPreview.id)].slice(0, 20));
-            setOnline((prev) => [...prev.filter((r) => r.id !== importPreview.id), importPreview]);
-            router.push("/recipe/" + encodeURIComponent(importPreview.id));
-          }}
-        />}
+        {path === "/shopping" && (
+          <ShoppingPageView shopping={shopping} onChange={setShopping} />
+        )}
+        {path === "/import" && (
+          <ImportPageView
+            importUrl={importUrl}
+            setImportUrl={setImportUrl}
+            preview={importPreview}
+            clearPreview={() => setImportPreview(null)}
+            loading={loading}
+            savedCount={saved.length}
+            onImport={importRecipe}
+            onSave={saveImportPreview}
+            onView={() => {
+              if (!importPreview) return;
+              setRecentRecipeIds((current) =>
+                [
+                  importPreview.id,
+                  ...current.filter((id) => id !== importPreview.id),
+                ].slice(0, 20),
+              );
+              setOnline((prev) => [
+                ...prev.filter((r) => r.id !== importPreview.id),
+                importPreview,
+              ]);
+              router.push("/recipe/" + encodeURIComponent(importPreview.id));
+            }}
+          />
+        )}
       </main>
       <footer>
         <Link href="/" className="footer-brand">

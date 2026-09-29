@@ -76,6 +76,11 @@ export function ImportPageView({
         <section className="panel import-preview" aria-label="导入预览">
           <h2>找到了这个菜谱</h2>
           <h3>{preview.title}</h3>
+          {preview.provenance.type === "FIRST_PARTY_TEST" && (
+            <p className="notice">
+              本站导入测试夹具（FIRST_PARTY_TEST），仅验证导入流程，不进入正式推荐。
+            </p>
+          )}
           {preview.image && (
             <img
               src={preview.image}
@@ -96,7 +101,11 @@ export function ImportPageView({
             <button className="primary" onClick={onSave}>
               保存到我的菜谱
             </button>
-            <button className="secondary" onClick={onView}>
+            <button
+              className="secondary"
+              onClick={onView}
+              disabled={preview.provenance.type === "FIRST_PARTY_TEST"}
+            >
               直接查看
             </button>
             <button className="secondary" onClick={clearPreview}>
@@ -107,9 +116,10 @@ export function ImportPageView({
       )}
       <section className="import-guide-grid">
         <article className="panel">
-          <h2>保证成功的示例</h2>
+          <h2>本站导入测试示例</h2>
           <p>
-            本站公开的「番茄炒蛋」菜谱页面包含完整的 Schema.org Recipe 数据。
+            本站测试夹具包含 Schema.org Recipe
+            数据，仅用于检查导入流程，不代表外站真实来源。
           </p>
           <button
             className="secondary"
@@ -160,6 +170,9 @@ export function ImportPageView({
             <article className="panel" key={example.url}>
               <span className="eyebrow">{example.siteName}</span>
               <h3>{example.recipeTitle}</h3>
+              {example.status === "temporarily-unavailable" && (
+                <p>最近检查暂时无法读取；可在原网站查看，稍后重试导入。</p>
+              )}
               <p>
                 {example.fieldsAvailable
                   .map((field) => `✓ ${field}`)

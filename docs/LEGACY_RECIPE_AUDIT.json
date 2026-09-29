@@ -1,0 +1,822 @@
+[
+  {
+    "title": "番茄炒蛋",
+    "oldId": "tomato-eggs",
+    "sourceFound": true,
+    "sourceUrl": "https://github.com/Anduin2017/HowToCook/blob/a2d45c6984dff9ee941da0e7c452f7965965d962/dishes/vegetable_dish/%E8%A5%BF%E7%BA%A2%E6%9F%BF%E7%82%92%E9%B8%A1%E8%9B%8B.md",
+    "newTrust": "OPEN_LICENSE",
+    "replacementId": "howtocook:2130948c0fd24404",
+    "oldInstructionsKept": false,
+    "keptInProduction": true
+  },
+  {
+    "title": "土豆炖牛肉",
+    "oldId": "beef-potato",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "宫保鸡丁",
+    "oldId": "kung-pao",
+    "sourceFound": true,
+    "sourceUrl": "https://github.com/Anduin2017/HowToCook/blob/a2d45c6984dff9ee941da0e7c452f7965965d962/dishes/meat_dish/%E5%AE%AB%E4%BF%9D%E9%B8%A1%E4%B8%81/%E5%AE%AB%E4%BF%9D%E9%B8%A1%E4%B8%81.md",
+    "newTrust": "OPEN_LICENSE",
+    "replacementId": "howtocook:f727a804d3184577",
+    "oldInstructionsKept": false,
+    "keptInProduction": true
+  },
+  {
+    "title": "青椒肉丝",
+    "oldId": "pepper-pork",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "蒜蓉西兰花",
+    "oldId": "garlic-broccoli",
+    "sourceFound": true,
+    "sourceUrl": "https://github.com/Anduin2017/HowToCook/blob/a2d45c6984dff9ee941da0e7c452f7965965d962/dishes/vegetable_dish/%E8%92%9C%E8%93%89%E8%A5%BF%E5%85%B0%E8%8A%B1.md",
+    "newTrust": "OPEN_LICENSE",
+    "replacementId": "howtocook:92f286f58f84ff0a",
+    "oldInstructionsKept": false,
+    "keptInProduction": true
+  },
+  {
+    "title": "黄金蛋炒饭",
+    "oldId": "egg-rice",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "红烧鸡腿",
+    "oldId": "braised-chicken",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "家常麻婆豆腐",
+    "oldId": "mapo-tofu",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "洋葱炒蛋",
+    "oldId": "onion-eggs",
+    "sourceFound": true,
+    "sourceUrl": "https://github.com/Anduin2017/HowToCook/blob/a2d45c6984dff9ee941da0e7c452f7965965d962/dishes/vegetable_dish/%E6%B4%8B%E8%91%B1%E7%82%92%E9%B8%A1%E8%9B%8B/%E6%B4%8B%E8%91%B1%E7%82%92%E9%B8%A1%E8%9B%8B.md",
+    "newTrust": "OPEN_LICENSE",
+    "replacementId": "howtocook:11b4b5d7abe0bafa",
+    "oldInstructionsKept": false,
+    "keptInProduction": true
+  },
+  {
+    "title": "可乐鸡翅",
+    "oldId": "cola-wings",
+    "sourceFound": true,
+    "sourceUrl": "https://github.com/Anduin2017/HowToCook/blob/a2d45c6984dff9ee941da0e7c452f7965965d962/dishes/meat_dish/%E5%8F%AF%E4%B9%90%E9%B8%A1%E7%BF%85.md",
+    "newTrust": "OPEN_LICENSE",
+    "replacementId": "howtocook:3a892c884d6f39e0",
+    "oldInstructionsKept": false,
+    "keptInProduction": true
+  },
+  {
+    "title": "番茄鸡肉意面",
+    "oldId": "chicken-pasta",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "奶油蘑菇意面",
+    "oldId": "mushroom-pasta",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "青椒炒蛋",
+    "oldId": "pepper-eggs",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "韭菜炒蛋",
+    "oldId": "chive-eggs",
+    "sourceFound": true,
+    "sourceUrl": "https://github.com/Anduin2017/HowToCook/blob/a2d45c6984dff9ee941da0e7c452f7965965d962/dishes/vegetable_dish/%E9%9F%AD%E8%8F%9C%E7%82%92%E8%9B%8B/%E9%9F%AD%E8%8F%9C%E7%82%92%E8%9B%8B.md",
+    "newTrust": "OPEN_LICENSE",
+    "replacementId": "howtocook:cf76d9b00d1d4cfd",
+    "oldInstructionsKept": false,
+    "keptInProduction": true
+  },
+  {
+    "title": "虾仁炒蛋",
+    "oldId": "shrimp-eggs",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "家常蒸蛋",
+    "oldId": "steamed-eggs",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "香煎荷包蛋",
+    "oldId": "fried-eggs",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "菠菜炒蛋",
+    "oldId": "spinach-eggs",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "番茄蛋花汤",
+    "oldId": "tomato-egg-soup",
+    "sourceFound": true,
+    "sourceUrl": "https://github.com/Anduin2017/HowToCook/blob/a2d45c6984dff9ee941da0e7c452f7965965d962/dishes/soup/%E8%A5%BF%E7%BA%A2%E6%9F%BF%E9%B8%A1%E8%9B%8B%E6%B1%A4.md",
+    "newTrust": "OPEN_LICENSE",
+    "replacementId": "howtocook:414f79bd9c044d7a",
+    "oldInstructionsKept": false,
+    "keptInProduction": true
+  },
+  {
+    "title": "黄瓜炒蛋",
+    "oldId": "cucumber-eggs",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "香菇炒蛋",
+    "oldId": "mushroom-eggs",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "酱油炒饭",
+    "oldId": "soy-fried-rice",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "葱油拌面",
+    "oldId": "scallion-noodles",
+    "sourceFound": true,
+    "sourceUrl": "https://github.com/Anduin2017/HowToCook/blob/a2d45c6984dff9ee941da0e7c452f7965965d962/dishes/staple/%E8%91%B1%E6%B2%B9%E6%8B%8C%E9%9D%A2.md",
+    "newTrust": "OPEN_LICENSE",
+    "replacementId": "howtocook:6aa1fa07f6c9c635",
+    "oldInstructionsKept": false,
+    "keptInProduction": true
+  },
+  {
+    "title": "番茄鸡蛋面",
+    "oldId": "tomato-egg-noodles",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "炒方便面",
+    "oldId": "stir-fried-instant-noodles",
+    "sourceFound": true,
+    "sourceUrl": "https://github.com/Anduin2017/HowToCook/blob/a2d45c6984dff9ee941da0e7c452f7965965d962/dishes/staple/%E7%82%92%E6%96%B9%E4%BE%BF%E9%9D%A2/%E7%82%92%E6%96%B9%E4%BE%BF%E9%9D%A2.md",
+    "newTrust": "OPEN_LICENSE",
+    "replacementId": "howtocook:a994a8dc42ec743f",
+    "oldInstructionsKept": false,
+    "keptInProduction": true
+  },
+  {
+    "title": "蒜蓉生菜",
+    "oldId": "garlic-lettuce",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "蚝油生菜",
+    "oldId": "oyster-lettuce",
+    "sourceFound": true,
+    "sourceUrl": "https://github.com/Anduin2017/HowToCook/blob/a2d45c6984dff9ee941da0e7c452f7965965d962/dishes/vegetable_dish/%E8%9A%9D%E6%B2%B9%E7%94%9F%E8%8F%9C.md",
+    "newTrust": "OPEN_LICENSE",
+    "replacementId": "howtocook:9aafc1145d54a0f4",
+    "oldInstructionsKept": false,
+    "keptInProduction": true
+  },
+  {
+    "title": "清炒上海青",
+    "oldId": "garlic-shanghai-greens",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "蒜香菠菜",
+    "oldId": "garlic-spinach",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "手撕包菜",
+    "oldId": "hand-torn-cabbage",
+    "sourceFound": true,
+    "sourceUrl": "https://github.com/Anduin2017/HowToCook/blob/a2d45c6984dff9ee941da0e7c452f7965965d962/dishes/vegetable_dish/%E6%89%8B%E6%92%95%E5%8C%85%E8%8F%9C/%E6%89%8B%E6%92%95%E5%8C%85%E8%8F%9C.md",
+    "newTrust": "OPEN_LICENSE",
+    "replacementId": "howtocook:cf8cf91d51ff6fae",
+    "oldInstructionsKept": false,
+    "keptInProduction": true
+  },
+  {
+    "title": "酸辣土豆丝",
+    "oldId": "sour-potato-shreds",
+    "sourceFound": true,
+    "sourceUrl": "https://github.com/Anduin2017/HowToCook/blob/a2d45c6984dff9ee941da0e7c452f7965965d962/dishes/vegetable_dish/%E9%85%B8%E8%BE%A3%E5%9C%9F%E8%B1%86%E4%B8%9D.md",
+    "newTrust": "OPEN_LICENSE",
+    "replacementId": "howtocook:9190d44233e72745",
+    "oldInstructionsKept": false,
+    "keptInProduction": true
+  },
+  {
+    "title": "蒜香西葫芦",
+    "oldId": "garlic-zucchini",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "拍黄瓜",
+    "oldId": "cucumber-salad",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "凉拌番茄",
+    "oldId": "tomato-salad",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "蒜香茄子",
+    "oldId": "garlic-eggplant",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "玉米蛋花汤",
+    "oldId": "corn-egg-soup",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "蒜香烤鸡翅",
+    "oldId": "garlic-chicken-wings",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "空气炸锅鸡翅",
+    "oldId": "air-fryer-wings",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "土豆烧鸡",
+    "oldId": "potato-braised-chicken",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "咖喱鸡",
+    "oldId": "curry-chicken",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "香煎鸡胸",
+    "oldId": "pan-seared-chicken",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "照烧鸡腿",
+    "oldId": "teriyaki-chicken-thigh",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "白切鸡",
+    "oldId": "white-cut-chicken",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "香菇炖鸡",
+    "oldId": "chicken-mushroom-stew",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "鱼香肉丝",
+    "oldId": "fish-fragrant-pork",
+    "sourceFound": true,
+    "sourceUrl": "https://github.com/Anduin2017/HowToCook/blob/a2d45c6984dff9ee941da0e7c452f7965965d962/dishes/meat_dish/%E9%B1%BC%E9%A6%99%E8%82%89%E4%B8%9D.md",
+    "newTrust": "OPEN_LICENSE",
+    "replacementId": "howtocook:5f3a3719b0e0ae36",
+    "oldInstructionsKept": false,
+    "keptInProduction": true
+  },
+  {
+    "title": "回锅肉",
+    "oldId": "twice-cooked-pork",
+    "sourceFound": true,
+    "sourceUrl": "https://github.com/Anduin2017/HowToCook/blob/a2d45c6984dff9ee941da0e7c452f7965965d962/dishes/meat_dish/%E5%9B%9E%E9%94%85%E8%82%89/%E5%9B%9E%E9%94%85%E8%82%89.md",
+    "newTrust": "OPEN_LICENSE",
+    "replacementId": "howtocook:dacc0e7e690a15f0",
+    "oldInstructionsKept": false,
+    "keptInProduction": true
+  },
+  {
+    "title": "红烧肉",
+    "oldId": "red-braised-pork",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "糖醋里脊",
+    "oldId": "sweet-sour-pork",
+    "sourceFound": true,
+    "sourceUrl": "https://github.com/Anduin2017/HowToCook/blob/a2d45c6984dff9ee941da0e7c452f7965965d962/dishes/meat_dish/%E7%B3%96%E9%86%8B%E9%87%8C%E8%84%8A.md",
+    "newTrust": "OPEN_LICENSE",
+    "replacementId": "howtocook:788feaed2146ba64",
+    "oldInstructionsKept": false,
+    "keptInProduction": true
+  },
+  {
+    "title": "蒜苔炒肉",
+    "oldId": "garlic-sprout-pork",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "肉末茄子",
+    "oldId": "minced-pork-eggplant",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "肉末豆腐",
+    "oldId": "minced-pork-tofu",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "排骨炖土豆",
+    "oldId": "potato-pork-ribs",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "糖醋排骨",
+    "oldId": "sweet-sour-ribs",
+    "sourceFound": true,
+    "sourceUrl": "https://github.com/Anduin2017/HowToCook/blob/a2d45c6984dff9ee941da0e7c452f7965965d962/dishes/meat_dish/%E7%B3%96%E9%86%8B%E6%8E%92%E9%AA%A8/%E7%B3%96%E9%86%8B%E6%8E%92%E9%AA%A8.md",
+    "newTrust": "OPEN_LICENSE",
+    "replacementId": "howtocook:39425dec38664a3b",
+    "oldInstructionsKept": false,
+    "keptInProduction": true
+  },
+  {
+    "title": "红烧排骨",
+    "oldId": "red-braised-ribs",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "番茄炖牛腩",
+    "oldId": "tomato-beef-brisket",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "黑椒牛柳",
+    "oldId": "black-pepper-beef",
+    "sourceFound": true,
+    "sourceUrl": "https://github.com/Anduin2017/HowToCook/blob/a2d45c6984dff9ee941da0e7c452f7965965d962/dishes/meat_dish/%E9%BB%91%E6%A4%92%E7%89%9B%E6%9F%B3/%E9%BB%91%E6%A4%92%E7%89%9B%E6%9F%B3.md",
+    "newTrust": "OPEN_LICENSE",
+    "replacementId": "howtocook:e38c861fa4b779d7",
+    "oldInstructionsKept": false,
+    "keptInProduction": true
+  },
+  {
+    "title": "洋葱炒牛肉",
+    "oldId": "onion-beef",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "咖喱牛肉",
+    "oldId": "curry-beef",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "芹菜炒牛肉",
+    "oldId": "celery-beef",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "家常豆腐",
+    "oldId": "home-style-tofu",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "红烧豆腐",
+    "oldId": "red-braised-tofu",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "香煎豆腐",
+    "oldId": "pan-fried-tofu",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "白菜炖豆腐",
+    "oldId": "cabbage-tofu-stew",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "菌菇豆腐汤",
+    "oldId": "tofu-mushroom-soup",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "地三鲜",
+    "oldId": "three-delicacies",
+    "sourceFound": true,
+    "sourceUrl": "https://github.com/Anduin2017/HowToCook/blob/a2d45c6984dff9ee941da0e7c452f7965965d962/dishes/vegetable_dish/%E5%9C%B0%E4%B8%89%E9%B2%9C/%E5%9C%B0%E4%B8%89%E9%B2%9C.md",
+    "newTrust": "OPEN_LICENSE",
+    "replacementId": "howtocook:0250e6ee464f70c8",
+    "oldInstructionsKept": false,
+    "keptInProduction": true
+  },
+  {
+    "title": "红烧茄子",
+    "oldId": "braised-eggplant",
+    "sourceFound": true,
+    "sourceUrl": "https://github.com/Anduin2017/HowToCook/blob/a2d45c6984dff9ee941da0e7c452f7965965d962/dishes/vegetable_dish/%E7%BA%A2%E7%83%A7%E8%8C%84%E5%AD%90.md",
+    "newTrust": "OPEN_LICENSE",
+    "replacementId": "howtocook:5fa782ab3b20344d",
+    "oldInstructionsKept": false,
+    "keptInProduction": true
+  },
+  {
+    "title": "干煸四季豆",
+    "oldId": "dry-fried-green-beans",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "冬瓜汤",
+    "oldId": "winter-melon-soup",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "清炒藕片",
+    "oldId": "lotus-root-stir-fry",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "胡萝卜炒土豆",
+    "oldId": "carrot-potato-stir-fry",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "蒜香口蘑",
+    "oldId": "garlic-mushrooms",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "鸡肉炒饭",
+    "oldId": "chicken-fried-rice",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "家常扬州炒饭",
+    "oldId": "yangzhou-fried-rice",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "蔬菜炒乌冬",
+    "oldId": "udon-stir-fry",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "意大利肉酱面",
+    "oldId": "meat-sauce-pasta",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "蒜香虾仁意面",
+    "oldId": "garlic-shrimp-pasta",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "香煎三文鱼",
+    "oldId": "pan-seared-salmon",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "清蒸鲈鱼",
+    "oldId": "steamed-fish",
+    "sourceFound": true,
+    "sourceUrl": "https://github.com/Anduin2017/HowToCook/blob/a2d45c6984dff9ee941da0e7c452f7965965d962/dishes/aquatic/%E6%B8%85%E8%92%B8%E9%B2%88%E9%B1%BC/%E6%B8%85%E8%92%B8%E9%B2%88%E9%B1%BC.md",
+    "newTrust": "OPEN_LICENSE",
+    "replacementId": "howtocook:547705f2774cf0ed",
+    "oldInstructionsKept": false,
+    "keptInProduction": true
+  },
+  {
+    "title": "西兰花炒虾仁",
+    "oldId": "shrimp-broccoli",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "蒜香花甲",
+    "oldId": "garlic-clams",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  },
+  {
+    "title": "紫菜蛋花汤",
+    "oldId": "seaweed-egg-soup",
+    "sourceFound": true,
+    "sourceUrl": "https://github.com/Anduin2017/HowToCook/blob/a2d45c6984dff9ee941da0e7c452f7965965d962/dishes/soup/%E7%B4%AB%E8%8F%9C%E8%9B%8B%E8%8A%B1%E6%B1%A4.md",
+    "newTrust": "OPEN_LICENSE",
+    "replacementId": "howtocook:b435c11c8067498b",
+    "oldInstructionsKept": false,
+    "keptInProduction": true
+  },
+  {
+    "title": "花生酱拌面",
+    "oldId": "peanut-noodles",
+    "sourceFound": false,
+    "sourceUrl": null,
+    "newTrust": "UNVERIFIED",
+    "replacementId": null,
+    "oldInstructionsKept": false,
+    "keptInProduction": false
+  }
+]

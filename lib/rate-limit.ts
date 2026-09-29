@@ -9,12 +9,19 @@ export function rateLimit(key: string, limit = 15, windowMs = 60000) {
 }
 export function clientKey(request: Request) {
   // Railway sets X-Real-IP at its edge. Ignore user-supplied forwarding chains.
-  const trusted = process.env.RAILWAY_ENVIRONMENT ? request.headers.get("x-real-ip") : null;
+  const trusted = process.env.RAILWAY_ENVIRONMENT
+    ? request.headers.get("x-real-ip")
+    : null;
   if (trusted && /^[0-9a-f:.]{3,45}$/i.test(trusted)) return trusted;
   // Unknown proxy topology: share a conservative budget instead of trusting spoofable headers.
   return "unknown";
 }
-export function rateLimitRequest(request: Request, endpoint: string, limit: number, windowMs = 60000) {
+export function rateLimitRequest(
+  request: Request,
+  endpoint: string,
+  limit: number,
+  windowMs = 60000,
+) {
   return rateLimit(`${endpoint}:${clientKey(request)}`, limit, windowMs);
 }
 export function sameOrigin(request: Request) {
@@ -23,8 +30,15 @@ export function sameOrigin(request: Request) {
   try {
     const parsed = new URL(origin);
     const host = request.headers.get("host");
-    return parsed.origin === new URL(request.url).origin ||
-      (host !== null && parsed.host === host &&
-        (parsed.protocol === "https:" || parsed.hostname === "localhost" || parsed.hostname === "127.0.0.1"));
-  } catch { return false; }
+    return (
+      parsed.origin === new URL(request.url).origin ||
+      (host !== null &&
+        parsed.host === host &&
+        (parsed.protocol === "https:" ||
+          parsed.hostname === "localhost" ||
+          parsed.hostname === "127.0.0.1"))
+    );
+  } catch {
+    return false;
+  }
 }

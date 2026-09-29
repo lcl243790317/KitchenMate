@@ -1,0 +1,1639 @@
+{
+  "茄子": [
+    "eggplant",
+    "aubergine",
+    "eggplants"
+  ],
+  "彩椒": [
+    "bell pepper",
+    "bell peppers"
+  ],
+  "红椒": [
+    "red pepper",
+    "red bell pepper",
+    "red peppers"
+  ],
+  "黄椒": [
+    "yellow pepper",
+    "yellow bell pepper"
+  ],
+  "小米椒": [
+    "bird's eye chili",
+    "bird eye chilli"
+  ],
+  "二荆条": [
+    "erjingtiao chili"
+  ],
+  "尖椒": [
+    "long green chili"
+  ],
+  "杭椒": [
+    "hangzhou pepper"
+  ],
+  "白菜心": [
+    "napa cabbage heart"
+  ],
+  "娃娃菜": [
+    "baby napa cabbage"
+  ],
+  "上海青": [
+    "baby bok choy",
+    "青江菜",
+    "小青菜"
+  ],
+  "油菜": [
+    "choy sum greens"
+  ],
+  "菠菜": [
+    "spinach",
+    "baby spinach"
+  ],
+  "生菜": [
+    "lettuce"
+  ],
+  "空心菜": [
+    "water spinach",
+    "ong choy"
+  ],
+  "菜心": [
+    "choy sum"
+  ],
+  "芥蓝": [
+    "chinese broccoli",
+    "gai lan"
+  ],
+  "花菜": [
+    "cauliflower",
+    "菜花"
+  ],
+  "紫甘蓝": [
+    "red cabbage",
+    "purple cabbage"
+  ],
+  "包菜": [
+    "round cabbage",
+    "圆白菜"
+  ],
+  "卷心菜": [
+    "head cabbage"
+  ],
+  "黄瓜": [
+    "cucumber",
+    "cucumbers"
+  ],
+  "丝瓜": [
+    "luffa",
+    "loofah"
+  ],
+  "冬瓜": [
+    "winter melon",
+    "wax gourd"
+  ],
+  "南瓜": [
+    "pumpkin",
+    "pumpkins"
+  ],
+  "西葫芦": [
+    "zucchini",
+    "courgette",
+    "courgettes"
+  ],
+  "白萝卜": [
+    "daikon",
+    "white radish"
+  ],
+  "青萝卜": [
+    "green radish"
+  ],
+  "莲藕": [
+    "lotus root"
+  ],
+  "山药": [
+    "chinese yam"
+  ],
+  "芋头": [
+    "taro"
+  ],
+  "甜玉米": [
+    "sweet corn"
+  ],
+  "糯玉米": [
+    "waxy corn"
+  ],
+  "豌豆": [
+    "peas",
+    "green peas"
+  ],
+  "荷兰豆": [
+    "snow peas",
+    "snow pea"
+  ],
+  "四季豆": [
+    "green beans",
+    "green bean"
+  ],
+  "扁豆": [
+    "hyacinth bean"
+  ],
+  "豆角": [
+    "long beans"
+  ],
+  "豇豆": [
+    "yardlong beans",
+    "cowpea"
+  ],
+  "毛豆": [
+    "edamame"
+  ],
+  "蚕豆": [
+    "fava beans",
+    "broad beans"
+  ],
+  "芦笋": [
+    "asparagus"
+  ],
+  "竹笋": [
+    "bamboo shoots",
+    "bamboo shoot"
+  ],
+  "莴笋": [
+    "celtuce",
+    "stem lettuce"
+  ],
+  "茭白": [
+    "water bamboo"
+  ],
+  "芹菜": [
+    "chinese celery"
+  ],
+  "西芹": [
+    "celery",
+    "celery stalks"
+  ],
+  "香菜": [
+    "cilantro",
+    "fresh coriander"
+  ],
+  "韭菜": [
+    "garlic chives",
+    "chinese chives"
+  ],
+  "韭黄": [
+    "yellow chives"
+  ],
+  "蒜苔": [
+    "garlic scapes"
+  ],
+  "蒜苗": [
+    "green garlic"
+  ],
+  "大葱": [
+    "welsh onion"
+  ],
+  "红葱头": [
+    "shallot",
+    "shallots"
+  ],
+  "红洋葱": [
+    "red onion",
+    "red onions"
+  ],
+  "紫洋葱": [
+    "purple onion",
+    "purple onions"
+  ],
+  "苦瓜": [
+    "bitter melon",
+    "bitter gourd"
+  ],
+  "秋葵": [
+    "okra"
+  ],
+  "西洋菜": [
+    "watercress"
+  ],
+  "苋菜": [
+    "amaranth greens"
+  ],
+  "荠菜": [
+    "shepherd's purse"
+  ],
+  "茼蒿": [
+    "chrysanthemum greens"
+  ],
+  "油麦菜": [
+    "youmai lettuce"
+  ],
+  "羽衣甘蓝": [
+    "kale"
+  ],
+  "芝麻菜": [
+    "arugula",
+    "rocket"
+  ],
+  "罗马生菜": [
+    "romaine lettuce"
+  ],
+  "冰草": [
+    "ice plant"
+  ],
+  "甜菜根": [
+    "beetroot",
+    "beets"
+  ],
+  "牛蒡": [
+    "burdock root"
+  ],
+  "荸荠": [
+    "water chestnut",
+    "water chestnuts"
+  ],
+  "菱角": [
+    "water caltrop"
+  ],
+  "藕带": [
+    "lotus shoots"
+  ],
+  "榨菜": [
+    "preserved mustard stem"
+  ],
+  "酸菜": [
+    "pickled mustard greens"
+  ],
+  "泡菜": [
+    "kimchi"
+  ],
+  "雪里蕻": [
+    "potherb mustard"
+  ],
+  "青笋": [
+    "green celtuce"
+  ],
+  "红薯叶": [
+    "sweet potato leaves"
+  ],
+  "南瓜尖": [
+    "pumpkin shoots"
+  ],
+  "嫩姜": [
+    "young ginger"
+  ],
+  "蒜黄": [
+    "yellow garlic shoots"
+  ],
+  "洋蓟": [
+    "artichoke",
+    "artichokes"
+  ],
+  "抱子甘蓝": [
+    "brussels sprouts"
+  ],
+  "苹果": [
+    "apple",
+    "apples"
+  ],
+  "香蕉": [
+    "banana",
+    "bananas",
+    "ripe bananas"
+  ],
+  "梨": [
+    "pear",
+    "pears"
+  ],
+  "橙子": [
+    "orange",
+    "oranges"
+  ],
+  "柠檬": [
+    "lemon",
+    "lemons"
+  ],
+  "青柠": [
+    "lime",
+    "limes"
+  ],
+  "葡萄": [
+    "grapes",
+    "grape"
+  ],
+  "草莓": [
+    "strawberry",
+    "strawberries"
+  ],
+  "蓝莓": [
+    "blueberry",
+    "blueberries"
+  ],
+  "树莓": [
+    "raspberry",
+    "raspberries"
+  ],
+  "黑莓": [
+    "blackberry",
+    "blackberries"
+  ],
+  "猕猴桃": [
+    "kiwifruit",
+    "kiwi"
+  ],
+  "菠萝": [
+    "pineapple"
+  ],
+  "芒果": [
+    "mango",
+    "mangoes"
+  ],
+  "木瓜": [
+    "papaya"
+  ],
+  "西瓜": [
+    "watermelon"
+  ],
+  "哈密瓜": [
+    "cantaloupe"
+  ],
+  "香瓜": [
+    "muskmelon"
+  ],
+  "桃子": [
+    "peach",
+    "peaches"
+  ],
+  "油桃": [
+    "nectarine",
+    "nectarines"
+  ],
+  "李子": [
+    "plum",
+    "plums"
+  ],
+  "杏": [
+    "apricot",
+    "apricots"
+  ],
+  "樱桃": [
+    "cherry",
+    "cherries"
+  ],
+  "柚子": [
+    "pomelo"
+  ],
+  "西柚": [
+    "grapefruit"
+  ],
+  "橘子": [
+    "mandarin orange",
+    "tangerine"
+  ],
+  "金桔": [
+    "kumquat",
+    "kumquats"
+  ],
+  "石榴": [
+    "pomegranate"
+  ],
+  "百香果": [
+    "passion fruit"
+  ],
+  "牛油果": [
+    "avocado",
+    "avocados"
+  ],
+  "无花果": [
+    "fig",
+    "figs"
+  ],
+  "椰子": [
+    "coconut"
+  ],
+  "荔枝": [
+    "lychee",
+    "lychees"
+  ],
+  "龙眼": [
+    "longan"
+  ],
+  "杨梅": [
+    "yangmei",
+    "chinese bayberry"
+  ],
+  "山楂": [
+    "hawthorn fruit"
+  ],
+  "火龙果": [
+    "dragon fruit"
+  ],
+  "柿子": [
+    "persimmon",
+    "persimmons"
+  ],
+  "冬枣": [
+    "fresh jujube"
+  ],
+  "红枣": [
+    "red dates",
+    "jujubes"
+  ],
+  "榴莲": [
+    "durian"
+  ],
+  "甘蔗": [
+    "sugarcane"
+  ],
+  "香菇": [
+    "shiitake mushroom",
+    "shiitake",
+    "shiitake mushrooms"
+  ],
+  "杏鲍菇": [
+    "king oyster mushroom",
+    "king oyster mushrooms"
+  ],
+  "金针菇": [
+    "enoki mushroom",
+    "enoki"
+  ],
+  "口蘑": [
+    "button mushroom",
+    "button mushrooms"
+  ],
+  "白玉菇": [
+    "white beech mushroom"
+  ],
+  "蟹味菇": [
+    "brown beech mushroom",
+    "shimeji"
+  ],
+  "海鲜菇": [
+    "seafood mushroom"
+  ],
+  "茶树菇": [
+    "tea tree mushroom"
+  ],
+  "平菇": [
+    "oyster mushroom",
+    "oyster mushrooms"
+  ],
+  "草菇": [
+    "straw mushroom"
+  ],
+  "猴头菇": [
+    "lion's mane mushroom"
+  ],
+  "牛肝菌": [
+    "porcini"
+  ],
+  "松茸": [
+    "matsutake"
+  ],
+  "竹荪": [
+    "bamboo fungus"
+  ],
+  "黑木耳": [
+    "wood ear mushroom",
+    "木耳"
+  ],
+  "银耳": [
+    "snow fungus",
+    "white fungus"
+  ],
+  "干香菇": [
+    "dried shiitake mushrooms"
+  ],
+  "干木耳": [
+    "dried wood ear"
+  ],
+  "姬松茸": [
+    "almond mushroom"
+  ],
+  "羊肚菌": [
+    "morel",
+    "morels"
+  ],
+  "嫩豆腐": [
+    "soft tofu",
+    "软豆腐"
+  ],
+  "老豆腐": [
+    "firm tofu",
+    "北豆腐"
+  ],
+  "内酯豆腐": [
+    "silken tofu"
+  ],
+  "冻豆腐": [
+    "frozen tofu"
+  ],
+  "豆腐皮": [
+    "tofu skin"
+  ],
+  "腐竹": [
+    "dried bean curd sticks",
+    "yuba"
+  ],
+  "豆干": [
+    "pressed tofu",
+    "dried tofu"
+  ],
+  "千张": [
+    "tofu sheets"
+  ],
+  "油豆腐": [
+    "fried tofu"
+  ],
+  "豆泡": [
+    "tofu puffs"
+  ],
+  "豆腐丝": [
+    "shredded tofu"
+  ],
+  "素鸡": [
+    "vegetarian chicken"
+  ],
+  "豆腐乳": [
+    "fermented bean curd"
+  ],
+  "豆浆": [
+    "soybean milk"
+  ],
+  "黄豆": [
+    "soybeans",
+    "soybean"
+  ],
+  "黑豆": [
+    "black soybeans"
+  ],
+  "红豆": [
+    "adzuki beans"
+  ],
+  "绿豆": [
+    "mung beans"
+  ],
+  "芸豆": [
+    "kidney beans"
+  ],
+  "鹰嘴豆": [
+    "chickpeas",
+    "chickpea",
+    "garbanzo beans"
+  ],
+  "纳豆": [
+    "natto"
+  ],
+  "豆芽": [
+    "bean sprouts"
+  ],
+  "黄豆芽": [
+    "soybean sprouts"
+  ],
+  "绿豆芽": [
+    "mung bean sprouts"
+  ],
+  "五花肉": [
+    "pork belly",
+    "猪五花"
+  ],
+  "里脊肉": [
+    "pork tenderloin",
+    "猪里脊"
+  ],
+  "梅花肉": [
+    "pork collar"
+  ],
+  "猪前腿肉": [
+    "pork foreleg"
+  ],
+  "猪后腿肉": [
+    "pork hind leg"
+  ],
+  "猪肉末": [
+    "ground pork",
+    "minced pork"
+  ],
+  "猪排骨": [
+    "pork spare ribs"
+  ],
+  "猪小排": [
+    "pork riblets"
+  ],
+  "猪大排": [
+    "pork chops",
+    "pork chop"
+  ],
+  "猪蹄": [
+    "pig trotters"
+  ],
+  "猪肝": [
+    "pork liver"
+  ],
+  "猪腰": [
+    "pork kidney"
+  ],
+  "猪肚": [
+    "pork stomach"
+  ],
+  "猪耳": [
+    "pig ears"
+  ],
+  "猪皮": [
+    "pork skin"
+  ],
+  "猪血": [
+    "pork blood"
+  ],
+  "猪骨": [
+    "pork bones"
+  ],
+  "猪筒骨": [
+    "pork marrow bones"
+  ],
+  "猪腱子": [
+    "pork shank"
+  ],
+  "猪肩肉": [
+    "pork shoulder"
+  ],
+  "猪油渣": [
+    "pork cracklings"
+  ],
+  "牛腩": [
+    "beef brisket"
+  ],
+  "牛腱": [
+    "beef shank"
+  ],
+  "肥牛": [
+    "thin sliced fatty beef"
+  ],
+  "牛肉片": [
+    "sliced beef"
+  ],
+  "牛肉末": [
+    "ground beef",
+    "minced beef"
+  ],
+  "牛里脊": [
+    "beef tenderloin"
+  ],
+  "牛肋条": [
+    "beef short ribs"
+  ],
+  "牛肩肉": [
+    "beef chuck"
+  ],
+  "牛排": [
+    "beef steak",
+    "steak"
+  ],
+  "牛骨": [
+    "beef bones"
+  ],
+  "牛尾": [
+    "oxtail"
+  ],
+  "牛百叶": [
+    "omasum tripe"
+  ],
+  "牛肚": [
+    "beef tripe"
+  ],
+  "牛筋": [
+    "beef tendon"
+  ],
+  "牛舌": [
+    "beef tongue"
+  ],
+  "牛肝": [
+    "beef liver"
+  ],
+  "牛肉丸": [
+    "beef meatballs"
+  ],
+  "羊肉片": [
+    "sliced lamb"
+  ],
+  "羊腿肉": [
+    "leg of lamb"
+  ],
+  "羊排": [
+    "lamb chops"
+  ],
+  "羊肩肉": [
+    "lamb shoulder"
+  ],
+  "羊肉卷": [
+    "lamb rolls"
+  ],
+  "羊肉末": [
+    "ground lamb",
+    "minced lamb"
+  ],
+  "羊蝎子": [
+    "lamb spine"
+  ],
+  "羊肚": [
+    "lamb tripe"
+  ],
+  "羊肝": [
+    "lamb liver"
+  ],
+  "羊骨": [
+    "lamb bones"
+  ],
+  "鸡翅根": [
+    "chicken drumette",
+    "chicken drumettes"
+  ],
+  "鸡翅中": [
+    "chicken wing flats"
+  ],
+  "鸡翅尖": [
+    "chicken wing tips"
+  ],
+  "鸡肉末": [
+    "ground chicken",
+    "minced chicken"
+  ],
+  "鸡里脊": [
+    "chicken tenderloin",
+    "chicken tenders"
+  ],
+  "鸡胗": [
+    "chicken gizzard"
+  ],
+  "鸡肝": [
+    "chicken liver"
+  ],
+  "鸡爪": [
+    "chicken feet"
+  ],
+  "鸡骨架": [
+    "chicken carcass"
+  ],
+  "鸭肉": [
+    "duck meat"
+  ],
+  "鸭胸肉": [
+    "duck breast"
+  ],
+  "鸭腿": [
+    "duck leg"
+  ],
+  "鸭翅": [
+    "duck wing"
+  ],
+  "鸭掌": [
+    "duck feet"
+  ],
+  "鸭胗": [
+    "duck gizzard"
+  ],
+  "整鸭": [
+    "whole duck"
+  ],
+  "鹅肉": [
+    "goose meat"
+  ],
+  "火鸡胸肉": [
+    "turkey breast"
+  ],
+  "鹌鹑": [
+    "quail"
+  ],
+  "火腿": [
+    "ham"
+  ],
+  "香肠": [
+    "sausage",
+    "sausages"
+  ],
+  "腊肠": [
+    "chinese sausage",
+    "lap cheong"
+  ],
+  "腊肉": [
+    "chinese cured pork"
+  ],
+  "午餐肉": [
+    "luncheon meat"
+  ],
+  "肉松": [
+    "pork floss"
+  ],
+  "肉丸": [
+    "meatballs"
+  ],
+  "鱼丸": [
+    "fish balls"
+  ],
+  "牛肉干": [
+    "beef jerky"
+  ],
+  "热狗肠": [
+    "hot dog sausage"
+  ],
+  "意式萨拉米": [
+    "salami"
+  ],
+  "培根碎": [
+    "bacon bits"
+  ],
+  "猪肉肠": [
+    "pork sausage"
+  ],
+  "鲫鱼": [
+    "crucian carp"
+  ],
+  "草鱼": [
+    "grass carp"
+  ],
+  "鲈鱼": [
+    "sea bass"
+  ],
+  "鳕鱼": [
+    "cod"
+  ],
+  "带鱼": [
+    "hairtail"
+  ],
+  "黄花鱼": [
+    "yellow croaker"
+  ],
+  "鲤鱼": [
+    "carp"
+  ],
+  "罗非鱼": [
+    "tilapia"
+  ],
+  "巴沙鱼": [
+    "basa"
+  ],
+  "鲳鱼": [
+    "pomfret"
+  ],
+  "秋刀鱼": [
+    "pacific saury"
+  ],
+  "金枪鱼": [
+    "tuna"
+  ],
+  "沙丁鱼": [
+    "sardine",
+    "sardines"
+  ],
+  "青花鱼": [
+    "mackerel"
+  ],
+  "鳗鱼": [
+    "eel"
+  ],
+  "多宝鱼": [
+    "turbot"
+  ],
+  "石斑鱼": [
+    "grouper"
+  ],
+  "龙利鱼": [
+    "tongue sole"
+  ],
+  "鲶鱼": [
+    "catfish"
+  ],
+  "鱼片": [
+    "fish fillets"
+  ],
+  "鱼头": [
+    "fish head"
+  ],
+  "鱼骨": [
+    "fish bones"
+  ],
+  "鱼籽": [
+    "fish roe"
+  ],
+  "蛤蜊": [
+    "clams",
+    "clam"
+  ],
+  "花甲": [
+    "manila clam"
+  ],
+  "扇贝": [
+    "scallop",
+    "scallops"
+  ],
+  "青口贝": [
+    "green lipped mussels"
+  ],
+  "牡蛎": [
+    "oyster",
+    "oysters"
+  ],
+  "生蚝": [
+    "fresh oysters"
+  ],
+  "贻贝": [
+    "mussels",
+    "mussel"
+  ],
+  "蛏子": [
+    "razor clams"
+  ],
+  "蚬子": [
+    "freshwater clams"
+  ],
+  "鲍鱼": [
+    "abalone"
+  ],
+  "海螺": [
+    "conch"
+  ],
+  "田螺": [
+    "river snails"
+  ],
+  "北极贝": [
+    "surf clams"
+  ],
+  "瑶柱": [
+    "dried scallops"
+  ],
+  "虾仁": [
+    "peeled shrimp"
+  ],
+  "基围虾": [
+    "greasyback shrimp"
+  ],
+  "大虾": [
+    "large shrimp"
+  ],
+  "明虾": [
+    "jumbo prawns"
+  ],
+  "小龙虾": [
+    "crayfish",
+    "crawfish"
+  ],
+  "皮皮虾": [
+    "mantis shrimp"
+  ],
+  "北极甜虾": [
+    "northern shrimp"
+  ],
+  "干虾米": [
+    "dried small shrimp"
+  ],
+  "虾皮": [
+    "dried shrimp shells"
+  ],
+  "螃蟹": [
+    "crab",
+    "crabs"
+  ],
+  "梭子蟹": [
+    "swimming crab"
+  ],
+  "大闸蟹": [
+    "chinese mitten crab"
+  ],
+  "蟹棒": [
+    "crab sticks"
+  ],
+  "蟹柳": [
+    "imitation crab"
+  ],
+  "鱿鱼": [
+    "squid"
+  ],
+  "章鱼": [
+    "octopus"
+  ],
+  "墨鱼": [
+    "cuttlefish"
+  ],
+  "海参": [
+    "sea cucumber"
+  ],
+  "海蜇": [
+    "jellyfish"
+  ],
+  "海带": [
+    "kelp",
+    "kombu"
+  ],
+  "紫菜": [
+    "laver",
+    "nori"
+  ],
+  "裙带菜": [
+    "wakame"
+  ],
+  "海葡萄": [
+    "sea grapes"
+  ],
+  "鱼露": [
+    "fish sauce"
+  ],
+  "鱼糜": [
+    "surimi"
+  ],
+  "鸭蛋": [
+    "duck egg",
+    "duck eggs"
+  ],
+  "皮蛋": [
+    "century egg",
+    "preserved egg"
+  ],
+  "咸鸭蛋": [
+    "salted duck egg"
+  ],
+  "鹌鹑蛋": [
+    "quail eggs"
+  ],
+  "鹅蛋": [
+    "goose egg"
+  ],
+  "蛋黄": [
+    "egg yolk",
+    "egg yolks"
+  ],
+  "蛋白": [
+    "egg white",
+    "egg whites"
+  ],
+  "蛋液": [
+    "beaten eggs"
+  ],
+  "酸奶": [
+    "yogurt",
+    "yoghurt"
+  ],
+  "希腊酸奶": [
+    "greek yogurt"
+  ],
+  "奶油奶酪": [
+    "cream cheese"
+  ],
+  "马苏里拉奶酪": [
+    "mozzarella"
+  ],
+  "帕尔马干酪": [
+    "parmesan",
+    "parmigiano reggiano"
+  ],
+  "切达奶酪": [
+    "cheddar"
+  ],
+  "炼乳": [
+    "condensed milk"
+  ],
+  "奶粉": [
+    "milk powder"
+  ],
+  "椰奶": [
+    "coconut milk"
+  ],
+  "椰浆": [
+    "coconut cream"
+  ],
+  "植物奶": [
+    "plant milk"
+  ],
+  "燕麦奶": [
+    "oat milk"
+  ],
+  "豆奶": [
+    "soy milk"
+  ],
+  "鲜奶油": [
+    "fresh cream"
+  ],
+  "酸奶油": [
+    "sour cream"
+  ],
+  "酪乳": [
+    "buttermilk"
+  ],
+  "冰淇淋": [
+    "ice cream"
+  ],
+  "大米": [
+    "uncooked rice",
+    "raw rice"
+  ],
+  "糯米": [
+    "glutinous rice",
+    "sticky rice"
+  ],
+  "糙米": [
+    "brown rice"
+  ],
+  "黑米": [
+    "black rice"
+  ],
+  "红米": [
+    "red rice"
+  ],
+  "小米": [
+    "millet"
+  ],
+  "粳米": [
+    "short grain rice"
+  ],
+  "籼米": [
+    "long grain rice"
+  ],
+  "寿司米": [
+    "sushi rice"
+  ],
+  "米粉": [
+    "rice noodles"
+  ],
+  "米线": [
+    "rice vermicelli"
+  ],
+  "河粉": [
+    "flat rice noodles"
+  ],
+  "年糕": [
+    "rice cakes"
+  ],
+  "米纸": [
+    "rice paper"
+  ],
+  "挂面": [
+    "dried wheat noodles"
+  ],
+  "乌冬面": [
+    "udon noodles",
+    "udon"
+  ],
+  "荞麦面": [
+    "soba noodles",
+    "soba"
+  ],
+  "拉面": [
+    "ramen noodles"
+  ],
+  "方便面": [
+    "instant noodles"
+  ],
+  "粉丝": [
+    "glass noodles"
+  ],
+  "馄饨皮": [
+    "wonton wrappers"
+  ],
+  "饺子皮": [
+    "dumpling wrappers"
+  ],
+  "春卷皮": [
+    "spring roll wrappers"
+  ],
+  "意大利宽面": [
+    "fettuccine",
+    "tagliatelle"
+  ],
+  "通心粉": [
+    "macaroni"
+  ],
+  "螺旋意面": [
+    "fusilli"
+  ],
+  "燕麦片": [
+    "rolled oats",
+    "oats"
+  ],
+  "藜麦": [
+    "quinoa"
+  ],
+  "玉米面": [
+    "cornmeal"
+  ],
+  "玉米粒": [
+    "corn kernels"
+  ],
+  "玉米片": [
+    "cornflakes"
+  ],
+  "大麦": [
+    "barley"
+  ],
+  "荞麦": [
+    "buckwheat"
+  ],
+  "薏米": [
+    "job's tears"
+  ],
+  "全麦面包": [
+    "whole wheat bread"
+  ],
+  "贝果": [
+    "bagel",
+    "bagels"
+  ],
+  "法棍": [
+    "baguette"
+  ],
+  "馒头": [
+    "steamed buns"
+  ],
+  "面包糠": [
+    "breadcrumbs",
+    "bread crumbs",
+    "panko"
+  ],
+  "中筋面粉": [
+    "all purpose flour",
+    "all-purpose flour"
+  ],
+  "高筋面粉": [
+    "bread flour"
+  ],
+  "低筋面粉": [
+    "cake flour"
+  ],
+  "全麦面粉": [
+    "whole wheat flour"
+  ],
+  "粘米粉": [
+    "rice flour"
+  ],
+  "糯米粉": [
+    "glutinous rice flour"
+  ],
+  "澄粉": [
+    "wheat starch"
+  ],
+  "木薯粉": [
+    "tapioca starch",
+    "tapioca flour"
+  ],
+  "玉米淀粉": [
+    "cornstarch",
+    "corn starch"
+  ],
+  "红薯淀粉": [
+    "sweet potato starch"
+  ],
+  "土豆淀粉": [
+    "potato starch"
+  ],
+  "杏仁粉": [
+    "almond flour"
+  ],
+  "泡打粉": [
+    "baking powder"
+  ],
+  "小苏打": [
+    "baking soda",
+    "bicarbonate of soda"
+  ],
+  "酵母": [
+    "yeast"
+  ],
+  "吉利丁片": [
+    "gelatin sheets"
+  ],
+  "吉利丁粉": [
+    "gelatin powder"
+  ],
+  "可可粉": [
+    "cocoa powder"
+  ],
+  "巧克力豆": [
+    "chocolate chips"
+  ],
+  "黑巧克力": [
+    "dark chocolate"
+  ],
+  "白巧克力": [
+    "white chocolate"
+  ],
+  "香草精": [
+    "vanilla extract"
+  ],
+  "糖粉": [
+    "powdered sugar",
+    "icing sugar"
+  ],
+  "枫糖浆": [
+    "maple syrup"
+  ],
+  "葡萄干": [
+    "raisins"
+  ],
+  "蔓越莓干": [
+    "dried cranberries"
+  ],
+  "椰蓉": [
+    "desiccated coconut"
+  ],
+  "核桃": [
+    "walnut",
+    "walnuts"
+  ],
+  "杏仁": [
+    "almond",
+    "almonds"
+  ],
+  "腰果": [
+    "cashew",
+    "cashews"
+  ],
+  "开心果": [
+    "pistachio",
+    "pistachios"
+  ],
+  "松子": [
+    "pine nuts"
+  ],
+  "碧根果": [
+    "pecan",
+    "pecans"
+  ],
+  "榛子": [
+    "hazelnut",
+    "hazelnuts"
+  ],
+  "南瓜子": [
+    "pumpkin seeds"
+  ],
+  "葵花籽": [
+    "sunflower seeds"
+  ],
+  "白芝麻": [
+    "white sesame seeds"
+  ],
+  "黑芝麻": [
+    "black sesame seeds"
+  ],
+  "白胡椒": [
+    "white pepper"
+  ],
+  "花椒": [
+    "sichuan peppercorns",
+    "sichuan pepper"
+  ],
+  "八角": [
+    "star anise"
+  ],
+  "桂皮": [
+    "cassia bark"
+  ],
+  "香叶": [
+    "bay leaf",
+    "bay leaves"
+  ],
+  "孜然": [
+    "cumin seeds"
+  ],
+  "孜然粉": [
+    "ground cumin"
+  ],
+  "五香粉": [
+    "five spice powder"
+  ],
+  "咖喱粉": [
+    "curry powder"
+  ],
+  "姜黄粉": [
+    "turmeric"
+  ],
+  "肉桂粉": [
+    "ground cinnamon"
+  ],
+  "丁香": [
+    "cloves"
+  ],
+  "小茴香": [
+    "fennel seeds"
+  ],
+  "豆蔻": [
+    "cardamom"
+  ],
+  "迷迭香": [
+    "rosemary"
+  ],
+  "百里香": [
+    "thyme"
+  ],
+  "罗勒": [
+    "basil"
+  ],
+  "牛至": [
+    "oregano"
+  ],
+  "欧芹": [
+    "parsley"
+  ],
+  "莳萝": [
+    "dill"
+  ],
+  "鼠尾草": [
+    "sage"
+  ],
+  "红椒粉": [
+    "paprika"
+  ],
+  "辣椒粉": [
+    "chili powder"
+  ],
+  "蒜粉": [
+    "garlic powder"
+  ],
+  "洋葱粉": [
+    "onion powder"
+  ],
+  "普通酱油": [
+    "soy sauce",
+    "酱油"
+  ],
+  "陈醋": [
+    "aged vinegar",
+    "老陈醋"
+  ],
+  "香醋": [
+    "black rice vinegar",
+    "镇江香醋"
+  ],
+  "米醋": [
+    "rice vinegar"
+  ],
+  "白醋": [
+    "white vinegar"
+  ],
+  "甜面酱": [
+    "sweet bean sauce"
+  ],
+  "芝麻酱": [
+    "sesame paste"
+  ],
+  "花生酱": [
+    "peanut butter"
+  ],
+  "辣椒酱": [
+    "chili sauce"
+  ],
+  "辣椒油": [
+    "chili oil"
+  ],
+  "花椒油": [
+    "sichuan pepper oil"
+  ],
+  "香油": [
+    "toasted sesame oil",
+    "麻油"
+  ],
+  "芝麻油": [
+    "sesame oil"
+  ],
+  "冰糖": [
+    "rock sugar"
+  ],
+  "红糖": [
+    "brown sugar"
+  ],
+  "鸡精": [
+    "chicken bouillon powder"
+  ],
+  "味精": [
+    "monosodium glutamate",
+    "msg"
+  ],
+  "豆豉": [
+    "fermented black beans"
+  ],
+  "番茄酱": [
+    "ketchup",
+    "tomato ketchup"
+  ],
+  "黄芥末酱": [
+    "yellow mustard"
+  ],
+  "蛋黄酱": [
+    "mayonnaise"
+  ],
+  "第戎芥末": [
+    "dijon mustard"
+  ],
+  "黑醋": [
+    "balsamic vinegar"
+  ],
+  "苹果醋": [
+    "apple cider vinegar"
+  ],
+  "伍斯特酱": [
+    "worcestershire sauce"
+  ],
+  "烧烤酱": [
+    "barbecue sauce",
+    "bbq sauce"
+  ],
+  "罗勒青酱": [
+    "basil pesto"
+  ],
+  "海盐": [
+    "sea salt"
+  ],
+  "粗盐": [
+    "coarse salt"
+  ],
+  "细砂糖": [
+    "caster sugar"
+  ],
+  "蜂蜜": [
+    "honey"
+  ],
+  "橄榄油": [
+    "olive oil",
+    "extra virgin olive oil"
+  ],
+  "葵花籽油": [
+    "sunflower oil"
+  ],
+  "菜籽油": [
+    "rapeseed oil",
+    "canola oil"
+  ],
+  "玉米油": [
+    "corn oil"
+  ],
+  "椰子油": [
+    "coconut oil"
+  ],
+  "猪油": [
+    "lard"
+  ],
+  "起酥油": [
+    "shortening"
+  ],
+  "葡萄籽油": [
+    "grapeseed oil"
+  ],
+  "牛油果油": [
+    "avocado oil"
+  ],
+  "韩式辣酱": [
+    "gochujang"
+  ],
+  "味噌": [
+    "miso"
+  ],
+  "照烧酱": [
+    "teriyaki sauce"
+  ],
+  "咖喱块": [
+    "curry roux"
+  ],
+  "是拉差辣酱": [
+    "sriracha"
+  ],
+  "花生油": [
+    "peanut oil"
+  ],
+  "酥油": [
+    "ghee"
+  ],
+  "番茄罐头": [
+    "canned tomatoes"
+  ],
+  "番茄膏": [
+    "tomato paste"
+  ],
+  "金枪鱼罐头": [
+    "canned tuna"
+  ],
+  "鹰嘴豆罐头": [
+    "canned chickpeas"
+  ],
+  "啤酒": [
+    "beer"
+  ],
+  "红葡萄酒": [
+    "red wine"
+  ],
+  "白葡萄酒": [
+    "white wine"
+  ],
+  "柠檬汁": [
+    "lemon juice"
+  ],
+  "高汤": [
+    "stock",
+    "broth"
+  ],
+  "鸡汤": [
+    "chicken stock",
+    "chicken broth"
+  ],
+  "牛肉高汤": [
+    "beef stock",
+    "beef broth"
+  ],
+  "蔬菜高汤": [
+    "vegetable stock",
+    "vegetable broth"
+  ]
+}

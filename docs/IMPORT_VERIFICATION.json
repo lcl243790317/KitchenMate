@@ -1,0 +1,75 @@
+[
+  {
+    "url": "https://www.allrecipes.com/recipe/21014/good-old-fashioned-pancakes/",
+    "status": "temporarily-unavailable",
+    "lastCheckedAt": "2026-09-29T15:29:40.133Z",
+    "error": "Error: 页面不是可读取的 HTML"
+  },
+  {
+    "url": "https://www.budgetbytes.com/garlic-noodles/",
+    "title": "Quick & Easy Garlic Noodles",
+    "lastVerifiedAt": "2026-09-29T15:29:40.360Z",
+    "status": "verified",
+    "structuredData": true,
+    "ingredientCount": 8,
+    "instructionCount": 4,
+    "knownIngredients": 8,
+    "unknownIngredients": [],
+    "unknownRate": 0
+  },
+  {
+    "url": "https://www.bbcgoodfood.com/recipes/best-ever-chocolate-brownies-recipe",
+    "title": "Best ever chocolate brownies recipe",
+    "lastVerifiedAt": "2026-09-29T15:29:40.474Z",
+    "status": "verified",
+    "structuredData": true,
+    "ingredientCount": 8,
+    "instructionCount": 15,
+    "knownIngredients": 8,
+    "unknownIngredients": [],
+    "unknownRate": 0
+  },
+  {
+    "url": "https://www.loveandlemons.com/banana-bread/",
+    "title": "Banana Bread",
+    "lastVerifiedAt": "2026-09-29T15:29:40.617Z",
+    "status": "verified",
+    "structuredData": true,
+    "ingredientCount": 11,
+    "instructionCount": 6,
+    "knownIngredients": 7,
+    "unknownIngredients": [
+      "½ cup cane sugar or brown sugar",
+      "½ cup melted butter or vegetable oil (plus more for the pan)",
+      "½ teaspoon cinnamon",
+      "¼ teaspoon nutmeg"
+    ],
+    "unknownRate": 0.36363636363636365
+  },
+  {
+    "url": "https://cookieandkate.com/healthy-banana-bread-recipe/",
+    "title": "Healthy Banana Bread",
+    "lastVerifiedAt": "2026-09-29T15:29:40.769Z",
+    "status": "verified",
+    "structuredData": true,
+    "ingredientCount": 11,
+    "instructionCount": 5,
+    "knownIngredients": 10,
+    "unknownIngredients": [
+      "Totally optional: ½ cup mix-ins like chopped walnuts or pecans, chocolate chips, raisins, chopped dried fruit, fresh banana slices…"
+    ],
+    "unknownRate": 0.09090909090909091
+  },
+  {
+    "url": "https://www.gimmesomeoven.com/fried-rice-recipe/",
+    "title": "Fried Rice",
+    "lastVerifiedAt": "2026-09-29T15:29:40.933Z",
+    "status": "verified",
+    "structuredData": true,
+    "ingredientCount": 12,
+    "instructionCount": 3,
+    "knownIngredients": 12,
+    "unknownIngredients": [],
+    "unknownRate": 0
+  }
+]

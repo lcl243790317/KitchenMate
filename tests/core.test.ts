@@ -7,10 +7,11 @@ import {
 } from "../lib/ingredients";
 import { matchRecipe, searchRecipe } from "../lib/matching";
 import { scaleQuantity, normalizeUnit } from "../lib/units";
-import { localRecipes } from "../lib/seed";
+import { verifiedRecipes } from "../lib/verified-recipes";
+import { localRecipes } from "@/tests/fixtures/legacy-recipes";
 import { recipeSchema } from "../lib/model";
 import {
-  LocalRecipeProvider,
+  VerifiedRecipeCatalogProvider,
   RecipeAggregator,
   TheMealDBProvider,
 } from "../lib/providers";
@@ -48,13 +49,20 @@ describe("match engine", () => {
         ["tomato", "egg", "oil", "salt"].map(makePantryItem),
       ).score,
     ).toBe(100));
-  it("boosts expiring items only for inventory sorting", () => {
-    const p = makePantryItem("tomato");
-    const base = matchRecipe(localRecipes[0], [p]);
-    p.expiryDate = new Date(Date.now() + 86400000).toISOString();
-    const boosted = matchRecipe(localRecipes[0], [p]);
-    expect(boosted.score).toBe(base.score);
-    expect(boosted.inventoryScore).toBeGreaterThan(base.inventoryScore);
+  it("does not let obsolete inventory fields influence matching", () => {
+    const plain = { ingredientId: "tomato" };
+    const legacy = {
+      ...plain,
+      quantity: 8,
+      expiryDate: "2000-01-01",
+      storageLocation: "冰箱",
+    };
+    expect(matchRecipe(localRecipes[0], [legacy])).toEqual(
+      matchRecipe(localRecipes[0], [plain]),
+    );
+    expect(matchRecipe(localRecipes[0], [plain])).not.toHaveProperty(
+      "inventoryScore",
+    );
   });
   it("supports alias dish search", () =>
     expect(searchRecipe(localRecipes[0], "番茄炒鸡蛋")).toBe(true));
@@ -82,7 +90,7 @@ describe("provider and repository integration", () => {
     const empty: ReturnType<typeof makePantryItem>[] = [];
     const added = togglePantry(empty, "egg");
     expect(empty).toHaveLength(0);
-    expect(added[0].canonicalName).toBe("egg");
+    expect(added[0].ingredientId).toBe("egg");
     expect(togglePantry(added, "egg")).toHaveLength(0);
   });
   it("normalizes TheMealDB without inventing timing", () => {
@@ -100,7 +108,7 @@ describe("provider and repository integration", () => {
     expect(r.rating).toBeNull();
   });
   it("falls back when external provider throws", async () => {
-    class Broken extends LocalRecipeProvider {
+    class Broken extends VerifiedRecipeCatalogProvider {
       id = "broken";
       name = "Broken";
       async search(): Promise<never> {
@@ -108,7 +116,7 @@ describe("provider and repository integration", () => {
       }
     }
     const result = await new RecipeAggregator([
-      new LocalRecipeProvider(),
+      new VerifiedRecipeCatalogProvider(),
       new Broken(),
     ]).search("番茄");
     expect(result.recipes.length).toBeGreaterThan(0);
@@ -116,10 +124,10 @@ describe("provider and repository integration", () => {
   });
   it("deduplicates provider identities", async () => {
     const result = await new RecipeAggregator([
-      new LocalRecipeProvider(),
-      new LocalRecipeProvider(),
+      new VerifiedRecipeCatalogProvider(),
+      new VerifiedRecipeCatalogProvider(),
     ]).search("");
-    expect(result.recipes).toHaveLength(localRecipes.length);
+    expect(result.recipes).toHaveLength(verifiedRecipes.length);
   });
   it("upserts detail cache", async () => {
     const repo = new MemoryRecipeRepository();
@@ -133,14 +141,21 @@ describe("provider and repository integration", () => {
     );
     const body = await res.json();
     expect(
-      body.recipes.some((r: { id: string }) => r.id === "tomato-eggs"),
+      body.recipes.some(
+        (r: { id: string }) =>
+          r.id ===
+          verifiedRecipes.find((recipe) => recipe.title === "西红柿炒鸡蛋")!.id,
+      ),
     ).toBe(true);
   });
   it("detail API returns exact requested recipe", async () => {
     const res = await detailRoute(new Request("http://localhost"), {
-      params: Promise.resolve({ id: "tomato-eggs" }),
+      params: Promise.resolve({
+        id: verifiedRecipes.find((recipe) => recipe.title === "西红柿炒鸡蛋")!
+          .id,
+      }),
     });
-    expect((await res.json()).recipe.title).toBe("番茄炒蛋");
+    expect((await res.json()).recipe.title).toBe("西红柿炒鸡蛋");
   });
 });
 describe("import parser and security", () => {
@@ -168,7 +183,7 @@ describe("import parser and security", () => {
   });
   it("supports microdata", () => {
     const r = parseRecipeHtml(
-      '<div itemtype="https://schema.org/Recipe"><h1 itemprop="name">Eggs</h1><p itemprop="recipeIngredient">2 eggs</p><p itemprop="recipeInstructions">Cook eggs fully.</p></div>',
+      '<div itemtype="https://schema.org/Recipe"><h1 itemprop="name">Eggs</h1><p itemprop="recipeIngredient">2 eggs</p><p itemprop="recipeIngredient">salt</p><p itemprop="recipeInstructions">Cook eggs fully.</p></div>',
       "https://example.com/r",
     );
     expect(r.title).toBe("Eggs");

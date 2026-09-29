@@ -12,7 +12,12 @@
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "test:e2e": "playwright test",
-    "format": "prettier --write app components lib tests *.ts *.mjs"
+    "format": "prettier --write app components lib tests *.ts *.mjs",
+    "recipes:validate": "tsx scripts/validate-recipes.ts",
+    "recipes:coverage": "tsx scripts/recipes-coverage.ts",
+    "recipes:audit": "tsx scripts/audit-local-recipes.ts",
+    "recipes:verify": "tsx scripts/verify-recipe-sources.ts",
+    "recipes:verify-imports": "tsx scripts/verify-import-examples.ts"
   },
   "dependencies": {
     "cheerio": "1.2.0",
@@ -36,6 +41,7 @@
     "eslint-config-next": "16.3.6",
     "prettier": "3.9.9",
     "tailwindcss": "4.3.3",
+    "tsx": "^4.23.15",
     "typescript": "6.0.3",
     "vitest": "5.0.2"
   },

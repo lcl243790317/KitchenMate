@@ -6,7 +6,6 @@ import {
   Heart,
   Search,
   SlidersHorizontal,
-  Sparkles,
   UtensilsCrossed,
 } from "lucide-react";
 
@@ -34,18 +33,12 @@ type Props = {
   setCuisine: TextSetter;
   diet: string;
   setDiet: TextSetter;
-  allergen: string;
-  setAllergen: TextSetter;
   equipment: string;
   setEquipment: TextSetter;
   warning: string;
   resultCount: number;
   cards: ReactNode;
   recentRecipes: Recipe[];
-  aiEnabled: boolean;
-  constraints: string;
-  setConstraints: TextSetter;
-  onGenerateAI: () => void;
 };
 
 export function DiscoverPageView(props: Props) {
@@ -75,12 +68,6 @@ export function DiscoverPageView(props: Props) {
       props.diet,
       props.setDiet,
       ["素食", "Vegan", "高蛋白", "低碳", "低脂"],
-    ],
-    [
-      "排除过敏原",
-      props.allergen,
-      props.setAllergen,
-      ["花生", "坚果", "牛奶", "鸡蛋", "海鲜", "麸质"],
     ],
     [
       "厨具",
@@ -115,7 +102,7 @@ export function DiscoverPageView(props: Props) {
         </button>
       </div>
       <div className="recommend-tabs">
-        {["最匹配", "我现在就能做", "只差一点", "消耗库存", "快手菜"].map(
+        {["现在就能做", "只差一样", "只差两样", "最匹配", "快手菜"].map(
           (mode) => (
             <button
               key={mode}
@@ -137,7 +124,7 @@ export function DiscoverPageView(props: Props) {
         </button>
       </div>
       <div className="source-tabs" aria-label="菜谱来源">
-        {["全部", "KitchenMate", "在线菜谱", "我的菜谱"].map((source) => (
+        {["为我推荐", "已验证菜谱", "在线菜谱", "我的导入"].map((source) => (
           <button
             key={source}
             className={props.sourceFilter === source ? "active" : ""}
@@ -191,17 +178,11 @@ export function DiscoverPageView(props: Props) {
               props.setDifficulty("");
               props.setCuisine("");
               props.setDiet("");
-              props.setAllergen("");
               props.setEquipment("");
             }}
           >
             重置筛选
           </button>
-          {props.allergen && (
-            <small>
-              过敏原筛选仅显示已标注的本地菜谱；请同时核对包装及交叉污染风险。
-            </small>
-          )}
         </div>
       )}
       {props.warning && (
@@ -210,8 +191,8 @@ export function DiscoverPageView(props: Props) {
         </p>
       )}
       <div className="result-count">
-        找到 {props.resultCount} 道灵感{" "}
-        <span>基础调料对匹配度影响较小 · 已填写库存数量时会提示不足</span>
+        找到 {props.resultCount} 道真实菜谱{" "}
+        <span>基础调料对匹配度影响较小 · 请核对原始食材清单</span>
       </div>
       {props.resultCount ? (
         props.cards
@@ -221,28 +202,6 @@ export function DiscoverPageView(props: Props) {
           <h2>换个条件，找点新灵感</h2>
           <p>试着添加更多食材，或放宽筛选条件。</p>
         </div>
-      )}
-      {props.aiEnabled && (
-        <section className="ai-panel">
-          <Sparkles />
-          <div>
-            <h3>还有一点想法？让 AI 帮你想一道菜。</h3>
-            <p>根据现有食材和你的偏好，生成 3 个候选方案。</p>
-            <input
-              aria-label="AI 烹饪要求"
-              value={props.constraints}
-              onChange={(event) => props.setConstraints(event.target.value)}
-              maxLength={500}
-            />
-          </div>
-          <button
-            className="primary"
-            disabled={props.loading}
-            onClick={props.onGenerateAI}
-          >
-            {props.loading ? "正在准备…" : "AI 帮我想一道菜"}
-          </button>
-        </section>
       )}
     </>
   );

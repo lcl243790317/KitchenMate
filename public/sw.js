@@ -1,4 +1,4 @@
-const CACHE = "kitchenmate-offline-v2";
+const CACHE = "kitchenmate-offline-v3";
 const SHELL = ["/", "/pantry", "/discover", "/shopping", "/import", "/icon.svg"];
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(SHELL)));

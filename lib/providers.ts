@@ -1,9 +1,33 @@
+import { dedupeRecipes } from "./recipe-trust";
 import { Recipe, recipeSchema } from "./model";
-import { localRecipes } from "./seed";
-import { ingredientFromText, ingredients } from "./ingredients";
+import { verifiedRecipes, recipesById } from "./verified-recipes";
+import { ingredientFromText, ingredientById } from "./ingredients";
 import { searchRecipe } from "./matching";
 import { parseAmount } from "./units";
+export type ProviderCapabilities = {
+  searchByName: boolean;
+  searchByIngredients: boolean;
+  getRecipe: boolean;
+  fullInstructions: boolean;
+  structuredIngredients: boolean;
+  sourceLinks: boolean;
+  images: boolean;
+  language: string[];
+  requiresApiKey: boolean;
+};
+const catalogCapabilities: ProviderCapabilities = {
+  searchByName: true,
+  searchByIngredients: true,
+  getRecipe: true,
+  fullInstructions: true,
+  structuredIngredients: true,
+  sourceLinks: true,
+  images: false,
+  language: ["zh"],
+  requiresApiKey: false,
+};
 export interface RecipeProvider {
+  capabilities: ProviderCapabilities;
   id: string;
   name: string;
   enabled: boolean;
@@ -12,24 +36,30 @@ export interface RecipeProvider {
   searchByIngredients(ids: string[]): Promise<Recipe[]>;
   normalizeRecipe(raw: unknown): Recipe;
 }
-export class LocalRecipeProvider implements RecipeProvider {
+export class VerifiedRecipeCatalogProvider implements RecipeProvider {
+  capabilities = catalogCapabilities;
   id = "local";
-  name = "本地菜谱";
+  name = "已验证菜谱";
   enabled = true;
   async search(q: string) {
-    return localRecipes.filter((r) => searchRecipe(r, q));
+    return verifiedRecipes.filter((r) => searchRecipe(r, q));
   }
   async getRecipe(id: string) {
-    return localRecipes.find((r) => r.id === id) ?? null;
+    return recipesById.get(id) ?? null;
   }
   async searchByIngredients() {
-    return localRecipes;
+    return verifiedRecipes;
   }
   normalizeRecipe(raw: unknown) {
     return recipeSchema.parse(raw);
   }
 }
 export abstract class ExternalRecipeProvider implements RecipeProvider {
+  capabilities: ProviderCapabilities = {
+    ...catalogCapabilities,
+    language: ["en"],
+    requiresApiKey: true,
+  };
   abstract id: string;
   abstract name: string;
   abstract enabled: boolean;
@@ -49,7 +79,9 @@ export class TheMealDBProvider extends ExternalRecipeProvider {
     process.env.THEMEALDB_USE_TEST_KEY === "true"
       ? "1"
       : "");
-  enabled = Boolean(this.key);
+  enabled =
+    Boolean(this.key) &&
+    !(process.env.NODE_ENV === "production" && this.key === "1");
   async request(path: string) {
     if (!this.enabled) return [];
     const requestKey = `${this.key}:${path}`;
@@ -65,8 +97,11 @@ export class TheMealDBProvider extends ExternalRecipeProvider {
       return (body.meals ?? []) as Meal[];
     })();
     pendingMealRequests.set(requestKey, pending);
-    try { return await pending; }
-    finally { pendingMealRequests.delete(requestKey); }
+    try {
+      return await pending;
+    } finally {
+      pendingMealRequests.delete(requestKey);
+    }
   }
   async search(q: string) {
     return (await this.request(`search.php?s=${encodeURIComponent(q)}`)).map(
@@ -85,10 +120,7 @@ export class TheMealDBProvider extends ExternalRecipeProvider {
     const names = ids
       .slice(0, 3)
       .map((id) =>
-        ingredients
-          .find((i) => i.id === id)
-          ?.displayNameEn.toLowerCase()
-          .replace(/ /g, "_"),
+        ingredientById.get(id)?.displayNameEn.toLowerCase().replace(/ /g, "_"),
       )
       .filter(Boolean);
     const hits = (
@@ -101,9 +133,18 @@ export class TheMealDBProvider extends ExternalRecipeProvider {
     const unique = [...new Set(hits.map((m) => m.idMeal!))].slice(0, 12);
     const recipes: Recipe[] = [];
     for (let index = 0; index < unique.length; index += 3) {
-      const batch = await Promise.allSettled(unique.slice(index, index + 3).map((id) => this.getRecipe(id)));
-      recipes.push(...batch.filter((result): result is PromiseFulfilledResult<Recipe | null> => result.status === "fulfilled")
-        .map((result) => result.value).filter((recipe): recipe is Recipe => recipe !== null));
+      const batch = await Promise.allSettled(
+        unique.slice(index, index + 3).map((id) => this.getRecipe(id)),
+      );
+      recipes.push(
+        ...batch
+          .filter(
+            (result): result is PromiseFulfilledResult<Recipe | null> =>
+              result.status === "fulfilled",
+          )
+          .map((result) => result.value)
+          .filter((recipe): recipe is Recipe => recipe !== null),
+      );
     }
     return recipes;
   }
@@ -124,6 +165,22 @@ export class TheMealDBProvider extends ExternalRecipeProvider {
         };
       });
     return recipeSchema.parse({
+      provenance: {
+        type: "LICENSED_API",
+        sourceName: this.name,
+        sourceUrl: `https://www.themealdb.com/meal/${m.idMeal}`,
+        sourceRecipeTitle: m.strMeal,
+        sourceAuthor: null,
+        sourceExternalId: m.idMeal,
+        verifiedAt: now,
+        verificationMethod: "api",
+        instructionSource: "provider-api",
+        imageSource: safePublicImage(m.strMealThumb),
+        licenseOrUsageBasis:
+          "Official API response; TheMealDB Terms of Use; attribution retained. Production requires supporter key.",
+      },
+      verificationStatus: "verified",
+      instructionAvailability: "full",
       id: `themealdb:${m.idMeal}`,
       slug: `themealdb:${m.idMeal}`,
       title: m.strMeal,
@@ -158,8 +215,7 @@ export class TheMealDBProvider extends ExternalRecipeProvider {
       allergens: [
         ...new Set(
           items.flatMap(
-            (i) =>
-              ingredients.find((x) => x.id === i.ingredientId)?.allergens ?? [],
+            (i) => ingredientById.get(i.ingredientId)?.allergens ?? [],
           ),
         ),
       ],
@@ -181,7 +237,7 @@ export function safePublicImage(s: unknown) {
     return null;
   }
 }
-export class XiachufangProvider extends LocalRecipeProvider {
+export class XiachufangProvider extends VerifiedRecipeCatalogProvider {
   id = "xiachufang";
   name = "下厨房（待授权）";
   enabled = false;
@@ -198,7 +254,7 @@ export class XiachufangProvider extends LocalRecipeProvider {
 export class RecipeAggregator {
   constructor(
     public providers: RecipeProvider[] = [
-      new LocalRecipeProvider(),
+      new VerifiedRecipeCatalogProvider(),
       new TheMealDBProvider(),
       new XiachufangProvider(),
     ],
@@ -211,6 +267,8 @@ export class RecipeAggregator {
       ),
     );
     const warnings: string[] = [];
+    if (this.providers.some((p) => p.id === "themealdb" && !p.enabled))
+      warnings.push("TheMealDB 未配置生产授权密钥；已验证目录可直接使用。");
     const all: Recipe[] = [];
     settled.forEach((r, i) => {
       if (r.status === "fulfilled") all.push(...r.value);
@@ -220,11 +278,7 @@ export class RecipeAggregator {
       }
     });
     return {
-      recipes: [
-        ...new Map(
-          all.map((r) => [`${r.sourceProvider}:${r.externalId ?? r.id}`, r]),
-        ).values(),
-      ],
+      recipes: dedupeRecipes(all),
       warnings,
     };
   }

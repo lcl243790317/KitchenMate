@@ -1,8 +1,81 @@
 [
-  {"siteName":"Allrecipes","recipeTitle":"Good Old-Fashioned Pancakes","url":"https://www.allrecipes.com/recipe/21014/good-old-fashioned-pancakes/","verifiedAt":"2026-09-29","fieldsAvailable":["菜名","图片","食材","步骤","时间"],"notes":"公开 HTTPS 菜谱页；网站结构可能变化。"},
-  {"siteName":"Budget Bytes","recipeTitle":"Quick & Easy Garlic Noodles","url":"https://www.budgetbytes.com/garlic-noodles/","verifiedAt":"2026-09-29","fieldsAvailable":["菜名","图片","食材","步骤","时间"],"notes":"公开 HTTPS 菜谱页；网站结构可能变化。"},
-  {"siteName":"BBC Good Food","recipeTitle":"Best ever chocolate brownies recipe","url":"https://www.bbcgoodfood.com/recipes/best-ever-chocolate-brownies-recipe","verifiedAt":"2026-09-29","fieldsAvailable":["菜名","图片","食材","步骤","时间"],"notes":"公开 HTTPS 菜谱页；网站结构可能变化。"},
-  {"siteName":"Love and Lemons","recipeTitle":"Banana Bread","url":"https://www.loveandlemons.com/banana-bread/","verifiedAt":"2026-09-29","fieldsAvailable":["菜名","图片","食材","步骤","时间"],"notes":"公开 HTTPS 菜谱页；网站结构可能变化。"},
-  {"siteName":"Cookie and Kate","recipeTitle":"Healthy Banana Bread","url":"https://cookieandkate.com/healthy-banana-bread-recipe/","verifiedAt":"2026-09-29","fieldsAvailable":["菜名","图片","食材","步骤","时间"],"notes":"公开 HTTPS 菜谱页；网站结构可能变化。"},
-  {"siteName":"Gimme Some Oven","recipeTitle":"Fried Rice","url":"https://www.gimmesomeoven.com/fried-rice-recipe/","verifiedAt":"2026-09-29","fieldsAvailable":["菜名","图片","食材","步骤","时间"],"notes":"公开 HTTPS 菜谱页；网站结构可能变化。"}
+  {
+    "siteName": "Allrecipes",
+    "recipeTitle": "Good Old-Fashioned Pancakes",
+    "url": "https://www.allrecipes.com/recipe/21014/good-old-fashioned-pancakes/",
+    "verifiedAt": "2026-09-29",
+    "fieldsAvailable": [
+      "菜名",
+      "食材",
+      "步骤",
+      "时间"
+    ],
+    "notes": "已实际解析；图片不保存，来源结构可能变化。",
+    "status": "temporarily-unavailable"
+  },
+  {
+    "siteName": "Budget Bytes",
+    "recipeTitle": "Quick & Easy Garlic Noodles",
+    "url": "https://www.budgetbytes.com/garlic-noodles/",
+    "verifiedAt": "2026-09-29",
+    "fieldsAvailable": [
+      "菜名",
+      "食材",
+      "步骤",
+      "时间"
+    ],
+    "notes": "已实际解析；图片不保存，来源结构可能变化。"
+  },
+  {
+    "siteName": "BBC Good Food",
+    "recipeTitle": "Best ever chocolate brownies recipe",
+    "url": "https://www.bbcgoodfood.com/recipes/best-ever-chocolate-brownies-recipe",
+    "verifiedAt": "2026-09-29",
+    "fieldsAvailable": [
+      "菜名",
+      "食材",
+      "步骤",
+      "时间"
+    ],
+    "notes": "已实际解析；图片不保存，来源结构可能变化。"
+  },
+  {
+    "siteName": "Love and Lemons",
+    "recipeTitle": "Banana Bread",
+    "url": "https://www.loveandlemons.com/banana-bread/",
+    "verifiedAt": "2026-09-29",
+    "fieldsAvailable": [
+      "菜名",
+      "食材",
+      "步骤",
+      "时间"
+    ],
+    "notes": "已实际解析；图片不保存，来源结构可能变化。"
+  },
+  {
+    "siteName": "Cookie and Kate",
+    "recipeTitle": "Healthy Banana Bread",
+    "url": "https://cookieandkate.com/healthy-banana-bread-recipe/",
+    "verifiedAt": "2026-09-29",
+    "fieldsAvailable": [
+      "菜名",
+      "食材",
+      "步骤",
+      "时间"
+    ],
+    "notes": "已实际解析；图片不保存，来源结构可能变化。"
+  },
+  {
+    "siteName": "Gimme Some Oven",
+    "recipeTitle": "Fried Rice",
+    "url": "https://www.gimmesomeoven.com/fried-rice-recipe/",
+    "verifiedAt": "2026-09-29",
+    "fieldsAvailable": [
+      "菜名",
+      "食材",
+      "步骤",
+      "时间"
+    ],
+    "notes": "已实际解析；图片不保存，来源结构可能变化。"
+  }
 ]

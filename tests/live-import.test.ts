@@ -13,17 +13,41 @@ const candidates = [
   "https://www.gimmesomeoven.com/fried-rice-recipe/",
   "https://thewoksoflife.com/stir-fried-tomato-and-egg/",
 ];
-it.runIf(process.env.LIVE_IMPORT_TESTS === "true")("checks real recipe pages with the production importer", async () => {
-  const provider = new ExternalUrlImportProvider();
-  const results = await Promise.all(candidates.map(async (url) => {
-    try {
-      const recipe = await provider.importUrl(url);
-      return { url, ok: Boolean(recipe.title && recipe.ingredients.length && recipe.instructions.length), title: recipe.title, ingredients: recipe.ingredients.length, instructions: recipe.instructions.length, image: Boolean(recipe.image), time: recipe.totalTime !== null };
-    } catch (error) {
-      return { url, ok: false, error: error instanceof Error ? error.message : String(error) };
-    }
-  }));
-  for (const result of results) console.log(JSON.stringify(result));
-  expect(results.length).toBe(candidates.length);
-  expect(results.filter((result) => result.ok).length).toBeGreaterThanOrEqual(5);
-}, 60000);
+it.runIf(process.env.LIVE_IMPORT_TESTS === "true")(
+  "checks real recipe pages with the production importer",
+  async () => {
+    const provider = new ExternalUrlImportProvider();
+    const results = await Promise.all(
+      candidates.map(async (url) => {
+        try {
+          const recipe = await provider.importUrl(url);
+          return {
+            url,
+            ok: Boolean(
+              recipe.title &&
+              recipe.ingredients.length &&
+              recipe.instructions.length,
+            ),
+            title: recipe.title,
+            ingredients: recipe.ingredients.length,
+            instructions: recipe.instructions.length,
+            image: Boolean(recipe.image),
+            time: recipe.totalTime !== null,
+          };
+        } catch (error) {
+          return {
+            url,
+            ok: false,
+            error: error instanceof Error ? error.message : String(error),
+          };
+        }
+      }),
+    );
+    for (const result of results) console.log(JSON.stringify(result));
+    expect(results.length).toBe(candidates.length);
+    expect(results.filter((result) => result.ok).length).toBeGreaterThanOrEqual(
+      5,
+    );
+  },
+  60000,
+);

@@ -4,6 +4,17 @@ import { safeFetchHtml } from "./safe-fetch";
 import { parseRecipeHtml } from "./recipe-parser";
 /** Imports are explicit user actions, never a background crawler. */
 export class ExternalUrlImportProvider extends ExternalRecipeProvider {
+  capabilities = {
+    searchByName: false,
+    searchByIngredients: false,
+    getRecipe: false,
+    fullInstructions: true,
+    structuredIngredients: true,
+    sourceLinks: true,
+    images: false,
+    language: ["source-original"],
+    requiresApiKey: false,
+  };
   id = "url-import";
   name = "URL 菜谱导入";
   enabled = true;

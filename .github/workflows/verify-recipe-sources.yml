@@ -1,0 +1,25 @@
+name: Verify Recipe Sources
+on:
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm install --global pnpm@11.19.0
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm recipes:verify
+        env:
+          LIVE_RECIPE_VERIFICATION: "true"
+      - run: pnpm recipes:verify-imports
+        if: always()
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: recipe-source-verification
+          path: |
+            docs/LIVE_RECIPE_VERIFICATION.json
+            docs/IMPORT_VERIFICATION.json

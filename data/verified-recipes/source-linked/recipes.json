@@ -1,0 +1,689 @@
+[
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "www.budgetbytes.com",
+      "sourceUrl": "https://www.budgetbytes.com/garlic-noodles/",
+      "sourceRecipeTitle": "Quick & Easy Garlic Noodles",
+      "sourceAuthor": "",
+      "sourceExternalId": "https://www.budgetbytes.com/garlic-noodles/",
+      "verifiedAt": "2026-09-29T15:29:40.356Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual title, ingredient identities and attribution link only. No third-party instructions, photos or descriptive prose redistributed."
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "id": "source:www.budgetbytes.com:cf62ed3140efabfcdc09b09a",
+    "title": "Quick & Easy Garlic Noodles",
+    "slug": "import:cf62ed3140efabfcdc09b09a",
+    "description": "已访问原始菜谱页；完整步骤请在来源网站查看。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "www.budgetbytes.com",
+    "sourceUrl": "https://www.budgetbytes.com/garlic-noodles/",
+    "sourceAuthor": "",
+    "externalId": "https://www.budgetbytes.com/garlic-noodles/",
+    "cuisine": "Asian",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 10,
+    "cookTime": 15,
+    "totalTime": 25,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "oyster-sauce",
+        "originalText": "蚝油",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "zh:红糖",
+        "originalText": "红糖",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "zh:普通酱油",
+        "originalText": "普通酱油",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "zh:香油",
+        "originalText": "香油",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "pasta",
+        "originalText": "意大利面",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "蒜",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "scallion",
+        "originalText": "葱",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "黄油",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [
+      "garlic noodles",
+      "Noodles"
+    ],
+    "allergens": [
+      "海鲜",
+      "麸质",
+      "牛奶"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-29T15:29:40.356Z",
+    "updatedAt": "2026-09-29T15:29:40.356Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-29T15:29:40.356Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "www.bbcgoodfood.com",
+      "sourceUrl": "https://www.bbcgoodfood.com/recipes/best-ever-chocolate-brownies-recipe",
+      "sourceRecipeTitle": "Best ever chocolate brownies recipe",
+      "sourceAuthor": "",
+      "sourceExternalId": "https://www.bbcgoodfood.com/recipes/best-ever-chocolate-brownies-recipe",
+      "verifiedAt": "2026-09-29T15:29:40.473Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual title, ingredient identities and attribution link only. No third-party instructions, photos or descriptive prose redistributed."
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "id": "source:www.bbcgoodfood.com:d9752566e18b5330d026c125",
+    "title": "Best ever chocolate brownies recipe",
+    "slug": "import:d9752566e18b5330d026c125",
+    "description": "已访问原始菜谱页；完整步骤请在来源网站查看。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "www.bbcgoodfood.com",
+    "sourceUrl": "https://www.bbcgoodfood.com/recipes/best-ever-chocolate-brownies-recipe",
+    "sourceAuthor": "",
+    "externalId": "https://www.bbcgoodfood.com/recipes/best-ever-chocolate-brownies-recipe",
+    "cuisine": "American",
+    "category": "Afternoon tea, Dessert, Treat",
+    "difficulty": "未知",
+    "prepTime": 25,
+    "cookTime": 35,
+    "totalTime": 60,
+    "servings": 16,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "butter",
+        "originalText": "黄油",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "zh:黑巧克力",
+        "originalText": "黑巧克力",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "flour",
+        "originalText": "面粉",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "zh:可可粉",
+        "originalText": "可可粉",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "zh:白巧克力",
+        "originalText": "白巧克力",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "milk",
+        "originalText": "牛奶",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "egg",
+        "originalText": "鸡蛋",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "zh:细砂糖",
+        "originalText": "细砂糖",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [
+      "Best",
+      "Best-ever",
+      "Brownies",
+      "Chocolate",
+      "Cocoa powder",
+      "Dark chocolate",
+      "Ever",
+      "Golden caster sugar",
+      "Large egg",
+      "Large eggs",
+      "Milk chocolate",
+      "Murrin",
+      "Orlando Murrin",
+      "Romantic",
+      "Special occasion",
+      "Valentines Day",
+      "Valentines dessert",
+      "Valentines dinner",
+      "Valentines pudding",
+      "White chocolate"
+    ],
+    "allergens": [
+      "牛奶",
+      "麸质",
+      "鸡蛋"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-29T15:29:40.473Z",
+    "updatedAt": "2026-09-29T15:29:40.473Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-29T15:29:40.473Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "www.loveandlemons.com",
+      "sourceUrl": "https://www.loveandlemons.com/banana-bread/",
+      "sourceRecipeTitle": "Banana Bread",
+      "sourceAuthor": "",
+      "sourceExternalId": "https://www.loveandlemons.com/banana-bread/",
+      "verifiedAt": "2026-09-29T15:29:40.616Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual title, ingredient identities and attribution link only. No third-party instructions, photos or descriptive prose redistributed."
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "id": "source:www.loveandlemons.com:2431a28200d3b5157b0e7806",
+    "title": "Banana Bread",
+    "slug": "import:2431a28200d3b5157b0e7806",
+    "description": "已访问原始菜谱页；完整步骤请在来源网站查看。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "www.loveandlemons.com",
+    "sourceUrl": "https://www.loveandlemons.com/banana-bread/",
+    "sourceAuthor": "",
+    "externalId": "https://www.loveandlemons.com/banana-bread/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 15,
+    "cookTime": 55,
+    "totalTime": 70,
+    "servings": 8,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "zh:香蕉",
+        "originalText": "香蕉",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "unknown:½ cup cane sugar or brown sugar",
+        "originalText": "½ cup cane sugar or brown sugar",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "unknown:½ cup melted butter or vegetable oil (plus more for the pan)",
+        "originalText": "½ cup melted butter or vegetable oil (plus more for the pan)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "egg",
+        "originalText": "鸡蛋",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "zh:香草精",
+        "originalText": "香草精",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "zh:中筋面粉",
+        "originalText": "中筋面粉",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "zh:小苏打",
+        "originalText": "小苏打",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "zh:海盐",
+        "originalText": "海盐",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "unknown:½ teaspoon cinnamon",
+        "originalText": "½ teaspoon cinnamon",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "unknown:¼ teaspoon nutmeg",
+        "originalText": "¼ teaspoon nutmeg",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "zh:核桃",
+        "originalText": "核桃",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [
+      "Banana bread",
+      "Banana bread recipe",
+      "Easy banana bread recipe",
+      "How to make banana bread"
+    ],
+    "allergens": [
+      "鸡蛋",
+      "坚果"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-29T15:29:40.616Z",
+    "updatedAt": "2026-09-29T15:29:40.616Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-29T15:29:40.616Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "cookieandkate.com",
+      "sourceUrl": "https://cookieandkate.com/healthy-banana-bread-recipe/",
+      "sourceRecipeTitle": "Healthy Banana Bread",
+      "sourceAuthor": "Cookie and Kate",
+      "sourceExternalId": "https://cookieandkate.com/healthy-banana-bread-recipe/",
+      "verifiedAt": "2026-09-29T15:29:40.768Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual title, ingredient identities and attribution link only. No third-party instructions, photos or descriptive prose redistributed."
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "id": "source:cookieandkate.com:288c84febfeb26bb1b42cc38",
+    "title": "Healthy Banana Bread",
+    "slug": "import:288c84febfeb26bb1b42cc38",
+    "description": "已访问原始菜谱页；完整步骤请在来源网站查看。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "cookieandkate.com",
+    "sourceUrl": "https://cookieandkate.com/healthy-banana-bread-recipe/",
+    "sourceAuthor": "Cookie and Kate",
+    "externalId": "https://cookieandkate.com/healthy-banana-bread-recipe/",
+    "cuisine": "American",
+    "category": "Quick bread",
+    "difficulty": "未知",
+    "prepTime": 10,
+    "cookTime": 55,
+    "totalTime": 65,
+    "servings": 1,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "oil",
+        "originalText": "食用油",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "zh:枫糖浆",
+        "originalText": "枫糖浆",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "egg",
+        "originalText": "鸡蛋",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "zh:香蕉",
+        "originalText": "香蕉",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "water",
+        "originalText": "水",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "zh:泡打粉",
+        "originalText": "泡打粉",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "zh:香草精",
+        "originalText": "香草精",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "盐",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "zh:肉桂粉",
+        "originalText": "肉桂粉",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "zh:全麦面粉",
+        "originalText": "全麦面粉",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "unknown:Totally optional: ½ cup mix-ins like chopped walnuts or pecans, chocolate chips, raisins, chopped dried fruit, fresh banana slices…",
+        "originalText": "Totally optional: ½ cup mix-ins like chopped walnuts or pecans, chocolate chips, raisins, chopped dried fruit, fresh banana slices…",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [
+      "Banana bread"
+    ],
+    "allergens": [
+      "鸡蛋"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-29T15:29:40.768Z",
+    "updatedAt": "2026-09-29T15:29:40.768Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-29T15:29:40.768Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "www.gimmesomeoven.com",
+      "sourceUrl": "https://www.gimmesomeoven.com/fried-rice-recipe/",
+      "sourceRecipeTitle": "Fried Rice",
+      "sourceAuthor": "",
+      "sourceExternalId": "https://www.gimmesomeoven.com/fried-rice-recipe/",
+      "verifiedAt": "2026-09-29T15:29:40.932Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual title, ingredient identities and attribution link only. No third-party instructions, photos or descriptive prose redistributed."
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "id": "source:www.gimmesomeoven.com:0b0acf0e6ccd96db32d21d99",
+    "title": "Fried Rice",
+    "slug": "import:0b0acf0e6ccd96db32d21d99",
+    "description": "已访问原始菜谱页；完整步骤请在来源网站查看。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "www.gimmesomeoven.com",
+    "sourceUrl": "https://www.gimmesomeoven.com/fried-rice-recipe/",
+    "sourceAuthor": "",
+    "externalId": "https://www.gimmesomeoven.com/fried-rice-recipe/",
+    "cuisine": "Chinese",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 5,
+    "cookTime": 10,
+    "totalTime": 15,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "butter",
+        "originalText": "黄油",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "egg",
+        "originalText": "鸡蛋",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "carrot",
+        "originalText": "胡萝卜",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "onion",
+        "originalText": "洋葱",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "zh:速冻豌豆",
+        "originalText": "速冻豌豆",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "蒜",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "黑胡椒",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "rice",
+        "originalText": "米饭",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "scallion",
+        "originalText": "葱",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "zh:普通酱油",
+        "originalText": "普通酱油",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "oyster-sauce",
+        "originalText": "蚝油",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      },
+      {
+        "ingredientId": "zh:香油",
+        "originalText": "香油",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "食材"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [
+      "30 minute",
+      "freezer friendly",
+      "vegetarian"
+    ],
+    "allergens": [
+      "牛奶",
+      "鸡蛋",
+      "海鲜"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-29T15:29:40.932Z",
+    "updatedAt": "2026-09-29T15:29:40.932Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-29T15:29:40.932Z"
+  }
+]

@@ -40,10 +40,6 @@ export const pantryItems = pgTable(
     ingredientId: text()
       .references(() => ingredientTable.id)
       .notNull(),
-    quantity: real(),
-    unit: text(),
-    expiryDate: timestamp(),
-    storageLocation: text(),
     createdAt: timestamp().defaultNow().notNull(),
     updatedAt: timestamp().defaultNow().notNull(),
   },

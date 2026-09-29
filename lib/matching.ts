@@ -1,52 +1,64 @@
-import { ingredientById, normalizeSearchQuery, normalizeIngredientText } from "./ingredients";
-import type { Recipe, PantryItem } from "./model";
+import {
+  ingredientById,
+  normalizeSearchQuery,
+  normalizeIngredientText,
+} from "./ingredients";
+import type { Recipe, PantryItem, RecipeIngredient } from "./model";
+export function selectedIngredientIds(pantry: PantryItem[]) {
+  const ids = new Set<string>();
+  for (const item of pantry) {
+    let id: string | undefined = item.ingredientId;
+    const visited = new Set<string>();
+    while (id && !visited.has(id)) {
+      visited.add(id);
+      ids.add(id);
+      id = ingredientById.get(id)?.parentIngredientId;
+    }
+  }
+  return ids;
+}
 export function matchRecipe(recipe: Recipe, pantry: PantryItem[]) {
-  const ids = new Set(pantry.map((p) => p.ingredientId));
-  const required = recipe.ingredients.filter((i) => !i.optional);
+  const ids = selectedIngredientIds(pantry);
+  const required = [
+    ...new Map(
+      recipe.ingredients
+        .filter((i) => !i.optional)
+        .map((i) => [i.ingredientId, i]),
+    ).values(),
+  ];
   const available = required.filter((i) => ids.has(i.ingredientId));
   const missing = required.filter((i) => !ids.has(i.ingredientId));
   const staple = (id: string) => ingredientById.get(id)?.pantryStaple ?? false;
-  const weight = (id: string) => (staple(id) ? 0.15 : 1);
-  const total = required.reduce((s, i) => s + weight(i.ingredientId), 0);
-  const score = total
-    ? Math.round(
-        (available.reduce((s, i) => s + weight(i.ingredientId), 0) / total) *
-          100,
-      )
-    : 100;
-  const expiring = pantry
-    .filter(
-      (p) =>
-        p.expiryDate &&
-        new Date(p.expiryDate).getTime() >= Date.now() - 86400000 &&
-        new Date(p.expiryDate).getTime() - Date.now() < 3 * 86400000,
-    )
-    .map((p) => p.ingredientId);
-  const pantryById = new Map(pantry.map((item) => [item.ingredientId, item]));
-  const quantityKnown = available.filter((item) => {
-    const stock = pantryById.get(item.ingredientId);
-    return stock?.quantity !== null && stock?.quantity !== undefined && item.quantity !== null && item.unit === stock.unit;
-  });
-  const quantityEnough = quantityKnown.filter((item) => (pantryById.get(item.ingredientId)?.quantity ?? 0) >= (item.quantity ?? 0));
+  const weight = (item: RecipeIngredient) =>
+    staple(item.ingredientId) ? 0.15 : /辅料|调料/.test(item.group) ? 0.7 : 1;
+  const total = required.reduce((sum, item) => sum + weight(item), 0);
+  const weightedCoverage = total
+    ? available.reduce((sum, item) => sum + weight(item), 0) / total
+    : 0;
+  const core = required.filter((i) => !staple(i.ingredientId));
+  const matchedCore = available.filter((i) => !staple(i.ingredientId));
+  const score = matchedCore.length
+    ? Math.round(weightedCoverage * 100)
+    : Math.min(15, Math.round(weightedCoverage * 100));
+  const used = pantry.filter((item) => {
+    const expanded = selectedIngredientIds([item]);
+    return required.some((i) => expanded.has(i.ingredientId));
+  }).length;
   return {
     score,
     available,
     missing,
+    matchedRequiredIngredients: available,
+    missingRequiredIngredients: missing,
     availableRequiredIngredients: available.length,
     totalRequiredIngredients: required.length,
-    missingRequiredIngredients: missing.length,
     optionalIngredients: recipe.ingredients.filter((i) => i.optional),
-    missingCore: missing.filter((i) => !staple(i.ingredientId)).length,
-    pantryCoverage: pantry.length
-      ? new Set(available.map((i) => i.ingredientId)).size / pantry.length
+    missingCore: core.length - matchedCore.length,
+    selectedIngredientUsage: pantry.length ? used / pantry.length : 0,
+    ingredientCoverage: required.length
+      ? available.length / required.length
       : 0,
-    ingredientCoverage: required.length ? available.length / required.length : 1,
-    quantityCoverage: quantityKnown.length ? quantityEnough.length / quantityKnown.length : null,
-    quantityConfidence: quantityKnown.length / Math.max(1, available.length),
-    quantityShortfalls: quantityKnown.filter((item) => (pantryById.get(item.ingredientId)?.quantity ?? 0) < (item.quantity ?? 0)),
-    inventoryScore:
-      available.filter((i) => !staple(i.ingredientId)).length +
-      available.filter((i) => expiring.includes(i.ingredientId)).length * 2,
+    weightedCoverage,
   };
 }
 const recipeSearchIndex = new WeakMap<Recipe, string>();
@@ -57,29 +69,45 @@ const ingredientNamesByLength = [...ingredientById.values()]
 function searchText(recipe: Recipe) {
   const cached = recipeSearchIndex.get(recipe);
   if (cached) return cached;
-  const text = normalizeIngredientText([
-    recipe.title, recipe.description, recipe.cuisine, recipe.category,
-    ...recipe.tags,
-    ...recipe.ingredients.flatMap((item) => {
-      const ingredient = ingredientById.get(item.ingredientId);
-      return [item.originalText, ingredient?.displayNameZh ?? "", ingredient?.displayNameEn ?? "", ...(ingredient?.aliases ?? [])];
-    }),
-  ].join(" "));
+  const text = normalizeIngredientText(
+    [
+      recipe.title,
+      recipe.description,
+      recipe.cuisine,
+      recipe.category,
+      ...recipe.tags,
+      ...recipe.ingredients.flatMap((item) => {
+        const ingredient = ingredientById.get(item.ingredientId);
+        return [
+          item.originalText,
+          ingredient?.displayNameZh ?? "",
+          ingredient?.displayNameEn ?? "",
+          ...(ingredient?.aliases ?? []),
+        ];
+      }),
+    ].join(" "),
+  );
   recipeSearchIndex.set(recipe, text);
   return text;
 }
 export function searchRecipe(r: Recipe, q: string) {
   const indexed = searchText(r);
-  return normalizeSearchQuery(q).split(/\s+/).every((term) => {
-    if (indexed.includes(term)) return true;
-    // A compound Chinese dish name can contain several known ingredients and a cooking verb.
-    let remaining = term;
-    const parts: string[] = [];
-    for (const name of ingredientNamesByLength) {
-      if (!remaining.includes(name)) continue;
-      remaining = remaining.replace(name, "");
-      parts.push(name);
-    }
-    return parts.length > 0 && parts.every((part) => indexed.includes(part)) && (!remaining || indexed.includes(remaining));
-  });
+  return normalizeSearchQuery(q)
+    .split(/\s+/)
+    .every((term) => {
+      if (indexed.includes(term)) return true;
+      // A compound Chinese dish name can contain several known ingredients and a cooking verb.
+      let remaining = term;
+      const parts: string[] = [];
+      for (const name of ingredientNamesByLength) {
+        if (!remaining.includes(name)) continue;
+        remaining = remaining.replace(name, "");
+        parts.push(name);
+      }
+      return (
+        parts.length > 0 &&
+        parts.every((part) => indexed.includes(part)) &&
+        (!remaining || indexed.includes(remaining))
+      );
+    });
 }
