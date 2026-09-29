@@ -52,7 +52,7 @@ AI 与在线来源只在用户主动操作时请求。URL 导入强制外部 HTT
 
 ## 代码结构
 
-app/ 是真实 Next.js 页面与 API；data/ingredients/、data/recipes/ 是经 Zod 校验的内容；lib/ingredients.ts、lib/matching.ts、lib/recipe-parser.ts 负责食材、匹配和导入；features/cooking/、features/import/、features/recipes/ 承载独立功能。公开本地菜谱详情由服务端渲染，导入页与做饭模式按需加载。lib/storage/device.ts 管理 IndexedDB、旧版迁移和备份。
+app/ 是真实 Next.js 页面与 API；data/ingredients/、data/recipes/ 是经 Zod 校验的内容；lib/ingredients.ts、lib/matching.ts、lib/recipe-parser.ts 负责食材、匹配和导入；features/cooking/、features/import/、features/recipes/ 承载独立功能。公开本地菜谱详情由服务端渲染，厨房、发现、购物、导入、详情和做饭页面按需加载。lib/storage/device.ts 管理 IndexedDB、旧版迁移和备份。
 
 Provider 接口与 Aggregator 保持统一 Recipe 模型。LocalRecipeProvider 始终可用，TheMealDBProvider 需要合法密钥，ExternalUrlImportProvider 由用户提交 URL 时触发；XiachufangProvider 是禁用占位，没有使用私有接口。AI 默认关闭，生成结果不混入本地菜谱。
 

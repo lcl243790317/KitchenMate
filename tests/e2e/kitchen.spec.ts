@@ -107,23 +107,92 @@ test("desktop screenshot and local fallback", async ({ page }) => {
     page.getByRole("button", { name: "番茄炒蛋", exact: true }),
   ).toBeVisible();
 });
-test("Chinese ingredient alias and first-party import survive refresh", async ({ page }) => {
+test("Chinese ingredient alias and first-party import survive refresh", async ({
+  page,
+}) => {
   await page.setViewportSize({ width: 430, height: 900 });
   await page.goto("/pantry");
   await page.getByLabel("搜索食材").fill("西红柿");
-  await expect(page.getByRole("button", { name: "番茄", exact: true })).toBeVisible();
+  await expect(
+    page.getByRole("button", { name: "番茄", exact: true }),
+  ).toBeVisible();
   await page.getByRole("button", { name: "番茄", exact: true }).click();
   await page.goto("/import");
   await page.getByRole("button", { name: "试试导入这个示例" }).click();
-  await expect(page.getByLabel("菜谱网址")).toHaveValue(/examples\/import\/tomato-eggs/);
+  await expect(page.getByLabel("菜谱网址")).toHaveValue(
+    /examples\/import\/tomato-eggs/,
+  );
   await page.getByRole("button", { name: "分析并导入" }).click();
-  await expect(page.getByRole("heading", { name: "找到了这个菜谱" })).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "找到了这个菜谱" }),
+  ).toBeVisible();
   await page.getByRole("button", { name: "保存到我的菜谱" }).click();
   await page.reload();
-  await page.getByRole("link", { name: "发现菜谱", exact: true }).first().click();
+  await page
+    .getByRole("link", { name: "发现菜谱", exact: true })
+    .first()
+    .click();
   await page.getByRole("button", { name: "我的菜谱", exact: true }).click();
-  await expect(page.getByRole("button", { name: "番茄炒蛋", exact: true })).toBeVisible();
+  await expect(
+    page.getByRole("button", { name: "番茄炒蛋", exact: true }),
+  ).toBeVisible();
   await page.getByRole("button", { name: "番茄炒蛋", exact: true }).click();
   await page.getByRole("link", { name: "开始做菜" }).click();
   await expect(page.getByRole("heading", { name: "步骤 1" })).toBeVisible();
+});
+
+test("v1 kitchen migrates and JSON backup restores it", async ({ page }) => {
+  await page.addInitScript(() => {
+    localStorage.setItem(
+      "kitchenmate-v1",
+      JSON.stringify({
+        pantry: [
+          {
+            ingredientId: "tomato",
+            canonicalName: "tomato",
+            displayName: "番茄",
+            category: "蔬菜",
+            quantity: 2,
+            unit: "个",
+            expiryDate: null,
+            storageLocation: "冰箱",
+            createdAt: "2026-09-29",
+            updatedAt: "2026-09-29",
+          },
+        ],
+        shopping: [],
+        saved: [],
+        favorites: ["tomato-eggs"],
+        dark: true,
+      }),
+    );
+  });
+  await page.goto("/pantry");
+  await expect(
+    page.getByRole("button", { name: "番茄", exact: true }),
+  ).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  const downloadPromise = page.waitForEvent("download");
+  await page.getByRole("button", { name: "导出我的数据" }).click();
+  const stream = await (await downloadPromise).createReadStream();
+  const chunks: Buffer[] = [];
+  for await (const chunk of stream) chunks.push(Buffer.from(chunk));
+  const backup = Buffer.concat(chunks);
+  await page.getByRole("button", { name: "清空厨房" }).click();
+  await expect(
+    page.getByRole("button", { name: "番茄", exact: true }),
+  ).toHaveAttribute("aria-pressed", "false");
+  await page
+    .getByLabel("选择 KitchenMate 备份")
+    .setInputFiles({
+      name: "backup.json",
+      mimeType: "application/json",
+      buffer: backup,
+    });
+  await expect(page.getByText("将恢复：", { exact: false })).toBeVisible();
+  await page.getByRole("button", { name: "确认恢复" }).click();
+  await page.reload();
+  await expect(
+    page.getByRole("button", { name: "番茄", exact: true }),
+  ).toHaveAttribute("aria-pressed", "true");
 });

@@ -7,7 +7,6 @@ import {
   ArrowRight,
   Plus,
   Check,
-  Search,
   ChefHat,
   ShoppingBasket,
   Refrigerator,
@@ -19,11 +18,7 @@ import {
   Clock,
   Flame,
   Leaf,
-  SlidersHorizontal,
-  Trash2,
-  Sparkles,
   Heart,
-  UtensilsCrossed,
 } from "lucide-react";
 import { z } from "zod";
 import { createBackup, loadDeviceState, parseBackup, saveDeviceState, type DeviceState } from "@/lib/storage/device";
@@ -55,6 +50,8 @@ const ImportPageView = dynamic(() => import("@/features/import/import-page").the
 const CookingMode = dynamic(() => import("@/features/cooking/cooking-mode").then((module) => module.CookingMode));
 const ShoppingPageView = dynamic(() => import("@/features/shopping/shopping-page").then((module) => module.ShoppingPageView));
 const RecipeDetailView = dynamic(() => import("@/features/recipes/recipe-detail-view").then((module) => module.RecipeDetailView));
+const PantryPageView = dynamic(() => import("@/features/pantry/pantry-page").then((module) => module.PantryPageView));
+const DiscoverPageView = dynamic(() => import("@/features/recipes/discover-page").then((module) => module.DiscoverPageView));
 const foodArt: Record<string, string> = {
   "tomato-eggs": "🍅",
   "beef-potato": "🥔",
@@ -613,323 +610,36 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
             </section>
           </>
         )}
-        {path === "/pantry" && (
-          <>
-            <PageHeading
-              eyebrow="YOUR LITTLE KITCHEN"
-              title="我的厨房"
-              description="食材心里有数，每一餐都从容一点。"
-            />
-            <div className="pantry-actions">
-              <button
-                onClick={() => {
-                  setPantry(demoPantry());
-                  setMessage("已装入示范厨房");
-                }}
-                className="secondary"
-              >
-                装入示范食材
-              </button>
-              <button className="secondary" onClick={() => setPantry([])}>
-                清空厨房
-              </button>
-              <Link href="/discover" className="primary">
-                看看我能做什么 <ArrowRight size={16} />
-              </Link>
-            </div>
-            <section className="panel backup-panel">
-              <h2>我的厨房数据</h2>
-              <p>食材、收藏、购物清单和保存的菜谱只在这台设备。换设备时可以导出备份，再在新设备恢复。</p>
-              <div className="backup-actions"><button className="secondary" onClick={exportData}>导出我的数据</button><label className="secondary backup-file">恢复备份<input aria-label="选择 KitchenMate 备份" type="file" accept="application/json,.json" onChange={(event) => previewBackup(event.target.files?.[0])} /></label></div>
-              {backupPreview && <div role="status" className="backup-preview"><strong>将恢复：</strong> {backupPreview.pantry.length} 个食材 · {backupPreview.favorites.length} 个收藏 · {backupPreview.shopping.length} 个购物项 · {backupPreview.saved.length} 道我的菜谱<div><button className="primary" onClick={restoreBackup}>确认恢复</button><button className="secondary" onClick={() => setBackupPreview(null)}>取消</button></div></div>}
-            </section>
-            <section className="panel">{pantryPicker}</section>
-            <section className="stock-list">
-              <h2>
-                已拥有的食材 <span className="count">{pantry.length}</span>
-              </h2>
-              {!pantry.length && (
-                <div className="empty">厨房还是空的，点选上方食材开始吧。</div>
-              )}
-              {pantry.map((p) => (
-                <div className="stock-row" key={p.ingredientId}>
-                  <strong>
-                    {ingredientById.get(p.ingredientId)?.emoji}{" "}
-                    {p.displayName}
-                  </strong>
-                  <label>
-                    数量
-                    <input
-                      aria-label={`${p.displayName}数量`}
-                      type="number"
-                      min="0"
-                      step="0.1"
-                      placeholder="不限"
-                      value={p.quantity ?? ""}
-                      onChange={(e) =>
-                        setPantry((prev) =>
-                          prev.map((i) =>
-                            i.ingredientId === p.ingredientId
-                              ? {
-                                  ...i,
-                                  quantity:
-                                    e.target.value === ""
-                                      ? null
-                                      : Math.max(0, Number(e.target.value)),
-                                  updatedAt: new Date().toISOString(),
-                                }
-                              : i,
-                          ),
-                        )
-                      }
-                    />
-                  </label>
-                  <label>
-                    单位
-                    <input
-                      aria-label={`${p.displayName}单位`}
-                      placeholder="个 / g / ml"
-                      value={p.unit}
-                      onChange={(e) =>
-                        setPantry((prev) =>
-                          prev.map((i) =>
-                            i.ingredientId === p.ingredientId
-                              ? {
-                                  ...i,
-                                  unit: e.target.value,
-                                  updatedAt: new Date().toISOString(),
-                                }
-                              : i,
-                          ),
-                        )
-                      }
-                    />
-                  </label>
-                  <label>
-                    保质期
-                    <input
-                      type="date"
-                      value={p.expiryDate ?? ""}
-                      onChange={(e) =>
-                        setPantry((prev) =>
-                          prev.map((i) =>
-                            i.ingredientId === p.ingredientId
-                              ? {
-                                  ...i,
-                                  expiryDate: e.target.value || null,
-                                  updatedAt: new Date().toISOString(),
-                                }
-                              : i,
-                          ),
-                        )
-                      }
-                    />
-                  </label>
-                  <label>
-                    存放位置
-                    <select
-                      value={p.storageLocation}
-                      onChange={(e) =>
-                        setPantry((prev) =>
-                          prev.map((i) =>
-                            i.ingredientId === p.ingredientId
-                              ? {
-                                  ...i,
-                                  storageLocation: e.target
-                                    .value as PantryItem["storageLocation"],
-                                  updatedAt: new Date().toISOString(),
-                                }
-                              : i,
-                          ),
-                        )
-                      }
-                    >
-                      {["冰箱", "冷冻室", "橱柜", "调料柜"].map((l) => (
-                        <option key={l}>{l}</option>
-                      ))}
-                    </select>
-                  </label>
-                  <button
-                    className="icon-button"
-                    aria-label={`删除${p.displayName}`}
-                    onClick={() =>
-                      setPantry((prev) =>
-                        prev.filter((i) => i.ingredientId !== p.ingredientId),
-                      )
-                    }
-                  >
-                    <Trash2 size={18} />
-                  </button>
-                </div>
-              ))}
-            </section>
-          </>
-        )}
-        {path === "/discover" && (
-          <>
-            <PageHeading
-              eyebrow="COOK SOMETHING GOOD"
-              title="厨房里的无限可能"
-              description={`你有 ${pantry.length} 种食材，看看今天能做点什么。`}
-            />
-            <div className="discover-search">
-              <div className="searchbox">
-                <Search size={20} />
-                <input
-                  aria-label="搜索菜谱"
-                  placeholder="搜索菜名、食材或标签，例如：番茄炒蛋 / 快手菜"
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
-                />
-              </div>
-              <button
-                className="secondary"
-                onClick={searchOnline}
-                disabled={loading}
-              >
-                {loading ? "正在查找…" : "查找在线菜谱"}
-              </button>
-            </div>
-            <div className="recommend-tabs">
-              {["最匹配", "我现在就能做", "只差一点", "消耗库存", "快手菜"].map((m) => (
-                <button
-                  key={m}
-                  className={mode === m ? "active" : ""}
-                  onClick={() => setMode(m)}
-                >
-                  {m}
-                </button>
-              ))}
-              <button
-                className={onlyFavorites ? "active" : ""}
-                onClick={() => setOnlyFavorites(!onlyFavorites)}
-              >
-                <Heart size={16} /> 收藏
-              </button>
-              <button onClick={() => setFilters(!filters)}>
-                <SlidersHorizontal size={16} /> 筛选
-              </button>
-            </div>
-            <div className="source-tabs" aria-label="菜谱来源">{["全部", "KitchenMate", "在线菜谱", "我的菜谱"].map((source) => <button key={source} className={sourceFilter === source ? "active" : ""} onClick={() => { setSourceFilter(source); setVisibleRecipes(24); }}>{source}</button>)}</div>
-            {filters && (
-              <div className="filter-panel">
-                {[
-                  ["时间", maxTime, setMaxTime, ["15", "30", "60"]],
-                  ["难度", difficulty, setDifficulty, ["简单", "普通", "进阶"]],
-                  [
-                    "菜系",
-                    cuisine,
-                    setCuisine,
-                    [
-                      "中餐",
-                      "川菜",
-                      "粤菜",
-                      "江浙菜",
-                      "东北菜",
-                      "日料",
-                      "韩餐",
-                      "西餐",
-                      "意大利菜",
-                      "墨西哥菜",
-                      "东南亚",
-                    ],
-                  ],
-                  [
-                    "偏好",
-                    diet,
-                    setDiet,
-                    ["素食", "Vegan", "高蛋白", "低碳", "低脂"],
-                  ],
-                  [
-                    "排除过敏原",
-                    allergen,
-                    setAllergen,
-                    ["花生", "坚果", "牛奶", "鸡蛋", "海鲜", "麸质"],
-                  ],
-                  [
-                    "厨具",
-                    equipment,
-                    setEquipment,
-                    ["炒锅", "烤箱", "空气炸锅", "电饭煲", "高压锅", "微波炉"],
-                  ],
-                ].map(([label, value, set, options]) => (
-                  <label key={label as string}>
-                    {label as string}
-                    <select
-                      value={value as string}
-                      onChange={(e) =>
-                        (set as (v: string) => void)(e.target.value)
-                      }
-                    >
-                      <option value="">不限</option>
-                      {(options as string[]).map((o) => (
-                        <option key={o} value={o}>
-                          {label === "时间" ? `${o} 分钟以内` : o}
-                        </option>
-                      ))}
-                    </select>
-                  </label>
-                ))}
-                <button
-                  className="text-link"
-                  onClick={() => {
-                    setMaxTime("");
-                    setDifficulty("");
-                    setCuisine("");
-                    setDiet("");
-                    setAllergen("");
-                    setEquipment("");
-                  }}
-                >
-                  重置筛选
-                </button>
-                {allergen && (
-                  <small>
-                    过敏原筛选仅显示已标注的本地菜谱；请同时核对包装及交叉污染风险。
-                  </small>
-                )}
-              </div>
-            )}
-            {warning && (
-              <p className="notice" role="status">
-                {warning}
-              </p>
-            )}
-            <div className="result-count">
-              找到 {matches.length} 道灵感{" "}
-              <span>基础调料对匹配度影响较小 · 已填写库存数量时会提示不足</span>
-            </div>
-            {matches.length ? (
-              recipeCards()
-            ) : (
-              <div className="empty">
-                <UtensilsCrossed size={36} />
-                <h2>换个条件，找点新灵感</h2>
-                <p>试着添加更多食材，或放宽筛选条件。</p>
-              </div>
-            )}
-            {aiEnabled && <section className="ai-panel">
-              <Sparkles />
-              <div>
-                <h3>还有一点想法？让 AI 帮你想一道菜。</h3>
-                <p>根据现有食材和你的偏好，生成 3 个候选方案。</p>
-                <input
-                  aria-label="AI 烹饪要求"
-                  value={constraints}
-                  onChange={(e) => setConstraints(e.target.value)}
-                  maxLength={500}
-                />
-              </div>
-              <button
-                className="primary"
-                disabled={loading}
-                onClick={generateAI}
-              >
-                {loading ? "正在准备…" : "AI 帮我想一道菜"}
-              </button>
-            </section>}
-          </>
-        )}
+        {path === "/pantry" && <PantryPageView
+          pantry={pantry}
+          setPantry={setPantry}
+          picker={pantryPicker}
+          onDemo={() => { setPantry(demoPantry()); setMessage("已装入示范厨房"); }}
+          onExport={exportData}
+          onBackupFile={previewBackup}
+          backupPreview={backupPreview}
+          onRestore={restoreBackup}
+          onCancelRestore={() => setBackupPreview(null)}
+        />}
+        {path === "/discover" && <DiscoverPageView
+          pantryCount={pantry.length}
+          query={query} setQuery={setQuery}
+          loading={loading} onSearch={searchOnline}
+          mode={mode} setMode={setMode}
+          onlyFavorites={onlyFavorites} setOnlyFavorites={setOnlyFavorites}
+          filtersOpen={filters} setFiltersOpen={setFilters}
+          sourceFilter={sourceFilter} setSourceFilter={setSourceFilter}
+          resetVisible={() => setVisibleRecipes(24)}
+          maxTime={maxTime} setMaxTime={setMaxTime}
+          difficulty={difficulty} setDifficulty={setDifficulty}
+          cuisine={cuisine} setCuisine={setCuisine}
+          diet={diet} setDiet={setDiet}
+          allergen={allergen} setAllergen={setAllergen}
+          equipment={equipment} setEquipment={setEquipment}
+          warning={warning} resultCount={matches.length} cards={recipeCards()}
+          aiEnabled={aiEnabled} constraints={constraints} setConstraints={setConstraints}
+          onGenerateAI={generateAI}
+        />}
         {selected && !cooking && <RecipeDetailView
           recipe={selected}
           pantry={pantry}
@@ -940,7 +650,8 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
           onAddMissing={() => addMissing(selected)}
           artwork={<FoodImage recipe={selected} big />}
           jsonLd={<RecipeJsonLd recipe={selected} />}
-        />}        {selectedId && !selected && (
+        />}
+        {selectedId && !selected && (
           <div className="empty">
             <h2>正在查找菜谱</h2>
             <p>
@@ -997,23 +708,6 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
         ))}
       </div>
     </>
-  );
-}
-function PageHeading({
-  eyebrow,
-  title,
-  description,
-}: {
-  eyebrow: string;
-  title: string;
-  description: string;
-}) {
-  return (
-    <section className="page-heading">
-      <span className="eyebrow">{eyebrow}</span>
-      <h1>{title}</h1>
-      <p>{description}</p>
-    </section>
   );
 }
 function RecipeJsonLd({ recipe: r }: { recipe: Recipe }) {
