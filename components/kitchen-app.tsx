@@ -5,7 +5,6 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import {
   ArrowRight,
-  ArrowLeft,
   Plus,
   Check,
   Search,
@@ -24,8 +23,6 @@ import {
   Trash2,
   Sparkles,
   Heart,
-  Minus,
-  ExternalLink,
   UtensilsCrossed,
 } from "lucide-react";
 import { z } from "zod";
@@ -57,6 +54,7 @@ const nav = [
 const ImportPageView = dynamic(() => import("@/features/import/import-page").then((module) => module.ImportPageView));
 const CookingMode = dynamic(() => import("@/features/cooking/cooking-mode").then((module) => module.CookingMode));
 const ShoppingPageView = dynamic(() => import("@/features/shopping/shopping-page").then((module) => module.ShoppingPageView));
+const RecipeDetailView = dynamic(() => import("@/features/recipes/recipe-detail-view").then((module) => module.RecipeDetailView));
 const foodArt: Record<string, string> = {
   "tomato-eggs": "🍅",
   "beef-potato": "🥔",
@@ -932,163 +930,17 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
             </section>}
           </>
         )}
-        {selected && !cooking && (
-          <>
-            <Link href="/discover" className="back">
-              <ArrowLeft size={16} /> 返回发现菜谱
-            </Link>
-            <section className="detail-hero">
-              <FoodImage recipe={selected} big />
-              <div>
-                <span className="eyebrow">
-                  {selected.cuisine} · {selected.sourceName}
-                </span>
-                <h1>{selected.title}</h1>
-                <p>{selected.description}</p>
-                <div className="detail-facts">
-                  <span>
-                    <Clock /> {selected.totalTime ?? "未知"} 分钟
-                  </span>
-                  <span>
-                    <Flame /> {selected.difficulty}
-                  </span>
-                  <span>
-                    <UtensilsCrossed /> {servings} 人份
-                  </span>
-                </div>
-                <p className="subtle">
-                  准备 {selected.prepTime ?? "未知"} 分钟 · 烹饪{" "}
-                  {selected.cookTime ?? "未知"} 分钟
-                </p>
-                <p className="source">
-                  来源：{selected.sourceName}
-                  {selected.sourceAuthor && ` · ${selected.sourceAuthor}`}
-                </p>
-                {selected.sourceUrl && (
-                  <a
-                    className="text-link"
-                    href={selected.sourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    查看原始菜谱 <ExternalLink size={14} />
-                  </a>
-                )}
-                {selected.sourceProvider === "url-import" && <button className="secondary" disabled={loading} onClick={() => refreshImportedRecipe(selected)}>{loading ? "正在检查…" : "检查原菜谱更新"}</button>}
-                <Link
-                  href={`/recipe/${encodeURIComponent(selected.id)}/cook`}
-                  className="primary"
-                >
-                  <ChefHat size={19} /> 开始做菜 <ArrowRight size={17} />
-                </Link>
-              </div>
-            </section>
-            {selected.sourceProvider === "ai" && (
-              <p className="notice">
-                AI
-                生成菜谱：请检查食材是否变质、过敏原和肉类是否充分加热。特殊人群请核对饮食适宜性。
-              </p>
-            )}
-            {selected.sourceProvider !== "local" && (
-              <p className="notice">
-                外部菜谱的过敏原及份量信息可能不完整；默认 2
-                人份仅在来源未提供份量时使用，请核对原文。
-              </p>
-            )}
-            <div className="detail-layout">
-              <aside className="panel ingredient-list">
-                <div className="section-heading">
-                  <h2>食材</h2>
-                  <div className="servings">
-                    <button
-                      aria-label="减少人数"
-                      disabled={servings <= 1}
-                      onClick={() => setServings((s) => Math.max(1, s - 1))}
-                    >
-                      <Minus size={14} />
-                    </button>
-                    <select
-                      aria-label="份量"
-                      value={servings}
-                      onChange={(e) => setServings(Number(e.target.value))}
-                    >
-                      {[...new Set([1, 2, 3, 4, 6, 8, servings])]
-                        .sort((a, b) => a - b)
-                        .map((n) => (
-                          <option key={n} value={n}>
-                            {n} 人份
-                          </option>
-                        ))}
-                    </select>
-                    <button
-                      aria-label="增加人数"
-                      onClick={() => setServings((s) => s + 1)}
-                    >
-                      <Plus size={14} />
-                    </button>
-                  </div>
-                </div>
-                {selected.ingredients.map((i, n) => {
-                  const stock = pantry.find((p) => p.ingredientId === i.ingredientId);
-                  const has = Boolean(stock);
-                  const scaled = scaleQuantity(i.quantity, selected.servings, servings);
-                  const shortfall = stock?.quantity !== null && stock?.quantity !== undefined && scaled !== null && stock.unit === i.unit && stock.quantity < scaled;
-                  return (
-                    <div
-                      className="detail-ingredient"
-                      key={`${i.ingredientId}-${n}`}
-                    >
-                      <span className={has ? "has" : ""}>
-                        {has ? (
-                          <Check size={16} />
-                        ) : (
-                          <span className="circle" />
-                        )}
-                        {ingredientName(i.ingredientId)}
-                        {i.optional && <small> 可选</small>}
-                        {shortfall && <small> · 数量可能不足</small>}
-                      </span>
-                      <span>
-                        {i.quantity === null
-                          ? i.originalText
-                          : `${scaleQuantity(i.quantity, selected.servings, servings)} ${i.unit}`}
-                      </span>
-                    </div>
-                  );
-                })}
-                <p className="tiny">✓ 你已经有　○ 还缺食材</p>
-                <button
-                  className="secondary full"
-                  onClick={() => addMissing(selected)}
-                >
-                  <ShoppingBasket size={16} /> 添加缺少食材到购物清单
-                </button>
-              </aside>
-              <section className="instructions">
-                <h2>一步一步，做顿好饭</h2>
-                {selected.instructions.map((s) => (
-                  <article key={s.stepNumber}>
-                    <span className="step-number">
-                      {String(s.stepNumber).padStart(2, "0")}
-                    </span>
-                    <div>
-                      <h3>{s.title}</h3>
-                      <p>{s.description}</p>
-                      {s.durationSeconds !== null && (
-                        <span className="step-time">
-                          <Clock size={14} /> 约{" "}
-                          {Math.round(s.durationSeconds / 60)} 分钟
-                        </span>
-                      )}
-                    </div>
-                  </article>
-                ))}
-              </section>
-            </div>
-            <RecipeJsonLd recipe={selected} />
-          </>
-        )}
-        {selectedId && !selected && (
+        {selected && !cooking && <RecipeDetailView
+          recipe={selected}
+          pantry={pantry}
+          servings={servings}
+          setServings={setServings}
+          loading={loading}
+          onRefresh={() => refreshImportedRecipe(selected)}
+          onAddMissing={() => addMissing(selected)}
+          artwork={<FoodImage recipe={selected} big />}
+          jsonLd={<RecipeJsonLd recipe={selected} />}
+        />}        {selectedId && !selected && (
           <div className="empty">
             <h2>正在查找菜谱</h2>
             <p>
@@ -1099,7 +951,8 @@ export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
             </Link>
           </div>
         )}
-        {path === "/shopping" && <ShoppingPageView shopping={shopping} onChange={setShopping} />}        {path === "/import" && <ImportPageView
+        {path === "/shopping" && <ShoppingPageView shopping={shopping} onChange={setShopping} />}
+        {path === "/import" && <ImportPageView
           importUrl={importUrl}
           setImportUrl={setImportUrl}
           preview={importPreview}
