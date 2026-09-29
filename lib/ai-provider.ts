@@ -5,7 +5,7 @@ import { z } from "zod";
 export class AIRecipeProvider extends ExternalRecipeProvider {
   id = "ai";
   name = "AI 生成菜谱";
-  enabled = Boolean(process.env.LLM_API_KEY);
+  enabled = process.env.ENABLE_AI_RECIPE_GENERATION === "true" && Boolean(process.env.LLM_API_KEY);
   async search(): Promise<Recipe[]> {
     return [];
   }

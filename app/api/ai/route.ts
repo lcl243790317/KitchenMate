@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { AIRecipeProvider } from "@/lib/ai-provider";
-import { rateLimit, sameOrigin } from "@/lib/rate-limit";
+import { rateLimit, rateLimitRequest, sameOrigin } from "@/lib/rate-limit";
 import { readJson } from "@/lib/http";
 export async function POST(request: Request) {
   if (!sameOrigin(request))
@@ -11,7 +11,8 @@ export async function POST(request: Request) {
       { error: "尚未配置 AI。普通食材推荐仍可正常使用。" },
       { status: 503 },
     );
-  if (!rateLimit("ai", 5))
+  if (!rateLimitRequest(request, "ai", Number(process.env.AI_REQUESTS_PER_IP_PER_DAY ?? 5), 86400000) ||
+      !rateLimit("ai:global", Number(process.env.AI_REQUESTS_GLOBAL_PER_DAY ?? 30), 86400000))
     return Response.json({ error: "请稍后再试" }, { status: 429 });
   try {
     const input = z

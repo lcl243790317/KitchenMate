@@ -1,3 +1,4 @@
+import { KitchenApp } from "@/components/kitchen-app";
 export default function Page() {
-  return null;
+  return <KitchenApp />;
 }

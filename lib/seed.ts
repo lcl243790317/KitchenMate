@@ -1,5 +1,9 @@
-import { ingredientName, ingredients } from "./ingredients";
-import type { Recipe } from "./model";
+import { ingredientName, ingredients, ingredientById } from "./ingredients";
+import { recipeSchema, type Recipe } from "./model";
+import { z } from "zod";
+import quickData from "@/data/recipes/quick.json";
+import mainData from "@/data/recipes/mains.json";
+import everydayData from "@/data/recipes/everyday.json";
 type Seed = {
   id: string;
   title: string;
@@ -353,7 +357,7 @@ const seeds: Seed[] = [
     cuisine: "意大利菜",
   },
 ];
-export const localRecipes: Recipe[] = seeds.map((s) => ({
+const originalRecipes: Recipe[] = seeds.map((s) => ({
   id: s.id,
   slug: s.id,
   title: s.title,
@@ -407,3 +411,44 @@ export const localRecipes: Recipe[] = seeds.map((s) => ({
   sourceUpdatedAt: null,
   lastFetchedAt: null,
 }));
+const contentRowSchema = z.tuple([
+  z.string().min(1), z.string().min(1), z.number().positive(), z.string().min(8),
+  z.array(z.tuple([z.string().min(1), z.number().positive(), z.string().min(1)])).min(2),
+  z.array(z.string().min(5)).min(2),
+]);
+function loadRecipes(raw: unknown, category: string): Recipe[] {
+  return z.array(contentRowSchema).parse(raw).map(([id, title, totalTime, description, items, steps]) => {
+    for (const [ingredientId] of items) {
+      if (!ingredientById.has(ingredientId)) throw new Error(`Unknown ingredient ${ingredientId} in ${id}`);
+    }
+    return recipeSchema.parse({
+      id, slug: id, title, description, image: null,
+      sourceProvider: "local", sourceName: "KitchenMate 原创", sourceUrl: null,
+      sourceAuthor: "KitchenMate", externalId: id, cuisine: category === "西式与海鲜" ? "家常融合" : "中餐",
+      category, difficulty: totalTime <= 30 ? "简单" : "普通",
+      prepTime: Math.min(10, Math.max(3, Math.floor(totalTime / 3))),
+      cookTime: totalTime - Math.min(10, Math.max(3, Math.floor(totalTime / 3))), totalTime,
+      servings: 2,
+      ingredients: items.map(([ingredientId, quantity, unit]) => ({
+        ingredientId, quantity, unit, optional: false,
+        originalText: `${ingredientName(ingredientId)} ${quantity}${unit}`,
+        group: ingredientById.get(ingredientId)?.pantryStaple ? "调料" : "主料",
+      })),
+      instructions: steps.map((step, index) => ({
+        stepNumber: index + 1, title: `步骤 ${index + 1}`, description: step,
+        durationSeconds: null, image: null, tips: "根据火力与食材状态调整时间。", temperature: null,
+      })),
+      equipment: ["炒锅"], tags: [category, ...(totalTime <= 20 ? ["快手菜"] : [])],
+      allergens: [...new Set(items.flatMap(([id]) => ingredientById.get(id)?.allergens ?? []))],
+      nutrition: null, rating: null, createdAt: "2026-09-29T00:00:00.000Z",
+      updatedAt: "2026-09-29T00:00:00.000Z", sourceUpdatedAt: null, lastFetchedAt: null,
+    });
+  });
+}
+export const localRecipes: Recipe[] = [
+  ...originalRecipes,
+  ...loadRecipes(quickData, "快手家常"),
+  ...loadRecipes(mainData, "肉类主菜"),
+  ...loadRecipes(everydayData, "西式与海鲜"),
+];
+export const localRecipeById = new Map(localRecipes.map((recipe) => [recipe.id, recipe]));

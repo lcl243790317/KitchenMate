@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { KitchenApp } from "@/components/kitchen-app";
+import { ServiceWorkerRegister } from "@/components/service-worker-register";
 export const metadata: Metadata = {
   title: "今天吃什么 · KitchenMate",
   description: "从厨房现有食材出发，找到今天的一餐。",
@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="zh-CN" data-scroll-behavior="smooth">
       <body>
-        <KitchenApp />
+        <ServiceWorkerRegister />
         {children}
       </body>
     </html>

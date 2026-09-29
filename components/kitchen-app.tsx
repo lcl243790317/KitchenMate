@@ -25,26 +25,28 @@ import {
   Heart,
   Minus,
   ExternalLink,
-  Timer,
   UtensilsCrossed,
 } from "lucide-react";
 import { z } from "zod";
+import { createBackup, loadDeviceState, parseBackup, saveDeviceState, type DeviceState } from "@/lib/storage/device";
+import { verifiedImportExamples } from "@/lib/import-examples";
 import {
   ingredients,
+  ingredientById,
+  normalizeIngredientText,
   ingredientName,
   demoPantry,
   togglePantry,
 } from "@/lib/ingredients";
 import { localRecipes } from "@/lib/seed";
+import { CookingMode } from "@/features/cooking/cooking-mode";
 import { matchRecipe, searchRecipe } from "@/lib/matching";
 import { scaleQuantity } from "@/lib/units";
 import {
   Recipe,
   PantryItem,
   ShoppingItem,
-  pantryItemSchema,
   recipeSchema,
-  shoppingItemSchema,
 } from "@/lib/model";
 
 const nav = [
@@ -54,17 +56,7 @@ const nav = [
   ["/shopping", "购物清单", ShoppingBasket],
   ["/import", "导入菜谱", Link2],
 ] as const;
-const categories = [
-  "全部",
-  "蔬菜",
-  "肉类",
-  "海鲜",
-  "蛋奶",
-  "主食",
-  "豆制品",
-  "调料",
-  "其他",
-];
+const categories = ["全部", ...new Set(ingredients.map((item) => item.category))];
 const foodArt: Record<string, string> = {
   "tomato-eggs": "🍅",
   "beef-potato": "🥔",
@@ -100,7 +92,7 @@ function FoodImage({ recipe, big = false }: { recipe: Recipe; big?: boolean }) {
     </div>
   );
 }
-export function KitchenApp() {
+export function KitchenApp({ aiEnabled = false }: { aiEnabled?: boolean }) {
   const path = usePathname();
   const router = useRouter();
   const [ready, setReady] = useState(false);
@@ -116,6 +108,7 @@ export function KitchenApp() {
   const [query, setQuery] = useState("");
   const [ingredientQuery, setIngredientQuery] = useState("");
   const [category, setCategory] = useState("全部");
+  const [showAllIngredients, setShowAllIngredients] = useState(false);
   const [mode, setMode] = useState("最匹配");
   const [filters, setFilters] = useState(false);
   const [maxTime, setMaxTime] = useState("");
@@ -125,44 +118,57 @@ export function KitchenApp() {
   const [allergen, setAllergen] = useState("");
   const [equipment, setEquipment] = useState("");
   const [onlyFavorites, setOnlyFavorites] = useState(false);
+  const [sourceFilter, setSourceFilter] = useState("全部");
+  const [visibleRecipes, setVisibleRecipes] = useState(24);
   const [servingChoice, setServingChoice] = useState<{
     id: string;
     value: number;
   } | null>(null);
   const [importUrl, setImportUrl] = useState("");
+  const [importPreview, setImportPreview] = useState<Recipe | null>(null);
+  const [backupPreview, setBackupPreview] = useState<DeviceState | null>(null);
   const [constraints, setConstraints] =
     useState("30 分钟以内，两人份，不要太辣");
   useEffect(() => {
-    // Hydrate device-local state after SSR; one mount-time update is intentional.
-    /* eslint-disable react-hooks/set-state-in-effect */
-    try {
-      const data = JSON.parse(localStorage.getItem("kitchenmate-v1") ?? "null");
+    let active = true;
+    loadDeviceState().then((data) => {
+      if (!active) return;
       if (data) {
-        setPantry(z.array(pantryItemSchema).parse(data.pantry));
-        setShopping(z.array(shoppingItemSchema).parse(data.shopping));
-        setSaved(z.array(recipeSchema).parse(data.saved));
-        setFavorites(z.array(z.string()).parse(data.favorites ?? []));
-        setDark(!!data.dark);
+        setPantry(data.pantry); setShopping(data.shopping); setSaved(data.saved);
+        setFavorites(data.favorites); setDark(data.dark);
       } else setPantry(demoPantry());
-    } catch {
-      setMessage("本地数据无法读取，已保留空厨房。");
-    }
-    setReady(true);
-    /* eslint-enable react-hooks/set-state-in-effect */
+      setReady(true);
+    }).catch(() => {
+      if (!active) return;
+      setMessage("本地数据无法读取，已保留空厨房。"); setReady(true);
+    });
+    return () => { active = false; };
   }, []);
   useEffect(() => {
     if (ready) {
-      try {
-        localStorage.setItem(
-          "kitchenmate-v1",
-          JSON.stringify({ pantry, shopping, saved, favorites, dark }),
-        );
-      } catch {
-        /* State remains usable if storage is full. */
-      }
+      saveDeviceState({ pantry, shopping, saved, favorites, dark }).catch(() => {});
       document.documentElement.dataset.theme = dark ? "dark" : "light";
     }
   }, [ready, pantry, shopping, saved, favorites, dark]);
+  function exportData() {
+    const backup = createBackup({ pantry, shopping, saved, favorites, dark });
+    const href = URL.createObjectURL(new Blob([JSON.stringify(backup, null, 2)], { type: "application/json" }));
+    const anchor = document.createElement("a"); anchor.href = href; anchor.download = "kitchenmate-backup.json"; anchor.click();
+    setTimeout(() => URL.revokeObjectURL(href), 1000);
+  }
+  async function previewBackup(file: File | undefined) {
+    if (!file) return;
+    try {
+      if (file.size > 5_000_000) throw new Error("备份文件过大");
+      setBackupPreview(parseBackup(await file.text()).data);
+    } catch { setMessage("备份格式无效，请选择 KitchenMate 导出的 JSON 文件。"); }
+  }
+  function restoreBackup() {
+    if (!backupPreview) return;
+    setPantry(backupPreview.pantry); setShopping(backupPreview.shopping); setSaved(backupPreview.saved);
+    setFavorites(backupPreview.favorites); setDark(backupPreview.dark);
+    setBackupPreview(null); setMessage("备份已恢复到这台设备。");
+  }
   useEffect(() => {
     if (!message) return;
     const t = setTimeout(() => setMessage(""), 4500);
@@ -252,7 +258,7 @@ export function KitchenApp() {
             id: crypto.randomUUID(),
             name: ingredientName(item.ingredientId),
             category:
-              ingredients.find((i) => i.id === item.ingredientId)?.category ??
+              ingredientById.get(item.ingredientId)?.category ??
               "其他",
             checked: false,
           });
@@ -283,14 +289,34 @@ export function KitchenApp() {
       const data = await response.json();
       if (!response.ok) throw new Error(data.error);
       const recipe = recipeSchema.parse(data.recipe);
-      setSaved((prev) => [...prev.filter((r) => r.id !== recipe.id), recipe]);
-      setMessage("菜谱已导入并保存在这台设备");
-      openRecipe(recipe);
+      setImportPreview(recipe);
+      setMessage("找到了这个菜谱，请预览后保存到本设备。");
     } catch (e) {
       setMessage(e instanceof Error ? e.message : "导入失败");
     } finally {
       setLoading(false);
     }
+  }
+  function saveImportPreview() {
+    if (!importPreview) return;
+    setSaved((prev) => [...prev.filter((r) => r.id !== importPreview.id), importPreview]);
+    setMessage("菜谱已保存到这台设备，刷新页面仍可查看。");
+    setImportPreview(null);
+  }
+  async function refreshImportedRecipe(recipe: Recipe) {
+    if (!recipe.sourceUrl || recipe.sourceProvider !== "url-import") return;
+    setLoading(true);
+    try {
+      const response = await fetch("/api/import", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ url: recipe.sourceUrl }) });
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error);
+      const refreshed = recipeSchema.parse(data.recipe);
+      const changed = JSON.stringify([recipe.title, recipe.ingredients, recipe.instructions]) !== JSON.stringify([refreshed.title, refreshed.ingredients, refreshed.instructions]);
+      setSaved((prev) => [...prev.filter((item) => item.id !== recipe.id), refreshed]);
+      setOnline((prev) => [...prev.filter((item) => item.id !== recipe.id), refreshed]);
+      setMessage(changed ? "原菜谱有更新，已保存新的本地快照。" : "已检查原网页，菜谱内容没有变化。");
+    } catch (error) { setMessage(error instanceof Error ? error.message : "暂时无法检查原网页"); }
+    finally { setLoading(false); }
   }
   async function generateAI() {
     setLoading(true);
@@ -329,14 +355,20 @@ export function KitchenApp() {
         (!allergen ||
           (r.sourceProvider === "local" && !r.allergens.includes(allergen))) &&
         (!equipment || r.equipment.includes(equipment)) &&
-        (!onlyFavorites || favorites.includes(r.id)),
+        (!onlyFavorites || favorites.includes(r.id)) &&
+        (sourceFilter === "全部" ||
+          (sourceFilter === "KitchenMate" && r.sourceProvider === "local") ||
+          (sourceFilter === "在线菜谱" && r.sourceProvider === "themealdb") ||
+          (sourceFilter === "我的菜谱" && saved.some((item) => item.id === r.id))),
     )
     .map((recipe) => ({ recipe, match: matchRecipe(recipe, pantry) }))
-    .filter(({ match }) =>
+    .filter(({ match, recipe }) =>
       mode === "我现在就能做"
         ? match.missingCore === 0
         : mode === "只差一点"
           ? match.missingCore >= 1 && match.missingCore <= 2
+          : mode === "快手菜"
+            ? recipe.totalTime !== null && recipe.totalTime <= 30
           : true,
     )
     .sort((a, b) =>
@@ -357,27 +389,20 @@ export function KitchenApp() {
         />
         <span>⌕</span>
       </div>
-      <div className="category-tabs">
-        {categories.map((c) => (
-          <button
-            key={c}
-            className={category === c ? "active" : ""}
-            onClick={() => setCategory(c)}
-          >
-            {c}
-          </button>
-        ))}
+      <div className="ingredient-tools">
+        <label>分类 <select aria-label="食材分类" value={category} onChange={(event) => { setCategory(event.target.value); setShowAllIngredients(false); }}>{categories.map((item) => <option key={item}>{item}</option>)}</select></label>
+        {!ingredientQuery && category === "全部" && <span>常用食材优先 · 搜索可查找全部 {ingredients.length} 种</span>}
       </div>
+      {!ingredientQuery && category === "全部" && <div className="recent-ingredients"><strong>常用</strong>{["egg", "tomato", "potato", "onion", "chicken-breast"].map((id) => <button key={id} aria-label={`快速添加${ingredientName(id)}`} aria-pressed={pantry.some((item) => item.ingredientId === id)} onClick={() => setPantry((prev) => togglePantry(prev, id))}>{ingredientName(id)}</button>)}</div>}
       <div className="ingredient-grid">
         {ingredients
           .filter(
             (i) =>
               (category === "全部" || i.category === category) &&
               [i.displayNameZh, i.displayNameEn, ...i.aliases]
-                .join(" ")
-                .toLowerCase()
-                .includes(ingredientQuery.toLowerCase()),
+                .some((value) => normalizeIngredientText(value).includes(normalizeIngredientText(ingredientQuery))),
           )
+          .slice(0, showAllIngredients || ingredientQuery || category !== "全部" ? 90 : 36)
           .map((i) => {
             const has = pantry.some((p) => p.ingredientId === i.id);
             return (
@@ -395,11 +420,12 @@ export function KitchenApp() {
             );
           })}
       </div>
+      {!ingredientQuery && category === "全部" && !showAllIngredients && <button className="text-link" onClick={() => setShowAllIngredients(true)}>显示更多食材 <ArrowRight size={14} /></button>}
     </>
   );
   const recipeCards = (limit?: number) => (
     <div className="recipe-grid">
-      {matches.slice(0, limit).map(({ recipe: r, match: m }) => (
+      {matches.slice(0, limit ?? visibleRecipes).map(({ recipe: r, match: m }) => (
         <article className="recipe-card" key={r.id}>
           <button
             className="image-button"
@@ -470,6 +496,7 @@ export function KitchenApp() {
           </div>
         </article>
       ))}
+      {!limit && matches.length > visibleRecipes && <button className="secondary load-more" onClick={() => setVisibleRecipes((count) => count + 24)}>加载更多菜谱</button>}
     </div>
   );
   if (cooking && selected)
@@ -594,8 +621,7 @@ export function KitchenApp() {
                         }
                       >
                         {
-                          ingredients.find((i) => i.id === p.ingredientId)
-                            ?.emoji
+                          ingredientById.get(p.ingredientId)?.emoji
                         }{" "}
                         {p.displayName}
                         <X size={12} />
@@ -661,6 +687,12 @@ export function KitchenApp() {
                 看看我能做什么 <ArrowRight size={16} />
               </Link>
             </div>
+            <section className="panel backup-panel">
+              <h2>我的厨房数据</h2>
+              <p>食材、收藏、购物清单和保存的菜谱只在这台设备。换设备时可以导出备份，再在新设备恢复。</p>
+              <div className="backup-actions"><button className="secondary" onClick={exportData}>导出我的数据</button><label className="secondary backup-file">恢复备份<input aria-label="选择 KitchenMate 备份" type="file" accept="application/json,.json" onChange={(event) => previewBackup(event.target.files?.[0])} /></label></div>
+              {backupPreview && <div role="status" className="backup-preview"><strong>将恢复：</strong> {backupPreview.pantry.length} 个食材 · {backupPreview.favorites.length} 个收藏 · {backupPreview.shopping.length} 个购物项 · {backupPreview.saved.length} 道我的菜谱<div><button className="primary" onClick={restoreBackup}>确认恢复</button><button className="secondary" onClick={() => setBackupPreview(null)}>取消</button></div></div>}
+            </section>
             <section className="panel">{pantryPicker}</section>
             <section className="stock-list">
               <h2>
@@ -672,7 +704,7 @@ export function KitchenApp() {
               {pantry.map((p) => (
                 <div className="stock-row" key={p.ingredientId}>
                   <strong>
-                    {ingredients.find((i) => i.id === p.ingredientId)?.emoji}{" "}
+                    {ingredientById.get(p.ingredientId)?.emoji}{" "}
                     {p.displayName}
                   </strong>
                   <label>
@@ -809,7 +841,7 @@ export function KitchenApp() {
               </button>
             </div>
             <div className="recommend-tabs">
-              {["最匹配", "我现在就能做", "只差一点", "消耗库存"].map((m) => (
+              {["最匹配", "我现在就能做", "只差一点", "消耗库存", "快手菜"].map((m) => (
                 <button
                   key={m}
                   className={mode === m ? "active" : ""}
@@ -828,6 +860,7 @@ export function KitchenApp() {
                 <SlidersHorizontal size={16} /> 筛选
               </button>
             </div>
+            <div className="source-tabs" aria-label="菜谱来源">{["全部", "KitchenMate", "在线菜谱", "我的菜谱"].map((source) => <button key={source} className={sourceFilter === source ? "active" : ""} onClick={() => { setSourceFilter(source); setVisibleRecipes(24); }}>{source}</button>)}</div>
             {filters && (
               <div className="filter-panel">
                 {[
@@ -914,7 +947,7 @@ export function KitchenApp() {
             )}
             <div className="result-count">
               找到 {matches.length} 道灵感{" "}
-              <span>基础调料对匹配度影响较小 · 数量不参与匹配</span>
+              <span>基础调料对匹配度影响较小 · 已填写库存数量时会提示不足</span>
             </div>
             {matches.length ? (
               recipeCards()
@@ -925,7 +958,7 @@ export function KitchenApp() {
                 <p>试着添加更多食材，或放宽筛选条件。</p>
               </div>
             )}
-            <section className="ai-panel">
+            {aiEnabled && <section className="ai-panel">
               <Sparkles />
               <div>
                 <h3>还有一点想法？让 AI 帮你想一道菜。</h3>
@@ -944,7 +977,7 @@ export function KitchenApp() {
               >
                 {loading ? "正在准备…" : "AI 帮我想一道菜"}
               </button>
-            </section>
+            </section>}
           </>
         )}
         {selected && !cooking && (
@@ -989,6 +1022,7 @@ export function KitchenApp() {
                     查看原始菜谱 <ExternalLink size={14} />
                   </a>
                 )}
+                {selected.sourceProvider === "url-import" && <button className="secondary" disabled={loading} onClick={() => refreshImportedRecipe(selected)}>{loading ? "正在检查…" : "检查原菜谱更新"}</button>}
                 <Link
                   href={`/recipe/${encodeURIComponent(selected.id)}/cook`}
                   className="primary"
@@ -1043,9 +1077,10 @@ export function KitchenApp() {
                   </div>
                 </div>
                 {selected.ingredients.map((i, n) => {
-                  const has = pantry.some(
-                    (p) => p.ingredientId === i.ingredientId,
-                  );
+                  const stock = pantry.find((p) => p.ingredientId === i.ingredientId);
+                  const has = Boolean(stock);
+                  const scaled = scaleQuantity(i.quantity, selected.servings, servings);
+                  const shortfall = stock?.quantity !== null && stock?.quantity !== undefined && scaled !== null && stock.unit === i.unit && stock.quantity < scaled;
                   return (
                     <div
                       className="detail-ingredient"
@@ -1059,6 +1094,7 @@ export function KitchenApp() {
                         )}
                         {ingredientName(i.ingredientId)}
                         {i.optional && <small> 可选</small>}
+                        {shortfall && <small> · 数量可能不足</small>}
                       </span>
                       <span>
                         {i.quantity === null
@@ -1193,17 +1229,13 @@ export function KitchenApp() {
         )}
         {path === "/import" && (
           <>
-            <PageHeading
-              eyebrow="KEEP THE GOOD RECIPES"
-              title="把喜欢的菜谱，带回厨房"
-              description="粘贴菜谱链接，将食材和步骤整理成方便下厨的样子。"
-            />
+            <PageHeading eyebrow="SAVE A GOOD RECIPE" title="导入网上的菜谱" description="将支持结构化 Recipe 数据的公开菜谱网页保存到 KitchenMate。" />
             <div className="import-layout">
               <form className="panel import-form" onSubmit={importRecipe}>
                 <div className="import-icon">
                   <Link2 size={32} />
                 </div>
-                <h2>导入一份新灵感</h2>
+                <h2>粘贴菜谱网页网址</h2>
                 <label htmlFor="recipe-url">菜谱网址</label>
                 <input
                   id="recipe-url"
@@ -1214,29 +1246,33 @@ export function KitchenApp() {
                   onChange={(e) => setImportUrl(e.target.value)}
                   maxLength={2000}
                 />
-                <p>
-                  仅导入你有权访问和使用的公开菜谱。网站需要提供 Recipe
-                  结构化数据。
-                </p>
+                <p>请输入完整的公开 HTTPS 菜谱网页地址。分析时只会显示真实读取结果。</p>
                 <button className="primary" disabled={loading} type="submit">
-                  {loading ? "正在整理菜谱…" : "导入菜谱"}{" "}
+                  {loading ? "正在读取菜谱数据…" : "分析并导入"}{" "}
                   <ArrowRight size={17} />
                 </button>
               </form>
               <aside className="import-info">
-                <h3>好菜谱，值得好好收藏。</h3>
-                <p>自动整理食材、份量与烹饪步骤，保留作者和原始来源。</p>
-                <p>
-                  支持 JSON-LD 和 Microdata，图片与标题可从 OpenGraph 补充。
-                </p>
-                <p>
-                  暂不支持需要登录、验证码或限制访问的网页。下厨房接入将在取得合法授权后开放。
-                </p>
-                <div className="subtle">
-                  已在本机保存 {saved.length} 道导入 / 在线 / AI 菜谱
-                </div>
+                <h3>怎么导入？</h3>
+                <ol><li>打开一个公开的菜谱网页。</li><li>复制浏览器地址栏中的完整网址。</li><li>粘贴到左侧，再点击「分析并导入」。</li></ol>
+                <p>请使用网页地址，不要粘贴短链接、App 分享口令、截图或搜索结果链接。</p>
+                <div className="subtle">已在本机保存 {saved.length} 道菜谱</div>
               </aside>
             </div>
+            {importPreview && <section className="panel import-preview" aria-label="导入预览">
+              <h2>找到了这个菜谱</h2>
+              <h3>{importPreview.title}</h3>
+              {importPreview.image && <img src={importPreview.image} alt={importPreview.title} loading="lazy" referrerPolicy="no-referrer" />}
+              <p>来源：{importPreview.sourceName}{importPreview.sourceAuthor && ` · ${importPreview.sourceAuthor}`}</p>
+              <p>{importPreview.servings} 人份 · {importPreview.ingredients.length} 种食材 · {importPreview.instructions.length} 个步骤</p>
+              <div className="import-preview-actions"><button className="primary" onClick={saveImportPreview}>保存到我的菜谱</button><button className="secondary" onClick={() => {setOnline((prev) => [...prev.filter((r) => r.id !== importPreview.id), importPreview]); router.push(`/recipe/${encodeURIComponent(importPreview.id)}`);}}>直接查看</button><button className="secondary" onClick={() => setImportPreview(null)}>取消</button></div>
+            </section>}
+            <section className="import-guide-grid">
+              <article className="panel"><h2>保证成功的示例</h2><p>本站公开的「番茄炒蛋」菜谱页面包含完整的 Schema.org Recipe 数据。</p><button className="secondary" onClick={() => setImportUrl(`${window.location.origin}/examples/import/tomato-eggs`)}>试试导入这个示例</button><p><Link href="/examples/import/tomato-eggs" className="text-link">先查看示例网页 <ExternalLink size={14} /></Link></p></article>
+              <article className="panel"><h2>什么网页通常可以导入？</h2><p>公开 HTTPS 菜谱网页，包含 Schema.org Recipe 的 JSON-LD 或 Microdata。可读取的字段取决于原网站，通常有菜名、食材、步骤，也可能包含图片、时间、份量和作者。</p></article>
+              <article className="panel"><h2>哪些通常不能导入？</h2><p>登录页、付费墙、只有视频或图片的页面、普通社交笔记、PDF、聊天截图、App 内部链接、搜索结果页、首页和没有 Recipe 数据的文章。网站也可能禁止自动读取。</p><p>KitchenMate 不绕过登录、验证码、付费墙或访问限制。</p></article>
+            </section>
+            <section className="verified-examples"><div className="section-heading"><div><span className="eyebrow">LIVE VERIFIED</span><h2>真实网站示例</h2><p>以下网址曾用 KitchenMate 导入器实际解析成功。点击只会填入网址，由你决定何时导入。</p></div></div><div className="verified-grid">{verifiedImportExamples.map((example) => <article className="panel" key={example.url}><span className="eyebrow">{example.siteName}</span><h3>{example.recipeTitle}</h3><p>{example.fieldsAvailable.map((field) => `✓ ${field}`).join("　")}</p><button className="secondary" onClick={() => { setImportUrl(example.url); setImportPreview(null); window.scrollTo({ top: 0, behavior: "smooth" }); }}>填入这个示例</button><small>最近验证：{example.verifiedAt}{Date.now() - new Date(example.verifiedAt).getTime() > 30 * 86400000 && " · 网站结构可能已变化"}</small></article>)}</div></section>
           </>
         )}
       </main>
@@ -1315,164 +1351,4 @@ function RecipeJsonLd({ recipe: r }: { recipe: Recipe }) {
     />
   );
 }
-function CookingMode({
-  recipe,
-  onExit,
-}: {
-  recipe: Recipe;
-  onExit: () => void;
-}) {
-  const [step, setStep] = useState(0);
-  const [timers, setTimers] = useState<
-    { id: number; title: string; end: number }[]
-  >([]);
-  const [now, setNow] = useState(() => Date.now());
-  const [done, setDone] = useState(false);
-  const [wake, setWake] = useState(false);
-  const instruction = recipe.instructions[step];
-  useEffect(() => {
-    const timer = setInterval(() => setNow(Date.now()), 500);
-    return () => clearInterval(timer);
-  }, []);
-  useEffect(() => {
-    let lock: WakeLockSentinel | undefined;
-    let disposed = false;
-    async function acquire() {
-      try {
-        if ("wakeLock" in navigator && document.visibilityState === "visible") {
-          const acquired = await navigator.wakeLock.request("screen");
-          if (disposed) {
-            await acquired.release();
-            return;
-          }
-          lock = acquired;
-          setWake(true);
-          lock.addEventListener("release", () => setWake(false));
-        }
-      } catch {
-        setWake(false);
-      }
-    }
-    void acquire();
-    document.addEventListener("visibilitychange", acquire);
-    return () => {
-      disposed = true;
-      void lock?.release();
-      document.removeEventListener("visibilitychange", acquire);
-    };
-  }, []);
-  if (done)
-    return (
-      <div className="cooking-complete">
-        <span>🍽️</span>
-        <p className="eyebrow">MADE WITH LOVE</p>
-        <h1>做好了，趁热吃吧！</h1>
-        <p>今天的 {recipe.title}，是属于你的好味道。</p>
-        <button className="primary" onClick={onExit}>
-          完成，返回菜谱 <Check size={18} />
-        </button>
-      </div>
-    );
-  return (
-    <div className="cooking">
-      <header>
-        <button className="secondary" onClick={onExit}>
-          <X size={18} /> 退出做菜
-        </button>
-        <span>{recipe.title}</span>
-        <small>{wake ? "屏幕常亮已开启" : "烹饪模式"}</small>
-      </header>
-      <div className="cooking-progress">
-        <i
-          style={{
-            width: `${((step + 1) / recipe.instructions.length) * 100}%`,
-          }}
-        />
-      </div>
-      <main>
-        <p className="eyebrow">
-          STEP {String(step + 1).padStart(2, "0")} /{" "}
-          {String(recipe.instructions.length).padStart(2, "0")}
-        </p>
-        <h1>{instruction.title}</h1>
-        <p className="cooking-description">{instruction.description}</p>
-        {instruction.tips && (
-          <div className="cooking-tip">
-            <ChefHat size={20} />
-            {instruction.tips}
-          </div>
-        )}
-        {instruction.durationSeconds !== null &&
-          instruction.durationSeconds > 0 && (
-            <button
-              className="timer-start"
-              onClick={() =>
-                setTimers((prev) => [
-                  ...prev,
-                  {
-                    id: Date.now(),
-                    title: instruction.title,
-                    end: Date.now() + instruction.durationSeconds! * 1000,
-                  },
-                ])
-              }
-            >
-              <Timer /> 开始计时{" "}
-              {String(Math.floor(instruction.durationSeconds / 60)).padStart(
-                2,
-                "0",
-              )}
-              :{String(instruction.durationSeconds % 60).padStart(2, "0")}
-            </button>
-          )}
-        <div className="timer-list" aria-live="polite">
-          {timers.map((t) => {
-            const remaining = Math.max(0, Math.ceil((t.end - now) / 1000));
-            return (
-              <div className={remaining === 0 ? "finished" : ""} key={t.id}>
-                <Timer size={18} />
-                <span>{t.title}</span>
-                <b>
-                  {remaining === 0
-                    ? "时间到！"
-                    : `${Math.floor(remaining / 60)}:${String(remaining % 60).padStart(2, "0")}`}
-                </b>
-                <button
-                  aria-label={`取消${t.title}计时器`}
-                  onClick={() =>
-                    setTimers((prev) => prev.filter((x) => x.id !== t.id))
-                  }
-                >
-                  <X size={16} />
-                </button>
-              </div>
-            );
-          })}
-        </div>
-      </main>
-      <div className="cooking-controls">
-        <button
-          className="secondary"
-          disabled={step === 0}
-          onClick={() => setStep((s) => s - 1)}
-        >
-          <ArrowLeft /> 上一步
-        </button>
-        <span>
-          {step + 1} / {recipe.instructions.length}
-        </span>
-        <button
-          className="primary"
-          onClick={() =>
-            step === recipe.instructions.length - 1
-              ? setDone(true)
-              : setStep((s) => s + 1)
-          }
-        >
-          {step === recipe.instructions.length - 1 ? "完成这道菜" : "下一步"}{" "}
-          <ArrowRight />
-        </button>
-      </div>
-    </div>
-  );
-}
+
