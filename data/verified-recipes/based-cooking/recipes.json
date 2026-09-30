@@ -1384,7 +1384,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "fish",
+        "ingredientId": "unknown:400g fish fillet (white fish)",
         "originalText": "400g fish fillet (white fish)",
         "quantity": null,
         "unit": "",

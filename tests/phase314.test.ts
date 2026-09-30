@@ -170,7 +170,6 @@ describe("Exact primary identities and unchanged selection semantics", () => {
     ["Chopped clams", "zh:蛤蜊"],
     ["2 zucchinis", "zh:西葫芦"],
     ["1 tsp dried thyme", "zh:百里香"],
-    ["400g fish fillet (white fish)", "fish"],
     ["15ml sesame oil", "zh:香油"],
     ["1 cup corn starch", "zh:玉米淀粉"],
     ["3T neutral oil", "oil"],
@@ -188,6 +187,7 @@ describe("Exact primary identities and unchanged selection semantics", () => {
     "canned or frozen corn",
     "egg noodles or pasta",
     "smoked or fresh salmon",
+    "400g fish fillet (white fish)",
   ])("%s remains unknown instead of a wrong identity", (text) =>
     expect(parseWikiIngredient(text, false).ingredientId).toMatch(/^unknown:/),
   );
@@ -219,6 +219,17 @@ describe("Exact primary identities and unchanged selection semantics", () => {
     expect(ingredients).toHaveLength(703);
     expect(pantryPrimary).toHaveLength(86);
     expect(pantryCommonIds.size).toBe(24);
+  });
+  it("a white-fish requirement is not satisfied by generic fish or salmon", () => {
+    const recipe = verifiedRecipes.find(
+      (r) => r.id === "based-cooking:fish-curry",
+    )!;
+    expect(
+      matchRecipe(recipe, [{ ingredientId: "fish" }]).selectedIngredientUsage,
+    ).toBe(0);
+    expect(
+      matchRecipe(recipe, [{ ingredientId: "salmon" }]).selectedIngredientUsage,
+    ).toBe(0);
   });
   it("search accepts Chinese and original English for new source recipes", () => {
     const r = verifiedRecipes.find((r) => r.title === "讃岐乌冬面")!;

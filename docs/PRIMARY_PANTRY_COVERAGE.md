@@ -72,7 +72,7 @@ Exact identities only. Unknowns, substitutions and parent inflation are excluded
 |鸡腿|10|0|0|0|
 |鸡翅|3|0|0|0|
 |鸭肉|2|0|0|0|
-|鱼|2|0|0|0|
+|鱼|1|0|0|0|
 |三文鱼|3|0|2|1|
 |虾|5|0|2|0|
 |蛤蜊|1|0|0|0|
@@ -120,4 +120,4 @@ Exact identities only. Unknowns, substitutions and parent inflation are excluded
 |香蕉|5|2|2|3|
 |苹果|2|0|0|1|
 
-Next expansion priority: 带鱼 (0 full)、豆干 (1 full)、腐竹 (1 full)、蛤蜊 (1 full)、乌冬面 (1 full)、杏鲍菇 (1 full)、莲藕 (1 full)、甜玉米 (1 full)、苹果 (2 full)、鸭肉 (2 full)、鱼 (2 full)、菠菜 (2 full)、鸡胸肉 (2 full)、小米 (2 full)、南瓜 (2 full)、白萝卜 (3 full)、花菜 (3 full)、火腿 (3 full)、鸡翅 (3 full)、牛腩 (3 full).
+Next expansion priority: 带鱼 (0 full)、豆干 (1 full)、腐竹 (1 full)、蛤蜊 (1 full)、乌冬面 (1 full)、杏鲍菇 (1 full)、鱼 (1 full)、莲藕 (1 full)、甜玉米 (1 full)、苹果 (2 full)、鸭肉 (2 full)、菠菜 (2 full)、鸡胸肉 (2 full)、小米 (2 full)、南瓜 (2 full)、白萝卜 (3 full)、花菜 (3 full)、火腿 (3 full)、鸡翅 (3 full)、牛腩 (3 full).

@@ -117,6 +117,25 @@
       }
     },
     {
+      "ingredientId": "fish",
+      "ingredient": "鱼",
+      "fullRecipeCount": 1,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "beginnerFullCount": 0,
+      "quickFullCount": 0,
+      "quickRecipeCount": 0,
+      "priorityScore": 80,
+      "before": {
+        "ingredientId": "fish",
+        "ingredient": "鱼",
+        "fullRecipeCount": 1,
+        "beginnerFullCount": 0,
+        "quickFullCount": 0,
+        "sourceLinkedCount": 0
+      }
+    },
+    {
       "ingredientId": "zh:莲藕",
       "ingredient": "莲藕",
       "fullRecipeCount": 1,
@@ -168,25 +187,6 @@
         "ingredientId": "zh:鸭肉",
         "ingredient": "鸭肉",
         "fullRecipeCount": 2,
-        "beginnerFullCount": 0,
-        "quickFullCount": 0,
-        "sourceLinkedCount": 0
-      }
-    },
-    {
-      "ingredientId": "fish",
-      "ingredient": "鱼",
-      "fullRecipeCount": 2,
-      "sourceLinkedCount": 0,
-      "beginnerRecipeCount": 0,
-      "beginnerFullCount": 0,
-      "quickFullCount": 0,
-      "quickRecipeCount": 0,
-      "priorityScore": 68,
-      "before": {
-        "ingredientId": "fish",
-        "ingredient": "鱼",
-        "fullRecipeCount": 1,
         "beginnerFullCount": 0,
         "quickFullCount": 0,
         "sourceLinkedCount": 0

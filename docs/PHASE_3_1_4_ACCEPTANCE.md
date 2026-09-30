@@ -25,7 +25,7 @@ Vocabulary 703, Primary 86, common 24, searchable 703 unchanged. Vocabulary cove
 |杏鲍菇|0 → 1|0 → 0|0|0|
 |鸡胸肉|2 → 2|1 → 1|0|1|
 |鸭肉|2 → 2|0 → 0|0|0|
-|鱼|1 → 2|0 → 0|0|0|
+|鱼|1 → 1|0 → 0|0|0|
 |三文鱼|1 → 3|0 → 2|1|0|
 |蛤蜊|0 → 1|0 → 0|0|0|
 |带鱼|0 → 0|0 → 0|0|0|
@@ -49,7 +49,7 @@ Vocabulary 703, Primary 86, common 24, searchable 703 unchanged. Vocabulary cove
 |甜玉米|0 → 1|0 → 1|1|0|
 |苹果|1 → 2|0 → 0|1|0|
 |鸭肉|2 → 2|0 → 0|0|0|
-|鱼|1 → 2|0 → 0|0|0|
+|鱼|1 → 1|0 → 0|0|0|
 |菠菜|2 → 2|1 → 1|0|2|
 |鸡胸肉|2 → 2|1 → 1|0|1|
 |小米|2 → 2|1 → 1|0|0|
@@ -132,7 +132,7 @@ All24 are listed; they are not all labeled beginner. Unknown time remains unknow
 
 HowToCook original instructions/title/URL/pin unchanged. 香菇滑鸡12; 新疆大盘鸡16; garlic alone owns garlic; light soy does not own dark soy. Atomic violations0; high-confidence calculation omissions0; remaining671 unresolved calculations/733 operation candidates retain previous scope, no mass cleanup. Wrong-mapping regression0.
 
-Local lint/typegen/typecheck/build/source registry/license/pinned snapshots/translations/audits/coverage PASS. Unit440 passed,3 opt-in live unit tests skipped. Headed Chrome smoke20/20 passed. Full local E2E:32/33 passed when all live imports enabled; BBC live importer returned an external failure, Budget Bytes and Gimme Some Oven passed. Deterministic local E2E:31 passed,3 opt-in live tests skipped. Production status recorded after publication. Ordinary CI uses committed snapshots and static smoke, never external recipe verification.
+Local lint/typegen/typecheck/build/source registry/license/pinned snapshots/translations/audits/coverage PASS. Unit441 passed,3 opt-in live unit tests skipped. Headed Chrome smoke20/20 passed. Full local E2E:32/33 passed when all live imports enabled; BBC live importer returned an external failure, Budget Bytes and Gimme Some Oven passed. Deterministic local E2E:31 passed,3 opt-in live tests skipped. Production status recorded after publication. Ordinary CI uses committed snapshots and static smoke, never external recipe verification.
 
 License isolation and source research: RECIPE_LICENSES.md; OPEN_RECIPE_SOURCE_RESEARCH.md. HowToCook upstream unchanged: HOWTOCOOK_UPSTREAM_DIFF.md. TheMealDB production remains disabled: no formal production key configured at previous production verification; this release imports no TheMealDB content and never uses test key1.
 
@@ -142,3 +142,5 @@ License isolation and source research: RECIPE_LICENSES.md; OPEN_RECIPE_SOURCE_RE
 Commit9aabf31 main CI36788433860 SUCCESS; Railway eca6cb06-f854-44d5-89a0-95310ac6e0e6 SUCCESS. Actual headed production Chrome ran30 deterministic E2E scenarios successfully (3 live imports disabled). Additional immediate390px screenshot review found the original unresolved English udon-broth label overflowing before/after hydration. The follow-up fixes first-column wrapping without inventing ingredient mapping and adds a JavaScript-disabled390px regression;20 local smoke scenarios pass. Final production patch deployment and browser evidence are reported in the release response.
 
 Final official Wikibooks API search for 帶魚/带鱼/hairtail returned200: Chinese matches were a seafood overview and a biology page, not complete recipes; English had no hits. The overview original revision was fetched and explicitly has no Ingredients/Procedure. It does not fill 带鱼 coverage.
+
+Semantic follow-up: source “400g fish fillet (white fish)” remains unknown because703 vocabulary lacks a reviewed white-fish identity. Generic fish/salmon cannot satisfy this restriction; permanent regression added. Exact generic fish Full coverage remains1→1, not2; other catalog/coverage metrics unchanged. Latest local units441 passed,3 opt-in live unit tests skipped. Separately, actual production live importer tests all3 passed (Budget Bytes/BBC/Gimme Some Oven); the earlier local BBC failure remains documented.

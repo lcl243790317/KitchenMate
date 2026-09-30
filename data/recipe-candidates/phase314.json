@@ -1667,15 +1667,14 @@
     "lastVerifiedAt": "2026-09-30T21:23:42.088Z",
     "licenseOrUsageBasis": "The Unlicense; repository README explicitly covers all content",
     "decision": "FULL",
-    "reason": "Pinned numbered directions and ingredients, reviewed explicit-operation evidence and Chinese translation",
+    "reason": "Pinned numbered directions and ingredients, reviewed explicit-operation evidence and Chinese translation; white-fish restriction remains unknown, not generic fish",
     "coverageTarget": [
       "oil",
       "onion",
       "onion",
       "garlic",
       "ginger",
-      "tomato",
-      "fish"
+      "tomato"
     ],
     "beginnerReason": "Not marked beginner",
     "translationStatus": "reviewed Chinese + independent English",

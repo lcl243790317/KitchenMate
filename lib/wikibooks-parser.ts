@@ -95,7 +95,6 @@ const heads: Record<string, string> = {
   "vegetable oil": "oil",
   "neutral oil": "oil",
   "fish fillet": "fish",
-  "fish fillet (white fish)": "fish",
   "raw spinach": "zh:菠菜",
   "red onion": "onion",
   "yellow onion": "onion",
@@ -141,7 +140,10 @@ export function parseWikiIngredient(
     heads[exactHead.toLowerCase()] ?? normalizeIngredient(exactHead)?.id;
   // No whole-string substring fallback. Compounds, alternatives and specialty foods stay unknown.
   const trusted =
-    id && ingredientById.has(id) && !/\bor\b|\band\b|\//i.test(exactHead);
+    id &&
+    ingredientById.has(id) &&
+    !/\bor\b|\band\b|\//i.test(exactHead) &&
+    !/\bwhite\s*fish\b/i.test(clean);
   return {
     ingredientId: trusted ? id : `unknown:${text}`,
     originalText: text,

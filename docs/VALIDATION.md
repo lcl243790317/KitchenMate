@@ -5,7 +5,7 @@ Actual local validation record, 2026-09-30. Detailed counts, all24 added tutoria
 | Check | Actual result |
 |---|---|
 | lint / next typegen / typecheck | PASS |
-| Unit | 440 PASS;3 opt-in live tests skipped |
+| Unit | 441 PASS;3 opt-in live tests skipped |
 | Source registry, license, pinned snapshots | 455 formal records PASS |
 | Chinese translation validation | 50 artifacts PASS;36 English Wikibooks,13 Based Cooking,1 Commons |
 | Atomic ingredient audit |365 HowToCook;0 violations |
@@ -38,3 +38,5 @@ Additional-source research: [OPEN_RECIPE_SOURCE_RESEARCH.md](OPEN_RECIPE_SOURCE_
 Commit9aabf31 main CI36788433860 SUCCESS; Railway eca6cb06-f854-44d5-89a0-95310ac6e0e6 SUCCESS. Actual headed production Chrome ran30 deterministic E2E scenarios successfully (3 live imports disabled). Additional immediate390px screenshot review found the original unresolved English udon-broth label overflowing before/after hydration. The follow-up fixes first-column wrapping without inventing ingredient mapping and adds a JavaScript-disabled390px regression;20 local smoke scenarios pass. Final production patch deployment and browser evidence are reported in the release response.
 
 Final official Wikibooks API search for 帶魚/带鱼/hairtail returned200: Chinese matches were a seafood overview and a biology page, not complete recipes; English had no hits. The overview original revision was fetched and explicitly has no Ingredients/Procedure. It does not fill 带鱼 coverage.
+
+Semantic follow-up: source “400g fish fillet (white fish)” remains unknown because703 vocabulary lacks a reviewed white-fish identity. Generic fish/salmon cannot satisfy this restriction; permanent regression added. Exact generic fish Full coverage remains1→1, not2; other catalog/coverage metrics unchanged. Latest local units441 passed,3 opt-in live unit tests skipped. Separately, actual production live importer tests all3 passed (Budget Bytes/BBC/Gimme Some Oven); the earlier local BBC failure remains documented.
