@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { verifiedRecipes } from "../../lib/verified-recipes";
 import { expectNoHorizontalOverflow } from "./assert-layout";
+import { expectSavedCookingStep } from "./cooking-snapshot";
 const recipe = verifiedRecipes.find((r) => r.title === "西红柿炒鸡蛋")!;
 const linked = verifiedRecipes.find(
   (r) => r.provenance.type === "SOURCE_LINKED",
@@ -31,10 +32,12 @@ test("mobile ingredient selection finds a real source and source steps", async (
   await expect(page.locator(".cooking-description")).toHaveText(
     recipe.instructions[0].description,
   );
+  await expectSavedCookingStep(page, recipe.id, 0);
   await page.getByRole("button", { name: "下一步" }).click();
   await expect(page.locator(".cooking-description")).toHaveText(
     recipe.instructions[1].description,
   );
+  await expectSavedCookingStep(page, recipe.id, 1);
   await page.reload();
   await expect(page.locator(".cooking-description")).toHaveText(
     recipe.instructions[1].description,
