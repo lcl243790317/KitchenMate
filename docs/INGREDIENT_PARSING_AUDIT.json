@@ -1,0 +1,1343 @@
+{
+  "pinnedCommit": "a2d45c6984dff9ee941da0e7c452f7965965d962",
+  "recipesScanned": 365,
+  "ingredientBulletsScanned": 3197,
+  "multiIngredientBullets": 58,
+  "recipesWithGroupedBullets": 34,
+  "ingredientRowsBefore": 3024,
+  "ingredientRowsAfter": 3211,
+  "oldGroupedRowsReplaced": 58,
+  "netIngredientRowsAdded": 187,
+  "ambiguousLinesLeftUnresolved": 103,
+  "unknownRows": 551,
+  "catalogRecipesExcluded": 0,
+  "violations": 0,
+  "examples": [
+    {
+      "id": "howtocook:96dd22806c801283",
+      "title": "新疆大盘鸡",
+      "before": 3,
+      "after": 16,
+      "bullets": [
+        {
+          "id": "howtocook:96dd22806c801283",
+          "title": "新疆大盘鸡",
+          "bullet": "花椒，香叶，香果，干线椒，大蒜，大葱",
+          "parts": [
+            {
+              "text": "花椒",
+              "id": "zh:花椒",
+              "optional": false
+            },
+            {
+              "text": "香叶",
+              "id": "zh:香叶",
+              "optional": false
+            },
+            {
+              "text": "香果",
+              "id": "unknown:香果",
+              "optional": false
+            },
+            {
+              "text": "干线椒",
+              "id": "unknown:干线椒",
+              "optional": false
+            },
+            {
+              "text": "大蒜",
+              "id": "garlic",
+              "optional": false
+            },
+            {
+              "text": "大葱",
+              "id": "zh:大葱",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "id": "howtocook:96dd22806c801283",
+          "title": "新疆大盘鸡",
+          "bullet": "油，盐，生抽，蚝油，料酒（可拿啤酒），白糖",
+          "parts": [
+            {
+              "text": "油",
+              "id": "oil",
+              "optional": false
+            },
+            {
+              "text": "盐",
+              "id": "salt",
+              "optional": false
+            },
+            {
+              "text": "生抽",
+              "id": "soy-sauce",
+              "optional": false
+            },
+            {
+              "text": "蚝油",
+              "id": "oyster-sauce",
+              "optional": false
+            },
+            {
+              "text": "料酒（可拿啤酒）",
+              "id": "wine",
+              "optional": false
+            },
+            {
+              "text": "白糖",
+              "id": "sugar",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "id": "howtocook:96dd22806c801283",
+          "title": "新疆大盘鸡",
+          "bullet": "鸡肉（鸡腿肉最好），土豆，菜椒和甜椒（可以不用，加上配色好看）",
+          "parts": [
+            {
+              "text": "鸡肉（鸡腿肉最好）",
+              "id": "chicken",
+              "optional": false
+            },
+            {
+              "text": "土豆",
+              "id": "potato",
+              "optional": false
+            },
+            {
+              "text": "菜椒",
+              "id": "unknown:菜椒",
+              "optional": true
+            },
+            {
+              "text": "甜椒（可以不用，加上配色好看）",
+              "id": "unknown:甜椒",
+              "optional": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "howtocook:2e80c786dc11857d",
+      "title": "红烧鲤鱼",
+      "before": 3,
+      "after": 14,
+      "bullets": [
+        {
+          "id": "howtocook:2e80c786dc11857d",
+          "title": "红烧鲤鱼",
+          "bullet": "大葱、姜、大蒜、干辣椒",
+          "parts": [
+            {
+              "text": "大葱",
+              "id": "zh:大葱",
+              "optional": false
+            },
+            {
+              "text": "姜",
+              "id": "ginger",
+              "optional": false
+            },
+            {
+              "text": "大蒜",
+              "id": "garlic",
+              "optional": false
+            },
+            {
+              "text": "干辣椒",
+              "id": "zh:干辣椒",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "id": "howtocook:2e80c786dc11857d",
+          "title": "红烧鲤鱼",
+          "bullet": "油、盐、生抽、老抽、陈醋、蚝油、料酒、白糖",
+          "parts": [
+            {
+              "text": "油",
+              "id": "oil",
+              "optional": false
+            },
+            {
+              "text": "盐",
+              "id": "salt",
+              "optional": false
+            },
+            {
+              "text": "生抽",
+              "id": "soy-sauce",
+              "optional": false
+            },
+            {
+              "text": "老抽",
+              "id": "dark-soy",
+              "optional": false
+            },
+            {
+              "text": "陈醋",
+              "id": "zh:陈醋",
+              "optional": false
+            },
+            {
+              "text": "蚝油",
+              "id": "oyster-sauce",
+              "optional": false
+            },
+            {
+              "text": "料酒",
+              "id": "wine",
+              "optional": false
+            },
+            {
+              "text": "白糖",
+              "id": "sugar",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "id": "howtocook:2e80c786dc11857d",
+          "title": "红烧鲤鱼",
+          "bullet": "鲤鱼、五花肉",
+          "parts": [
+            {
+              "text": "鲤鱼",
+              "id": "zh:鲤鱼",
+              "optional": false
+            },
+            {
+              "text": "五花肉",
+              "id": "zh:五花肉",
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "howtocook:961ae3ea5f72116b",
+      "title": "红烧鱼头",
+      "before": 4,
+      "after": 16,
+      "bullets": [
+        {
+          "id": "howtocook:961ae3ea5f72116b",
+          "title": "红烧鱼头",
+          "bullet": "大葱、姜、大蒜、香菜、美人椒",
+          "parts": [
+            {
+              "text": "大葱",
+              "id": "zh:大葱",
+              "optional": false
+            },
+            {
+              "text": "姜",
+              "id": "ginger",
+              "optional": false
+            },
+            {
+              "text": "大蒜",
+              "id": "garlic",
+              "optional": false
+            },
+            {
+              "text": "香菜",
+              "id": "zh:香菜",
+              "optional": false
+            },
+            {
+              "text": "美人椒",
+              "id": "unknown:美人椒",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "id": "howtocook:961ae3ea5f72116b",
+          "title": "红烧鱼头",
+          "bullet": "油、盐、鸡精、生抽、老抽、陈醋、黑胡椒粉、料酒",
+          "parts": [
+            {
+              "text": "油",
+              "id": "oil",
+              "optional": false
+            },
+            {
+              "text": "盐",
+              "id": "salt",
+              "optional": false
+            },
+            {
+              "text": "鸡精",
+              "id": "zh:鸡精",
+              "optional": false
+            },
+            {
+              "text": "生抽",
+              "id": "soy-sauce",
+              "optional": false
+            },
+            {
+              "text": "老抽",
+              "id": "dark-soy",
+              "optional": false
+            },
+            {
+              "text": "陈醋",
+              "id": "zh:陈醋",
+              "optional": false
+            },
+            {
+              "text": "黑胡椒粉",
+              "id": "black-pepper",
+              "optional": false
+            },
+            {
+              "text": "料酒",
+              "id": "wine",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "id": "howtocook:961ae3ea5f72116b",
+          "title": "红烧鱼头",
+          "bullet": "八角、干辣椒",
+          "parts": [
+            {
+              "text": "八角",
+              "id": "zh:八角",
+              "optional": false
+            },
+            {
+              "text": "干辣椒",
+              "id": "zh:干辣椒",
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "howtocook:1473dff6924a687c",
+      "title": "柱候牛腩",
+      "before": 4,
+      "after": 20,
+      "bullets": [
+        {
+          "id": "howtocook:1473dff6924a687c",
+          "title": "柱候牛腩",
+          "bullet": "柱候酱（核心酱），郫县豆瓣酱，南腐乳，叉烧酱（可选），蚝油， 老抽，生抽",
+          "parts": [
+            {
+              "text": "柱候酱（核心酱）",
+              "id": "zh:柱候酱",
+              "optional": false
+            },
+            {
+              "text": "郫县豆瓣酱",
+              "id": "douban",
+              "optional": false
+            },
+            {
+              "text": "南腐乳",
+              "id": "unknown:南腐乳",
+              "optional": false
+            },
+            {
+              "text": "叉烧酱（可选）",
+              "id": "zh:叉烧酱",
+              "optional": true
+            },
+            {
+              "text": "蚝油",
+              "id": "oyster-sauce",
+              "optional": false
+            },
+            {
+              "text": "老抽",
+              "id": "dark-soy",
+              "optional": false
+            },
+            {
+              "text": "生抽",
+              "id": "soy-sauce",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "id": "howtocook:1473dff6924a687c",
+          "title": "柱候牛腩",
+          "bullet": "花雕酒，白酒",
+          "parts": [
+            {
+              "text": "花雕酒",
+              "id": "unknown:花雕酒",
+              "optional": false
+            },
+            {
+              "text": "白酒",
+              "id": "unknown:白酒",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "id": "howtocook:1473dff6924a687c",
+          "title": "柱候牛腩",
+          "bullet": "香叶， 花椒，八角，干辣椒，丁香，甘草，干辣椒，小米辣（可选），姜，蒜",
+          "parts": [
+            {
+              "text": "香叶",
+              "id": "zh:香叶",
+              "optional": false
+            },
+            {
+              "text": "花椒",
+              "id": "zh:花椒",
+              "optional": false
+            },
+            {
+              "text": "八角",
+              "id": "zh:八角",
+              "optional": false
+            },
+            {
+              "text": "干辣椒",
+              "id": "zh:干辣椒",
+              "optional": false
+            },
+            {
+              "text": "丁香",
+              "id": "zh:丁香",
+              "optional": false
+            },
+            {
+              "text": "甘草",
+              "id": "unknown:甘草",
+              "optional": false
+            },
+            {
+              "text": "干辣椒",
+              "id": "zh:干辣椒",
+              "optional": false
+            },
+            {
+              "text": "小米辣（可选）",
+              "id": "zh:小米",
+              "optional": true
+            },
+            {
+              "text": "姜",
+              "id": "ginger",
+              "optional": false
+            },
+            {
+              "text": "蒜",
+              "id": "garlic",
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "howtocook:ddc763f709d2b5b6",
+      "title": "猪皮冻",
+      "before": 2,
+      "after": 8,
+      "bullets": [
+        {
+          "id": "howtocook:ddc763f709d2b5b6",
+          "title": "猪皮冻",
+          "bullet": "大料、花椒、白芷、桂皮、丁香、香叶、小茴香",
+          "parts": [
+            {
+              "text": "大料",
+              "id": "unknown:大料",
+              "optional": false
+            },
+            {
+              "text": "花椒",
+              "id": "zh:花椒",
+              "optional": false
+            },
+            {
+              "text": "白芷",
+              "id": "unknown:白芷",
+              "optional": false
+            },
+            {
+              "text": "桂皮",
+              "id": "zh:桂皮",
+              "optional": false
+            },
+            {
+              "text": "丁香",
+              "id": "zh:丁香",
+              "optional": false
+            },
+            {
+              "text": "香叶",
+              "id": "zh:香叶",
+              "optional": false
+            },
+            {
+              "text": "小茴香",
+              "id": "zh:小茴香",
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "howtocook:373d56f2f32aba5c",
+      "title": "南派红烧肉",
+      "before": 2,
+      "after": 14,
+      "bullets": [
+        {
+          "id": "howtocook:373d56f2f32aba5c",
+          "title": "南派红烧肉",
+          "bullet": "辅料：`油`、`冰糖`、`老抽`、`料酒`、`香叶`、`八角`、`生姜`、`盐`、`葱`、`开水`、`凉水`、`蒜`、`花椒`",
+          "parts": [
+            {
+              "text": "`油`",
+              "id": "oil",
+              "optional": false
+            },
+            {
+              "text": "`冰糖`",
+              "id": "zh:冰糖",
+              "optional": false
+            },
+            {
+              "text": "`老抽`",
+              "id": "dark-soy",
+              "optional": false
+            },
+            {
+              "text": "`料酒`",
+              "id": "wine",
+              "optional": false
+            },
+            {
+              "text": "`香叶`",
+              "id": "zh:香叶",
+              "optional": false
+            },
+            {
+              "text": "`八角`",
+              "id": "zh:八角",
+              "optional": false
+            },
+            {
+              "text": "`生姜`",
+              "id": "ginger",
+              "optional": false
+            },
+            {
+              "text": "`盐`",
+              "id": "salt",
+              "optional": false
+            },
+            {
+              "text": "`葱`",
+              "id": "scallion",
+              "optional": false
+            },
+            {
+              "text": "`开水`",
+              "id": "water",
+              "optional": false
+            },
+            {
+              "text": "`凉水`",
+              "id": "unknown:凉水",
+              "optional": false
+            },
+            {
+              "text": "`蒜`",
+              "id": "garlic",
+              "optional": false
+            },
+            {
+              "text": "`花椒`",
+              "id": "zh:花椒",
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "howtocook:617f7ae9488e0b06",
+      "title": "凉皮",
+      "before": 3,
+      "after": 14,
+      "bullets": [
+        {
+          "id": "howtocook:617f7ae9488e0b06",
+          "title": "凉皮",
+          "bullet": "凉皮、面筋",
+          "parts": [
+            {
+              "text": "凉皮",
+              "id": "unknown:凉皮",
+              "optional": false
+            },
+            {
+              "text": "面筋",
+              "id": "unknown:面筋",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "id": "howtocook:617f7ae9488e0b06",
+          "title": "凉皮",
+          "bullet": "盐、鸡精、蚝油、生抽、老抽、香油、香醋、芝麻酱（原味芝麻酱最佳）",
+          "parts": [
+            {
+              "text": "盐",
+              "id": "salt",
+              "optional": false
+            },
+            {
+              "text": "鸡精",
+              "id": "zh:鸡精",
+              "optional": false
+            },
+            {
+              "text": "蚝油",
+              "id": "oyster-sauce",
+              "optional": false
+            },
+            {
+              "text": "生抽",
+              "id": "soy-sauce",
+              "optional": false
+            },
+            {
+              "text": "老抽",
+              "id": "dark-soy",
+              "optional": false
+            },
+            {
+              "text": "香油",
+              "id": "zh:香油",
+              "optional": false
+            },
+            {
+              "text": "香醋",
+              "id": "zh:香醋",
+              "optional": false
+            },
+            {
+              "text": "芝麻酱（原味芝麻酱最佳）",
+              "id": "zh:芝麻酱",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "id": "howtocook:617f7ae9488e0b06",
+          "title": "凉皮",
+          "bullet": "黄瓜、大蒜、绿豆芽",
+          "parts": [
+            {
+              "text": "黄瓜",
+              "id": "zh:黄瓜",
+              "optional": false
+            },
+            {
+              "text": "大蒜",
+              "id": "garlic",
+              "optional": false
+            },
+            {
+              "text": "绿豆芽",
+              "id": "zh:绿豆芽",
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "howtocook:06a218a8627c1797",
+      "title": "蒸卤面",
+      "before": 9,
+      "after": 15,
+      "bullets": [
+        {
+          "id": "howtocook:06a218a8627c1797",
+          "title": "蒸卤面",
+          "bullet": "葱，姜，蒜",
+          "parts": [
+            {
+              "text": "葱",
+              "id": "scallion",
+              "optional": false
+            },
+            {
+              "text": "姜",
+              "id": "ginger",
+              "optional": false
+            },
+            {
+              "text": "蒜",
+              "id": "garlic",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "id": "howtocook:06a218a8627c1797",
+          "title": "蒸卤面",
+          "bullet": "生抽，老抽，料酒，盐，五香粉",
+          "parts": [
+            {
+              "text": "生抽",
+              "id": "soy-sauce",
+              "optional": false
+            },
+            {
+              "text": "老抽",
+              "id": "dark-soy",
+              "optional": false
+            },
+            {
+              "text": "料酒",
+              "id": "wine",
+              "optional": false
+            },
+            {
+              "text": "盐",
+              "id": "salt",
+              "optional": false
+            },
+            {
+              "text": "五香粉",
+              "id": "zh:五香粉",
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "howtocook:1a65efb5c3b641c0",
+      "title": "包菜炒鸡蛋粉丝",
+      "before": 7,
+      "after": 12,
+      "bullets": [
+        {
+          "id": "howtocook:1a65efb5c3b641c0",
+          "title": "包菜炒鸡蛋粉丝",
+          "bullet": "盐、生抽、老抽、蚝油",
+          "parts": [
+            {
+              "text": "盐",
+              "id": "salt",
+              "optional": false
+            },
+            {
+              "text": "生抽",
+              "id": "soy-sauce",
+              "optional": false
+            },
+            {
+              "text": "老抽",
+              "id": "dark-soy",
+              "optional": false
+            },
+            {
+              "text": "蚝油",
+              "id": "oyster-sauce",
+              "optional": false
+            }
+          ]
+        },
+        {
+          "id": "howtocook:1a65efb5c3b641c0",
+          "title": "包菜炒鸡蛋粉丝",
+          "bullet": "葱、蒜、干辣椒",
+          "parts": [
+            {
+              "text": "葱",
+              "id": "scallion",
+              "optional": false
+            },
+            {
+              "text": "蒜",
+              "id": "garlic",
+              "optional": false
+            },
+            {
+              "text": "干辣椒",
+              "id": "zh:干辣椒",
+              "optional": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "howtocook:28a9b2f06a8d98ee",
+      "title": "番茄牛肉蛋花汤",
+      "before": 6,
+      "after": 8,
+      "bullets": [
+        {
+          "id": "howtocook:28a9b2f06a8d98ee",
+          "title": "番茄牛肉蛋花汤",
+          "bullet": "葱、姜、蒜",
+          "parts": [
+            {
+              "text": "葱",
+              "id": "scallion",
+              "optional": false
+            },
+            {
+              "text": "姜",
+              "id": "ginger",
+              "optional": false
+            },
+            {
+              "text": "蒜",
+              "id": "garlic",
+              "optional": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ambiguous": [
+    {
+      "recipeId": "howtocook:0175adf06f5fdd01",
+      "text": "无盐黄油",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:031354976c677d08",
+      "text": "电磁炉/灶台",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:0840396cb2725389",
+      "text": "葱姜花椒水",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:0d42f08d156d6500",
+      "text": "黄酒或料酒（二选一即可，黄酒风味更醇厚）",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:0e9866e5643e6ccd",
+      "text": "灯影牛肉丝/午餐肉/腊肠/卤肉...等熟肉（备选）",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:0f2b773be2e0b8a3",
+      "text": "（那个...有摆盘需求的话，可以来点蓝莓 and/or 咖啡粉）",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:127edac8e578c1e1",
+      "text": "牛柳或牛肩肉",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:127edac8e578c1e1",
+      "text": "生抽酱油",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:16663c525e6b39c6",
+      "text": "葱姜蒜",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:1bc98124aec50771",
+      "text": "（色拉油 或 菜籽油） 1000 ml",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:1bc98124aec50771",
+      "text": "糍粑辣椒 3000 g",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:1bc98124aec50771",
+      "text": "老油 ?? 干辣椒面 15 g",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:24562260b0e14389",
+      "text": "料/黄酒",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:27b738de814e6ba5",
+      "text": "五花肉/瘦肉",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:280e1f88f772ec3c",
+      "text": "花椒 or 麻椒",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:280e1f88f772ec3c",
+      "text": "糍粑辣椒（花溪党武的辣椒，遵义的子弹头，条子椒，大方的皱椒混合之后打碎的辣椒）",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:2ce6f52e55265187",
+      "text": "大葱葱白",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:30eafb2f0a661bd1",
+      "text": "茉莉绿茶茶叶/苏打气泡水二选一",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:30eafb2f0a661bd1",
+      "text": "薄荷叶或其他绿叶（可选，装饰使用）",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:392047faad04360f",
+      "text": "番茄酱 / 黑胡椒酱（选其一即可）",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:3a181639cf9138dd",
+      "text": "薄荷叶或坚果碎（可选，用于装饰）",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:3a892c884d6f39e0",
+      "text": "料酒或啤酒",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:3eaf0a4511855c63",
+      "text": "烧烤料或孜然粉（可选）",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:40e28313bc713fcc",
+      "text": "葱姜末",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:460b515020dec166",
+      "text": "薄荷汁 10ml / 薄荷粉 10g",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:49e4e1e85bbfe8f8",
+      "text": "挂面或者鲜面条也行",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:49e4e1e85bbfe8f8",
+      "text": "蚝油或者鸡精",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:4b816847856fadc6",
+      "text": "温水或高汤",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:4dbabae176214aaa",
+      "text": "黑虎虾 or 明虾",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:50cf74d8dc74aa7a",
+      "text": "小葱/大葱/洋葱",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:51a4793a1e08410d",
+      "text": "菜籽油或花生油",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:571da379bc04a550",
+      "text": "煎蛋或[太阳蛋](../../breakfast/太阳蛋.md)",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:581d80efc12c2ca8",
+      "text": "猪肉/牛肉",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:5a753afd111fed65",
+      "text": "生抽酱油",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:5b50c173e66f4a3c",
+      "text": "料酒或者黄酒",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:61c1012b42f158b1",
+      "text": "白糖或红糖",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:65787a402898eee6",
+      "text": "无盐黄油（推荐安佳）",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:677f373658d27bf3",
+      "text": "咖啡调糖（黄色粗粒）",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:683225505a87b9d9",
+      "text": "姜蒜",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:6a4a7145b1369b5d",
+      "text": "姜蒜",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:7047e23423f0ad9b",
+      "text": "加糖炼乳",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:73b34579ff0e4a67",
+      "text": "[可选] 柠檬汁或白醋",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:77665869d6f51479",
+      "text": "酸奶或牛奶（可选，帮助肉质更滑嫩）",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:83c2759e7cb25a73",
+      "text": "豌豆淀粉",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:85c01e8fd94ff747",
+      "text": "低筋面粉或普通面粉",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:874ab7d67d2ecf47",
+      "text": "巴斯马蒂香米或普通大米",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:874ab7d67d2ecf47",
+      "text": "食用油或酥油",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:8deffad10bd66074",
+      "text": "高汤或浓汤宝",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:90f04c224709ac2c",
+      "text": "白糖 or 冰糖",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:91bc15e9352de9ea",
+      "text": "无盐黄油（推荐品牌总统）",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:920d017802b3b131",
+      "text": "或者是其他任何自己所喜欢的面食形式。",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:920d017802b3b131",
+      "text": "鸡蛋鸭蛋鹅蛋鸵鸟蛋等蛋类",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:920d017802b3b131",
+      "text": "生菜菠菜油麦菜",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:920d017802b3b131",
+      "text": "青椒番茄胡萝卜等蔬菜类。",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:93eb7c2440893496",
+      "text": "朗姆酒或啤酒",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:949bd05cd61f985d",
+      "text": "羊肉或羊杂",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:9a222b1883cad0aa",
+      "text": "年糕/白粿 （形状不限）",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:9a222b1883cad0aa",
+      "text": "（可选）：鸡蛋",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:9e09ccc87f3f13a4",
+      "text": "有盐牛油",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:a27c91703f1aaf05",
+      "text": "全脂牛奶/奶油",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:a2902089367ef836",
+      "text": "香芹/芹菜",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:a2902089367ef836",
+      "text": "辣椒：青椒或者红椒都可以",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:abbf66d7a0c12870",
+      "text": "洋葱或红葱头",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:abbf66d7a0c12870",
+      "text": "土豆或者萝卜可依据个人喜好自行添加",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:abe023d49637389d",
+      "text": "炭火或燃气",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:aed4362137768ec1",
+      "text": "料酒或花雕酒",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:afbed08955789550",
+      "text": "生抽 / 味极鲜",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:b0ca418ed646e4ec",
+      "text": "冰糖：炒出来的`糖色`色泽最为鲜艳",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:b0ca418ed646e4ec",
+      "text": "白砂糖：必须水油炒，不加水融化会很慢",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:b261aa97c4abb8ab",
+      "text": "红石榴糖浆",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:b43bc0d5b054c4a8",
+      "text": "猪五花肉或猪肉排骨",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:b43bc0d5b054c4a8",
+      "text": "生抽酱油",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:b898ff51880d2d8b",
+      "text": "生抽酱油",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:bd0928f82e92505f",
+      "text": "剑骨鱼或鲤鱼（约 1.5 斤，让店家处理内脏，但**不要刮鱼鳞**）",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:c5aa148342a3c9c0",
+      "text": "黑芝麻或白芝麻（可选）",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:cf3dabc066de2aa0",
+      "text": "江南米或北方大米",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:d36c1927c74c7048",
+      "text": "火腿肠或鸡胸肉",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:d916492c172d5d9a",
+      "text": "肉丁/肉末",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:dacc0e7e690a15f0",
+      "text": "生抽酱油",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:dc93ff485c88a7a2",
+      "text": "葱姜蒜",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:e2a148eb6cf115e2",
+      "text": "葱姜蒜",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:e403ba22275a0439",
+      "text": "调理机/果汁机",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:e511d3a4430aac99",
+      "text": "昂刺鱼或者沙光鱼",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:e53cc385a1a0a9b7",
+      "text": "白砂糖或冰糖",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:e5f0719e22719962",
+      "text": "风干快熟面/任何牌子的快熟面（不需要调味料）",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:e708c271324aa14e",
+      "text": "干罗勒或百里香（可选）",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:e9b179096587074a",
+      "text": "意式猪肉香肠（去肠衣）",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:eb849be42cbb064b",
+      "text": "红油豆瓣酱",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:ec5179fc88ee1bd5",
+      "text": "郫县红油豆瓣酱（注意区分，不是那种棕黄色的豆瓣酱）",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:ec9f0780bddb3fb4",
+      "text": "高筋或中筋面粉 *（尽量使用高筋面粉，但**避免使用低筋面粉**。所有无特殊说明的“万能面粉”均为中筋面粉）*",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:ec9f0780bddb3fb4",
+      "text": "牛奶或淡奶油或炼乳或奶粉 *（最好使用**奶粉**，奶香味十足，但**不要使用任何复方奶粉**，如成人奶粉或婴儿奶粉，因为化学性质不稳定。同时可以两种奶制品混合使用。尽量**避免选用额外含糖**的原料，因为实际含糖量会多于本食谱建议加糖量）*",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:ec9f0780bddb3fb4",
+      "text": "黄油或玉米油 *（如果**选用的奶制品含脂量极高可以不加**。黄油尽量选用动脂无盐的。豆油可能会有豆腥味，尽量不要使用。）*",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:ed29771026e7eed6",
+      "text": "全脂奶粉或淡奶",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:ed29771026e7eed6",
+      "text": "陶瓷杯或保温杯",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:f26c5646a21a3d7e",
+      "text": "白醋/米醋",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:f43c7cdf6c27f066",
+      "text": "葱姜水",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:f64edf0ff4660fb1",
+      "text": "葱 + 姜 + 蒜 + 料酒",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:f64edf0ff4660fb1",
+      "text": "盐 + 鸡精 + 十三香",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:f64edf0ff4660fb1",
+      "text": "生抽 + 老抽 + 蚝油",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:f727a804d3184577",
+      "text": "生抽酱油",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:f8c41af7879a19d5",
+      "text": "白菜心/娃娃菜",
+      "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:fce469feac21f46a",
+      "text": "生抽酱油",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:fce469feac21f46a",
+      "text": "老抽酱油",
+      "reason": "unseparated compound"
+    }
+  ]
+}

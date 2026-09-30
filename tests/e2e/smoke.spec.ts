@@ -201,3 +201,55 @@ test("device-only imported recipe waits for hydration and never calls server fal
   ).toBeVisible();
   expect(fallback).toEqual([]);
 });
+
+test("Xinjiang chicken matches only separately selected atomic ingredients", async ({
+  page,
+}) => {
+  const url = "/recipe/howtocook%3A96dd22806c801283";
+  await page.goto("/pantry");
+  await page.getByRole("button", { name: "清空厨房" }).click();
+  await page.getByRole("button", { name: "蒜", exact: true }).click();
+  await page.goto(url);
+  const rows = page.locator(".detail-ingredient");
+  await expect(rows).toHaveCount(16);
+  const available = rows.filter({ has: page.locator(".has") });
+  const missing = rows.filter({ hasNot: page.locator(".has") });
+  await expect(available).toHaveCount(1);
+  await expect(available).toContainText("大蒜");
+  for (const name of [
+    "花椒",
+    "香叶",
+    "香果",
+    "干线椒",
+    "大葱",
+    "油",
+    "盐",
+    "生抽",
+    "蚝油",
+    "料酒",
+    "白糖",
+    "鸡肉",
+    "土豆",
+    "菜椒",
+    "甜椒",
+  ])
+    await expect(missing.filter({ hasText: name })).not.toHaveCount(0);
+  for (const name of ["鸡肉", "土豆", "大葱", "花椒", "香叶"])
+    await expect(available).not.toContainText(name);
+  for (const [name, count] of [
+    ["鸡肉", 2],
+    ["土豆", 3],
+  ] as const) {
+    await page.goto("/pantry");
+    await page.getByRole("button", { name, exact: true }).click();
+    await page.goto(url);
+    await expect(available).toHaveCount(count);
+    await expect(available.filter({ hasText: name })).toHaveCount(1);
+    await expect(missing.filter({ hasText: name })).toHaveCount(0);
+  }
+  await page.reload();
+  await expect(available).toHaveCount(3);
+  await expect(page.getByRole("region", { name: "菜谱来源" })).toContainText(
+    "HowToCook",
+  );
+});

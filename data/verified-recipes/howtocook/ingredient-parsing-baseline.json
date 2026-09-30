@@ -1,0 +1,2284 @@
+[
+  {
+    "id": "howtocook:00350cbfad203a1d",
+    "ingredientCount": 14,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "7bc24d9e347e2a3b7e5df28e506a80198c473095711aafba4c3ea65494848871"
+  },
+  {
+    "id": "howtocook:0175adf06f5fdd01",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "f4ec6577792bff3e03aa5e242a69e1af19ca68de3791704373755a191ff83540"
+  },
+  {
+    "id": "howtocook:01b1d98676a5b225",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "8a3a653e8ee2891d62564457056b563fddf02d4dc026c87b8c48ca4c693e8aac"
+  },
+  {
+    "id": "howtocook:0250e6ee464f70c8",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "04aa97c27f990f7e635d3f4f3fa58e1e467e405abfa40dde07847cea667be5a3"
+  },
+  {
+    "id": "howtocook:02e515d6befb2d79",
+    "ingredientCount": 15,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "3541cd9f4ea7c74a1b90fb102a842c060db72d47675687677dee160258f19694"
+  },
+  {
+    "id": "howtocook:031354976c677d08",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [
+      "酸笋包、花生包、豆皮包、木耳包等配料包",
+      "醋包、辣椒油等调味包"
+    ],
+    "nonIngredientSha256": "227fca14d962dedb28785eadf784d1668df04fbd39e2019d13e32a930b745ac2"
+  },
+  {
+    "id": "howtocook:0492c4583aa9e288",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "62023391ca91f06fde887b6ace39cebaa7906c20da46d49517c63cca017801c9"
+  },
+  {
+    "id": "howtocook:06a218a8627c1797",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [
+      "葱，姜，蒜",
+      "生抽，老抽，料酒，盐，五香粉"
+    ],
+    "nonIngredientSha256": "ac190b97414104e545f593c56e453f4e497b6e7ee6ac451a4c2ffc065a2fe5d6"
+  },
+  {
+    "id": "howtocook:0840396cb2725389",
+    "ingredientCount": 16,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "93428448f289127f02473bc67fbeadf82ef25c6cc8004e310bcc370cfa57ab33"
+  },
+  {
+    "id": "howtocook:09402d43ecdfcdaa",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "7ec11fcd77d0683e456306868c17268ffcd4ce0f07b3fca3011d18bd447b5823"
+  },
+  {
+    "id": "howtocook:0a5faf76b239b093",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "140b2d3839444c97af77c200a4ca9cda44e0f0c16cb279254278a207dabb3d99"
+  },
+  {
+    "id": "howtocook:0d12168d06e9bb21",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "c0a57f71613b296132b77698d901486d13e011b22fd06bfd52efa51e5540c508"
+  },
+  {
+    "id": "howtocook:0d138afee09924fb",
+    "ingredientCount": 12,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "28d6c1af4c06b0e92d53f25d4810619001be7e1da6fb7c7038415fc36d46d055"
+  },
+  {
+    "id": "howtocook:0d42f08d156d6500",
+    "ingredientCount": 16,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "4737efb68151666cd80f90eb0ce0570823bae31c5861b120a095fc2bf005a555"
+  },
+  {
+    "id": "howtocook:0e9866e5643e6ccd",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "d05e0bbc9c0843b31183d2037cbd4d59f55b475de5b3b0abdc9c74c370909bdb"
+  },
+  {
+    "id": "howtocook:0eb9f4426ab5d8da",
+    "ingredientCount": 2,
+    "groupedIngredientRows": [
+      "主料：`大肉`、`鸡蛋`（可选）、`豆皮`（可选）",
+      "辅料：`生姜`、`冰糖`、`生抽`、`老抽`、`料酒`、`香叶`、`八角`、`盐`、`水`、`葱`（记得要开水）"
+    ],
+    "nonIngredientSha256": "0d05081ec0d80595bd64553ee7b9a43dfcca24f0ac65c8cc59d40e062939a192"
+  },
+  {
+    "id": "howtocook:0ed628aba05a38c9",
+    "ingredientCount": 24,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "47e45771bf307c231250b5e76f910f725afb63f6cbcd20be051da9b09bcc4f00"
+  },
+  {
+    "id": "howtocook:0f2b773be2e0b8a3",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "fe17b490b1761b30d2ac774d42ce832d1831157bef82c58f2296129a77c986d3"
+  },
+  {
+    "id": "howtocook:0f850528c9848307",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "f0fda848fc18ad154a720ebc80327995702c888a802189b7f3534dceb82ed55f"
+  },
+  {
+    "id": "howtocook:0fdf098192030592",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "092701d02bc18736fba6fbb47759c0f814f6873d54d9be3146d75420ba9893b9"
+  },
+  {
+    "id": "howtocook:103a45a254561fc0",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "0a82f07209d0b4f20f93849c14380d23e7ea26a9a814a72d91c540de75b840f7"
+  },
+  {
+    "id": "howtocook:11368a20c31b46c4",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "ce2839417249855bdf641521d0a14c5de13bc069789635e4a49144b4dd44e345"
+  },
+  {
+    "id": "howtocook:1157639fe340eb72",
+    "ingredientCount": 12,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "3422f6f67f661bf3d761fd1b283770fb126b1d904295fed0084a70f7bfd8b381"
+  },
+  {
+    "id": "howtocook:11b4b5d7abe0bafa",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "c141076795c79ea326ac28d0d20e635edb210970aef812c5ca64aa4db1c57ca6"
+  },
+  {
+    "id": "howtocook:127edac8e578c1e1",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "acfbce1a0e13a78996781f2ba75dc14e590f15aeb0b56b63fed603689370095a"
+  },
+  {
+    "id": "howtocook:1282bbd3a9c9b164",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "78cf6ddde71198d5f42f31252bbdac893233676ef9ac38a01a6e931ddab99311"
+  },
+  {
+    "id": "howtocook:12863092d2c6437b",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "26d0247e8fccaa5fedbe9b8614e2032a456e1c1a5a3da0acbdec5d0c3ccf07b7"
+  },
+  {
+    "id": "howtocook:12a0f2535a3d3305",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "a40ad4ab2dab56e22774b6261be565462943403b5f648b00bb3c21731c839093"
+  },
+  {
+    "id": "howtocook:12b1c244a100ef85",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "b1e8c1edbe246199eb88a02784d5d509bac7d86b66ec01b55e42d01425554f9b"
+  },
+  {
+    "id": "howtocook:1473dff6924a687c",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [
+      "柱候酱（核心酱），郫县豆瓣酱，南腐乳，叉烧酱（可选），蚝油， 老抽，生抽",
+      "花雕酒，白酒",
+      "香叶， 花椒，八角，干辣椒，丁香，甘草，干辣椒，小米辣（可选），姜，蒜"
+    ],
+    "nonIngredientSha256": "bc7c5f138f6b7b963a737da043f8e344080cd31f51a2e70ca63e327615d4e06d"
+  },
+  {
+    "id": "howtocook:150f56720d904551",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "946637be7a9f64e2321593c2ca1451f7297611739e8c133858b495bec959d150"
+  },
+  {
+    "id": "howtocook:16663c525e6b39c6",
+    "ingredientCount": 14,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "3b45cb6d143cc81328ecac54439189eeec4e2970a7f3db0a15e0ec034fe2824e"
+  },
+  {
+    "id": "howtocook:17cc9ae41d9fb459",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "b745fa98b3df0bc93f0cdbdde1b213ae84b7f4ecdba935b2e9617cbed7de202b"
+  },
+  {
+    "id": "howtocook:18f5ac325209fad4",
+    "ingredientCount": 12,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "13c2fa516faf52f24ee70f7ce2528ba6ed6be55ea06de093fc23a2b5c41fadb7"
+  },
+  {
+    "id": "howtocook:196eab378a75e74f",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "cd48a3109116fded1783ee77fa5700942e137a427d8421490bd93b5331aa33da"
+  },
+  {
+    "id": "howtocook:1a5309d32c90a9a3",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "9686c3b595893b0799b25bae58a6264d8fd79b6de9090ede6ff2384f7d9f3074"
+  },
+  {
+    "id": "howtocook:1a65efb5c3b641c0",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [
+      "盐、生抽、老抽、蚝油",
+      "葱、蒜、干辣椒"
+    ],
+    "nonIngredientSha256": "a61e132b46a23f269e0b886869f28b1d439dd0904af7c4eb6b1cc9662f550695"
+  },
+  {
+    "id": "howtocook:1a8b110f53c68d13",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "8f7c0c4a9605ea2d9f12d1556669720a4e566bf9952d19824fc187eef640d927"
+  },
+  {
+    "id": "howtocook:1afcd350dd6d285b",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "1b2804d11e934cf8266e8f6b5e8118e60552a5ed440539937f62bad0fecc7d98"
+  },
+  {
+    "id": "howtocook:1bc98124aec50771",
+    "ingredientCount": 33,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "71106bd23393481ac5cc0a380966a4892458e2670409b7b0e788847b094e340a"
+  },
+  {
+    "id": "howtocook:1bda94c2a4792404",
+    "ingredientCount": 18,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "010d6e55d2951c7b7240fe7cf5b825d3fad334fab026fe554314f3a0d7beeb8d"
+  },
+  {
+    "id": "howtocook:1d22844abab0cf64",
+    "ingredientCount": 14,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "ff9bdcb752052fbc5f07433ceea6218daef6a71aab3018feaa0adab1bbebc451"
+  },
+  {
+    "id": "howtocook:1d64ef29c97b798f",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "a221f156944a51e8bbcfda53848de7676c21c543783f140c0e4452cd36c605d5"
+  },
+  {
+    "id": "howtocook:1d96b8fc5bded0b8",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "8fc9e13f4ea64058550256b94be24ef2d0fcbe76e3e6c8237865b454aa4ec8f7"
+  },
+  {
+    "id": "howtocook:1e38411f713685dd",
+    "ingredientCount": 15,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "686ffe781350bfe2bbedaaabae17bfcf8bff26c1273f5a5da0d1081077359c83"
+  },
+  {
+    "id": "howtocook:1e8e59b9e7658bad",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "9758d33f2f2a1a899cea0a86ebe7ddf233ea60c4c0b2f7a42b4a176a3aa23f4c"
+  },
+  {
+    "id": "howtocook:1f6cfac235de433a",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "d8cd6f45196b8d62b5d1c799ce4ab4181a36569bc1ff1db3c480d0fe3fd341dc"
+  },
+  {
+    "id": "howtocook:20f6144a04ec886a",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "195427c3753e9e6d6a9ff906fed529dc1ca07c62f1a129513316cba03331f1ac"
+  },
+  {
+    "id": "howtocook:2130948c0fd24404",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "5f077c602146bde2d311d0dd9f6dbe709272df7dd1806aeb93f27efcb8ca05fe"
+  },
+  {
+    "id": "howtocook:22a66ee1b18916b6",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "c07dd73f9bc71033321961a5213596df2c6cc36b1ec2dbbe43fc616a413a4d55"
+  },
+  {
+    "id": "howtocook:238c08c29ddb1c4a",
+    "ingredientCount": 2,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "174af659aedcc269c3083d2d55bd1c89de900d08e0b378357eb1acd01b40d051"
+  },
+  {
+    "id": "howtocook:24562260b0e14389",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [
+      "2cm 两段葱段、两片姜片，葱花、姜各 10g",
+      "生抽、白胡椒粉，白糖，料/黄酒，八角三小片"
+    ],
+    "nonIngredientSha256": "eb053a787e6a806e80d7022c15f8a0b13d887d1897f9389f9b1968df541e6c13"
+  },
+  {
+    "id": "howtocook:249efab791e10293",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "a163ee6ce3d16e170b5bbf7e17430957f9de989c0a21a8876a04a7da7c77202b"
+  },
+  {
+    "id": "howtocook:2616a5a03457ab9f",
+    "ingredientCount": 15,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "924f33e14c1658471fde8309fd814787be649115d5af3c5e9b9198d60bb60268"
+  },
+  {
+    "id": "howtocook:26f2457ef559816f",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "a930477adb71f684f143a63cdc946a9066a6cbb7d55544cd76cac8b7ab548427"
+  },
+  {
+    "id": "howtocook:27b738de814e6ba5",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "a84f0ba42fffc6e53e9c872f331edabdb129274fdf97f895d9fabf4d35b47ee3"
+  },
+  {
+    "id": "howtocook:280e1f88f772ec3c",
+    "ingredientCount": 13,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "1e837dc76bfa5c18db641e8fd70aa9652a20e01022d5f9fb3fe757d9c2542c46"
+  },
+  {
+    "id": "howtocook:288b3f0b016a90e1",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "99a204bd491523b531f8c8dfd1b7fc9a23e2091a4bb5546396435ab06559b164"
+  },
+  {
+    "id": "howtocook:28a9b2f06a8d98ee",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [
+      "葱、姜、蒜"
+    ],
+    "nonIngredientSha256": "1bb965db816e9e5211f73af6d142925994e24bf1261d64e40ecfc11816c5c947"
+  },
+  {
+    "id": "howtocook:292d0a9d95d851f8",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "82ee72750f6e34d74393c220e87af1907e61ab064c0f59d61fe453e228a488c9"
+  },
+  {
+    "id": "howtocook:29dc63b5178d6725",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "b2ed4df4ab17f73144cf1e5a0356eacb05e37407b4c675122cb54b7b4b6285bd"
+  },
+  {
+    "id": "howtocook:2a19546cdca86a1a",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "22f9ee150065857fda9c5df35c00393e894ca9431527d0e9d9b0e4928846380f"
+  },
+  {
+    "id": "howtocook:2a46b4b88f72e03b",
+    "ingredientCount": 19,
+    "groupedIngredientRows": [
+      "全香料：月桂叶、肉桂棒、小豆蔻、丁香、八角"
+    ],
+    "nonIngredientSha256": "2d304d9c56b4112855b50ec859ed7ddd80d787d3e396037a0788001954a1bc3d"
+  },
+  {
+    "id": "howtocook:2a9c58483b71a00d",
+    "ingredientCount": 2,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "85679a3bb4460ecc3853ba2fdce5cf9586476631813aa678e02a8f480ef77765"
+  },
+  {
+    "id": "howtocook:2aba0e13c9d6470c",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "2577d3a95de37f25e5f622cbb241ad32eff699ad6c65c5bf3feed4ad06fee1b6"
+  },
+  {
+    "id": "howtocook:2bde2d31169c74e9",
+    "ingredientCount": 14,
+    "groupedIngredientRows": [
+      "带脚、爪猪前肘"
+    ],
+    "nonIngredientSha256": "c68070f6ff8980c4a086ebe9474cdb2364ee08b9bd6a24f19d5ce1c2dc810ce3"
+  },
+  {
+    "id": "howtocook:2ce6f52e55265187",
+    "ingredientCount": 2,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "d7dc72a0f01e75b164d462bdf51002bf0ee152d553084e0703d6adef65c4b0f9"
+  },
+  {
+    "id": "howtocook:2e33e0141c78c027",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "249be6c28ff442b2d03066305f348debfc9e2d06bfbc0858f42ce0bf068ec1f5"
+  },
+  {
+    "id": "howtocook:2e80c786dc11857d",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [
+      "大葱、姜、大蒜、干辣椒",
+      "油、盐、生抽、老抽、陈醋、蚝油、料酒、白糖",
+      "鲤鱼、五花肉"
+    ],
+    "nonIngredientSha256": "5d863d02fc91f7f7a6792ead6d8d6213a50e158c07cb1519cd45c5fac797b081"
+  },
+  {
+    "id": "howtocook:2e8d27218fc69e2c",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "aa629b56c2631843c570ceccc5d41046807837ccde412ffbc511e4108ca5003d"
+  },
+  {
+    "id": "howtocook:2eb4a45a2e3ddd82",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "a1ca7cfb46a22bbce282d87d92464b904772cb9d78ad3f577ada85aa6dfc29f1"
+  },
+  {
+    "id": "howtocook:2ed6cf0478f173fe",
+    "ingredientCount": 16,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "7a63c57a4a0bc05b83b63490c39869a217791626142c9cfbf28081e2e6d2b82e"
+  },
+  {
+    "id": "howtocook:30eafb2f0a661bd1",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "1ac42173e83fa1c119ceb89c5ac22493240836f97a2e50ebf113b4e7e7fd6003"
+  },
+  {
+    "id": "howtocook:322c053e9c0d5664",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "0da784fcb3e984bd1460e10a4f095f71d51010000e5e9ed6472371c4a449d947"
+  },
+  {
+    "id": "howtocook:342d514cbf79a116",
+    "ingredientCount": 2,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "300a0996131c114cf4a61b7ec5c0bb2ab1e2ab054f4be4d36c48c4854ba752ee"
+  },
+  {
+    "id": "howtocook:343910aaf7673e11",
+    "ingredientCount": 19,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "e1dd7513b9586582214939e578e1adb59db287fd10db2572f8c048cc3056b7e6"
+  },
+  {
+    "id": "howtocook:34fadc2fa767931c",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "9f66e0a5a433f39a638b28ac9db9c1e05a7b88427634e8925e8a8100463f98bc"
+  },
+  {
+    "id": "howtocook:35820a0555d3e682",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "4096c7c102991356d9680bcfac6b4f44437f6e4a3c94bcacfbb1491aa03a6e5d"
+  },
+  {
+    "id": "howtocook:35b2e221aa1e478b",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "052a95db13bbc9f3d1c84eaaa27e846fd159d221a14fa4bd4c20dc9ad2b8a53e"
+  },
+  {
+    "id": "howtocook:36958538b5b1ee45",
+    "ingredientCount": 15,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "37b69e43c00afda7a8fa1916a33da3451c377a8653fe2171090a322c17b5a6b1"
+  },
+  {
+    "id": "howtocook:36c6b1b2610cd383",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "d2d6775688fed2e37f34f5ac8f098d3c9e0f9f2c632d236d5d21c48b867319c0"
+  },
+  {
+    "id": "howtocook:373d56f2f32aba5c",
+    "ingredientCount": 2,
+    "groupedIngredientRows": [
+      "辅料：`油`、`冰糖`、`老抽`、`料酒`、`香叶`、`八角`、`生姜`、`盐`、`葱`、`开水`、`凉水`、`蒜`、`花椒`"
+    ],
+    "nonIngredientSha256": "183c85fafb72b17e62aec31b0f040a95eda8c8cae90a8871d37ac61d4afd074f"
+  },
+  {
+    "id": "howtocook:378f9d2c3a565ff2",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "820b0b6fabf8c59ecb1512bac1ae0e5a1f257e8d4a00ee085cab3b4dcb919264"
+  },
+  {
+    "id": "howtocook:38acd3af9efb50f4",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "a77358ade94008072e67e237f980fab1cd7461a6944d5ebd7d8bcb418a754c25"
+  },
+  {
+    "id": "howtocook:38f5fbfaae4052a8",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "9393c04a43d504957ae65fd6320b21fd1a819e252a4c456613a47dabdcf6a622"
+  },
+  {
+    "id": "howtocook:392047faad04360f",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "8dd05c0e9c42c2ef505a717bef91f817499dc23d23574248886559979ff1aff2"
+  },
+  {
+    "id": "howtocook:39425dec38664a3b",
+    "ingredientCount": 12,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "fe7290f58e78e33498d85c2389e48d45e270249dd329ab189fd0bf93e3ef725e"
+  },
+  {
+    "id": "howtocook:3a181639cf9138dd",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "e35f0a34330d8694db008581d9bf778683375712ff076f98197ce44fc26358fe"
+  },
+  {
+    "id": "howtocook:3a4b1f2e6d2d06c0",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "1fe4aa9538f8cac7e95e63bc51340d51062221762a9f2d26ebc8d834bdc6f62c"
+  },
+  {
+    "id": "howtocook:3a892c884d6f39e0",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "869422bc3939f248631a76e297a23280eff501bbcca8bea1a65c163fdc40d59e"
+  },
+  {
+    "id": "howtocook:3c05ffd63abd9ea2",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "7e24d4141a2b08640b20f9dea54f581eeffddb2ef974c1f1f27ce30430045562"
+  },
+  {
+    "id": "howtocook:3eaf0a4511855c63",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [
+      "大葱、姜、料酒",
+      "食用盐、鸡精（味精）、五香粉（十三香）、胡椒粉"
+    ],
+    "nonIngredientSha256": "4b9c5908e3788b51d7d16e52974d14fb927540159229f9f8c61f1e388edd59b8"
+  },
+  {
+    "id": "howtocook:3edbafd077f73ff3",
+    "ingredientCount": 16,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "50a1df33739e62093736d3dc5439653f7163f2b668414357c0856397b61aefba"
+  },
+  {
+    "id": "howtocook:401011c583625d48",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "e468ac360e8558dca3e8c298a487bdf4cfc4d2b6db4d3c3c2e5c2eeadcb7a689"
+  },
+  {
+    "id": "howtocook:40b2e9e9786833ec",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "bcfd8577eff589047774e476e124457cd0743c45db52ca79920eb265f1fe0227"
+  },
+  {
+    "id": "howtocook:40e20d1b35754039",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "1261c7e5f5022847027bb495f0e944c1f4c88e60144b62cab6c86797b966e156"
+  },
+  {
+    "id": "howtocook:40e28313bc713fcc",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "152bb527312edb8ca206976f8769ebab0c140f7be90b67368ddb8ba5a3af7500"
+  },
+  {
+    "id": "howtocook:414dff648871bbab",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "297e92a1288b7c6ee1af853d1fd2469cfc2c4a672f6acea6d7d43fc9b4feacad"
+  },
+  {
+    "id": "howtocook:414f79bd9c044d7a",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [
+      "葱、姜、蒜"
+    ],
+    "nonIngredientSha256": "f79a37379cba28344a1120be055f30a8ded310ad804de1898654f346d87f6f95"
+  },
+  {
+    "id": "howtocook:41754f839cbffa65",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "e6b77cbaf3d44531306c7cbab3359ed56fda8b161f5075577906d8e9ec530332"
+  },
+  {
+    "id": "howtocook:419a5e174596d2a4",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "da40d3e816ec9d1d54d7aabbfb1a8e4ec8b6801773d28381489d1dd7e909362b"
+  },
+  {
+    "id": "howtocook:4211c36ff61d4f89",
+    "ingredientCount": 15,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "c2ff3a6ca8979dd56f7bc31693fd73b3fe85e12d79ea899fd2a63df8bb12804b"
+  },
+  {
+    "id": "howtocook:4217ebd7f1e5c453",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "8ef625dac13b5d58b7d0d9c64e400ff7b4311db71621aeee8adf0620d63bd340"
+  },
+  {
+    "id": "howtocook:43027c68c0009576",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "062a69f27016a93437b70ca95daa5082dce0e30c735a095cb26ced66d9483e91"
+  },
+  {
+    "id": "howtocook:4378c05c5f7be12d",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "8c15b51d72ed6f8b7f7d43c4d2d09ec15b19027e908bf01da37255518384b02a"
+  },
+  {
+    "id": "howtocook:44c3bb871ebac63b",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "6e799c2b478284e3f1c6bbbc8b2f2edcdc2ac9d0043867a3a193412bfda1852e"
+  },
+  {
+    "id": "howtocook:4541e6c817a96916",
+    "ingredientCount": 18,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "43f8aba9bcfd6ea37c63dfbb3450e8528888ad69586d4e0e6b04b166e10538e3"
+  },
+  {
+    "id": "howtocook:45ad36b6133c9eea",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "dcaee602d4bcd9f7f0a0be1be252faebf3ffb46d88889a72e8b16d8e43046094"
+  },
+  {
+    "id": "howtocook:460b515020dec166",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "c3f38988c71241d8da08fc181dfe42d19bbfd8505f6bd2d6b1237a6e88a07e91"
+  },
+  {
+    "id": "howtocook:4633664c062d3650",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "75c32ebc1187a71c2bbbededb9cd706f3404887881ceba7d27ecc34c6a7713ce"
+  },
+  {
+    "id": "howtocook:46c174a49499dd04",
+    "ingredientCount": 19,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "3d697725c92b488977047b5b7a1220f28a3e3973650fbecd10f2d5ddc53494a3"
+  },
+  {
+    "id": "howtocook:47b0d27fb06bcb51",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "a40e7009460d1f75654515f6b97dca48f419b2b7790eb185912a0d9279fea273"
+  },
+  {
+    "id": "howtocook:48dd3251882e1522",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "5070bc310d3955eacfc4b920961c3647ac868fc34c9ebb4290be7ab2a6f622d4"
+  },
+  {
+    "id": "howtocook:49e499d0553bde8d",
+    "ingredientCount": 2,
+    "groupedIngredientRows": [
+      "芝麻、葱花（切段）或其他配料"
+    ],
+    "nonIngredientSha256": "da687799ed322652eac987a237bfca619c13debd52b606e09499324a72a22c46"
+  },
+  {
+    "id": "howtocook:49e4e1e85bbfe8f8",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [
+      "酱油、蚝油或者鸡精"
+    ],
+    "nonIngredientSha256": "955b91b648ca9e05f5b40a8db19c8f5ff1274c15c737ce3a5f33655d9418f374"
+  },
+  {
+    "id": "howtocook:4a879c3b12a8a4ef",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "001ea49e03565ecff845d8c4f6212b871a4820d9ce33d4fd9f7206c2ebb12bd6"
+  },
+  {
+    "id": "howtocook:4b816847856fadc6",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "190ff2df6d0c6a087dc5fb6f086557fb0cb06e4750f3bb595b0931fa7d22023d"
+  },
+  {
+    "id": "howtocook:4c944fb35c21a8aa",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "be84d6d4789d7a44ebadc059b92a3c279541738f0cda95a8f831c371d9e4a024"
+  },
+  {
+    "id": "howtocook:4d2ca8f35f3b92a5",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "7db2c3a106e1db121146ed99f554c347f7a1e140788d0347ff897620fb187ed5"
+  },
+  {
+    "id": "howtocook:4dbabae176214aaa",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [
+      "葱、姜",
+      "料酒、盐、冰糖、植物油"
+    ],
+    "nonIngredientSha256": "168f0da5db83ed9234e6bace5809fc169daec0e9bf9b12371140ce70ac142050"
+  },
+  {
+    "id": "howtocook:4de3928e6efae0e0",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "6544ecb90b1a05e2c6f89dbf3502fdc14cd69b054a3a4cbf2ce2501bd86b52e6"
+  },
+  {
+    "id": "howtocook:4f1a2679eb840431",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "3608ddb102189e0d95c155034d9d7a071742b31eba78485de7d7beeaba202b7a"
+  },
+  {
+    "id": "howtocook:4f64350b4de56e6b",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "1070b0fb6b80739d213fd01734416c7da56e63a4a527c18c896d8005052e302b"
+  },
+  {
+    "id": "howtocook:502a2a1b61c01bed",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "46017acc601ce8717c0ecef7a45dce5451a442af10ce2b590191aada74bfa9d6"
+  },
+  {
+    "id": "howtocook:5086f352be3eacfd",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "dbe446010e12be6b0ad30957ed39c2d7af994a4d7761a82ca2a319136253ad6e"
+  },
+  {
+    "id": "howtocook:5097e0e1af4e2096",
+    "ingredientCount": 15,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "9db91a6a25c9a3f64c5a25045adc132d3dec4d82ed024bb356ebfd5d5691cf84"
+  },
+  {
+    "id": "howtocook:50b2a23c6648d539",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "cb3d178c3fa27b606fb16c73ac3bfd418603fcaa022b08ad136b9abc46f1fd37"
+  },
+  {
+    "id": "howtocook:50cf74d8dc74aa7a",
+    "ingredientCount": 17,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "1e9ae49a38536197bbecaf6daef9feca29b8fe23314b6bb13c2fbfe2c19f8903"
+  },
+  {
+    "id": "howtocook:5112cfeefccc6edf",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "8bf1acb6a3219bfaac507525cfda7b3ce20ee8144cabf64a7bb48488d56d475a"
+  },
+  {
+    "id": "howtocook:515e68668fde3909",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "2d4004f83bab39aecfa4bc9c6c3951512bd552e0a4501aeb269072149194e150"
+  },
+  {
+    "id": "howtocook:51a4793a1e08410d",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "5b4a4bca4fa339ade89694a93c8faefcc3b740824ce4797ca036666e84afeff3"
+  },
+  {
+    "id": "howtocook:53fc0a69484a797c",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "251f541a29de97dda5299cebadf2c4f1a7fe681eabe411474b561c6d9330eafd"
+  },
+  {
+    "id": "howtocook:545e3a3e64c935de",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "29d29d2aa3ed0408ffa9b83f79fee7beac19b2ff323e88daa6fea34ca9e4c8e7"
+  },
+  {
+    "id": "howtocook:547705f2774cf0ed",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "c1deda687d7eb55a9d09ebd5a0a3e51b8ce5eddb54be1388a967df4c4dd36fc0"
+  },
+  {
+    "id": "howtocook:54b72d4f7cf820fb",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "80a50f46204ad041262c8c654aabc19a02d7a7a9d4c89b491875379350128baf"
+  },
+  {
+    "id": "howtocook:558559ec84a0c5ab",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "6ab6137a5688bfad14124e962397c214453bba4f3045daaafda2f1e1073df229"
+  },
+  {
+    "id": "howtocook:571da379bc04a550",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "fd417ffcf2504a3267c8e9753d4206d32375bc838427672188d9236ee0274057"
+  },
+  {
+    "id": "howtocook:575da7e2ff66eabf",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "6786e4d173b0411090d556371321a957ccb1c9393f61ab5b11da5b051382a937"
+  },
+  {
+    "id": "howtocook:580927b6ab1e41c2",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "a3ecbd26fdc23bf990d53a54d4a750a85633135a84eaab409abddfea7a217a80"
+  },
+  {
+    "id": "howtocook:581d80efc12c2ca8",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [
+      "炒河粉、猪肉/牛肉",
+      "炒料：盐、味精、老抽、生抽、孜然粉（或直接用河粉料）",
+      "黄瓜、面筋块、绿豆芽、鸡蛋、蒜瓣、小葱、淀粉"
+    ],
+    "nonIngredientSha256": "53932c0c0bb26cf157e6a4253754842c5a77f0505944756beb6080cf0b5a9b38"
+  },
+  {
+    "id": "howtocook:598880791fadadb7",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "e032c8812614b46f543f9773e8958f33d4299cb25610cd2847c2146530252f12"
+  },
+  {
+    "id": "howtocook:5a5cd50a4aaddb61",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "45ca47d40c7fea3eb392226284567f0cbb59a4e4b4f2068870027db6f5cdcc4a"
+  },
+  {
+    "id": "howtocook:5a753afd111fed65",
+    "ingredientCount": 13,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "73461a7d85512e7b6edef2c7835d2a45ad16ced7cdb5d39ae299133319d8b478"
+  },
+  {
+    "id": "howtocook:5ab770d281369817",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "f15ff38672b25fa752cdc3a28df39bdc0f42ce1034c5defc42987ddb820887f5"
+  },
+  {
+    "id": "howtocook:5b50c173e66f4a3c",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "de821229b6597b1f6bf8a5514cdb2366b64d60d8f53453a01de7e1062b9c7a08"
+  },
+  {
+    "id": "howtocook:5f3a3719b0e0ae36",
+    "ingredientCount": 15,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "7dedba455a5d6700a7fa2fe33daf7625d76ef515dd1af34874bad0407a6aaebf"
+  },
+  {
+    "id": "howtocook:5fa782ab3b20344d",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "abd717cf5901acc071bb74153a0a81ab9d99f67718b3da5cb24a38e03e44b016"
+  },
+  {
+    "id": "howtocook:617957ecce2fc981",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "bc897949e9f4e50886fa58d5e23978f5b04ce2c893b63c5f354c30521562bdff"
+  },
+  {
+    "id": "howtocook:617f7ae9488e0b06",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [
+      "凉皮、面筋",
+      "盐、鸡精、蚝油、生抽、老抽、香油、香醋、芝麻酱（原味芝麻酱最佳）",
+      "黄瓜、大蒜、绿豆芽"
+    ],
+    "nonIngredientSha256": "6cdb43b6464cb4ef0fe3fa8fdfded06f9abb51b99a4e2c714041feb18da6e09b"
+  },
+  {
+    "id": "howtocook:61c1012b42f158b1",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "28d4d4633c4ec28171b06e47bf672ec7420607a5bff7eebcb657aaec6fae8c28"
+  },
+  {
+    "id": "howtocook:61ffbcb05ceb03ee",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "e328d88b21c597e8165772a51d2d122e13e5c5aff243acc1071a0b1fe17974c6"
+  },
+  {
+    "id": "howtocook:632366b21003bc03",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "1170fee6599db4e58d6b4dc119a844a714efb328cd9e5c94d64739c46e746f37"
+  },
+  {
+    "id": "howtocook:636808171f3d3a8b",
+    "ingredientCount": 19,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "eba3a01b6a0910603497da37bd69161ec8acb90e8e912e4423bdc14e44e72690"
+  },
+  {
+    "id": "howtocook:6401f4adb586cfaa",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "124671c343b7e2cee39fb0a1b6c1e4ef03b7c08a18f3af1e049d86777cc03143"
+  },
+  {
+    "id": "howtocook:6417780c575ca5ed",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "79b8da8ea1b47dfe65e9bd16a1457bcffcbabdad33e260aedcfb501e2ba3b13d"
+  },
+  {
+    "id": "howtocook:648523905ae1f658",
+    "ingredientCount": 13,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "2a35a036a19a05eafd4f320471cb243949940470a53c99132665aa72dd4bbd30"
+  },
+  {
+    "id": "howtocook:651c621bb1384518",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "f88159bd5eb18293971b6aaa6d68d8fb7cc3659f738ba21a6edc79dc40584943"
+  },
+  {
+    "id": "howtocook:6573f2eb3d7f337c",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "d6f0e9d3174e35af52eed1247cce32e80ba412a80cc365f2f1541048e9b6e686"
+  },
+  {
+    "id": "howtocook:65787a402898eee6",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "947d5345d0a0a145d827d4784dbc78fdd84fa6b3381683434649fa6c7f1636a7"
+  },
+  {
+    "id": "howtocook:65d4c06a5b4800be",
+    "ingredientCount": 2,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "ba053fdb7fd248deab63f5f72839d7603980f99625727f418e51fb6f865173e4"
+  },
+  {
+    "id": "howtocook:6674e52ce5acad24",
+    "ingredientCount": 2,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "42748fc378c172ad7019c795e38bbdfb2f42df990faa6a39aff4b00c94447a2d"
+  },
+  {
+    "id": "howtocook:677f373658d27bf3",
+    "ingredientCount": 2,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "34c962b5e2a102f69ee2a988092013312e46cc0384dc905b03d276e71dc0d6a3"
+  },
+  {
+    "id": "howtocook:678acb8ed4c05c1b",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "f882aa7bae2b5d089073cf2d2d155cc88b6133b9a3279d0558a7b56c1ff8549c"
+  },
+  {
+    "id": "howtocook:683225505a87b9d9",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [
+      "酱油，盐，味精，料酒，姜蒜，油，豆瓣酱"
+    ],
+    "nonIngredientSha256": "d5608de0ca5cb1d2acdfdf5a24d5f58333d606de3b5b3dcdf86306ac8555314e"
+  },
+  {
+    "id": "howtocook:68c7a9333f5e4d58",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "c702a1f9527737f888e60c54879d236d6533f970492aa7bf7f4166567ea8330d"
+  },
+  {
+    "id": "howtocook:6a4a7145b1369b5d",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "139f367c075e0fe17a2db6ad67716cb41f1e3521df0dd9ca3829076e0b07bd1f"
+  },
+  {
+    "id": "howtocook:6aa1fa07f6c9c635",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "15decf9a82ee0903b758357dfb1044e22a6ffc9a5ffb626f1f48a3db4d50d79a"
+  },
+  {
+    "id": "howtocook:6bb8f801a8b8e8c2",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "898b39a1ae98defbcaa2abb646e93415e2103d9c16f0d159e307aa46933ff238"
+  },
+  {
+    "id": "howtocook:6cda991d90ce7cd9",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "19561ec7e87c68dc2dd0681d881a6af81f049655c1892a65b953dd76ca1c5fec"
+  },
+  {
+    "id": "howtocook:6e1381b6647edbee",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "f70526a253ec5bc2a4e7310fc13ad794188e2ecf9c49903e392892640578ca22"
+  },
+  {
+    "id": "howtocook:6f41690d80c8a8b2",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "68b52221b940a49964c9e5073ada7705765f54f23d4dcefcadc8f742de0875d8"
+  },
+  {
+    "id": "howtocook:7047e23423f0ad9b",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "1d3285af5d369b16b24971277b7e5e54deef66789ccd065d73834c76fe0cc0e9"
+  },
+  {
+    "id": "howtocook:708eac43f7297750",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "1051477fff87915b2542b76cc6d27a6e0a03ac17a70e7b841539b9009e5dc6d9"
+  },
+  {
+    "id": "howtocook:711ab5d8b4ee07be",
+    "ingredientCount": 21,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "053a8082bc541a0e5931b84e90c810915de206bcd9d7642dfdab4be13c0b1e03"
+  },
+  {
+    "id": "howtocook:72605b6e5df12044",
+    "ingredientCount": 2,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "4c16fa2d738eecd965da8d077824bdfcce6d5c9b2425611791d76e3c2dcba7a4"
+  },
+  {
+    "id": "howtocook:73a12a8bea38553f",
+    "ingredientCount": 15,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "04f8f568bccc0273f82afb62ea3e6c0f746e106dd4888b935680d4b5cf937280"
+  },
+  {
+    "id": "howtocook:73b34579ff0e4a67",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "5228fbab069c5f7705016b1b24f10e87e29778e3865ff5c7aa80b73d92d453cb"
+  },
+  {
+    "id": "howtocook:75dec508093166f9",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "8615686ced8b9120e8b3e9894b81660fa77c2b102b79200e6a36a1485e63301f"
+  },
+  {
+    "id": "howtocook:77632e4f909da58f",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "13b48f650cee788180f83cd7fa0aaeb3567cb8ab45baa9120c0f1f54481f597b"
+  },
+  {
+    "id": "howtocook:77665869d6f51479",
+    "ingredientCount": 12,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "3eb1506a8531f40afe6353b53b5c453038a82f01acf0303ed9479670b3d3ef3b"
+  },
+  {
+    "id": "howtocook:788feaed2146ba64",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "a9472fd70f0d4496a37bb34ed2564e59925c28eaf989ffd817f528774c253e65"
+  },
+  {
+    "id": "howtocook:7a681fba9fd0dadc",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "4b7f90916250b66ed6e64d74c9d6d2d8683ad440bad18e476485548e04082ea0"
+  },
+  {
+    "id": "howtocook:7ddb62ef1001d348",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "cf46a887468fb75a6f63f7ed6c366e4ade2b960ef98ab298c62b23e4e5e4dc00"
+  },
+  {
+    "id": "howtocook:801600c707bb7f6a",
+    "ingredientCount": 15,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "ecb187fd39135a23fd0a22712193936222f84f4fd5ece33778cbf1d710faa56d"
+  },
+  {
+    "id": "howtocook:814045db735286f0",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "a966ab050799678fe463932378743c50e67b632cb76c2c51da67d286fdd17d03"
+  },
+  {
+    "id": "howtocook:822fa695f8afb97b",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "6b092a8c23f425cf393971d33a651347b5a5ace912503e2e425b2052245f95e5"
+  },
+  {
+    "id": "howtocook:824114aa00bd36da",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "a127c154090f2334f7a684eb427dedcec71e13d82d35d2b7a196f87e9e2161ab"
+  },
+  {
+    "id": "howtocook:825601135784ca99",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "2dd255a07e8a42ddda82bfd639deb329459ce1b32a7fd9d5b261458946f731fb"
+  },
+  {
+    "id": "howtocook:832e8ac5e9aae360",
+    "ingredientCount": 12,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "3e61f5a9dc16037e28f8a058cf0809f995a126132cb5e006e0e94be091a0dcfd"
+  },
+  {
+    "id": "howtocook:83c2759e7cb25a73",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "af27cb03b4209b55128d08b17eaac40800902054a15d752ec09000a422789479"
+  },
+  {
+    "id": "howtocook:853f4dcc16af4157",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "76f55fec79cbccdada60f9eb1bfa4f955de75bfaddf6d716f4fd2e68e4e70ee0"
+  },
+  {
+    "id": "howtocook:85c01e8fd94ff747",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "8aec35079004e3b903f3d69d5030f3ada4408e502058eff39dadb0ea9b7629cf"
+  },
+  {
+    "id": "howtocook:874ab7d67d2ecf47",
+    "ingredientCount": 16,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "731de6852939fde57cbe1b97b8a01e8733c5c654aaefc061bb85ca8d69bdf313"
+  },
+  {
+    "id": "howtocook:8ad51751e8b63ae2",
+    "ingredientCount": 2,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "a1f60b96b02b9bb01c2d22a66eef57c715ab0e6a89da8e67e8df9f1d0fadd162"
+  },
+  {
+    "id": "howtocook:8c3af213e85c417e",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "b6170015a1e1395e12a81b55cf5d47354fb22ec200165d51eeedfad27461dd0b"
+  },
+  {
+    "id": "howtocook:8d02690da7199d2d",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "807bfb66f1d09a391d08dbcbdedb625ff56f5197c71ce120cc49feb274f16584"
+  },
+  {
+    "id": "howtocook:8deffad10bd66074",
+    "ingredientCount": 17,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "7957d1a9b6141827c1d37fe9ff94ddd0187ea8d4f70e2b62f239cdb316412c7d"
+  },
+  {
+    "id": "howtocook:902ce562e2268ddc",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "d74e191b430f3bea1ec8f0968dd29a9c826157b28fcbcc7c1c3565f8becf4828"
+  },
+  {
+    "id": "howtocook:90f04c224709ac2c",
+    "ingredientCount": 15,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "2d9d6f4f3a459fa3105d476199b9afb602fbe7ad58f23ae17cf7fa64d5528336"
+  },
+  {
+    "id": "howtocook:9190d44233e72745",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "911df176c76a72fc8808eeb3cab705499ac49e78b1a574cd9f6d57b93cf282e9"
+  },
+  {
+    "id": "howtocook:91b68386ebf30740",
+    "ingredientCount": 14,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "a46d3e3b5d1fb160029312946c9c73f7fbd904c18746930d21dd8d6b4915615a"
+  },
+  {
+    "id": "howtocook:91bc15e9352de9ea",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "b7efef7156654c07ecf3c1f5d52a957ea2e04b0bd68c15306cd5f568e6fe9351"
+  },
+  {
+    "id": "howtocook:91c84c26992872ca",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "8a407d6b6473dcce2b224c7c02f3db02099133f85e89c7982050989657a68150"
+  },
+  {
+    "id": "howtocook:920d017802b3b131",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [
+      "面食材料：可以是手工面条、龙须面、面鱼，也可以是泡面面饼、各类规格粉丝，或者是其他任何自己所喜欢的面食形式。"
+    ],
+    "nonIngredientSha256": "7cc98be77d2baad046db04b114ed792c45585b7d0ecef03651522c00b58a017f"
+  },
+  {
+    "id": "howtocook:92f286f58f84ff0a",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "1acf38f1993449112d2e94d4dd3653f285395a1caad8268a7bf25b11a8c7ca6e"
+  },
+  {
+    "id": "howtocook:93eb7c2440893496",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [
+      "料酒、朗姆酒或啤酒"
+    ],
+    "nonIngredientSha256": "8d1e4a59ba15468c0bbbaaa77c15cf273ea47c77a128bd08ed30fd7bc4d0afae"
+  },
+  {
+    "id": "howtocook:945e60912113bba4",
+    "ingredientCount": 12,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "4f395921b151a4954a41c25822fab375eccba3737eec7a269fe4f8604c0cbaa9"
+  },
+  {
+    "id": "howtocook:946a3f88bdeca579",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "1b95c0163003675cc2f0c58a13564870b9a2870bd90102c65f4a1657b1f9b9d8"
+  },
+  {
+    "id": "howtocook:949bd05cd61f985d",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "9dc845778f13df95dbc38fe24261376376a4816cafc13319bdc964ba6a1a0b1a"
+  },
+  {
+    "id": "howtocook:95caf6ad1a8ca8c1",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "d9b7cd2d849904f4a6a29d97dd82897d83c6b26117168888378435919a920478"
+  },
+  {
+    "id": "howtocook:95d7b404d04ee264",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "6d41006187356a3d68fced86191d1a6927652adc669a2d12c2b1a8215c3b357e"
+  },
+  {
+    "id": "howtocook:95eb9c00a57faaa5",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [
+      "葱，姜"
+    ],
+    "nonIngredientSha256": "f0fd8f7d949f8e793cebee8f26dfc5c833df445146f05cd98822226df0e71b79"
+  },
+  {
+    "id": "howtocook:961ae3ea5f72116b",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [
+      "大葱、姜、大蒜、香菜、美人椒",
+      "油、盐、鸡精、生抽、老抽、陈醋、黑胡椒粉、料酒",
+      "八角、干辣椒"
+    ],
+    "nonIngredientSha256": "0eb54ce862f6cf0512aa594cea1fe82afc47e731dfd1afcff19c88c0cbb40f02"
+  },
+  {
+    "id": "howtocook:96dd22806c801283",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [
+      "花椒，香叶，香果，干线椒，大蒜，大葱",
+      "油，盐，生抽，蚝油，料酒（可拿啤酒），白糖",
+      "鸡肉（鸡腿肉最好），土豆，菜椒和甜椒（可以不用，加上配色好看）"
+    ],
+    "nonIngredientSha256": "a8e77252ad6c62a3ded310c76be1eed1893082e56b77550c0d38d822a732bfcb"
+  },
+  {
+    "id": "howtocook:9835d25396e15856",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "fb86e98a0ac0bc2b98686aa493f2850a0ad42053f6319f17910e2871e9fd2243"
+  },
+  {
+    "id": "howtocook:989ccdcae7af8a8f",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "f7709edf5047582adf04cf19a8a0755156c9ad9ead212bc3e17a27cda0549312"
+  },
+  {
+    "id": "howtocook:9990afe9babe2653",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "0f38f25fc8653bf33011c0d53714546266876554e5f9ed3c7b75ec5bceeecbe9"
+  },
+  {
+    "id": "howtocook:9a222b1883cad0aa",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [
+      "调味料: 酱油，盐",
+      "（可选）：鸡蛋，青菜"
+    ],
+    "nonIngredientSha256": "5ca5ee3ce45195d79af13a90ee3ac32458d1fec3f4b6d0d830741d0253799c62"
+  },
+  {
+    "id": "howtocook:9a9db7b859276bb5",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "97e13ef55c04e160a09f9af15772b63a6c2fb19b29e7ae91182b75daa701ff09"
+  },
+  {
+    "id": "howtocook:9aafc1145d54a0f4",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "e2ecbd1030b7249bd615aa05c6e11c376bf3c887a43718a326b2cb8dee02298b"
+  },
+  {
+    "id": "howtocook:9c598d5ae0973cc3",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "b83b56414d5695a795914993c9bf4ce18b55ba7b61835fa01b03d30ac6cc4282"
+  },
+  {
+    "id": "howtocook:9d5b2964d96ab532",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "58a27cb4d37277698213a69ff892effaff969dbd812b19d124f38d2ba138ab63"
+  },
+  {
+    "id": "howtocook:9dff14f76013f6e0",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "cc8c40eab130948be9a21b44489b5051142647674d02a2b73f9454d9d267175c"
+  },
+  {
+    "id": "howtocook:9e09ccc87f3f13a4",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "e69d00a1640bef4a586ac25a852b65bee78c55a72af84272f83ea2afb50f85d2"
+  },
+  {
+    "id": "howtocook:9fa6e69063175a41",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "64a55502ea8d90effff07e7d8f91a2f4d6fd4304172dc26fc8b00f0e3cf1125e"
+  },
+  {
+    "id": "howtocook:a05b627440bbbb05",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "8d236de62e7dbb35211c61e6f843a0034fd216cd14a63ab40b9d7faad237017c"
+  },
+  {
+    "id": "howtocook:a086e2764c0abd41",
+    "ingredientCount": 17,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "da91b2883770dfe0acb7b4cba2df50845b41868d647cfb389f0f84586d3d00a2"
+  },
+  {
+    "id": "howtocook:a1b0c1fdfc06567c",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "cc6b139ab3c9439dc714b1b6e4ac1ce2ff2428a84b43c6f39fb405161ce99b9b"
+  },
+  {
+    "id": "howtocook:a1b5c702a8129858",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "f503a57e2b249296c48a639ff90616b7eab874cf2785fd30f96c9c269cb1437b"
+  },
+  {
+    "id": "howtocook:a1ba8de42384bd27",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "a30b97f6388113cc91bfa64573281cd459b16ae5929e285853dfc5809b7bc270"
+  },
+  {
+    "id": "howtocook:a27c91703f1aaf05",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "97fee2d5f7048152cb2c6cf8896f3390388c1a86c2139b1c175c87229f3bd4f5"
+  },
+  {
+    "id": "howtocook:a2902089367ef836",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "9ec82fddbac9acb930269931985fc31b19d962134cc6150439ae9ef145cf28f4"
+  },
+  {
+    "id": "howtocook:a294a849e9a5f7fe",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "464a19941250573a290a1830671aca3b827b799d209c47cbcdafe229ae683613"
+  },
+  {
+    "id": "howtocook:a485b0e3ab4646ea",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "af0d84840ab6562ba85161757ab81d72fcf765247c893c7a1ae6da83c28b2243"
+  },
+  {
+    "id": "howtocook:a4b59bbb98523c61",
+    "ingredientCount": 15,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "4e4d8f2f56ba107a83411c1536871f0e1203b574cbb2fd2fe4f67c9bb8656752"
+  },
+  {
+    "id": "howtocook:a4fb0751e1704362",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "6bb472f9d7c47127078070d5504da889b3e931f37f9dd4719359b642a73ce38e"
+  },
+  {
+    "id": "howtocook:a5ad40355b767e44",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [
+      "姜、蒜瓣、干辣椒",
+      "油、盐、料酒、醋、酱油、白砂糖"
+    ],
+    "nonIngredientSha256": "3fd7518d9afe30c699b620c2a46deb211db2477c76c9c6637190ad52eaa60d02"
+  },
+  {
+    "id": "howtocook:a5e465c958471c82",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "1bd6e6ccf4b786fcb095df6c597382769dc39ff286980459ffa88eb89d4483ce"
+  },
+  {
+    "id": "howtocook:a7f8fdd45ba301f7",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "f34cde5bbb2b6c6b970813aae2cb500b16750748a67b3f8ffc8bd53ad75338a9"
+  },
+  {
+    "id": "howtocook:a994a8dc42ec743f",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "dcbc6bf7b5fc41e0b8d0d0eb7d97d15c7a48aa1452233fd32983fb9f7bd52486"
+  },
+  {
+    "id": "howtocook:aa59c235ffc20cda",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [
+      "葱、姜、蒜"
+    ],
+    "nonIngredientSha256": "9cc381fbda3fc66d1d88c779a87452ee9bd4a16e3c4b2103b2e03ec1f178fb85"
+  },
+  {
+    "id": "howtocook:aaa0f1f21191196b",
+    "ingredientCount": 13,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "ab7b36143ca9e87615214f5c5e1fb4230167686e9a8b95f774dfa568af9f106a"
+  },
+  {
+    "id": "howtocook:abbf66d7a0c12870",
+    "ingredientCount": 19,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "ce95937ee5bd5416f819ed1979cf20e7d826f2833c6038f167ad4569931d5845"
+  },
+  {
+    "id": "howtocook:abe023d49637389d",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "ac7ad194aa31cb638f0f21c86e25e2cb8535335ae80f0fd7cb4722c01c465d8c"
+  },
+  {
+    "id": "howtocook:ad28ce802c922811",
+    "ingredientCount": 16,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "3dcd14a24ead21653c563d9983a00ce5ba82e9644de0db41fd099281fb775b92"
+  },
+  {
+    "id": "howtocook:ad951394e7a99fe2",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "adab50383f52e00f243799932d9a49209cb57521406555356aea7c0e3810b100"
+  },
+  {
+    "id": "howtocook:adad77ab51fa2d94",
+    "ingredientCount": 2,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "bc18b068f7eedfa1c5a11afcbbf9b440723d2f624da59f700162d9a72d340f86"
+  },
+  {
+    "id": "howtocook:aed4362137768ec1",
+    "ingredientCount": 13,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "0dbd31fbfa16c739c7be383ce56b51bf7588d62726562aa25fce3147a4ea33f2"
+  },
+  {
+    "id": "howtocook:aef1ffb7e9d0cccd",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "2471fb69b8d79e868e9f3a337826e3984f108bcea2eb4662d9e55fc2944700cb"
+  },
+  {
+    "id": "howtocook:afbed08955789550",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "b307ea3331c61e8c7d6985fa48e56e25ac9d729a6d51badfa377564d0288d74f"
+  },
+  {
+    "id": "howtocook:afde2c6a34186f7e",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "c3c742d3c4e7f9984b454f27a6ee5210224926e15b11ae97e04e55e927dc3e3c"
+  },
+  {
+    "id": "howtocook:b0ca418ed646e4ec",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [
+      "冰糖：炒出来的`糖色`色泽最为鲜艳，红亮，必须水油炒，不加水融化会很慢",
+      "炒糖色过程火不要太大！！！电磁炉温度不够，火候过了发苦，不够发甜"
+    ],
+    "nonIngredientSha256": "fc3e4b5879e90ab549b589f03d5bdd69cc025abb836eb0583a37b94b2368efc6"
+  },
+  {
+    "id": "howtocook:b13f782654bf3db8",
+    "ingredientCount": 2,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "876b85418b22c1b8541001ac208ec95fbb9804f233d8060c7b14d2aff5a8a8e3"
+  },
+  {
+    "id": "howtocook:b14f5054692bfa3e",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [
+      "青椒、苦瓜、茄子、田螺、豆腐、香菇、南瓜花",
+      "柚子、笋、冬瓜、香芋、蒜、番茄、豆芽、蛋、香菌"
+    ],
+    "nonIngredientSha256": "20d890463697101f74181b2bad0a9c8a7590efd52f2894fed8ab361954dd069d"
+  },
+  {
+    "id": "howtocook:b261aa97c4abb8ab",
+    "ingredientCount": 13,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "ac730aeed257d439806d8506f469e6bebeadc00f4cdeba4525b3305772d4a7f6"
+  },
+  {
+    "id": "howtocook:b435c11c8067498b",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "55fd02d27b60b5cd481a1f868a738689180b19408ff53254e18ac5a316d3bdaf"
+  },
+  {
+    "id": "howtocook:b43bc0d5b054c4a8",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "34bb103d8f24938a67148ac38ebbeaa682da80b6cb9f7f41a3bdb400896d6092"
+  },
+  {
+    "id": "howtocook:b48ca1e354ea6391",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "98fceec91fc5f658fab70a5948df5a666d02c1f5a5a2a5cfd968178aec4bfb00"
+  },
+  {
+    "id": "howtocook:b69537e9b0c4b779",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "b2ce97deb6b68eeaeb32c73bda7a37c2918e6ef51df141fd50696cf9221ac67f"
+  },
+  {
+    "id": "howtocook:b80fc917b705e95b",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "c2d0e360308e7584fbbda6e2e7b04cc8b41900a68152feabf3fd7a2f779e7ce5"
+  },
+  {
+    "id": "howtocook:b898ff51880d2d8b",
+    "ingredientCount": 22,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "d0e336ab8f7ddc2052fe67145672a317edf29f1937ba7ac4bf3f29f7a2ef98f0"
+  },
+  {
+    "id": "howtocook:b8b6c7d1722ec85d",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "642e1e4d67ed39c00cbe8ef9b3fa635dbb41f0f3d8a26eaa10ae692edfb92db2"
+  },
+  {
+    "id": "howtocook:b8edc500b99e3e9c",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "47ddbe8658005fe34a3111d9834f586a2dd6952268869cf24f2b78082788a55e"
+  },
+  {
+    "id": "howtocook:b9a1d9770073562a",
+    "ingredientCount": 14,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "260912dc4befadcbf614f96e3cfe20aa7b89c7ee0ecd4e1f699e18662d919356"
+  },
+  {
+    "id": "howtocook:b9ce9dd134001c23",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "19f771588ce772a8d7e1b89cf0724c45711767219749cc5cd17636b43dbd10cf"
+  },
+  {
+    "id": "howtocook:ba3ce0d2e7674607",
+    "ingredientCount": 13,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "260ef2a51b19a9ea566b71b3b39e7cc17d88d61f4d4464c486c680af1244c1ec"
+  },
+  {
+    "id": "howtocook:bb2673fc51ecaad3",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "0185457861e5c12e31659402d857b3cbcb6d207289026eeaed2abe9f60b4675c"
+  },
+  {
+    "id": "howtocook:bb86c640c665f7c5",
+    "ingredientCount": 13,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "6a469f6013d9c558c2dc02e808eac1b3da1c6ea9d0a925f9be10344fa08f7cd7"
+  },
+  {
+    "id": "howtocook:bc33bad07d07b35e",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "f2eff4076b73e74d17abe31222b013e7b92bc1cd4a8815eba4e40c46453ab450"
+  },
+  {
+    "id": "howtocook:bcbc233bc07cafa4",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "7077ffa030dfc47d406c316b41436baec8730cb5975e149e5548e2fb0eb2fe81"
+  },
+  {
+    "id": "howtocook:bd0928f82e92505f",
+    "ingredientCount": 15,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "655ce8c020821b8137182d6474c575655070d626bebd01e32e414808f5ad03e4"
+  },
+  {
+    "id": "howtocook:bebbb3caba349305",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "17e6a042cc78b22662113ec74d4ebf84d91ca0e958414d232e49379bfdf71ab8"
+  },
+  {
+    "id": "howtocook:bf3ccf273f058637",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "f4b597abcfe4a3d1927fcffdc2a4f2fe39a848e5618d121b7af5352677d9e701"
+  },
+  {
+    "id": "howtocook:bfaaef2163ddf728",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "347639a971942f7053d475b4794a17ec6f292e63270268a2ca52078c14270d68"
+  },
+  {
+    "id": "howtocook:bfc763083371290e",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "ff9ca529295c6f0f3f77a09e51bb32fe8db2afaa54060b7035810cd59ecf4b5f"
+  },
+  {
+    "id": "howtocook:c1d599a83ce0a500",
+    "ingredientCount": 17,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "5acd22c3da6feff7ec52c1fc865c15f82d76c34697a77b4c3d8b418a053364df"
+  },
+  {
+    "id": "howtocook:c3250cf8bae4fdf3",
+    "ingredientCount": 2,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "f725b88b87296739f3d3637eb1d7356a523db9ebe2105f097ef932dc5350042a"
+  },
+  {
+    "id": "howtocook:c40321c423784be7",
+    "ingredientCount": 16,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "9c4f6fe5b0e17accfeec0d250e7c6f88fa1b39e5d7a4588ebac84a1556afc9c3"
+  },
+  {
+    "id": "howtocook:c52f0bf257da0b3c",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "d7169727f5bcf597680d633ac7c122aaeba60a141aa2659bc080fe9e66e5b09b"
+  },
+  {
+    "id": "howtocook:c57bcc7e9419062d",
+    "ingredientCount": 14,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "526f8b56f2f13f37ff7f0653c73748deb640ce7ec76ec4979c9cb4158a0a8a8c"
+  },
+  {
+    "id": "howtocook:c5aa148342a3c9c0",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "370ce4653e81be6f1bbde10e03503856d1848eb5e985f89c421bd35d270eab52"
+  },
+  {
+    "id": "howtocook:c5e2191c72cc18cf",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "f53e71e201c1c3755384ccd7c6bd9d3453d35d2820c7f548348c9058ef394ca1"
+  },
+  {
+    "id": "howtocook:c5fddf9813b2dc7a",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "18c452d57f94215d2e5e468cc77f079194aee46657804d33dd7ef509cf34a19e"
+  },
+  {
+    "id": "howtocook:c61aa113077b5cef",
+    "ingredientCount": 12,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "2023a887c3b4727540a52f77f59a1afa6f496b04655768eb4d0f33fa68471902"
+  },
+  {
+    "id": "howtocook:c638d9f85df8f09c",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "671c9b0e4e9d14a73e3a8c5d10dece625757dc33e74f8617c829708c07ac4101"
+  },
+  {
+    "id": "howtocook:c68aaa42a6ac9d71",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "904373ad967ffbbde9b05e592b1014d27169ff12fd3a24c268687bc7d3db6017"
+  },
+  {
+    "id": "howtocook:c75ae014f76e19cd",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "217c181da7343cc4a12f31f840ee05a42c343efbf3653f499d54f8d546986395"
+  },
+  {
+    "id": "howtocook:c76a2b7f954a8466",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "e854e70d531b0de1e0671720454fb3365a6fe714b0bf5a279150beb9e2a8632f"
+  },
+  {
+    "id": "howtocook:c8756846df80e0f4",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [
+      "生抽、蚝油、盐",
+      "大蒜、小米辣"
+    ],
+    "nonIngredientSha256": "b39ac87b139e4d03a46c89f3c5e15d582bdfe28d3c660ac18f77ae68ff974af0"
+  },
+  {
+    "id": "howtocook:c8feda2006c4d215",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "49e423732095c38d3d4cc374875d033ecb7d5281274d7aa8bf509ef5dabd851a"
+  },
+  {
+    "id": "howtocook:c9b72f0464b37584",
+    "ingredientCount": 12,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "9ad7884edc516efe787688761ef80d88cab18b58f46f794cdef6aa7e82a6b2c0"
+  },
+  {
+    "id": "howtocook:c9c1689e47ff765c",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "64cd455059059ca83f31f6dd24836d6f659a6e2daf7a3c23671317e133cf5222"
+  },
+  {
+    "id": "howtocook:ca670c5a113ea88e",
+    "ingredientCount": 12,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "df66dc23bfbce8ff4118f11b4f34b697f46fdc0c9a9a08ac925b0c9576f1b286"
+  },
+  {
+    "id": "howtocook:cb3741f4d29d165f",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "7e30a53605ad563740b5b07f96148edd264bae88a6f3141ae513a13152fe7c0d"
+  },
+  {
+    "id": "howtocook:cc2c4f786f63e19d",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [
+      "黑鳕鱼，带皮"
+    ],
+    "nonIngredientSha256": "7a903b73bd0d25b4f3dbe11591f5db09a27cf7cb982b9f8692744d2bb70bd765"
+  },
+  {
+    "id": "howtocook:cd64270612fa1da8",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "b1edc294ac08a1665185af884c2eb70e07c5bad9fd1c6e8a2f481bc7f366778d"
+  },
+  {
+    "id": "howtocook:ceb4b4a04f909eb2",
+    "ingredientCount": 12,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "b52f68f33050d55345ae3f8c872de05ab7144320f9730efb5966b0a8b4822fe4"
+  },
+  {
+    "id": "howtocook:cf3dabc066de2aa0",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "d47cd1a50c44078792973c7ac1d1c99541ccd528f65d94e2353cf58378403060"
+  },
+  {
+    "id": "howtocook:cf76d9b00d1d4cfd",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "bf006bc539de802d050e00a289cb9255a4059a12834fe348cabfca290fa33d4e"
+  },
+  {
+    "id": "howtocook:cf8cf91d51ff6fae",
+    "ingredientCount": 12,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "132b6a905e2777368cc120c77b2e1b7392141e33bd82b0d2009265ff5c0686dd"
+  },
+  {
+    "id": "howtocook:d051be3bc11e466c",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "504f64e82b4dff04fafdf9da51dc7e988cf44090469f9938b4425f775ff61ade"
+  },
+  {
+    "id": "howtocook:d15091497996c3ef",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "c899ab3fd66c8bd7224e48892b0454b0d247e701384546bdbbcac7a48e7b1d7b"
+  },
+  {
+    "id": "howtocook:d18a2e8594150f59",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "1ae8fd647b217be025cfbce01d822e0d24dea333c135ddcd9f0c8410bbe5b56a"
+  },
+  {
+    "id": "howtocook:d20888ebc3bf92ff",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "301b6588c166e4f79623fd838d6b955bcb47a09b9b7dae0555752e0a81aca621"
+  },
+  {
+    "id": "howtocook:d22fb95d6bedbc3d",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "5c342c3828545a2ea991a80c0e37da054dc5bf3a767a6d21a3a85f58137cffa8"
+  },
+  {
+    "id": "howtocook:d23cfa9525fbb4e0",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "c1d19a82a0c2005afc31aad8fe7f67564a424a213d5c14184b41838b0b3eacdc"
+  },
+  {
+    "id": "howtocook:d3570dbb127b7c8d",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "a0fa6da4a3a59a1f1ddc2dee43ea9fb2bb1b8ac64553338a950a86edf2fcd3a1"
+  },
+  {
+    "id": "howtocook:d36c1927c74c7048",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "e5d98a87a196b2426bedfe85e728fe7762609f88c80983d37666976af4df7c29"
+  },
+  {
+    "id": "howtocook:d3e98d659448e21e",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "da04536cd27a4f5fc513ecc888d8bc4258fd744f46d8e5c660faae80c6d2577c"
+  },
+  {
+    "id": "howtocook:d50d59c1ca77bcd1",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "69ceb015209f0fc566ea09aff86446b930d6b74570858fca34498131eebf2aa3"
+  },
+  {
+    "id": "howtocook:d916492c172d5d9a",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "39aa6af041e86b382d55c6bfd447c24f0fb46bc244c17fdf9fe8dc709d2320ce"
+  },
+  {
+    "id": "howtocook:d97323116a825133",
+    "ingredientCount": 13,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "e85ffd9dedd0bf400b2fb90db2f7c26031855e4f6a65a9cc07e925b490336b2e"
+  },
+  {
+    "id": "howtocook:d9904098db67b351",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "55dbf05af23baf339f241f51ece51e36bfa699a6da25a518de07f29472b5e28c"
+  },
+  {
+    "id": "howtocook:dacc0e7e690a15f0",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "31c2b15dee6132831b5e31ff2a85e49378110efb1cdef3d8d342bc0a99377ef2"
+  },
+  {
+    "id": "howtocook:dba23a8f0c47ddb1",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "80aa033f5c7e614f31762cd343c965c96fcb3c5bc8a2b13ac4898aa497bf8470"
+  },
+  {
+    "id": "howtocook:dc93ff485c88a7a2",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "0a2417e83910f219001caead692b9a1efb38b52504d4ba0df10560b2ea6a30a9"
+  },
+  {
+    "id": "howtocook:dccabcb0d4a405aa",
+    "ingredientCount": 16,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "78b6b9bdc5bc1a185f5e8e393112583229add311ab39d4fd2b8424ad0860c17b"
+  },
+  {
+    "id": "howtocook:dd9b76b4698c9484",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "53dc8cd000c5224923cfe3d2e1479b693d9bf66bd0d94fadc76574dbbb6a7bfb"
+  },
+  {
+    "id": "howtocook:ddc763f709d2b5b6",
+    "ingredientCount": 2,
+    "groupedIngredientRows": [
+      "大料、花椒、白芷、桂皮、丁香、香叶、小茴香"
+    ],
+    "nonIngredientSha256": "1c28eeceb29da7d8340845165042f7c6ea9f854f6f292c66eaaaf5727652be73"
+  },
+  {
+    "id": "howtocook:dea3a1be2e77f36a",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "b498f690335c8f7b006a111901d449ead56cbb1e51ce4da55e05701e98097389"
+  },
+  {
+    "id": "howtocook:e0ef10c6e905370a",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "6b83209ff7f83595071b42401340650b29e0edc91c42aa71cdf6c7f8d7c4bb06"
+  },
+  {
+    "id": "howtocook:e1297263237b454a",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "76263d516893f79cb061de2b1376c9c7c4b792ff246ec5821166c21abeba80b6"
+  },
+  {
+    "id": "howtocook:e1c93933b3fdd167",
+    "ingredientCount": 2,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "46e9ece4b01d7a13c95adf64d8eb6e65eabca4a77648c786c6b7ff4f387d747a"
+  },
+  {
+    "id": "howtocook:e2015e2e0cc1c5e7",
+    "ingredientCount": 14,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "a43e5e61a702862d8b26c1918b03195aa0a58b7dee3d20f2c51fa5aae1f75391"
+  },
+  {
+    "id": "howtocook:e21f5bfb5fe6ef44",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "daeb7b39d6c29a4664d590f335875a0900f91678194531b9a9d420cdc2c4274c"
+  },
+  {
+    "id": "howtocook:e2a148eb6cf115e2",
+    "ingredientCount": 14,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "0ec4940d71d2d63775c4e3b6f5252090801f993aec120f2be581610e8b9ed5a2"
+  },
+  {
+    "id": "howtocook:e38c861fa4b779d7",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "dc5472439fc47811b2c11178853d0875e6ac197c927e141b231c35d5abcf19e6"
+  },
+  {
+    "id": "howtocook:e403ba22275a0439",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "d72caef9cad9ce1d305dad149af4544704ea596e198a73c81514c8c18fd0af4c"
+  },
+  {
+    "id": "howtocook:e4f312a87ba6fab8",
+    "ingredientCount": 16,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "e1dd43074522dc8ce4f8d6a32bbaf9bf24456fe5a9aa151550eb636144bfe657"
+  },
+  {
+    "id": "howtocook:e511d3a4430aac99",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "1b5999acfbf0e28a294f7d4fb31cdc7879245700aa8d4f570c799d9bafedf70d"
+  },
+  {
+    "id": "howtocook:e53cc385a1a0a9b7",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "3b93bd7a03db76ed6f0c5ab2630ae3108d09b38df1db6ba3084c22dedef69f95"
+  },
+  {
+    "id": "howtocook:e5f0719e22719962",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "9d7824cba1e0cedd1e9bbaffcc4c37821960c6ee0bf79cfdb3344a4b1d2e2c4e"
+  },
+  {
+    "id": "howtocook:e708c271324aa14e",
+    "ingredientCount": 12,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "a1a0282f0fdccf2741533ae60fffa21dfd608db5e6677ecb0f6645c81f3f1431"
+  },
+  {
+    "id": "howtocook:e9b179096587074a",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [
+      "意式猪肉香肠（去肠衣）、辣香肠 (Chorizo) 或切块的午餐肉"
+    ],
+    "nonIngredientSha256": "bf89652fc9e8ff09039db20b2cfac13ec56b54dfa3c4a987df871e01d7e72e6a"
+  },
+  {
+    "id": "howtocook:e9b1f03369e37ab3",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "d73b78f7d3f56c0df8eae69d58d3629b47b2392c5d5e92c7bbfce0db7081574e"
+  },
+  {
+    "id": "howtocook:e9ddad293a47544b",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "b39383a6d325d41c0c6760b264c8533fe01ea114162fbb7275aba0314afbd3a4"
+  },
+  {
+    "id": "howtocook:eaaaaa89ddc317c1",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "5249094e61abc451ad59004df20ec01368587af1c71a93233d80ba33b606813b"
+  },
+  {
+    "id": "howtocook:eb849be42cbb064b",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "2c0a97a0f43ad72f8dcbf4b8b0e863cbcb556f5cec966bd09a83f87fdd152523"
+  },
+  {
+    "id": "howtocook:ebf90ccaf451ad5f",
+    "ingredientCount": 6,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "4aab6b05be75268ba68372960468430280ed89d219728f5a9eeebedacd287cd9"
+  },
+  {
+    "id": "howtocook:ec5179fc88ee1bd5",
+    "ingredientCount": 13,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "39ba3f6010306b43fd2e30338778f18b788f87b70ba3685a3382b2dece5ab72d"
+  },
+  {
+    "id": "howtocook:ec9f0780bddb3fb4",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "0d17d26a64fe8708a26f5cf555f2d572d8c1c4d7a168d82365a2a2626a9e3162"
+  },
+  {
+    "id": "howtocook:ecae5220671c39af",
+    "ingredientCount": 2,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "6082da0fc215eec1e9867a1e15e11e8ae8b15dca05cf5b52ff5f69078bdd5367"
+  },
+  {
+    "id": "howtocook:ecbf1bf555cf90ed",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "901fc9a21d285e0f51b3092ee02441b5dc74d47406b59c768008aab8f36ef467"
+  },
+  {
+    "id": "howtocook:ed29771026e7eed6",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "c4777d5de95612d106f2ef83330cb5715e18bce79efb550b1aef34cf05f2040c"
+  },
+  {
+    "id": "howtocook:efd96f40d1be05ac",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "40f60e498dc84167f41b196765b46f37cea278c3cae33848874db47dee2a6b30"
+  },
+  {
+    "id": "howtocook:f13ea0db41d81b53",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "2ca943726b486239169c796e605017d7000119b12f605c1659f857db991ed2d2"
+  },
+  {
+    "id": "howtocook:f20a63e1bd7e9c71",
+    "ingredientCount": 2,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "3a8a0bbd7ea6dd91badd30acbd99e08cbed1a3c4f5debd36cc693d07117c490d"
+  },
+  {
+    "id": "howtocook:f26c5646a21a3d7e",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "a581e7737fdca71164982cee2c6a5437b6d695ecde6114391903baf87989c67b"
+  },
+  {
+    "id": "howtocook:f37f90893ddaa1c1",
+    "ingredientCount": 11,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "a7b8e065ef388d2252f1492ff15b74553430783fe2ea3062975e8bd4ee4f81c3"
+  },
+  {
+    "id": "howtocook:f3b656b5a03f4aeb",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "576df2f9d0c54209aed6e14b442f0238cf4031276bff6f97bdc2bb104e73a3d4"
+  },
+  {
+    "id": "howtocook:f3bcbbe6cbfb3505",
+    "ingredientCount": 15,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "8398d45af4502265152eadaf9698c1610fb4a96872f30c0b8baba37289566bcc"
+  },
+  {
+    "id": "howtocook:f43c7cdf6c27f066",
+    "ingredientCount": 10,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "6febe56608d5b3cf03acfbf0293762988facd86f868936bebec34a127df914e2"
+  },
+  {
+    "id": "howtocook:f5276d1d68214bc8",
+    "ingredientCount": 3,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "bd0c82cc1c6d6680006a9c04ceb029285916436ef5eb0145a4248afe0c488df8"
+  },
+  {
+    "id": "howtocook:f5e44764c0542396",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "4bb99ec3aa8d534bac1f25dfb00211efbe4e23c24b6d4f2f4218d467ee21fff2"
+  },
+  {
+    "id": "howtocook:f64edf0ff4660fb1",
+    "ingredientCount": 9,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "d56c6d358954d54d63239b7238971451556d2e8841923d1f34ffed4747732cb0"
+  },
+  {
+    "id": "howtocook:f727a804d3184577",
+    "ingredientCount": 17,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "180376edc3195da63e67765e19a53e8718701cc31690d806c73ca5d9b6693257"
+  },
+  {
+    "id": "howtocook:f82a5ad59d69212f",
+    "ingredientCount": 15,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "9506402b35151837a4282b31044b5f4e3f427122a002ac6220a75e388dc6da2f"
+  },
+  {
+    "id": "howtocook:f8c41af7879a19d5",
+    "ingredientCount": 12,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "d95a356798825e0e42e0c46587c01dfe1a7f610b0914e5692ba6e228dc17759f"
+  },
+  {
+    "id": "howtocook:fb61ba750320c4b8",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "90ee8cfaffa5bcf2dd1cc2b451f41af8d1d0f7c3a268e9db1243deb04c6f2dd1"
+  },
+  {
+    "id": "howtocook:fba50d40b0800bbf",
+    "ingredientCount": 8,
+    "groupedIngredientRows": [
+      "蒜末、姜末"
+    ],
+    "nonIngredientSha256": "6c73fc936e4e0f3155f1bcdf214f6a66f95828953ad7151a585c3d8a9350e5e1"
+  },
+  {
+    "id": "howtocook:fc120554b9fc57fb",
+    "ingredientCount": 7,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "86ac738ec97eeaea43cd680c8453f8d8db23c6a10e66fca1fb52bc181addbce8"
+  },
+  {
+    "id": "howtocook:fc61a88b7e007735",
+    "ingredientCount": 5,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "802203a2ab0816d792ba97a7593700f7059514ff7ccf255501d0480da124a337"
+  },
+  {
+    "id": "howtocook:fce469feac21f46a",
+    "ingredientCount": 15,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "627a6cda1b1733310448cf31d78cab2cb230e772ff1c6d4661ed39c836af0d22"
+  },
+  {
+    "id": "howtocook:ff9dea4298f08dcd",
+    "ingredientCount": 14,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "560a35dbbc3687008a9cb2dd1994ffab107236605c2f69c2821e5b9a67d18a42"
+  },
+  {
+    "id": "howtocook:ffc03aba56cef358",
+    "ingredientCount": 4,
+    "groupedIngredientRows": [],
+    "nonIngredientSha256": "c58604bc71695aae412628df095d0eb17c22727c1ef35bd703caeb8e51c13c0d"
+  }
+]

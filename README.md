@@ -7,11 +7,12 @@ KitchenMate 不自行生成做菜步骤。正式推荐的菜谱必须能够追�
 
 [在线使用](https://kitchenmate-production.up.railway.app/) · [GitHub](https://github.com/lcl243790317/KitchenMate)
 
-## Phase 3.1
+## Phase 3.1.1
 
 - Pantry 默认展示 86 种常用食材（顶部 24 种），使用 9 个高层分类；主动搜索仍可查询完整 703 种词库。
 - `/recipes` 全部教程独立于厨房食材，支持搜索、来源/类别筛选、每批 24 道及 URL 搜索词。
 - 703 种食材，546 项英文名，支持中文别名、英文菜谱写法以及经过限定的具体食材 → 通用食材匹配。
+- HowToCook 原料按独立食材解析，保留完整来源 bullet；不将多种食材合并成一个匹配状态。
 - 365 份 HowToCook 开放授权原文教程，5 条外站来源链接记录。来源、验证时间和原始链接清晰可见；缺失字段不猜测，公式用量按原文显示。
 - 选择食材即可推荐：现在就能做、只差一样、只差两样、最匹配、快手菜。基础调料低权重，购物清单保留菜谱用量。
 - URL 导入支持公开 HTTPS 网页中的 Recipe JSON-LD / Microdata，保存到当前设备。六个外站示例实测记录见 docs/IMPORT_VERIFICATION.json。本站示例明确标记为测试夹具。
@@ -36,6 +37,7 @@ pnpm test:e2e
 pnpm test:smoke
 pnpm recipes:validate
 pnpm recipes:coverage
+pnpm recipes:audit-ingredient-groups
 pnpm recipes:audit
 ```
 

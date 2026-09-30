@@ -1,10 +1,69 @@
 import fs from "node:fs";
 import { createHash } from "node:crypto";
-import { ingredientFromText } from "../lib/ingredients";
+import {
+  assertAtomicHowToCookIngredients,
+  howToCookMaterialBullets,
+  parseHowToCookIngredientBullet,
+} from "../lib/howtocook-ingredient-parser";
 import { recipeSchema } from "../lib/model";
 import { canCookRecipe } from "../lib/recipe-trust";
 
 async function main() {
+  if (process.argv.includes("--snapshots")) {
+    const dir = "data/verified-recipes/howtocook";
+    const records = recipeSchema
+      .array()
+      .parse(JSON.parse(fs.readFileSync(`${dir}/recipes.json`, "utf8")));
+    const manifest = JSON.parse(
+      fs.readFileSync(`${dir}/manifest.json`, "utf8"),
+    ) as { id: string; snapshotPath: string; sha256: string; commit: string }[];
+    const baselinePath = `${dir}/ingredient-parsing-baseline.json`;
+    if (!fs.existsSync(baselinePath))
+      fs.writeFileSync(
+        baselinePath,
+        JSON.stringify(
+          records.map((r) => ({
+            id: r.id,
+            ingredientCount: r.ingredients.length,
+            groupedIngredientRows: r.ingredients
+              .filter(
+                (item) =>
+                  parseHowToCookIngredientBullet(item.originalText).length > 1,
+              )
+              .map((item) => item.originalText),
+            nonIngredientSha256: createHash("sha256")
+              .update(JSON.stringify({ ...r, ingredients: [] }))
+              .digest("hex"),
+          })),
+          null,
+          2,
+        ),
+      );
+    const rebuilt = records.filter((recipe) => {
+      const entry = manifest.find((m) => m.id === recipe.id)!;
+      if (entry.commit !== "a2d45c6984dff9ee941da0e7c452f7965965d962")
+        throw new Error("Unexpected pinned commit");
+      const source = fs.readFileSync(entry.snapshotPath, "utf8");
+      if (createHash("sha256").update(source).digest("hex") !== entry.sha256)
+        throw new Error(`Snapshot changed: ${recipe.id}`);
+      recipe.ingredients = howToCookMaterialBullets(source)
+        .flatMap(parseHowToCookIngredientBullet)
+        .map((part) => recipeSchema.shape.ingredients.element.parse(part));
+      assertAtomicHowToCookIngredients(recipe.ingredients);
+      return canCookRecipe(recipe);
+    });
+    fs.writeFileSync(`${dir}/recipes.json`, JSON.stringify(rebuilt, null, 2));
+    console.log(
+      JSON.stringify({
+        before: records.length,
+        after: rebuilt.length,
+        excluded: records.length - rebuilt.length,
+        mode: "pinned snapshots",
+        commit: manifest[0].commit,
+      }),
+    );
+    return;
+  }
   const metadata = JSON.parse(
     fs.readFileSync(".cache/howtocook/tree.json", "utf8"),
   );
@@ -60,34 +119,14 @@ async function main() {
             );
             if (!title || !material || !operation)
               throw new Error("missing recognized source sections");
-            const rawIngredients = material[2]
-              .split(/\n/)
-              .map((s) => s.trim())
-              .filter((s) => /^[-*+]\s+/.test(s))
-              .map((s) => s.replace(/^[-*+]\s+/, ""));
-            const equipment: string[] = [];
-            const items = rawIngredients
-              .filter((line) => {
-                if (/^(?:工具|原料|注[：:]|食材[：:])/.test(line)) return false;
-                if (
-                  /锅|刀|砧板|案板|铲|漏勺|量杯|秤|保鲜膜|锡纸|烘焙纸|打蛋器|搅拌机|破壁机|料理机|烤箱|微波炉|碗|擀面杖|压汁器|筛网|筷子|手套|模具|容器|硅油纸|厨房纸|布$/.test(
-                    line,
-                  ) &&
-                  !ingredientFromText(line)
-                ) {
-                  equipment.push(line);
-                  return false;
-                }
-                return true;
-              })
-              .map((line) => ({
-                ingredientId: ingredientFromText(line)?.id ?? `unknown:${line}`,
-                originalText: line,
-                quantity: null,
-                unit: "",
-                optional: /可选|可不加|非必需/.test(line),
-                group: "原料",
-              }));
+            const rawIngredients = howToCookMaterialBullets(markdown);
+            const equipment = rawIngredients.filter(
+              (line) => !parseHowToCookIngredientBullet(line).length,
+            );
+            const items = rawIngredients.flatMap(
+              parseHowToCookIngredientBullet,
+            );
+            assertAtomicHowToCookIngredients(items);
             const body = operation[2].trim();
             const numbered = /^\d+[.、]\s/m.test(body);
             const descriptions = body

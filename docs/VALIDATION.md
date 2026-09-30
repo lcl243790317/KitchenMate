@@ -1,3 +1,35 @@
+# Phase 3.1.1 — Atomic Ingredient Parsing Fix
+
+Validation date: 2026-09-30. This production fix rebuilds the pinned HowToCook catalog from existing checksum-verified snapshots. The product UI and 703 / 86 / 24 Pantry design are unchanged.
+
+- Root cause: one Markdown bullet was treated as one RecipeIngredient; a recognized garlic alias could represent an entire multi-ingredient source line.
+- Parser: lib/howtocook-ingredient-parser.ts splits only top-level punctuation and safe conjunctions, keeps parentheses/alternatives as notes, propagates explicit optional annotations and leaves ambiguous names unknown. Each fragment keeps originalText and sourceGroupText. Matching remains ID-based; pantry staples are not automatically owned.
+- Xinjiang chicken: 3 grouped rows → 16 atomic rows (14 required + 2 optional). 大葱 retains its existing vocabulary ID zh:大葱. The four source names without reliable vocabulary mappings are left unknown.
+- Audit: 365 recipes, 3197 material bullets; 58 grouped ingredient bullets across 34 recipes; stored ingredient rows 3024 → 3211; 103 ambiguous parts left unresolved; 551 total unknown rows (previously 520); 0 atomic invariant violations; 0 newly excluded recipes. See INGREDIENT_PARSING_AUDIT.md/json for ten source-backed examples and unresolved details.
+- Catalog: 365 full HowToCook tutorials + 5 source-linked external records = 370, unchanged. Exact vocabulary coverage: 312/703 → 314/703; 389 uncovered.
+- Fidelity: pinned commit a2d45c6984dff9ee941da0e7c452f7965965d962 unchanged; all non-ingredient recipe fields match the SHA256 baseline. Repeated offline rebuild produces identical catalog bytes.
+
+| Local command | Observed result |
+| --- | --- |
+| pnpm lint | Passed |
+| pnpm exec next typegen | Passed |
+| pnpm typecheck | Passed |
+| pnpm test | 144 passed, 3 opt-in live tests skipped |
+| pnpm recipes:validate | 370 records passed, including atomic source parsing invariant |
+| pnpm recipes:audit-ingredient-groups | Passed, zero violations |
+| pnpm recipes:coverage | Passed, 314/703 |
+| pnpm build | Passed |
+| pnpm test:smoke | 6 passed |
+| OFFLINE_TESTS=true pnpm test:e2e | 17 passed, 3 live external imports skipped |
+
+CI now runs the ingredient-group audit in addition to source validation; the 6 static browser smoke scenarios include the garlic → chicken → potato regression. Ordinary CI does not call live recipe sites. Offline cache version is bumped to clear the prior recipe page cache.
+
+Deployment is gated on CI success; exact release identifiers, GitHub Actions URL and real production Chrome results are supplied in the delivery report and retained in GitHub/Railway history. The command table above records executed local checks. No source re-verification timestamps were advanced during this offline parser rebuild.
+
+---
+
+## Historical Phase 3.1 baseline
+
 # Phase 3.1 Validation — Product Simplification & Recommendation Fix
 
 Validation date: 2026-09-30. This report replaces the obsolete Phase 1/2 report. No AI recipe generation, instructions or ingredient guessing is implemented. Pantry stores selected ingredient IDs, not inventory quantities, expiry dates or storage locations. Postgres is not required for these flows.

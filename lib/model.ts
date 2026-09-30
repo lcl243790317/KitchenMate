@@ -2,6 +2,7 @@ import { z } from "zod";
 export const recipeIngredientSchema = z.object({
   ingredientId: z.string(),
   originalText: z.string().max(500),
+  sourceGroupText: z.string().max(2000).optional(),
   quantity: z.number().nonnegative().nullable(),
   unit: z.string(),
   optional: z.boolean().default(false),
