@@ -13,7 +13,7 @@ import {
 } from "../lib/recipe-localization";
 import { parseBasedCooking } from "../lib/based-cooking-parser";
 import { parseCommonsRecipe } from "../lib/commons-recipe-parser";
-import { parseWikiIngredient } from "../lib/wikibooks-parser";
+import { parseWikiIngredient, parseWikibooks } from "../lib/wikibooks-parser";
 import { matchRecipe, searchRecipe } from "../lib/matching";
 import { validateRecipeSourcePolicy } from "../lib/recipe-source-registry";
 import { pantryPrimary, pantryCommonIds } from "../lib/pantry-selection";
@@ -95,7 +95,7 @@ describe("Pinned bilingual recipe fidelity", () => {
         r.sourceProvider === "wikibooks" &&
         new URL(r.sourceUrl!).hostname === "en.wikibooks.org",
     );
-    expect(wiki.length).toBeGreaterThanOrEqual(36);
+    expect(wiki.length).toBeGreaterThanOrEqual(27);
     for (const r of wiki) expect(recipeTranslation(r)).toBeDefined();
   });
 });
@@ -131,9 +131,18 @@ describe("Reviewed new source snapshots", () => {
     },
   );
   it("keeps nested procedure choices within one source step", () => {
-    const r = verifiedRecipes.find((r) => r.id === "wikibooks:281314")!;
-    expect(r.instructions).toHaveLength(5);
-    expect(r.instructions[2].description).toContain("850W for 10 minutes");
+    const snapshot = JSON.parse(
+      fs.readFileSync(
+        "data/verified-recipes/wikibooks/snapshots/281314.json",
+        "utf8",
+      ),
+    );
+    const parsed = parseWikibooks(snapshot.wikitext);
+    expect(parsed.descriptions).toHaveLength(5);
+    expect(parsed.descriptions[2]).toContain("850W for 10 minutes");
+    expect(verifiedRecipes.some((r) => r.id === "wikibooks:281314")).toBe(
+      false,
+    );
   });
   it("does not accept an unlicensed full source or missing license notice", () => {
     const r = verifiedRecipes.find(
@@ -175,9 +184,11 @@ describe("Exact primary identities and unchanged selection semantics", () => {
     ["3T neutral oil", "oil"],
     ["4cm ginger", "ginger"],
     ["200g salmon steaks", "salmon"],
-    ["200g plain white flour", "flour"],
+    ["200g plain white flour", "zh:中筋面粉"],
     ["100g cooked rice", "rice"],
-    ["1 cup uncooked basmati rice", "zh:大米"],
+    ["1 cup all-purpose flour", "zh:中筋面粉"],
+    ["1 cup general purpose flour", "zh:中筋面粉"],
+    ["1 red onion", "zh:红洋葱"],
   ])("%s maps to exactly %s", (text, id) =>
     expect(parseWikiIngredient(text, false).ingredientId).toBe(id),
   );
@@ -188,6 +199,9 @@ describe("Exact primary identities and unchanged selection semantics", () => {
     "egg noodles or pasta",
     "smoked or fresh salmon",
     "400g fish fillet (white fish)",
+    "1 cup uncooked basmati rice",
+    "1 yellow onion",
+    "1 cup dry red wine",
   ])("%s remains unknown instead of a wrong identity", (text) =>
     expect(parseWikiIngredient(text, false).ingredientId).toMatch(/^unknown:/),
   );

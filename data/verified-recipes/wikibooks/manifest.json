@@ -186,12 +186,6 @@
     "sha256": "46d83f28c34cf705f308db6ee25bd313dc6ecc34f8d02e77624bc7b533fcdbd3"
   },
   {
-    "id": "wikibooks:281314",
-    "revisionId": 4513028,
-    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/281314.json",
-    "sha256": "ed519cdee825ba4b6f8eb38f684d9c3a736c2d85675c8dee6db8159c4f4e31f6"
-  },
-  {
     "id": "wikibooks:461953",
     "revisionId": 4587508,
     "snapshotPath": "data/verified-recipes/wikibooks/snapshots/461953.json",

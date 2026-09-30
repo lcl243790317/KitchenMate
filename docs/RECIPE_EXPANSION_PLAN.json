@@ -440,6 +440,25 @@
       }
     },
     {
+      "ingredientId": "zh:大米",
+      "ingredient": "大米",
+      "fullRecipeCount": 4,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "beginnerFullCount": 0,
+      "quickFullCount": 0,
+      "quickRecipeCount": 0,
+      "priorityScore": 44,
+      "before": {
+        "ingredientId": "zh:大米",
+        "ingredient": "大米",
+        "fullRecipeCount": 4,
+        "beginnerFullCount": 0,
+        "quickFullCount": 0,
+        "sourceLinkedCount": 0
+      }
+    },
+    {
       "ingredientId": "zh:黑木耳",
       "ingredient": "黑木耳",
       "fullRecipeCount": 4,
@@ -801,25 +820,6 @@
       }
     },
     {
-      "ingredientId": "zh:大米",
-      "ingredient": "大米",
-      "fullRecipeCount": 5,
-      "sourceLinkedCount": 0,
-      "beginnerRecipeCount": 1,
-      "beginnerFullCount": 1,
-      "quickFullCount": 0,
-      "quickRecipeCount": 0,
-      "priorityScore": 24,
-      "before": {
-        "ingredientId": "zh:大米",
-        "ingredient": "大米",
-        "fullRecipeCount": 4,
-        "beginnerFullCount": 0,
-        "quickFullCount": 0,
-        "sourceLinkedCount": 0
-      }
-    },
-    {
       "ingredientId": "zh:干辣椒",
       "ingredient": "干辣椒",
       "fullRecipeCount": 27,
@@ -950,6 +950,25 @@
         "beginnerFullCount": 9,
         "quickFullCount": 0,
         "sourceLinkedCount": 0
+      }
+    },
+    {
+      "ingredientId": "onion",
+      "ingredient": "洋葱",
+      "fullRecipeCount": 41,
+      "sourceLinkedCount": 2,
+      "beginnerRecipeCount": 8,
+      "beginnerFullCount": 8,
+      "quickFullCount": 0,
+      "quickRecipeCount": 2,
+      "priorityScore": 18,
+      "before": {
+        "ingredientId": "onion",
+        "ingredient": "洋葱",
+        "fullRecipeCount": 36,
+        "beginnerFullCount": 5,
+        "quickFullCount": 0,
+        "sourceLinkedCount": 2
       }
     },
     {
@@ -1278,10 +1297,10 @@
     {
       "ingredientId": "salt",
       "ingredient": "盐",
-      "fullRecipeCount": 232,
+      "fullRecipeCount": 231,
       "sourceLinkedCount": 13,
-      "beginnerRecipeCount": 61,
-      "beginnerFullCount": 61,
+      "beginnerRecipeCount": 60,
+      "beginnerFullCount": 60,
       "quickFullCount": 10,
       "quickRecipeCount": 17,
       "priorityScore": 10,
@@ -1292,25 +1311,6 @@
         "beginnerFullCount": 34,
         "quickFullCount": 5,
         "sourceLinkedCount": 13
-      }
-    },
-    {
-      "ingredientId": "onion",
-      "ingredient": "洋葱",
-      "fullRecipeCount": 43,
-      "sourceLinkedCount": 2,
-      "beginnerRecipeCount": 8,
-      "beginnerFullCount": 8,
-      "quickFullCount": 2,
-      "quickRecipeCount": 4,
-      "priorityScore": 10,
-      "before": {
-        "ingredientId": "onion",
-        "ingredient": "洋葱",
-        "fullRecipeCount": 36,
-        "beginnerFullCount": 5,
-        "quickFullCount": 0,
-        "sourceLinkedCount": 2
       }
     },
     {
@@ -1563,12 +1563,12 @@
     {
       "ingredientId": "flour",
       "ingredient": "面粉",
-      "fullRecipeCount": 26,
+      "fullRecipeCount": 25,
       "sourceLinkedCount": 1,
       "beginnerRecipeCount": 3,
       "beginnerFullCount": 3,
-      "quickFullCount": 4,
-      "quickRecipeCount": 4,
+      "quickFullCount": 3,
+      "quickRecipeCount": 3,
       "priorityScore": 0,
       "before": {
         "ingredientId": "flour",

@@ -1124,40 +1124,6 @@
     ]
   },
   {
-    "recipeId": "wikibooks:281314",
-    "sourceRevision": "4513028",
-    "sourceInstructionSha256": "bccb29c976a7b2e579724d5f3b247197f68a9ba37c6bf35b5cc045777e4d8f2b",
-    "translationMethod": "reviewed-development-translation",
-    "licenseName": "CC BY-SA 4.0",
-    "steps": [
-      {
-        "stepNumber": 1,
-        "description": "把米和盐加入煮米容器。",
-        "sourceDescription": "Add rice and salt to the rice cooker."
-      },
-      {
-        "stepNumber": 2,
-        "description": "拌入沸水，再盖上双层盖。",
-        "sourceDescription": "Mix in boiling water, then fit the double lids on."
-      },
-      {
-        "stepNumber": 3,
-        "description": "按以下方式加热，并在中途搅拌：\n#* 700W 加热 13 分钟，或\n#* 750W 加热 12 分钟，或\n#* 800W 加热 11 分钟，或\n#* 850W 加热 10 分钟。",
-        "sourceDescription": "Cook as follows, stirring halfway through:\n#* 700W for 13 minutes, or\n#* 750W for 12 minutes, or\n#* 800W for 11 minutes, or\n#* 850W for 10 minutes."
-      },
-      {
-        "stepNumber": 4,
-        "description": "静置 5 分钟，再用筛网沥干。",
-        "sourceDescription": "Let stand for 5 minutes, then drain in a sieve."
-      },
-      {
-        "stepNumber": 5,
-        "description": "把米饭铺在垫了烤箱用纸的烤盘上，在普通烤箱中用很低的档位保温。不时轻轻翻动米饭。",
-        "sourceDescription": "Spread the rice onto an oven paper-lined tray and warming it at a very low setting in a conventional oven. Turn the rice gently from time to time."
-      }
-    ]
-  },
-  {
     "recipeId": "wikibooks:461953",
     "sourceRevision": "4587508",
     "sourceInstructionSha256": "fb217128f2f9d805e66b64b58c10d969b32e4ccb35a2ef20fc47398cada7d281",

@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-09-30T23:18:17.697Z",
+  "generatedAt": "2026-09-30T23:33:36.682Z",
   "totalIngredients": 703,
-  "covered": 331,
-  "uncovered": 372,
+  "covered": 330,
+  "uncovered": 373,
   "englishNames": 546,
   "withAliases": 544,
   "parentRelations": 42,
   "sourceDistribution": {
     "HowToCook": 365,
-    "Wikibooks Cookbook": 37,
+    "Wikibooks Cookbook": 36,
     "Based Cooking": 13,
     "Wikimedia Commons": 1,
     "www.budgetbytes.com": 1,
@@ -203,7 +203,7 @@
     {
       "category": "饮品",
       "total": 20,
-      "covered": 13
+      "covered": 12
     }
   ],
   "top30UncoveredCommon": [
@@ -599,6 +599,7 @@
     "浓缩咖啡",
     "苹果汁",
     "气泡水",
+    "红葡萄酒",
     "豆乳",
     "巧克力牛奶",
     "米酒酿",

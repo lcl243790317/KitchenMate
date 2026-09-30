@@ -4,11 +4,11 @@ Baseline 6d28abe3a70f73f0bc86fcb6d0dbe45759371581. Implementation and local acce
 
 ## Catalog and beginner results
 
-Formal 431 → 455; Full 392 → 416; source-linked 39 unchanged. HowToCook 365, Wikibooks 37 (+10), Based Cooking 13, Wikimedia Commons 1, TheMealDB 0. New Full: 24. Beginner 51 → 93: 31 existing HowToCook recipes gain reviewed affirmative source evidence; 11 additional recipes meet source or objective criteria. <=30 minutes 29 → 39; <=8 non-staple 300 → 318; few ingredients alone do not confer beginner status. Source-easy recipes can disclose special equipment; optional equipment mentions are not hidden.
+Formal 431 → 454; Full 392 → 415; source-linked 39 unchanged. HowToCook 365, Wikibooks 36 (+9), Based Cooking 13, Wikimedia Commons 1, TheMealDB 0. New Full: 23. Beginner 51 → 92: 31 existing HowToCook recipes gain reviewed affirmative source evidence; 10 additional recipes meet source or objective criteria. <=30 minutes 29 → 39; <=8 non-staple 300 → 317; few ingredients alone do not confer beginner status. Source-easy recipes can disclose special equipment; optional equipment mentions are not hidden.
 
 ## Exact coverage
 
-Vocabulary 703, Primary 86, common 24, searchable 703 unchanged. Vocabulary covered 324 → 331; no substitution or generic-to-specific inflation. Primary >=1/3/5/10 Full: 81/65/52/39 → 85/71/58/40. Primary beginner Full >=1/3/5:46/23/14 →59/33/21; common24:18/12/9 →21/16/13. Before/after rows for all86 and developer-only priority score: RECIPE_EXPANSION_PLAN.md/json.
+Vocabulary 703, Primary 86, common 24, searchable 703 unchanged. Vocabulary covered 324 → 330; no substitution or generic-to-specific inflation. Primary >=1/3/5/10 Full: 81/65/52/39 → 85/71/57/40. Primary beginner Full >=1/3/5:46/23/14 →58/33/21; common24:18/12/9 →21/16/13. Before/after rows for all86 and developer-only priority score: RECIPE_EXPANSION_PLAN.md/json.
 
 **Four of five zero-Full targets improved. 带鱼 remains 0 Full and 0 SOURCE_LINKED: no reusable complete source passed review; commercial original retrieval returned403. No bypass or invented tutorial. The goal of eliminating all86 zero gaps is not claimed complete.**
 
@@ -62,7 +62,7 @@ Vocabulary 703, Primary 86, common 24, searchable 703 unchanged. Vocabulary cove
 
 ## Added real tutorials
 
-All24 are listed; they are not all labeled beginner. Unknown time remains unknown; no fabricated quantities, durations, steps or temperatures.
+All23 are listed; they are not all labeled beginner. Unknown time remains unknown; no fabricated quantities, durations, steps or temperatures.
 
 |Title|Source|Time min|Ingredient rows|Steps|Beginner basis|
 |---|---|---:|---:|---:|---|
@@ -70,7 +70,6 @@ All24 are listed; they are not all labeled beginner. Unknown time remains unknow
 |玉米汤|Wikibooks Cookbook|未知|7|6|来源标注简单|
 |蘑菇豆腐汤|Wikibooks Cookbook|未知|8|7|来源标注简单|
 |奶油蘑菇汤|Wikibooks Cookbook|未知|10|7|未标记简单|
-|微波煮米饭|Wikibooks Cookbook|40|3|5|来源标注简单|
 |煎香蕉|Wikibooks Cookbook|20|5|5|来源标注简单|
 |西葫芦焗意面|Wikibooks Cookbook|60|9|8|来源标注简单|
 |香蕉奶油甜品|Wikibooks Cookbook|未知|6|5|来源标注简单|
@@ -93,7 +92,7 @@ All24 are listed; they are not all labeled beginner. Unknown time remains unknow
 
 ## Bilingual source fidelity
 
-50 committed Chinese translation artifacts:36 English Wikibooks,13 Based Cooking,1 Commons. One new Wikibooks recipe is native Chinese and is not mislabeled as an English translation. Detail (client navigation and direct URL) and Cooking Mode default Chinese; inline English returns independent pinned original. Language UI state does not rewrite IndexedDB snapshots, JSON-LD author/source instructions, backup, timers or cooking progress. Invalid/missing artifacts fall back to English; CI requires all English Wikibooks translations. Revision, source instruction SHA-256, bound verbatim source text, step order/count, numbers, units, temperatures and times are checked; semantic regression cases cover selected ingredient identities. Automated token checks complement reviewed translation and do not claim to prove every meaning. No unit conversion is performed.
+49 committed Chinese translation artifacts:35 English Wikibooks,13 Based Cooking,1 Commons. One new Wikibooks recipe is native Chinese and is not mislabeled as an English translation. Detail (client navigation and direct URL) and Cooking Mode default Chinese; inline English returns independent pinned original. Language UI state does not rewrite IndexedDB snapshots, JSON-LD author/source instructions, backup, timers or cooking progress. Invalid/missing artifacts fall back to English; CI requires all English Wikibooks translations. Revision, source instruction SHA-256, bound verbatim source text, step order/count, numbers, units, temperatures and times are checked; semantic regression cases cover selected ingredient identities. Automated token checks complement reviewed translation and do not claim to prove every meaning. No unit conversion is performed.
 
 ### Ten actual Chinese/English examples
 
@@ -132,7 +131,7 @@ All24 are listed; they are not all labeled beginner. Unknown time remains unknow
 
 HowToCook original instructions/title/URL/pin unchanged. 香菇滑鸡12; 新疆大盘鸡16; garlic alone owns garlic; light soy does not own dark soy. Atomic violations0; high-confidence calculation omissions0; remaining671 unresolved calculations/733 operation candidates retain previous scope, no mass cleanup. Wrong-mapping regression0.
 
-Local lint/typegen/typecheck/build/source registry/license/pinned snapshots/translations/audits/coverage PASS. Unit441 passed,3 opt-in live unit tests skipped. Headed Chrome smoke20/20 passed. Full local E2E:32/33 passed when all live imports enabled; BBC live importer returned an external failure, Budget Bytes and Gimme Some Oven passed. Deterministic local E2E:31 passed,3 opt-in live tests skipped. Production status recorded after publication. Ordinary CI uses committed snapshots and static smoke, never external recipe verification.
+Local lint/typegen/typecheck/build/source registry/license/pinned snapshots/translations/audits/coverage PASS. Unit444 passed,3 opt-in live unit tests skipped. Headed Chrome smoke20/20 passed. Full local E2E:32/33 passed when all live imports enabled; BBC live importer returned an external failure, Budget Bytes and Gimme Some Oven passed. Deterministic local E2E:31 passed,3 opt-in live tests skipped. Production status recorded after publication. Ordinary CI uses committed snapshots and static smoke, never external recipe verification.
 
 License isolation and source research: RECIPE_LICENSES.md; OPEN_RECIPE_SOURCE_RESEARCH.md. HowToCook upstream unchanged: HOWTOCOOK_UPSTREAM_DIFF.md. TheMealDB production remains disabled: no formal production key configured at previous production verification; this release imports no TheMealDB content and never uses test key1.
 
@@ -144,3 +143,5 @@ Commit9aabf31 main CI36788433860 SUCCESS; Railway eca6cb06-f854-44d5-89a0-95310a
 Final official Wikibooks API search for 帶魚/带鱼/hairtail returned200: Chinese matches were a seafood overview and a biology page, not complete recipes; English had no hits. The overview original revision was fetched and explicitly has no Ingredients/Procedure. It does not fill 带鱼 coverage.
 
 Semantic follow-up: source “400g fish fillet (white fish)” remains unknown because703 vocabulary lacks a reviewed white-fish identity. Generic fish/salmon cannot satisfy this restriction; permanent regression added. Exact generic fish Full coverage remains1→1, not2; other catalog/coverage metrics unchanged. Latest local units441 passed,3 opt-in live unit tests skipped. Separately, actual production live importer tests all3 passed (Budget Bytes/BBC/Gimme Some Oven); the earlier local BBC failure remains documented.
+
+Final source identity review also maps red onion and all-purpose/plain white/general-purpose flour to existing specific 红洋葱/中筋面粉 IDs. Yellow onion, dry red wine and basmati rice stay unknown. The new microwave basmati-rice candidate is DEFER because1/3 unknown exceeds the existing30% identity gate; no gate relaxation. Its exact snapshot and nested-step parser regression are retained, but it is not in formal catalog and no longer has a published translation artifact. Final catalog454/Full415/beginner92/49 translations; raw coverage330/703. Original27 Wikibooks formal tutorials remain and all English formal tutorials have Chinese artifacts.

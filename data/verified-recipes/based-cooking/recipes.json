@@ -1312,7 +1312,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "onion",
+        "ingredientId": "zh:红洋葱",
         "originalText": "1 red onion",
         "quantity": null,
         "unit": "",
@@ -1910,7 +1910,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "onion",
+        "ingredientId": "unknown:1 small yellow onion, minced",
         "originalText": "1 small yellow onion, minced",
         "quantity": null,
         "unit": "",
@@ -1926,7 +1926,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "flour",
+        "ingredientId": "zh:中筋面粉",
         "originalText": "1 Tbsp general purpose flour",
         "quantity": null,
         "unit": "",

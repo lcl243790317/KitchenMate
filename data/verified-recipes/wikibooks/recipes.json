@@ -708,7 +708,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "onion",
+        "ingredientId": "unknown:½ cup (120 g) finely-chopped yellow onion",
         "originalText": "½ cup (120 g) finely-chopped yellow onion",
         "quantity": null,
         "unit": "",
@@ -4601,7 +4601,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:红葡萄酒",
+        "ingredientId": "unknown:½ cup dry red wine",
         "originalText": "½ cup dry red wine",
         "quantity": null,
         "unit": "",
@@ -4903,136 +4903,6 @@
     "updatedAt": "2026-09-30T21:27:10.625Z",
     "sourceUpdatedAt": "2025-07-15T19:51:46Z",
     "lastFetchedAt": "2026-09-30T21:27:10.625Z"
-  },
-  {
-    "provenance": {
-      "type": "OPEN_LICENSE",
-      "sourceName": "Wikibooks Cookbook",
-      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMicrowaved_Basmati_Rice",
-      "sourceRecipeTitle": "Microwaved Basmati Rice",
-      "sourceAuthor": "Wikibooks contributors",
-      "sourceExternalId": "281314",
-      "verifiedAt": "2026-09-30T21:27:10.626Z",
-      "verificationMethod": "mediawiki-api",
-      "instructionSource": "open-license-source",
-      "imageSource": null,
-      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
-      "sourceRevision": "4513028",
-      "licenseName": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
-      "lastVerifiedAt": "2026-09-30T21:27:10.626Z",
-      "httpStatus": 200
-    },
-    "verificationStatus": "verified",
-    "instructionAvailability": "full",
-    "sourceNotes": "英文来源原文；原始说明、可选变化及作者记录见来源页面。\nNotes, tips, and variations\n*Rice water foams when it is near boiling point, and in addition, during microwave 'simmering', more of a switching on and off really, there is a intermittent swelling of the entire wet mixture coincident with each burst of energy; that is, for a few seconds every few seconds. These two matters cause the possibility of water loss. These problems are overcome entirely by the use of a microwave rice cooker, a plastic tight-lid container that is designed to trap foaming while allowing hot air to escape.\n*For very small quantities and high power, this recipe can go wrong. The rice will appear to simply suffer from too little water, or not enough cooking, but these problems are just as likely to result from the very short simmer times that small quantities dictate. That is, the times are too short for effective water transport to take place. Because rice cannot absorb water at an unlimited rate, the dependence on calculated power delivery makes sense only when the calculated cooking times exceed the time needed by the rice for absorption.  That is to say, using a very high power for a very short time will not necessarily obtain the same result as its longer time equivalent, even for the same delivered energy. When there is a choice, use a lower setting and a longer time for an assured result.\n*If you have a power choice, use a lower one rather than the highest, especially when cooking less than 1 serving.\n\nSee also\n*Microwave recipes\n\nExternal Links\n*Cooking Basmati Rice (http://www.tilda.com/our-rice/cooking-basmati-rice): A rice producer's internet page with fairly clear instructions on different methods for the cooking of Basmati rice, and a table of cooking times for different rice types.\n",
-    "sourceDifficulty": "Very Easy",
-    "originalTitle": "Microwaved Basmati Rice",
-    "titleTranslation": "KitchenMate",
-    "id": "wikibooks:281314",
-    "title": "微波煮米饭",
-    "slug": "wikibooks:281314",
-    "description": "Wikibooks 开放授权教程；原始步骤保留，中文翻译由 KitchenMate 提供。",
-    "image": null,
-    "sourceProvider": "wikibooks",
-    "sourceName": "Wikibooks Cookbook",
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMicrowaved_Basmati_Rice",
-    "sourceAuthor": "Wikibooks contributors",
-    "externalId": "281314",
-    "cuisine": "未知",
-    "category": "主食",
-    "difficulty": "简单",
-    "prepTime": null,
-    "cookTime": null,
-    "totalTime": 40,
-    "servings": 1,
-    "servingsEstimated": false,
-    "ingredients": [
-      {
-        "ingredientId": "zh:大米",
-        "originalText": "57 g uncooked Basmati rice",
-        "quantity": null,
-        "unit": "",
-        "optional": false,
-        "group": "原料"
-      },
-      {
-        "ingredientId": "salt",
-        "originalText": "1 pinch salt",
-        "quantity": null,
-        "unit": "",
-        "optional": false,
-        "group": "原料"
-      },
-      {
-        "ingredientId": "water",
-        "originalText": "300 ml boiling water",
-        "quantity": null,
-        "unit": "",
-        "optional": false,
-        "group": "原料"
-      }
-    ],
-    "instructions": [
-      {
-        "stepNumber": 1,
-        "title": "Original step 1",
-        "description": "Add rice and salt to the rice cooker.",
-        "durationSeconds": null,
-        "image": null,
-        "tips": "",
-        "temperature": null
-      },
-      {
-        "stepNumber": 2,
-        "title": "Original step 2",
-        "description": "Mix in boiling water, then fit the double lids on.",
-        "durationSeconds": null,
-        "image": null,
-        "tips": "",
-        "temperature": null
-      },
-      {
-        "stepNumber": 3,
-        "title": "Original step 3",
-        "description": "Cook as follows, stirring halfway through:\n#* 700W for 13 minutes, or\n#* 750W for 12 minutes, or\n#* 800W for 11 minutes, or\n#* 850W for 10 minutes.",
-        "durationSeconds": null,
-        "image": null,
-        "tips": "",
-        "temperature": null
-      },
-      {
-        "stepNumber": 4,
-        "title": "Original step 4",
-        "description": "Let stand for 5 minutes, then drain in a sieve.",
-        "durationSeconds": null,
-        "image": null,
-        "tips": "",
-        "temperature": null
-      },
-      {
-        "stepNumber": 5,
-        "title": "Original step 5",
-        "description": "Spread the rice onto an oven paper-lined tray and warming it at a very low setting in a conventional oven. Turn the rice gently from time to time.",
-        "durationSeconds": null,
-        "image": null,
-        "tips": "",
-        "temperature": null
-      }
-    ],
-    "equipment": [
-      "Oven",
-      "烤箱"
-    ],
-    "tags": [],
-    "allergens": [],
-    "nutrition": null,
-    "rating": null,
-    "createdAt": "2026-09-30T21:27:10.626Z",
-    "updatedAt": "2026-09-30T21:27:10.626Z",
-    "sourceUpdatedAt": "2025-06-19T00:35:42Z",
-    "lastFetchedAt": "2026-09-30T21:27:10.626Z"
   },
   {
     "provenance": {

@@ -82,10 +82,8 @@ const heads: Record<string, string> = {
   "salmon steaks": "salmon",
   "salmon fillet": "salmon",
   "salmon fillets": "salmon",
-  "plain white flour": "flour",
-  "dry red wine": "zh:红葡萄酒",
+  "plain white flour": "zh:中筋面粉",
   "warm water": "water",
-  "uncooked basmati rice": "zh:大米",
   "tinned sweetcorn": "zh:玉米罐头",
   "ground cinnamon": "zh:肉桂粉",
   "cinnamon powder": "zh:肉桂粉",
@@ -96,8 +94,7 @@ const heads: Record<string, string> = {
   "neutral oil": "oil",
   "fish fillet": "fish",
   "raw spinach": "zh:菠菜",
-  "red onion": "onion",
-  "yellow onion": "onion",
+  "red onion": "zh:红洋葱",
   "rolled oats": "zh:燕麦片",
   "sea salt": "salt",
   "sesame oil": "zh:香油",
@@ -107,8 +104,8 @@ const heads: Record<string, string> = {
   "japanese raddish": "zh:白萝卜",
   "sweet corn": "zh:甜玉米",
   "heavy cream": "cream",
-  "general purpose flour": "flour",
-  "all-purpose flour": "flour",
+  "general purpose flour": "zh:中筋面粉",
+  "all-purpose flour": "zh:中筋面粉",
   "wheat flour": "flour",
   "dried thyme": "zh:百里香",
   zucchinis: "zh:西葫芦",
@@ -143,7 +140,9 @@ export function parseWikiIngredient(
     id &&
     ingredientById.has(id) &&
     !/\bor\b|\band\b|\//i.test(exactHead) &&
-    !/\bwhite\s*fish\b/i.test(clean);
+    !/\bwhite\s*fish\b|\bbasmati\b|\byellow onion\b|\bdry red wine\b/i.test(
+      clean,
+    );
   return {
     ingredientId: trusted ? id : `unknown:${text}`,
     originalText: text,

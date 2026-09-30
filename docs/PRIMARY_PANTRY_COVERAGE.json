@@ -1,23 +1,23 @@
 {
-  "formalRecipes": 455,
-  "fullTutorials": 416,
+  "formalRecipes": 454,
+  "fullTutorials": 415,
   "sourceLinked": 39,
-  "beginnerFriendly": 93,
+  "beginnerFriendly": 92,
   "within30Minutes": 39,
-  "atMost8NonStapleIngredients": 318,
+  "atMost8NonStapleIngredients": 317,
   "primaryIngredients": 86,
   "coveredBy1Full": 85,
   "coveredBy3Full": 71,
-  "coveredBy5Full": 58,
+  "coveredBy5Full": 57,
   "coveredBy10Full": 40,
   "sourceDistribution": {
     "howtocook": 365,
-    "wikibooks": 37,
+    "wikibooks": 36,
     "based-cooking": 13,
     "commons": 1,
     "source-index": 39
   },
-  "primaryBeginnerBy1Full": 59,
+  "primaryBeginnerBy1Full": 58,
   "primaryBeginnerBy3Full": 33,
   "primaryBeginnerBy5Full": 21,
   "common24BeginnerBy1Full": 21,
@@ -47,12 +47,12 @@
     {
       "ingredientId": "onion",
       "ingredient": "洋葱",
-      "fullRecipeCount": 43,
+      "fullRecipeCount": 41,
       "sourceLinkedCount": 2,
       "beginnerRecipeCount": 8,
       "beginnerFullCount": 8,
-      "quickFullCount": 2,
-      "quickRecipeCount": 4
+      "quickFullCount": 0,
+      "quickRecipeCount": 2
     },
     {
       "ingredientId": "carrot",
@@ -557,10 +557,10 @@
     {
       "ingredientId": "zh:大米",
       "ingredient": "大米",
-      "fullRecipeCount": 5,
+      "fullRecipeCount": 4,
       "sourceLinkedCount": 0,
-      "beginnerRecipeCount": 1,
-      "beginnerFullCount": 1,
+      "beginnerRecipeCount": 0,
+      "beginnerFullCount": 0,
       "quickFullCount": 0,
       "quickRecipeCount": 0
     },
@@ -587,12 +587,12 @@
     {
       "ingredientId": "flour",
       "ingredient": "面粉",
-      "fullRecipeCount": 26,
+      "fullRecipeCount": 25,
       "sourceLinkedCount": 1,
       "beginnerRecipeCount": 3,
       "beginnerFullCount": 3,
-      "quickFullCount": 4,
-      "quickRecipeCount": 4
+      "quickFullCount": 3,
+      "quickRecipeCount": 3
     },
     {
       "ingredientId": "bread",
@@ -717,10 +717,10 @@
     {
       "ingredientId": "salt",
       "ingredient": "盐",
-      "fullRecipeCount": 232,
+      "fullRecipeCount": 231,
       "sourceLinkedCount": 13,
-      "beginnerRecipeCount": 61,
-      "beginnerFullCount": 61,
+      "beginnerRecipeCount": 60,
+      "beginnerFullCount": 60,
       "quickFullCount": 10,
       "quickRecipeCount": 17
     },

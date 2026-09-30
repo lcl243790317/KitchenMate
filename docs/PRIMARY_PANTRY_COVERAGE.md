@@ -4,25 +4,25 @@ Exact identities only. Unknowns, substitutions and parent inflation are excluded
 
 ```json
 {
-  "formalRecipes": 455,
-  "fullTutorials": 416,
+  "formalRecipes": 454,
+  "fullTutorials": 415,
   "sourceLinked": 39,
-  "beginnerFriendly": 93,
+  "beginnerFriendly": 92,
   "within30Minutes": 39,
-  "atMost8NonStapleIngredients": 318,
+  "atMost8NonStapleIngredients": 317,
   "primaryIngredients": 86,
   "coveredBy1Full": 85,
   "coveredBy3Full": 71,
-  "coveredBy5Full": 58,
+  "coveredBy5Full": 57,
   "coveredBy10Full": 40,
   "sourceDistribution": {
     "howtocook": 365,
-    "wikibooks": 37,
+    "wikibooks": 36,
     "based-cooking": 13,
     "commons": 1,
     "source-index": 39
   },
-  "primaryBeginnerBy1Full": 59,
+  "primaryBeginnerBy1Full": 58,
   "primaryBeginnerBy3Full": 33,
   "primaryBeginnerBy5Full": 21,
   "common24BeginnerBy1Full": 21,
@@ -35,7 +35,7 @@ Exact identities only. Unknowns, substitutions and parent inflation are excluded
 |---|---:|---:|---:|---:|
 |番茄|26|0|6|1|
 |土豆|30|2|7|2|
-|洋葱|43|2|8|2|
+|洋葱|41|2|8|0|
 |胡萝卜|26|4|7|2|
 |白菜|3|0|1|0|
 |包菜|5|0|2|0|
@@ -86,10 +86,10 @@ Exact identities only. Unknowns, substitutions and parent inflation are excluded
 |腐竹|1|0|0|0|
 |豆干|1|0|0|0|
 |米饭|11|3|2|1|
-|大米|5|0|1|0|
+|大米|4|0|0|0|
 |面条|4|0|0|0|
 |意大利面|5|1|3|2|
-|面粉|26|1|3|4|
+|面粉|25|1|3|3|
 |吐司|5|0|3|1|
 |小米|2|0|1|0|
 |乌冬面|1|0|0|0|
@@ -102,7 +102,7 @@ Exact identities only. Unknowns, substitutions and parent inflation are excluded
 |醋|19|0|4|1|
 |蚝油|55|2|12|2|
 |料酒|86|0|5|0|
-|盐|232|13|61|10|
+|盐|231|13|60|10|
 |糖|132|1|16|3|
 |食用油|160|7|31|2|
 |黑胡椒|56|7|18|5|

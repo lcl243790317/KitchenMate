@@ -1788,7 +1788,7 @@
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMicrowaved_Basmati_Rice",
     "licenseOrUsageBasis": "CC BY-SA 4.0",
     "candidateReason": "Curated everyday ingredients / beginner category research",
-    "decision": "FULL",
+    "decision": "DEFER",
     "sourceDifficulty": "Very Easy",
     "sourceTime": "40 minutes",
     "ingredientCount": 3,
@@ -1798,7 +1798,9 @@
       "salt"
     ],
     "unresolvedIngredients": [],
-    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+    "reason": "Basmati rice is a specific grain absent from vocabulary; retain unknown, not generic rice. One of three ingredients unresolved exceeds existing identity quality gate; no threshold relaxation.",
+    "translationStatus": "not published",
+    "coverageTarget": []
   },
   {
     "title": "Cookbook:Boiled Chicken with Broth",

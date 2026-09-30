@@ -9,7 +9,6 @@
     "licenseOrUsageBasis": "CC BY-SA 4.0; official Wikibooks text policy",
     "decision": "REJECT",
     "reason": "Official API reports missing page",
-    "coverageTarget": [],
     "beginnerReason": "Not marked beginner",
     "translationStatus": "not published",
     "ingredientCount": null,
@@ -26,7 +25,6 @@
     "licenseOrUsageBasis": "CC BY-SA 4.0; official Wikibooks text policy",
     "decision": "REJECT",
     "reason": "Official API reports missing page",
-    "coverageTarget": [],
     "beginnerReason": "Not marked beginner",
     "translationStatus": "not published",
     "ingredientCount": null,
@@ -43,7 +41,6 @@
     "licenseOrUsageBasis": "CC BY-SA 4.0; official Wikibooks text policy",
     "decision": "REJECT",
     "reason": "Official API reports missing page",
-    "coverageTarget": [],
     "beginnerReason": "Not marked beginner",
     "translationStatus": "not published",
     "ingredientCount": null,
@@ -94,7 +91,6 @@
     "licenseOrUsageBasis": "CC BY-SA 4.0; official Wikibooks text policy",
     "decision": "REJECT",
     "reason": "Official API reports missing page",
-    "coverageTarget": [],
     "beginnerReason": "Not marked beginner",
     "translationStatus": "not published",
     "ingredientCount": null,
@@ -213,7 +209,6 @@
     "licenseOrUsageBasis": "CC BY-SA 4.0; official Wikibooks text policy",
     "decision": "REJECT",
     "reason": "Official API reports missing page",
-    "coverageTarget": [],
     "beginnerReason": "Not marked beginner",
     "translationStatus": "not published",
     "ingredientCount": null,
@@ -406,7 +401,10 @@
     "licenseOrUsageBasis": "CC BY-SA 4.0; official Wikibooks text policy",
     "decision": "DEFER",
     "reason": "Not selected: structure, ambiguity, complexity or insufficient targeted beginner benefit; retained for review",
-    "coverageTarget": [],
+    "coverageTarget": [
+      "garlic",
+      "black-pepper"
+    ],
     "beginnerReason": "Not marked beginner",
     "translationStatus": "not published",
     "ingredientCount": null,
@@ -440,7 +438,6 @@
     "licenseOrUsageBasis": "CC BY-SA 4.0; official Wikibooks text policy",
     "decision": "DEFER",
     "reason": "Not selected: structure, ambiguity, complexity or insufficient targeted beginner benefit; retained for review",
-    "coverageTarget": [],
     "beginnerReason": "Not marked beginner",
     "translationStatus": "not published",
     "ingredientCount": null,
@@ -570,7 +567,13 @@
     "licenseOrUsageBasis": "CC BY-SA 4.0; official Wikibooks text policy",
     "decision": "DEFER",
     "reason": "Not selected: structure, ambiguity, complexity or insufficient targeted beginner benefit; retained for review",
-    "coverageTarget": [],
+    "coverageTarget": [
+      "onion",
+      "cream",
+      "black-pepper",
+      "salt",
+      "pasta"
+    ],
     "beginnerReason": "Not marked beginner",
     "translationStatus": "not published",
     "ingredientCount": null,
@@ -592,7 +595,8 @@
       "butter",
       "flour",
       "onion",
-      "cream"
+      "cream",
+      "mushroom"
     ],
     "beginnerReason": "Not marked beginner",
     "translationStatus": "reviewed Chinese + independent English",
@@ -608,14 +612,14 @@
     "httpStatus": 200,
     "lastVerifiedAt": "2026-09-30T21:27:10.626Z",
     "licenseOrUsageBasis": "CC BY-SA 4.0; official Wikibooks text policy",
-    "decision": "FULL",
-    "reason": "Explicit source ingredients/procedure, exact revision, license and faithful Chinese translation passed",
+    "decision": "DEFER",
+    "reason": "Basmati rice is a specific grain absent from vocabulary; retain unknown, not generic rice. One of three ingredients unresolved exceeds existing identity quality gate; no threshold relaxation.",
     "coverageTarget": [
       "zh:大米",
       "salt"
     ],
     "beginnerReason": "来源标注简单",
-    "translationStatus": "reviewed Chinese + independent English",
+    "translationStatus": "not published",
     "ingredientCount": 3,
     "instructionCount": 5,
     "sourceTime": 40
@@ -650,7 +654,13 @@
     "licenseOrUsageBasis": "CC BY-SA 4.0; official Wikibooks text policy",
     "decision": "DEFER",
     "reason": "Not selected: structure, ambiguity, complexity or insufficient targeted beginner benefit; retained for review",
-    "coverageTarget": [],
+    "coverageTarget": [
+      "butter",
+      "zh:香蕉",
+      "egg",
+      "milk",
+      "salt"
+    ],
     "beginnerReason": "Not marked beginner",
     "translationStatus": "not published",
     "ingredientCount": null,
@@ -1671,7 +1681,6 @@
     "coverageTarget": [
       "oil",
       "onion",
-      "onion",
       "garlic",
       "ginger",
       "tomato"
@@ -1861,9 +1870,7 @@
       "pasta",
       "mushroom",
       "garlic",
-      "onion",
       "butter",
-      "flour",
       "salt",
       "black-pepper"
     ],
