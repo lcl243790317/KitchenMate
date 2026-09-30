@@ -15,6 +15,28 @@ const samples = [
   "芝士酿番茄",
   "煎香蕉",
 ];
+test("unresolved source ingredient stays original and fits 390px before hydration", async ({
+  browser,
+}) => {
+  const context = await browser.newContext({
+    baseURL: test.info().project.use.baseURL,
+    viewport: { width: 390, height: 844 },
+    javaScriptEnabled: false,
+  });
+  try {
+    const page = await context.newPage();
+    await page.goto("/recipe/" + encodeURIComponent("commons:77826608"));
+    await expect(
+      page.getByRole("heading", { name: "讃岐乌冬面", exact: true }),
+    ).toBeVisible();
+    await expect(page.locator(".ingredient-list")).toContainText(
+      "Udon soup (soy sauce, sweet sake,  seaweed and bonito broth)",
+    );
+    await expectNoHorizontalOverflow(page);
+  } finally {
+    await context.close();
+  }
+});
 test("ten actual Wikibooks recipes default to faithful Chinese with inline original at 390px", async ({
   page,
 }) => {
