@@ -38,7 +38,19 @@ Validation date: 2026-09-30. This correctness fix uses the existing 365 local Ho
 
 CI order: lint; typegen/typecheck; unit; recipe validation; atomic audit; completeness audit; build; static-catalog browser smoke (12 scenarios). Ordinary CI does not verify live external recipe sources. The manual source verification workflow remains separate. The service-worker cache is v3.1.2.
 
-Production acceptance and release identifiers are recorded after the CI-gated deployment. Existing KitchenMate Railway project/service/domain are retained.
+## Observed production acceptance
+
+- Production: https://kitchenmate-production.up.railway.app/ on the existing KitchenMate project/environment/service/domain.
+- Application commit tested: `8f9a03f65a4e24160d93145010fb92b644aa0780`.
+- CI: https://github.com/lcl243790317/KitchenMate/actions/runs/36729041831, completed success before deployment.
+- Railway deployment: `79b869dc-37e3-4b33-ae7d-2933486060b1`, SUCCESS; exact commit confirmed in deployment metadata.
+- Real visible Chrome: `PLAYWRIGHT_BASE_URL=production LIVE_IMPORT_E2E=true OFFLINE_TESTS=true pnpm test:e2e --headed`: **26 passed, 0 skipped**. Includes all 12 static smoke scenarios, three real external imports (Budget Bytes, BBC Good Food and Gimme Some Oven), source detail/cooking, local imports without premature API fallback, shopping, IndexedDB migration, backup, fixture/legacy exclusions and offline recovery.
+- Separate visible Chrome at 390px verified the home CTAs, 86-button Pantry and uncommon ingredient search, 香菇滑鸡 12 rows (five owned, then six after selecting only soy sauce), 新疆大盘鸡 16 atomic rows with garlic as the only owned row, original cooking steps and filtered catalog return.
+- The filtered mobile catalog retained query=肉, category=肉类, source=HowToCook, 48 cards and the clicked recipe ID. Before/after scrollY: **3368 / 3368**. Full browser tests also restore 72 cards at index 55 on desktop and mobile, including detail reload and both Back controls; Discover restores mode/query/filter panel/loaded count/scroll.
+- HTTP health: 200, status=ok. Production screenshots were visually inspected for ingredient amounts, source fidelity, list return position and mobile navigation.
+- The headed browser exposed a test assumption: Windows native vertical scrollbars occupy 15px, leaving a 375px content viewport in a 390px window. Overflow assertions now compare scrollWidth with clientWidth. They continue to detect actual horizontal overflow and pass both headed production Chrome and the 12-test headless local smoke suite. No product layout change was needed.
+
+The follow-up commit records these executed results and corrects only the browser test assertion. Its deployment is gated on its own green CI; final release identifiers are supplied in the delivery report and Railway/GitHub history.
 
 ---
 

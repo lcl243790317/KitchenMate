@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { verifiedRecipes } from "../../lib/verified-recipes";
 import { searchRecipe, matchRecipe } from "../../lib/matching";
+import { expectNoHorizontalOverflow } from "./assert-layout";
 const recipe = verifiedRecipes.find((r) => r.title === "西红柿炒鸡蛋")!;
 const linked = verifiedRecipes.find(
   (r) => r.instructionAvailability === "source-only",
@@ -24,7 +25,7 @@ test("primary pantry toggles directly and searches uncommon vocabulary", async (
     await page.getByLabel("搜索食材").fill(query);
     await expect(page.locator("button.ingredient")).not.toHaveCount(0);
   }
-  await expect(page.locator("body")).toHaveJSProperty("scrollWidth", 390);
+  await expectNoHorizontalOverflow(page);
 });
 test("all five recommendation modes remain related to selected ingredients", async ({
   page,
@@ -116,7 +117,7 @@ test("empty pantry offers both paths; all recipes search, filters and pagination
   await expect(page.locator(".result-count")).toContainText("365");
   await page.getByLabel("教程类别").selectOption("主食");
   await expect(page.locator(".recipe-card")).not.toHaveCount(0);
-  await expect(page.locator("body")).toHaveJSProperty("scrollWidth", 390);
+  await expectNoHorizontalOverflow(page);
   await expect(
     page.locator(".mobile-nav").getByRole("link", { name: "全部教程" }),
   ).toBeVisible();

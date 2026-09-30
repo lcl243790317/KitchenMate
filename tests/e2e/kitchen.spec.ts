@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 import { verifiedRecipes } from "../../lib/verified-recipes";
+import { expectNoHorizontalOverflow } from "./assert-layout";
 const recipe = verifiedRecipes.find((r) => r.title === "西红柿炒鸡蛋")!;
 const linked = verifiedRecipes.find(
   (r) => r.provenance.type === "SOURCE_LINKED",
@@ -25,7 +26,7 @@ test("mobile ingredient selection finds a real source and source steps", async (
   await expect(
     page.getByRole("link", { name: "查看原始菜谱", exact: true }),
   ).toHaveAttribute("href", recipe.sourceUrl!);
-  await expect(page.locator("body")).toHaveJSProperty("scrollWidth", 390);
+  await expectNoHorizontalOverflow(page);
   await page.getByRole("link", { name: "开始做菜" }).click();
   await expect(page.locator(".cooking-description")).toHaveText(
     recipe.instructions[0].description,
@@ -247,7 +248,7 @@ test("mobile home dark mode and all source cards fit the viewport", async ({
   ).toBeVisible();
   await page.getByRole("button", { name: "切换深色模式" }).click();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
-  await expect(page.locator("body")).toHaveJSProperty("scrollWidth", 390);
+  await expectNoHorizontalOverflow(page);
   await page.screenshot({
     path: ".cache/phase31-mobile.png",
     fullPage: true,

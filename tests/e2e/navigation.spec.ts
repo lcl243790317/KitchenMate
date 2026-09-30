@@ -1,4 +1,5 @@
 import { test, expect, type Page } from "@playwright/test";
+import { expectNoHorizontalOverflow } from "./assert-layout";
 
 async function openAndReturn(
   page: Page,
@@ -49,10 +50,7 @@ for (const mobile of [false, true]) {
       await page.screenshot({
         path: ".cache/phase312-recipes-return-mobile.png",
       });
-    if (mobile)
-      expect(
-        await page.evaluate(() => document.documentElement.scrollWidth),
-      ).toBe(390);
+    if (mobile) await expectNoHorizontalOverflow(page);
     await page.evaluate(() => window.scrollTo(0, 0));
     await page.reload();
     await expect(page.locator(".recipe-card")).toHaveCount(24);
@@ -117,9 +115,7 @@ test("discover restores query, mode, filters, loaded count and scroll with both 
   await expect(page.getByLabel("菜系", { exact: true })).toHaveValue("");
   await openAndReturn(page, 30, "返回发现菜谱", true);
   await page.screenshot({ path: ".cache/phase312-discover-return-mobile.png" });
-  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(
-    390,
-  );
+  await expectNoHorizontalOverflow(page);
 });
 
 test("direct recipe URL has safe catalog fallback; home recipe remembers home", async ({
