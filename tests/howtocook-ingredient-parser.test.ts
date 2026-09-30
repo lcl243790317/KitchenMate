@@ -5,7 +5,7 @@ import {
   parseHowToCookIngredientBullet as parse,
   splitTopLevel,
   assertAtomicHowToCookIngredients,
-  howToCookMaterialBullets,
+  extractHowToCookIngredients,
 } from "../lib/howtocook-ingredient-parser";
 import { verifiedRecipes } from "../lib/verified-recipes";
 import { matchRecipe, selectedIngredientIds } from "../lib/matching";
@@ -223,7 +223,7 @@ describe("all catalog snapshots and ten grouped-recipe samples", () => {
       expect(() =>
         assertAtomicHowToCookIngredients(r.ingredients),
       ).not.toThrow();
-      const parsed = howToCookMaterialBullets(source).flatMap(parse);
+      const parsed = extractHowToCookIngredients(source).ingredients;
       expect(parsed.map((i) => i.originalText)).toEqual(
         r.ingredients.map((i) => i.originalText),
       );

@@ -31,6 +31,13 @@ import {
   type DeviceState,
 } from "@/lib/storage/device";
 import { AllRecipesPage } from "@/features/recipes/all-recipes-page";
+import {
+  saveBrowseState,
+  takeBrowseState,
+  restoreBrowsePosition,
+  recordRecipeOrigin,
+  type BrowsePosition,
+} from "@/lib/recipe-navigation";
 import { IngredientPicker } from "@/features/pantry/ingredient-picker";
 import {
   ingredientById,
@@ -159,6 +166,47 @@ export function KitchenApp() {
   const [onlyFavorites, setOnlyFavorites] = useState(false);
   const [sourceFilter, setSourceFilter] = useState("为我推荐");
   const [visibleRecipes, setVisibleRecipes] = useState(24);
+  const [browsePosition, setBrowsePosition] = useState<BrowsePosition | null>(
+    null,
+  );
+  useEffect(() => {
+    if (path !== "/discover") return;
+    const frame = requestAnimationFrame(() => {
+      const restored = takeBrowseState<{
+        query: string;
+        mode: string;
+        filters: boolean;
+        maxTime: string;
+        difficulty: string;
+        cuisine: string;
+        diet: string;
+        equipment: string;
+        onlyFavorites: boolean;
+        sourceFilter: string;
+        visibleRecipes: number;
+      }>("/discover");
+      if (!restored) return;
+      setQuery(restored.query);
+      setMode(restored.mode);
+      setFilters(restored.filters);
+      setMaxTime(restored.maxTime);
+      setDifficulty(restored.difficulty);
+      setCuisine(restored.cuisine);
+      setDiet(restored.diet);
+      setEquipment(restored.equipment);
+      setOnlyFavorites(restored.onlyFavorites);
+      setSourceFilter(restored.sourceFilter);
+      setVisibleRecipes(restored.visibleRecipes);
+      setBrowsePosition(restored);
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [path]);
+  useLayoutEffect(() => {
+    if (path === "/discover" && ready && browsePosition)
+      return restoreBrowsePosition(browsePosition, () =>
+        setBrowsePosition(null),
+      );
+  }, [path, ready, browsePosition]);
   const [servingChoice, setServingChoice] = useState<{
     id: string;
     value: number;
@@ -374,6 +422,25 @@ export function KitchenApp() {
     );
   }
   function openRecipe(recipe: Recipe) {
+    if (path === "/discover")
+      saveBrowseState(
+        path,
+        {
+          query,
+          mode,
+          filters,
+          maxTime,
+          difficulty,
+          cuisine,
+          diet,
+          equipment,
+          onlyFavorites,
+          sourceFilter,
+          visibleRecipes,
+        },
+        recipe.id,
+      );
+    else recordRecipeOrigin(recipe.id);
     setRecentRecipeIds((current) =>
       [recipe.id, ...current.filter((id) => id !== recipe.id)].slice(0, 20),
     );
@@ -806,6 +873,7 @@ export function KitchenApp() {
               .map((id) => allRecipes.find((recipe) => recipe.id === id))
               .filter((recipe): recipe is Recipe => Boolean(recipe))
               .slice(0, 5)}
+            onOpen={openRecipe}
           />
         )}
         {selected && cooking && !canCookRecipe(selected) && (

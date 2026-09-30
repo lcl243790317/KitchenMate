@@ -4,6 +4,7 @@ import {
   assertAtomicHowToCookIngredients,
   howToCookMaterialBullets,
   parseHowToCookIngredientBullet,
+  extractHowToCookIngredients,
 } from "../lib/howtocook-ingredient-parser";
 import catalog from "../data/verified-recipes/howtocook/recipes.json";
 import baseline from "../data/verified-recipes/howtocook/ingredient-parsing-baseline.json";
@@ -25,9 +26,9 @@ for (const recipe of recipes) {
   bullets += lines.length;
   try {
     assertAtomicHowToCookIngredients(recipe.ingredients);
-    const expected = lines
-      .flatMap(parseHowToCookIngredientBullet)
-      .map((i) => recipeSchema.shape.ingredients.element.parse(i));
+    const expected = extractHowToCookIngredients(source).ingredients.map((i) =>
+      recipeSchema.shape.ingredients.element.parse(i),
+    );
     if (JSON.stringify(expected) !== JSON.stringify(recipe.ingredients))
       throw Error("Catalog does not equal parser output");
   } catch (error) {
@@ -110,7 +111,7 @@ fs.writeFileSync(
   "docs/INGREDIENT_PARSING_AUDIT.json",
   JSON.stringify(report, null, 2) + "\n",
 );
-const summary = `# Phase 3.1.1 Ingredient Parsing Audit\n\nPinned HowToCook commit: ${report.pinnedCommit}. Rebuilt from existing checksum-verified source snapshots; source titles, URLs, instructions, notes and verification timestamps are unchanged.\n\n| Metric | Count |\n| --- | ---: |\n| HowToCook recipes scanned | ${report.recipesScanned} |\n| Ingredient bullets scanned (including tool/note bullets) | ${bullets} |\n| Multi-ingredient food bullets detected | ${grouped.length} |\n| Recipes with grouped food bullets | ${report.recipesWithGroupedBullets} |\n| Stored ingredient rows before (not all atomic) | ${before} |\n| Atomic / unresolved ingredient rows after | ${after} |\n| Old grouped rows replaced | ${oldGrouped} |\n| Net ingredient rows added | ${after - before} |\n| Ambiguous parts left unresolved | ${ambiguous.length} |\n| Unknown rows, including names absent from vocabulary | ${report.unknownRows} |\n| Catalog recipes excluded | ${report.catalogRecipesExcluded} |\n| Atomic invariant violations | ${violations} |\n\nEach fragment retains verbatim originalText and sourceGroupText. Parentheses are not split; alternatives remain unresolved; unfamiliar named peppers stay unknown; explicit optional notes propagate to a conjunction or an unannotated comma-list group. Quantity is not inferred. Detailed unresolved parts are listed in the JSON report.\n\nBig scallion 大葱 uses the existing distinct ID zh:大葱; it is not silently changed to the generic scallion ID. Optional peppers remain visible as unowned in detail but are excluded from required-only matching and shopping calculations. Low-weight staples are unowned until selected.\n\n## Ten regression examples\n\n`;
+const summary = `# Atomic Ingredient Parsing Audit — Phase 3.1.2 rerun\n\nPinned HowToCook commit: ${report.pinnedCommit}. Rebuilt from existing checksum-verified source snapshots; source titles, URLs, instructions, notes and verification timestamps are unchanged.\n\n| Metric | Count |\n| --- | ---: |\n| HowToCook recipes scanned | ${report.recipesScanned} |\n| Ingredient bullets scanned (including tool/note bullets) | ${bullets} |\n| Multi-ingredient food bullets detected | ${grouped.length} |\n| Recipes with grouped food bullets | ${report.recipesWithGroupedBullets} |\n| Stored ingredient rows before (not all atomic) | ${before} |\n| Atomic / unresolved ingredient rows after | ${after} |\n| Old grouped rows replaced | ${oldGrouped} |\n| Net ingredient rows added | ${after - before} |\n| Ambiguous parts left unresolved | ${ambiguous.length} |\n| Unknown rows, including names absent from vocabulary | ${report.unknownRows} |\n| Catalog recipes excluded | ${report.catalogRecipesExcluded} |\n| Atomic invariant violations | ${violations} |\n\nEach fragment retains verbatim originalText and sourceGroupText. Parentheses are not split; alternatives remain unresolved; unfamiliar named peppers stay unknown; explicit optional notes propagate to a conjunction or an unannotated comma-list group. Only explicit scalar Calculation quantities are structured; formulas and ranges are not inferred. The Phase 3.1.1 release had 3211 atomic/unresolved rows; the current combined source rebuild is reported below. Detailed unresolved parts are listed in the JSON report.\n\nBig scallion 大葱 uses the existing distinct ID zh:大葱; it is not silently changed to the generic scallion ID. Optional peppers remain visible as unowned in detail but are excluded from required-only matching and shopping calculations. Low-weight staples are unowned until selected.\n\n## Ten regression examples\n\n`;
 fs.writeFileSync(
   "docs/INGREDIENT_PARSING_AUDIT.md",
   summary +

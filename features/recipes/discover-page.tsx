@@ -39,6 +39,7 @@ type Props = {
   resultCount: number;
   cards: ReactNode;
   recentRecipes: Recipe[];
+  onOpen: (recipe: Recipe) => void;
 };
 
 export function DiscoverPageView(props: Props) {
@@ -167,6 +168,17 @@ export function DiscoverPageView(props: Props) {
                 className="text-link"
                 key={recipe.id}
                 href={`/recipe/${encodeURIComponent(recipe.id)}`}
+                onClick={(event) => {
+                  if (
+                    !event.ctrlKey &&
+                    !event.metaKey &&
+                    !event.shiftKey &&
+                    !event.altKey
+                  ) {
+                    event.preventDefault();
+                    props.onOpen(recipe);
+                  }
+                }}
               >
                 {recipe.title}
               </Link>
@@ -180,6 +192,7 @@ export function DiscoverPageView(props: Props) {
             <label key={label}>
               {label}
               <select
+                aria-label={label}
                 value={value}
                 onChange={(event) => set(event.target.value)}
               >

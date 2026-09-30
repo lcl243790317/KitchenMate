@@ -1,9 +1,22 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import type { Recipe } from "@/lib/model";
 import { ingredientName } from "@/lib/ingredients";
 import { browseCategory, browseRecipes } from "@/lib/recipe-browse";
 import { canDisplayRecipe } from "@/lib/recipe-trust";
+import {
+  takeBrowseState,
+  saveBrowseState,
+  restoreBrowsePosition,
+  replaceBrowseQuery,
+  type BrowsePosition,
+} from "@/lib/recipe-navigation";
+type BrowseState = {
+  query: string;
+  category: string;
+  source: string;
+  limit: number;
+};
 
 export function AllRecipesPage({
   recipes,
@@ -12,14 +25,46 @@ export function AllRecipesPage({
   recipes: Recipe[];
   onOpen: (recipe: Recipe) => void;
 }) {
-  const [query, setQuery] = useState(() =>
-    typeof window === "undefined"
-      ? ""
-      : (new URLSearchParams(window.location.search).get("q") ?? ""),
+  const [{ query, category, source, limit }, setBrowse] = useState<BrowseState>(
+    { query: "", category: "", source: "", limit: 24 },
   );
-  const [category, setCategory] = useState("");
-  const [source, setSource] = useState("");
-  const [limit, setLimit] = useState(24);
+  const [position, setPosition] = useState<BrowsePosition | null>(null);
+  useEffect(() => {
+    const frame = requestAnimationFrame(() => {
+      const restored = takeBrowseState<BrowseState>("/recipes");
+      const params = new URLSearchParams(window.location.search);
+      setBrowse(
+        restored ?? {
+          query: params.get("q") ?? "",
+          category: params.get("category") ?? "",
+          source: params.get("source") ?? "",
+          limit: 24,
+        },
+      );
+      if (restored) setPosition(restored);
+    });
+    return () => cancelAnimationFrame(frame);
+  }, []);
+  useLayoutEffect(
+    () =>
+      position
+        ? restoreBrowsePosition(position, () => setPosition(null))
+        : undefined,
+    [position],
+  );
+  function changeFilters(update: Partial<BrowseState>) {
+    const next = { query, category, source, limit: 24, ...update };
+    setBrowse(next);
+    replaceBrowseQuery({
+      q: next.query,
+      category: next.category,
+      source: next.source,
+    });
+  }
+  function open(recipe: Recipe) {
+    saveBrowseState("/recipes", { query, category, source, limit }, recipe.id);
+    onOpen(recipe);
+  }
   const catalog = recipes.filter(canDisplayRecipe);
   const results = browseRecipes(catalog, query, category, source);
   const categories = [...new Set(catalog.map(browseCategory))].sort((a, b) =>
@@ -40,12 +85,7 @@ export function AllRecipesPage({
           placeholder="搜索菜名、食材、标签或菜系"
           value={query}
           onChange={(e) => {
-            setQuery(e.target.value);
-            setLimit(24);
-            const url = new URL(window.location.href);
-            if (e.target.value) url.searchParams.set("q", e.target.value);
-            else url.searchParams.delete("q");
-            window.history.replaceState(null, "", url);
+            changeFilters({ query: e.target.value });
           }}
         />
       </div>
@@ -56,8 +96,7 @@ export function AllRecipesPage({
             aria-label="教程类别"
             value={category}
             onChange={(e) => {
-              setCategory(e.target.value);
-              setLimit(24);
+              changeFilters({ category: e.target.value });
             }}
           >
             <option value="">全部</option>
@@ -72,8 +111,7 @@ export function AllRecipesPage({
             aria-label="教程来源"
             value={source}
             onChange={(e) => {
-              setSource(e.target.value);
-              setLimit(24);
+              changeFilters({ source: e.target.value });
             }}
           >
             <option value="">全部来源</option>
@@ -99,7 +137,7 @@ export function AllRecipesPage({
                   ? "原站教程"
                   : "完整教程"}
               </small>
-              <button className="recipe-title" onClick={() => onOpen(recipe)}>
+              <button className="recipe-title" onClick={() => open(recipe)}>
                 {recipe.title}
               </button>
               <div className="recipe-meta">
@@ -117,7 +155,7 @@ export function AllRecipesPage({
                   .map((i) => ingredientName(i.ingredientId))
                   .join("、")}
               </p>
-              <button className="text-link" onClick={() => onOpen(recipe)}>
+              <button className="text-link" onClick={() => open(recipe)}>
                 {recipe.instructionAvailability === "source-only"
                   ? "查看来源与食材"
                   : "查看教程"}{" "}
@@ -133,7 +171,9 @@ export function AllRecipesPage({
       {results.length > limit && (
         <button
           className="secondary load-more"
-          onClick={() => setLimit((n) => n + 24)}
+          onClick={() =>
+            setBrowse((state) => ({ ...state, limit: state.limit + 24 }))
+          }
         >
           加载更多
         </button>

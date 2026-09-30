@@ -1,3 +1,49 @@
+# Phase 3.1.2 — Complete Ingredient Sources & Browse State Restoration
+
+Validation date: 2026-09-30. This correctness fix uses the existing 365 local HowToCook snapshots at pinned commit `a2d45c6984dff9ee941da0e7c452f7965965d962`. No live source rebuild, instruction/title/URL changes or catalog expansion. All non-ingredient fields remain equal to the SHA256 baseline.
+
+## Complete ingredient sources
+
+- Extraction now reads both Material and Calculation sections. Calculation records enrich material rows by canonical ID. Explicit separate calculation usages remain separate; quantities are never summed. Only literal scalar amounts are structured; ranges and formulas retain null quantity and verbatim source text.
+- Warm water 温水 is an alias of existing water. Sesame oil 香油 retains its distinct `zh:香油` identity. Vocabulary remains 703; Primary Pantry 86; searchable 703; 9 UI categories plus Common. No inventory or AI functionality.
+- 香菇滑鸡 (`howtocook:4f1a2679eb840431`): 5 → 12 rows. New identities: water, wine, soy-sauce, salt, dark-soy, sugar, zh:香油. All twelve calculation amounts are structured. Five actual selected ingredients own exactly five rows; selecting soy sauce adds exactly one owned row. Dried shiitake retains `zh:干香菇`, rather than treating generic fresh shiitake as a substitute.
+- Global completeness audit: 365 recipes, all 365 with Calculation sections; 144 recipes gain calculation-only records; 277 calculation-only records added; 2074 material rows enriched/merged; rows 3211 → 3486 (net +275); 826 unresolved calculation fragments; 654 operation-only candidates; **0 high-confidence Calculation omissions**. The unresolved count includes unknown names, alternatives, amounts without an ingredient head, formula/prose fragments and ambiguous lists. They remain in source notes and the detailed report. Operations are audited, never automatically promoted to required ingredients.
+- Atomic regression: 新疆大盘鸡 remains 16 rows, 14 required and 2 optional; garlic alone matches only garlic. The Phase 3.1.1 invariant and its historical baseline are retained in the atomic audit, which is rerun against the combined source catalog.
+- Catalog remains 365 full OPEN_LICENSE + 5 SOURCE_LINKED = 370. Coverage is now 330/703, with 373 uncovered. Low-weight staples remain unowned unless selected.
+- New completeness validation fails if any high-confidence Calculation ingredient is absent from final recipe.ingredients. See INGREDIENT_COMPLETENESS_AUDIT.md/json for per-recipe source evidence, unresolved fragments and operation candidates. Snapshot checksums, atomicity and source fidelity remain mandatory.
+
+## Browse restoration
+
+- `/recipes`: query, category, source, loaded limit, scroll and clicked recipe ID are saved before opening a detail. Query/category/source also use URL query parameters. State is restored before scroll/anchor restoration; a session/history entry token gates consumption to the actual return entry.
+- `/discover`: query, mode, source tab, loaded count, time/difficulty/cuisine/diet/equipment/favorites filters, filter panel and scroll are restored. Pantry remains in the existing device state.
+- Browsing state uses sessionStorage only, never IndexedDB, permanent localStorage or device backup. A consumed return ticket and document identity prevent ordinary refresh from jumping to a stale session scroll position. The ticket is armed before navigation so fast browser Back works before detail hydration.
+- Shared detail back link works for server catalog pages and device-imported pages: 返回全部教程 / 返回发现菜谱 / 返回首页 according to origin. Valid history uses router.back(); direct URLs safely link to /recipes. Recipe URLs remain /recipe/:id.
+- Tests cover 72 rendered cards, opening index 55, browser Back and detail Back, desktop and 390px, copied filter URLs, query/category/source preservation, Discover mode/query/filter panel/loading count/scroll, direct URL fallback, source identity and explicit amounts.
+
+## Executed local validation
+
+| Command                                    | Actual result                                                        |
+| ------------------------------------------ | -------------------------------------------------------------------- |
+| pnpm lint                                  | Passed                                                               |
+| pnpm exec next typegen                     | Passed                                                               |
+| pnpm typecheck                             | Passed                                                               |
+| pnpm test                                  | 157 passed, 3 opt-in live tests skipped                              |
+| pnpm recipes:validate                      | 370 passed; calculation completeness, atomicity and source integrity |
+| pnpm recipes:audit-ingredient-groups       | Passed, 0 violations                                                 |
+| pnpm recipes:audit-ingredient-completeness | Passed, 0 violations                                                 |
+| pnpm recipes:coverage                      | Passed, 330/703                                                      |
+| pnpm build                                 | Passed                                                               |
+| pnpm test:smoke                            | 12 passed                                                            |
+| OFFLINE_TESTS=true pnpm test:e2e           | 23 passed, 3 live external imports skipped                           |
+
+CI order: lint; typegen/typecheck; unit; recipe validation; atomic audit; completeness audit; build; static-catalog browser smoke (12 scenarios). Ordinary CI does not verify live external recipe sources. The manual source verification workflow remains separate. The service-worker cache is v3.1.2.
+
+Production acceptance and release identifiers are recorded after the CI-gated deployment. Existing KitchenMate Railway project/service/domain are retained.
+
+---
+
+## Historical Phase 3.1.1 validation
+
 # Phase 3.1.1 — Atomic Ingredient Parsing Fix
 
 Validation date: 2026-09-30. This production fix rebuilds the pinned HowToCook catalog from existing checksum-verified snapshots. The product UI and 703 / 86 / 24 Pantry design are unchanged.
@@ -9,18 +55,18 @@ Validation date: 2026-09-30. This production fix rebuilds the pinned HowToCook c
 - Catalog: 365 full HowToCook tutorials + 5 source-linked external records = 370, unchanged. Exact vocabulary coverage: 312/703 → 314/703; 389 uncovered.
 - Fidelity: pinned commit a2d45c6984dff9ee941da0e7c452f7965965d962 unchanged; all non-ingredient recipe fields match the SHA256 baseline. Repeated offline rebuild produces identical catalog bytes.
 
-| Local command | Observed result |
-| --- | --- |
-| pnpm lint | Passed |
-| pnpm exec next typegen | Passed |
-| pnpm typecheck | Passed |
-| pnpm test | 144 passed, 3 opt-in live tests skipped |
-| pnpm recipes:validate | 370 records passed, including atomic source parsing invariant |
-| pnpm recipes:audit-ingredient-groups | Passed, zero violations |
-| pnpm recipes:coverage | Passed, 314/703 |
-| pnpm build | Passed |
-| pnpm test:smoke | 6 passed |
-| OFFLINE_TESTS=true pnpm test:e2e | 17 passed, 3 live external imports skipped |
+| Local command                        | Observed result                                               |
+| ------------------------------------ | ------------------------------------------------------------- |
+| pnpm lint                            | Passed                                                        |
+| pnpm exec next typegen               | Passed                                                        |
+| pnpm typecheck                       | Passed                                                        |
+| pnpm test                            | 144 passed, 3 opt-in live tests skipped                       |
+| pnpm recipes:validate                | 370 records passed, including atomic source parsing invariant |
+| pnpm recipes:audit-ingredient-groups | Passed, zero violations                                       |
+| pnpm recipes:coverage                | Passed, 314/703                                               |
+| pnpm build                           | Passed                                                        |
+| pnpm test:smoke                      | 6 passed                                                      |
+| OFFLINE_TESTS=true pnpm test:e2e     | 17 passed, 3 live external imports skipped                    |
 
 CI now runs the ingredient-group audit in addition to source validation; the 6 static browser smoke scenarios include the garlic → chicken → potato regression. Ordinary CI does not call live recipe sites. Offline cache version is bumped to clear the prior recipe page cache.
 
@@ -60,17 +106,17 @@ Validation date: 2026-09-30. This report replaces the obsolete Phase 1/2 report.
 
 Windows / Node 24 / pnpm 11.19 / Chrome; production build served on port 3002.
 
-| Command | Observed result |
-| --- | --- |
-| pnpm lint | Passed |
-| pnpm exec next typegen | Passed |
-| pnpm typecheck | Passed |
-| pnpm test | 119 passed, 3 explicitly opt-in live tests skipped |
-| pnpm recipes:validate | 370 records passed, source identity/attribution/snapshot integrity |
-| pnpm recipes:coverage | 703 vocabulary, 312 covered, 391 uncovered |
-| pnpm build | Passed, includes /recipes |
-| OFFLINE_TESTS=true pnpm test:e2e | 16 passed, 3 live external import tests skipped |
-| pnpm test:smoke | 5 passed |
+| Command                          | Observed result                                                    |
+| -------------------------------- | ------------------------------------------------------------------ |
+| pnpm lint                        | Passed                                                             |
+| pnpm exec next typegen           | Passed                                                             |
+| pnpm typecheck                   | Passed                                                             |
+| pnpm test                        | 119 passed, 3 explicitly opt-in live tests skipped                 |
+| pnpm recipes:validate            | 370 records passed, source identity/attribution/snapshot integrity |
+| pnpm recipes:coverage            | 703 vocabulary, 312 covered, 391 uncovered                         |
+| pnpm build                       | Passed, includes /recipes                                          |
+| OFFLINE_TESTS=true pnpm test:e2e | 16 passed, 3 live external import tests skipped                    |
+| pnpm test:smoke                  | 5 passed                                                           |
 
 The five smoke scenarios include simplified Pantry and rare searches; all recommendation modes; empty-Pantry all-recipes browsing, pagination, query persistence and filters; attributed full tutorial/cooking and source-only guard; local imported detail/cooking reload without API fallback. Existing regression tests cover backup migration, IndexedDB upgrade, shopping, test-fixture exclusion, recents, dark mode and offline progress.
 

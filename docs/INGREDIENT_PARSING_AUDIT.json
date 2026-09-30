@@ -5,11 +5,11 @@
   "multiIngredientBullets": 58,
   "recipesWithGroupedBullets": 34,
   "ingredientRowsBefore": 3024,
-  "ingredientRowsAfter": 3211,
+  "ingredientRowsAfter": 3486,
   "oldGroupedRowsReplaced": 58,
-  "netIngredientRowsAdded": 187,
-  "ambiguousLinesLeftUnresolved": 103,
-  "unknownRows": 551,
+  "netIngredientRowsAdded": 462,
+  "ambiguousLinesLeftUnresolved": 101,
+  "unknownRows": 543,
   "catalogRecipesExcluded": 0,
   "violations": 0,
   "examples": [
@@ -453,7 +453,7 @@
       "id": "howtocook:ddc763f709d2b5b6",
       "title": "猪皮冻",
       "before": 2,
-      "after": 8,
+      "after": 17,
       "bullets": [
         {
           "id": "howtocook:ddc763f709d2b5b6",
@@ -503,7 +503,7 @@
       "id": "howtocook:373d56f2f32aba5c",
       "title": "南派红烧肉",
       "before": 2,
-      "after": 14,
+      "after": 16,
       "bullets": [
         {
           "id": "howtocook:373d56f2f32aba5c",
@@ -677,7 +677,7 @@
       "id": "howtocook:06a218a8627c1797",
       "title": "蒸卤面",
       "before": 9,
-      "after": 15,
+      "after": 16,
       "bullets": [
         {
           "id": "howtocook:06a218a8627c1797",
@@ -1158,16 +1158,6 @@
       "recipeId": "howtocook:afbed08955789550",
       "text": "生抽 / 味极鲜",
       "reason": "unresolved alternative or compound"
-    },
-    {
-      "recipeId": "howtocook:b0ca418ed646e4ec",
-      "text": "冰糖：炒出来的`糖色`色泽最为鲜艳",
-      "reason": "unseparated compound"
-    },
-    {
-      "recipeId": "howtocook:b0ca418ed646e4ec",
-      "text": "白砂糖：必须水油炒，不加水融化会很慢",
-      "reason": "unseparated compound"
     },
     {
       "recipeId": "howtocook:b261aa97c4abb8ab",

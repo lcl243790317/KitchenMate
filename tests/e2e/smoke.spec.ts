@@ -215,7 +215,7 @@ test("Xinjiang chicken matches only separately selected atomic ingredients", asy
   const available = rows.filter({ has: page.locator(".has") });
   const missing = rows.filter({ hasNot: page.locator(".has") });
   await expect(available).toHaveCount(1);
-  await expect(available).toContainText("大蒜");
+  await expect(available).toContainText("蒜");
   for (const name of [
     "花椒",
     "香叶",
@@ -227,7 +227,7 @@ test("Xinjiang chicken matches only separately selected atomic ingredients", asy
     "生抽",
     "蚝油",
     "料酒",
-    "白糖",
+    "糖",
     "鸡肉",
     "土豆",
     "菜椒",

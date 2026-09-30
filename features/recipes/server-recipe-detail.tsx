@@ -1,14 +1,9 @@
 import { RecipeSource, SourceNotes } from "./recipe-source";
 import Link from "next/link";
-import {
-  Clock,
-  Flame,
-  UtensilsCrossed,
-  ArrowLeft,
-  ExternalLink,
-} from "lucide-react";
+import { Clock, Flame, UtensilsCrossed, ExternalLink } from "lucide-react";
 import type { Recipe } from "@/lib/model";
 import { RecipeActions } from "./recipe-actions";
+import { RecipeBackLink } from "./recipe-back-link";
 
 export function ServerRecipeDetail({ recipe }: { recipe: Recipe }) {
   const jsonLd = {
@@ -46,9 +41,7 @@ export function ServerRecipeDetail({ recipe }: { recipe: Recipe }) {
         </nav>
       </header>
       <main>
-        <Link href="/discover" className="back">
-          <ArrowLeft size={16} /> 返回发现菜谱
-        </Link>
+        <RecipeBackLink recipeId={recipe.id} />
         <Link href="/recipes" className="text-link">
           浏览全部教程
         </Link>

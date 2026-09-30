@@ -9,8 +9,8 @@ import {
 import manifest from "../data/verified-recipes/howtocook/manifest.json";
 import {
   assertAtomicHowToCookIngredients,
-  howToCookMaterialBullets,
-  parseHowToCookIngredientBullet,
+  extractHowToCookIngredients,
+  howToCookCompletenessViolations,
 } from "../lib/howtocook-ingredient-parser";
 import { recipeSchema } from "../lib/model";
 const byId = new Map(manifest.map((m) => [m.id, m]));
@@ -27,9 +27,11 @@ for (const recipe of verifiedRecipes) {
     if (record) {
       assertAtomicHowToCookIngredients(recipe.ingredients);
       const source = fs.readFileSync(record.snapshotPath, "utf8");
-      const expected = howToCookMaterialBullets(source)
-        .flatMap(parseHowToCookIngredientBullet)
-        .map((part) => recipeSchema.shape.ingredients.element.parse(part));
+      if (howToCookCompletenessViolations(source, recipe.ingredients).length)
+        throw new Error(`Calculation ingredient omission in ${recipe.id}`);
+      const expected = extractHowToCookIngredients(source).ingredients.map(
+        (part) => recipeSchema.shape.ingredients.element.parse(part),
+      );
       if (JSON.stringify(expected) !== JSON.stringify(recipe.ingredients))
         throw new Error(`Atomic source parsing mismatch in ${recipe.id}`);
       if (createHash("sha256").update(source).digest("hex") !== record.sha256)

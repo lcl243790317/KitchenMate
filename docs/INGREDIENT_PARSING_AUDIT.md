@@ -1,4 +1,4 @@
-# Phase 3.1.1 Ingredient Parsing Audit
+# Atomic Ingredient Parsing Audit — Phase 3.1.2 rerun
 
 Pinned HowToCook commit: a2d45c6984dff9ee941da0e7c452f7965965d962. Rebuilt from existing checksum-verified source snapshots; source titles, URLs, instructions, notes and verification timestamps are unchanged.
 
@@ -9,15 +9,15 @@ Pinned HowToCook commit: a2d45c6984dff9ee941da0e7c452f7965965d962. Rebuilt from 
 | Multi-ingredient food bullets detected | 58 |
 | Recipes with grouped food bullets | 34 |
 | Stored ingredient rows before (not all atomic) | 3024 |
-| Atomic / unresolved ingredient rows after | 3211 |
+| Atomic / unresolved ingredient rows after | 3486 |
 | Old grouped rows replaced | 58 |
-| Net ingredient rows added | 187 |
-| Ambiguous parts left unresolved | 103 |
-| Unknown rows, including names absent from vocabulary | 551 |
+| Net ingredient rows added | 462 |
+| Ambiguous parts left unresolved | 101 |
+| Unknown rows, including names absent from vocabulary | 543 |
 | Catalog recipes excluded | 0 |
 | Atomic invariant violations | 0 |
 
-Each fragment retains verbatim originalText and sourceGroupText. Parentheses are not split; alternatives remain unresolved; unfamiliar named peppers stay unknown; explicit optional notes propagate to a conjunction or an unannotated comma-list group. Quantity is not inferred. Detailed unresolved parts are listed in the JSON report.
+Each fragment retains verbatim originalText and sourceGroupText. Parentheses are not split; alternatives remain unresolved; unfamiliar named peppers stay unknown; explicit optional notes propagate to a conjunction or an unannotated comma-list group. Only explicit scalar Calculation quantities are structured; formulas and ranges are not inferred. The Phase 3.1.1 release had 3211 atomic/unresolved rows; the current combined source rebuild is reported below. Detailed unresolved parts are listed in the JSON report.
 
 Big scallion 大葱 uses the existing distinct ID zh:大葱; it is not silently changed to the generic scallion ID. Optional peppers remain visible as unowned in detail but are excluded from required-only matching and shopping calculations. Low-weight staples are unowned until selected.
 
@@ -77,14 +77,14 @@ howtocook:1473dff6924a687c: 4 → 20 ingredient rows.
 
 ### 5. 猪皮冻
 
-howtocook:ddc763f709d2b5b6: 2 → 8 ingredient rows.
+howtocook:ddc763f709d2b5b6: 2 → 17 ingredient rows.
 
 - Source: 大料、花椒、白芷、桂皮、丁香、香叶、小茴香
 - Atomic: 大料 [unknown:大料] / 花椒 [zh:花椒] / 白芷 [unknown:白芷] / 桂皮 [zh:桂皮] / 丁香 [zh:丁香] / 香叶 [zh:香叶] / 小茴香 [zh:小茴香]
 
 ### 6. 南派红烧肉
 
-howtocook:373d56f2f32aba5c: 2 → 14 ingredient rows.
+howtocook:373d56f2f32aba5c: 2 → 16 ingredient rows.
 
 - Source: 辅料：`油`、`冰糖`、`老抽`、`料酒`、`香叶`、`八角`、`生姜`、`盐`、`葱`、`开水`、`凉水`、`蒜`、`花椒`
 - Atomic: `油` [oil] / `冰糖` [zh:冰糖] / `老抽` [dark-soy] / `料酒` [wine] / `香叶` [zh:香叶] / `八角` [zh:八角] / `生姜` [ginger] / `盐` [salt] / `葱` [scallion] / `开水` [water] / `凉水` [unknown:凉水] / `蒜` [garlic] / `花椒` [zh:花椒]
@@ -104,7 +104,7 @@ howtocook:617f7ae9488e0b06: 3 → 14 ingredient rows.
 
 ### 8. 蒸卤面
 
-howtocook:06a218a8627c1797: 9 → 15 ingredient rows.
+howtocook:06a218a8627c1797: 9 → 16 ingredient rows.
 
 - Source: 葱，姜，蒜
 - Atomic: 葱 [scallion] / 姜 [ginger] / 蒜 [garlic]

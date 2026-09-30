@@ -3,7 +3,6 @@ import type { ReactNode } from "react";
 import { RecipeSource, SourceNotes } from "./recipe-source";
 import Link from "next/link";
 import {
-  ArrowLeft,
   ArrowRight,
   Check,
   ChefHat,
@@ -20,6 +19,7 @@ import { selectedIngredientIds } from "@/lib/matching";
 import type { PantryItem, Recipe } from "@/lib/model";
 import { canCookRecipe } from "@/lib/recipe-trust";
 import { scaleQuantity } from "@/lib/units";
+import { RecipeBackLink } from "./recipe-back-link";
 
 type Props = {
   recipe: Recipe;
@@ -46,9 +46,7 @@ export function RecipeDetailView({
 }: Props) {
   return (
     <>
-      <Link href="/discover" className="back">
-        <ArrowLeft size={16} /> 返回发现菜谱
-      </Link>
+      <RecipeBackLink recipeId={recipe.id} />
       <section className="detail-hero">
         {artwork}
         <div>

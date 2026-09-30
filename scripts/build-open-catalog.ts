@@ -4,6 +4,7 @@ import {
   assertAtomicHowToCookIngredients,
   howToCookMaterialBullets,
   parseHowToCookIngredientBullet,
+  extractHowToCookIngredients,
 } from "../lib/howtocook-ingredient-parser";
 import { recipeSchema } from "../lib/model";
 import { canCookRecipe } from "../lib/recipe-trust";
@@ -46,9 +47,9 @@ async function main() {
       const source = fs.readFileSync(entry.snapshotPath, "utf8");
       if (createHash("sha256").update(source).digest("hex") !== entry.sha256)
         throw new Error(`Snapshot changed: ${recipe.id}`);
-      recipe.ingredients = howToCookMaterialBullets(source)
-        .flatMap(parseHowToCookIngredientBullet)
-        .map((part) => recipeSchema.shape.ingredients.element.parse(part));
+      recipe.ingredients = extractHowToCookIngredients(source).ingredients.map(
+        (part) => recipeSchema.shape.ingredients.element.parse(part),
+      );
       assertAtomicHowToCookIngredients(recipe.ingredients);
       return canCookRecipe(recipe);
     });
@@ -123,9 +124,7 @@ async function main() {
             const equipment = rawIngredients.filter(
               (line) => !parseHowToCookIngredientBullet(line).length,
             );
-            const items = rawIngredients.flatMap(
-              parseHowToCookIngredientBullet,
-            );
+            const items = extractHowToCookIngredients(markdown).ingredients;
             assertAtomicHowToCookIngredients(items);
             const body = operation[2].trim();
             const numbered = /^\d+[.、]\s/m.test(body);

@@ -266,7 +266,7 @@ const extraAliases: Record<string, string[]> = {
   sugar: ["granulated sugar", "white sugar"],
   flour: ["wheat flour"],
   oil: ["油"],
-  water: ["清水", "开水", "热水", "冷水", "饮用水"],
+  water: ["清水", "开水", "热水", "冷水", "饮用水", "温水"],
   garlic: ["蒜头", "蒜蓉", "蒜末", "蒜片"],
   ginger: ["姜末", "姜片", "老姜"],
   scallion: ["green onion", "green onions", "scallion", "青葱"],

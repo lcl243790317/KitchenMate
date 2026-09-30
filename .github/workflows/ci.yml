@@ -18,6 +18,7 @@ jobs:
       - run: pnpm test
       - run: pnpm recipes:validate
       - run: pnpm recipes:audit-ingredient-groups
+      - run: pnpm recipes:audit-ingredient-completeness
       - run: pnpm build
       - run: pnpm exec playwright install --with-deps chromium
       - name: Browser Smoke (static verified catalog)
