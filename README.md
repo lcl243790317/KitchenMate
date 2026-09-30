@@ -7,8 +7,10 @@ KitchenMate 不自行生成做菜步骤。正式推荐的菜谱必须能够追�
 
 [在线使用](https://kitchenmate-production.up.railway.app/) · [GitHub](https://github.com/lcl243790317/KitchenMate)
 
-## Phase 3
+## Phase 3.1
 
+- Pantry 默认展示 86 种常用食材（顶部 24 种），使用 9 个高层分类；主动搜索仍可查询完整 703 种词库。
+- `/recipes` 全部教程独立于厨房食材，支持搜索、来源/类别筛选、每批 24 道及 URL 搜索词。
 - 703 种食材，546 项英文名，支持中文别名、英文菜谱写法以及经过限定的具体食材 → 通用食材匹配。
 - 365 份 HowToCook 开放授权原文教程，5 条外站来源链接记录。来源、验证时间和原始链接清晰可见；缺失字段不猜测，公式用量按原文显示。
 - 选择食材即可推荐：现在就能做、只差一样、只差两样、最匹配、快手菜。基础调料低权重，购物清单保留菜谱用量。
@@ -31,12 +33,13 @@ pnpm typecheck
 pnpm test
 pnpm build
 pnpm test:e2e
+pnpm test:smoke
 pnpm recipes:validate
 pnpm recipes:coverage
 pnpm recipes:audit
 ```
 
-Chrome E2E 默认访问 http://127.0.0.1:3000。设置 PLAYWRIGHT_BASE_URL 可指定服务器。离线测试需要生产构建，并设置 OFFLINE_TESTS=true。外部验证不在普通 CI 中执行；手动 GitHub workflow 或 PowerShell：
+Chrome E2E 默认访问 http://127.0.0.1:3000。设置 PLAYWRIGHT_BASE_URL 可指定服务器。离线测试需要生产构建，并设置 OFFLINE_TESTS=true。外部验证不在普通 CI 中执行；手动 / 每月 GitHub workflow 或 PowerShell：
 
 ```powershell
 $env:LIVE_RECIPE_VERIFICATION='true'
@@ -57,6 +60,9 @@ THEMEALDB_API_KEY 必须是合法生产 supporter key；未配置时 UI 明确�
 - lib/verified-recipes.ts：菜谱、食材反向索引和来源索引。
 - lib/recipe-trust.ts：所有展示与做菜入口的可信度门槛。
 - lib/ingredients.ts / lib/matching.ts：别名及单向父级匹配。
+- data/ingredients/pantry-primary.json：常用选择清单，与完整词库独立。
+- data/recipe-search-aliases.json：明确菜名搜索别名。
+- docs/VALIDATION.md：Phase 3.1 实际验收记录。
 - lib/storage/device.ts：数据迁移、备份与做菜进度。
 - features/：按需加载的功能视图。
 - docs/RECIPE_SOURCES.md：授权依据、数据方法及限制。

@@ -76,11 +76,32 @@ export function DiscoverPageView(props: Props) {
       ["炒锅", "烤箱", "空气炸锅", "电饭煲", "高压锅", "微波炉"],
     ],
   ];
+  if (!props.pantryCount && props.sourceFilter === "为我推荐")
+    return (
+      <section className="empty">
+        <h1>先选择一些你手头有的食材</h1>
+        <Link href="/pantry" className="primary">
+          去选择食材
+        </Link>
+        <p>
+          或者
+          <Link href="/recipes" className="text-link">
+            浏览全部教程
+          </Link>
+        </p>
+        <button
+          className="text-link"
+          onClick={() => props.setSourceFilter("我的导入")}
+        >
+          我的导入
+        </button>
+      </section>
+    );
   return (
     <>
       <section className="page-heading">
         <span className="eyebrow">COOK SOMETHING GOOD</span>
-        <h1>厨房里的无限可能</h1>
+        <h1>根据你现有的食材</h1>
         <p>你有 {props.pantryCount} 种食材，看看今天能做点什么。</p>
       </section>
       <div className="discover-search">
@@ -124,7 +145,7 @@ export function DiscoverPageView(props: Props) {
         </button>
       </div>
       <div className="source-tabs" aria-label="菜谱来源">
-        {["为我推荐", "已验证菜谱", "在线菜谱", "我的导入"].map((source) => (
+        {["为我推荐", "我的导入", "在线菜谱"].map((source) => (
           <button
             key={source}
             className={props.sourceFilter === source ? "active" : ""}

@@ -1,0 +1,374 @@
+{
+  "common": [
+    "egg",
+    "tomato",
+    "potato",
+    "onion",
+    "chicken",
+    "beef",
+    "pork",
+    "tofu",
+    "cabbage",
+    "broccoli",
+    "carrot",
+    "pepper",
+    "zh:黄瓜",
+    "zh:茄子",
+    "mushroom",
+    "rice",
+    "noodles",
+    "milk",
+    "scallion",
+    "ginger",
+    "garlic",
+    "soy-sauce",
+    "salt",
+    "oil"
+  ],
+  "ingredients": [
+    {
+      "ingredientId": "tomato",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "potato",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "onion",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "carrot",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "cabbage",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "zh:包菜",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "zh:生菜",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "zh:菠菜",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "broccoli",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "zh:花菜",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "zh:黄瓜",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "zh:茄子",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "pepper",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "zh:西葫芦",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "zh:南瓜",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "zh:冬瓜",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "zh:白萝卜",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "zh:莲藕",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "zh:甜玉米",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "zh:芹菜",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "zh:韭菜",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "zh:香菜",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "mushroom",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "zh:香菇",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "zh:金针菇",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "zh:杏鲍菇",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "zh:黑木耳",
+      "pantryUiCategory": "蔬菜"
+    },
+    {
+      "ingredientId": "pork",
+      "pantryUiCategory": "肉类"
+    },
+    {
+      "ingredientId": "zh:五花肉",
+      "pantryUiCategory": "肉类"
+    },
+    {
+      "ingredientId": "ribs",
+      "pantryUiCategory": "肉类"
+    },
+    {
+      "ingredientId": "beef",
+      "pantryUiCategory": "肉类"
+    },
+    {
+      "ingredientId": "zh:牛腩",
+      "pantryUiCategory": "肉类"
+    },
+    {
+      "ingredientId": "bacon",
+      "pantryUiCategory": "肉类"
+    },
+    {
+      "ingredientId": "zh:火腿",
+      "pantryUiCategory": "肉类"
+    },
+    {
+      "ingredientId": "chicken",
+      "pantryUiCategory": "禽类"
+    },
+    {
+      "ingredientId": "chicken-breast",
+      "pantryUiCategory": "禽类"
+    },
+    {
+      "ingredientId": "chicken-thigh",
+      "pantryUiCategory": "禽类"
+    },
+    {
+      "ingredientId": "wings",
+      "pantryUiCategory": "禽类"
+    },
+    {
+      "ingredientId": "zh:鸭肉",
+      "pantryUiCategory": "禽类"
+    },
+    {
+      "ingredientId": "fish",
+      "pantryUiCategory": "海鲜"
+    },
+    {
+      "ingredientId": "salmon",
+      "pantryUiCategory": "海鲜"
+    },
+    {
+      "ingredientId": "shrimp",
+      "pantryUiCategory": "海鲜"
+    },
+    {
+      "ingredientId": "zh:蛤蜊",
+      "pantryUiCategory": "海鲜"
+    },
+    {
+      "ingredientId": "zh:带鱼",
+      "pantryUiCategory": "海鲜"
+    },
+    {
+      "ingredientId": "egg",
+      "pantryUiCategory": "蛋奶"
+    },
+    {
+      "ingredientId": "milk",
+      "pantryUiCategory": "蛋奶"
+    },
+    {
+      "ingredientId": "butter",
+      "pantryUiCategory": "蛋奶"
+    },
+    {
+      "ingredientId": "cheese",
+      "pantryUiCategory": "蛋奶"
+    },
+    {
+      "ingredientId": "cream",
+      "pantryUiCategory": "蛋奶"
+    },
+    {
+      "ingredientId": "tofu",
+      "pantryUiCategory": "豆制品"
+    },
+    {
+      "ingredientId": "zh:腐竹",
+      "pantryUiCategory": "豆制品"
+    },
+    {
+      "ingredientId": "zh:豆干",
+      "pantryUiCategory": "豆制品"
+    },
+    {
+      "ingredientId": "rice",
+      "pantryUiCategory": "主食"
+    },
+    {
+      "ingredientId": "zh:大米",
+      "pantryUiCategory": "主食"
+    },
+    {
+      "ingredientId": "noodles",
+      "pantryUiCategory": "主食"
+    },
+    {
+      "ingredientId": "pasta",
+      "pantryUiCategory": "主食"
+    },
+    {
+      "ingredientId": "flour",
+      "pantryUiCategory": "主食"
+    },
+    {
+      "ingredientId": "bread",
+      "pantryUiCategory": "主食"
+    },
+    {
+      "ingredientId": "zh:小米",
+      "pantryUiCategory": "主食"
+    },
+    {
+      "ingredientId": "zh:乌冬面",
+      "pantryUiCategory": "主食"
+    },
+    {
+      "ingredientId": "scallion",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "ginger",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "garlic",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "soy-sauce",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "dark-soy",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "zh:普通酱油",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "vinegar",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "oyster-sauce",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "wine",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "salt",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "sugar",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "oil",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "black-pepper",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "chili",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "douban",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "starch",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "zh:干辣椒",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "zh:花椒",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "zh:八角",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "zh:香油",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "zh:冰糖",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "zh:鸡精",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "zh:白胡椒",
+      "pantryUiCategory": "调味"
+    },
+    {
+      "ingredientId": "zh:柠檬",
+      "pantryUiCategory": "其他"
+    },
+    {
+      "ingredientId": "zh:香蕉",
+      "pantryUiCategory": "其他"
+    },
+    {
+      "ingredientId": "zh:苹果",
+      "pantryUiCategory": "其他"
+    }
+  ]
+}

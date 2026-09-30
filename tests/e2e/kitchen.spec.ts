@@ -39,7 +39,7 @@ test("mobile ingredient selection finds a real source and source steps", async (
     recipe.instructions[1].description,
   );
   await page.screenshot({
-    path: "docs/screenshots/phase3-mobile-cooking.png",
+    path: ".cache/phase31-mobile-cooking.png",
     fullPage: true,
   });
 });
@@ -138,13 +138,11 @@ test("v2 backup migrates fields, preserves recents and exports v3", async ({
       dark: true,
     },
   };
-  await page
-    .getByLabel("选择 KitchenMate 备份")
-    .setInputFiles({
-      name: "backup.json",
-      mimeType: "application/json",
-      buffer: Buffer.from(JSON.stringify(backup)),
-    });
+  await page.getByLabel("选择 KitchenMate 备份").setInputFiles({
+    name: "backup.json",
+    mimeType: "application/json",
+    buffer: Buffer.from(JSON.stringify(backup)),
+  });
   await page.getByRole("button", { name: "确认恢复" }).click();
   await page.reload();
   await expect(
@@ -251,7 +249,7 @@ test("mobile home dark mode and all source cards fit the viewport", async ({
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
   await expect(page.locator("body")).toHaveJSProperty("scrollWidth", 390);
   await page.screenshot({
-    path: "docs/screenshots/phase3-mobile.png",
+    path: ".cache/phase31-mobile.png",
     fullPage: true,
   });
 });
@@ -259,6 +257,9 @@ test("mobile home dark mode and all source cards fit the viewport", async ({
 test("recent recipes and verified catalog remain after refresh", async ({
   page,
 }) => {
+  await page.goto("/pantry");
+  await page.getByRole("button", { name: "清空厨房" }).click();
+  await page.getByRole("button", { name: "番茄", exact: true }).click();
   await page.goto(detail);
   await expect(
     page.getByRole("button", { name: "收藏菜谱", exact: true }),
@@ -273,8 +274,9 @@ test("recent recipes and verified catalog remain after refresh", async ({
   await expect(
     page.getByRole("region", { name: "最近看过的菜谱" }),
   ).toContainText(recipe.title);
-  await page.getByRole("button", { name: "已验证菜谱", exact: true }).click();
+  await page.goto("/recipes");
   await expect(page.locator(".recipe-card")).toHaveCount(24);
+  await page.goto("/discover");
   await page.getByRole("button", { name: "查找在线菜谱" }).click();
   await expect(
     page.getByRole("status").filter({ hasText: "TheMealDB" }),

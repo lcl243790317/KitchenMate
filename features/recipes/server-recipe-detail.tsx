@@ -40,6 +40,7 @@ export function ServerRecipeDetail({ recipe }: { recipe: Recipe }) {
           <Link href="/">首页</Link>
           <Link href="/pantry">我的厨房</Link>
           <Link href="/discover">发现菜谱</Link>
+          <Link href="/recipes">全部教程</Link>
           <Link href="/shopping">购物清单</Link>
           <Link href="/import">导入菜谱</Link>
         </nav>
@@ -47,6 +48,9 @@ export function ServerRecipeDetail({ recipe }: { recipe: Recipe }) {
       <main>
         <Link href="/discover" className="back">
           <ArrowLeft size={16} /> 返回发现菜谱
+        </Link>
+        <Link href="/recipes" className="text-link">
+          浏览全部教程
         </Link>
         <section className="detail-hero">
           <div className="food-art big">

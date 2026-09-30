@@ -4,6 +4,8 @@ import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import {
+  BookOpen,
+  Menu,
   ArrowRight,
   Plus,
   Check,
@@ -28,6 +30,7 @@ import {
   saveDeviceState,
   type DeviceState,
 } from "@/lib/storage/device";
+import { AllRecipesPage } from "@/features/recipes/all-recipes-page";
 import { IngredientPicker } from "@/features/pantry/ingredient-picker";
 import {
   ingredientById,
@@ -36,8 +39,13 @@ import {
   togglePantry,
 } from "@/lib/ingredients";
 import { verifiedRecipes } from "@/lib/verified-recipes";
-import { canCookRecipe, dedupeRecipes } from "@/lib/recipe-trust";
 import {
+  canCookRecipe,
+  canDisplayRecipe,
+  dedupeRecipes,
+} from "@/lib/recipe-trust";
+import {
+  matchesRecommendationMode,
   matchRecipe,
   searchRecipe,
   selectedIngredientIds,
@@ -49,6 +57,7 @@ const nav = [
   ["/", "今天吃什么", ChefHat],
   ["/pantry", "我的厨房", Refrigerator],
   ["/discover", "发现菜谱", Compass],
+  ["/recipes", "全部教程", BookOpen],
   ["/shopping", "购物清单", ShoppingBasket],
   ["/import", "导入菜谱", Link2],
 ] as const;
@@ -273,7 +282,10 @@ export function KitchenApp() {
   const selectedId = path.startsWith("/recipe/")
     ? decodeURIComponent(path.split("/")[2])
     : null;
-  const selected = allRecipes.find((r) => r.id === selectedId);
+  // Catalog URL deduplication must not hide a device-only snapshot opened by ID.
+  const selected = [...saved, ...online, ...verifiedRecipes].find(
+    (r) => r.id === selectedId && canDisplayRecipe(r),
+  );
   const servings =
     servingChoice?.id === selectedId
       ? servingChoice.value
@@ -286,7 +298,8 @@ export function KitchenApp() {
   }
   const cooking = path.endsWith("/cook");
   useEffect(() => {
-    if (!selectedId || selected) return;
+    if (!ready || !selectedId || selected || selectedId.startsWith("import:"))
+      return;
     let cancelled = false;
     fetch(`/api/recipes/${encodeURIComponent(selectedId)}`)
       .then((r) => r.json())
@@ -298,7 +311,7 @@ export function KitchenApp() {
     return () => {
       cancelled = true;
     };
-  }, [selectedId, selected]);
+  }, [ready, selectedId, selected]);
   async function searchOnline() {
     setLoading(true);
     setWarning("");
@@ -443,12 +456,7 @@ export function KitchenApp() {
   const matches = allRecipes
     .filter(
       (r) =>
-        !(
-          sourceFilter === "为我推荐" &&
-          mode === "现在就能做" &&
-          pantry.length &&
-          !onlyFavorites
-        ) || candidates.has(r.id),
+        !(sourceFilter === "为我推荐" && pantry.length) || candidates.has(r.id),
     )
     .filter(
       (r) =>
@@ -461,29 +469,19 @@ export function KitchenApp() {
         (!equipment || r.equipment.includes(equipment)) &&
         (!onlyFavorites || favorites.includes(r.id)) &&
         (sourceFilter === "为我推荐" ||
-          (sourceFilter === "已验证菜谱" &&
-            r.provenance.type !== "USER_IMPORTED") ||
           (sourceFilter === "在线菜谱" && r.sourceProvider === "themealdb") ||
           (sourceFilter === "我的导入" &&
             r.provenance.type === "USER_IMPORTED")),
     )
     .map((recipe) => ({ recipe, match: matchRecipe(recipe, pantry) }))
-    .filter(({ match, recipe }) =>
-      sourceFilter !== "为我推荐" || onlyFavorites
-        ? true
-        : mode === "现在就能做"
-          ? match.missingCore === 0
-          : mode === "只差一样"
-            ? match.missingCore === 1
-            : mode === "只差两样"
-              ? match.missingCore === 2
-              : mode === "快手菜"
-                ? recipe.totalTime !== null && recipe.totalTime <= 30
-                : true,
+    .filter(
+      ({ recipe }) =>
+        sourceFilter !== "为我推荐" ||
+        matchesRecommendationMode(recipe, pantry, mode),
     )
     .sort(
       (a, b) =>
-        a.match.missingCore - b.match.missingCore ||
+        (mode === "最匹配" ? 0 : a.match.missingCore - b.match.missingCore) ||
         b.match.score - a.match.score ||
         b.match.selectedIngredientUsage - a.match.selectedIngredientUsage ||
         Number(canCookRecipe(b.recipe)) - Number(canCookRecipe(a.recipe)),
@@ -499,7 +497,7 @@ export function KitchenApp() {
       {matches
         .slice(0, limit ?? visibleRecipes)
         .map(({ recipe: r, match: m }) => (
-          <article className="recipe-card" key={r.id}>
+          <article className="recipe-card" key={r.id} data-recipe-id={r.id}>
             <button
               className="image-button"
               onClick={() => openRecipe(r)}
@@ -652,6 +650,9 @@ export function KitchenApp() {
                 <a href="#ingredients" className="primary">
                   <Plus size={18} /> 添加我的食材
                 </a>
+                <Link href="/recipes" className="text-link hero-browse">
+                  浏览全部教程 <ArrowRight size={16} />
+                </Link>
                 <div className="hero-note">
                   <Leaf size={15} /> 用好每一份食材，不浪费每一份美好
                 </div>
@@ -724,6 +725,9 @@ export function KitchenApp() {
                 <Link href="/discover" className="primary full">
                   看看我能做什么 <ArrowRight size={18} />
                 </Link>
+                <Link href="/recipes" className="secondary full">
+                  浏览全部教程
+                </Link>
                 <span className="tiny">点选食材，查看真实来源</span>
               </aside>
             </div>
@@ -734,8 +738,8 @@ export function KitchenApp() {
                   <h2>今天，试试这几道</h2>
                   <p>根据你的厨房食材，为你挑选。</p>
                 </div>
-                <Link href="/discover" className="text-link">
-                  查看全部菜谱 <ArrowRight size={16} />
+                <Link href="/recipes" className="text-link">
+                  查看全部教程 <ArrowRight size={16} />
                 </Link>
               </div>
               {pantry.length ? (
@@ -749,6 +753,9 @@ export function KitchenApp() {
               )}
             </section>
           </>
+        )}
+        {path === "/recipes" && (
+          <AllRecipesPage recipes={allRecipes} onOpen={openRecipe} />
         )}
         {path === "/pantry" && (
           <PantryPageView
@@ -893,6 +900,19 @@ export function KitchenApp() {
             <span>{label}</span>
           </Link>
         ))}
+        <details className="mobile-more">
+          <summary>
+            <Menu size={21} />
+            <span>更多</span>
+          </summary>
+          <div>
+            {nav.slice(4).map(([href, label]) => (
+              <Link href={href} key={href}>
+                {label}
+              </Link>
+            ))}
+          </div>
+        </details>
       </div>
     </>
   );

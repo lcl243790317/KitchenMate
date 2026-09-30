@@ -4,6 +4,7 @@ import {
   normalizeIngredientText,
 } from "./ingredients";
 import type { Recipe, PantryItem, RecipeIngredient } from "./model";
+import recipeAliases from "@/data/recipe-search-aliases.json";
 export function selectedIngredientIds(pantry: PantryItem[]) {
   const ids = new Set<string>();
   for (const item of pantry) {
@@ -72,7 +73,7 @@ function searchText(recipe: Recipe) {
   const text = normalizeIngredientText(
     [
       recipe.title,
-      recipe.title.replaceAll("西红柿", "番茄").replaceAll("鸡蛋", "蛋"),
+      ...((recipeAliases as Record<string, string[]>)[recipe.title] ?? []),
       recipe.description,
       recipe.cuisine,
       recipe.category,
@@ -111,4 +112,19 @@ export function searchRecipe(r: Recipe, q: string) {
         (!remaining || indexed.includes(remaining))
       );
     });
+}
+
+export function matchesRecommendationMode(
+  recipe: Recipe,
+  pantry: PantryItem[],
+  mode: string,
+) {
+  const match = matchRecipe(recipe, pantry);
+  if (match.selectedIngredientUsage === 0) return false;
+  if (mode === "现在就能做") return match.missingCore === 0;
+  if (mode === "只差一样") return match.missingCore === 1;
+  if (mode === "只差两样") return match.missingCore === 2;
+  if (mode === "快手菜")
+    return recipe.totalTime !== null && recipe.totalTime <= 30;
+  return true;
 }

@@ -17,7 +17,8 @@
     "recipes:coverage": "tsx scripts/recipes-coverage.ts",
     "recipes:audit": "tsx scripts/audit-local-recipes.ts",
     "recipes:verify": "tsx scripts/verify-recipe-sources.ts",
-    "recipes:verify-imports": "tsx scripts/verify-import-examples.ts"
+    "recipes:verify-imports": "tsx scripts/verify-import-examples.ts",
+    "test:smoke": "playwright test tests/e2e/smoke.spec.ts"
   },
   "dependencies": {
     "cheerio": "1.2.0",
