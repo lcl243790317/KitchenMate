@@ -49,5 +49,10 @@ Visible Chrome review at 390px inspected home, Pantry, Discover, All Recipes, de
 - CI: `.github/workflows/ci.yml` runs lint, generated route types/typecheck, unit tests, offline recipe validation, production build, Chromium installation and the 5 browser smoke scenarios.
 - Smoke starts its own local production server in CI. It does not use TheMealDB or live external recipe pages.
 - Source verification remains a separate manual workflow and now also runs monthly at 08:00 UTC on day 1. It uploads reports; it does not commit changes or delete recipes.
-- Phase 3.1 GitHub CI and Railway production acceptance: pending the commit of this report. Deployment is gated on a successful CI run. The final release record will be appended after actual production verification.
+- Phase 3.1 implementation commit `901c359d5d1b7d6c8d69f5e316a05ffd26f54bb6`: [GitHub Actions 36669660866](https://github.com/lcl243790317/KitchenMate/actions/runs/36669660866) completed SUCCESS, including all 5 Chromium smoke scenarios.
+- Railway deployment `ab70aa1f-daaa-44b7-8fc4-b596ddbc6f73` reached SUCCESS for that commit on 2026-09-30. No project, service or domain was recreated.
+- Production Chrome E2E: **19 passed**, including all three real external imports (Budget Bytes garlic noodles, BBC brownies, Gimme Some Oven fried rice), backup, shopping, offline recovery and the 5 Phase 3.1 smoke scenarios.
+- Production health returned HTTP 200 with status=ok. Production recipe endpoint returned 365 OPEN_LICENSE and 5 SOURCE_LINKED records.
+- Visible production Chrome at 390px inspected home, Pantry, Discover, catalog, source detail and cooking. The review identified the pre-existing horizontally scrolling recommendation tabs; the follow-up CSS wraps them and the smoke now asserts the tab strip itself does not overflow.
+- The release follow-up retains the same application behavior, adds that layout correction and this observed production record. Every follow-up is also gated on CI before deployment; exact final commit/deployment identifiers are recorded in the delivery report and Railway deployment history.
 - Production target remains https://kitchenmate-production.up.railway.app/ using the existing KitchenMate project/service/domain.

@@ -29,11 +29,17 @@ test("primary pantry toggles directly and searches uncommon vocabulary", async (
 test("all five recommendation modes remain related to selected ingredients", async ({
   page,
 }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/pantry");
   await page.getByRole("button", { name: "清空厨房" }).click();
   for (const name of ["番茄", "鸡蛋"])
     await page.getByRole("button", { name, exact: true }).click();
   await page.getByRole("link", { name: "看看我能做什么" }).click();
+  expect(
+    await page
+      .locator(".recommend-tabs")
+      .evaluate((el) => el.scrollWidth <= el.clientWidth),
+  ).toBe(true);
   for (const mode of [
     "现在就能做",
     "只差一样",
@@ -151,27 +157,25 @@ test("device-only imported recipe waits for hydration and never calls server fal
     provenance: { ...recipe.provenance, type: "USER_IMPORTED" },
   };
   await page.goto("/pantry");
-  await page
-    .getByLabel("选择 KitchenMate 备份")
-    .setInputFiles({
-      name: "backup.json",
-      mimeType: "application/json",
-      buffer: Buffer.from(
-        JSON.stringify({
-          format: "kitchenmate-backup",
-          version: 3,
-          exportedAt: new Date().toISOString(),
-          data: {
-            pantry: [],
-            shopping: [],
-            saved: [imported],
-            favorites: [],
-            recentRecipeIds: [],
-            dark: false,
-          },
-        }),
-      ),
-    });
+  await page.getByLabel("选择 KitchenMate 备份").setInputFiles({
+    name: "backup.json",
+    mimeType: "application/json",
+    buffer: Buffer.from(
+      JSON.stringify({
+        format: "kitchenmate-backup",
+        version: 3,
+        exportedAt: new Date().toISOString(),
+        data: {
+          pantry: [],
+          shopping: [],
+          saved: [imported],
+          favorites: [],
+          recentRecipeIds: [],
+          dark: false,
+        },
+      }),
+    ),
+  });
   await page.getByRole("button", { name: "确认恢复" }).click();
   const fallback: string[] = [];
   page.on("request", (request) => {

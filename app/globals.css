@@ -2149,6 +2149,8 @@ footer > span {
 .mobile-more summary::-webkit-details-marker { display: none; }
 .mobile-more > div { position: absolute; bottom: 54px; right: 0; background: var(--surface, #fff); border: 1px solid var(--border, #ddd); border-radius: 12px; padding: 12px; width: 140px; box-shadow: 0 4px 20px #0002; }
 @media (max-width: 700px) {
+  .recommend-tabs { flex-wrap: wrap; overflow: visible; gap: 12px 18px; }
+  .recommend-tabs button:nth-last-child(2) { margin-left: 0; }
   .mobile-nav { grid-template-columns: repeat(5, 1fr); align-items: center; }
   .filter-panel { max-width: 100%; }
   .filter-panel label, .filter-panel select { min-width: 0; max-width: 100%; }
