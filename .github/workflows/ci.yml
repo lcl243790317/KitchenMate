@@ -1,7 +1,7 @@
 name: KitchenMate CI
 on:
   push:
-    branches: [main]
+    branches: [main, 'codex/**']
   pull_request:
 jobs:
   quality:
