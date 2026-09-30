@@ -114,10 +114,13 @@ describe("explicit recipe aliases and browsing", () => {
       provenance: { ...original.provenance, type: "FIRST_PARTY_TEST" as const },
     };
     const all = browseRecipes([...verifiedRecipes, unverified, fixture]);
-    expect(all).toHaveLength(370);
+    expect(all).toHaveLength(verifiedRecipes.length);
     expect(
       all.filter((r) => r.instructionAvailability === "source-only"),
-    ).toHaveLength(5);
+    ).toHaveLength(
+      verifiedRecipes.filter((r) => r.instructionAvailability === "source-only")
+        .length,
+    );
     expect(
       browseRecipes(all, "tomato").every((r) => searchRecipe(r, "tomato")),
     ).toBe(true);

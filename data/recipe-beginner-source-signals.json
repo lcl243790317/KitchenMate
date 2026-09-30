@@ -1,0 +1,177 @@
+[
+  {
+    "recipeId": "howtocook:e0ef10c6e905370a",
+    "sourceDifficulty": "做法极其简单",
+    "sourcePhrase": "微波炉荷包蛋是一道便捷的家常快手菜，蛋白嫩滑、蛋黄软糯，带有芝麻油的清香。鸡蛋富含优质蛋白质和卵磷脂。做法极其简单，新手也能轻松掌握，从准备到出锅仅需约 2 分钟。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/e0ef10c6e905370a.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:b13f782654bf3db8",
+    "sourceDifficulty": "对新手非常友好",
+    "sourcePhrase": "这是一道以滑嫩如布丁的口感和清雅鲜美的风味见长的家常菜，南北通吃，北方常亲切地称其为“鸡蛋糕儿”。鸡蛋富含优质蛋白和卵磷脂，是日常补充营养的便捷之选。做法只需掌握蛋水比例和小火慢蒸的诀窍，对新手非常友好，从准备到出锅通常 大约 15 分钟就能完成。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/b13f782654bf3db8.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:40b2e9e9786833ec",
+    "sourceDifficulty": "新手也能轻松",
+    "sourcePhrase": "这是一道简单快手的西式简餐，吐司夹着绵密的鸡蛋酱和咸香培根，口感软嫩又带着焦香。鸡蛋富含优质蛋白，搭配培根和黄油能快速补充能量。操作非常友好，厨房新手也能轻松驾驭，全程只需 大约 10 分钟即可完成。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/40b2e9e9786833ec.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:e21f5bfb5fe6ef44",
+    "sourceDifficulty": "做法简单",
+    "sourcePhrase": "咖喱肥牛是一道浓郁下饭的家常菜，咖喱的辛香与肥牛的脂香融合，搭配土豆、胡萝卜等蔬菜，口感绵软醇厚。富含蛋白质、维生素和钙质，荤素搭配均衡。做法简单，对新手友好，一般只需 40 分钟就能端上餐桌，很适合作为便当菜。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/e21f5bfb5fe6ef44.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:1e8e59b9e7658bad",
+    "sourceDifficulty": "做法十分简单",
+    "sourcePhrase": "肉饼炖蛋是一道咸鲜滑嫩的传统家常菜，肉饼吸饱了酱汁，鸡蛋卧在其中，口感软嫩又下饭。它富含优质蛋白质和多种氨基酸，能很好地补充体力。做法十分简单，对厨房新手非常友好，从备料到出锅大约只需要 20 分钟。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/1e8e59b9e7658bad.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:48dd3251882e1522",
+    "sourceDifficulty": "做法简单",
+    "sourcePhrase": "荷兰豆炒腊肠是一道清爽咸香的家常小炒，腊肠的油脂润着翠绿的荷兰豆，口感脆嫩不腻。荷兰豆富含优质蛋白质和多种维生素，有助于增强机体抗病能力。做法简单，几乎不需要刀工，初学者也能快速上手，从备料到出锅大约只需 15 分钟。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/48dd3251882e1522.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:8ad51751e8b63ae2",
+    "sourceDifficulty": "做法非常简单",
+    "sourcePhrase": "小米粥是一道北方常见的家常粥品，口感绵滑，米香浓郁，熬出的米油尤其养胃。它富含蛋白质、脂肪、碳水化合物和胡萝卜素，维生素 B1 含量在粮食中名列前茅，容易消化吸收。做法非常简单，新手也能轻松掌握，从烧水到出锅大约需要 30-35 分钟。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/8ad51751e8b63ae2.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:b435c11c8067498b",
+    "sourceDifficulty": "做法非常简单",
+    "sourcePhrase": "紫菜蛋花汤是一道清淡鲜美的家常汤品，属于中式简易汤菜。紫菜富含碘、钙和膳食纤维，鸡蛋提供优质蛋白质，二者搭配营养均衡。做法非常简单，对新手友好，从准备到出锅仅需约 20 分钟。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/b435c11c8067498b.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:238c08c29ddb1c4a",
+    "sourceDifficulty": "新手也能轻松",
+    "sourcePhrase": "这是一道清淡爽口的家常汤品，口味鲜美，属简易快手菜。金针菇含有丰富的氨基酸和膳食纤维，加鸡蛋还能补充优质蛋白。制作门槛极低，新手也能轻松驾驭，从备菜到出锅大约只需 10 分钟。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/238c08c29ddb1c4a.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:502a2a1b61c01bed",
+    "sourceDifficulty": "新手也能轻松",
+    "sourcePhrase": "黄瓜皮蛋汤是一道快手家常汤品，口味清淡，带着皮蛋与蒜瓣煸炒出的焦香，暖心暖胃且不油腻。黄瓜清热补水，皮蛋提供一定蛋白质，低脂少负担。做法几乎没有技术门槛，厨房新手也能轻松完成，从备料到出锅只需大约十 分钟。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/502a2a1b61c01bed.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:103a45a254561fc0",
+    "sourceDifficulty": "做法极其简单",
+    "sourcePhrase": "煮泡面加蛋是一道便捷的快手主食，口感顺滑，汤味浓郁，适合随时填饱肚子。主要提供碳水化合物和蛋白质，能快速补充能量。做法极其简单，只需烧水、煮面、打入鸡蛋煮熟，新手也能轻松掌握，全程大约 10 分钟即可完成。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/103a45a254561fc0.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:e9b1f03369e37ab3",
+    "sourceDifficulty": "对新手十分友好",
+    "sourcePhrase": "乾隆白菜是一道经典的北京风味凉菜，以手撕白菜心拌上浓稠芝麻酱汁，口感酸甜爽脆、醇厚开胃。白菜富含维生素和膳食纤维，芝麻酱则带来优质脂肪与钙质，清爽解腻又营养。全程不炒不煮，调酱拌匀即可，对新手十分友好，一般仅需 10 分钟便能端上餐桌。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/e9b1f03369e37ab3.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:9fa6e69063175a41",
+    "sourceDifficulty": "适合新手",
+    "sourcePhrase": "一道清爽解腻的家常凉菜，芝麻酱的醇厚包裹着油麦菜的脆嫩，酸甜咸香交织，非常开胃。油麦菜富含维生素和膳食纤维，芝麻酱则补充钙与健康脂肪，营养均衡。做法毫无难度，切一切、拌一拌就行，从准备到上桌只需十几分钟，特别适合新手和忙碌时快速成菜。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/9fa6e69063175a41.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:f5e44764c0542396",
+    "sourceDifficulty": "做法非常简单",
+    "sourcePhrase": "这是一道清爽开胃的家常凉菜，口感脆嫩，酸香适口。黄瓜富含水分和维生素，有助于清热解暑、美容养颜。做法非常简单，对新手友好，只需拍碎、调味、腌制 15 分钟，全程约 20 分钟即可完成。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/f5e44764c0542396.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:bf3ccf273f058637",
+    "sourceDifficulty": "做法极其简单",
+    "sourcePhrase": "这是一道湘味十足的家常快手下饭菜，酸辣鲜香，鸡蛋焦香蓬松裹满浓郁汤汁，十分开胃。鸡蛋提供优质蛋白质和卵磷脂，搭配香醋更有助于促进食欲。做法极其简单，新手友好，从准备到出锅仅需大约十分钟。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/bf3ccf273f058637.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:11b4b5d7abe0bafa",
+    "sourceDifficulty": "对新手非常友好",
+    "sourcePhrase": "洋葱炒鸡蛋是一道咸香适口、葱香浓郁的家常菜肴，鸡蛋嫩滑，洋葱清甜，属于国民下饭菜。鸡蛋富含优质蛋白质和多种维生素，洋葱含有膳食纤维和抗氧化物质，是一道营养均衡的快手菜。这道菜操作极其简单，对新手非常友好，从备料到出锅只需约 5 分钟。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/11b4b5d7abe0bafa.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:adad77ab51fa2d94",
+    "sourceDifficulty": "新手也能轻松",
+    "sourcePhrase": "炒滑蛋是一道口感嫩滑、蛋香浓郁的经典家常菜，带有淡淡的奶香。鸡蛋富含优质蛋白质和多种维生素，营养丰富，易于吸收。做法非常友好，新手也能轻松掌握，从备料到出锅只需约 5 分钟，是忙碌时快速补充能量的理想选择。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/adad77ab51fa2d94.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:c8756846df80e0f4",
+    "sourceDifficulty": "做法非常简单",
+    "sourcePhrase": "这道经典粤菜采用白灼技法，沸水快焯保留菜心的清甜与脆嫩，根茎尤为爽口，味道清淡鲜美。富含维生素 C 和膳食纤维，低脂低热量，适合追求健康饮食的人群。做法非常简单，预估难度仅两星，一般初学者只需 15 分钟即可完成，是快速补充绿叶蔬菜的理想选择。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/c8756846df80e0f4.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:26f2457ef559816f",
+    "sourceDifficulty": "新手也能轻松",
+    "sourcePhrase": "皮蛋豆腐是一道清爽开胃的凉拌家常菜，松花蛋 Q 弹滑嫩，嫩豆腐入口即化，咸香微酸的口味特别下饭。豆腐富含优质植物蛋白和钙，皮蛋则提供铁、维生素 A 等营养素，搭配食用易于消化吸收。制作过程几乎零门槛，新手也能轻松完成，从备料到上桌仅需 大约 5 分钟。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/26f2457ef559816f.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:afde2c6a34186f7e",
+    "sourceDifficulty": "对初学者比较友好",
+    "sourcePhrase": "红烧冬瓜是一道色泽红亮、香鲜味美的家常素菜，口感软糯入味，属于大众喜爱的中式烧菜。冬瓜本身富含水分、膳食纤维和维生素 C，具有清热解暑、利尿消肿的作用，搭配简单的调味料，营养又好消化。这道菜对初学者比较友好，操作步骤清晰，只需掌握好火候和调味，预计制作时长约 25 分钟。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/afde2c6a34186f7e.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:20f6144a04ec886a",
+    "sourceDifficulty": "操作简单",
+    "sourcePhrase": "菠菜炒鸡蛋是一道清淡爽口的家常快手菜，菠菜软嫩、鸡蛋鲜香，属于南北皆宜的大众风味。菠菜富含铁、叶酸和维生素，鸡蛋提供优质蛋白与卵磷脂，搭配食用有助于补血养气、增强体质。整道菜操作简单，非常适合烹饪新手，从备料到出锅大约只需 15 分钟。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/20f6144a04ec886a.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:a1b0c1fdfc06567c",
+    "sourceDifficulty": "做法非常简单",
+    "sourcePhrase": "蒜蓉空心菜是一道清脆爽口、蒜香浓郁的家常快手菜，属于典型的川式小炒风味。空心菜富含膳食纤维、维生素和钙质，有助于促进肠道蠕动。做法非常简单，对新手十分友好，从备料到出锅大约只需 15 分钟。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/a1b0c1fdfc06567c.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:2a19546cdca86a1a",
+    "sourceDifficulty": "做法简单",
+    "sourcePhrase": "一道清淡鲜美的家常汤羹，酸甜开胃，口感嫩滑。西红柿富含维生素 C 和番茄红素，搭配鸡蛋与豆腐，能补充优质蛋白，营养均衡易吸收。做法简单，只需切配翻炒和煮制，新手也能轻松掌握，从准备到出锅大约 15 分钟即可完成。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/2a19546cdca86a1a.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:9aafc1145d54a0f4",
+    "sourceDifficulty": "对新手非常友好",
+    "sourcePhrase": "蚝油生菜是一道爽口鲜香的家常菜，脆嫩的生菜淋上蒜香蚝油汁，咸中带甜，属于粤菜和川菜馆都很常见的快手素菜。富含维生素和膳食纤维，有助于促进消化。做法对新手非常友好，从洗菜到出锅大约只需 15 分钟即可完成。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/9aafc1145d54a0f4.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  },
+  {
+    "recipeId": "howtocook:9190d44233e72745",
+    "sourceDifficulty": "操作步骤简单",
+    "sourcePhrase": "酸辣开胃的经典家常菜，口感脆爽，色泽鲜亮，属于大众喜爱的快手小炒。土豆提供碳水化合物和钾元素，辣椒富含维生素 C，有助于增进食欲。操作步骤简单明了，对新手十分友好，从备料到出锅大约只需 20 分钟。",
+    "snapshotPath": "data/verified-recipes/howtocook/snapshots/9190d44233e72745.md",
+    "sourceRevision": "a2d45c6984dff9ee941da0e7c452f7965965d962"
+  }
+]

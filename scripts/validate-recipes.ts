@@ -13,9 +13,23 @@ import {
   howToCookCompletenessViolations,
 } from "../lib/howtocook-ingredient-parser";
 import { recipeSchema } from "../lib/model";
+import { validateRecipeSourcePolicy } from "../lib/recipe-source-registry";
+import wikiManifest from "../data/verified-recipes/wikibooks/manifest.json";
+import { parseWikibooks } from "../lib/wikibooks-parser";
+import beginnerEvidence from "../data/recipe-beginner-source-signals.json";
 const byId = new Map(manifest.map((m) => [m.id, m]));
 const urls = new Set();
+for (const evidence of beginnerEvidence) {
+  const source = fs.readFileSync(evidence.snapshotPath, "utf8");
+  if (
+    !source.split("##")[0].includes(evidence.sourcePhrase) ||
+    !evidence.sourcePhrase.includes(evidence.sourceDifficulty) ||
+    byId.get(evidence.recipeId)?.commit !== evidence.sourceRevision
+  )
+    throw new Error("Beginner source statement/revision mismatch");
+}
 for (const recipe of verifiedRecipes) {
+  validateRecipeSourcePolicy(recipe);
   if (!canDisplayRecipe(recipe)) throw new Error(`Unverified ${recipe.id}`);
   const url = normalizeSourceUrl(recipe.sourceUrl!);
   if (urls.has(url)) throw new Error(`Duplicate source ${url}`);
@@ -24,6 +38,30 @@ for (const recipe of verifiedRecipes) {
     if (!canCookRecipe(recipe))
       throw new Error(`Invalid tutorial ${recipe.id}`);
     const record = byId.get(recipe.id);
+    if (recipe.sourceProvider === "wikibooks") {
+      const entry = wikiManifest.find((item) => item.id === recipe.id);
+      if (!entry) throw new Error("Wikibooks snapshot missing");
+      const raw = fs.readFileSync(entry.snapshotPath, "utf8");
+      const snapshot = JSON.parse(raw);
+      if (
+        createHash("sha256").update(raw).digest("hex") !== entry.sha256 ||
+        String(snapshot.revisionId) !== recipe.provenance.sourceRevision
+      )
+        throw new Error("Wikibooks revision/checksum mismatch");
+      const parsed = parseWikibooks(snapshot.wikitext);
+      if (
+        JSON.stringify(parsed.ingredients) !==
+          JSON.stringify(recipe.ingredients) ||
+        JSON.stringify(parsed.descriptions) !==
+          JSON.stringify(recipe.instructions.map((step) => step.description))
+      )
+        throw new Error("Wikibooks source fidelity mismatch");
+      if (
+        recipe.provenance.instructionSource !== "open-license-source" ||
+        recipe.provenance.httpStatus !== 200
+      )
+        throw new Error("Wikibooks verification missing");
+    }
     if (record) {
       assertAtomicHowToCookIngredients(recipe.ingredients);
       const source = fs.readFileSync(record.snapshotPath, "utf8");
@@ -48,6 +86,30 @@ for (const recipe of verifiedRecipes) {
     }
   } else if (recipe.instructions.length)
     throw new Error("Source-only record has instructions");
+  if (
+    recipe.instructionAvailability === "source-only" &&
+    ["Budget Bytes", "Love and Lemons"].includes(recipe.sourceName)
+  ) {
+    const snapshot = JSON.parse(
+      fs.readFileSync(
+        `data/verified-recipes/source-linked/snapshots/${recipe.id.split(":")[1]}.json`,
+        "utf8",
+      ),
+    );
+    if (
+      snapshot.id !== recipe.id ||
+      snapshot.sourceUrl !== recipe.sourceUrl ||
+      snapshot.title !== recipe.provenance.sourceRecipeTitle ||
+      snapshot.httpStatus !== 200 ||
+      JSON.stringify(snapshot.ingredientIdentities) !==
+        JSON.stringify(recipe.ingredients)
+    )
+      throw new Error(`Source-linked factual snapshot mismatch: ${recipe.id}`);
+    if (snapshot.instructions || snapshot.image || snapshot.description)
+      throw new Error(
+        "Commercial prose/image must not enter factual snapshots",
+      );
+  }
 }
 console.log(
   `Validated ${verifiedRecipes.length} records, source identity, attribution and full instruction snapshot integrity.`,

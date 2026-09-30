@@ -1,3 +1,51 @@
+# Phase 3.1.3 — Ingredient Semantic Audit & Beginner Recipe Expansion
+
+Validation date: 2026-09-30. This section records actual local results, not assumed future CI or production results. Deployment remains gated on green GitHub Actions for the exact commit; production Chrome acceptance is run afterward and reported with the actual deployment ID. Existing Railway project/service/domain are preserved.
+
+| Check                                                      | Actual result                                                                                                      |
+| ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| pnpm lint                                                  | PASS                                                                                                               |
+| pnpm exec next typegen                                     | PASS                                                                                                               |
+| pnpm typecheck                                             | PASS                                                                                                               |
+| pnpm test                                                  | 297 PASS, 3 opt-in network tests skipped                                                                           |
+| pnpm recipes:validate                                      | 431 formal records; registry, full-instruction permission, license/revision/attribution and snapshot fidelity PASS |
+| Atomic ingredient audit                                    | 365 HowToCook; 0 violations                                                                                        |
+| Calculation completeness audit                             | 365 HowToCook; 0 high-confidence omissions                                                                         |
+| Semantic audit                                             | Original 826/654 records retained; 671 unresolved calculations; 0 wrong-mapping regressions in dedicated cases     |
+| Vocabulary coverage                                        | 324/703 exact identities (previous 330); decline includes removal of unsafe substring mappings                     |
+| Primary coverage                                           | 86 ingredients; >=1 full 81, >=3 65, >=5 52, >=10 39                                                               |
+| pnpm build                                                 | PASS                                                                                                               |
+| pnpm test:smoke                                            | 15 PASS; static snapshots, no external dependency                                                                  |
+| pnpm test:e2e (local production build; OFFLINE_TESTS=true) | 26 PASS; 3 live external importer tests skipped, 29 total                                                          |
+
+## Catalog and product state
+
+370 -> 431 formal recipes (+61): HowToCook 365 full, Wikibooks 27 full, source-linked 39 (34 new). Full tutorials 392. TheMealDB formal recipes 0; Railway variable names show no THEMEALDB_API_KEY, and production test key 1 is forbidden. Production provider remains disabled. No images reused.
+
+Vocabulary 703, Primary Pantry 86, common 24, searchable 703; no default picker expansion, inventory or AI. Beginner-friendly 51; explicit total time <=30 min 29; <=8 non-staple ingredients 300 (this count alone does not confer beginner status). Twenty-five existing HowToCook recipes carry pinned, verbatim beginner-friendly source statements, without changing original recipe metadata or instructions. Wikibooks difficulty 1/2 follows the official Recipe summary template Very Easy/Easy scale. Missing/range time remains null.
+
+/recipes adds 简单易做 and 30分钟内 filters with URL/session/back restoration; 24-item batches remain. Chinese translated Wikibooks titles, original English titles and ingredient aliases are searchable. CC BY-SA notices, contributor credit and exact revision links appear in detail; source steps remain original English. No translated instructions, invented quantities, conversions or safety temperatures.
+
+## Semantic integrity
+
+60 explicit identity/preparation aliases; 0 new vocabulary entries. HowToCook substring fallback removed: millet vs 小米辣, egg vs egg yolk/white, pasta vs pasta sauce, steak vs steak seasoning, and sauces/oils remain distinct or unknown. Five exact equipment names/forms have exclusions with regression tests; pot mentions inside ingredient notes are not classified as tools. Two source-operation-explicit overrides add missing oil in 地三鲜 and water in 红烧鸡翅, with null quantities and verbatim source evidence.
+
+Calculations: 826 -> 671; 146 reliably resolved original fragments. Operation candidates 654 -> 733; original classifications and evidence retained, ambiguous candidates remain audit-only. Unsafe material mappings returning to unknown can increase operation candidates. Current unknown HowToCook rows: 626. Completeness: 0. 香菇滑鸡 remains 12; 新疆大盘鸡 remains 16; garlic alone matches only garlic; light soy does not own dark soy.
+
+## Sources, offline CI and licensing
+
+HowToCook upstream currently equals existing pin a2d45c6984dff9ee941da0e7c452f7965965d962; no source text/pin changes. Dedicated deterministic Wikibooks builder uses official MediaWiki exact-revision snapshots; offline rebuild verifies SHA-256, and unsupported source structures are deferred. Full commercial prose/instructions/images are forbidden by the source registry. Committed source-linked snapshots contain factual metadata only.
+
+Recipe content CC BY-SA rights are isolated from app licensing, including title translations and formatting adaptation. Images require separate metadata/license checks; this release uses placeholders. See RECIPE_LICENSES.md. Manual/monthly source verification produces RECIPE_SOURCE_CHANGES.md and never automatically replaces instructions or deletes recipes. Ordinary CI reads committed snapshots and runs registry/license/Wikibooks, atomic/completeness/semantic, coverage/primary coverage, build and browser smoke checks.
+
+## Actual browser regressions
+
+Local production build tested Pantry direct toggles, all recommendation modes, all tutorials, beginner/quick filtering, Chinese search, new licensed detail/cooking, source-only no cooking, browser/detail Back at desktop/390px, import hydration without API 404, Shopping, Backup/migration, offline service worker, Dapan and mushroom chicken. No horizontal overflow. Three live commercial importer flows are reserved for production opt-in Chrome verification.
+
+## Historical Phase 3.1.2 validation
+
+The following is the previous release record, not this release's counts:
+
 # Phase 3.1.2 — Complete Ingredient Sources & Browse State Restoration
 
 Validation date: 2026-09-30. This correctness fix uses the existing 365 local HowToCook snapshots at pinned commit `a2d45c6984dff9ee941da0e7c452f7965965d962`. No live source rebuild, instruction/title/URL changes or catalog expansion. All non-ingredient fields remain equal to the SHA256 baseline.

@@ -1,0 +1,41 @@
+{
+  "id": "source:5124834135d4b2cd87009326",
+  "sourceUrl": "https://www.budgetbytes.com/oven-roasted-frozen-broccoli/",
+  "title": "Oven Roasted Frozen Broccoli",
+  "rawIngredientFacts": [
+    "1/2 lb. frozen broccoli florets  ($1.00)",
+    "1 Tbsp olive oil  ($0.16)",
+    "1/2 Tbsp Montreal steak seasoning  ($0.07)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "unknown:1/2 lb. frozen broccoli florets  ($1.00)",
+      "originalText": "1/2 lb. frozen broccoli florets  ($1.00)",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:橄榄油",
+      "originalText": "1 Tbsp olive oil  ($0.16)",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1/2 Tbsp Montreal steak seasoning  ($0.07)",
+      "originalText": "1/2 Tbsp Montreal steak seasoning  ($0.07)",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 35,
+  "sourceInstructionCount": 3,
+  "lastVerifiedAt": "2026-09-30T15:57:42.107Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

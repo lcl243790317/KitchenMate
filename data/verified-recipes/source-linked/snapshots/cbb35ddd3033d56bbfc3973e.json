@@ -1,0 +1,86 @@
+{
+  "id": "source:cbb35ddd3033d56bbfc3973e",
+  "sourceUrl": "https://www.loveandlemons.com/garlic-bread/",
+  "title": "Garlic Bread",
+  "rawIngredientFacts": [
+    "½ cup unsalted butter (1 stick, at room temperature)",
+    "1 tablespoon finely chopped fresh parsley or chives (plus more for garnish)",
+    "2  garlic cloves (grated)",
+    "½ teaspoon sea salt",
+    "1 (15-ounce) loaf French bread (or Italian bread or baguette)",
+    "2 tablespoons grated Parmesan cheese",
+    "Flaky sea salt",
+    "Red pepper flakes (optional)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "butter",
+      "originalText": "½ cup unsalted butter (1 stick, at room temperature)",
+      "quantity": 0.5,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1 tablespoon finely chopped fresh parsley or chives (plus more for garnish)",
+      "originalText": "1 tablespoon finely chopped fresh parsley or chives (plus more for garnish)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "garlic",
+      "originalText": "2  garlic cloves (grated)",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:海盐",
+      "originalText": "½ teaspoon sea salt",
+      "quantity": 0.5,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1 (15-ounce) loaf French bread (or Italian bread or baguette)",
+      "originalText": "1 (15-ounce) loaf French bread (or Italian bread or baguette)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:2 tablespoons grated Parmesan cheese",
+      "originalText": "2 tablespoons grated Parmesan cheese",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:Flaky sea salt",
+      "originalText": "Flaky sea salt",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:Red pepper flakes (optional)",
+      "originalText": "Red pepper flakes (optional)",
+      "quantity": null,
+      "unit": "",
+      "optional": true,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 20,
+  "sourceInstructionCount": 4,
+  "lastVerifiedAt": "2026-09-30T15:44:32.666Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

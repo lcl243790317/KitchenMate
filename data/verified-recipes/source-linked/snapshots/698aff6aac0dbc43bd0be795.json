@@ -1,0 +1,122 @@
+{
+  "id": "source:698aff6aac0dbc43bd0be795",
+  "sourceUrl": "https://www.budgetbytes.com/chicken-fried-rice/",
+  "title": "Chicken Fried Rice",
+  "rawIngredientFacts": [
+    "2 cloves garlic, minced ($0.16)",
+    "1 tsp grated fresh ginger ($0.10)",
+    "3  green onions, sliced ($0.30)",
+    "1  carrot, diced small ($0.16)",
+    "1  red bell pepper, diced ($1.50)",
+    "1 cup frozen peas ($0.50)",
+    "1  large boneless skinless chicken breast ($2.62)",
+    "2  large eggs ($0.46)",
+    "3 Tbsp cooking oil, divided ($0.13)",
+    "3 Tbsp toasted sesame oil ($0.96)",
+    "3 Tbsp soy sauce ($0.15)",
+    "3 cups cooked and cooled rice ($0.62)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "garlic",
+      "originalText": "2 cloves garlic, minced ($0.16)",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "ginger",
+      "originalText": "1 tsp grated fresh ginger ($0.10)",
+      "quantity": 1,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "scallion",
+      "originalText": "3  green onions, sliced ($0.30)",
+      "quantity": 3,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "carrot",
+      "originalText": "1  carrot, diced small ($0.16)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:红椒",
+      "originalText": "1  red bell pepper, diced ($1.50)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:速冻豌豆",
+      "originalText": "1 cup frozen peas ($0.50)",
+      "quantity": 1,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "chicken-breast",
+      "originalText": "1  large boneless skinless chicken breast ($2.62)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "egg",
+      "originalText": "2  large eggs ($0.46)",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "oil",
+      "originalText": "3 Tbsp cooking oil, divided ($0.13)",
+      "quantity": 3,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:香油",
+      "originalText": "3 Tbsp toasted sesame oil ($0.96)",
+      "quantity": 3,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:普通酱油",
+      "originalText": "3 Tbsp soy sauce ($0.15)",
+      "quantity": 3,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:3 cups cooked and cooled rice ($0.62)",
+      "originalText": "3 cups cooked and cooled rice ($0.62)",
+      "quantity": 3,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 35,
+  "sourceInstructionCount": 7,
+  "lastVerifiedAt": "2026-09-30T15:44:15.860Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

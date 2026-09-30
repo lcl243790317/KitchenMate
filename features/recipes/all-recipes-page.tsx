@@ -2,7 +2,12 @@
 import { useEffect, useLayoutEffect, useState } from "react";
 import type { Recipe } from "@/lib/model";
 import { ingredientName } from "@/lib/ingredients";
-import { browseCategory, browseRecipes } from "@/lib/recipe-browse";
+import {
+  browseCategory,
+  browseRecipes,
+  browseSource,
+} from "@/lib/recipe-browse";
+import { beginnerSignals } from "@/lib/beginner-recipes";
 import { canDisplayRecipe } from "@/lib/recipe-trust";
 import {
   takeBrowseState,
@@ -16,6 +21,8 @@ type BrowseState = {
   category: string;
   source: string;
   limit: number;
+  beginner: boolean;
+  quick: boolean;
 };
 
 export function AllRecipesPage({
@@ -25,9 +32,15 @@ export function AllRecipesPage({
   recipes: Recipe[];
   onOpen: (recipe: Recipe) => void;
 }) {
-  const [{ query, category, source, limit }, setBrowse] = useState<BrowseState>(
-    { query: "", category: "", source: "", limit: 24 },
-  );
+  const [{ query, category, source, limit, beginner, quick }, setBrowse] =
+    useState<BrowseState>({
+      query: "",
+      category: "",
+      source: "",
+      limit: 24,
+      beginner: false,
+      quick: false,
+    });
   const [position, setPosition] = useState<BrowsePosition | null>(null);
   useEffect(() => {
     const frame = requestAnimationFrame(() => {
@@ -39,6 +52,8 @@ export function AllRecipesPage({
           category: params.get("category") ?? "",
           source: params.get("source") ?? "",
           limit: 24,
+          beginner: params.get("beginner") === "true",
+          quick: params.get("quick") === "true",
         },
       );
       if (restored) setPosition(restored);
@@ -53,24 +68,45 @@ export function AllRecipesPage({
     [position],
   );
   function changeFilters(update: Partial<BrowseState>) {
-    const next = { query, category, source, limit: 24, ...update };
+    const next = {
+      query,
+      category,
+      source,
+      beginner,
+      quick,
+      limit: 24,
+      ...update,
+    };
     setBrowse(next);
     replaceBrowseQuery({
       q: next.query,
       category: next.category,
       source: next.source,
+      beginner: next.beginner ? "true" : "",
+      quick: next.quick ? "true" : "",
     });
   }
   function open(recipe: Recipe) {
-    saveBrowseState("/recipes", { query, category, source, limit }, recipe.id);
+    saveBrowseState(
+      "/recipes",
+      { query, category, source, limit, beginner, quick },
+      recipe.id,
+    );
     onOpen(recipe);
   }
   const catalog = recipes.filter(canDisplayRecipe);
-  const results = browseRecipes(catalog, query, category, source);
+  const results = browseRecipes(
+    catalog,
+    query,
+    category,
+    source,
+    beginner,
+    quick,
+  );
   const categories = [...new Set(catalog.map(browseCategory))].sort((a, b) =>
     a.localeCompare(b, "zh-CN"),
   );
-  const sources = [...new Set(catalog.map((r) => r.sourceName))].sort();
+  const sources = [...new Set(catalog.map(browseSource))].sort();
   return (
     <>
       <section className="page-heading">
@@ -90,6 +126,22 @@ export function AllRecipesPage({
         />
       </div>
       <div className="filter-panel">
+        <label title="优先来源明确标注 Easy / Very Easy；其他教程根据步骤、用时和食材数量归类。">
+          <input
+            type="checkbox"
+            checked={beginner}
+            onChange={(e) => changeFilters({ beginner: e.target.checked })}
+          />{" "}
+          简单易做
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            checked={quick}
+            onChange={(e) => changeFilters({ quick: e.target.checked })}
+          />{" "}
+          30分钟内
+        </label>
         <label>
           类别
           <select
@@ -120,7 +172,10 @@ export function AllRecipesPage({
             ))}
           </select>
         </label>
-        <span className="subtle">按菜名排序 · 分类沿用原始来源</span>
+        <span className="subtle">
+          {beginner ? "按简单程度、用时和食材数量排序" : "按菜名排序"} ·
+          分类沿用原始来源
+        </span>
       </div>
       <p className="result-count">找到 {results.length} 道教程</p>
       <div className="recipe-grid">
@@ -132,10 +187,12 @@ export function AllRecipesPage({
           >
             <div className="recipe-body">
               <small>
-                {recipe.sourceName} ·{" "}
+                {browseSource(recipe)} ·{" "}
                 {recipe.instructionAvailability === "source-only"
                   ? "原站教程"
-                  : "完整教程"}
+                  : recipe.provenance.type === "OPEN_LICENSE"
+                    ? "开放授权 · 完整教程"
+                    : "API 来源 · 完整教程"}
               </small>
               <button className="recipe-title" onClick={() => open(recipe)}>
                 {recipe.title}
@@ -146,6 +203,11 @@ export function AllRecipesPage({
                 )}
                 {recipe.difficulty !== "未知" && (
                   <span>{recipe.difficulty}</span>
+                )}
+                {beginnerSignals(recipe).beginnerFriendly && (
+                  <span title={beginnerSignals(recipe).classificationBasis}>
+                    简单易做
+                  </span>
                 )}
               </div>
               <p className="browse-ingredients">

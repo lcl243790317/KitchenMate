@@ -1,0 +1,86 @@
+{
+  "id": "source:486f96f7a0f372cfab612398",
+  "sourceUrl": "https://www.loveandlemons.com/sauteed-mushrooms/",
+  "title": "Sauteed Mushrooms",
+  "rawIngredientFacts": [
+    "2 tablespoons extra-virgin olive oil",
+    "16 ounces mixed mushrooms (sliced or chopped)",
+    "Heaping ¼ teaspoon sea salt",
+    "1 tablespoon rice vinegar",
+    "1 tablespoon tamari",
+    "1  garlic clove (minced or grated)",
+    "1 tablespoon finely chopped fresh tarragon",
+    "Freshly ground black pepper"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "zh:橄榄油",
+      "originalText": "2 tablespoons extra-virgin olive oil",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:16 ounces mixed mushrooms (sliced or chopped)",
+      "originalText": "16 ounces mixed mushrooms (sliced or chopped)",
+      "quantity": 16,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:Heaping ¼ teaspoon sea salt",
+      "originalText": "Heaping ¼ teaspoon sea salt",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:米醋",
+      "originalText": "1 tablespoon rice vinegar",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1 tablespoon tamari",
+      "originalText": "1 tablespoon tamari",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1  garlic clove (minced or grated)",
+      "originalText": "1  garlic clove (minced or grated)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1 tablespoon finely chopped fresh tarragon",
+      "originalText": "1 tablespoon finely chopped fresh tarragon",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:Freshly ground black pepper",
+      "originalText": "Freshly ground black pepper",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 15,
+  "sourceInstructionCount": 2,
+  "lastVerifiedAt": "2026-09-30T15:44:29.660Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

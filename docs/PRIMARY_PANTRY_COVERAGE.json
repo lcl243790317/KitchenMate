@@ -1,0 +1,870 @@
+{
+  "formalRecipes": 431,
+  "fullTutorials": 392,
+  "sourceLinked": 39,
+  "beginnerFriendly": 51,
+  "within30Minutes": 29,
+  "atMost8NonStapleIngredients": 300,
+  "primaryIngredients": 86,
+  "coveredBy1Full": 81,
+  "coveredBy3Full": 65,
+  "coveredBy5Full": 52,
+  "coveredBy10Full": 39,
+  "sourceDistribution": {
+    "howtocook": 365,
+    "wikibooks": 27,
+    "source-index": 39
+  },
+  "details": [
+    {
+      "ingredientId": "tomato",
+      "ingredient": "番茄",
+      "fullRecipeCount": 25,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 4,
+      "quickRecipeCount": 1
+    },
+    {
+      "ingredientId": "potato",
+      "ingredient": "土豆",
+      "fullRecipeCount": 28,
+      "sourceLinkedCount": 2,
+      "beginnerRecipeCount": 6,
+      "quickRecipeCount": 2
+    },
+    {
+      "ingredientId": "onion",
+      "ingredient": "洋葱",
+      "fullRecipeCount": 36,
+      "sourceLinkedCount": 2,
+      "beginnerRecipeCount": 5,
+      "quickRecipeCount": 2
+    },
+    {
+      "ingredientId": "carrot",
+      "ingredient": "胡萝卜",
+      "fullRecipeCount": 23,
+      "sourceLinkedCount": 4,
+      "beginnerRecipeCount": 4,
+      "quickRecipeCount": 4
+    },
+    {
+      "ingredientId": "cabbage",
+      "ingredient": "白菜",
+      "fullRecipeCount": 3,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 1,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:包菜",
+      "ingredient": "包菜",
+      "fullRecipeCount": 5,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 2,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:生菜",
+      "ingredient": "生菜",
+      "fullRecipeCount": 4,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 1,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:菠菜",
+      "ingredient": "菠菜",
+      "fullRecipeCount": 2,
+      "sourceLinkedCount": 2,
+      "beginnerRecipeCount": 1,
+      "quickRecipeCount": 2
+    },
+    {
+      "ingredientId": "broccoli",
+      "ingredient": "西兰花",
+      "fullRecipeCount": 2,
+      "sourceLinkedCount": 1,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 1
+    },
+    {
+      "ingredientId": "zh:花菜",
+      "ingredient": "花菜",
+      "fullRecipeCount": 3,
+      "sourceLinkedCount": 1,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:黄瓜",
+      "ingredient": "黄瓜",
+      "fullRecipeCount": 10,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 4,
+      "quickRecipeCount": 1
+    },
+    {
+      "ingredientId": "zh:茄子",
+      "ingredient": "茄子",
+      "fullRecipeCount": 9,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "pepper",
+      "ingredient": "青椒",
+      "fullRecipeCount": 22,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 1,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:西葫芦",
+      "ingredient": "西葫芦",
+      "fullRecipeCount": 2,
+      "sourceLinkedCount": 1,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 1
+    },
+    {
+      "ingredientId": "zh:南瓜",
+      "ingredient": "南瓜",
+      "fullRecipeCount": 2,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 1,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:冬瓜",
+      "ingredient": "冬瓜",
+      "fullRecipeCount": 5,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 1,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:白萝卜",
+      "ingredient": "白萝卜",
+      "fullRecipeCount": 2,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:莲藕",
+      "ingredient": "莲藕",
+      "fullRecipeCount": 1,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:甜玉米",
+      "ingredient": "甜玉米",
+      "fullRecipeCount": 0,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:芹菜",
+      "ingredient": "芹菜",
+      "fullRecipeCount": 7,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:韭菜",
+      "ingredient": "韭菜",
+      "fullRecipeCount": 3,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:香菜",
+      "ingredient": "香菜",
+      "fullRecipeCount": 28,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 1,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "mushroom",
+      "ingredient": "蘑菇",
+      "fullRecipeCount": 1,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:香菇",
+      "ingredient": "香菇",
+      "fullRecipeCount": 7,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:金针菇",
+      "ingredient": "金针菇",
+      "fullRecipeCount": 4,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 1,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:杏鲍菇",
+      "ingredient": "杏鲍菇",
+      "fullRecipeCount": 0,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:黑木耳",
+      "ingredient": "黑木耳",
+      "fullRecipeCount": 4,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "pork",
+      "ingredient": "猪肉",
+      "fullRecipeCount": 9,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:五花肉",
+      "ingredient": "五花肉",
+      "fullRecipeCount": 23,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "ribs",
+      "ingredient": "排骨",
+      "fullRecipeCount": 9,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "beef",
+      "ingredient": "牛肉",
+      "fullRecipeCount": 9,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:牛腩",
+      "ingredient": "牛腩",
+      "fullRecipeCount": 3,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "bacon",
+      "ingredient": "培根",
+      "fullRecipeCount": 6,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 3,
+      "quickRecipeCount": 1
+    },
+    {
+      "ingredientId": "zh:火腿",
+      "ingredient": "火腿",
+      "fullRecipeCount": 3,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "chicken",
+      "ingredient": "鸡肉",
+      "fullRecipeCount": 7,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 2,
+      "quickRecipeCount": 2
+    },
+    {
+      "ingredientId": "chicken-breast",
+      "ingredient": "鸡胸肉",
+      "fullRecipeCount": 2,
+      "sourceLinkedCount": 1,
+      "beginnerRecipeCount": 1,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "chicken-thigh",
+      "ingredient": "鸡腿",
+      "fullRecipeCount": 10,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "wings",
+      "ingredient": "鸡翅",
+      "fullRecipeCount": 3,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:鸭肉",
+      "ingredient": "鸭肉",
+      "fullRecipeCount": 2,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "fish",
+      "ingredient": "鱼",
+      "fullRecipeCount": 1,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "salmon",
+      "ingredient": "三文鱼",
+      "fullRecipeCount": 1,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "shrimp",
+      "ingredient": "虾",
+      "fullRecipeCount": 4,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:蛤蜊",
+      "ingredient": "蛤蜊",
+      "fullRecipeCount": 0,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:带鱼",
+      "ingredient": "带鱼",
+      "fullRecipeCount": 0,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "egg",
+      "ingredient": "鸡蛋",
+      "fullRecipeCount": 91,
+      "sourceLinkedCount": 9,
+      "beginnerRecipeCount": 18,
+      "quickRecipeCount": 6
+    },
+    {
+      "ingredientId": "milk",
+      "ingredient": "牛奶",
+      "fullRecipeCount": 25,
+      "sourceLinkedCount": 4,
+      "beginnerRecipeCount": 6,
+      "quickRecipeCount": 3
+    },
+    {
+      "ingredientId": "butter",
+      "ingredient": "黄油",
+      "fullRecipeCount": 28,
+      "sourceLinkedCount": 13,
+      "beginnerRecipeCount": 11,
+      "quickRecipeCount": 10
+    },
+    {
+      "ingredientId": "cheese",
+      "ingredient": "芝士",
+      "fullRecipeCount": 5,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 1,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "cream",
+      "ingredient": "淡奶油",
+      "fullRecipeCount": 10,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 1,
+      "quickRecipeCount": 1
+    },
+    {
+      "ingredientId": "tofu",
+      "ingredient": "豆腐",
+      "fullRecipeCount": 6,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 1,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:腐竹",
+      "ingredient": "腐竹",
+      "fullRecipeCount": 1,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:豆干",
+      "ingredient": "豆干",
+      "fullRecipeCount": 1,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "rice",
+      "ingredient": "米饭",
+      "fullRecipeCount": 10,
+      "sourceLinkedCount": 3,
+      "beginnerRecipeCount": 1,
+      "quickRecipeCount": 3
+    },
+    {
+      "ingredientId": "zh:大米",
+      "ingredient": "大米",
+      "fullRecipeCount": 4,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "noodles",
+      "ingredient": "面条",
+      "fullRecipeCount": 4,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "pasta",
+      "ingredient": "意大利面",
+      "fullRecipeCount": 4,
+      "sourceLinkedCount": 1,
+      "beginnerRecipeCount": 2,
+      "quickRecipeCount": 2
+    },
+    {
+      "ingredientId": "flour",
+      "ingredient": "面粉",
+      "fullRecipeCount": 19,
+      "sourceLinkedCount": 1,
+      "beginnerRecipeCount": 1,
+      "quickRecipeCount": 1
+    },
+    {
+      "ingredientId": "bread",
+      "ingredient": "吐司",
+      "fullRecipeCount": 5,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 3,
+      "quickRecipeCount": 1
+    },
+    {
+      "ingredientId": "zh:小米",
+      "ingredient": "小米",
+      "fullRecipeCount": 2,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 1,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:乌冬面",
+      "ingredient": "乌冬面",
+      "fullRecipeCount": 0,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "scallion",
+      "ingredient": "葱",
+      "fullRecipeCount": 119,
+      "sourceLinkedCount": 7,
+      "beginnerRecipeCount": 10,
+      "quickRecipeCount": 6
+    },
+    {
+      "ingredientId": "ginger",
+      "ingredient": "姜",
+      "fullRecipeCount": 120,
+      "sourceLinkedCount": 4,
+      "beginnerRecipeCount": 2,
+      "quickRecipeCount": 2
+    },
+    {
+      "ingredientId": "garlic",
+      "ingredient": "蒜",
+      "fullRecipeCount": 141,
+      "sourceLinkedCount": 17,
+      "beginnerRecipeCount": 11,
+      "quickRecipeCount": 13
+    },
+    {
+      "ingredientId": "soy-sauce",
+      "ingredient": "生抽",
+      "fullRecipeCount": 132,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 9,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "dark-soy",
+      "ingredient": "老抽",
+      "fullRecipeCount": 70,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 1,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:普通酱油",
+      "ingredient": "普通酱油",
+      "fullRecipeCount": 38,
+      "sourceLinkedCount": 8,
+      "beginnerRecipeCount": 3,
+      "quickRecipeCount": 7
+    },
+    {
+      "ingredientId": "vinegar",
+      "ingredient": "醋",
+      "fullRecipeCount": 18,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 3,
+      "quickRecipeCount": 1
+    },
+    {
+      "ingredientId": "oyster-sauce",
+      "ingredient": "蚝油",
+      "fullRecipeCount": 54,
+      "sourceLinkedCount": 2,
+      "beginnerRecipeCount": 7,
+      "quickRecipeCount": 3
+    },
+    {
+      "ingredientId": "wine",
+      "ingredient": "料酒",
+      "fullRecipeCount": 86,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 3,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "salt",
+      "ingredient": "盐",
+      "fullRecipeCount": 219,
+      "sourceLinkedCount": 13,
+      "beginnerRecipeCount": 34,
+      "quickRecipeCount": 12
+    },
+    {
+      "ingredientId": "sugar",
+      "ingredient": "糖",
+      "fullRecipeCount": 130,
+      "sourceLinkedCount": 1,
+      "beginnerRecipeCount": 10,
+      "quickRecipeCount": 1
+    },
+    {
+      "ingredientId": "oil",
+      "ingredient": "食用油",
+      "fullRecipeCount": 156,
+      "sourceLinkedCount": 7,
+      "beginnerRecipeCount": 14,
+      "quickRecipeCount": 4
+    },
+    {
+      "ingredientId": "black-pepper",
+      "ingredient": "黑胡椒",
+      "fullRecipeCount": 49,
+      "sourceLinkedCount": 7,
+      "beginnerRecipeCount": 12,
+      "quickRecipeCount": 8
+    },
+    {
+      "ingredientId": "chili",
+      "ingredient": "辣椒",
+      "fullRecipeCount": 16,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "douban",
+      "ingredient": "豆瓣酱",
+      "fullRecipeCount": 25,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "starch",
+      "ingredient": "淀粉",
+      "fullRecipeCount": 35,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 2,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:干辣椒",
+      "ingredient": "干辣椒",
+      "fullRecipeCount": 27,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 1,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:花椒",
+      "ingredient": "花椒",
+      "fullRecipeCount": 25,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:八角",
+      "ingredient": "八角",
+      "fullRecipeCount": 31,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:香油",
+      "ingredient": "香油",
+      "fullRecipeCount": 27,
+      "sourceLinkedCount": 8,
+      "beginnerRecipeCount": 5,
+      "quickRecipeCount": 6
+    },
+    {
+      "ingredientId": "zh:冰糖",
+      "ingredient": "冰糖",
+      "fullRecipeCount": 23,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:鸡精",
+      "ingredient": "鸡精",
+      "fullRecipeCount": 38,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 3,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:白胡椒",
+      "ingredient": "白胡椒",
+      "fullRecipeCount": 16,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 1,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:柠檬",
+      "ingredient": "柠檬",
+      "fullRecipeCount": 10,
+      "sourceLinkedCount": 3,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 2
+    },
+    {
+      "ingredientId": "zh:香蕉",
+      "ingredient": "香蕉",
+      "fullRecipeCount": 1,
+      "sourceLinkedCount": 2,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:苹果",
+      "ingredient": "苹果",
+      "fullRecipeCount": 1,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    }
+  ],
+  "weakest": [
+    {
+      "ingredientId": "zh:带鱼",
+      "ingredient": "带鱼",
+      "fullRecipeCount": 0,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:蛤蜊",
+      "ingredient": "蛤蜊",
+      "fullRecipeCount": 0,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:甜玉米",
+      "ingredient": "甜玉米",
+      "fullRecipeCount": 0,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:乌冬面",
+      "ingredient": "乌冬面",
+      "fullRecipeCount": 0,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:杏鲍菇",
+      "ingredient": "杏鲍菇",
+      "fullRecipeCount": 0,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:豆干",
+      "ingredient": "豆干",
+      "fullRecipeCount": 1,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:腐竹",
+      "ingredient": "腐竹",
+      "fullRecipeCount": 1,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:莲藕",
+      "ingredient": "莲藕",
+      "fullRecipeCount": 1,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "mushroom",
+      "ingredient": "蘑菇",
+      "fullRecipeCount": 1,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:苹果",
+      "ingredient": "苹果",
+      "fullRecipeCount": 1,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "salmon",
+      "ingredient": "三文鱼",
+      "fullRecipeCount": 1,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:香蕉",
+      "ingredient": "香蕉",
+      "fullRecipeCount": 1,
+      "sourceLinkedCount": 2,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "fish",
+      "ingredient": "鱼",
+      "fullRecipeCount": 1,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:白萝卜",
+      "ingredient": "白萝卜",
+      "fullRecipeCount": 2,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:西葫芦",
+      "ingredient": "西葫芦",
+      "fullRecipeCount": 2,
+      "sourceLinkedCount": 1,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 1
+    },
+    {
+      "ingredientId": "broccoli",
+      "ingredient": "西兰花",
+      "fullRecipeCount": 2,
+      "sourceLinkedCount": 1,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 1
+    },
+    {
+      "ingredientId": "zh:鸭肉",
+      "ingredient": "鸭肉",
+      "fullRecipeCount": 2,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 0,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:菠菜",
+      "ingredient": "菠菜",
+      "fullRecipeCount": 2,
+      "sourceLinkedCount": 2,
+      "beginnerRecipeCount": 1,
+      "quickRecipeCount": 2
+    },
+    {
+      "ingredientId": "chicken-breast",
+      "ingredient": "鸡胸肉",
+      "fullRecipeCount": 2,
+      "sourceLinkedCount": 1,
+      "beginnerRecipeCount": 1,
+      "quickRecipeCount": 0
+    },
+    {
+      "ingredientId": "zh:南瓜",
+      "ingredient": "南瓜",
+      "fullRecipeCount": 2,
+      "sourceLinkedCount": 0,
+      "beginnerRecipeCount": 1,
+      "quickRecipeCount": 0
+    }
+  ]
+}

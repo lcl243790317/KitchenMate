@@ -1,0 +1,77 @@
+{
+  "id": "source:ee73b46d500e07ec654752f6",
+  "sourceUrl": "https://www.budgetbytes.com/roasted-broccoli-pasta-with-lemon-and-feta/",
+  "title": "Roasted Broccoli Pasta with Lemon and Feta",
+  "rawIngredientFacts": [
+    "1 lb. broccoli crowns ($1.79)",
+    "1 Tbsp olive oil ($0.16)",
+    "1 tsp steak seasoning ($0.10)",
+    "1  fresh lemon ($0.39)",
+    "8 oz. whole wheat penne pasta ($0.50)",
+    "2 Tbsp butter ($0.20)",
+    "1 oz. crumbled feta ($0.55)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "unknown:1 lb. broccoli crowns ($1.79)",
+      "originalText": "1 lb. broccoli crowns ($1.79)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:橄榄油",
+      "originalText": "1 Tbsp olive oil ($0.16)",
+      "quantity": 1,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1 tsp steak seasoning ($0.10)",
+      "originalText": "1 tsp steak seasoning ($0.10)",
+      "quantity": 1,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:柠檬",
+      "originalText": "1  fresh lemon ($0.39)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:8 oz. whole wheat penne pasta ($0.50)",
+      "originalText": "8 oz. whole wheat penne pasta ($0.50)",
+      "quantity": 8,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "butter",
+      "originalText": "2 Tbsp butter ($0.20)",
+      "quantity": 2,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1 oz. crumbled feta ($0.55)",
+      "originalText": "1 oz. crumbled feta ($0.55)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 40,
+  "sourceInstructionCount": 6,
+  "lastVerifiedAt": "2026-09-30T15:44:17.040Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

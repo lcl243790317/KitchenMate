@@ -1,0 +1,158 @@
+{
+  "id": "source:12d92c1f388f79345d768553",
+  "sourceUrl": "https://www.budgetbytes.com/pan-fried-sesame-tofu-with-broccoli/",
+  "title": "Pan Fried Sesame Tofu with Broccoli",
+  "rawIngredientFacts": [
+    "1/4 cup soy sauce ($0.20)",
+    "2 Tbsp water ($0.00)",
+    "1 Tbsp toasted sesame oil ($0.33)",
+    "2 Tbsp brown sugar ($0.08)",
+    "2 Tbsp rice vinegar ($0.22)",
+    "1 Tbsp grated fresh ginger ($0.10)",
+    "2 cloves garlic, minced ($0.16)",
+    "2 Tbsp sesame seeds ($0.15)",
+    "1 Tbsp cornstarch ($0.04)",
+    "14 oz block extra-firm tofu ($1.99)",
+    "Pinch of salt ($0.02)",
+    "2 Tbsp cornstarch ($0.08)",
+    "2 Tbsp neutral oil (vegetable, canola, peanut) ($0.04)",
+    "1/2 lb frozen broccoli florets ($1.00)",
+    "3-4  green onions, sliced ($0.23)",
+    "4 cups cooked rice ($0.88)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "zh:普通酱油",
+      "originalText": "1/4 cup soy sauce ($0.20)",
+      "quantity": 0.25,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "water",
+      "originalText": "2 Tbsp water ($0.00)",
+      "quantity": 2,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:香油",
+      "originalText": "1 Tbsp toasted sesame oil ($0.33)",
+      "quantity": 1,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:红糖",
+      "originalText": "2 Tbsp brown sugar ($0.08)",
+      "quantity": 2,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:米醋",
+      "originalText": "2 Tbsp rice vinegar ($0.22)",
+      "quantity": 2,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "ginger",
+      "originalText": "1 Tbsp grated fresh ginger ($0.10)",
+      "quantity": 1,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "garlic",
+      "originalText": "2 cloves garlic, minced ($0.16)",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:2 Tbsp sesame seeds ($0.15)",
+      "originalText": "2 Tbsp sesame seeds ($0.15)",
+      "quantity": 2,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:玉米淀粉",
+      "originalText": "1 Tbsp cornstarch ($0.04)",
+      "quantity": 1,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:14 oz block extra-firm tofu ($1.99)",
+      "originalText": "14 oz block extra-firm tofu ($1.99)",
+      "quantity": 14,
+      "unit": "oz",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:Pinch of salt ($0.02)",
+      "originalText": "Pinch of salt ($0.02)",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:玉米淀粉",
+      "originalText": "2 Tbsp cornstarch ($0.08)",
+      "quantity": 2,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:2 Tbsp neutral oil (vegetable, canola, peanut) ($0.04)",
+      "originalText": "2 Tbsp neutral oil (vegetable, canola, peanut) ($0.04)",
+      "quantity": 2,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1/2 lb frozen broccoli florets ($1.00)",
+      "originalText": "1/2 lb frozen broccoli florets ($1.00)",
+      "quantity": 0.5,
+      "unit": "lb",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "scallion",
+      "originalText": "3-4  green onions, sliced ($0.23)",
+      "quantity": 3,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "rice",
+      "originalText": "4 cups cooked rice ($0.88)",
+      "quantity": 4,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 60,
+  "sourceInstructionCount": 7,
+  "lastVerifiedAt": "2026-09-30T15:44:22.113Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

@@ -1,0 +1,86 @@
+{
+  "id": "source:2b8d454b3cd1b67335000500",
+  "sourceUrl": "https://www.loveandlemons.com/mashed-potatoes/",
+  "title": "Best Mashed Potatoes Recipe",
+  "rawIngredientFacts": [
+    "3 pounds potatoes (russet potatoes, Yukon Golds, or a mix, peeled and cut into large chunks)",
+    "3  garlic cloves",
+    "½ cup unsalted butter (1 stick, plus more for serving)",
+    "1 cup whole milk",
+    "1½ teaspoons sea salt (plus more for the cooking water)",
+    "Freshly ground black pepper",
+    "¼ to ½ cup sour cream (optional)",
+    "Chopped fresh chives (for garnish)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "potato",
+      "originalText": "3 pounds potatoes (russet potatoes, Yukon Golds, or a mix, peeled and cut into large chunks)",
+      "quantity": 3,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "garlic",
+      "originalText": "3  garlic cloves",
+      "quantity": 3,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "butter",
+      "originalText": "½ cup unsalted butter (1 stick, plus more for serving)",
+      "quantity": 0.5,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "milk",
+      "originalText": "1 cup whole milk",
+      "quantity": 1,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:海盐",
+      "originalText": "1½ teaspoons sea salt (plus more for the cooking water)",
+      "quantity": 1.5,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:Freshly ground black pepper",
+      "originalText": "Freshly ground black pepper",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:¼ to ½ cup sour cream (optional)",
+      "originalText": "¼ to ½ cup sour cream (optional)",
+      "quantity": 0.25,
+      "unit": "",
+      "optional": true,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:Chopped fresh chives (for garnish)",
+      "originalText": "Chopped fresh chives (for garnish)",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 45,
+  "sourceInstructionCount": 4,
+  "lastVerifiedAt": "2026-09-30T15:44:30.643Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

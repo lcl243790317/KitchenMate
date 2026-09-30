@@ -1,0 +1,122 @@
+{
+  "id": "source:fb13499fa7cc59add6a0c2c1",
+  "sourceUrl": "https://www.loveandlemons.com/overnight-oats-blueberry-chia-jam/",
+  "title": "Overnight Oats with Blueberry Chia Jam",
+  "rawIngredientFacts": [
+    "3 cups blueberries",
+    "2 tablespoons maple syrup",
+    "1 tablespoon fresh lemon juice",
+    "½ teaspoon vanilla extract",
+    "½ teaspoon ground cinnamon",
+    "3 tablespoons chia seeds",
+    "pinch of sea salt",
+    "½ Cup Quaker® Old Fashioned Oats",
+    "½ cup vanilla almond milk",
+    "1 tablespoon blueberry chia jam",
+    "½ teaspoon lemon zest",
+    "¼ cup blueberries"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "zh:蓝莓",
+      "originalText": "3 cups blueberries",
+      "quantity": 3,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:枫糖浆",
+      "originalText": "2 tablespoons maple syrup",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:柠檬汁",
+      "originalText": "1 tablespoon fresh lemon juice",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:香草精",
+      "originalText": "½ teaspoon vanilla extract",
+      "quantity": 0.5,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:肉桂粉",
+      "originalText": "½ teaspoon ground cinnamon",
+      "quantity": 0.5,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:3 tablespoons chia seeds",
+      "originalText": "3 tablespoons chia seeds",
+      "quantity": 3,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:pinch of sea salt",
+      "originalText": "pinch of sea salt",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:½ Cup Quaker® Old Fashioned Oats",
+      "originalText": "½ Cup Quaker® Old Fashioned Oats",
+      "quantity": 0.5,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:½ cup vanilla almond milk",
+      "originalText": "½ cup vanilla almond milk",
+      "quantity": 0.5,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1 tablespoon blueberry chia jam",
+      "originalText": "1 tablespoon blueberry chia jam",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:柠檬皮屑",
+      "originalText": "½ teaspoon lemon zest",
+      "quantity": 0.5,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:蓝莓",
+      "originalText": "¼ cup blueberries",
+      "quantity": 0.25,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": null,
+  "sourceInstructionCount": 3,
+  "lastVerifiedAt": "2026-09-30T15:44:32.023Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

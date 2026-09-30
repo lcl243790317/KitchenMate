@@ -2,6 +2,7 @@ import type { Ingredient, PantryItem } from "./model";
 import { z } from "zod";
 import catalog from "@/data/ingredients/catalog.json";
 import vocabulary from "@/data/ingredients/vocabulary.json";
+import semanticAliases from "@/data/ingredients/semantic-aliases.json";
 const rows = [
   ["tomato", "番茄", "Tomato", "西红柿|tomatoes", "蔬菜", "🍅"],
   [
@@ -284,7 +285,12 @@ export const ingredients: Ingredient[] = [
     ...item,
     displayNameEn: words[0] ?? item.displayNameEn,
     aliases: [
-      ...new Set([...item.aliases, ...words, ...(extraAliases[item.id] ?? [])]),
+      ...new Set([
+        ...item.aliases,
+        ...words,
+        ...(extraAliases[item.id] ?? []),
+        ...((semanticAliases as Record<string, string[]>)[item.id] ?? []),
+      ]),
     ],
     parentIngredientId: parentNames[item.displayNameZh],
     pantryStaple:

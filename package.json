@@ -18,10 +18,13 @@
     "recipes:audit": "tsx scripts/audit-local-recipes.ts",
     "recipes:verify": "tsx scripts/verify-recipe-sources.ts",
     "recipes:verify-imports": "tsx scripts/verify-import-examples.ts",
-    "test:smoke": "playwright test tests/e2e/smoke.spec.ts tests/e2e/navigation.spec.ts",
+    "test:smoke": "playwright test tests/e2e/smoke.spec.ts tests/e2e/navigation.spec.ts tests/e2e/expansion.spec.ts",
     "recipes:rebuild-open": "tsx scripts/build-open-catalog.ts --snapshots",
     "recipes:audit-ingredient-groups": "tsx scripts/audit-ingredient-groups.ts",
-    "recipes:audit-ingredient-completeness": "tsx scripts/audit-ingredient-completeness.ts"
+    "recipes:audit-ingredient-completeness": "tsx scripts/audit-ingredient-completeness.ts",
+    "recipes:rebuild-wikibooks": "tsx scripts/build-wikibooks-catalog.ts",
+    "recipes:audit-ingredient-semantics": "tsx scripts/audit-ingredient-semantics.ts",
+    "recipes:primary-coverage": "tsx scripts/primary-recipe-coverage.ts"
   },
   "dependencies": {
     "cheerio": "1.2.0",

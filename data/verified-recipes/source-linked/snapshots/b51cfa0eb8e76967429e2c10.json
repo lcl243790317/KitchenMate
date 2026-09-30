@@ -1,0 +1,68 @@
+{
+  "id": "source:b51cfa0eb8e76967429e2c10",
+  "sourceUrl": "https://www.loveandlemons.com/sauteed-spinach/",
+  "title": "Sautéed Spinach",
+  "rawIngredientFacts": [
+    "2 teaspoons extra-virgin olive oil",
+    "1  garlic clove (chopped)",
+    "5 ounces spinach",
+    "¼ teaspoon sea salt",
+    "Lemon wedge (for squeezing)",
+    "Freshly ground black pepper"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "zh:橄榄油",
+      "originalText": "2 teaspoons extra-virgin olive oil",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1  garlic clove (chopped)",
+      "originalText": "1  garlic clove (chopped)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:5 ounces spinach",
+      "originalText": "5 ounces spinach",
+      "quantity": 5,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:海盐",
+      "originalText": "¼ teaspoon sea salt",
+      "quantity": 0.25,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:Lemon wedge (for squeezing)",
+      "originalText": "Lemon wedge (for squeezing)",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:Freshly ground black pepper",
+      "originalText": "Freshly ground black pepper",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 5,
+  "sourceInstructionCount": 2,
+  "lastVerifiedAt": "2026-09-30T15:44:29.986Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

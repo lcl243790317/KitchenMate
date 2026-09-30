@@ -1,0 +1,59 @@
+{
+  "id": "source:dcd6bca020ad9e333117383c",
+  "sourceUrl": "https://www.loveandlemons.com/avocado-toast-recipe/",
+  "title": "Avocado Toast",
+  "rawIngredientFacts": [
+    "1  ripe avocado",
+    "Lemon wedge (for squeezing)",
+    "Sea salt",
+    "2 to 4 slices toasted bread",
+    "Desired toppings (listed above, optional)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "zh:牛油果",
+      "originalText": "1  ripe avocado",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:Lemon wedge (for squeezing)",
+      "originalText": "Lemon wedge (for squeezing)",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:海盐",
+      "originalText": "Sea salt",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:2 to 4 slices toasted bread",
+      "originalText": "2 to 4 slices toasted bread",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:Desired toppings (listed above, optional)",
+      "originalText": "Desired toppings (listed above, optional)",
+      "quantity": null,
+      "unit": "",
+      "optional": true,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 4,
+  "sourceInstructionCount": 2,
+  "lastVerifiedAt": "2026-09-30T15:44:31.690Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

@@ -1,0 +1,86 @@
+{
+  "id": "source:6af9dc13bf1921f0158c7359",
+  "sourceUrl": "https://www.budgetbytes.com/skillet-breakfast-potatoes/",
+  "title": "Skillet Breakfast Potatoes Recipe",
+  "rawIngredientFacts": [
+    "1 ½ lbs. Yukon gold potatoes ($1.80)",
+    "½  yellow onion ($0.20)",
+    "2 Tbsp olive oil, divided ($0.24)",
+    "1 Tbsp butter ($0.14)",
+    "1 ½ tsp salt, divided ($0.08)",
+    "½ tsp freshly cracked black pepper, divided ($0.04)",
+    "½ tsp garlic powder ($0.05)",
+    "¼ tsp onion powder ($0.03)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "unknown:1 ½ lbs. Yukon gold potatoes ($1.80)",
+      "originalText": "1 ½ lbs. Yukon gold potatoes ($1.80)",
+      "quantity": 1.5,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:½  yellow onion ($0.20)",
+      "originalText": "½  yellow onion ($0.20)",
+      "quantity": 0.5,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:橄榄油",
+      "originalText": "2 Tbsp olive oil, divided ($0.24)",
+      "quantity": 2,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "butter",
+      "originalText": "1 Tbsp butter ($0.14)",
+      "quantity": 1,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "salt",
+      "originalText": "1 ½ tsp salt, divided ($0.08)",
+      "quantity": 1.5,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:½ tsp freshly cracked black pepper, divided ($0.04)",
+      "originalText": "½ tsp freshly cracked black pepper, divided ($0.04)",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:蒜粉",
+      "originalText": "½ tsp garlic powder ($0.05)",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:洋葱粉",
+      "originalText": "¼ tsp onion powder ($0.03)",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 33,
+  "sourceInstructionCount": 6,
+  "lastVerifiedAt": "2026-09-30T15:44:16.594Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

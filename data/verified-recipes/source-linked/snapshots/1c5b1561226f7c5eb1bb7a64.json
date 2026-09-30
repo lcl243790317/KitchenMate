@@ -1,0 +1,77 @@
+{
+  "id": "source:1c5b1561226f7c5eb1bb7a64",
+  "sourceUrl": "https://www.budgetbytes.com/avocado-toast/",
+  "title": "Avocado Toast",
+  "rawIngredientFacts": [
+    "2 slices sturdy bread ($0.40*)",
+    "1  garlic clove (peeled, $0.08)",
+    "1  avocado (medium-sized, $1.39**)",
+    "1 tsp lemon juice (fresh, $0.14)",
+    "⅛ tsp salt ($0.02)",
+    "⅛ tsp black pepper (freshly cracked, $0.02)",
+    "1 pinch crushed red pepper ($0.02)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "unknown:2 slices sturdy bread ($0.40*)",
+      "originalText": "2 slices sturdy bread ($0.40*)",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1  garlic clove (peeled, $0.08)",
+      "originalText": "1  garlic clove (peeled, $0.08)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:牛油果",
+      "originalText": "1  avocado (medium-sized, $1.39**)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:柠檬汁",
+      "originalText": "1 tsp lemon juice (fresh, $0.14)",
+      "quantity": 1,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "salt",
+      "originalText": "⅛ tsp salt ($0.02)",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "black-pepper",
+      "originalText": "⅛ tsp black pepper (freshly cracked, $0.02)",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1 pinch crushed red pepper ($0.02)",
+      "originalText": "1 pinch crushed red pepper ($0.02)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 10,
+  "sourceInstructionCount": 4,
+  "lastVerifiedAt": "2026-09-30T15:44:26.530Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

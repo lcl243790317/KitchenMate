@@ -1,0 +1,20 @@
+[
+  {
+    "recipeTitle": "地三鲜的做法",
+    "recipeId": "howtocook:0250e6ee464f70c8",
+    "ingredientId": "oil",
+    "originalText": "油",
+    "sourcePhrase": "1. 热锅，加入 150ml 油。",
+    "reason": "Explicit required ingredient in operation, absent from material and calculation; no inferred quantity",
+    "verificationMethod": "source-operation-explicit"
+  },
+  {
+    "recipeTitle": "红烧鸡翅的做法",
+    "recipeId": "howtocook:0d42f08d156d6500",
+    "ingredientId": "water",
+    "originalText": "温水",
+    "sourcePhrase": "10. 加入温水（水温约 50-60℃），水量以稍微没过所有鸡翅为准。",
+    "reason": "Explicit required ingredient in operation, absent from material and calculation; no inferred quantity",
+    "verificationMethod": "source-operation-explicit"
+  }
+]

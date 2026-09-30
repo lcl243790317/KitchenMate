@@ -1,0 +1,50 @@
+{
+  "id": "source:47b2e22440c3a1fe2b4668f0",
+  "sourceUrl": "https://www.loveandlemons.com/roasted-broccoli/",
+  "title": "Roasted Broccoli",
+  "rawIngredientFacts": [
+    "12 ounces broccoli florets",
+    "Extra-virgin olive oil (for drizzling)",
+    "Sea salt and freshly ground black pepper",
+    "Red pepper flakes (optional)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "broccoli",
+      "originalText": "12 ounces broccoli florets",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:橄榄油",
+      "originalText": "Extra-virgin olive oil (for drizzling)",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:Sea salt and freshly ground black pepper",
+      "originalText": "Sea salt and freshly ground black pepper",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:Red pepper flakes (optional)",
+      "originalText": "Red pepper flakes (optional)",
+      "quantity": null,
+      "unit": "",
+      "optional": true,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 25,
+  "sourceInstructionCount": 3,
+  "lastVerifiedAt": "2026-09-30T15:57:42.247Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

@@ -1,0 +1,135 @@
+[
+  {
+    "id": "howtocook",
+    "name": "HowToCook",
+    "providers": [
+      "howtocook"
+    ],
+    "hosts": [],
+    "sourceType": "OPEN_LICENSE",
+    "allowedReuse": "licensed text",
+    "fullInstructionsAllowed": true,
+    "imagesAllowed": false,
+    "attributionRequired": true,
+    "licenseName": "The Unlicense",
+    "verificationMethod": "pinned snapshot / schema-org-jsonld",
+    "notes": "No images reused. Source snapshots are pinned; no automatic instruction replacement."
+  },
+  {
+    "id": "wikibooks",
+    "name": "Wikibooks Cookbook",
+    "providers": [
+      "wikibooks"
+    ],
+    "hosts": [
+      "en.wikibooks.org"
+    ],
+    "sourceType": "OPEN_LICENSE",
+    "allowedReuse": "licensed text",
+    "fullInstructionsAllowed": true,
+    "imagesAllowed": false,
+    "attributionRequired": true,
+    "licenseName": "CC BY-SA 4.0",
+    "verificationMethod": "mediawiki-api",
+    "notes": "No images reused. Source snapshots are pinned; no automatic instruction replacement."
+  },
+  {
+    "id": "themealdb",
+    "name": "TheMealDB",
+    "providers": [
+      "themealdb"
+    ],
+    "hosts": [
+      "www.themealdb.com"
+    ],
+    "sourceType": "LICENSED_API",
+    "allowedReuse": "factual metadata and source link",
+    "fullInstructionsAllowed": false,
+    "imagesAllowed": false,
+    "attributionRequired": true,
+    "licenseName": "API terms; production key absent",
+    "verificationMethod": "pinned snapshot / schema-org-jsonld",
+    "notes": "Production disabled: no production key configured."
+  },
+  {
+    "id": "budgetbytes",
+    "name": "Budget Bytes",
+    "providers": [],
+    "hosts": [
+      "www.budgetbytes.com",
+      "budgetbytes.com"
+    ],
+    "sourceType": "SOURCE_LINKED",
+    "allowedReuse": "factual metadata and source link",
+    "fullInstructionsAllowed": false,
+    "imagesAllowed": false,
+    "attributionRequired": true,
+    "licenseName": "Facts and attribution links only",
+    "verificationMethod": "pinned snapshot / schema-org-jsonld",
+    "notes": "No images reused. Source snapshots are pinned; no automatic instruction replacement."
+  },
+  {
+    "id": "bbc",
+    "name": "BBC Good Food",
+    "providers": [],
+    "hosts": [
+      "www.bbcgoodfood.com"
+    ],
+    "sourceType": "SOURCE_LINKED",
+    "allowedReuse": "factual metadata and source link",
+    "fullInstructionsAllowed": false,
+    "imagesAllowed": false,
+    "attributionRequired": true,
+    "licenseName": "Facts and attribution links only",
+    "verificationMethod": "pinned snapshot / schema-org-jsonld",
+    "notes": "No images reused. Source snapshots are pinned; no automatic instruction replacement."
+  },
+  {
+    "id": "loveandlemons",
+    "name": "Love and Lemons",
+    "providers": [],
+    "hosts": [
+      "www.loveandlemons.com"
+    ],
+    "sourceType": "SOURCE_LINKED",
+    "allowedReuse": "factual metadata and source link",
+    "fullInstructionsAllowed": false,
+    "imagesAllowed": false,
+    "attributionRequired": true,
+    "licenseName": "Facts and attribution links only",
+    "verificationMethod": "pinned snapshot / schema-org-jsonld",
+    "notes": "No images reused. Source snapshots are pinned; no automatic instruction replacement."
+  },
+  {
+    "id": "cookieandkate-com",
+    "name": "Cookie and Kate",
+    "providers": [],
+    "hosts": [
+      "cookieandkate.com"
+    ],
+    "sourceType": "SOURCE_LINKED",
+    "allowedReuse": "factual metadata and source link",
+    "fullInstructionsAllowed": false,
+    "imagesAllowed": false,
+    "attributionRequired": true,
+    "licenseName": "Facts and attribution links only",
+    "verificationMethod": "pinned snapshot / schema-org-jsonld",
+    "notes": "No images reused. Source snapshots are pinned; no automatic instruction replacement."
+  },
+  {
+    "id": "www-gimmesomeoven-com",
+    "name": "www.gimmesomeoven.com",
+    "providers": [],
+    "hosts": [
+      "www.gimmesomeoven.com"
+    ],
+    "sourceType": "SOURCE_LINKED",
+    "allowedReuse": "factual metadata and source link",
+    "fullInstructionsAllowed": false,
+    "imagesAllowed": false,
+    "attributionRequired": true,
+    "licenseName": "Facts and attribution links only",
+    "verificationMethod": "pinned snapshot / schema-org-jsonld",
+    "notes": "No images reused. Source snapshots are pinned; no automatic instruction replacement."
+  }
+]

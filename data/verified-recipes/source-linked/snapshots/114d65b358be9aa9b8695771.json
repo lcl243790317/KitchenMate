@@ -1,0 +1,149 @@
+{
+  "id": "source:114d65b358be9aa9b8695771",
+  "sourceUrl": "https://www.budgetbytes.com/easy-vegetable-stir-fry/",
+  "title": "Easy Vegetable Stir Fry",
+  "rawIngredientFacts": [
+    "¼ cup soy sauce ($0.24*)",
+    "¼ cup water ($0.00)",
+    "2 Tbsp brown sugar ($0.06)",
+    "1 tsp toasted sesame oil ($0.10**)",
+    "2  garlic cloves (minced, $0.16)",
+    "1 tsp fresh ginger (grated, $0.10)",
+    "1 Tbsp cornstarch ($0.03)",
+    "¾ lb. broccoli ($1.41)",
+    "2  carrots ($0.33)",
+    "8 oz. mushrooms ($1.94)",
+    "8 oz. sugar snap peas ($2.47)",
+    "1 small onion ($0.70)",
+    "1  red bell pepper ($1.50)",
+    "2 Tbsp cooking oil ($0.16)",
+    "1 tsp sesame seeds ($0.06)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "zh:普通酱油",
+      "originalText": "¼ cup soy sauce ($0.24*)",
+      "quantity": 0.25,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "water",
+      "originalText": "¼ cup water ($0.00)",
+      "quantity": 0.25,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:红糖",
+      "originalText": "2 Tbsp brown sugar ($0.06)",
+      "quantity": 2,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:香油",
+      "originalText": "1 tsp toasted sesame oil ($0.10**)",
+      "quantity": 1,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "garlic",
+      "originalText": "2  garlic cloves (minced, $0.16)",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "ginger",
+      "originalText": "1 tsp fresh ginger (grated, $0.10)",
+      "quantity": 1,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:玉米淀粉",
+      "originalText": "1 Tbsp cornstarch ($0.03)",
+      "quantity": 1,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:¾ lb. broccoli ($1.41)",
+      "originalText": "¾ lb. broccoli ($1.41)",
+      "quantity": 0.75,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "carrot",
+      "originalText": "2  carrots ($0.33)",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:8 oz. mushrooms ($1.94)",
+      "originalText": "8 oz. mushrooms ($1.94)",
+      "quantity": 8,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:8 oz. sugar snap peas ($2.47)",
+      "originalText": "8 oz. sugar snap peas ($2.47)",
+      "quantity": 8,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "onion",
+      "originalText": "1 small onion ($0.70)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:红椒",
+      "originalText": "1  red bell pepper ($1.50)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "oil",
+      "originalText": "2 Tbsp cooking oil ($0.16)",
+      "quantity": 2,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1 tsp sesame seeds ($0.06)",
+      "originalText": "1 tsp sesame seeds ($0.06)",
+      "quantity": 1,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 25,
+  "sourceInstructionCount": 7,
+  "lastVerifiedAt": "2026-09-30T15:44:21.760Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

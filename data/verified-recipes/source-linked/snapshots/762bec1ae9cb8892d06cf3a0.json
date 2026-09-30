@@ -1,0 +1,113 @@
+{
+  "id": "source:762bec1ae9cb8892d06cf3a0",
+  "sourceUrl": "https://www.budgetbytes.com/classic-three-bean-salad/",
+  "title": "Classic Three Bean Salad",
+  "rawIngredientFacts": [
+    "1 15 oz. can kidney beans ($0.94)",
+    "1 15 oz. can cannellini beans ($0.94)",
+    "1.5 cups frozen green beans (thawed, $0.59*)",
+    "¼ cup red onion (finely diced, $0.12)",
+    "¼ cup fresh parsley (chopped, $0.17)",
+    "¼ cup apple cider vinegar ($0.24)",
+    "¼ cup olive oil ($0.64**)",
+    "2 Tbsp sugar ($0.12***)",
+    "1 tsp salt ($0.03)",
+    "¼ tsp black pepper (freshly cracked, $0.02)",
+    "1 tsp Dijon mustard ($0.03)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "unknown:1 15 oz. can kidney beans ($0.94)",
+      "originalText": "1 15 oz. can kidney beans ($0.94)",
+      "quantity": 16,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1 15 oz. can cannellini beans ($0.94)",
+      "originalText": "1 15 oz. can cannellini beans ($0.94)",
+      "quantity": 16,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1.5 cups frozen green beans (thawed, $0.59*)",
+      "originalText": "1.5 cups frozen green beans (thawed, $0.59*)",
+      "quantity": 1.5,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:红洋葱",
+      "originalText": "¼ cup red onion (finely diced, $0.12)",
+      "quantity": 0.25,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:欧芹",
+      "originalText": "¼ cup fresh parsley (chopped, $0.17)",
+      "quantity": 0.25,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:苹果醋",
+      "originalText": "¼ cup apple cider vinegar ($0.24)",
+      "quantity": 0.25,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:橄榄油",
+      "originalText": "¼ cup olive oil ($0.64**)",
+      "quantity": 0.25,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "sugar",
+      "originalText": "2 Tbsp sugar ($0.12***)",
+      "quantity": 2,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "salt",
+      "originalText": "1 tsp salt ($0.03)",
+      "quantity": 1,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "black-pepper",
+      "originalText": "¼ tsp black pepper (freshly cracked, $0.02)",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:第戎芥末",
+      "originalText": "1 tsp Dijon mustard ($0.03)",
+      "quantity": 1,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 45,
+  "sourceInstructionCount": 5,
+  "lastVerifiedAt": "2026-09-30T15:44:26.188Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

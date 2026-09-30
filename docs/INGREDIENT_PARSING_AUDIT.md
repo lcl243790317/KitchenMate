@@ -9,11 +9,11 @@ Pinned HowToCook commit: a2d45c6984dff9ee941da0e7c452f7965965d962. Rebuilt from 
 | Multi-ingredient food bullets detected | 58 |
 | Recipes with grouped food bullets | 34 |
 | Stored ingredient rows before (not all atomic) | 3024 |
-| Atomic / unresolved ingredient rows after | 3486 |
+| Atomic / unresolved ingredient rows after | 3510 |
 | Old grouped rows replaced | 58 |
-| Net ingredient rows added | 462 |
-| Ambiguous parts left unresolved | 101 |
-| Unknown rows, including names absent from vocabulary | 543 |
+| Net ingredient rows added | 486 |
+| Ambiguous parts left unresolved | 626 |
+| Unknown rows, including names absent from vocabulary | 626 |
 | Catalog recipes excluded | 0 |
 | Atomic invariant violations | 0 |
 
@@ -73,7 +73,7 @@ howtocook:1473dff6924a687c: 4 → 20 ingredient rows.
 - Atomic: 花雕酒 [unknown:花雕酒] / 白酒 [unknown:白酒]
 
 - Source: 香叶， 花椒，八角，干辣椒，丁香，甘草，干辣椒，小米辣（可选），姜，蒜
-- Atomic: 香叶 [zh:香叶] / 花椒 [zh:花椒] / 八角 [zh:八角] / 干辣椒 [zh:干辣椒] / 丁香 [zh:丁香] / 甘草 [unknown:甘草] / 干辣椒 [zh:干辣椒] / 小米辣（可选） [zh:小米; optional] / 姜 [ginger] / 蒜 [garlic]
+- Atomic: 香叶 [zh:香叶] / 花椒 [zh:花椒] / 八角 [zh:八角] / 干辣椒 [zh:干辣椒] / 丁香 [zh:丁香] / 甘草 [unknown:甘草] / 干辣椒 [zh:干辣椒] / 小米辣（可选） [zh:小米椒; optional] / 姜 [ginger] / 蒜 [garlic]
 
 ### 5. 猪皮冻
 
@@ -87,7 +87,7 @@ howtocook:ddc763f709d2b5b6: 2 → 17 ingredient rows.
 howtocook:373d56f2f32aba5c: 2 → 16 ingredient rows.
 
 - Source: 辅料：`油`、`冰糖`、`老抽`、`料酒`、`香叶`、`八角`、`生姜`、`盐`、`葱`、`开水`、`凉水`、`蒜`、`花椒`
-- Atomic: `油` [oil] / `冰糖` [zh:冰糖] / `老抽` [dark-soy] / `料酒` [wine] / `香叶` [zh:香叶] / `八角` [zh:八角] / `生姜` [ginger] / `盐` [salt] / `葱` [scallion] / `开水` [water] / `凉水` [unknown:凉水] / `蒜` [garlic] / `花椒` [zh:花椒]
+- Atomic: `油` [oil] / `冰糖` [zh:冰糖] / `老抽` [dark-soy] / `料酒` [wine] / `香叶` [zh:香叶] / `八角` [zh:八角] / `生姜` [ginger] / `盐` [salt] / `葱` [scallion] / `开水` [water] / `凉水` [water] / `蒜` [garlic] / `花椒` [zh:花椒]
 
 ### 7. 凉皮
 

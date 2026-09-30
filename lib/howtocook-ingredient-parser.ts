@@ -1,9 +1,6 @@
-import {
-  ingredientFromText,
-  normalizeIngredient,
-  ingredients,
-} from "./ingredients";
+import { normalizeIngredient, ingredients } from "./ingredients";
 import type { RecipeIngredient } from "./model";
+import operationOverrides from "@/data/ingredient-audits/operation-overrides.json";
 
 export type ParsedIngredientPart = RecipeIngredient & {
   sourceGroupText: string;
@@ -12,7 +9,7 @@ export type ParsedIngredientPart = RecipeIngredient & {
 const optionalNote =
   /可选|可不加|非必需|可以不用|可省略|可以不放|可加可不加|可放可不放/;
 const tool =
-  /锅|刀|砧板|案板|铲|漏勺|量杯|秤|保鲜膜|锡纸|烘焙纸|打蛋器|搅拌机|破壁机|料理机|烤箱|微波炉|碗|擀面杖|压汁器|筛网|筷子|手套|模具|容器|硅油纸|厨房纸|蒸笼垫|盆|盘子|杯子|烤架|布$/;
+  /锅|刀|砧板|案板|铲|漏勺|量杯|秤|保鲜膜|锡纸|烘焙纸|打蛋器|搅拌机|破壁机|料理机|面包机|烤箱|微波炉|碗|擀面杖|压汁器|筛网|筷子|手套|模具|容器|硅油纸|厨房纸|蒸笼垫|盆|盘子|杯子|烤架|纱布|布$/;
 const prose =
   /^(?:能够|根据|参见|需带|例如|建议|尽量|必须|不能|不要|不加|去除|用于|其中|选择|可根据|其余|炒糖色过程)/;
 
@@ -86,7 +83,7 @@ function literalIdentity(text: string) {
     literalAliases.find(
       ({ alias }) =>
         candidate.startsWith(alias) &&
-        /^(?:$|[\d：:=~～。-]|量|用量|的用量|的比例|的体积|约|半|足量|适量|少许|[一二三四五六七八九十两]+[个根片颗瓣斤两]|碎|粉(?:$|\s|[\p{Extended_Pictographic}])|[\p{Extended_Pictographic}])/u.test(
+        /^(?:$|[\d¼½¾⅛≥：:=~～。-]|量|用量|的用量|的比例|的体积|的数量|数量|约|大约|半|足量|适量|少许|几滴|一块|一头|一把|[一二三四五六七八九十两]+[个根片颗瓣斤两只]|碎|粉(?:$|\s|[\p{Extended_Pictographic}])|[\p{Extended_Pictographic}])/u.test(
           candidate.slice(alias.length).trim(),
         ),
     );
@@ -144,16 +141,17 @@ function identity(text: string) {
     topLevelIngredientIdentities(primary).size > 1
   )
     return { id: `unknown:${text}`, reason: "unseparated compound" };
-  const found = ingredientFromText(primary);
-  return found
-    ? { id: found.id }
-    : { id: `unknown:${name || text}`, reason: "not in vocabulary" };
+  // Substrings cannot establish identity: millet != 小米辣; pasta != pasta sauce.
+  return {
+    id: `unknown:${name || text}`,
+    reason: "no reliable ingredient head",
+  };
 }
 
 export function parseHowToCookIngredientBullet(
   sourceGroupText: string,
 ): ParsedIngredientPart[] {
-  if (/^(?:工具|注[：:])/.test(sourceGroupText)) return [];
+  if (/^(?:工具|注[：:]|圆碟子|蒸架|煲汤盅|蘸料碟)/.test(sourceGroupText)) return [];
   const prefix =
     sourceGroupText.match(
       /^(?:主料|辅料|调味料|炒料|全香料|必备|可选|原料|食材|蘸料|香料包|配料)[：:]\s*/,
@@ -336,6 +334,27 @@ export function extractHowToCookIngredients(markdown: string) {
     (part) => !materialIds.has(part.ingredientId),
   );
   merged.push(...added);
+  const sourceTitle = markdown.match(/^#\s+(.+)/m)?.[1].trim();
+  for (const override of operationOverrides.filter(
+    (item) => item.recipeTitle === sourceTitle,
+  )) {
+    if (
+      !sources.operation.includes(override.sourcePhrase) ||
+      !override.sourcePhrase.includes(override.originalText)
+    )
+      throw new Error("Operation override no longer matches pinned source");
+    if (!merged.some((item) => item.ingredientId === override.ingredientId))
+      merged.push({
+        ingredientId: override.ingredientId,
+        originalText: override.originalText,
+        sourceGroupText: override.sourcePhrase,
+        quantity: null,
+        unit: "",
+        optional: false,
+        group: "原料",
+        verificationMethod: "source-operation-explicit",
+      });
+  }
   return {
     ...sources,
     material,

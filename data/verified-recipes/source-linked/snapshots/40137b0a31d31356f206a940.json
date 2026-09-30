@@ -1,0 +1,59 @@
+{
+  "id": "source:40137b0a31d31356f206a940",
+  "sourceUrl": "https://www.loveandlemons.com/scrambled-eggs-recipe/",
+  "title": "How to Make Scrambled Eggs",
+  "rawIngredientFacts": [
+    "3  large eggs",
+    "1 teaspoon milk, plant milk, or water",
+    "Extra-virgin olive oil or butter (for the pan)",
+    "Sea salt and freshly ground black pepper",
+    "Chopped fresh chives (optional, for garnish)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "egg",
+      "originalText": "3  large eggs",
+      "quantity": 3,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "milk",
+      "originalText": "1 teaspoon milk, plant milk, or water",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:Extra-virgin olive oil or butter (for the pan)",
+      "originalText": "Extra-virgin olive oil or butter (for the pan)",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:Sea salt and freshly ground black pepper",
+      "originalText": "Sea salt and freshly ground black pepper",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:Chopped fresh chives (optional, for garnish)",
+      "originalText": "Chopped fresh chives (optional, for garnish)",
+      "quantity": null,
+      "unit": "",
+      "optional": true,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 5,
+  "sourceInstructionCount": 5,
+  "lastVerifiedAt": "2026-09-30T15:44:28.301Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

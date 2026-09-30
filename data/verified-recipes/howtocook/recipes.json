@@ -265,11 +265,11 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "unknown:无盐黄油",
-        "originalText": "无盐黄油",
-        "sourceGroupText": "无盐黄油",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "butter",
+        "originalText": "无盐黄油 20g",
+        "sourceGroupText": "无盐黄油 20g",
+        "quantity": 20,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -628,6 +628,16 @@
         "unit": "g",
         "optional": false,
         "group": "原料"
+      },
+      {
+        "ingredientId": "oil",
+        "originalText": "油",
+        "sourceGroupText": "1. 热锅，加入 150ml 油。",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
       }
     ],
     "instructions": [
@@ -932,10 +942,10 @@
       },
       {
         "ingredientId": "chili",
-        "originalText": "青辣椒",
-        "sourceGroupText": "青辣椒",
-        "quantity": null,
-        "unit": "",
+        "originalText": "青辣椒 1 根",
+        "sourceGroupText": "青辣椒 1 根，切碎",
+        "quantity": 1,
+        "unit": "根",
         "optional": false,
         "group": "原料"
       },
@@ -944,6 +954,15 @@
         "originalText": "香菜粉 5g",
         "sourceGroupText": "香菜粉 5g",
         "quantity": 5,
+        "unit": "g",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:香菜",
+        "originalText": "香菜叶 15g（装饰用）",
+        "sourceGroupText": "香菜叶 15g（装饰用）",
+        "quantity": 15,
         "unit": "g",
         "optional": false,
         "group": "原料"
@@ -959,10 +978,10 @@
       },
       {
         "ingredientId": "zh:孜然",
-        "originalText": "孜然籽",
-        "sourceGroupText": "孜然籽",
-        "quantity": null,
-        "unit": "",
+        "originalText": "孜然籽 3g",
+        "sourceGroupText": "孜然籽 3g",
+        "quantity": 3,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -977,10 +996,10 @@
       },
       {
         "ingredientId": "zh:辣椒粉",
-        "originalText": "红辣椒粉",
-        "sourceGroupText": "红辣椒粉",
-        "quantity": null,
-        "unit": "",
+        "originalText": "红辣椒粉 3g",
+        "sourceGroupText": "红辣椒粉 3g",
+        "quantity": 3,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -1234,7 +1253,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "peanut",
+        "ingredientId": "unknown:花生包",
         "originalText": "花生包",
         "sourceGroupText": "酸笋包、花生包、豆皮包、木耳包等配料包",
         "quantity": null,
@@ -1252,7 +1271,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:黑木耳",
+        "ingredientId": "unknown:木耳包等配料包",
         "originalText": "木耳包等配料包",
         "sourceGroupText": "酸笋包、花生包、豆皮包、木耳包等配料包",
         "quantity": null,
@@ -1270,7 +1289,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:辣椒油",
+        "ingredientId": "unknown:辣椒油等调味包",
         "originalText": "辣椒油等调味包",
         "sourceGroupText": "醋包、辣椒油等调味包",
         "quantity": null,
@@ -1686,7 +1705,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:红椒",
+        "ingredientId": "unknown:干红椒",
         "originalText": "干红椒",
         "sourceGroupText": "干红椒",
         "quantity": null,
@@ -1918,7 +1937,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "egg",
+        "ingredientId": "unknown:一个鸡蛋的鸡蛋清",
         "originalText": "一个鸡蛋的鸡蛋清",
         "sourceGroupText": "一个鸡蛋的鸡蛋清",
         "quantity": null,
@@ -1972,7 +1991,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:粉丝",
+        "ingredientId": "unknown:泡好的粉丝",
         "originalText": "泡好的粉丝（放碗底）",
         "sourceGroupText": "泡好的粉丝（放碗底）",
         "quantity": null,
@@ -2626,7 +2645,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:普通酱油",
+        "ingredientId": "unknown:昆布酱油",
         "originalText": "昆布酱油（一种日式的少盐酱油，用于为温泉蛋调味）",
         "sourceGroupText": "昆布酱油（一种日式的少盐酱油，用于为温泉蛋调味）",
         "quantity": null,
@@ -2855,11 +2874,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "chili",
-        "originalText": "红辣椒",
-        "sourceGroupText": "红辣椒",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:红椒",
+        "originalText": "红辣椒 1 根",
+        "sourceGroupText": "红辣椒 1 根",
+        "quantity": 1,
+        "unit": "根",
         "optional": false,
         "group": "原料"
       },
@@ -3039,11 +3058,20 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:葱段",
-        "originalText": "葱段（推荐使用大葱白部分，香味更浓郁）",
-        "sourceGroupText": "葱段（推荐使用大葱白部分，香味更浓郁）",
+        "ingredientId": "scallion",
+        "originalText": "葱段 2-3 段（约 15g，每段长度约 3cm）",
+        "sourceGroupText": "葱段 2-3 段（约 15g，每段长度约 3cm）",
         "quantity": null,
         "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "scallion",
+        "originalText": "小葱花 5g",
+        "sourceGroupText": "小葱花 5g",
+        "quantity": 5,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -3156,18 +3184,19 @@
         "group": "原料"
       },
       {
-        "ingredientId": "scallion",
-        "originalText": "小葱花 5g",
-        "sourceGroupText": "小葱花 5g",
-        "quantity": 5,
-        "unit": "g",
+        "ingredientId": "oil",
+        "originalText": "食用油 10-15ml",
+        "sourceGroupText": "食用油 10-15ml",
+        "quantity": null,
+        "unit": "",
         "optional": false,
         "group": "原料"
       },
       {
-        "ingredientId": "oil",
-        "originalText": "食用油 10-15ml",
-        "sourceGroupText": "食用油 10-15ml",
+        "ingredientId": "water",
+        "originalText": "温水",
+        "sourceGroupText": "10. 加入温水（水温约 50-60℃），水量以稍微没过所有鸡翅为准。",
+        "verificationMethod": "source-operation-explicit",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -3747,6 +3776,15 @@
         "unit": "",
         "optional": false,
         "group": "辅料"
+      },
+      {
+        "ingredientId": "zh:五花肉",
+        "originalText": "猪五花肉：约 3~4 斤",
+        "sourceGroupText": "猪五花肉：约 3~4 斤",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
       },
       {
         "ingredientId": "zh:鹌鹑蛋",
@@ -4955,8 +4993,8 @@
       },
       {
         "ingredientId": "zh:绿茶",
-        "originalText": "茉莉绿茶",
-        "sourceGroupText": "茉莉绿茶",
+        "originalText": "茉莉绿茶 2~4 克",
+        "sourceGroupText": "茉莉绿茶 2~4 克",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -5131,11 +5169,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:芝麻",
-        "originalText": "芝麻",
-        "sourceGroupText": "芝麻",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:芝麻粒",
+        "originalText": "芝麻 2 g",
+        "sourceGroupText": "芝麻 2 g",
+        "quantity": 2,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -5481,9 +5519,9 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:生抽酱油",
-        "originalText": "生抽酱油",
-        "sourceGroupText": "生抽酱油",
+        "ingredientId": "soy-sauce",
+        "originalText": "生抽酱油用量为 20 ml/人",
+        "sourceGroupText": "生抽酱油用量为 20 ml/人",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -5982,11 +6020,11 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "zh:干辣椒",
-        "originalText": "干辣椒面（粗细都准备）",
-        "sourceGroupText": "干辣椒面（粗细都准备）",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:辣椒面",
+        "originalText": "干辣椒面 60 克",
+        "sourceGroupText": "干辣椒面 60 克",
+        "quantity": 60,
+        "unit": "克",
         "optional": false,
         "group": "原料"
       },
@@ -6594,9 +6632,9 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:小米",
-        "originalText": "小米辣（可选）",
-        "sourceGroupText": "香叶， 花椒，八角，干辣椒，丁香，甘草，干辣椒，小米辣（可选），姜，蒜",
+        "ingredientId": "zh:小米椒",
+        "originalText": "小米辣 1 条（可根据口味调整用量）",
+        "sourceGroupText": "小米辣 1 条（可根据口味调整用量）",
         "quantity": null,
         "unit": "",
         "optional": true,
@@ -6844,8 +6882,8 @@
     "ingredients": [
       {
         "ingredientId": "zh:茄子",
-        "originalText": "茄子",
-        "sourceGroupText": "茄子",
+        "originalText": "茄子的数量 = 份数 * 1 个 （每个茄子约 150g）",
+        "sourceGroupText": "茄子的数量 = 份数 * 1 个 （每个茄子约 150g）",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -6853,8 +6891,8 @@
       },
       {
         "ingredientId": "potato",
-        "originalText": "土豆",
-        "sourceGroupText": "土豆",
+        "originalText": "土豆数量 = 份数 * 1 个（每个土豆约 150g）",
+        "sourceGroupText": "土豆数量 = 份数 * 1 个（每个土豆约 150g）",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -7838,6 +7876,15 @@
         "group": "原料"
       },
       {
+        "ingredientId": "unknown:意大利面酱",
+        "originalText": "意大利面酱",
+        "sourceGroupText": "意大利面酱",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
         "ingredientId": "unknown:肉沫",
         "originalText": "肉沫",
         "sourceGroupText": "肉沫",
@@ -7847,7 +7894,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "onion",
+        "ingredientId": "unknown:白洋葱",
         "originalText": "白洋葱（紫洋葱也可以）",
         "sourceGroupText": "白洋葱（紫洋葱也可以）",
         "quantity": null,
@@ -8260,7 +8307,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "tofu",
+        "ingredientId": "unknown:干豆腐",
         "originalText": "干豆腐",
         "sourceGroupText": "干豆腐",
         "quantity": null,
@@ -8269,7 +8316,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:方便面",
+        "ingredientId": "unknown:北京麻辣方便面",
         "originalText": "北京麻辣方便面",
         "sourceGroupText": "北京麻辣方便面",
         "quantity": null,
@@ -8684,7 +8731,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:猪油",
+        "ingredientId": "unknown:纯猪油 500 g",
         "originalText": "纯猪油 500 g",
         "sourceGroupText": "纯猪油 500 g",
         "quantity": null,
@@ -9147,7 +9194,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:鹰嘴豆",
+        "ingredientId": "unknown:烤鹰嘴豆粉",
         "originalText": "烤鹰嘴豆粉(Sattu)— 可用炒熟的鹰嘴豆磨粉替代",
         "sourceGroupText": "烤鹰嘴豆粉(Sattu)— 可用炒熟的鹰嘴豆磨粉替代",
         "quantity": null,
@@ -9211,10 +9258,19 @@
       },
       {
         "ingredientId": "chili",
-        "originalText": "青辣椒",
-        "sourceGroupText": "青辣椒",
-        "quantity": null,
-        "unit": "",
+        "originalText": "青辣椒 2 根",
+        "sourceGroupText": "青辣椒 2 根，切极细碎",
+        "quantity": 2,
+        "unit": "根",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "chili",
+        "originalText": "青辣椒 1 根",
+        "sourceGroupText": "青辣椒 1 根",
+        "quantity": 1,
+        "unit": "根",
         "optional": false,
         "group": "原料"
       },
@@ -9229,15 +9285,24 @@
       },
       {
         "ingredientId": "zh:香菜",
-        "originalText": "香菜",
-        "sourceGroupText": "香菜",
-        "quantity": null,
-        "unit": "",
+        "originalText": "香菜叶 10g",
+        "sourceGroupText": "香菜叶 10g，切碎",
+        "quantity": 10,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
       {
-        "ingredientId": "oil",
+        "ingredientId": "zh:香菜",
+        "originalText": "香菜叶 10g",
+        "sourceGroupText": "香菜叶 10g",
+        "quantity": 10,
+        "unit": "g",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:芥末油",
         "originalText": "芥末油(Mustard Oil)— 可用其他食用油替代",
         "sourceGroupText": "芥末油(Mustard Oil)— 可用其他食用油替代",
         "quantity": null,
@@ -9247,10 +9312,10 @@
       },
       {
         "ingredientId": "zh:孜然",
-        "originalText": "孜然籽",
-        "sourceGroupText": "孜然籽",
-        "quantity": null,
-        "unit": "",
+        "originalText": "孜然籽 3g",
+        "sourceGroupText": "孜然籽 3g",
+        "quantity": 3,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -9265,19 +9330,19 @@
       },
       {
         "ingredientId": "zh:辣椒粉",
-        "originalText": "红辣椒粉",
-        "sourceGroupText": "红辣椒粉",
-        "quantity": null,
-        "unit": "",
+        "originalText": "红辣椒粉 3g",
+        "sourceGroupText": "红辣椒粉 3g",
+        "quantity": 3,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:芝麻",
-        "originalText": "芝麻",
-        "sourceGroupText": "芝麻",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:芝麻粒",
+        "originalText": "芝麻 5g",
+        "sourceGroupText": "芝麻 5g",
+        "quantity": 5,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -9657,7 +9722,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:火腿",
+        "ingredientId": "unknown:火腿肠",
         "originalText": "火腿肠（可选）",
         "sourceGroupText": "火腿肠（可选）",
         "quantity": null,
@@ -10112,7 +10177,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:火腿",
+        "ingredientId": "unknown:火腿肠",
         "originalText": "火腿肠（或午餐肉，可选）",
         "sourceGroupText": "火腿肠（或午餐肉，可选）",
         "quantity": null,
@@ -10351,10 +10416,10 @@
       },
       {
         "ingredientId": "chili",
-        "originalText": "青辣椒",
-        "sourceGroupText": "青辣椒",
-        "quantity": null,
-        "unit": "",
+        "originalText": "青辣椒 1 根",
+        "sourceGroupText": "青辣椒 1 根，切碎",
+        "quantity": 1,
+        "unit": "根",
         "optional": false,
         "group": "原料"
       },
@@ -10377,6 +10442,15 @@
         "group": "原料"
       },
       {
+        "ingredientId": "zh:香菜",
+        "originalText": "香菜叶（装饰用）10g",
+        "sourceGroupText": "香菜叶（装饰用）10g",
+        "quantity": 10,
+        "unit": "g",
+        "optional": false,
+        "group": "原料"
+      },
+      {
         "ingredientId": "zh:姜黄粉",
         "originalText": "姜黄粉 3g",
         "sourceGroupText": "姜黄粉 3g",
@@ -10387,10 +10461,19 @@
       },
       {
         "ingredientId": "zh:辣椒粉",
-        "originalText": "红辣椒粉",
-        "sourceGroupText": "红辣椒粉",
-        "quantity": null,
-        "unit": "",
+        "originalText": "红辣椒粉 3g",
+        "sourceGroupText": "红辣椒粉 3g",
+        "quantity": 3,
+        "unit": "g",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:辣椒粉",
+        "originalText": "红辣椒粉 5g",
+        "sourceGroupText": "红辣椒粉 5g",
+        "quantity": 5,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -10726,8 +10809,8 @@
       },
       {
         "ingredientId": "zh:香油",
-        "originalText": "芝麻香油",
-        "sourceGroupText": "芝麻香油",
+        "originalText": "芝麻香油 10-15ml",
+        "sourceGroupText": "芝麻香油 10-15ml",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -10829,8 +10912,8 @@
       },
       {
         "ingredientId": "chicken-thigh",
-        "originalText": "手枪腿鸡腿",
-        "sourceGroupText": "手枪腿鸡腿",
+        "originalText": "手枪腿鸡腿 2 只（每个手枪腿大约重 200g，共约 400g）",
+        "sourceGroupText": "手枪腿鸡腿 2 只（每个手枪腿大约重 200g，共约 400g）",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -10851,6 +10934,15 @@
         "sourceGroupText": "豉油调味汁（推荐品牌 日和，\"薄盐肠粉豉油调味汁\"）",
         "quantity": null,
         "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "water",
+        "originalText": "水 ≥30 mL",
+        "sourceGroupText": "水 ≥30 mL",
+        "quantity": 30,
+        "unit": "mL",
         "optional": false,
         "group": "原料"
       }
@@ -11840,7 +11932,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:八角",
+        "ingredientId": "unknown:八角三小片",
         "originalText": "八角三小片",
         "sourceGroupText": "生抽、白胡椒粉，白糖，料/黄酒，八角三小片",
         "quantity": null,
@@ -12008,11 +12100,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:芝麻",
-        "originalText": "芝麻",
-        "sourceGroupText": "芝麻",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:芝麻粒",
+        "originalText": "芝麻 5 g",
+        "sourceGroupText": "芝麻 5 g",
+        "quantity": 5,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -12062,11 +12154,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "egg",
-        "originalText": "鸡蛋黄",
-        "sourceGroupText": "鸡蛋黄",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:蛋黄",
+        "originalText": "鸡蛋黄 1 个",
+        "sourceGroupText": "鸡蛋黄 1 个",
+        "quantity": 1,
+        "unit": "个",
         "optional": false,
         "group": "原料"
       }
@@ -12228,9 +12320,9 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:小米",
-        "originalText": "小米辣",
-        "sourceGroupText": "小米辣",
+        "ingredientId": "zh:小米椒",
+        "originalText": "小米辣 4 个少辣",
+        "sourceGroupText": "小米辣 4 个少辣，6 个中辣，12 个大辣（推荐大辣）",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -12758,9 +12850,9 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "zh:小米",
-        "originalText": "小米辣",
-        "sourceGroupText": "小米辣",
+        "ingredientId": "zh:小米椒",
+        "originalText": "小米椒 20 个，根据个人口味加减",
+        "sourceGroupText": "小米椒 20 个，根据个人口味加减",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -12853,15 +12945,6 @@
         "sourceGroupText": "白糖 5g",
         "quantity": 5,
         "unit": "g",
-        "optional": false,
-        "group": "原料"
-      },
-      {
-        "ingredientId": "zh:小米椒",
-        "originalText": "小米椒 20 个，根据个人口味加减",
-        "sourceGroupText": "小米椒 20 个，根据个人口味加减",
-        "quantity": null,
-        "unit": "",
         "optional": false,
         "group": "原料"
       }
@@ -13189,7 +13272,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "pork",
+        "ingredientId": "unknown:梅头猪肉",
         "originalText": "梅头猪肉",
         "sourceGroupText": "梅头猪肉",
         "quantity": null,
@@ -13207,7 +13290,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:菠萝",
+        "ingredientId": "unknown:罐头菠萝片",
         "originalText": "罐头菠萝片",
         "sourceGroupText": "罐头菠萝片",
         "quantity": null,
@@ -13746,9 +13829,9 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:小米",
-        "originalText": "小米辣",
-        "sourceGroupText": "小米辣",
+        "ingredientId": "zh:小米椒",
+        "originalText": "小米辣 = 1  根  * 份数",
+        "sourceGroupText": "小米辣 = 1  根  * 份数",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -13912,9 +13995,9 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:小米",
-        "originalText": "小米辣",
-        "sourceGroupText": "小米辣",
+        "ingredientId": "zh:小米椒",
+        "originalText": "小米辣 6-15 g（约 2-5 个）",
+        "sourceGroupText": "小米辣 6-15 g（约 2-5 个）",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -14316,7 +14399,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "rice",
+        "ingredientId": "unknown:巴斯马蒂长粒香米",
         "originalText": "巴斯马蒂长粒香米(Basmati Rice)",
         "sourceGroupText": "巴斯马蒂长粒香米(Basmati Rice)",
         "quantity": null,
@@ -14326,10 +14409,10 @@
       },
       {
         "ingredientId": "chicken-thigh",
-        "originalText": "鸡腿肉（去骨，可用羊肉替代）",
-        "sourceGroupText": "鸡腿肉（去骨，可用羊肉替代）",
-        "quantity": null,
-        "unit": "",
+        "originalText": "鸡腿肉 500g（去骨，切大块）",
+        "sourceGroupText": "鸡腿肉 500g（去骨，切大块）",
+        "quantity": 500,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -14380,19 +14463,19 @@
       },
       {
         "ingredientId": "chili",
-        "originalText": "青辣椒",
-        "sourceGroupText": "青辣椒",
-        "quantity": null,
-        "unit": "",
+        "originalText": "青辣椒 3 根",
+        "sourceGroupText": "青辣椒 3 根，切缝",
+        "quantity": 3,
+        "unit": "根",
         "optional": false,
         "group": "原料"
       },
       {
         "ingredientId": "zh:香菜",
-        "originalText": "香菜",
-        "sourceGroupText": "香菜",
-        "quantity": null,
-        "unit": "",
+        "originalText": "香菜叶 20g",
+        "sourceGroupText": "香菜叶 20g",
+        "quantity": 20,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -14452,10 +14535,10 @@
       },
       {
         "ingredientId": "zh:辣椒粉",
-        "originalText": "红辣椒粉",
-        "sourceGroupText": "红辣椒粉",
-        "quantity": null,
-        "unit": "",
+        "originalText": "红辣椒粉 5g",
+        "sourceGroupText": "红辣椒粉 5g",
+        "quantity": 5,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -14873,6 +14956,15 @@
       },
       {
         "ingredientId": "water",
+        "originalText": "100°C 沸水 1500ml",
+        "sourceGroupText": "100°C 沸水 1500ml",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "water",
         "originalText": "30°C 温水 1500ml",
         "sourceGroupText": "30°C 温水 1500ml",
         "quantity": null,
@@ -15190,7 +15282,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:豆腐乳",
+        "ingredientId": "unknown:红豆腐乳",
         "originalText": "红豆腐乳",
         "sourceGroupText": "红豆腐乳",
         "quantity": null,
@@ -15217,7 +15309,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:普通酱油",
+        "ingredientId": "unknown:红酱油",
         "originalText": "红酱油",
         "sourceGroupText": "红酱油",
         "quantity": null,
@@ -15226,7 +15318,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:普通酱油",
+        "ingredientId": "unknown:白酱油",
         "originalText": "白酱油",
         "sourceGroupText": "白酱油",
         "quantity": null,
@@ -15401,7 +15493,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "zh:海参",
+        "ingredientId": "unknown:泡发好的海参![海参]",
         "originalText": "泡发好的海参![海参](./海参.jpeg)",
         "sourceGroupText": "泡发好的海参![海参](./海参.jpeg)",
         "quantity": null,
@@ -15621,7 +15713,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "zh:速冻馄饨",
+        "ingredientId": "unknown:未过期的一袋速冻馄饨",
         "originalText": "未过期的一袋速冻馄饨（自带调味料包更佳）",
         "sourceGroupText": "未过期的一袋速冻馄饨（自带调味料包更佳）",
         "quantity": null,
@@ -16169,9 +16261,9 @@
         "group": "原料"
       },
       {
-        "ingredientId": "tofu",
-        "originalText": "豆腐 2 袋",
-        "sourceGroupText": "豆腐 2 袋",
+        "ingredientId": "unknown:日本豆腐",
+        "originalText": "日本豆腐（玉子豆腐）",
+        "sourceGroupText": "日本豆腐（玉子豆腐）",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -16226,6 +16318,15 @@
         "ingredientId": "oil",
         "originalText": "食用油 10-15ml",
         "sourceGroupText": "食用油 10-15ml",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "tofu",
+        "originalText": "豆腐 2 袋",
+        "sourceGroupText": "豆腐 2 袋",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -16344,7 +16445,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:干酵母",
+        "ingredientId": "unknown:安琪干酵母粉",
         "originalText": "安琪干酵母粉",
         "sourceGroupText": "安琪干酵母粉",
         "quantity": null,
@@ -16594,11 +16695,11 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "pork",
-        "originalText": "猪肉 500 克",
-        "sourceGroupText": "猪肉 500 克",
-        "quantity": 500,
-        "unit": "克",
+        "ingredientId": "unknown:去皮猪肉",
+        "originalText": "去皮猪肉（根据喜好选择肥瘦）",
+        "sourceGroupText": "去皮猪肉（根据喜好选择肥瘦）",
+        "quantity": null,
+        "unit": "",
         "optional": false,
         "group": "原料"
       },
@@ -16693,6 +16794,15 @@
         "group": "原料"
       },
       {
+        "ingredientId": "zh:花椒",
+        "originalText": "花椒粒 3 克",
+        "sourceGroupText": "花椒粒 3 克",
+        "quantity": 3,
+        "unit": "克",
+        "optional": false,
+        "group": "原料"
+      },
+      {
         "ingredientId": "soy-sauce",
         "originalText": "生抽 8 克",
         "sourceGroupText": "生抽 8 克",
@@ -16724,6 +16834,15 @@
         "originalText": "红薯淀粉 120 克",
         "sourceGroupText": "红薯淀粉 120 克",
         "quantity": 120,
+        "unit": "克",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "pork",
+        "originalText": "猪肉 500 克",
+        "sourceGroupText": "猪肉 500 克",
+        "quantity": 500,
         "unit": "克",
         "optional": false,
         "group": "原料"
@@ -17000,6 +17119,15 @@
         "quantity": null,
         "unit": "",
         "optional": true,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:绿茶",
+        "originalText": "茉莉绿茶茶叶 3~6 克",
+        "sourceGroupText": "茉莉绿茶茶叶 3~6 克",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
         "group": "原料"
       },
       {
@@ -17490,10 +17618,10 @@
       },
       {
         "ingredientId": "chili",
-        "originalText": "青辣椒",
-        "sourceGroupText": "青辣椒",
-        "quantity": null,
-        "unit": "",
+        "originalText": "青辣椒 2 根",
+        "sourceGroupText": "青辣椒 2 根，切缝",
+        "quantity": 2,
+        "unit": "根",
         "optional": false,
         "group": "原料"
       },
@@ -17508,10 +17636,10 @@
       },
       {
         "ingredientId": "zh:红茶",
-        "originalText": "红茶包（用于鹰嘴豆上色）",
-        "sourceGroupText": "红茶包（用于鹰嘴豆上色）",
-        "quantity": null,
-        "unit": "",
+        "originalText": "红茶包 1 个",
+        "sourceGroupText": "红茶包 1 个",
+        "quantity": 1,
+        "unit": "个",
         "optional": false,
         "group": "原料"
       },
@@ -17553,10 +17681,10 @@
       },
       {
         "ingredientId": "zh:辣椒粉",
-        "originalText": "红辣椒粉",
-        "sourceGroupText": "红辣椒粉",
-        "quantity": null,
-        "unit": "",
+        "originalText": "红辣椒粉 5g",
+        "sourceGroupText": "红辣椒粉 5g",
+        "quantity": 5,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -18157,28 +18285,10 @@
     "ingredients": [
       {
         "ingredientId": "zh:花卷",
-        "originalText": "冷冻花卷",
-        "sourceGroupText": "冷冻花卷",
-        "quantity": null,
-        "unit": "",
-        "optional": false,
-        "group": "原料"
-      },
-      {
-        "ingredientId": "unknown:圆碟子",
-        "originalText": "圆碟子",
-        "sourceGroupText": "圆碟子",
-        "quantity": null,
-        "unit": "",
-        "optional": false,
-        "group": "原料"
-      },
-      {
-        "ingredientId": "unknown:蒸架",
-        "originalText": "蒸架",
-        "sourceGroupText": "蒸架",
-        "quantity": null,
-        "unit": "",
+        "originalText": "冷冻花卷 5 个（女生分量 3 个即可）（可以在超市、各种买菜平台购买）",
+        "sourceGroupText": "冷冻花卷 5 个（女生分量 3 个即可）（可以在超市、各种买菜平台购买）",
+        "quantity": 5,
+        "unit": "个",
         "optional": false,
         "group": "原料"
       },
@@ -18700,8 +18810,8 @@
     "ingredients": [
       {
         "ingredientId": "chicken-thigh",
-        "originalText": "鸡腿肉",
-        "sourceGroupText": "鸡腿肉",
+        "originalText": "鸡腿肉用量通常来说为 1-2 个/人",
+        "sourceGroupText": "鸡腿肉用量通常来说为 1-2 个/人",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -18875,8 +18985,8 @@
     "ingredients": [
       {
         "ingredientId": "zh:五花肉",
-        "originalText": "`五花肉`",
-        "sourceGroupText": "主料：`五花肉`",
+        "originalText": "猪五花肉：1000g（约 2 斤）。*注：生肉烹饪后缩水脱脂严重",
+        "sourceGroupText": "猪五花肉：1000g（约 2 斤）。*注：生肉烹饪后缩水脱脂严重，此分量最终出肉量约满足 2-3 人正常饭量。如仅 1 人食用，建议所有食材剂量减半。*",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -18965,21 +19075,21 @@
       },
       {
         "ingredientId": "water",
-        "originalText": "开水：没过食材的量即可",
-        "sourceGroupText": "开水：没过食材的量即可，看锅大小准备",
+        "originalText": "凉水：没过食材的量即可",
+        "sourceGroupText": "凉水：没过食材的量即可，看锅大小准备",
         "quantity": null,
         "unit": "",
         "optional": false,
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:凉水",
-        "originalText": "`凉水`",
-        "sourceGroupText": "辅料：`油`、`冰糖`、`老抽`、`料酒`、`香叶`、`八角`、`生姜`、`盐`、`葱`、`开水`、`凉水`、`蒜`、`花椒`",
+        "ingredientId": "water",
+        "originalText": "开水：没过食材的量即可",
+        "sourceGroupText": "开水：没过食材的量即可，看锅大小准备",
         "quantity": null,
         "unit": "",
         "optional": false,
-        "group": "辅料"
+        "group": "原料"
       },
       {
         "ingredientId": "garlic",
@@ -19368,7 +19478,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:莲子",
+        "ingredientId": "unknown:去心莲子",
         "originalText": "去心莲子",
         "sourceGroupText": "去心莲子",
         "quantity": null,
@@ -19994,11 +20104,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:芝麻",
-        "originalText": "芝麻",
-        "sourceGroupText": "芝麻",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:芝麻粒",
+        "originalText": "芝麻 2 g",
+        "sourceGroupText": "芝麻 2 g",
+        "quantity": 2,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -20143,15 +20253,15 @@
     "ingredients": [
       {
         "ingredientId": "zh:酸奶",
-        "originalText": "原味酸奶 (Plain yogurt)",
-        "sourceGroupText": "原味酸奶 (Plain yogurt)",
-        "quantity": null,
-        "unit": "",
+        "originalText": "原味酸奶 120 ml",
+        "sourceGroupText": "原味酸奶 120 ml",
+        "quantity": 120,
+        "unit": "ml",
         "optional": false,
         "group": "原料"
       },
       {
-        "ingredientId": "zh:牛油果",
+        "ingredientId": "unknown:熟透的牛油果",
         "originalText": "熟透的牛油果",
         "sourceGroupText": "熟透的牛油果",
         "quantity": null,
@@ -20170,10 +20280,10 @@
       },
       {
         "ingredientId": "milk",
-        "originalText": "冷牛奶",
-        "sourceGroupText": "冷牛奶",
-        "quantity": null,
-        "unit": "",
+        "originalText": "冷牛奶 60 ml",
+        "sourceGroupText": "冷牛奶 60 ml",
+        "quantity": 60,
+        "unit": "ml",
         "optional": false,
         "group": "原料"
       },
@@ -20319,7 +20429,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "potato",
+        "ingredientId": "unknown:土豆干粉条",
         "originalText": "土豆干粉条",
         "sourceGroupText": "土豆干粉条",
         "quantity": null,
@@ -20898,7 +21008,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "zh:鸡肝",
+        "ingredientId": "unknown:生鸡肝",
         "originalText": "生鸡肝",
         "sourceGroupText": "生鸡肝",
         "quantity": null,
@@ -20988,11 +21098,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:芝麻",
-        "originalText": "芝麻（可选）",
-        "sourceGroupText": "芝麻（可选）",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:芝麻粒",
+        "originalText": "芝麻 5g （可选）",
+        "sourceGroupText": "芝麻 5g （可选）",
+        "quantity": 5,
+        "unit": "g",
         "optional": true,
         "group": "原料"
       },
@@ -21473,9 +21583,9 @@
         "group": "原料"
       },
       {
-        "ingredientId": "pork",
-        "originalText": "猪肉 (250g)",
-        "sourceGroupText": "猪肉 (250g)",
+        "ingredientId": "unknown:猪肉片",
+        "originalText": "猪肉片",
+        "sourceGroupText": "猪肉片",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -21494,6 +21604,15 @@
         "ingredientId": "zh:香油",
         "originalText": "麻油 (5ml)",
         "sourceGroupText": "麻油 (5ml)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "pork",
+        "originalText": "猪肉 (250g)",
+        "sourceGroupText": "猪肉 (250g)",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -22309,10 +22428,10 @@
       },
       {
         "ingredientId": "zh:辣椒面",
-        "originalText": "中粗辣椒面",
-        "sourceGroupText": "中粗辣椒面",
-        "quantity": null,
-        "unit": "",
+        "originalText": "中粗辣椒面 15g",
+        "sourceGroupText": "中粗辣椒面 15g",
+        "quantity": 15,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -22632,8 +22751,8 @@
     "ingredients": [
       {
         "ingredientId": "pepper",
-        "originalText": "青椒（吃辣的话推荐用杭椒，螺丝椒，不吃辣的用尖椒，甜椒）",
-        "sourceGroupText": "青椒（吃辣的话推荐用杭椒，螺丝椒，不吃辣的用尖椒，甜椒）",
+        "originalText": "青椒的数量 = 份数 * 3 个。",
+        "sourceGroupText": "青椒的数量 = 份数 * 3 个。",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -23833,11 +23952,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:芝麻",
-        "originalText": "芝麻",
-        "sourceGroupText": "芝麻",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:芝麻粒",
+        "originalText": "芝麻 5 g",
+        "sourceGroupText": "芝麻 5 g",
+        "quantity": 5,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       }
@@ -24156,7 +24275,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:桂皮",
+        "ingredientId": "unknown:肉桂皮",
         "originalText": "肉桂皮",
         "sourceGroupText": "肉桂皮",
         "quantity": null,
@@ -24803,20 +24922,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:豆浆",
-        "originalText": "过滤豆浆渣的纱布一块",
-        "sourceGroupText": "过滤豆浆渣的纱布一块",
-        "quantity": null,
-        "unit": "",
-        "optional": false,
-        "group": "原料"
-      },
-      {
-        "ingredientId": "unknown:凉白开 2000g",
+        "ingredientId": "water",
         "originalText": "凉白开 2000g",
         "sourceGroupText": "凉白开 2000g",
-        "quantity": null,
-        "unit": "",
+        "quantity": 2000,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -25309,7 +25419,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:核桃",
+        "ingredientId": "unknown:去壳核桃",
         "originalText": "去壳核桃",
         "sourceGroupText": "去壳核桃",
         "quantity": null,
@@ -25443,7 +25553,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "zh:茶树菇",
+        "ingredientId": "unknown:闽星茶树菇",
         "originalText": "闽星茶树菇",
         "sourceGroupText": "闽星茶树菇",
         "quantity": null,
@@ -25471,10 +25581,10 @@
       },
       {
         "ingredientId": "oyster-sauce",
-        "originalText": "蚝油",
-        "sourceGroupText": "蚝油",
-        "quantity": null,
-        "unit": "",
+        "originalText": "蚝油 大约 7ml",
+        "sourceGroupText": "蚝油 大约 7ml",
+        "quantity": 7,
+        "unit": "ml",
         "optional": false,
         "group": "原料"
       },
@@ -25489,10 +25599,10 @@
       },
       {
         "ingredientId": "salt",
-        "originalText": "食用盐",
-        "sourceGroupText": "食用盐",
-        "quantity": null,
-        "unit": "",
+        "originalText": "食用盐 大约 2g",
+        "sourceGroupText": "食用盐 大约 2g",
+        "quantity": 2,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       }
@@ -25637,10 +25747,10 @@
     "ingredients": [
       {
         "ingredientId": "zh:荷兰豆",
-        "originalText": "荷兰豆",
-        "sourceGroupText": "荷兰豆",
-        "quantity": null,
-        "unit": "",
+        "originalText": "荷兰豆大约 50 个",
+        "sourceGroupText": "荷兰豆大约 50 个",
+        "quantity": 50,
+        "unit": "个",
         "optional": false,
         "group": "原料"
       },
@@ -25784,7 +25894,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:芝麻",
+        "ingredientId": "zh:芝麻粒",
         "originalText": "芝麻",
         "sourceGroupText": "芝麻、葱花（切段）或其他配料",
         "quantity": null,
@@ -26278,7 +26388,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "garlic",
+        "ingredientId": "unknown:蒜蓉酱",
         "originalText": "蒜蓉酱",
         "sourceGroupText": "蒜蓉酱",
         "quantity": null,
@@ -26427,8 +26537,8 @@
       },
       {
         "ingredientId": "zh:香油",
-        "originalText": "香油",
-        "sourceGroupText": "香油",
+        "originalText": "香油 几滴（出锅用）",
+        "sourceGroupText": "香油 几滴（出锅用）",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -27515,7 +27625,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:气泡水",
+        "ingredientId": "unknown:汤力水气泡水",
         "originalText": "汤力水气泡水",
         "sourceGroupText": "汤力水气泡水",
         "quantity": null,
@@ -28078,7 +28188,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "tofu",
+        "ingredientId": "unknown:日本豆腐",
         "originalText": "日本豆腐（玉子豆腐）",
         "sourceGroupText": "日本豆腐（玉子豆腐）",
         "quantity": null,
@@ -28105,7 +28215,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:火腿",
+        "ingredientId": "unknown:火腿肠",
         "originalText": "火腿肠（可选）",
         "sourceGroupText": "火腿肠（可选）",
         "quantity": null,
@@ -28873,7 +28983,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "egg",
+        "ingredientId": "zh:蛋黄",
         "originalText": "鸡蛋黄：1 个",
         "sourceGroupText": "鸡蛋黄：1 个",
         "quantity": null,
@@ -29048,7 +29158,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:菠菜",
+        "ingredientId": "unknown:如菠菜。",
         "originalText": "如菠菜。",
         "sourceGroupText": "可根据口味选择增加 50g 蔬菜，如菠菜。",
         "quantity": null,
@@ -29197,8 +29307,8 @@
     "ingredients": [
       {
         "ingredientId": "zh:茄子",
-        "originalText": "茄子",
-        "sourceGroupText": "茄子",
+        "originalText": "茄子数量 = 份数 *  1.8 个",
+        "sourceGroupText": "茄子数量 = 份数 *  1.8 个",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -29628,10 +29738,10 @@
       },
       {
         "ingredientId": "zh:酸奶",
-        "originalText": "原味酸奶",
-        "sourceGroupText": "原味酸奶",
-        "quantity": null,
-        "unit": "",
+        "originalText": "原味酸奶 250g",
+        "sourceGroupText": "原味酸奶 250g",
+        "quantity": 250,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -29769,8 +29879,8 @@
       },
       {
         "ingredientId": "ginger",
-        "originalText": "姜",
-        "sourceGroupText": "姜",
+        "originalText": "姜  一块",
+        "sourceGroupText": "姜  一块",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -29961,7 +30071,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "tofu",
+        "ingredientId": "unknown:白豆腐",
         "originalText": "白豆腐",
         "sourceGroupText": "白豆腐",
         "quantity": null,
@@ -30572,11 +30682,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "chili",
-        "originalText": "红辣椒",
-        "sourceGroupText": "红辣椒",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:红椒",
+        "originalText": "红辣椒 1 颗",
+        "sourceGroupText": "红辣椒 1 颗",
+        "quantity": 1,
+        "unit": "颗",
         "optional": false,
         "group": "原料"
       },
@@ -30720,7 +30830,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:葱油",
+        "ingredientId": "unknown:红葱油",
         "originalText": "红葱油（可选）",
         "sourceGroupText": "红葱油（可选）",
         "quantity": null,
@@ -30877,9 +30987,9 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "zh:河粉",
-        "originalText": "河粉用量为 250 g/人",
-        "sourceGroupText": "河粉用量为 250 g/人，如果需要更大食量，可再加 100g/人 向下取整。",
+        "ingredientId": "unknown:炒河粉",
+        "originalText": "炒河粉",
+        "sourceGroupText": "炒河粉、猪肉/牛肉",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -30940,7 +31050,7 @@
         "group": "辅料"
       },
       {
-        "ingredientId": "black-pepper",
+        "ingredientId": "unknown:其他调味料：胡椒粉",
         "originalText": "其他调味料：胡椒粉",
         "sourceGroupText": "其他调味料：胡椒粉",
         "quantity": null,
@@ -31006,6 +31116,15 @@
         "ingredientId": "starch",
         "originalText": "淀粉",
         "sourceGroupText": "黄瓜、面筋块、绿豆芽、鸡蛋、蒜瓣、小葱、淀粉",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:河粉",
+        "originalText": "河粉用量为 250 g/人",
+        "sourceGroupText": "河粉用量为 250 g/人，如果需要更大食量，可再加 100g/人 向下取整。",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -31232,11 +31351,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "pepper",
-        "originalText": "青椒 4 根 （长 10-15cm，宽 2-4cm）",
-        "sourceGroupText": "青椒 4 根 （长 10-15cm，宽 2-4cm）",
-        "quantity": 4,
-        "unit": "根",
+        "ingredientId": "unknown:长条青椒",
+        "originalText": "长条青椒（有些叫线椒，后面介绍以“青椒”代替）",
+        "sourceGroupText": "长条青椒（有些叫线椒，后面介绍以“青椒”代替）",
+        "quantity": null,
+        "unit": "",
         "optional": false,
         "group": "原料"
       },
@@ -31259,9 +31378,9 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:小米",
-        "originalText": "小米辣(可选）",
-        "sourceGroupText": "小米辣(可选）",
+        "ingredientId": "zh:小米椒",
+        "originalText": "小米辣 3-4 颗",
+        "sourceGroupText": "小米辣 3-4 颗",
         "quantity": null,
         "unit": "",
         "optional": true,
@@ -31309,6 +31428,15 @@
         "sourceGroupText": "香油 5-7ml",
         "quantity": null,
         "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "pepper",
+        "originalText": "青椒 4 根 （长 10-15cm，宽 2-4cm）",
+        "sourceGroupText": "青椒 4 根 （长 10-15cm，宽 2-4cm）",
+        "quantity": 4,
+        "unit": "根",
         "optional": false,
         "group": "原料"
       }
@@ -31682,10 +31810,10 @@
       },
       {
         "ingredientId": "zh:五花肉",
-        "originalText": "带皮五花肉 （可用猪绞肉代替）",
-        "sourceGroupText": "带皮五花肉 （可用猪绞肉代替）",
-        "quantity": null,
-        "unit": "",
+        "originalText": "带皮五花肉 500g",
+        "sourceGroupText": "带皮五花肉 500g",
+        "quantity": 500,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -31708,11 +31836,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:生抽酱油",
-        "originalText": "生抽酱油",
-        "sourceGroupText": "生抽酱油",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "soy-sauce",
+        "originalText": "生抽酱油 75 ml",
+        "sourceGroupText": "生抽酱油 75 ml",
+        "quantity": 75,
+        "unit": "ml",
         "optional": false,
         "group": "原料"
       },
@@ -32643,8 +32771,8 @@
       },
       {
         "ingredientId": "chili",
-        "originalText": "青辣椒",
-        "sourceGroupText": "青辣椒",
+        "originalText": "青辣椒 = 份数 * 0.5 个",
+        "sourceGroupText": "青辣椒 = 份数 * 0.5 个",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -32669,7 +32797,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:茄子",
+        "ingredientId": "unknown:青茄子",
         "originalText": "青茄子",
         "sourceGroupText": "青茄子",
         "quantity": null,
@@ -33579,8 +33707,8 @@
       },
       {
         "ingredientId": "onion",
-        "originalText": "洋葱",
-        "sourceGroupText": "洋葱",
+        "originalText": "洋葱 一头",
+        "sourceGroupText": "洋葱 一头",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -33588,8 +33716,8 @@
       },
       {
         "ingredientId": "ginger",
-        "originalText": "姜",
-        "sourceGroupText": "姜",
+        "originalText": "姜 一块",
+        "sourceGroupText": "姜 一块",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -33641,9 +33769,9 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:芝麻",
-        "originalText": "芝麻",
-        "sourceGroupText": "芝麻",
+        "ingredientId": "zh:芝麻粒",
+        "originalText": "芝麻 一把",
+        "sourceGroupText": "芝麻 一把",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -34019,10 +34147,10 @@
     "ingredients": [
       {
         "ingredientId": "chicken-thigh",
-        "originalText": "鸡腿肉（去骨）",
-        "sourceGroupText": "鸡腿肉（去骨）",
-        "quantity": null,
-        "unit": "",
+        "originalText": "鸡腿肉 500g（去骨，切大块）",
+        "sourceGroupText": "鸡腿肉 500g（去骨，切大块）",
+        "quantity": 500,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -34127,10 +34255,19 @@
       },
       {
         "ingredientId": "zh:辣椒粉",
-        "originalText": "红辣椒粉（Kashmiri 红辣椒粉最佳，色红味不辣）",
-        "sourceGroupText": "红辣椒粉（Kashmiri 红辣椒粉最佳，色红味不辣）",
-        "quantity": null,
-        "unit": "",
+        "originalText": "红辣椒粉 5g",
+        "sourceGroupText": "红辣椒粉 5g",
+        "quantity": 5,
+        "unit": "g",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:辣椒粉",
+        "originalText": "红辣椒粉 5g（Kashmiri 红辣椒粉最佳）",
+        "sourceGroupText": "红辣椒粉 5g（Kashmiri 红辣椒粉最佳）",
+        "quantity": 5,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -34577,6 +34714,15 @@
         "ingredientId": "unknown:香料",
         "originalText": "香料（可选，推荐迷迭香或者百里香，尽量使用新鲜的植物枝条而不是这些香料磨成的粉）",
         "sourceGroupText": "香料（可选，推荐迷迭香或者百里香，尽量使用新鲜的植物枝条而不是这些香料磨成的粉）",
+        "quantity": null,
+        "unit": "",
+        "optional": true,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:预制牛排酱汁",
+        "originalText": "预制牛排酱汁（可选）",
+        "sourceGroupText": "预制牛排酱汁（可选）",
         "quantity": null,
         "unit": "",
         "optional": true,
@@ -35761,11 +35907,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:无盐黄油（推荐安佳）",
-        "originalText": "无盐黄油（推荐安佳）",
-        "sourceGroupText": "无盐黄油（推荐安佳）",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "butter",
+        "originalText": "无盐黄油 30g",
+        "sourceGroupText": "无盐黄油 30g",
+        "quantity": 30,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -35947,7 +36093,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "zh:大米",
+        "ingredientId": "unknown:北方大米",
         "originalText": "北方大米",
         "sourceGroupText": "北方大米",
         "quantity": null,
@@ -36650,10 +36796,10 @@
     "ingredients": [
       {
         "ingredientId": "zh:五花肉",
-        "originalText": "带皮五花肉",
-        "sourceGroupText": "带皮五花肉",
-        "quantity": null,
-        "unit": "",
+        "originalText": "带皮五花肉 400 g",
+        "sourceGroupText": "带皮五花肉 400 g",
+        "quantity": 400,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -36726,6 +36872,15 @@
         "sourceGroupText": "食用油 10 ml",
         "quantity": 10,
         "unit": "ml",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:大葱",
+        "originalText": "葱白 15 g",
+        "sourceGroupText": "葱白 15 g",
+        "quantity": 15,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       }
@@ -36879,10 +37034,10 @@
       },
       {
         "ingredientId": "zh:辣椒粉",
-        "originalText": "细辣椒粉（吃辣则加）",
-        "sourceGroupText": "细辣椒粉（吃辣则加）",
-        "quantity": null,
-        "unit": "",
+        "originalText": "细辣椒粉: 50g",
+        "sourceGroupText": "细辣椒粉: 50g",
+        "quantity": 50,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -37053,7 +37208,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "noodles",
+        "ingredientId": "unknown:干面条",
         "originalText": "干面条",
         "sourceGroupText": "干面条",
         "quantity": null,
@@ -37282,11 +37437,11 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "flour",
-        "originalText": "面粉 200 克",
-        "sourceGroupText": "面粉 200 克",
-        "quantity": 200,
-        "unit": "克",
+        "ingredientId": "unknown:普通面粉",
+        "originalText": "普通面粉",
+        "sourceGroupText": "普通面粉",
+        "quantity": null,
+        "unit": "",
         "optional": false,
         "group": "原料"
       },
@@ -37355,10 +37510,19 @@
       },
       {
         "ingredientId": "cheese",
-        "originalText": "芝士片",
-        "sourceGroupText": "芝士片",
-        "quantity": null,
-        "unit": "",
+        "originalText": "芝士片 1 片",
+        "sourceGroupText": "芝士片 1 片",
+        "quantity": 1,
+        "unit": "片",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "flour",
+        "originalText": "面粉 200 克",
+        "sourceGroupText": "面粉 200 克",
+        "quantity": 200,
+        "unit": "克",
         "optional": false,
         "group": "原料"
       }
@@ -38169,7 +38333,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:火腿",
+        "ingredientId": "unknown:火腿肠",
         "originalText": "火腿肠",
         "sourceGroupText": "火腿肠",
         "quantity": null,
@@ -38196,11 +38360,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:尖椒",
-        "originalText": "红尖椒（可选）",
-        "sourceGroupText": "红尖椒（可选）",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:红椒",
+        "originalText": "红尖椒 1 个（可选）",
+        "sourceGroupText": "红尖椒 1 个（可选）",
+        "quantity": 1,
+        "unit": "个",
         "optional": true,
         "group": "原料"
       },
@@ -38345,8 +38509,8 @@
     "ingredients": [
       {
         "ingredientId": "zh:草鱼",
-        "originalText": "草鱼（农贸市场或者超市让店家杀掉，去除不要的器官）",
-        "sourceGroupText": "草鱼（农贸市场或者超市让店家杀掉，去除不要的器官）",
+        "originalText": "草鱼 大约三斤",
+        "sourceGroupText": "草鱼 大约三斤",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -38390,8 +38554,8 @@
       },
       {
         "ingredientId": "garlic",
-        "originalText": "大蒜",
-        "sourceGroupText": "大蒜",
+        "originalText": "大蒜粒 八个",
+        "sourceGroupText": "大蒜粒 八个",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -38434,7 +38598,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:干辣椒",
+        "ingredientId": "unknown:干辣椒段",
         "originalText": "干辣椒段",
         "sourceGroupText": "干辣椒段",
         "quantity": null,
@@ -38498,8 +38662,8 @@
       },
       {
         "ingredientId": "zh:芹菜",
-        "originalText": "芹菜段",
-        "sourceGroupText": "芹菜段",
+        "originalText": "芹菜段 两根",
+        "sourceGroupText": "芹菜段 两根",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -38744,7 +38908,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "pasta",
+        "ingredientId": "unknown:1 袋 半成品意大利面",
         "originalText": "1 袋 半成品意大利面（推荐品牌圃美多）",
         "sourceGroupText": "1 袋 半成品意大利面（推荐品牌圃美多）",
         "quantity": null,
@@ -39663,11 +39827,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:姜丝",
-        "originalText": "姜丝",
-        "sourceGroupText": "姜丝",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "ginger",
+        "originalText": "姜丝 10 g",
+        "sourceGroupText": "姜丝 10 g",
+        "quantity": 10,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -40049,7 +40213,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:红椒粉",
+        "ingredientId": "unknown:paprika",
         "originalText": "paprika（红甜椒粉）",
         "sourceGroupText": "paprika（红甜椒粉）",
         "quantity": null,
@@ -40933,7 +41097,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "chili",
+        "ingredientId": "unknown:青红辣椒",
         "originalText": "青红辣椒",
         "sourceGroupText": "青红辣椒",
         "quantity": null,
@@ -41234,15 +41398,6 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:煲汤盅",
-        "originalText": "煲汤盅",
-        "sourceGroupText": "煲汤盅",
-        "quantity": null,
-        "unit": "",
-        "optional": false,
-        "group": "原料"
-      },
-      {
         "ingredientId": "salt",
         "originalText": "食盐",
         "sourceGroupText": "食盐 ，5g",
@@ -41401,10 +41556,10 @@
       },
       {
         "ingredientId": "garlic",
-        "originalText": "蒜瓣",
-        "sourceGroupText": "蒜瓣",
-        "quantity": null,
-        "unit": "",
+        "originalText": "蒜粒 3 瓣",
+        "sourceGroupText": "蒜粒 3 瓣",
+        "quantity": 3,
+        "unit": "瓣",
         "optional": false,
         "group": "原料"
       },
@@ -41804,15 +41959,6 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:煲汤盅",
-        "originalText": "煲汤盅",
-        "sourceGroupText": "煲汤盅",
-        "quantity": null,
-        "unit": "",
-        "optional": false,
-        "group": "原料"
-      },
-      {
         "ingredientId": "salt",
         "originalText": "食盐",
         "sourceGroupText": "食盐 ，5g",
@@ -41971,8 +42117,8 @@
       },
       {
         "ingredientId": "ginger",
-        "originalText": "生姜片",
-        "sourceGroupText": "生姜片",
+        "originalText": "生姜片 = 两片",
+        "sourceGroupText": "生姜片 = 两片",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -42253,11 +42399,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:小米",
-        "originalText": "小米辣",
-        "sourceGroupText": "小米辣",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:小米椒",
+        "originalText": "小米辣  3 颗",
+        "sourceGroupText": "小米辣  3 颗",
+        "quantity": 3,
+        "unit": "颗",
         "optional": false,
         "group": "原料"
       },
@@ -42819,7 +42965,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "zh:芸豆",
+        "ingredientId": "unknown:红芸豆",
         "originalText": "红芸豆(Kidney Beans / Rajma)",
         "sourceGroupText": "红芸豆(Kidney Beans / Rajma)",
         "quantity": null,
@@ -42874,10 +43020,10 @@
       },
       {
         "ingredientId": "chili",
-        "originalText": "青辣椒",
-        "sourceGroupText": "青辣椒",
-        "quantity": null,
-        "unit": "",
+        "originalText": "青辣椒 1 根",
+        "sourceGroupText": "青辣椒 1 根，切缝",
+        "quantity": 1,
+        "unit": "根",
         "optional": false,
         "group": "原料"
       },
@@ -42886,6 +43032,15 @@
         "originalText": "香菜粉 5g",
         "sourceGroupText": "香菜粉 5g",
         "quantity": 5,
+        "unit": "g",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:香菜",
+        "originalText": "香菜叶 15g（装饰用）",
+        "sourceGroupText": "香菜叶 15g（装饰用）",
+        "quantity": 15,
         "unit": "g",
         "optional": false,
         "group": "原料"
@@ -42910,10 +43065,10 @@
       },
       {
         "ingredientId": "zh:辣椒粉",
-        "originalText": "红辣椒粉",
-        "sourceGroupText": "红辣椒粉",
-        "quantity": null,
-        "unit": "",
+        "originalText": "红辣椒粉 5g",
+        "sourceGroupText": "红辣椒粉 5g",
+        "quantity": 5,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -43378,7 +43533,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "cheese",
+        "ingredientId": "unknown:马斯卡彭芝士",
         "originalText": "马斯卡彭芝士",
         "sourceGroupText": "马斯卡彭芝士",
         "quantity": null,
@@ -43396,7 +43551,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:浓缩咖啡",
+        "ingredientId": "unknown:放凉浓缩咖啡",
         "originalText": "放凉浓缩咖啡",
         "sourceGroupText": "放凉浓缩咖啡",
         "quantity": null,
@@ -43406,10 +43561,10 @@
       },
       {
         "ingredientId": "egg",
-        "originalText": "无菌鸡蛋",
-        "sourceGroupText": "无菌鸡蛋",
-        "quantity": null,
-        "unit": "",
+        "originalText": "无菌鸡蛋 4 个",
+        "sourceGroupText": "无菌鸡蛋 4 个",
+        "quantity": 4,
+        "unit": "个",
         "optional": false,
         "group": "原料"
       },
@@ -43840,17 +43995,17 @@
       },
       {
         "ingredientId": "ginger",
-        "originalText": "生姜末",
-        "sourceGroupText": "生姜末",
+        "originalText": "生姜末 5-10 g",
+        "sourceGroupText": "生姜末 5-10 g",
         "quantity": null,
         "unit": "",
         "optional": false,
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:葱末",
-        "originalText": "葱末（只用绿色部分）",
-        "sourceGroupText": "葱末（只用绿色部分）",
+        "ingredientId": "scallion",
+        "originalText": "葱末 10-20 g",
+        "sourceGroupText": "葱末 10-20 g",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -44187,7 +44342,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:橄榄",
+        "ingredientId": "unknown:橄榄菜",
         "originalText": "橄榄菜",
         "sourceGroupText": "橄榄菜",
         "quantity": null,
@@ -44205,11 +44360,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:小米",
-        "originalText": "小米辣（不吃辣可以不放）",
-        "sourceGroupText": "小米辣（不吃辣可以不放）",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:小米椒",
+        "originalText": "小米辣 10g",
+        "sourceGroupText": "小米辣 10g",
+        "quantity": 10,
+        "unit": "g",
         "optional": true,
         "group": "原料"
       }
@@ -44866,10 +45021,10 @@
       },
       {
         "ingredientId": "zh:孜然",
-        "originalText": "孜然粒",
-        "sourceGroupText": "孜然粒",
-        "quantity": null,
-        "unit": "",
+        "originalText": "孜然粒 2g",
+        "sourceGroupText": "孜然粒 2g",
+        "quantity": 2,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -45043,11 +45198,11 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "unknown:无盐黄油（推荐品牌总统）",
-        "originalText": "无盐黄油（推荐品牌总统）",
-        "sourceGroupText": "无盐黄油（推荐品牌总统）",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "butter",
+        "originalText": "无盐黄油 40g",
+        "sourceGroupText": "无盐黄油 40g",
+        "quantity": 40,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -45395,7 +45550,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "noodles",
+        "ingredientId": "unknown:面食材料：可以是手工面条",
         "originalText": "面食材料：可以是手工面条",
         "sourceGroupText": "面食材料：可以是手工面条、龙须面、面鱼，也可以是泡面面饼、各类规格粉丝，或者是其他任何自己所喜欢的面食形式。",
         "quantity": null,
@@ -45422,7 +45577,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:泡面",
+        "ingredientId": "unknown:也可以是泡面面饼",
         "originalText": "也可以是泡面面饼",
         "sourceGroupText": "面食材料：可以是手工面条、龙须面、面鱼，也可以是泡面面饼、各类规格粉丝，或者是其他任何自己所喜欢的面食形式。",
         "quantity": null,
@@ -45431,7 +45586,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:粉丝",
+        "ingredientId": "unknown:各类规格粉丝",
         "originalText": "各类规格粉丝",
         "sourceGroupText": "面食材料：可以是手工面条、龙须面、面鱼，也可以是泡面面饼、各类规格粉丝，或者是其他任何自己所喜欢的面食形式。",
         "quantity": null,
@@ -45476,7 +45631,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:豆腐皮",
+        "ingredientId": "unknown:豆块豆筋豆腐皮等豆制品类",
         "originalText": "豆块豆筋豆腐皮等豆制品类",
         "sourceGroupText": "豆块豆筋豆腐皮等豆制品类",
         "quantity": null,
@@ -46933,7 +47088,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "mushroom",
+        "ingredientId": "unknown:白蘑菇",
         "originalText": "白蘑菇",
         "sourceGroupText": "白蘑菇",
         "quantity": null,
@@ -48119,11 +48274,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:干辣椒",
-        "originalText": "干辣椒面（或秦椒面）",
-        "sourceGroupText": "干辣椒面（或秦椒面）",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:辣椒面",
+        "originalText": "干辣椒面 15g",
+        "sourceGroupText": "干辣椒面 15g",
+        "quantity": 15,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -48332,7 +48487,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "zh:咖啡",
+        "ingredientId": "unknown:甘露咖啡酒",
         "originalText": "甘露咖啡酒",
         "sourceGroupText": "甘露咖啡酒",
         "quantity": null,
@@ -49447,11 +49602,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:小米",
-        "originalText": "小米辣",
-        "sourceGroupText": "小米辣",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:小米椒",
+        "originalText": "小米辣: 2 个",
+        "sourceGroupText": "小米辣: 2 个",
+        "quantity": 2,
+        "unit": "个",
         "optional": false,
         "group": "原料"
       },
@@ -50520,7 +50675,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:芸豆",
+        "ingredientId": "unknown:白芸豆",
         "originalText": "白芸豆（没有可用海带）",
         "sourceGroupText": "白芸豆（没有可用海带）",
         "quantity": null,
@@ -50843,6 +50998,15 @@
         "quantity": null,
         "unit": "",
         "optional": true,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "water",
+        "originalText": "沸水 100 - 150 ml",
+        "sourceGroupText": "沸水 100 - 150 ml",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
         "group": "原料"
       }
     ],
@@ -51438,7 +51602,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "zh:莴笋",
+        "ingredientId": "unknown:莴笋叶",
         "originalText": "莴笋叶",
         "sourceGroupText": "莴笋叶",
         "quantity": null,
@@ -51761,11 +51925,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:小米",
-        "originalText": "小米辣",
-        "sourceGroupText": "小米辣",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:小米椒",
+        "originalText": "小米辣 1 根",
+        "sourceGroupText": "小米辣 1 根",
+        "quantity": 1,
+        "unit": "根",
         "optional": false,
         "group": "原料"
       },
@@ -52256,8 +52420,8 @@
     "ingredients": [
       {
         "ingredientId": "ginger",
-        "originalText": "姜",
-        "sourceGroupText": "姜、蒜瓣、干辣椒",
+        "originalText": "姜丝",
+        "sourceGroupText": "姜丝，以正常老姜切 2-3 片，然后片丝即可",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -52574,9 +52738,9 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:小米",
-        "originalText": "小米辣",
-        "sourceGroupText": "小米辣",
+        "ingredientId": "zh:小米椒",
+        "originalText": "小米辣 1-2 根 （看个人吃辣程度）",
+        "sourceGroupText": "小米辣 1-2 根 （看个人吃辣程度）",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -52758,7 +52922,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "zh:鸭肉",
+        "ingredientId": "unknown:鲜仔鸭肉",
         "originalText": "鲜仔鸭肉",
         "sourceGroupText": "鲜仔鸭肉",
         "quantity": null,
@@ -52785,11 +52949,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:蒜仔",
-        "originalText": "蒜仔",
-        "sourceGroupText": "蒜仔",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "garlic",
+        "originalText": "蒜仔 6 瓣",
+        "sourceGroupText": "蒜仔 6 瓣",
+        "quantity": 6,
+        "unit": "瓣",
         "optional": false,
         "group": "原料"
       },
@@ -53007,7 +53171,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:火腿",
+        "ingredientId": "unknown:火腿肠",
         "originalText": "火腿肠（可选）",
         "sourceGroupText": "火腿肠（可选）",
         "quantity": null,
@@ -53493,10 +53657,10 @@
     "ingredients": [
       {
         "ingredientId": "zh:牛腱",
-        "originalText": "牛腱子肉",
-        "sourceGroupText": "牛腱子肉",
-        "quantity": null,
-        "unit": "",
+        "originalText": "牛腱子肉 2000 克",
+        "sourceGroupText": "牛腱子肉 2000 克",
+        "quantity": 2000,
+        "unit": "克",
         "optional": false,
         "group": "原料"
       },
@@ -53829,11 +53993,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:葱段",
-        "originalText": "葱段",
-        "sourceGroupText": "葱段",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "scallion",
+        "originalText": "小葱 5 根",
+        "sourceGroupText": "小葱 5 根",
+        "quantity": 5,
+        "unit": "根",
         "optional": false,
         "group": "原料"
       },
@@ -53915,15 +54079,6 @@
         "sourceGroupText": "辣椒油 5ml",
         "quantity": 5,
         "unit": "ml",
-        "optional": false,
-        "group": "原料"
-      },
-      {
-        "ingredientId": "scallion",
-        "originalText": "小葱 5 根",
-        "sourceGroupText": "小葱 5 根",
-        "quantity": 5,
-        "unit": "根",
         "optional": false,
         "group": "原料"
       }
@@ -54140,10 +54295,10 @@
     "ingredients": [
       {
         "ingredientId": "zh:五花肉",
-        "originalText": "猪五花肉",
-        "sourceGroupText": "猪五花肉",
-        "quantity": null,
-        "unit": "",
+        "originalText": "猪五花肉 200g",
+        "sourceGroupText": "猪五花肉 200g",
+        "quantity": 200,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -54468,10 +54623,10 @@
       },
       {
         "ingredientId": "zh:牛腱",
-        "originalText": "牛腱子（或其他肉类）",
-        "sourceGroupText": "牛腱子（或其他肉类）",
-        "quantity": null,
-        "unit": "",
+        "originalText": "牛腱子 500g",
+        "sourceGroupText": "牛腱子 500g",
+        "quantity": 500,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -54743,7 +54898,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:牛排",
+        "ingredientId": "unknown:黑椒混合牛排调味料",
         "originalText": "黑椒混合牛排调味料（懒）",
         "sourceGroupText": "必备：黑椒混合牛排调味料（懒）",
         "quantity": null,
@@ -54752,7 +54907,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "garlic",
+        "ingredientId": "unknown:蒜蓉酱",
         "originalText": "蒜蓉酱（推荐川娃子的，同样是因为懒）",
         "sourceGroupText": "必备：蒜蓉酱（推荐川娃子的，同样是因为懒）",
         "quantity": null,
@@ -55317,8 +55472,8 @@
       },
       {
         "ingredientId": "cheese",
-        "originalText": "芝士",
-        "sourceGroupText": "芝士",
+        "originalText": "芝士片 1-2 片",
+        "sourceGroupText": "芝士片 1-2 片",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -55906,6 +56061,15 @@
         "group": "原料"
       },
       {
+        "ingredientId": "unknown:绵白糖：可以不加水",
+        "originalText": "绵白糖：可以不加水",
+        "sourceGroupText": "绵白糖：可以不加水",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
         "ingredientId": "unknown:火候过了发苦",
         "originalText": "火候过了发苦",
         "sourceGroupText": "炒糖色过程火不要太大！！！电磁炉温度不够，火候过了发苦，不够发甜",
@@ -56046,8 +56210,8 @@
     "ingredients": [
       {
         "ingredientId": "egg",
-        "originalText": "新鲜鸡蛋",
-        "sourceGroupText": "新鲜鸡蛋",
+        "originalText": "鸡蛋两只",
+        "sourceGroupText": "鸡蛋两只",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -56222,7 +56386,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:南瓜",
+        "ingredientId": "unknown:南瓜花",
         "originalText": "南瓜花",
         "sourceGroupText": "青椒、苦瓜、茄子、田螺、豆腐、香菇、南瓜花",
         "quantity": null,
@@ -56321,7 +56485,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "pork",
+        "ingredientId": "unknown:猪肉馅",
         "originalText": "猪肉馅（基础款，肥瘦比例 3:7）",
         "sourceGroupText": "猪肉馅（基础款，肥瘦比例 3:7）",
         "quantity": null,
@@ -56478,9 +56642,9 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:橙汁",
-        "originalText": "橙汁 35~50ml",
-        "sourceGroupText": "橙汁 35~50ml",
+        "ingredientId": "unknown:NFC 橙汁",
+        "originalText": "NFC 橙汁",
+        "sourceGroupText": "NFC 橙汁",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -56580,6 +56744,15 @@
         "ingredientId": "unknown:吸管",
         "originalText": "吸管",
         "sourceGroupText": "吸管",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:橙汁",
+        "originalText": "橙汁 35~50ml",
+        "sourceGroupText": "橙汁 35~50ml",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -56902,7 +57075,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:酸菜",
+        "ingredientId": "unknown:东北酸菜",
         "originalText": "东北酸菜",
         "sourceGroupText": "东北酸菜",
         "quantity": null,
@@ -56947,11 +57120,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:生抽酱油",
-        "originalText": "生抽酱油",
-        "sourceGroupText": "生抽酱油",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "soy-sauce",
+        "originalText": "生抽酱油 15 克",
+        "sourceGroupText": "生抽酱油 15 克",
+        "quantity": 15,
+        "unit": "克",
         "optional": false,
         "group": "原料"
       },
@@ -57636,7 +57809,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:基围虾",
+        "ingredientId": "unknown:冷冻去皮基围虾",
         "originalText": "冷冻去皮基围虾",
         "sourceGroupText": "冷冻去皮基围虾",
         "quantity": null,
@@ -57910,11 +58083,11 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "zh:里脊肉",
-        "originalText": "里脊肉的用量为 300g",
-        "sourceGroupText": "里脊肉的用量为 300g",
-        "quantity": 300,
-        "unit": "g",
+        "ingredientId": "unknown:猪里脊肉",
+        "originalText": "猪里脊肉",
+        "sourceGroupText": "猪里脊肉",
+        "quantity": null,
+        "unit": "",
         "optional": false,
         "group": "原料"
       },
@@ -57937,11 +58110,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:生抽酱油",
-        "originalText": "生抽酱油",
-        "sourceGroupText": "生抽酱油",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "soy-sauce",
+        "originalText": "生抽酱油 5g",
+        "sourceGroupText": "生抽酱油 5g",
+        "quantity": 5,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -57955,11 +58128,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "egg",
-        "originalText": "鸡蛋清",
-        "sourceGroupText": "鸡蛋清",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:蛋白",
+        "originalText": "鸡蛋清  1 个",
+        "sourceGroupText": "鸡蛋清  1 个",
+        "quantity": 1,
+        "unit": "个",
         "optional": false,
         "group": "原料"
       },
@@ -58036,7 +58209,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:泡椒",
+        "ingredientId": "unknown:红泡椒",
         "originalText": "红泡椒",
         "sourceGroupText": "红泡椒",
         "quantity": null,
@@ -58063,7 +58236,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:红油",
+        "ingredientId": "unknown:红油豆瓣",
         "originalText": "红油豆瓣",
         "sourceGroupText": "红油豆瓣",
         "quantity": null,
@@ -58103,6 +58276,15 @@
         "originalText": "菜籽油 200g（根据情况选择，想吃重油就多加 100g）",
         "sourceGroupText": "菜籽油 200g（根据情况选择，想吃重油就多加 100g）",
         "quantity": 200,
+        "unit": "g",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:里脊肉",
+        "originalText": "里脊肉的用量为 300g",
+        "sourceGroupText": "里脊肉的用量为 300g",
+        "quantity": 300,
         "unit": "g",
         "optional": false,
         "group": "原料"
@@ -58283,7 +58465,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:苏打水",
+        "ingredientId": "unknown:冰镇苏打水",
         "originalText": "冰镇苏打水",
         "sourceGroupText": "冰镇苏打水",
         "quantity": null,
@@ -58918,7 +59100,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:松子",
+        "ingredientId": "unknown:熟松子仁",
         "originalText": "熟松子仁",
         "sourceGroupText": "熟松子仁",
         "quantity": null,
@@ -59093,7 +59275,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:豆豉",
+        "ingredientId": "unknown:阳江豆豉",
         "originalText": "阳江豆豉",
         "sourceGroupText": "阳江豆豉",
         "quantity": null,
@@ -59681,7 +59863,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "zh:芋头",
+        "ingredientId": "unknown:荔浦芋头",
         "originalText": "荔浦芋头（电商平台购买即可，实惠新鲜）",
         "sourceGroupText": "荔浦芋头（电商平台购买即可，实惠新鲜）",
         "quantity": null,
@@ -60116,7 +60298,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:啤酒",
+        "ingredientId": "unknown:漓泉啤酒",
         "originalText": "漓泉啤酒（一瓶，约 330ml，桂林本地啤酒，最正宗）",
         "sourceGroupText": "漓泉啤酒（一瓶，约 330ml，桂林本地啤酒，最正宗）",
         "quantity": null,
@@ -60179,7 +60361,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:辣椒酱",
+        "ingredientId": "unknown:桂林辣椒酱",
         "originalText": "桂林辣椒酱",
         "sourceGroupText": "桂林辣椒酱",
         "quantity": null,
@@ -60493,11 +60675,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:小米",
-        "originalText": "小米辣",
-        "sourceGroupText": "小米辣",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:小米椒",
+        "originalText": "小米辣 10 g（约 3 个）",
+        "sourceGroupText": "小米辣 10 g（约 3 个）",
+        "quantity": 10,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -60740,7 +60922,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "starch",
+        "ingredientId": "unknown:水淀粉",
         "originalText": "水淀粉",
         "sourceGroupText": "水淀粉",
         "quantity": null,
@@ -60778,6 +60960,15 @@
       {
         "ingredientId": "garlic",
         "originalText": "蒜",
+        "sourceGroupText": "小葱、姜、蒜、小米辣 （根据自己口味）",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:小米椒",
+        "originalText": "小米辣 （根据自己口味）",
         "sourceGroupText": "小葱、姜、蒜、小米辣 （根据自己口味）",
         "quantity": null,
         "unit": "",
@@ -60934,8 +61125,8 @@
       },
       {
         "ingredientId": "zh:玉米粒",
-        "originalText": "冷冻玉米粒（可选）",
-        "sourceGroupText": "冷冻玉米粒（可选）",
+        "originalText": "冷冻玉米粒(30g)",
+        "sourceGroupText": "冷冻玉米粒(30g)",
         "quantity": null,
         "unit": "",
         "optional": true,
@@ -60951,7 +61142,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:沙拉酱",
+        "ingredientId": "unknown:喜欢的沙拉酱",
         "originalText": "喜欢的沙拉酱（推荐日式 mayo！）",
         "sourceGroupText": "喜欢的沙拉酱（推荐日式 mayo！）",
         "quantity": null,
@@ -61081,11 +61272,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:干辣椒",
-        "originalText": "干辣椒面",
-        "sourceGroupText": "干辣椒面",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:辣椒面",
+        "originalText": "干辣椒面 100 克",
+        "sourceGroupText": "干辣椒面 100 克",
+        "quantity": 100,
+        "unit": "克",
         "optional": false,
         "group": "原料"
       },
@@ -61384,7 +61575,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:海苔碎",
+        "ingredientId": "unknown:鲣鱼海苔碎",
         "originalText": "鲣鱼海苔碎（JD 和淘宝都有，可以搜索：日式拌饭料）",
         "sourceGroupText": "必备：鲣鱼海苔碎（JD 和淘宝都有，可以搜索：日式拌饭料）",
         "quantity": null,
@@ -61773,6 +61964,15 @@
       },
       {
         "ingredientId": "zh:香油",
+        "originalText": "芝麻香油 2-3ml",
+        "sourceGroupText": "芝麻香油 2-3ml",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:香油",
         "originalText": "香油 2ml",
         "sourceGroupText": "香油 2ml",
         "quantity": 2,
@@ -62129,7 +62329,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:小米椒",
+        "ingredientId": "unknown:干小米椒🌶",
         "originalText": "干小米椒🌶（根据个人情况而定）",
         "sourceGroupText": "干小米椒🌶（根据个人情况而定）",
         "quantity": null,
@@ -62413,10 +62613,10 @@
       },
       {
         "ingredientId": "zh:香菜",
-        "originalText": "香菜叶（可选）",
-        "sourceGroupText": "香菜叶（可选）",
-        "quantity": null,
-        "unit": "",
+        "originalText": "香菜叶 10g（可选）",
+        "sourceGroupText": "香菜叶 10g（可选）",
+        "quantity": 10,
+        "unit": "g",
         "optional": true,
         "group": "原料"
       },
@@ -62842,11 +63042,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:芝麻",
-        "originalText": "芝麻",
-        "sourceGroupText": "芝麻",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:芝麻粒",
+        "originalText": "芝麻 10g",
+        "sourceGroupText": "芝麻 10g",
+        "quantity": 10,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -63044,11 +63244,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:葱结",
-        "originalText": "葱结",
-        "sourceGroupText": "葱结",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "scallion",
+        "originalText": "葱结 1 个",
+        "sourceGroupText": "葱结 1 个",
+        "quantity": 1,
+        "unit": "个",
         "optional": false,
         "group": "原料"
       },
@@ -63372,9 +63572,9 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:小米",
-        "originalText": "小米辣（不吃辣可不放或替换成红菜椒）",
-        "sourceGroupText": "小米辣（不吃辣可不放或替换成红菜椒）",
+        "ingredientId": "zh:小米椒",
+        "originalText": "小米辣 1-2 个",
+        "sourceGroupText": "小米辣 1-2 个",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -63587,7 +63787,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "tofu",
+        "ingredientId": "unknown:内脂豆腐",
         "originalText": "内脂豆腐（推荐清美）",
         "sourceGroupText": "内脂豆腐（推荐清美）",
         "quantity": null,
@@ -63633,8 +63833,8 @@
       },
       {
         "ingredientId": "zh:小米椒",
-        "originalText": "小米椒（不吃辣的可选）",
-        "sourceGroupText": "小米椒（不吃辣的可选）",
+        "originalText": "5 根小米辣",
+        "sourceGroupText": "5 根小米辣",
         "quantity": null,
         "unit": "",
         "optional": true,
@@ -64039,10 +64239,10 @@
     "ingredients": [
       {
         "ingredientId": "zh:五花肉",
-        "originalText": "五花肉薄片",
-        "sourceGroupText": "五花肉薄片",
-        "quantity": null,
-        "unit": "",
+        "originalText": "五花肉薄片 4 片（约 20g）",
+        "sourceGroupText": "五花肉薄片 4 片（约 20g）",
+        "quantity": 4,
+        "unit": "片",
         "optional": false,
         "group": "原料"
       },
@@ -64267,9 +64467,9 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:小米",
-        "originalText": "小米辣",
-        "sourceGroupText": "大蒜、小米辣",
+        "ingredientId": "zh:小米椒",
+        "originalText": "小米辣一两根",
+        "sourceGroupText": "大蒜四五瓣、小米辣一两根",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -64443,8 +64643,8 @@
       },
       {
         "ingredientId": "zh:酸奶",
-        "originalText": "原味酸奶",
-        "sourceGroupText": "原味酸奶",
+        "originalText": "原味酸奶 1 盒",
+        "sourceGroupText": "原味酸奶 1 盒",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -64621,10 +64821,10 @@
       },
       {
         "ingredientId": "ginger",
-        "originalText": "姜",
-        "sourceGroupText": "姜",
-        "quantity": null,
-        "unit": "",
+        "originalText": "姜沫：20g",
+        "sourceGroupText": "姜沫：20g",
+        "quantity": 20,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -65397,7 +65597,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "zh:咖啡",
+        "ingredientId": "unknown:咖啡液",
         "originalText": "咖啡液（推荐浓缩或者冷萃）",
         "sourceGroupText": "咖啡液（推荐浓缩或者冷萃）",
         "quantity": null,
@@ -65406,7 +65606,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:菠萝",
+        "ingredientId": "unknown:菠萝汁",
         "originalText": "菠萝汁（鲜榨或者 nfc）",
         "sourceGroupText": "菠萝汁（鲜榨或者 nfc）",
         "quantity": null,
@@ -65563,7 +65763,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "zh:鳕鱼",
+        "ingredientId": "unknown:黑鳕鱼",
         "originalText": "黑鳕鱼",
         "sourceGroupText": "黑鳕鱼，带皮",
         "quantity": null,
@@ -65647,6 +65847,15 @@
         "ingredientId": "unknown:密封袋",
         "originalText": "密封袋",
         "sourceGroupText": "密封袋",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:大葱",
+        "originalText": "葱白",
+        "sourceGroupText": "青葱，葱白，25g。",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -66612,11 +66821,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:小米",
-        "originalText": "小米辣",
-        "sourceGroupText": "小米辣",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:小米椒",
+        "originalText": "小米辣 2 根",
+        "sourceGroupText": "小米辣 2 根",
+        "quantity": 2,
+        "unit": "根",
         "optional": false,
         "group": "原料"
       },
@@ -67236,7 +67445,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:菠菜",
+        "ingredientId": "unknown:菠菜叶",
         "originalText": "菠菜叶（ 2-5 片）",
         "sourceGroupText": "菠菜叶（ 2-5 片）",
         "quantity": null,
@@ -67420,7 +67629,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:山楂",
+        "ingredientId": "unknown:山楂片",
         "originalText": "山楂片（生）",
         "sourceGroupText": "山楂片（生）",
         "quantity": null,
@@ -67429,7 +67638,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:冰糖",
+        "ingredientId": "unknown:黄冰糖",
         "originalText": "黄冰糖",
         "sourceGroupText": "黄冰糖",
         "quantity": null,
@@ -67456,7 +67665,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:红豆",
+        "ingredientId": "unknown:红豆蔻",
         "originalText": "红豆蔻",
         "sourceGroupText": "红豆蔻",
         "quantity": null,
@@ -67595,9 +67804,9 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:小米",
-        "originalText": "小米辣",
-        "sourceGroupText": "小米辣",
+        "ingredientId": "zh:小米椒",
+        "originalText": "小米辣 = 2 个",
+        "sourceGroupText": "小米辣 = 2 个",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -69074,7 +69283,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "zh:碱水面",
+        "ingredientId": "unknown:热干面特有的碱水面",
         "originalText": "热干面特有的碱水面",
         "sourceGroupText": "热干面特有的碱水面",
         "quantity": null,
@@ -69092,7 +69301,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:豆角",
+        "ingredientId": "unknown:酸豆角",
         "originalText": "酸豆角",
         "sourceGroupText": "酸豆角",
         "quantity": null,
@@ -69366,7 +69575,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "water",
+        "ingredientId": "unknown:凉白开水",
         "originalText": "凉白开水",
         "sourceGroupText": "凉白开水",
         "quantity": null,
@@ -69577,7 +69786,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:红椒",
+        "ingredientId": "unknown:青红椒",
         "originalText": "青红椒",
         "sourceGroupText": "青红椒",
         "quantity": null,
@@ -69613,11 +69822,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:生抽酱油",
-        "originalText": "生抽酱油",
-        "sourceGroupText": "生抽酱油",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "soy-sauce",
+        "originalText": "生抽 5ml",
+        "sourceGroupText": "生抽 5ml",
+        "quantity": 5,
+        "unit": "ml",
         "optional": false,
         "group": "原料"
       },
@@ -69627,15 +69836,6 @@
         "sourceGroupText": "味精 5g",
         "quantity": 5,
         "unit": "g",
-        "optional": false,
-        "group": "原料"
-      },
-      {
-        "ingredientId": "soy-sauce",
-        "originalText": "生抽 5ml",
-        "sourceGroupText": "生抽 5ml",
-        "quantity": 5,
-        "unit": "ml",
         "optional": false,
         "group": "原料"
       }
@@ -69905,7 +70105,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "zh:羊排",
+        "ingredientId": "unknown:带皮羊排肉",
         "originalText": "带皮羊排肉",
         "sourceGroupText": "带皮羊排肉",
         "quantity": null,
@@ -70898,7 +71098,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:芝麻",
+        "ingredientId": "zh:芝麻粒",
         "originalText": "芝麻",
         "sourceGroupText": "芝麻",
         "quantity": null,
@@ -71779,8 +71979,8 @@
       },
       {
         "ingredientId": "pepper",
-        "originalText": "青椒",
-        "sourceGroupText": "青椒",
+        "originalText": "青椒的数量 = 份数 * 5 个",
+        "sourceGroupText": "青椒的数量 = 份数 * 5 个",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -72086,10 +72286,10 @@
       },
       {
         "ingredientId": "zh:小米椒",
-        "originalText": "小米椒",
-        "sourceGroupText": "小米椒",
-        "quantity": null,
-        "unit": "",
+        "originalText": "小米辣 3 颗",
+        "sourceGroupText": "小米辣 3 颗，切两段即可(不吃辣的可以不用",
+        "quantity": 3,
+        "unit": "颗",
         "optional": false,
         "group": "原料"
       },
@@ -72353,10 +72553,10 @@
       },
       {
         "ingredientId": "milk",
-        "originalText": "纯牛奶（推荐卫岗鲜奶）",
-        "sourceGroupText": "纯牛奶（推荐卫岗鲜奶）",
-        "quantity": null,
-        "unit": "",
+        "originalText": "纯牛奶 50ml",
+        "sourceGroupText": "纯牛奶 50ml",
+        "quantity": 50,
+        "unit": "ml",
         "optional": false,
         "group": "原料"
       },
@@ -72389,10 +72589,10 @@
       },
       {
         "ingredientId": "zh:肥牛",
-        "originalText": "肥牛卷",
-        "sourceGroupText": "肥牛卷",
-        "quantity": null,
-        "unit": "",
+        "originalText": "肥牛卷 300g （喜欢吃肉就多来点）",
+        "sourceGroupText": "肥牛卷 300g （喜欢吃肉就多来点）",
+        "quantity": 300,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -72591,8 +72791,8 @@
       },
       {
         "ingredientId": "chili",
-        "originalText": "子弹头辣椒",
-        "sourceGroupText": "子弹头辣椒",
+        "originalText": "子弹头辣椒 = 5 克",
+        "sourceGroupText": "子弹头辣椒 = 5 克",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -73172,8 +73372,8 @@
       },
       {
         "ingredientId": "scallion",
-        "originalText": "葱",
-        "sourceGroupText": "葱",
+        "originalText": "葱结 一把",
+        "sourceGroupText": "葱结 一把",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -73446,8 +73646,8 @@
       },
       {
         "ingredientId": "ginger",
-        "originalText": "姜",
-        "sourceGroupText": "姜",
+        "originalText": "姜  一块",
+        "sourceGroupText": "姜  一块",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -73593,7 +73793,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "zh:芋头",
+        "ingredientId": "unknown:荔浦芋头",
         "originalText": "荔浦芋头（电商平台购买即可，实惠新鲜）",
         "sourceGroupText": "荔浦芋头（电商平台购买即可，实惠新鲜）",
         "quantity": null,
@@ -73925,7 +74125,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "beef",
+        "ingredientId": "unknown:碎牛肉",
         "originalText": "碎牛肉",
         "sourceGroupText": "碎牛肉",
         "quantity": null,
@@ -74136,7 +74336,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:香肠",
+        "ingredientId": "unknown:辣香肠",
         "originalText": "辣香肠 (Chorizo) 或切块的午餐肉",
         "sourceGroupText": "意式猪肉香肠（去肠衣）、辣香肠 (Chorizo) 或切块的午餐肉",
         "quantity": null,
@@ -74560,7 +74760,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:腊肉",
+        "ingredientId": "unknown:煮熟的腊肉",
         "originalText": "煮熟的腊肉",
         "sourceGroupText": "煮熟的腊肉",
         "quantity": null,
@@ -74717,7 +74917,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:米粉",
+        "ingredientId": "unknown:蒸肉米粉 100g",
         "originalText": "蒸肉米粉 100g（推荐使用李锦记或自制）",
         "sourceGroupText": "蒸肉米粉 100g（推荐使用李锦记或自制）",
         "quantity": null,
@@ -75440,10 +75640,10 @@
     "ingredients": [
       {
         "ingredientId": "chicken-thigh",
-        "originalText": "鸡腿",
-        "sourceGroupText": "鸡腿",
-        "quantity": null,
-        "unit": "",
+        "originalText": "鸡腿肉 400g",
+        "sourceGroupText": "鸡腿肉 400g",
+        "quantity": 400,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -76159,7 +76359,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:小米",
+        "ingredientId": "zh:小米椒",
         "originalText": "小米辣（可选）",
         "sourceGroupText": "小米辣（可选）",
         "quantity": null,
@@ -76391,8 +76591,8 @@
     "ingredients": [
       {
         "ingredientId": "zh:红茶",
-        "originalText": "袋泡红茶（推荐立顿黄牌精选红茶）",
-        "sourceGroupText": "袋泡红茶（推荐立顿黄牌精选红茶）",
+        "originalText": "袋泡红茶 2 包（约 4g）",
+        "sourceGroupText": "袋泡红茶 2 包（约 4g）",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -76520,7 +76720,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:气泡水",
+        "ingredientId": "unknown:苏打气泡水",
         "originalText": "苏打气泡水",
         "sourceGroupText": "苏打气泡水",
         "quantity": null,
@@ -76928,7 +77128,7 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "zh:腊肠",
+        "ingredientId": "unknown:黔式腊肠",
         "originalText": "黔式腊肠",
         "sourceGroupText": "黔式腊肠",
         "quantity": null,
@@ -77430,7 +77630,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:吐司片",
+        "ingredientId": "unknown:方形吐司片",
         "originalText": "方形吐司片",
         "sourceGroupText": "方形吐司片",
         "quantity": null,
@@ -77448,7 +77648,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:酸黄瓜",
+        "ingredientId": "unknown:俄式酸黄瓜汁",
         "originalText": "俄式酸黄瓜汁",
         "sourceGroupText": "俄式酸黄瓜汁",
         "quantity": null,
@@ -77466,7 +77666,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:火腿",
+        "ingredientId": "unknown:火腿片",
         "originalText": "火腿片（可选）",
         "sourceGroupText": "火腿片（可选）",
         "quantity": null,
@@ -78548,11 +78748,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:蒜薹",
-        "originalText": "蒜薹",
-        "sourceGroupText": "蒜薹",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:蒜苔",
+        "originalText": "蒜薹 150g",
+        "sourceGroupText": "蒜薹 150g",
+        "quantity": 150,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -78977,9 +79177,9 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:生抽酱油",
-        "originalText": "生抽酱油",
-        "sourceGroupText": "生抽酱油",
+        "ingredientId": "soy-sauce",
+        "originalText": "生抽酱油 = 10g",
+        "sourceGroupText": "生抽酱油 = 10g",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -79085,6 +79285,15 @@
         "group": "原料"
       },
       {
+        "ingredientId": "unknown:生花生",
+        "originalText": "生花生",
+        "sourceGroupText": "生花生",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
         "ingredientId": "douban",
         "originalText": "豆瓣酱 = 10g",
         "sourceGroupText": "豆瓣酱 = 10g",
@@ -79097,6 +79306,15 @@
         "ingredientId": "ginger",
         "originalText": "姜片 = 10g",
         "sourceGroupText": "姜片 = 10g",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "dark-soy",
+        "originalText": "老抽酱油 = 5g",
+        "sourceGroupText": "老抽酱油 = 5g",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -79360,10 +79578,10 @@
     "ingredients": [
       {
         "ingredientId": "zh:五花肉",
-        "originalText": "带皮猪五花肉（去骨）",
-        "sourceGroupText": "带皮猪五花肉（去骨）",
-        "quantity": null,
-        "unit": "",
+        "originalText": "带皮猪五花肉: 500 克",
+        "sourceGroupText": "带皮猪五花肉: 500 克",
+        "quantity": 500,
+        "unit": "克",
         "optional": false,
         "group": "原料"
       },
@@ -79449,7 +79667,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "egg",
+        "ingredientId": "unknown:摊鸡蛋皮",
         "originalText": "摊鸡蛋皮",
         "sourceGroupText": "摊鸡蛋皮",
         "quantity": null,
@@ -79817,11 +80035,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:普通酱油",
-        "originalText": "酱油（或生抽） 4 汤匙",
-        "sourceGroupText": "酱油（或生抽） 4 汤匙",
-        "quantity": 4,
-        "unit": "汤匙",
+        "ingredientId": "unknown:韩式酱油",
+        "originalText": "韩式酱油（或生抽）",
+        "sourceGroupText": "韩式酱油（或生抽）",
+        "quantity": null,
+        "unit": "",
         "optional": false,
         "group": "原料"
       },
@@ -79867,6 +80085,15 @@
         "sourceGroupText": "辣椒 15g（切圈）",
         "quantity": 15,
         "unit": "g",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:普通酱油",
+        "originalText": "酱油（或生抽） 4 汤匙",
+        "sourceGroupText": "酱油（或生抽） 4 汤匙",
+        "quantity": 4,
+        "unit": "汤匙",
         "optional": false,
         "group": "原料"
       },
@@ -79992,11 +80219,11 @@
     "servingsEstimated": true,
     "ingredients": [
       {
-        "ingredientId": "zh:粉丝",
-        "originalText": "红薯粉丝",
-        "sourceGroupText": "红薯粉丝",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:红薯粉条",
+        "originalText": "红薯粉丝 80g（干重）",
+        "sourceGroupText": "红薯粉丝 80g（干重）",
+        "quantity": 80,
+        "unit": "g",
         "optional": false,
         "group": "原料"
       },
@@ -80239,11 +80466,11 @@
         "group": "原料"
       },
       {
-        "ingredientId": "zh:小米",
-        "originalText": "小米辣",
-        "sourceGroupText": "小米辣",
-        "quantity": null,
-        "unit": "",
+        "ingredientId": "zh:小米椒",
+        "originalText": "小米辣 2 个",
+        "sourceGroupText": "小米辣 2 个",
+        "quantity": 2,
+        "unit": "个",
         "optional": false,
         "group": "原料"
       },
@@ -80412,15 +80639,6 @@
         "unit": "毫升",
         "optional": false,
         "group": "原料"
-      },
-      {
-        "ingredientId": "unknown:蘸料碟",
-        "originalText": "蘸料碟",
-        "sourceGroupText": "蘸料碟",
-        "quantity": null,
-        "unit": "",
-        "optional": false,
-        "group": "原料"
       }
     ],
     "instructions": [
@@ -80526,18 +80744,18 @@
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:生抽酱油",
-        "originalText": "生抽酱油",
-        "sourceGroupText": "生抽酱油",
+        "ingredientId": "soy-sauce",
+        "originalText": "生抽酱油 10-15ml",
+        "sourceGroupText": "生抽酱油 10-15ml",
         "quantity": null,
         "unit": "",
         "optional": false,
         "group": "原料"
       },
       {
-        "ingredientId": "unknown:老抽酱油",
-        "originalText": "老抽酱油",
-        "sourceGroupText": "老抽酱油",
+        "ingredientId": "dark-soy",
+        "originalText": "老抽酱油 5-10ml",
+        "sourceGroupText": "老抽酱油 5-10ml",
         "quantity": null,
         "unit": "",
         "optional": false,
@@ -81130,7 +81348,7 @@
         "group": "原料"
       },
       {
-        "ingredientId": "cola",
+        "ingredientId": "unknown:可口可乐",
         "originalText": "可口可乐",
         "sourceGroupText": "可口可乐",
         "quantity": null,

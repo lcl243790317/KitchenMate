@@ -1,0 +1,140 @@
+{
+  "id": "source:c5fd8f8ac4ee90779dd779fc",
+  "sourceUrl": "https://www.loveandlemons.com/creamy-tomato-soup/",
+  "title": "Creamy Tomato Soup",
+  "rawIngredientFacts": [
+    "3  garlic cloves (unpeeled)",
+    "4  medium fresh tomatoes* (see note)",
+    "1  small yellow onion (sliced into quarters)",
+    "1 (14-oz) can diced tomatoes",
+    "1/3 cup cooked chickpeas",
+    "1 tablespoon balsamic vinegar",
+    "½ teaspoon maple syrup",
+    "2 teaspoons fresh thyme leaves",
+    "1 tablespoon extra-virgin olive oil",
+    "¼ to ½ teaspoon red pepper flakes",
+    "Heaping ½ teaspoon sea salt",
+    "freshly ground black pepper",
+    "8 slices SimplyNature 7 Grain Bread",
+    "heaping ½ cup Earth Grown Vegan Mozzarella"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "garlic",
+      "originalText": "3  garlic cloves (unpeeled)",
+      "quantity": 3,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:4  medium fresh tomatoes* (see note)",
+      "originalText": "4  medium fresh tomatoes* (see note)",
+      "quantity": 4,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1  small yellow onion (sliced into quarters)",
+      "originalText": "1  small yellow onion (sliced into quarters)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1 (14-oz) can diced tomatoes",
+      "originalText": "1 (14-oz) can diced tomatoes",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1/3 cup cooked chickpeas",
+      "originalText": "1/3 cup cooked chickpeas",
+      "quantity": 0.3333333333333333,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:黑醋",
+      "originalText": "1 tablespoon balsamic vinegar",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:枫糖浆",
+      "originalText": "½ teaspoon maple syrup",
+      "quantity": 0.5,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:2 teaspoons fresh thyme leaves",
+      "originalText": "2 teaspoons fresh thyme leaves",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:橄榄油",
+      "originalText": "1 tablespoon extra-virgin olive oil",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:¼ to ½ teaspoon red pepper flakes",
+      "originalText": "¼ to ½ teaspoon red pepper flakes",
+      "quantity": 0.25,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:Heaping ½ teaspoon sea salt",
+      "originalText": "Heaping ½ teaspoon sea salt",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:freshly ground black pepper",
+      "originalText": "freshly ground black pepper",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:8 slices SimplyNature 7 Grain Bread",
+      "originalText": "8 slices SimplyNature 7 Grain Bread",
+      "quantity": 8,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:heaping ½ cup Earth Grown Vegan Mozzarella",
+      "originalText": "heaping ½ cup Earth Grown Vegan Mozzarella",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 45,
+  "sourceInstructionCount": 6,
+  "lastVerifiedAt": "2026-09-30T15:44:31.010Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

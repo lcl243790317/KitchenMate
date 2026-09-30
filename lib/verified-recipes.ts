@@ -1,10 +1,11 @@
 import { recipeSchema } from "./model";
 import catalog from "@/data/verified-recipes/howtocook/recipes.json";
 import linked from "@/data/verified-recipes/source-linked/recipes.json";
+import wikibooks from "@/data/verified-recipes/wikibooks/recipes.json";
 import health from "@/data/verified-recipes/source-health.json";
 import { dedupeRecipes } from "./recipe-trust";
 export const verifiedRecipes = dedupeRecipes(
-  [...catalog, ...linked].map((recipe) =>
+  [...catalog, ...wikibooks, ...linked].map((recipe) =>
     recipeSchema.parse({
       ...recipe,
       verificationStatus:
@@ -25,9 +26,12 @@ for (const recipe of verifiedRecipes) {
   if (recipe.sourceUrl) sourceUrlIndex.set(recipe.sourceUrl, recipe.id);
   searchIndex.set(
     recipe.id,
-    [recipe.title, ...recipe.ingredients.map((item) => item.originalText)].join(
-      " ",
-    ),
+    [
+      recipe.title,
+      recipe.originalTitle,
+      recipe.provenance.sourceRecipeTitle,
+      ...recipe.ingredients.map((item) => item.originalText),
+    ].join(" "),
   );
   for (const id of new Set(
     recipe.ingredients.map((item) => item.ingredientId),

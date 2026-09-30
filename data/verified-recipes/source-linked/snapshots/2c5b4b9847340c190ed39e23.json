@@ -1,0 +1,86 @@
+{
+  "id": "source:2c5b4b9847340c190ed39e23",
+  "sourceUrl": "https://www.budgetbytes.com/garlic-butter-baked-cod/",
+  "title": "Garlic Butter Baked Cod",
+  "rawIngredientFacts": [
+    "4 Tbsp butter (room temperature) ($0.50)",
+    "2 Tbsp olive oil ($0.32)",
+    "4 cloves garlic, minced ($0.32)",
+    "1/4 tsp paprika ($0.02)",
+    "1/4 tsp salt ($0.02)",
+    "2 Tbsp finely chopped parsley ($0.22)",
+    "1 lb. cod (4 4 oz. filets) ($5.99)",
+    "1  fresh lemon ($0.69)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "butter",
+      "originalText": "4 Tbsp butter (room temperature) ($0.50)",
+      "quantity": 4,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:橄榄油",
+      "originalText": "2 Tbsp olive oil ($0.32)",
+      "quantity": 2,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "garlic",
+      "originalText": "4 cloves garlic, minced ($0.32)",
+      "quantity": 4,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:红椒粉",
+      "originalText": "1/4 tsp paprika ($0.02)",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "salt",
+      "originalText": "1/4 tsp salt ($0.02)",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:2 Tbsp finely chopped parsley ($0.22)",
+      "originalText": "2 Tbsp finely chopped parsley ($0.22)",
+      "quantity": 2,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1 lb. cod (4 4 oz. filets) ($5.99)",
+      "originalText": "1 lb. cod (4 4 oz. filets) ($5.99)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:柠檬",
+      "originalText": "1  fresh lemon ($0.69)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 30,
+  "sourceInstructionCount": 4,
+  "lastVerifiedAt": "2026-09-30T15:44:24.797Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

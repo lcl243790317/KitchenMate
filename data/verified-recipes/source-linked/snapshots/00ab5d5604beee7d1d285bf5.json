@@ -1,0 +1,59 @@
+{
+  "id": "source:00ab5d5604beee7d1d285bf5",
+  "sourceUrl": "https://www.budgetbytes.com/roasted-carrots/",
+  "title": "Roasted Carrots",
+  "rawIngredientFacts": [
+    "2 lbs. carrots* ($2.00)",
+    "2 Tbsp olive oil* ($0.44)",
+    "1/4 tsp salt ($0.02)",
+    "1/4 tsp freshly cracked black pepper ($0.02)",
+    "1/4 tsp  garlic powder ($0.02)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "unknown:2 lbs. carrots* ($2.00)",
+      "originalText": "2 lbs. carrots* ($2.00)",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:2 Tbsp olive oil* ($0.44)",
+      "originalText": "2 Tbsp olive oil* ($0.44)",
+      "quantity": 2,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "salt",
+      "originalText": "1/4 tsp salt ($0.02)",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1/4 tsp freshly cracked black pepper ($0.02)",
+      "originalText": "1/4 tsp freshly cracked black pepper ($0.02)",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:蒜粉",
+      "originalText": "1/4 tsp  garlic powder ($0.02)",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 45,
+  "sourceInstructionCount": 4,
+  "lastVerifiedAt": "2026-09-30T15:44:17.759Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

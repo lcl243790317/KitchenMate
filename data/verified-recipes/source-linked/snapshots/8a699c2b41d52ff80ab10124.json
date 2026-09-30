@@ -1,0 +1,77 @@
+{
+  "id": "source:8a699c2b41d52ff80ab10124",
+  "sourceUrl": "https://www.budgetbytes.com/easy-egg-salad/",
+  "title": "Easy Egg Salad",
+  "rawIngredientFacts": [
+    "4 large eggs ($2.68*)",
+    "3 Tbsp mayonnaise ($0.15**)",
+    "1 Tbsp dill relish ($0.08***)",
+    "1 tsp Dijon mustard ($0.02)",
+    "¼ tsp lemon juice ($0.01)",
+    "⅛ tsp salt ($0.02)",
+    "⅛ tsp black pepper (freshly cracked, $0.02)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "egg",
+      "originalText": "4 large eggs ($2.68*)",
+      "quantity": 4,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:蛋黄酱",
+      "originalText": "3 Tbsp mayonnaise ($0.15**)",
+      "quantity": 3,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1 Tbsp dill relish ($0.08***)",
+      "originalText": "1 Tbsp dill relish ($0.08***)",
+      "quantity": 1,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:第戎芥末",
+      "originalText": "1 tsp Dijon mustard ($0.02)",
+      "quantity": 1,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:柠檬汁",
+      "originalText": "¼ tsp lemon juice ($0.01)",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "salt",
+      "originalText": "⅛ tsp salt ($0.02)",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "black-pepper",
+      "originalText": "⅛ tsp black pepper (freshly cracked, $0.02)",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 25,
+  "sourceInstructionCount": 4,
+  "lastVerifiedAt": "2026-09-30T15:44:25.854Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

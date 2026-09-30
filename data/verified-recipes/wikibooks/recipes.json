@@ -1,0 +1,4179 @@
+[
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AFried_Eggs",
+      "sourceRecipeTitle": "Fried Eggs",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "11958",
+      "verifiedAt": "2026-09-30T15:32:38.188Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4629097",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:32:38.188Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\nEquipment\n*Small (10-inch) frying pan\n*Spatula\n*Gas ring, at medium heat\n\nNotes, tips, and variations\n*It often considered a cardinal sin to allow the yolk of an egg to break (although some prefer fried eggs with broken yolks). If the cook ensures that the eggs are fresh the yolks will be more 'pert', and less liable to break.\n*For sunny side-up eggs, do not flip the eggs -- see Fried Eggs (Olive Oil-basted). Use a slightly lower heat, and cover the pan with a lid for some of the cooking period. An ideal sunny side-up has a runny yolk, but the white should be cooked.\n*Uncooked egg white (often called jelly) is normally unwanted and less-preferred than a partially cooked yolk, so err on the side of overcooking rather than undercooking the eggs.  \n*For a richer taste, try sprinkling the egg with grated Parmesan or freshly-chopped basil and chives.\n*When frying eggs for sandwiches, rolls or wraps, it is often a good idea to break the yolks. This increases the coverage of yolk so that every bite gets some yolk, and it prevents uncooked yolk dripping out.\n*\n\nWarnings\n*Many people prefer their eggs only partially cooked. Please see the egg ingredient page for possible health concerns of eating raw eggs.\n\n\n\n\n\n\nko:달걀 프라이\n",
+    "sourceDifficulty": "Easy",
+    "originalTitle": "Fried Eggs",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:11958",
+    "title": "煎鸡蛋",
+    "slug": "wikibooks:11958",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AFried_Eggs",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "11958",
+    "cuisine": "未知",
+    "category": "主食",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": 5,
+    "servings": 1,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "unknown:2 teaspoons butter or olive oil",
+        "originalText": "2 teaspoons butter or olive oil",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "egg",
+        "originalText": "2–3 large eggs, depending on appetite",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "Salt to taste",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "Pepper to taste (optional)",
+        "quantity": null,
+        "unit": "",
+        "optional": true,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Melt the butter in the pan over low to medium heat.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Crack open the eggs into the pan and let fry until the yolks begin to harden at the edges (indicated by a lightening in the yolk color).",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Using the spatula, flip the eggs over and allow to cook 10 seconds for over-easy, 30 seconds for over-medium, or up to 1 minute for over-hard.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Add salt and pepper to taste, and serve.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:32:38.188Z",
+    "updatedAt": "2026-09-30T15:32:38.188Z",
+    "sourceUpdatedAt": "2026-04-02T20:03:46Z",
+    "lastFetchedAt": "2026-09-30T15:32:38.188Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABasic_Scrambled_Eggs",
+      "sourceRecipeTitle": "Basic Scrambled Eggs",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "13260",
+      "verifiedAt": "2026-09-30T15:32:38.289Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4523414",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:32:38.289Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\nNotes, tips, and variations\n* For a low-sodium version, omit salt and use unsalted butter.\n* Grated cheddar cheese can be added into the mixture or on top of the cooked eggs.\n* Sour cream may be used in place of milk for a creamier and richer version.\n* Cook ⅓ cup (25 g / 0.88 oz) of crumbled cooked meats (like bacon or sausage) or chopped vegetables (like mushrooms or bell pepper) for a couple of minutes before adding the egg mixture. See also Southwestern Scramble.\n",
+    "sourceDifficulty": "Easy",
+    "originalTitle": "Basic Scrambled Eggs",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:13260",
+    "title": "基础炒鸡蛋",
+    "slug": "wikibooks:13260",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABasic_Scrambled_Eggs",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "13260",
+    "cuisine": "未知",
+    "category": "其他",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": null,
+    "servings": 1,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "originalText": "3 eggs",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "milk",
+        "originalText": "2–3 tbsp milk (optional)",
+        "quantity": null,
+        "unit": "",
+        "optional": true,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "2 tbsp butter",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "¼ tsp salt (or to taste)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "⅛ tsp black pepper (or to taste)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Crack eggs into a measuring cup.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Add the milk (if desired) and salt.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Using a whisk or fork, beat the mixture until foamy.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Melt butter in a frying pan on medium heat",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Pour eggs into frying pan.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 6,
+        "title": "Original step 6",
+        "description": "Stir mixture to break up the egg as it cooks and allow more liquid to touch the hot pan. Stirring rapidly will create small curds, while slower stirring will create larger curds.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 7,
+        "title": "Original step 7",
+        "description": "Cook until just before you feel that they are done, since the eggs will continue to cook after being removed from the pan. The eggs are done when the sheen disappears; stop cooking just before this happens.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 8,
+        "title": "Original step 8",
+        "description": "Transfer to a plate. Season with black pepper (black pepper will burn and become bitter if seasoned before cooking).",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 9,
+        "title": "Original step 9",
+        "description": "Eat as is or with ketchup (tomato sauce), salsa, and/or butter on toast.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:32:38.289Z",
+    "updatedAt": "2026-09-30T15:32:38.289Z",
+    "sourceUpdatedAt": "2025-07-13T18:13:56Z",
+    "lastFetchedAt": "2026-09-30T15:32:38.289Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Fried_Rice",
+      "sourceRecipeTitle": "Chicken Fried Rice",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "200938",
+      "verifiedAt": "2026-09-30T15:32:38.541Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4517678",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:32:38.541Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\n\n",
+    "sourceDifficulty": "Easy",
+    "originalTitle": "Chicken Fried Rice",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:200938",
+    "title": "鸡肉炒饭",
+    "slug": "wikibooks:200938",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Fried_Rice",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "200938",
+    "cuisine": "未知",
+    "category": "主食",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": 30,
+    "servings": 5,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "butter",
+        "originalText": "2 tbsp butter",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "3 cloves garlic, crushed and minced",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:2 red chiles, cut into 1 cm pieces",
+        "originalText": "2 red chiles, cut into 1 cm pieces",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "scallion",
+        "originalText": "2 scallion, cut into 1 cm pieces",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "carrot",
+        "originalText": "200 g carrot",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "chicken",
+        "originalText": "200 g minced raw chicken",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "rice",
+        "originalText": "1 cup (550 g) cooked rice",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "oyster-sauce",
+        "originalText": "2 tbsp oyster sauce",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:伍斯特酱",
+        "originalText": "1¼ tbsp Worcestershire sauce",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "1 tbsp salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "1 tbsp pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:黄瓜",
+        "originalText": "Cucumber",
+        "quantity": null,
+        "unit": "",
+        "optional": true,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "tomato",
+        "originalText": "Tomato",
+        "quantity": null,
+        "unit": "",
+        "optional": true,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Fried egg",
+        "originalText": "Fried egg",
+        "quantity": null,
+        "unit": "",
+        "optional": true,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Pickles",
+        "originalText": "Pickles",
+        "quantity": null,
+        "unit": "",
+        "optional": true,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Melt the butter in a non-stick pan. Fry the garlic, chilli, and scallion, stirring, for 15 seconds.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Add the chicken and carrot. Cook until the chicken changes color from pink to white.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Add the rice, then the oyster sauce, Worcestershire sauce, salt, and pepper. Continue to cook until well-combined.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Serve hot with the sides.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:32:38.541Z",
+    "updatedAt": "2026-09-30T15:32:38.541Z",
+    "sourceUpdatedAt": "2025-06-21T02:58:50Z",
+    "lastFetchedAt": "2026-09-30T15:32:38.541Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABaked_Chicken_Breasts",
+      "sourceRecipeTitle": "Baked Chicken Breasts",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "203550",
+      "verifiedAt": "2026-09-30T15:32:38.665Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4509908",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:32:38.665Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\n\n",
+    "sourceDifficulty": "Easy",
+    "originalTitle": "Baked Chicken Breasts",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:203550",
+    "title": "烤鸡胸肉",
+    "slug": "wikibooks:203550",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABaked_Chicken_Breasts",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "203550",
+    "cuisine": "未知",
+    "category": "肉类",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": null,
+    "servings": 1,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "chicken-breast",
+        "originalText": "4 boneless skinless chicken breasts",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "Kosher salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "Freshly-ground black pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:橄榄油",
+        "originalText": "Olive oil",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Finely-grated lemon zest",
+        "originalText": "Finely-grated lemon zest",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Brush both sides of chicken with olive oil. Sprinkle both sides liberally with kosher salt, freshly ground black pepper, and finely grated lemon zest.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Place chicken on a 13x9-inch baking pan. Insert a probe thermometer into one of the chicken breasts and bake in the center of a 400°F (200°C) oven until internal temperature reaches 165°F (75°C).",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Remove to a plate and let rest 5 minutes. Serve warm.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [
+      "Thermometer",
+      "Oven"
+    ],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:32:38.665Z",
+    "updatedAt": "2026-09-30T15:32:38.665Z",
+    "sourceUpdatedAt": "2025-06-16T01:16:15Z",
+    "lastFetchedAt": "2026-09-30T15:32:38.665Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3APotato_Salad",
+      "sourceRecipeTitle": "Potato Salad",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "43359",
+      "verifiedAt": "2026-09-30T15:40:30.936Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4525019",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:40:30.936Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\nNotes, tips, and variations\n* Potatoes may be boiled whole in skins, cooled, and carefully peeled to leave the thin, yellow protein layer intact for improved nutritional value and flavour. Slice at room temperature or chilled.\n* Chopping the potatoes into small pieces allow more surface to be coated and improves the flavour.\n* You can omit salt and use a chicken-flavoured bouillon cube instead. Add chopped onion to bouillon and simmer for a few minutes to blend flavours.\n* Salad can be served chilled or warm to preference.\n\nSee also\n* Ensalada Rusa, a Uruguayan potato salad containing peas and carrots.\n* German Potato Salad, a warm salad containing bacon.\n* Grammy's Potato Salad, a New England style recipe.\n* Potato Salad (American), another American-style recipe made with mustard and sweet relish.\n",
+    "originalTitle": "Potato Salad",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:43359",
+    "title": "土豆沙拉",
+    "slug": "wikibooks:43359",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3APotato_Salad",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "43359",
+    "cuisine": "未知",
+    "category": "沙拉",
+    "difficulty": "未知",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": 30,
+    "servings": 1,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "potato",
+        "originalText": "2 pounds (~1 kg) potatoes",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "bacon",
+        "originalText": "6 slices of bacon",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:½ cup (120 g) finely-chopped yellow onion",
+        "originalText": "½ cup (120 g) finely-chopped yellow onion",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "sugar",
+        "originalText": "2 tablespoons white granulated sugar",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:½ teaspoon celery seed",
+        "originalText": "½ teaspoon celery seed",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:2 hard boiled eggs",
+        "originalText": "2 hard boiled eggs",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "flour",
+        "originalText": "¼ cup (60 g) flour",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "vinegar",
+        "originalText": "½ cup (120 ml) vinegar",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "water",
+        "originalText": "1 cup (240 ml) water",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:欧芹",
+        "originalText": "1 tablespoon fresh parsley",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "1 ½ teaspoon salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "Pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:红椒粉",
+        "originalText": "Paprika",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Cook bacon strips, cut into small pieces, and set aside for later.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Boil potatoes for 5–10 minutes or until softened; cut into small chunks or thick slices.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Place potatoes in a large bowl and let them come to room temperature.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "In a bowl combine flour, celery seed, parsley, chopped onion, salt, and pepper.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Pour the water and vinegar into a pot, stir in sugar and bring to a boil. Add the dry mixture and stir until thickened.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 6,
+        "title": "Original step 6",
+        "description": "In the original bowl place potatoes and bacon, pour on thickened mixture.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 7,
+        "title": "Original step 7",
+        "description": "Break apart eggs and stir lightly into the bowl to combine.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 8,
+        "title": "Original step 8",
+        "description": "Place in large serving bowl and sprinkle with paprika.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 9,
+        "title": "Original step 9",
+        "description": "Serve",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:40:30.936Z",
+    "updatedAt": "2026-09-30T15:40:30.936Z",
+    "sourceUpdatedAt": "2025-07-18T18:52:18Z",
+    "lastFetchedAt": "2026-09-30T15:40:30.936Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AOven-Roasted_Potatoes",
+      "sourceRecipeTitle": "Oven-Roasted Potatoes",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "180018",
+      "verifiedAt": "2026-09-30T15:40:30.938Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4505987",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:40:30.938Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\n\n",
+    "sourceDifficulty": "Very Easy",
+    "originalTitle": "Oven-Roasted Potatoes",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:180018",
+    "title": "烤土豆",
+    "slug": "wikibooks:180018",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AOven-Roasted_Potatoes",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "180018",
+    "cuisine": "未知",
+    "category": "蔬菜",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": null,
+    "servings": 2,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "potato",
+        "originalText": "2 large potatoes",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:橄榄油",
+        "originalText": "2 tablespoons olive oil",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:百里香",
+        "originalText": "½ teaspoon thyme",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "Salt to taste",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "Pepper to taste",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Preheat oven to 450°F.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Wash, peel if you like, and cut potatoes into wedges longways.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Toss in large bowl with olive oil.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Sprinkle with thyme.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Place potatoes in baking pan in one layer.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 6,
+        "title": "Original step 6",
+        "description": "Bake 15 minutes, turn, bake another 15 minutes.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [
+      "Oven"
+    ],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:40:30.938Z",
+    "updatedAt": "2026-09-30T15:40:30.938Z",
+    "sourceUpdatedAt": "2025-06-10T01:54:53Z",
+    "lastFetchedAt": "2026-09-30T15:40:30.938Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AFried_Potatoes",
+      "sourceRecipeTitle": "Fried Potatoes",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "457055",
+      "verifiedAt": "2026-09-30T15:40:30.938Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4494795",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:40:30.938Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\nEquipment\n* Frying pan\n* Cooking spoon\n* Bowl\n",
+    "sourceDifficulty": "Very Easy",
+    "originalTitle": "Fried Potatoes",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:457055",
+    "title": "煎土豆",
+    "slug": "wikibooks:457055",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AFried_Potatoes",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "457055",
+    "cuisine": "未知",
+    "category": "蔬菜",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": 20,
+    "servings": 1,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "potato",
+        "originalText": "Potatoes, peeled and sliced",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "Salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:花生油",
+        "originalText": "Groundnut oil",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Rinse the potatoes and season with salt.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Heat the oil in a pan, and add the potatoes when hot. Cook until golden all over, flipping as needed.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Serve hot.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:40:30.938Z",
+    "updatedAt": "2026-09-30T15:40:30.938Z",
+    "sourceUpdatedAt": "2025-05-26T14:27:50Z",
+    "lastFetchedAt": "2026-09-30T15:40:30.938Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AVegetable_Soup",
+      "sourceRecipeTitle": "Vegetable Soup",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "21191",
+      "verifiedAt": "2026-09-30T15:40:30.939Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4523475",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:40:30.939Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\nNotes, tips, and variations\n* Tomatoes also make a welcome addition to the soup. \n\n\n\nsr:Кувар:Чорба од поврћа\n原文注明源自 1881 年食谱（Wikibooks 保留的来源标记）。",
+    "sourceDifficulty": "Very Easy",
+    "originalTitle": "Vegetable Soup",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:21191",
+    "title": "蔬菜汤",
+    "slug": "wikibooks:21191",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AVegetable_Soup",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "21191",
+    "cuisine": "未知",
+    "category": "汤",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": null,
+    "servings": 1,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "onion",
+        "originalText": "1 onion",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 turnip",
+        "originalText": "1 turnip",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "potato",
+        "originalText": "1 potatoes, pared",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "carrot",
+        "originalText": "1 carrot",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:西芹",
+        "originalText": "1 head of celery",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "water",
+        "originalText": "3 pints water",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "bread",
+        "originalText": "1 slice of bread, toasted and buttered",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Boil the onion, turnip, potatoes, carrot, and celery in the water until the vegetables are cooked.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Insert the bread into a bowl. Pour the soup over it.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:40:30.939Z",
+    "updatedAt": "2026-09-30T15:40:30.939Z",
+    "sourceUpdatedAt": "2025-07-13T19:12:37Z",
+    "lastFetchedAt": "2026-09-30T15:40:30.939Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AAsparagus_Soup",
+      "sourceRecipeTitle": "Asparagus Soup",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "34623",
+      "verifiedAt": "2026-09-30T15:40:30.939Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4523683",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:40:30.939Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\nNotes, tips, and variations\n*Don't be tempted to omit the final straining of the soup! If you leave the bits of fibrous asparagus skin in the soup, they give it a very unpleasant texture. Use a sieve with a medium mesh, not too coarse and not too fine: too coarse will let too much of the fiber through, too fine will make the job of straining too difficult.\n*The richest version of this recipe, using a full cup of whipping cream, produces an especially luscious and velvety soup. For a lighter soup with fewer calories, use the smaller amount of whipping cream or substitute light cream. If you're planning to use only ¼ cup of cream, cook the asparagus in 3 cups of water so that you'll have enough cooking water to add to the finished soup to achieve the right consistency.\n*To make this soup vegan, cook the asparagus in 3 cups of water, omit the cream, and use oil instead of butter to cook the shallot.\n",
+    "sourceDifficulty": "Easy",
+    "originalTitle": "Asparagus Soup",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:34623",
+    "title": "芦笋汤",
+    "slug": "wikibooks:34623",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AAsparagus_Soup",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "34623",
+    "cuisine": "未知",
+    "category": "汤",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": 60,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "zh:芦笋",
+        "originalText": "12 thick asparagus spears",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "water",
+        "originalText": "2 cups water",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:红葱头",
+        "originalText": "1 medium shallot, chopped",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "3 tablespoons unsalted butter",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:¼–1 cup whipping or light cream",
+        "originalText": "¼–1 cup whipping or light cream",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "Salt, freshly ground black pepper, and cayenne pepper to taste",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Snap the tough ends off the asparagus spears.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Bring the water to a boil in a medium saucepan, salt the water lightly, and add the asparagus spears. Cook at a lively simmer for 10 minutes.  Lift out with tongs and set aside. Reserve the cooking water.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "In a separate saucepan large enough to hold the finished soup, heat the butter, add the chopped shallot, and cook gently until soft but not browned. Add the cooked asparagus spears and one cup of the cooking water and bring to a boil. Cook at a lively simmer for 5 minutes. Remove from the heat and strain the soup through a medium sieve into a bowl, reserving the liquid.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Purée the solids in a food processor with enough of the reserved liquid to allow the mixture to purée smoothly.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Strain the purée through the sieve back into the non-reactive saucepan, rubbing the mixture through with a flexible scraper or wooden spoon and leaving the fibrous parts in the sieve. Discard the contents of the sieve.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 6,
+        "title": "Original step 6",
+        "description": "Add the cream and enough of the remaining asparagus cooking water to give the soup the consistency you want. Season to taste with salt, freshly ground black pepper, and cayenne pepper. Reheat gently over low heat, making sure not to let the soup boil.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 7,
+        "title": "Original step 7",
+        "description": "Serve hot or chilled. If you want to serve it chilled, let it cool, then refrigerate it uncovered until thoroughly cold, then cover with plastic wrap. You can keep it refrigerated for up to 2 days.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [
+      "Food Processor"
+    ],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:40:30.939Z",
+    "updatedAt": "2026-09-30T15:40:30.939Z",
+    "sourceUpdatedAt": "2025-07-14T18:41:34Z",
+    "lastFetchedAt": "2026-09-30T15:40:30.939Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AKid-Friendly_Pasta",
+      "sourceRecipeTitle": "Kid-Friendly Pasta",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "141666",
+      "verifiedAt": "2026-09-30T15:40:30.940Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4499839",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:40:30.940Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\n\n",
+    "sourceDifficulty": "Very Easy",
+    "originalTitle": "Kid-Friendly Pasta",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:141666",
+    "title": "儿童意面",
+    "slug": "wikibooks:141666",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AKid-Friendly_Pasta",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "141666",
+    "cuisine": "未知",
+    "category": "主食",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": null,
+    "servings": 1,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "pasta",
+        "originalText": "1 lb whole-wheat spaghetti",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "carrot",
+        "originalText": "2 carrots, cut into thin strips",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:四季豆",
+        "originalText": "½ lb green beans",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:番茄酱",
+        "originalText": "¼ cup tomato pasta sauce",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Bring a pot of water to a boil.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Add spaghetti and carrots to the boiling water, and cook for 4 minutes.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Add green beans, and cook for another 4 minutes.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Meanwhile, heat the tomato sauce.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Drain the spaghetti and the vegetables, then mix it with the heated sauce.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 6,
+        "title": "Original step 6",
+        "description": "Add a pinch of salt if needed.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 7,
+        "title": "Original step 7",
+        "description": "Serve.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:40:30.940Z",
+    "updatedAt": "2026-09-30T15:40:30.940Z",
+    "sourceUpdatedAt": "2025-06-08T02:26:34Z",
+    "lastFetchedAt": "2026-09-30T15:40:30.940Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ATomato_Salad",
+      "sourceRecipeTitle": "Tomato Salad",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "7261",
+      "verifiedAt": "2026-09-30T15:40:30.941Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4518182",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:40:30.941Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\n\n",
+    "sourceDifficulty": "Very Easy",
+    "originalTitle": "Tomato Salad",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:7261",
+    "title": "番茄沙拉",
+    "slug": "wikibooks:7261",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ATomato_Salad",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "7261",
+    "cuisine": "未知",
+    "category": "沙拉",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": null,
+    "servings": 1,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "tomato",
+        "originalText": "750 grams (26 oz) tomato",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "onion",
+        "originalText": "3–4 small onions",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "3 cloves of garlic",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "Salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "Pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:橄榄油",
+        "originalText": "Olive oil",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Chop the onions really fine. Boil them for about 4 minutes.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "While they are boiling, cut the tomatoes in quarters, and remove the juicy centre. You can use the centres for tomato soup or throw them away.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Dice tomatoes just as finely as the onion.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Peel and mince the garlic.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "When the onions are done boiling, put them in a sieve or something comparable to drain the water.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 6,
+        "title": "Original step 6",
+        "description": "Once onions, tomatoes and garlic are all finely chopped, put all of them in a bowl, and shake/stir.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 7,
+        "title": "Original step 7",
+        "description": "Add a bit of olive oil and salt and pepper to taste.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:40:30.941Z",
+    "updatedAt": "2026-09-30T15:40:30.941Z",
+    "sourceUpdatedAt": "2025-06-21T16:15:47Z",
+    "lastFetchedAt": "2026-09-30T15:40:30.941Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABaked_Oatmeal",
+      "sourceRecipeTitle": "Baked Oatmeal",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "39237",
+      "verifiedAt": "2026-09-30T15:40:30.942Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4523319",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:40:30.942Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\nNotes, tips, and variations\n* For another variation, add ½ cup (120 g) wheat flakes, ½ cup (120 g) granulated sugar plus 1 tablespoon molasses instead of brown sugar, 1 ½ cups (360 ml) soy milk instead of dairy milk, ½ cup (120 ml) vegetable oil instead of butter, and a third egg.\n",
+    "sourceDifficulty": "Easy",
+    "originalTitle": "Baked Oatmeal",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:39237",
+    "title": "烤燕麦",
+    "slug": "wikibooks:39237",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABaked_Oatmeal",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "39237",
+    "cuisine": "未知",
+    "category": "主食",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": null,
+    "servings": 1,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "unknown:3 cups (720 g) quick-cooking oats",
+        "originalText": "3 cups (720 g) quick-cooking oats",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:红糖",
+        "originalText": "1 cup (240 g) brown sugar",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:泡打粉",
+        "originalText": "2 teaspoons baking powder",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:肉桂粉",
+        "originalText": "1 teaspoon ground cinnamon",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "1 teaspoon salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "milk",
+        "originalText": "1 cup (240 ml) milk",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "½ cup (120 g) butter (melted)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "egg",
+        "originalText": "2 eggs",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Mix the ingredients and pour them into a 9-inch (20 cm) baking pan. They can also be carefully mixed in the pan.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Bake at 350 °F (175 °C) for 40–45 minutes.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Serve hot, cold, with or without milk.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:40:30.942Z",
+    "updatedAt": "2026-09-30T15:40:30.942Z",
+    "sourceUpdatedAt": "2025-07-13T17:35:45Z",
+    "lastFetchedAt": "2026-09-30T15:40:30.942Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3APeanut_Butter_Sandwich",
+      "sourceRecipeTitle": "Peanut Butter Sandwich",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "97024",
+      "verifiedAt": "2026-09-30T15:40:30.942Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4518268",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:40:30.942Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\nNotes, tips, and variations\n* Beware! The peanut butter mixture is sloppy. If the peanut butter is too sloppy, try spreading the honey thin on both slices of bread and omit the extra butter.\n* Raisins may be added. They have a honey-like flavor, which will compliment the honey in the sandwich.\n* Bananas are traditional side items. They go well with peanut butter.\n* These directions can be varied according to preference.\n* Try with pickled cucumbers. Sounds odd but don't dismiss until you've tried it.\n",
+    "sourceDifficulty": "Very Easy",
+    "originalTitle": "Peanut Butter Sandwich",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:97024",
+    "title": "花生酱三明治",
+    "slug": "wikibooks:97024",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3APeanut_Butter_Sandwich",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "97024",
+    "cuisine": "未知",
+    "category": "主食",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": 5,
+    "servings": 1,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "bread",
+        "originalText": "2 slices of bread",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "Butter, soft",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:花生酱",
+        "originalText": "Peanut butter",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:蜂蜜",
+        "originalText": "Honey",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Preserves (jam)",
+        "originalText": "Preserves (jam)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "milk",
+        "originalText": "Very cold milk",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Toast and butter the bread slices.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Combine the peanut butter, honey, and butter. Spread over one slice of toasted bread.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Spread preserves (jam) over the other slice.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Put both halves of sandwich together.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Cut in half and serve with milk",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:40:30.942Z",
+    "updatedAt": "2026-09-30T15:40:30.942Z",
+    "sourceUpdatedAt": "2025-06-21T16:19:51Z",
+    "lastFetchedAt": "2026-09-30T15:40:30.942Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AAsparagus_with_Sesame_Seeds_and_Soy_Sauce",
+      "sourceRecipeTitle": "Asparagus with Sesame Seeds and Soy Sauce",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "128964",
+      "verifiedAt": "2026-09-30T15:40:30.943Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4630868",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:40:30.943Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\nEquipment\n*Steaming pot\n*Bamboo steamer or asparagus steamer\n\nNotes, tips, and variations\n* One way to gauge the best place to cut an asparagus spear is to gently grasp each end and bend the spear.  The point at which is begins to break is where the stem begins to become tougher.\n* Gomasio is a Japanese seasoning made with sesame seeds and salt. I obtain mine at a local health food store. It can also be spelled \"gomashio\".\n",
+    "sourceDifficulty": "Easy",
+    "originalTitle": "Asparagus with Sesame Seeds and Soy Sauce",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:128964",
+    "title": "芝麻酱油芦笋",
+    "slug": "wikibooks:128964",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AAsparagus_with_Sesame_Seeds_and_Soy_Sauce",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "128964",
+    "cuisine": "未知",
+    "category": "蔬菜",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": 15,
+    "servings": 1,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "zh:芦笋",
+        "originalText": "20–32 asparagus spears, preferably thin",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:普通酱油",
+        "originalText": "2 tbsp (30 ml) soy sauce",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:芝麻油",
+        "originalText": "1 tbsp (15 ml) sesame seed oil",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:芝麻粒",
+        "originalText": "2 tbsp (30 ml) sesame seed (If available, use Gomasio instead, and omit the salt)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "Kosher salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Prepare steamer and bring water to a boil.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Trim asparagus spears in half, discarding (or composting) the thicker ends.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Steam the asparagus for 8–10 minutes, until tender, but still crisp.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Heat a small skillet or frying pan on medium heat. Add the sesame seeds and shake or stir. They are done when they just begin to darken and give off a pleasant toasted aroma. Be careful not to leave unattended as they can easily burn.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Remove asparagus from steamer, shake to drain water, and arrange on serving plate.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 6,
+        "title": "Original step 6",
+        "description": "Drizzle the soy sauce and the sesame oil over the asparagus.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 7,
+        "title": "Original step 7",
+        "description": "Sprinkle with the sesame seeds, and give a very light sprinkle with the Kosher salt.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:40:30.943Z",
+    "updatedAt": "2026-09-30T15:40:30.943Z",
+    "sourceUpdatedAt": "2026-04-16T12:36:13Z",
+    "lastFetchedAt": "2026-09-30T15:40:30.943Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AChamp_(Irish_Mashed_Potato_with_Scallion)",
+      "sourceRecipeTitle": "Champ (Irish Mashed Potato with Scallion)",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "222569",
+      "verifiedAt": "2026-09-30T15:40:30.944Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4502456",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:40:30.944Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\n\n",
+    "sourceDifficulty": "Easy",
+    "originalTitle": "Champ (Irish Mashed Potato with Scallion)",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:222569",
+    "title": "葱香土豆泥",
+    "slug": "wikibooks:222569",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AChamp_(Irish_Mashed_Potato_with_Scallion)",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "222569",
+    "cuisine": "未知",
+    "category": "蔬菜",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": null,
+    "servings": 2,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "potato",
+        "originalText": "1 lb (450 g) potatoes, peeled",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "scallion",
+        "originalText": "2 oz (60 g) scallions",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:¼ pint (½ cup) milk",
+        "originalText": "¼ pint (½ cup) milk",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "Freshly-ground pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "Salt (optional)",
+        "quantity": null,
+        "unit": "",
+        "optional": true,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "4 tbsp butter",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Boil potatoes in water until done.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Drain the potatoes and mash them.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Pour the milk into a saucepan, add the chopped scallions and cook vigorously.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "When cooked, sieve the scallions and set the milk aside.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Add the scallions to the potatoes and mix well.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 6,
+        "title": "Original step 6",
+        "description": "Add as much of the scallion-infused milk as possible to make a ‘wet’ soft mixture.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 7,
+        "title": "Original step 7",
+        "description": "Season with freshly ground pepper and salt.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 8,
+        "title": "Original step 8",
+        "description": "Serve with a central well filled with melted butter.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:40:30.944Z",
+    "updatedAt": "2026-09-30T15:40:30.944Z",
+    "sourceUpdatedAt": "2025-06-08T18:43:00Z",
+    "lastFetchedAt": "2026-09-30T15:40:30.944Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABaked_Cabbage_and_Bacon",
+      "sourceRecipeTitle": "Baked Cabbage and Bacon",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "444569",
+      "verifiedAt": "2026-09-30T15:40:30.945Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4630324",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:40:30.945Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\n\n",
+    "sourceDifficulty": "Easy",
+    "originalTitle": "Baked Cabbage and Bacon",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:444569",
+    "title": "培根烤包菜",
+    "slug": "wikibooks:444569",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABaked_Cabbage_and_Bacon",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "444569",
+    "cuisine": "未知",
+    "category": "其他",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": null,
+    "servings": 1,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "zh:包菜",
+        "originalText": "1 head of green cabbage, sliced and/or diced",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "bacon",
+        "originalText": "Bacon, chopped",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "Butter",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:欧芹",
+        "originalText": "Parsley",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "egg",
+        "originalText": "1 egg",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "cheese",
+        "originalText": "Grated cheese",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Cayenne pepper",
+        "originalText": "Cayenne pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "onion",
+        "originalText": "½ onion, roughly chopped",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "Salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Boil the cabbage until tender. Drain.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Fry the chopped bacon in butter.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Combine the cooked cabbage, bacon, parsley, egg, cheese, cayenne, and chopped onion. Season to taste with salt.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Transfer mixture to a glass baking dish. Bake 15 minutes at 180˚C.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Serve with toasted bread.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:40:30.945Z",
+    "updatedAt": "2026-09-30T15:40:30.945Z",
+    "sourceUpdatedAt": "2026-04-12T21:19:29Z",
+    "lastFetchedAt": "2026-09-30T15:40:30.945Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMashed_Pumpkin",
+      "sourceRecipeTitle": "Mashed Pumpkin",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "18543",
+      "verifiedAt": "2026-09-30T15:36:40.408Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4502782",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:36:40.408Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\nNotes, tips and variations\n*If pumpkin is not soft when removed from oven, place back in for 10–15 minutes each time.\n*An alternative if you have no food processor is to mash the pumpkin flesh by hand until nearly smooth.\n",
+    "sourceDifficulty": "Very Easy",
+    "originalTitle": "Mashed Pumpkin",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:18543",
+    "title": "南瓜泥",
+    "slug": "wikibooks:18543",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMashed_Pumpkin",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "18543",
+    "cuisine": "未知",
+    "category": "蔬菜",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": null,
+    "servings": 1,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "zh:南瓜",
+        "originalText": "1 small pumpkin",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "1 pinch of salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "1 pinch of pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "About 1 tablespoon butter",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Clean your pumpkin well, being careful to remove manure, dirt, etc. Chop off the stem.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Bake the cleaned pumpkin in a 375 °F (190 C) oven for about 45 minutes per 250 g. A small pumpkin of less than 500 g works best.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Remove pumpkin and allow to rest for 5–10 minutes.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "During this time, take out sea salt, butter, and your pepper mill.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Chop pumpkin in half with cleaver, butcher knife, or kitchen hatchet.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 6,
+        "title": "Original step 6",
+        "description": "Remove seeds and guts; roast seeds and discard the rest.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 7,
+        "title": "Original step 7",
+        "description": "Separate the skin from the flesh.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 8,
+        "title": "Original step 8",
+        "description": "Place hot pumpkin flesh in a food processor, along with salt, pepper, and butter to taste.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [
+      "Oven",
+      "Food Processor"
+    ],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:36:40.408Z",
+    "updatedAt": "2026-09-30T15:36:40.408Z",
+    "sourceUpdatedAt": "2025-06-08T18:45:46Z",
+    "lastFetchedAt": "2026-09-30T15:36:40.408Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMushy_Peas",
+      "sourceRecipeTitle": "Mushy Peas",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "24885",
+      "verifiedAt": "2026-09-30T15:36:40.408Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4512548",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:36:40.408Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\n\n",
+    "sourceDifficulty": "Very Easy",
+    "originalTitle": "Mushy Peas",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:24885",
+    "title": "豌豆泥",
+    "slug": "wikibooks:24885",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMushy_Peas",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "24885",
+    "cuisine": "未知",
+    "category": "其他",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": null,
+    "servings": 1,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "unknown:Dried marrowfat peas",
+        "originalText": "Dried marrowfat peas",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "water",
+        "originalText": "Water",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:小苏打",
+        "originalText": "2 tsp baking soda",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "sugar",
+        "originalText": "1 tsp sugar (optional, to taste)",
+        "quantity": null,
+        "unit": "",
+        "optional": true,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Place the peas in 2–3 times their volume of water, along with the baking soda, which speeds the soaking process.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Leave to soak overnight.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "The next day, drain the peas, and place in a saucepan with enough water to just cover them.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Add the sugar.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Bring to the boil and simmer for about 20 minutes, stirring occasionally to help break up the peas.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 6,
+        "title": "Original step 6",
+        "description": "Add water or reduce to the desired consistency.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 7,
+        "title": "Original step 7",
+        "description": "Season to taste with salt and pepper.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:36:40.408Z",
+    "updatedAt": "2026-09-30T15:36:40.408Z",
+    "sourceUpdatedAt": "2025-06-18T14:01:06Z",
+    "lastFetchedAt": "2026-09-30T15:36:40.408Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ACabbage_Salad",
+      "sourceRecipeTitle": "Cabbage Salad",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "33382",
+      "verifiedAt": "2026-09-30T15:36:40.408Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4630329",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:36:40.408Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\n\n",
+    "sourceDifficulty": "Very Easy",
+    "originalTitle": "Cabbage Salad",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:33382",
+    "title": "包菜沙拉",
+    "slug": "wikibooks:33382",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ACabbage_Salad",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "33382",
+    "cuisine": "未知",
+    "category": "沙拉",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": null,
+    "servings": 8,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "zh:包菜",
+        "originalText": "½ head (500 grams)  white cabbage",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:菜籽油",
+        "originalText": "100 ml rapeseed oil",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:白醋",
+        "originalText": "2 tablespoons white vinegar",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "1 pinch of salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "1 pinch of coarsely-ground pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Slice the cabbage finely (about 1–2 mm thick).",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Make a dressing of oil, vinegar, salt, and pepper. Toss the cabbage with the dressing.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Put the salad in the fridge overnight.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:36:40.408Z",
+    "updatedAt": "2026-09-30T15:36:40.408Z",
+    "sourceUpdatedAt": "2026-04-12T21:21:11Z",
+    "lastFetchedAt": "2026-09-30T15:36:40.408Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMarinated_Cucumbers_and_Onions",
+      "sourceRecipeTitle": "Marinated Cucumbers and Onions",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "110796",
+      "verifiedAt": "2026-09-30T15:36:40.408Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4518149",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:36:40.408Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\nNotes, tips, and variations\n* Any light salad oil may be used. Avoid olive oil, as it congeals when refrigerated.\n* The cucumber to onion ratio should be from 2:1 to 2.5:1.\n* There should be just a hint of oil in the marinade and just enough sugar to take the edge off of the vinegar's tartness.\n* For crisper pickles add a spoonful of oregano.\n",
+    "sourceDifficulty": "Very Easy",
+    "originalTitle": "Marinated Cucumbers and Onions",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:110796",
+    "title": "腌黄瓜洋葱",
+    "slug": "wikibooks:110796",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMarinated_Cucumbers_and_Onions",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "110796",
+    "cuisine": "未知",
+    "category": "蔬菜",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": null,
+    "servings": 1,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "zh:黄瓜",
+        "originalText": "2 cucumbers",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 white onion",
+        "originalText": "1 white onion",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:白醋",
+        "originalText": "2 cups (480 ml) distilled white vinegar",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "oil",
+        "originalText": "2 teaspoons (10 ml) vegetable oil",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "sugar",
+        "originalText": "1 teaspoon (5 ml) sugar",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "1 teaspoon (5 ml) salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Mix vinegar, oil, salt and sugar for the marinade.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Trim the ends from the cucumbers, peel them, and slice them.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Peel the onion and slice it as thinly as possible.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Pour the marinade over the cucumbers and onions and mix well.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Let it sit in a cool place or refrigerator for at least two hours, stirring occasionally.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 6,
+        "title": "Original step 6",
+        "description": "Serve in a bowl, marinade and all, using salad tongs or a slotted spoon to dish out servings.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:36:40.408Z",
+    "updatedAt": "2026-09-30T15:36:40.408Z",
+    "sourceUpdatedAt": "2025-06-21T16:15:30Z",
+    "lastFetchedAt": "2026-09-30T15:36:40.408Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABacon_and_Egg_Stuffed_Tomatoes",
+      "sourceRecipeTitle": "Bacon and Egg Stuffed Tomatoes",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "132790",
+      "verifiedAt": "2026-09-30T15:36:40.408Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4523788",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:36:40.408Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\n\n",
+    "sourceDifficulty": "Very Easy",
+    "originalTitle": "Bacon and Egg Stuffed Tomatoes",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:132790",
+    "title": "培根鸡蛋酿番茄",
+    "slug": "wikibooks:132790",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABacon_and_Egg_Stuffed_Tomatoes",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "132790",
+    "cuisine": "未知",
+    "category": "蔬菜",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": null,
+    "servings": 6,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "tomato",
+        "originalText": "6 large tomatoes, washed",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Salt and pepper to taste",
+        "originalText": "Salt and pepper to taste",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "bacon",
+        "originalText": "6 slices bacon, cooked and crumbled; or 4 tablespoons bacon bits",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:西芹",
+        "originalText": "¾ cups diced celery",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:6 hard boiled eggs",
+        "originalText": "6 hard boiled eggs",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:蛋黄酱",
+        "originalText": "⅓ cup mayonnaise",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:欧芹",
+        "originalText": "2 teaspoon chopped fresh parsley",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "¼  teaspoon salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "¼  teaspoon pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:红椒粉",
+        "originalText": "Paprika",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Cut tops from tomatoes.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Scoop out pulp, leaving shells intact.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Chop tomato pulp.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Drain tomato shells and sprinkle cavities with salt and pepper.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Combine tomato pulp, bacon, celery, eggs, mayonnaise, parsley, and measured salt and pepper.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 6,
+        "title": "Original step 6",
+        "description": "Stir well.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 7,
+        "title": "Original step 7",
+        "description": "Fill tomato shell with bacon and egg mixture.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 8,
+        "title": "Original step 8",
+        "description": "Sprinkle with paprika.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:36:40.408Z",
+    "updatedAt": "2026-09-30T15:36:40.408Z",
+    "sourceUpdatedAt": "2025-07-15T05:12:53Z",
+    "lastFetchedAt": "2026-09-30T15:36:40.408Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMicrowaved_Scrambled_Egg",
+      "sourceRecipeTitle": "Microwaved Scrambled Egg",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "139837",
+      "verifiedAt": "2026-09-30T15:36:40.408Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4502791",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:36:40.408Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\nNotes, tips, and variations\n* Cooking time may vary slightly depending on the microwave oven's high power default setting.\n",
+    "sourceDifficulty": "Very Easy",
+    "originalTitle": "Microwaved Scrambled Egg",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:139837",
+    "title": "微波炒鸡蛋",
+    "slug": "wikibooks:139837",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMicrowaved_Scrambled_Egg",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "139837",
+    "cuisine": "未知",
+    "category": "其他",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": null,
+    "servings": 1,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "originalText": "2 eggs",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "Butter",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Crack the eggs and butter in a coffee cup.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Microwave on high power for 30 seconds.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Remove from the microwave, stir, and replace.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Cook for another 30 seconds on high.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [
+      "Microwave"
+    ],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:36:40.408Z",
+    "updatedAt": "2026-09-30T15:36:40.408Z",
+    "sourceUpdatedAt": "2025-06-08T18:45:50Z",
+    "lastFetchedAt": "2026-09-30T15:36:40.408Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ANoodles_for_Soup",
+      "sourceRecipeTitle": "Noodles for Soup",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "155612",
+      "verifiedAt": "2026-09-30T15:36:40.408Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4501597",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:36:40.408Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\n\n",
+    "sourceDifficulty": "Very Easy",
+    "originalTitle": "Noodles for Soup",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:155612",
+    "title": "汤面",
+    "slug": "wikibooks:155612",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ANoodles_for_Soup",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "155612",
+    "cuisine": "未知",
+    "category": "其他",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": null,
+    "servings": 1,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "originalText": "1 egg",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "flour",
+        "originalText": "Flour",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Beat the egg. Mix and knead in flour until you have a very stiff dough.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Roll the dough out into a thin sheet.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Sprinkle the dough with a good amount of flour to prevent it from sticking to itself. Tightly roll up the dough to make a log.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Use a sharp knife to cut the log cross-wise into thin slices, similar to how you would slice cabbage for slaw. Unroll the noodles and toss with flour.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Add the noodles to boiling soup. Simmer for 10 minutes.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:36:40.408Z",
+    "updatedAt": "2026-09-30T15:36:40.408Z",
+    "sourceUpdatedAt": "2025-06-08T18:08:03Z",
+    "lastFetchedAt": "2026-09-30T15:36:40.408Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMicrowave_Oat_Porridge",
+      "sourceRecipeTitle": "Microwave Oat Porridge",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "194753",
+      "verifiedAt": "2026-09-30T15:36:40.408Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4517857",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:36:40.408Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\n\n",
+    "sourceDifficulty": "Very Easy",
+    "originalTitle": "Microwave Oat Porridge",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:194753",
+    "title": "微波燕麦粥",
+    "slug": "wikibooks:194753",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMicrowave_Oat_Porridge",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "194753",
+    "cuisine": "未知",
+    "category": "其他",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": null,
+    "servings": 1,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "water",
+        "originalText": "250 ml water",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:燕麦片",
+        "originalText": "100 ml oat flakes",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "1 pinch salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Mix water, oat flakes, and salt in a bowl.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Boil on high heat for 2–3 minutes.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Stir and serve immediately.\n\nsv:Gröt i mikrovågsugnen",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:36:40.408Z",
+    "updatedAt": "2026-09-30T15:36:40.408Z",
+    "sourceUpdatedAt": "2025-06-21T03:10:57Z",
+    "lastFetchedAt": "2026-09-30T15:36:40.408Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ACheese_Stuffed_Tomatoes",
+      "sourceRecipeTitle": "Cheese Stuffed Tomatoes",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "204563",
+      "verifiedAt": "2026-09-30T15:36:40.408Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4493843",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:36:40.408Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\n\n",
+    "sourceDifficulty": "Very Easy",
+    "originalTitle": "Cheese Stuffed Tomatoes",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:204563",
+    "title": "芝士酿番茄",
+    "slug": "wikibooks:204563",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ACheese_Stuffed_Tomatoes",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "204563",
+    "cuisine": "未知",
+    "category": "其他",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": null,
+    "servings": 1,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "zh:奶油奶酪",
+        "originalText": "¼ cup cream cheese",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 tbsp basil chiffonade",
+        "originalText": "1 tbsp basil chiffonade",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "1 tbsp minced garlic",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "2 tbsp unsalted butter",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "½ tsp salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "½ tsp freshly-ground black pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:¼ cup ricotta cheese",
+        "originalText": "¼ cup ricotta cheese",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "cherry-tomato",
+        "originalText": "30 cherry tomatoes, with the very top removed",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Combine all ingredients except tomatoes to make the filling.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Place filling into a gallon-size zip-top bag with a small hole snipped in one of the bottom corners.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Fill tomatoes about ¾ full.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Serve chilled as an appetizer.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:36:40.408Z",
+    "updatedAt": "2026-09-30T15:36:40.408Z",
+    "sourceUpdatedAt": "2025-05-25T01:00:13Z",
+    "lastFetchedAt": "2026-09-30T15:36:40.408Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ACheesy_Chicken_Pasta",
+      "sourceRecipeTitle": "Cheesy Chicken Pasta",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "236561",
+      "verifiedAt": "2026-09-30T15:36:40.408Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4605239",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:36:40.408Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\n\n",
+    "sourceDifficulty": "Very Easy",
+    "originalTitle": "Cheesy Chicken Pasta",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:236561",
+    "title": "芝士鸡肉意面",
+    "slug": "wikibooks:236561",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ACheesy_Chicken_Pasta",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "236561",
+    "cuisine": "未知",
+    "category": "主食",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": 15,
+    "servings": 2,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "pasta",
+        "originalText": "¾ cup (85 g/3 oz) dried pasta (whatever shape you like)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:奶油奶酪",
+        "originalText": "¼ cup (75 g) cream cheese",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:马苏里拉奶酪",
+        "originalText": "¾ cup (75 g) grated mozzarella cheese",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:切达奶酪",
+        "originalText": "¾ cup (75 g) grated cheddar cheese",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:2½–3½ tablespoons hoisin sauce to taste",
+        "originalText": "2½–3½ tablespoons hoisin sauce to taste",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "chicken",
+        "originalText": "1 cup (125 g) chopped cooked chicken",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "cream",
+        "originalText": "½ cup (125 ml) heavy whipping cream",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Bring a pot of water to the boil. Add the pasta and cook for about 10 minutes (or until the pasta is soft).",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Drain the pasta so that no water remains in the pan. Return drained pasta to the pot.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Add the cream, cheeses, chicken, and hoisin sauce to the pasta.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Cook for a few minutes to warm everything through.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Serve.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:36:40.408Z",
+    "updatedAt": "2026-09-30T15:36:40.408Z",
+    "sourceUpdatedAt": "2025-12-03T21:57:43Z",
+    "lastFetchedAt": "2026-09-30T15:36:40.408Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABanana_Milkshake",
+      "sourceRecipeTitle": "Banana Milkshake",
+      "sourceAuthor": "Wikibooks contributors",
+      "sourceExternalId": "456327",
+      "verifiedAt": "2026-09-30T15:36:40.408Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "CC BY-SA 4.0; original text and KitchenMate title translation retain ShareAlike license. No images reused.",
+      "sourceRevision": "4587157",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Wikibooks contributors. See original page and revision history for authors. Formatting adapted and title translated by KitchenMate; instructions retained in original English.",
+      "lastVerifiedAt": "2026-09-30T15:36:40.408Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "英文原文；原始说明、可选变化及作者记录见来源页面。\n\n",
+    "sourceDifficulty": "Very Easy",
+    "originalTitle": "Banana Milkshake",
+    "titleTranslation": "KitchenMate",
+    "id": "wikibooks:456327",
+    "title": "香蕉奶昔",
+    "slug": "wikibooks:456327",
+    "description": "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+    "image": null,
+    "sourceProvider": "wikibooks",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABanana_Milkshake",
+    "sourceAuthor": "Wikibooks contributors",
+    "externalId": "456327",
+    "cuisine": "未知",
+    "category": "其他",
+    "difficulty": "简单",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": null,
+    "servings": 1,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "unknown:1 large or 2 small bananas",
+        "originalText": "1 large or 2 small bananas",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:冰淇淋",
+        "originalText": "Vanilla ice cream",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "milk",
+        "originalText": "Milk",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "sugar",
+        "originalText": "Sugar",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:肉桂粉",
+        "originalText": "Ground cinnamon (optional)",
+        "quantity": null,
+        "unit": "",
+        "optional": true,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Blend the banana, ice cream, sugar, and milk as desired until smooth and creamy.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "If desired, add a pinch of cinnamon.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:36:40.408Z",
+    "updatedAt": "2026-09-30T15:36:40.408Z",
+    "sourceUpdatedAt": "2025-10-26T23:25:40Z",
+    "lastFetchedAt": "2026-09-30T15:36:40.408Z"
+  }
+]

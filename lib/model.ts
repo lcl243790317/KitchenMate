@@ -3,6 +3,7 @@ export const recipeIngredientSchema = z.object({
   ingredientId: z.string(),
   originalText: z.string().max(500),
   sourceGroupText: z.string().max(2000).optional(),
+  verificationMethod: z.literal("source-operation-explicit").optional(),
   quantity: z.number().nonnegative().nullable(),
   unit: z.string(),
   optional: z.boolean().default(false),
@@ -41,6 +42,7 @@ export const provenanceSchema = z.object({
       "manual-live-check",
       "user-import",
       "open-license-dataset",
+      "mediawiki-api",
     ])
     .nullable(),
   instructionSource: z.enum([
@@ -49,9 +51,16 @@ export const provenanceSchema = z.object({
     "source-page",
     "user-import",
     "none",
+    "open-license-source",
   ]),
   imageSource: z.string().nullable(),
   licenseOrUsageBasis: z.string(),
+  sourceRevision: z.string().optional(),
+  licenseName: z.string().optional(),
+  licenseUrl: z.string().url().optional(),
+  attributionText: z.string().optional(),
+  lastVerifiedAt: z.string().optional(),
+  httpStatus: z.number().optional(),
 });
 export const recipeSchema = z.object({
   provenance: provenanceSchema.default({
@@ -88,6 +97,10 @@ export const recipeSchema = z.object({
     })
     .optional(),
   sourceNotes: z.string().optional(),
+  sourceDifficulty: z.string().optional(),
+  originalTitle: z.string().optional(),
+  titleTranslation: z.literal("KitchenMate").optional(),
+  sourceInstructionCount: z.number().optional(),
   id: z.string(),
   title: z.string().min(1).max(200),
   slug: z.string(),

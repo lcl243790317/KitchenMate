@@ -1,0 +1,164 @@
+[
+  {
+    "id": "wikibooks:11958",
+    "revisionId": 4629097,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/11958.json",
+    "sha256": "ba2fc14af5c5b3d7ae977b1a8b28a0ec15d8aa7f733be60feb2422aee88e2a50"
+  },
+  {
+    "id": "wikibooks:13260",
+    "revisionId": 4523414,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/13260.json",
+    "sha256": "24cbc4df2c49b95da7abcc6ddf57b13dec87e3a36343563b5eb54e9ceb8cee0d"
+  },
+  {
+    "id": "wikibooks:200938",
+    "revisionId": 4517678,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/200938.json",
+    "sha256": "95876fb3ddaf575f503859a4b2a4f65ec2208952854dd5c1a62c92e41aac8ffb"
+  },
+  {
+    "id": "wikibooks:203550",
+    "revisionId": 4509908,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/203550.json",
+    "sha256": "64647048fe7732b69ff549e3a7d9e0f954272db0bdb5f2994fffdf62e833e6e9"
+  },
+  {
+    "id": "wikibooks:43359",
+    "revisionId": 4525019,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/43359.json",
+    "sha256": "380ce8749f727046ad97b5e0a1bc01dd8976250a61edd9f48cf8a6dbcec8f720"
+  },
+  {
+    "id": "wikibooks:180018",
+    "revisionId": 4505987,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/180018.json",
+    "sha256": "4dcd3d2b979b52c9880d0eb15b0d24c4beba2160d2d7d987929795381fee2d4a"
+  },
+  {
+    "id": "wikibooks:457055",
+    "revisionId": 4494795,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/457055.json",
+    "sha256": "5d9a09887257fad7bc07768527daffd17be256aeee4da783dece29c7003dfd64"
+  },
+  {
+    "id": "wikibooks:21191",
+    "revisionId": 4523475,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/21191.json",
+    "sha256": "5e11965284de5beddbcf2b21afcc39b7c26a4997331d48e8979192bc0a9c6c9a"
+  },
+  {
+    "id": "wikibooks:34623",
+    "revisionId": 4523683,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/34623.json",
+    "sha256": "0f1ebf7bae6acacd9c1ee1b8dd777ecbd5af8cbf1d335dc17375a902267963c8"
+  },
+  {
+    "id": "wikibooks:141666",
+    "revisionId": 4499839,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/141666.json",
+    "sha256": "0dcbbb3891432fb71d1da5c6fe0907ecb847189348d671165461ce3f85122529"
+  },
+  {
+    "id": "wikibooks:7261",
+    "revisionId": 4518182,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/7261.json",
+    "sha256": "a0b1aaffc62e507c5cd8a6c49103ef79308bb0a219a9d9001507a814e6d05de0"
+  },
+  {
+    "id": "wikibooks:39237",
+    "revisionId": 4523319,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/39237.json",
+    "sha256": "f6960b97bba4ceacbf7282a76c93489b6a2f3ebe348a248b305d6e1aca359f62"
+  },
+  {
+    "id": "wikibooks:97024",
+    "revisionId": 4518268,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/97024.json",
+    "sha256": "c8099f84d6de85787e762a17b68cf750db6f27c1710dfc71bdc51b8d64c0f1bd"
+  },
+  {
+    "id": "wikibooks:128964",
+    "revisionId": 4630868,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/128964.json",
+    "sha256": "8002396142d88c495d0c4bd80002190029faf5021b2b7375a91d1dc122a5b881"
+  },
+  {
+    "id": "wikibooks:222569",
+    "revisionId": 4502456,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/222569.json",
+    "sha256": "e62c73f2842bf0b0a0c9b5f4df96e36c6fab736b760bfa0fb1195672ab4f47e4"
+  },
+  {
+    "id": "wikibooks:444569",
+    "revisionId": 4630324,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/444569.json",
+    "sha256": "58d3ba8cbd9bd2571e289b2093a0adcf90450e5ee042765f9923b1a70181ff34"
+  },
+  {
+    "id": "wikibooks:18543",
+    "revisionId": 4502782,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/18543.json",
+    "sha256": "cad73e8465d86944d3d927382865c851eb9eb367392026d4f5aa578289d66892"
+  },
+  {
+    "id": "wikibooks:24885",
+    "revisionId": 4512548,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/24885.json",
+    "sha256": "ce6d1f367485ef0b14a174fef3b75dbff4366a2c57a14f14ba4cb7eef9c7c077"
+  },
+  {
+    "id": "wikibooks:33382",
+    "revisionId": 4630329,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/33382.json",
+    "sha256": "485ea0da2c2dbb081efe04a50e9eae3c77bfe6e04cc767279a86fd3f0d9588c2"
+  },
+  {
+    "id": "wikibooks:110796",
+    "revisionId": 4518149,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/110796.json",
+    "sha256": "923298a152b35335e70faf2a8d857c64d5948c7b805de7931d4f6869a349d6db"
+  },
+  {
+    "id": "wikibooks:132790",
+    "revisionId": 4523788,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/132790.json",
+    "sha256": "552ac0999724d8d678ac3267e8142d9adcc6fb42d93fe2f9cf7a36ec26560eeb"
+  },
+  {
+    "id": "wikibooks:139837",
+    "revisionId": 4502791,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/139837.json",
+    "sha256": "bd0fb1ead2c20519df0975f7a635dd71172a106459a6f643d524b153c833d21f"
+  },
+  {
+    "id": "wikibooks:155612",
+    "revisionId": 4501597,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/155612.json",
+    "sha256": "aea211ae90f6ef5395a0a930e06473e6bd45d51cf6ba126b5024562e2f5460be"
+  },
+  {
+    "id": "wikibooks:194753",
+    "revisionId": 4517857,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/194753.json",
+    "sha256": "d46bdc8dd8927495c6b3704c87461013073f3a8b58daf38ab1059e0fbe849c53"
+  },
+  {
+    "id": "wikibooks:204563",
+    "revisionId": 4493843,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/204563.json",
+    "sha256": "a207b13fb5f7017ff14b3f47190babb6307919176cfef289f918d486078766ce"
+  },
+  {
+    "id": "wikibooks:236561",
+    "revisionId": 4605239,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/236561.json",
+    "sha256": "7a71863873204f1b6031f971fa5b2b85840acd190b4c747491917f9a0619dbb2"
+  },
+  {
+    "id": "wikibooks:456327",
+    "revisionId": 4587157,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/456327.json",
+    "sha256": "1a6cb9a9c84122523e308bffa288bf87f0406a41d0950cacabfffb40ea23de97"
+  }
+]

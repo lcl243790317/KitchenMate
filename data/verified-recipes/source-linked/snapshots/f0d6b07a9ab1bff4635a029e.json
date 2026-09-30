@@ -1,0 +1,149 @@
+{
+  "id": "source:f0d6b07a9ab1bff4635a029e",
+  "sourceUrl": "https://www.budgetbytes.com/creamy-tomato-spinach-pasta/",
+  "title": "Creamy Tomato and Spinach Pasta",
+  "rawIngredientFacts": [
+    "½ lb penne pasta ($0.49)",
+    "1  yellow onion (small dice, 340g, 1.5 cups, $0.78)",
+    "2 cloves garlic (minced, 1 Tbsp, $0.12)",
+    "1 Tbsp olive oil ($0.18)",
+    "14.5 oz. diced tomatoes (1 can, $0.96)",
+    "½ tsp dried oregano ($0.12)",
+    "½ tsp dried basil ($0.13)",
+    "⅛ tsp crushed red pepper ($0.02)",
+    "½ tsp salt ($0.02)",
+    "½ tsp freshly cracked black pepper ($0.08)",
+    "2 Tbsp tomato paste ($0.14)",
+    "½ cup water ($0.00)",
+    "2 oz cream cheese ($0.46)",
+    "¼ cup grated Parmesan (30g, $0.51)",
+    "4 oz fresh spinach ($0.79)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "unknown:½ lb penne pasta ($0.49)",
+      "originalText": "½ lb penne pasta ($0.49)",
+      "quantity": 0.5,
+      "unit": "lb",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1  yellow onion (small dice, 340g, 1.5 cups, $0.78)",
+      "originalText": "1  yellow onion (small dice, 340g, 1.5 cups, $0.78)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "garlic",
+      "originalText": "2 cloves garlic (minced, 1 Tbsp, $0.12)",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:橄榄油",
+      "originalText": "1 Tbsp olive oil ($0.18)",
+      "quantity": 1,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:14.5 oz. diced tomatoes (1 can, $0.96)",
+      "originalText": "14.5 oz. diced tomatoes (1 can, $0.96)",
+      "quantity": 14.5,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:½ tsp dried oregano ($0.12)",
+      "originalText": "½ tsp dried oregano ($0.12)",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:½ tsp dried basil ($0.13)",
+      "originalText": "½ tsp dried basil ($0.13)",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:⅛ tsp crushed red pepper ($0.02)",
+      "originalText": "⅛ tsp crushed red pepper ($0.02)",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "salt",
+      "originalText": "½ tsp salt ($0.02)",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:½ tsp freshly cracked black pepper ($0.08)",
+      "originalText": "½ tsp freshly cracked black pepper ($0.08)",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:番茄膏",
+      "originalText": "2 Tbsp tomato paste ($0.14)",
+      "quantity": 2,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "water",
+      "originalText": "½ cup water ($0.00)",
+      "quantity": 0.5,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:奶油奶酪",
+      "originalText": "2 oz cream cheese ($0.46)",
+      "quantity": 2,
+      "unit": "oz",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:帕尔马干酪",
+      "originalText": "¼ cup grated Parmesan (30g, $0.51)",
+      "quantity": 0.25,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:菠菜",
+      "originalText": "4 oz fresh spinach ($0.79)",
+      "quantity": 4,
+      "unit": "oz",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 25,
+  "sourceInstructionCount": 6,
+  "lastVerifiedAt": "2026-09-30T15:44:23.099Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

@@ -1,0 +1,104 @@
+{
+  "id": "source:44f9a303f258b8e4b05a31d7",
+  "sourceUrl": "https://www.loveandlemons.com/tofu-scramble/",
+  "title": "Tofu Scramble",
+  "rawIngredientFacts": [
+    "⅓ cup unsweetened almond milk",
+    "2 tablespoons nutritional yeast",
+    "2  garlic cloves (minced)",
+    "½ teaspoon Dijon mustard",
+    "¼ teaspoon ground turmeric",
+    "¼ teaspoon ground cumin",
+    "1  tablespoon-extra virgin olive oil",
+    "½ cup diced yellow onion",
+    "14 ounces extra-firm tofu (patted dry and crumbled)",
+    "Sea salt and freshly ground black pepper"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "unknown:⅓ cup unsweetened almond milk",
+      "originalText": "⅓ cup unsweetened almond milk",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:2 tablespoons nutritional yeast",
+      "originalText": "2 tablespoons nutritional yeast",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "garlic",
+      "originalText": "2  garlic cloves (minced)",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:第戎芥末",
+      "originalText": "½ teaspoon Dijon mustard",
+      "quantity": 0.5,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:¼ teaspoon ground turmeric",
+      "originalText": "¼ teaspoon ground turmeric",
+      "quantity": 0.25,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:孜然粉",
+      "originalText": "¼ teaspoon ground cumin",
+      "quantity": 0.25,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1  tablespoon-extra virgin olive oil",
+      "originalText": "1  tablespoon-extra virgin olive oil",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:½ cup diced yellow onion",
+      "originalText": "½ cup diced yellow onion",
+      "quantity": 0.5,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:14 ounces extra-firm tofu (patted dry and crumbled)",
+      "originalText": "14 ounces extra-firm tofu (patted dry and crumbled)",
+      "quantity": 14,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:Sea salt and freshly ground black pepper",
+      "originalText": "Sea salt and freshly ground black pepper",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 15,
+  "sourceInstructionCount": 2,
+  "lastVerifiedAt": "2026-09-30T15:44:32.347Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

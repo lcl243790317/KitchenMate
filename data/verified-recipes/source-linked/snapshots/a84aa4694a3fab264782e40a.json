@@ -1,0 +1,77 @@
+{
+  "id": "source:a84aa4694a3fab264782e40a",
+  "sourceUrl": "https://www.budgetbytes.com/lemon-garlic-asparagus-pasta/",
+  "title": "Lemon Garlic Asparagus Pasta",
+  "rawIngredientFacts": [
+    "8 oz. pasta (uncooked, $0.59*)",
+    "1 bunch asparagus (about 1 lb., $3.67)",
+    "2 Tbsp butter ($0.26)",
+    "2  garlic cloves (minced, $0.08)",
+    "1  lemon ($0.68**)",
+    "salt (to taste, $0.02)",
+    "black pepper (to taste, (freshly cracked) $0.03)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "unknown:8 oz. pasta (uncooked, $0.59*)",
+      "originalText": "8 oz. pasta (uncooked, $0.59*)",
+      "quantity": 8,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1 bunch asparagus (about 1 lb., $3.67)",
+      "originalText": "1 bunch asparagus (about 1 lb., $3.67)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "butter",
+      "originalText": "2 Tbsp butter ($0.26)",
+      "quantity": 2,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "garlic",
+      "originalText": "2  garlic cloves (minced, $0.08)",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:柠檬",
+      "originalText": "1  lemon ($0.68**)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "salt",
+      "originalText": "salt (to taste, $0.02)",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "black-pepper",
+      "originalText": "black pepper (to taste, (freshly cracked) $0.03)",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 25,
+  "sourceInstructionCount": 7,
+  "lastVerifiedAt": "2026-09-30T15:44:25.217Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

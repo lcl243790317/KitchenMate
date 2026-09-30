@@ -1,0 +1,1944 @@
+[
+  {
+    "title": "Cookbook:Lemon Chicken",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ALemon_Chicken",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Chicken Stir-Fry",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Stir-Fry",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Pancakes",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3APancakes",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Egg Sandwich",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AEgg_Sandwich",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Egg Salad",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AEgg_Salad",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Poached Eggs",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3APoached_Eggs",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Hard-Boiled Eggs",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AHard-Boiled_Eggs",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:French Toast",
+    "revisionId": 4655023,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AFrench_Toast",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Easy",
+    "sourceTime": "~10 minutes",
+    "ingredientCount": 17,
+    "instructionCount": 7,
+    "primaryIngredientCoverage": [
+      "egg",
+      "bread",
+      "butter",
+      "salt",
+      "black-pepper",
+      "bacon"
+    ],
+    "unresolvedIngredients": [
+      "About ¼ cup (60 ml / 2 oz) milk or cream (more for softer, less eggy French toast; less for firmer, more eggy toast)",
+      "½ teaspoon vanilla extract or similar",
+      "¼–1 teaspoon nutmeg, cinnamon or other powdered spices suitable for sweet foods",
+      "½ teaspoon sugar  or honey",
+      "Jam, jelly, fruit syrup",
+      "Whipped cream",
+      "Nuts"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Fried Eggs",
+    "revisionId": 4629097,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AFried_Eggs",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Easy",
+    "sourceTime": "5 minutes",
+    "ingredientCount": 4,
+    "instructionCount": 4,
+    "primaryIngredientCoverage": [
+      "egg",
+      "salt",
+      "black-pepper"
+    ],
+    "unresolvedIngredients": [
+      "2 teaspoons butter or olive oil"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Basic Scrambled Eggs",
+    "revisionId": 4523414,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABasic_Scrambled_Eggs",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Easy",
+    "sourceTime": null,
+    "ingredientCount": 5,
+    "instructionCount": 9,
+    "primaryIngredientCoverage": [
+      "egg",
+      "milk",
+      "butter",
+      "salt",
+      "black-pepper"
+    ],
+    "unresolvedIngredients": [],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Basic Omelet",
+    "revisionId": 4517797,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABasic_Omelet",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "reason": "Error: Procedure is not a supported complete numbered list"
+  },
+  {
+    "title": "Cookbook:Bacon Cheese Omelet",
+    "revisionId": 4517794,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABacon_Cheese_Omelet",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Easy",
+    "sourceTime": "5–10 minutes",
+    "ingredientCount": 4,
+    "instructionCount": 11,
+    "primaryIngredientCoverage": [
+      "egg",
+      "bacon",
+      "cheese",
+      "butter"
+    ],
+    "unresolvedIngredients": [],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Chicken Fried Rice",
+    "revisionId": 4517678,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Fried_Rice",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Easy",
+    "sourceTime": "30 minutes",
+    "ingredientCount": 15,
+    "instructionCount": 4,
+    "primaryIngredientCoverage": [
+      "butter",
+      "garlic",
+      "scallion",
+      "carrot",
+      "rice",
+      "oyster-sauce",
+      "salt",
+      "black-pepper",
+      "zh:黄瓜",
+      "tomato"
+    ],
+    "unresolvedIngredients": [
+      "2 red chiles, cut into 1 cm pieces",
+      "200 g minced raw chicken",
+      "Fried egg",
+      "Pickles"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Baked Chicken Breasts",
+    "revisionId": 4509908,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABaked_Chicken_Breasts",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Easy",
+    "sourceTime": null,
+    "ingredientCount": 5,
+    "instructionCount": 3,
+    "primaryIngredientCoverage": [
+      "chicken-breast",
+      "salt",
+      "black-pepper"
+    ],
+    "unresolvedIngredients": [
+      "Finely-grated lemon zest"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Chicken Soup I",
+    "revisionId": 4523937,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Soup_I",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Easy",
+    "sourceTime": "2 hours",
+    "ingredientCount": 7,
+    "instructionCount": 6,
+    "primaryIngredientCoverage": [
+      "chicken-thigh",
+      "carrot",
+      "salt"
+    ],
+    "unresolvedIngredients": [
+      "Liquid chicken stock, or 2–3 vegetable stock cubes"
+    ],
+    "reason": "Error: Defer: over 60 minutes"
+  },
+  {
+    "title": "Cookbook:Pork Fried Rice",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3APork_Fried_Rice",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Chicken and Rice",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_and_Rice",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Garlic Lemon Chicken",
+    "revisionId": 4510299,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AGarlic_Lemon_Chicken",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "reason": "Error: Procedure is not a supported complete numbered list"
+  },
+  {
+    "title": "Cookbook:Hash Browns",
+    "revisionId": 4501537,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AHash_Browns",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": null,
+    "sourceTime": null,
+    "ingredientCount": 4,
+    "instructionCount": 8,
+    "primaryIngredientCoverage": [
+      "potato",
+      "onion",
+      "oil"
+    ],
+    "unresolvedIngredients": [
+      "2 tablespoons flour OR 1 egg"
+    ],
+    "reason": "Error: No strong beginner difficulty or time signal"
+  },
+  {
+    "title": "Cookbook:Colcannon",
+    "revisionId": 4511096,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AColcannon",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": null,
+    "sourceTime": null,
+    "ingredientCount": 10,
+    "instructionCount": 7,
+    "primaryIngredientCoverage": [
+      "potato",
+      "butter",
+      "salt",
+      "black-pepper"
+    ],
+    "unresolvedIngredients": [
+      "150 ml single cream",
+      "Mace",
+      "Ground paprika",
+      "450 g white or savoy shredded cabbage",
+      "2 small leeks or 1 bunch of spring onion tops, chopped",
+      "200 g mature Gouda cheese, grated"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Potato Salad",
+    "revisionId": 4525019,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3APotato_Salad",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": null,
+    "sourceTime": "30 minutes",
+    "ingredientCount": 13,
+    "instructionCount": 9,
+    "primaryIngredientCoverage": [
+      "potato",
+      "bacon",
+      "sugar",
+      "flour",
+      "vinegar",
+      "salt",
+      "black-pepper"
+    ],
+    "unresolvedIngredients": [
+      "½ cup (120 g) finely-chopped yellow onion",
+      "½ teaspoon celery seed",
+      "2 hard boiled eggs"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Baked Pork Chops",
+    "revisionId": 4509174,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABaked_Pork_Chops",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Easy",
+    "sourceTime": null,
+    "ingredientCount": 6,
+    "instructionCount": 5,
+    "primaryIngredientCoverage": [
+      "zh:苹果",
+      "onion"
+    ],
+    "unresolvedIngredients": [
+      "3–4 bone-in pork chops, ¼ inch (6 mm) thin",
+      "1 tablespoon (15 ml) caraway seed (can be salvaged from the bag your rye bread comes in)",
+      "Garlic salt, black pepper, and Dijon mustard, to taste"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Buttery Noodles with Cheese",
+    "revisionId": 4513593,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AButtery_Noodles_with_Cheese",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": null,
+    "ingredientCount": 8,
+    "instructionCount": 7,
+    "primaryIngredientCoverage": [
+      "garlic"
+    ],
+    "unresolvedIngredients": [
+      "Dry linguine or Spaghetti (enough for 2 people)",
+      "1 vegetarian bouillon cube",
+      "1–2 pat(s) butter",
+      "Goat cheese (2 pats of butter worth)—Parmesan is an acceptable substitute",
+      "Herbs (e.g. basil, oregano, etc; optional)",
+      "Textured vegetable protein (optional)",
+      "1 whole tomato (optional), diced"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:20-Minute Beef Stroganoff",
+    "revisionId": 4629559,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3A20-Minute_Beef_Stroganoff",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Easy",
+    "sourceTime": "20 minutes",
+    "ingredientCount": 13,
+    "instructionCount": 9,
+    "primaryIngredientCoverage": [
+      "milk",
+      "salt",
+      "black-pepper"
+    ],
+    "unresolvedIngredients": [
+      "8 oz wide egg noodles (figures are for yolk-free noodles)",
+      "1 package (8 oz) sliced mushrooms",
+      "1 large (1 cup/150 g) coarsely-chopped onion",
+      "1 package (17 oz) prepared beef tips with gravy",
+      "1 can (10.75 oz) condensed cream of mushroom soup (figures are for fat-free)",
+      "1 teaspoon bottled minced garlic",
+      "¼ teaspoon (or more to taste) mild or hot paprika"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Oven-Roasted Potatoes",
+    "revisionId": 4505987,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AOven-Roasted_Potatoes",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": "Preparation: 10 minutes<br>Baking: 30 minutes",
+    "ingredientCount": 5,
+    "instructionCount": 6,
+    "primaryIngredientCoverage": [
+      "potato",
+      "salt",
+      "black-pepper"
+    ],
+    "unresolvedIngredients": [],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Beef Stir-Fry",
+    "revisionId": 4523801,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABeef_Stir-Fry",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": null,
+    "sourceTime": null,
+    "ingredientCount": 13,
+    "instructionCount": 5,
+    "primaryIngredientCoverage": [
+      "salt",
+      "black-pepper",
+      "zh:普通酱油",
+      "garlic",
+      "onion",
+      "carrot",
+      "scallion"
+    ],
+    "unresolvedIngredients": [
+      "1 (6–8 oz / 170–225 g) ribeye steak, sliced thinly across the grain on a bias",
+      "1–2 Thai bird chilis, finely minced"
+    ],
+    "reason": "Error: No strong beginner difficulty or time signal"
+  },
+  {
+    "title": "Cookbook:Baked Potato Halves",
+    "revisionId": 4503137,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABaked_Potato_Halves",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Easy",
+    "sourceTime": "60 minutes",
+    "ingredientCount": 3,
+    "instructionCount": 6,
+    "primaryIngredientCoverage": [
+      "potato",
+      "salt"
+    ],
+    "unresolvedIngredients": [
+      "Lard or another fat"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Mashed Potatoes",
+    "revisionId": 4669243,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMashed_Potatoes",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Easy",
+    "sourceTime": null,
+    "ingredientCount": 6,
+    "instructionCount": 6,
+    "primaryIngredientCoverage": [
+      "salt",
+      "black-pepper"
+    ],
+    "unresolvedIngredients": [
+      "About 1 kg/2¼ lb starchy (floury) potatoes",
+      "60 g/4 tablespoons butter",
+      "60 ml/¼ cup milk, half-and-half, or light cream",
+      "Nutmeg (optional)"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Boiled Potatoes",
+    "revisionId": 4494689,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABoiled_Potatoes",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Easy",
+    "sourceTime": null,
+    "ingredientCount": 1,
+    "instructionCount": 5,
+    "primaryIngredientCoverage": [
+      "potato"
+    ],
+    "unresolvedIngredients": [],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Fried Potatoes",
+    "revisionId": 4494795,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AFried_Potatoes",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": "20 minutes",
+    "ingredientCount": 3,
+    "instructionCount": 3,
+    "primaryIngredientCoverage": [
+      "potato",
+      "salt"
+    ],
+    "unresolvedIngredients": [],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Cucumber Salad",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ACucumber_Salad",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Tomato Soup II",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ATomato_Soup_II",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Tomato Soup I",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ATomato_Soup_I",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Fresh Pasta with Mozzarella, Tomato and Basil",
+    "revisionId": 4605223,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AFresh_Pasta_with_Mozzarella%2C_Tomato_and_Basil",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Easy",
+    "sourceTime": null,
+    "ingredientCount": 7,
+    "instructionCount": 6,
+    "primaryIngredientCoverage": [
+      "salt",
+      "black-pepper"
+    ],
+    "unresolvedIngredients": [
+      "250 g fresh egg pasta",
+      "2 mozzarella balls (cow or buffalo)",
+      "About 10–15 small tomatoes or 4–5 larger tomatoes (you need about the same amount as the mozzarella)",
+      "A good handful (about 15–20) of basil leaves"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Vegetable Soup",
+    "revisionId": 4523475,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AVegetable_Soup",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": "10–15 minutes",
+    "ingredientCount": 7,
+    "instructionCount": 2,
+    "primaryIngredientCoverage": [
+      "onion",
+      "potato",
+      "carrot",
+      "bread"
+    ],
+    "unresolvedIngredients": [
+      "1 turnip"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Sesame Noodle Salad",
+    "revisionId": 4518097,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ASesame_Noodle_Salad",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": null,
+    "ingredientCount": 7,
+    "instructionCount": 4,
+    "primaryIngredientCoverage": [
+      "salt",
+      "scallion"
+    ],
+    "unresolvedIngredients": [
+      "16 oz (1 lb) angel hair pasta",
+      "1 cup or more finely-chopped fresh cilantro",
+      "1 ½ cups thinly-sliced fresh carrots"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Asparagus Soup",
+    "revisionId": 4523683,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AAsparagus_Soup",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Easy",
+    "sourceTime": "1 hour",
+    "ingredientCount": 6,
+    "instructionCount": 7,
+    "primaryIngredientCoverage": [
+      "butter",
+      "salt"
+    ],
+    "unresolvedIngredients": [
+      "¼–1 cup whipping or light cream"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Bean Soup (Vegetarian)",
+    "revisionId": 4534232,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABean_Soup_(Vegetarian)",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Easy",
+    "sourceTime": "1 hour",
+    "ingredientCount": 10,
+    "instructionCount": 12,
+    "primaryIngredientCoverage": [],
+    "unresolvedIngredients": [
+      "2 cans (28 ounces) fat-free vegetable broth",
+      "1 bag (1 pound) frozen mixed vegetables",
+      "1 can (14½ ounces) no-salt-added stewed tomatoes",
+      "⅓ cup broken angel-hair pasta, in 1- to 2-inch lengths",
+      "1 can (15 ounces) no-salt-added kidney beans",
+      "1 can (15 ounces) no-salt-added black beans",
+      "1 teaspoon Italian seasoning",
+      "¼ cup grated Parmesan cheese"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Easy Pasta Sauce",
+    "revisionId": 4516476,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AEasy_Pasta_Sauce",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Easy",
+    "sourceTime": null,
+    "ingredientCount": 8,
+    "instructionCount": 11,
+    "primaryIngredientCoverage": [
+      "garlic",
+      "tomato",
+      "salt",
+      "black-pepper",
+      "cream"
+    ],
+    "unresolvedIngredients": [
+      "Additional ingredients, as desired"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Kid-Friendly Pasta",
+    "revisionId": 4499839,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AKid-Friendly_Pasta",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": null,
+    "ingredientCount": 4,
+    "instructionCount": 7,
+    "primaryIngredientCoverage": [
+      "pasta",
+      "carrot"
+    ],
+    "unresolvedIngredients": [],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Salmon Spaghetti",
+    "revisionId": 4525167,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ASalmon_Spaghetti",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": null,
+    "sourceTime": null,
+    "ingredientCount": 11,
+    "instructionCount": 6,
+    "primaryIngredientCoverage": [
+      "onion",
+      "cream",
+      "black-pepper",
+      "salt",
+      "pasta"
+    ],
+    "unresolvedIngredients": [
+      "250 g smoked or fresh salmon, chopped",
+      "1 tbsp crème fraîche",
+      "1 tsp horseradish, freshly grated"
+    ],
+    "reason": "Error: No strong beginner difficulty or time signal"
+  },
+  {
+    "title": "Cookbook:Tomato Basil Soup with Garlic Toasts",
+    "revisionId": 4512031,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ATomato_Basil_Soup_with_Garlic_Toasts",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": null,
+    "sourceTime": null,
+    "ingredientCount": 11,
+    "instructionCount": 6,
+    "primaryIngredientCoverage": [
+      "cream",
+      "salt",
+      "black-pepper"
+    ],
+    "unresolvedIngredients": [
+      "18 oz tomato juice",
+      "2 Roma tomatoes, diced",
+      "4 ea. ½-inch thick slices either French or Italian crusty white bread, cut on the bias",
+      "2 large bunches fresh basil"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Pasta with Vegetables",
+    "revisionId": 4493953,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3APasta_with_Vegetables",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": null,
+    "ingredientCount": 7,
+    "instructionCount": 5,
+    "primaryIngredientCoverage": [
+      "salt",
+      "tomato",
+      "zh:黄瓜",
+      "onion"
+    ],
+    "unresolvedIngredients": [
+      "⅓ pound uncooked dried spaghetti",
+      "1 tbsp butter or oil",
+      "3–5 tbsp pasta sauce or ketchup"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Cheesy Potato Soup",
+    "revisionId": 4524841,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ACheesy_Potato_Soup",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": null,
+    "sourceTime": null,
+    "ingredientCount": 12,
+    "instructionCount": 8,
+    "primaryIngredientCoverage": [
+      "bacon",
+      "butter",
+      "onion",
+      "garlic",
+      "potato",
+      "milk",
+      "salt",
+      "black-pepper"
+    ],
+    "unresolvedIngredients": [
+      "Chives, chopped"
+    ],
+    "reason": "Error: No strong beginner difficulty or time signal"
+  },
+  {
+    "title": "Cookbook:Sweet Potato Soup",
+    "revisionId": 4629062,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ASweet_Potato_Soup",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Easy",
+    "sourceTime": "1 hour",
+    "ingredientCount": 6,
+    "instructionCount": 4,
+    "primaryIngredientCoverage": [
+      "ginger"
+    ],
+    "unresolvedIngredients": [
+      "6 sweet potatoes, peeled and diced",
+      "2 cups chicken and vegetable stock",
+      "1 milk cream"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Plain Rice",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3APlain_Rice",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Tuna Sandwich",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ATuna_Sandwich",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Steamed Broccoli",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ASteamed_Broccoli",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Sauteed Mushrooms",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ASauteed_Mushrooms",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Sautéed Mushrooms",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ASaut%C3%A9ed_Mushrooms",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Green Salad",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AGreen_Salad",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Grilled Cheese Sandwich",
+    "revisionId": 4518251,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AGrilled_Cheese_Sandwich",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "reason": "Error: Procedure is not a supported complete numbered list"
+  },
+  {
+    "title": "Cookbook:Tomato Salad",
+    "revisionId": 4518182,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ATomato_Salad",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": null,
+    "ingredientCount": 6,
+    "instructionCount": 7,
+    "primaryIngredientCoverage": [
+      "tomato",
+      "onion",
+      "garlic",
+      "salt",
+      "black-pepper"
+    ],
+    "unresolvedIngredients": [],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Tuna Salad",
+    "revisionId": 4613413,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ATuna_Salad",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": null,
+    "ingredientCount": 19,
+    "instructionCount": 3,
+    "primaryIngredientCoverage": [
+      "onion",
+      "carrot",
+      "zh:普通酱油",
+      "salt",
+      "black-pepper",
+      "onion"
+    ],
+    "unresolvedIngredients": [
+      "1 large can (12 oz) tuna",
+      "1 can water chestnuts, drained and chopped",
+      "1–2 stalks celery, chopped",
+      "1 can tuna, drained",
+      "1 large can (12 oz) tuna",
+      "1 large bag shredded cheddar cheese",
+      "4/3 hot dogs, roughly chopped",
+      "4 bags tater-tots, just barely defrosted"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Oatmeal",
+    "revisionId": 4240712,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AOatmeal",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "reason": "Error: Explicit Ingredients and Procedure sections required"
+  },
+  {
+    "title": "Cookbook:Rice Pudding",
+    "revisionId": 4522360,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ARice_Pudding",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Easy",
+    "sourceTime": null,
+    "ingredientCount": 9,
+    "instructionCount": 6,
+    "primaryIngredientCoverage": [
+      "milk",
+      "egg",
+      "sugar",
+      "rice"
+    ],
+    "unresolvedIngredients": [
+      "220 g (1 cup / 8 oz) raisins or Zante currants, if desired",
+      "Cinnamon, to taste",
+      "Nutmeg, to taste",
+      "⅛ tsp ground cardamom or to taste (optional)"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Baked Oatmeal",
+    "revisionId": 4523319,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABaked_Oatmeal",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Easy",
+    "sourceTime": null,
+    "ingredientCount": 8,
+    "instructionCount": 3,
+    "primaryIngredientCoverage": [
+      "salt",
+      "milk",
+      "butter",
+      "egg"
+    ],
+    "unresolvedIngredients": [
+      "3 cups (720 g) quick-cooking oats"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Peanut Butter Sandwich",
+    "revisionId": 4518268,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3APeanut_Butter_Sandwich",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": "5 minutes",
+    "ingredientCount": 6,
+    "instructionCount": 5,
+    "primaryIngredientCoverage": [
+      "bread",
+      "butter",
+      "milk"
+    ],
+    "unresolvedIngredients": [
+      "Preserves (jam)"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Garlic Bread",
+    "revisionId": 4502629,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AGarlic_Bread",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": null,
+    "sourceTime": null,
+    "ingredientCount": 3,
+    "instructionCount": 8,
+    "primaryIngredientCoverage": [
+      "garlic"
+    ],
+    "unresolvedIngredients": [
+      "Soft baguette or French bread loaf",
+      "1 stick (¼ lb or a bit over 100 g) butter"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Carrot Salad",
+    "revisionId": 4523927,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ACarrot_Salad",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": "5 minutes",
+    "ingredientCount": 8,
+    "instructionCount": 4,
+    "primaryIngredientCoverage": [
+      "carrot",
+      "black-pepper"
+    ],
+    "unresolvedIngredients": [
+      "Almond oil",
+      "White balsalmic vinegar (or a mix of two parts red wine vinegar to one part balsamic vinegar)",
+      "Fresh greens like matzumi or baby Chinese mustard, or even Boston lettuce (optional)",
+      "Chives (optional)"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Grilled Chicken",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AGrilled_Chicken",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Baked Salmon",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABaked_Salmon",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Banana Oatmeal",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABanana_Oatmeal",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Pan-Fried Tofu",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3APan-Fried_Tofu",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Tofu Stir-Fry",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ATofu_Stir-Fry",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Boiled Rice",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABoiled_Rice",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Spinach",
+    "revisionId": 4533568,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ASpinach",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "reason": "Error: Explicit Ingredients and Procedure sections required"
+  },
+  {
+    "title": "Cookbook:Rice Pilaf",
+    "revisionId": 4494435,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ARice_Pilaf",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": null,
+    "sourceTime": null,
+    "ingredientCount": 8,
+    "instructionCount": 7,
+    "primaryIngredientCoverage": [
+      "salt",
+      "garlic",
+      "carrot"
+    ],
+    "unresolvedIngredients": [
+      "6 tbsp butter or margarine",
+      "½ cup uncooked orzo pasta or uncooked vermicelli pasta broken into small pieces",
+      "2 cups uncooked long grain rice",
+      "4 cups boiling-hot chicken broth",
+      "1 big onion, finely chopped"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Breakfast Burrito",
+    "revisionId": 4517381,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABreakfast_Burrito",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Easy",
+    "sourceTime": null,
+    "ingredientCount": 5,
+    "instructionCount": 4,
+    "primaryIngredientCoverage": [],
+    "unresolvedIngredients": [
+      "8 eggs either scrambled, sunny-side up, or poached",
+      "4 large flour burrito skins",
+      "8 strips of cooked bacon or 1 lb (400 grams) cooked breakfast sausage",
+      "1 full order of hash browns",
+      "Hollandaise sauce, cheese, salt, and pepper to taste"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Asparagus with Sesame Seeds and Soy Sauce",
+    "revisionId": 4630868,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AAsparagus_with_Sesame_Seeds_and_Soy_Sauce",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Easy",
+    "sourceTime": "15 minutes",
+    "ingredientCount": 5,
+    "instructionCount": 7,
+    "primaryIngredientCoverage": [
+      "zh:普通酱油",
+      "salt"
+    ],
+    "unresolvedIngredients": [],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:American Potato Salad I",
+    "revisionId": 4630231,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AAmerican_Potato_Salad_I",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Easy",
+    "sourceTime": "1 hour",
+    "ingredientCount": 11,
+    "instructionCount": 11,
+    "primaryIngredientCoverage": [
+      "onion",
+      "black-pepper"
+    ],
+    "unresolvedIngredients": [
+      "2 pounds (3–4 ea.) medium russet potatoes",
+      "1 tablespoon plus ½ teaspoon salt",
+      "1 medium rib of celery",
+      "¾ teaspoon celery seed",
+      "¾ teaspoon powdered mustard",
+      "2 tablespoons minced fresh parsley leaves",
+      "3 tablespoons sweet pickle relish"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Champ (Irish Mashed Potato with Scallion)",
+    "revisionId": 4502456,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AChamp_(Irish_Mashed_Potato_with_Scallion)",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Easy",
+    "sourceTime": null,
+    "ingredientCount": 6,
+    "instructionCount": 8,
+    "primaryIngredientCoverage": [
+      "potato",
+      "scallion",
+      "black-pepper",
+      "salt",
+      "butter"
+    ],
+    "unresolvedIngredients": [
+      "¼ pint (½ cup) milk"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Baked Cabbage and Bacon",
+    "revisionId": 4630324,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABaked_Cabbage_and_Bacon",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Easy",
+    "sourceTime": null,
+    "ingredientCount": 9,
+    "instructionCount": 5,
+    "primaryIngredientCoverage": [
+      "zh:包菜",
+      "bacon",
+      "butter",
+      "egg",
+      "cheese",
+      "onion",
+      "salt"
+    ],
+    "unresolvedIngredients": [
+      "Cayenne pepper"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:American Potato Salad II",
+    "revisionId": 4518086,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AAmerican_Potato_Salad_II",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Easy",
+    "sourceTime": null,
+    "ingredientCount": 10,
+    "instructionCount": 5,
+    "primaryIngredientCoverage": [
+      "salt",
+      "black-pepper"
+    ],
+    "unresolvedIngredients": [
+      "3 pounds small white potatoes (use waxy or red potatoes)",
+      "5 large hard boiled eggs, chopped",
+      "2 tbsp chopped sweet basil leaves",
+      "1 cup corn",
+      "½ cup freshly-squeezed lemon juice (from 2–3 lemons)",
+      "2 tbsp pasta seasoning"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Banana Pancakes",
+    "revisionId": 4523328,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABanana_Pancakes",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": null,
+    "sourceTime": null,
+    "ingredientCount": 8,
+    "instructionCount": 11,
+    "primaryIngredientCoverage": [
+      "butter",
+      "zh:香蕉",
+      "egg",
+      "milk",
+      "salt"
+    ],
+    "unresolvedIngredients": [
+      "300 grams self-raising flour (or 300 grams all-purpose flour + 1 tablespoon baking powder)",
+      "3 tbsp soft brown sugar"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Chinese Egg Fried Rice",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AChinese_Egg_Fried_Rice",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Chicken Salad",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Salad",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Egg in the Basket",
+    "revisionId": null,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AEgg_in_the_Basket",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "REJECT",
+    "reason": "Error: Missing original source page"
+  },
+  {
+    "title": "Cookbook:Onigiri",
+    "revisionId": 4508978,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AOnigiri",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": "45 minutes",
+    "ingredientCount": 8,
+    "instructionCount": 6,
+    "primaryIngredientCoverage": [],
+    "unresolvedIngredients": [
+      "100 ml (½ cup) uncooked Japanese-style short grain rice",
+      "Filling of choice, such as any of the following:",
+      "* Umeboshi (pickled plums), stones removed",
+      "* Canned tuna, mixed with mayonnaise and seasoned to taste with chopped leeks, soy sauce, or chilies; sour or salty flavours work well.",
+      "* Cooked salmon",
+      "* Cooked egg",
+      "* Katsuobushi, moistened with a small amount of soy sauce",
+      "Nori sheets"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Mashed Pumpkin",
+    "revisionId": 4502782,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMashed_Pumpkin",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": "Prep: 20 minutes<br/>Baking: ~90 minutes",
+    "ingredientCount": 4,
+    "instructionCount": 8,
+    "primaryIngredientCoverage": [
+      "zh:南瓜",
+      "salt",
+      "black-pepper",
+      "butter"
+    ],
+    "unresolvedIngredients": [],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Cheese on Toast",
+    "revisionId": 4518233,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ACheese_on_Toast",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": null,
+    "ingredientCount": 3,
+    "instructionCount": 4,
+    "primaryIngredientCoverage": [],
+    "unresolvedIngredients": [
+      "Thick-cut bread",
+      "Firm-fleshed strong-flavoured cheese, grated",
+      "Toppings (e.g. pickles, onion, walnuts, etc.)"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Baked Potatoes",
+    "revisionId": 4612337,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABaked_Potatoes",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "reason": "Error: Procedure is not a supported complete numbered list"
+  },
+  {
+    "title": "Cookbook:Mushy Peas",
+    "revisionId": 4512548,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMushy_Peas",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": "Overnight plus 30 minutes",
+    "ingredientCount": 4,
+    "instructionCount": 7,
+    "primaryIngredientCoverage": [
+      "sugar"
+    ],
+    "unresolvedIngredients": [
+      "Dried marrowfat peas"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Bruschetta",
+    "revisionId": 4523487,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABruschetta",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": "10 minutes",
+    "ingredientCount": 12,
+    "instructionCount": 3,
+    "primaryIngredientCoverage": [
+      "garlic",
+      "black-pepper"
+    ],
+    "unresolvedIngredients": [
+      "1 loaf of Italian or French bread, sliced ½ inch (1.25 cm) thick on the bias",
+      "Kosher salt or sea salt",
+      "Toppings of your choice (see examples below)",
+      "Chopped tomatoes with arugula or basil",
+      "Cooked white beans (topped, if you like, with sautéed kale)",
+      "Sautéed mushrooms (preferably wild varieties)",
+      "Minced anchovies flavored with wine vinegar and herbs",
+      "Thinly-sliced pancetta crisped under the broiler",
+      "Pugliese-style chopped mixture of summer vegetables (red onion, cucumber, tomatoes, oregano, flat-leaf parsley, basil, and red pepper flakes)"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Cabbage Salad",
+    "revisionId": 4630329,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ACabbage_Salad",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": "Prep: 5 minutes</br>Refrigeration: Overnight",
+    "ingredientCount": 5,
+    "instructionCount": 3,
+    "primaryIngredientCoverage": [
+      "zh:包菜",
+      "salt",
+      "black-pepper"
+    ],
+    "unresolvedIngredients": [],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Baked Sweet Potatoes",
+    "revisionId": 4527285,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABaked_Sweet_Potatoes",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": null,
+    "ingredientCount": 1,
+    "instructionCount": 4,
+    "primaryIngredientCoverage": [],
+    "unresolvedIngredients": [
+      "4 large \"yam style\" sweet potatoes, unpeeled"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Lettuce Soup",
+    "revisionId": 4518436,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ALettuce_Soup",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "reason": "Error: Procedure is not a supported complete numbered list"
+  },
+  {
+    "title": "Cookbook:Mozzarella Tuna Melts",
+    "revisionId": 4518266,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMozzarella_Tuna_Melts",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": "20 minutes",
+    "ingredientCount": 8,
+    "instructionCount": 7,
+    "primaryIngredientCoverage": [
+      "onion",
+      "tomato",
+      "zh:生菜"
+    ],
+    "unresolvedIngredients": [
+      "1 can (6 ounces) water-packed tuna, drained and flaked",
+      "4 hamburger buns, split",
+      "4 mozzarella cheese slices"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Marinated Cucumbers and Onions",
+    "revisionId": 4518149,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMarinated_Cucumbers_and_Onions",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": null,
+    "ingredientCount": 6,
+    "instructionCount": 6,
+    "primaryIngredientCoverage": [
+      "zh:黄瓜",
+      "oil",
+      "sugar",
+      "salt"
+    ],
+    "unresolvedIngredients": [
+      "1 white onion"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Peas Supreme",
+    "revisionId": 4517414,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3APeas_Supreme",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": "½ hour",
+    "ingredientCount": 7,
+    "instructionCount": 8,
+    "primaryIngredientCoverage": [
+      "butter",
+      "flour"
+    ],
+    "unresolvedIngredients": [
+      "1 package (16 ounces) frozen green peas",
+      "1 can (4 ounces) sliced mushrooms, juice reserved",
+      "1 can (8 ounces) water chestnuts",
+      "Cooking spray"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Pasta Soup for Kids",
+    "revisionId": 4525006,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3APasta_Soup_for_Kids",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": "½ hour",
+    "ingredientCount": 8,
+    "instructionCount": 7,
+    "primaryIngredientCoverage": [
+      "carrot",
+      "zh:西葫芦"
+    ],
+    "unresolvedIngredients": [
+      "1 quart vegetable broth",
+      "½ cup diced yellow crooked-neck squash",
+      "½ cup baby corn, ¼-inch pieces (or ¼ cup frozen corn—see notes)",
+      "1–1½ cups cooked small pasta (see notes)"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Pasta with Corn and Tuna",
+    "revisionId": 4514764,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3APasta_with_Corn_and_Tuna",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": null,
+    "ingredientCount": 7,
+    "instructionCount": 5,
+    "primaryIngredientCoverage": [],
+    "unresolvedIngredients": [
+      "4 mugfuls of your favourite dried pasta",
+      "400 g plain Philadelphia-brand cream cheese",
+      "410 g tinned sweetcorn",
+      "1 tin of tuna of equal size to the sweet corn",
+      "3 tsp of pesto",
+      "A little ground pepper"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Bacon and Egg Stuffed Tomatoes",
+    "revisionId": 4523788,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABacon_and_Egg_Stuffed_Tomatoes",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": "½ hour",
+    "ingredientCount": 10,
+    "instructionCount": 8,
+    "primaryIngredientCoverage": [
+      "tomato",
+      "bacon",
+      "salt",
+      "black-pepper"
+    ],
+    "unresolvedIngredients": [
+      "Salt and pepper to taste",
+      "6 hard boiled eggs"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Microwaved Scrambled Egg",
+    "revisionId": 4502791,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMicrowaved_Scrambled_Egg",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": null,
+    "ingredientCount": 2,
+    "instructionCount": 4,
+    "primaryIngredientCoverage": [
+      "egg",
+      "butter"
+    ],
+    "unresolvedIngredients": [],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Noodles for Soup",
+    "revisionId": 4501597,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ANoodles_for_Soup",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": null,
+    "ingredientCount": 2,
+    "instructionCount": 5,
+    "primaryIngredientCoverage": [
+      "egg",
+      "flour"
+    ],
+    "unresolvedIngredients": [],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Microwave Oat Porridge",
+    "revisionId": 4517857,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMicrowave_Oat_Porridge",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": null,
+    "ingredientCount": 3,
+    "instructionCount": 3,
+    "primaryIngredientCoverage": [
+      "salt"
+    ],
+    "unresolvedIngredients": [],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Cheese Stuffed Tomatoes",
+    "revisionId": 4493843,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ACheese_Stuffed_Tomatoes",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": null,
+    "ingredientCount": 8,
+    "instructionCount": 4,
+    "primaryIngredientCoverage": [
+      "garlic",
+      "butter",
+      "salt",
+      "black-pepper"
+    ],
+    "unresolvedIngredients": [
+      "1 tbsp basil chiffonade",
+      "¼ cup ricotta cheese"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Chicken with Paprika and Cream",
+    "revisionId": 4606560,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_with_Paprika_and_Cream",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": null,
+    "ingredientCount": 5,
+    "instructionCount": 2,
+    "primaryIngredientCoverage": [
+      "chicken-breast"
+    ],
+    "unresolvedIngredients": [
+      "4 tablespoons half and half",
+      "3 slices of Provel (a brand of processed cheese product) or Muenster"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Cheesy Chicken Pasta",
+    "revisionId": 4605239,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ACheesy_Chicken_Pasta",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": "15 minutes",
+    "ingredientCount": 7,
+    "instructionCount": 5,
+    "primaryIngredientCoverage": [
+      "pasta",
+      "chicken",
+      "cream"
+    ],
+    "unresolvedIngredients": [
+      "2½–3½ tablespoons hoisin sauce to taste"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Chocolate Milk",
+    "revisionId": 4523997,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AChocolate_Milk",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": "5 minutes",
+    "ingredientCount": 2,
+    "instructionCount": 4,
+    "primaryIngredientCoverage": [
+      "milk"
+    ],
+    "unresolvedIngredients": [
+      "Chocolate syrup or melted chocolate (to taste)"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Microwaved Basmati Rice",
+    "revisionId": 4513028,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMicrowaved_Basmati_Rice",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": "40 minutes",
+    "ingredientCount": 3,
+    "instructionCount": 9,
+    "primaryIngredientCoverage": [
+      "salt"
+    ],
+    "unresolvedIngredients": [
+      "57 g uncooked Basmati rice"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Boiled Chicken with Broth",
+    "revisionId": 4518353,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABoiled_Chicken_with_Broth",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "reason": "Error: Procedure is not a supported complete numbered list"
+  },
+  {
+    "title": "Cookbook:Peanut Butter Banana Oatmeal",
+    "revisionId": 4522503,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3APeanut_Butter_Banana_Oatmeal",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": "15 minutes",
+    "ingredientCount": 5,
+    "instructionCount": 5,
+    "primaryIngredientCoverage": [
+      "milk",
+      "zh:香蕉"
+    ],
+    "unresolvedIngredients": [
+      "1 cup rolled oats or instant oats",
+      "½ tbsp (or more) honey, to taste"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Caprese Salad",
+    "revisionId": 4605277,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ACaprese_Salad",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": null,
+    "ingredientCount": 6,
+    "instructionCount": 7,
+    "primaryIngredientCoverage": [
+      "tomato"
+    ],
+    "unresolvedIngredients": [
+      "A few basil leaves",
+      "about ¾ the weight of Mozzarella cheese as the tomato, sliced",
+      "Italian seasoning or oregano and pepper (optional)"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Pasta with Sausage",
+    "revisionId": 4502853,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3APasta_with_Sausage",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": null,
+    "ingredientCount": 5,
+    "instructionCount": 6,
+    "primaryIngredientCoverage": [
+      "salt"
+    ],
+    "unresolvedIngredients": [
+      "⅓ pound uncooked dried spaghetti",
+      "1 tbsp butter or oil",
+      "3–5 tbsp pasta sauce or ketchup"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Boiled Sweet Potato",
+    "revisionId": 4494688,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABoiled_Sweet_Potato",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": null,
+    "ingredientCount": 3,
+    "instructionCount": 5,
+    "primaryIngredientCoverage": [
+      "salt"
+    ],
+    "unresolvedIngredients": [
+      "Sweet potato, unpeeled and cut into chunks"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Brown Rice Breakfast Bowl",
+    "revisionId": 4512873,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABrown_Rice_Breakfast_Bowl",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": null,
+    "ingredientCount": 5,
+    "instructionCount": 1,
+    "primaryIngredientCoverage": [],
+    "unresolvedIngredients": [
+      "1 ½ cups cooked brown rice",
+      "4 dates, chopped",
+      "2 pinches of cinnamon",
+      "¼ cup unsalted pumpkin seeds"
+    ],
+    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+  },
+  {
+    "title": "Cookbook:Banana Milkshake",
+    "revisionId": 4587157,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABanana_Milkshake",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Very Easy",
+    "sourceTime": null,
+    "ingredientCount": 5,
+    "instructionCount": 2,
+    "primaryIngredientCoverage": [
+      "milk",
+      "sugar"
+    ],
+    "unresolvedIngredients": [
+      "1 large or 2 small bananas"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Miso Soup (Traditional)",
+    "revisionId": 4569941,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMiso_Soup_(Traditional)",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "DEFER",
+    "reason": "Error: Ingredient prose/table requires manual parsing review"
+  }
+]

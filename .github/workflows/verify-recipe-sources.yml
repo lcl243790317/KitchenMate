@@ -25,3 +25,4 @@ jobs:
           path: |
             docs/LIVE_RECIPE_VERIFICATION.json
             docs/IMPORT_VERIFICATION.json
+            docs/RECIPE_SOURCE_CHANGES.md

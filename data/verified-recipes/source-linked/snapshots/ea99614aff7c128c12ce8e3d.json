@@ -1,0 +1,50 @@
+{
+  "id": "source:ea99614aff7c128c12ce8e3d",
+  "sourceUrl": "https://www.budgetbytes.com/roasted-cauliflower/",
+  "title": "Roasted Cauliflower",
+  "rawIngredientFacts": [
+    "1 head cauliflower ($3.49)",
+    "2 Tbsp olive oil ($0.26)",
+    "1 tsp seasoning of choice ($0.10)",
+    "1/4 tsp salt* ($0.02)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "zh:花菜",
+      "originalText": "1 head cauliflower ($3.49)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:橄榄油",
+      "originalText": "2 Tbsp olive oil ($0.26)",
+      "quantity": 2,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1 tsp seasoning of choice ($0.10)",
+      "originalText": "1 tsp seasoning of choice ($0.10)",
+      "quantity": 1,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1/4 tsp salt* ($0.02)",
+      "originalText": "1/4 tsp salt* ($0.02)",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 35,
+  "sourceInstructionCount": 3,
+  "lastVerifiedAt": "2026-09-30T15:44:18.102Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

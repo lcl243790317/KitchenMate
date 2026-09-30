@@ -795,6 +795,9 @@ export function KitchenApp() {
                 <Link href="/recipes" className="secondary full">
                   浏览全部教程
                 </Link>
+                <Link className="text-link" href="/recipes?beginner=true">
+                  简单易做 →
+                </Link>
                 <span className="tiny">点选食材，查看真实来源</span>
               </aside>
             </div>

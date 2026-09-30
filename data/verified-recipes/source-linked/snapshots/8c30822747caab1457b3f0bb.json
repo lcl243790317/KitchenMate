@@ -1,0 +1,95 @@
+{
+  "id": "source:8c30822747caab1457b3f0bb",
+  "sourceUrl": "https://www.budgetbytes.com/one-pot-creamy-mushroom-pasta/",
+  "title": "One Pot Creamy Mushroom Pasta",
+  "rawIngredientFacts": [
+    "4 cloves garlic ($0.16)",
+    "8 oz. baby bella mushrooms ($2.37)",
+    "2 Tbsp butter ($0.20)",
+    "1/8 tsp salt ($0.01)",
+    "1/8 tsp freshly cracked pepper ($0.02)",
+    "8 oz. fettuccine* ($0.59)",
+    "2.5 cups vegetable broth ($0.20)",
+    "1/3 cup heavy cream** ($0.98)",
+    "1/4 cup grated Parmesan ($0.44)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "garlic",
+      "originalText": "4 cloves garlic ($0.16)",
+      "quantity": 4,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:8 oz. baby bella mushrooms ($2.37)",
+      "originalText": "8 oz. baby bella mushrooms ($2.37)",
+      "quantity": 8,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "butter",
+      "originalText": "2 Tbsp butter ($0.20)",
+      "quantity": 2,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "salt",
+      "originalText": "1/8 tsp salt ($0.01)",
+      "quantity": 0.125,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1/8 tsp freshly cracked pepper ($0.02)",
+      "originalText": "1/8 tsp freshly cracked pepper ($0.02)",
+      "quantity": 0.125,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:8 oz. fettuccine* ($0.59)",
+      "originalText": "8 oz. fettuccine* ($0.59)",
+      "quantity": 8,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:蔬菜高汤",
+      "originalText": "2.5 cups vegetable broth ($0.20)",
+      "quantity": 2.5,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1/3 cup heavy cream** ($0.98)",
+      "originalText": "1/3 cup heavy cream** ($0.98)",
+      "quantity": 0.3333333333333333,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:帕尔马干酪",
+      "originalText": "1/4 cup grated Parmesan ($0.44)",
+      "quantity": 0.25,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 30,
+  "sourceInstructionCount": 6,
+  "lastVerifiedAt": "2026-09-30T15:44:26.943Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

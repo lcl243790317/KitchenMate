@@ -73,6 +73,8 @@ function searchText(recipe: Recipe) {
   const text = normalizeIngredientText(
     [
       recipe.title,
+      recipe.originalTitle ?? "",
+      recipe.provenance.sourceRecipeTitle,
       ...((recipeAliases as Record<string, string[]>)[recipe.title] ?? []),
       recipe.description,
       recipe.cuisine,

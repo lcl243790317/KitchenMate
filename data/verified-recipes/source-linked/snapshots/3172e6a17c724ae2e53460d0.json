@@ -1,0 +1,95 @@
+{
+  "id": "source:3172e6a17c724ae2e53460d0",
+  "sourceUrl": "https://www.budgetbytes.com/baked-chicken-drumsticks/",
+  "title": "Oven Baked Chicken Drumsticks",
+  "rawIngredientFacts": [
+    "1 tsp smoked paprika ($0.08)",
+    "½ tsp garlic powder ($0.02)",
+    "¼ tsp onion powder ($0.01)",
+    "⅛ tsp cayenne pepper ($0.02)",
+    "¼ tsp dried oregano ($0.02)",
+    "½ tsp salt ($0.04)",
+    "¼ tsp black pepper (freshly cracked, $0.04)",
+    "1.75 lbs. chicken drumsticks (6 pieces, $4.06*)",
+    "2 Tbsp cooking oil ($0.08**)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "unknown:1 tsp smoked paprika ($0.08)",
+      "originalText": "1 tsp smoked paprika ($0.08)",
+      "quantity": 1,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:蒜粉",
+      "originalText": "½ tsp garlic powder ($0.02)",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:洋葱粉",
+      "originalText": "¼ tsp onion powder ($0.01)",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:⅛ tsp cayenne pepper ($0.02)",
+      "originalText": "⅛ tsp cayenne pepper ($0.02)",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:¼ tsp dried oregano ($0.02)",
+      "originalText": "¼ tsp dried oregano ($0.02)",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "salt",
+      "originalText": "½ tsp salt ($0.04)",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "black-pepper",
+      "originalText": "¼ tsp black pepper (freshly cracked, $0.04)",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:1.75 lbs. chicken drumsticks (6 pieces, $4.06*)",
+      "originalText": "1.75 lbs. chicken drumsticks (6 pieces, $4.06*)",
+      "quantity": 1.75,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "oil",
+      "originalText": "2 Tbsp cooking oil ($0.08**)",
+      "quantity": 2,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 45,
+  "sourceInstructionCount": 4,
+  "lastVerifiedAt": "2026-09-30T15:44:19.455Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

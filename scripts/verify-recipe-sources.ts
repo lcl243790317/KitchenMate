@@ -4,6 +4,7 @@ import { verifiedRecipes } from "../lib/verified-recipes";
 import manifest from "../data/verified-recipes/howtocook/manifest.json";
 import { safeFetchHtml } from "../lib/safe-fetch";
 import { parseRecipeHtml } from "../lib/recipe-parser";
+import wikiManifest from "../data/verified-recipes/wikibooks/manifest.json";
 async function main() {
   if (process.env.LIVE_RECIPE_VERIFICATION !== "true")
     throw new Error("Opt in with LIVE_RECIPE_VERIFICATION=true");
@@ -16,6 +17,37 @@ async function main() {
     [sample[i], sample[j]] = [sample[j], sample[i]];
   }
   const records = [];
+  const sourceChanges: {
+    id: string;
+    source: string;
+    status: string;
+    detail: string;
+  }[] = [];
+  // One official API request for all Wikibooks sources. No per-page burst and no live CI dependency.
+  const wikiRecipes = verifiedRecipes.filter(
+    (r) => r.sourceProvider === "wikibooks",
+  );
+  const wikiUrl = new URL("https://en.wikibooks.org/w/api.php");
+  wikiUrl.search = new URLSearchParams({
+    action: "query",
+    prop: "revisions",
+    pageids: wikiRecipes.map((r) => r.externalId).join("|"),
+    rvprop: "ids|content",
+    rvslots: "main",
+    format: "json",
+    formatversion: "2",
+    maxlag: "5",
+  }).toString();
+  const wikiResponse = await fetch(wikiUrl, {
+    signal: AbortSignal.timeout(30000),
+    headers: {
+      "User-Agent":
+        "KitchenMate source verification (github.com/lcl243790317/KitchenMate)",
+    },
+  });
+  const wikiData = wikiResponse.ok
+    ? await wikiResponse.json()
+    : { query: { pages: [] } };
   const oldPath = "docs/LIVE_RECIPE_VERIFICATION.json";
   const previous: { sourceUrl: string; consecutiveFailures?: number }[] =
     fs.existsSync(oldPath) ? JSON.parse(fs.readFileSync(oldPath, "utf8")) : [];
@@ -36,7 +68,31 @@ async function main() {
     };
     try {
       const record = manifest.find((m) => m.id === recipe.id);
-      if (record) {
+      if (recipe.sourceProvider === "wikibooks") {
+        const snapshot = wikiManifest.find((m) => m.id === recipe.id)!;
+        const local = JSON.parse(
+          fs.readFileSync(snapshot.snapshotPath, "utf8"),
+        );
+        const latest = wikiData.query?.pages.find(
+          (p: { pageid: number }) => String(p.pageid) === recipe.externalId,
+        )?.revisions?.[0];
+        data.httpStatus = wikiResponse.status;
+        if (!latest)
+          throw new Error(
+            "Official MediaWiki API unavailable; no snapshot changed",
+          );
+        const changed = String(latest.revid) !== String(local.revisionId);
+        sourceChanges.push({
+          id: recipe.id,
+          source: recipe.sourceName,
+          status: changed ? "updated upstream" : "unchanged",
+          detail: changed
+            ? `Pinned ${local.revisionId}; upstream ${latest.revid}; manual content/license review required`
+            : "Exact revision unchanged",
+        });
+        data.ingredientCount = recipe.ingredients.length;
+        data.instructionCount = recipe.instructions.length;
+      } else if (record) {
         const page = await fetch(record.sourceUrl, {
           signal: AbortSignal.timeout(15000),
         });
@@ -81,9 +137,27 @@ async function main() {
       data.error = String(error);
     }
     records.push(data);
+    if (recipe.sourceProvider !== "wikibooks")
+      sourceChanges.push({
+        id: recipe.id,
+        source: recipe.sourceName,
+        status:
+          data.httpStatus === 404
+            ? "404"
+            : data.status === "verified"
+              ? "unchanged"
+              : "review required",
+        detail:
+          data.error ||
+          "Source identity checked; no automatic catalog mutation",
+      });
     console.log(`${data.status} ${data.title}`);
   }
   fs.writeFileSync(oldPath, JSON.stringify(records, null, 2));
+  fs.writeFileSync(
+    "docs/RECIPE_SOURCE_CHANGES.md",
+    `# Recipe source changes\n\nReport only. Updated upstream content, license notices, redirects and structured-data changes require manual review; never automatically overwrite instructions or delete recipes. Images remain separately licensed.\n\n| ID | Source | Status | Detail |\n|---|---|---|---|\n${sourceChanges.map((r) => `|${r.id}|${r.source}|${r.status}|${r.detail.replaceAll("|", "/")}|`).join("\n")}\n`,
+  );
   const healthPath = "data/verified-recipes/source-health.json";
   const health = JSON.parse(fs.readFileSync(healthPath, "utf8"));
   for (const record of records)

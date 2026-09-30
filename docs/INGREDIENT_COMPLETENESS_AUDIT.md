@@ -6,15 +6,15 @@ Source: checksum-verified local HowToCook snapshots at pinned commit a2d45c6984d
 | --- | ---: |
 | recipesScanned | 365 |
 | recipesWithCalculationSections | 365 |
-| materialIngredientIdentities | 3186 |
-| calculationIngredientIdentities | 2323 |
-| recipesWithCalculationOnlyIngredients | 144 |
-| calculationOnlyIngredientsAdded | 277 |
-| duplicateIdentitiesMerged | 2074 |
-| ingredientRowsBefore | 3211 |
-| ingredientRowsAfter | 3486 |
-| unresolvedCalculationFragments | 826 |
-| operationOnlyCandidates | 654 |
+| materialIngredientIdentities | 3184 |
+| calculationIngredientIdentities | 2457 |
+| recipesWithCalculationOnlyIngredients | 150 |
+| calculationOnlyIngredientsAdded | 292 |
+| duplicateIdentitiesMerged | 2191 |
+| ingredientRowsBefore | 3204 |
+| ingredientRowsAfter | 3510 |
+| unresolvedCalculationFragments | 671 |
+| operationOnlyCandidates | 733 |
 | completenessViolations | 0 |
 
 Material and calculation bullets are parsed atomically, then merged by canonical identity. Calculation wording and explicit scalar amounts enrich materials; separate calculation usages are retained without summing. Optional material status remains optional. Unresolved calculation fragments stay in source notes and the JSON report; ambiguous prose, alternatives and unknown identities are not silently promoted to requirements. A formula with an explicit ingredient head retains that identity with quantity=null. Operation candidates are report-only, including possible examples, substitutes and optional mentions. They are not completeness violations.

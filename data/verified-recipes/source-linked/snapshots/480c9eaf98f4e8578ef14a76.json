@@ -1,0 +1,131 @@
+{
+  "id": "source:480c9eaf98f4e8578ef14a76",
+  "sourceUrl": "https://www.loveandlemons.com/roasted-potatoes/",
+  "title": "Oven Roasted Potatoes",
+  "rawIngredientFacts": [
+    "2 pounds small potatoes (halved or quartered (I like a mix of baby red potatoes and Yukon Golds)*)",
+    "Extra-virgin olive oil (for drizzling)",
+    "Sea salt and freshly ground black pepper",
+    "Finely chopped fresh parsley (for garnish)",
+    "2 tablespoons extra-virgin olive oil",
+    "1 teaspoon lemon zest",
+    "2 tablespoons fresh lemon juice",
+    "1 teaspoon Dijon mustard",
+    "2  garlic cloves (minced)",
+    "1 tablespoon minced fresh rosemary (or thyme)",
+    "¼ teaspoon red pepper flakes",
+    "¼ teaspoon sea salt",
+    "Freshly ground black pepper"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "potato",
+      "originalText": "2 pounds small potatoes (halved or quartered (I like a mix of baby red potatoes and Yukon Golds)*)",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:橄榄油",
+      "originalText": "Extra-virgin olive oil (for drizzling)",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:Sea salt and freshly ground black pepper",
+      "originalText": "Sea salt and freshly ground black pepper",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:Finely chopped fresh parsley (for garnish)",
+      "originalText": "Finely chopped fresh parsley (for garnish)",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:橄榄油",
+      "originalText": "2 tablespoons extra-virgin olive oil",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:柠檬皮屑",
+      "originalText": "1 teaspoon lemon zest",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:柠檬汁",
+      "originalText": "2 tablespoons fresh lemon juice",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:第戎芥末",
+      "originalText": "1 teaspoon Dijon mustard",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "garlic",
+      "originalText": "2  garlic cloves (minced)",
+      "quantity": 2,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:迷迭香",
+      "originalText": "1 tablespoon minced fresh rosemary (or thyme)",
+      "quantity": 1,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:¼ teaspoon red pepper flakes",
+      "originalText": "¼ teaspoon red pepper flakes",
+      "quantity": 0.25,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:海盐",
+      "originalText": "¼ teaspoon sea salt",
+      "quantity": 0.25,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "unknown:Freshly ground black pepper",
+      "originalText": "Freshly ground black pepper",
+      "quantity": null,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 35,
+  "sourceInstructionCount": 4,
+  "lastVerifiedAt": "2026-09-30T15:44:30.320Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

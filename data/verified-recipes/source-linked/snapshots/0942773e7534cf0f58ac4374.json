@@ -1,0 +1,77 @@
+{
+  "id": "source:0942773e7534cf0f58ac4374",
+  "sourceUrl": "https://www.budgetbytes.com/scrambled-eggs-with-rice/",
+  "title": "Scrambled Eggs with Rice",
+  "rawIngredientFacts": [
+    "6 large eggs* ($4.02)",
+    "2 Tbsp cooking oil ($0.08)",
+    "2 tsp gochujang (or to taste)** ($0.16)",
+    "4 cups cooked rice, warm*** ($0.43)",
+    "3 Tbsp soy sauce ($0.18)",
+    "1 Tbsp toasted sesame oil ($0.30)",
+    "4  green onions, sliced ($0.50)"
+  ],
+  "ingredientIdentities": [
+    {
+      "ingredientId": "unknown:6 large eggs* ($4.02)",
+      "originalText": "6 large eggs* ($4.02)",
+      "quantity": 6,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "oil",
+      "originalText": "2 Tbsp cooking oil ($0.08)",
+      "quantity": 2,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:韩式辣酱",
+      "originalText": "2 tsp gochujang (or to taste)** ($0.16)",
+      "quantity": 2,
+      "unit": "tsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "rice",
+      "originalText": "4 cups cooked rice, warm*** ($0.43)",
+      "quantity": 4,
+      "unit": "cup",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:普通酱油",
+      "originalText": "3 Tbsp soy sauce ($0.18)",
+      "quantity": 3,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "zh:香油",
+      "originalText": "1 Tbsp toasted sesame oil ($0.30)",
+      "quantity": 1,
+      "unit": "tbsp",
+      "optional": false,
+      "group": "原料"
+    },
+    {
+      "ingredientId": "scallion",
+      "originalText": "4  green onions, sliced ($0.50)",
+      "quantity": 4,
+      "unit": "",
+      "optional": false,
+      "group": "原料"
+    }
+  ],
+  "totalTime": 15,
+  "sourceInstructionCount": 4,
+  "lastVerifiedAt": "2026-09-30T15:44:15.463Z",
+  "httpStatus": 200,
+  "verificationMethod": "schema-org-jsonld"
+}

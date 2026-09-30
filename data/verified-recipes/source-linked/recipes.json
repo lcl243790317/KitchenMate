@@ -685,5 +685,4271 @@
     "updatedAt": "2026-09-29T15:29:40.932Z",
     "sourceUpdatedAt": null,
     "lastFetchedAt": "2026-09-29T15:29:40.932Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/scrambled-eggs-with-rice/",
+      "sourceRecipeTitle": "Scrambled Eggs with Rice",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.budgetbytes.com/scrambled-eggs-with-rice/",
+      "verifiedAt": "2026-09-30T15:44:15.463Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:15.463Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 4,
+    "id": "source:0942773e7534cf0f58ac4374",
+    "title": "Scrambled Eggs with Rice",
+    "slug": "source:0942773e7534cf0f58ac4374",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/scrambled-eggs-with-rice/",
+    "sourceAuthor": null,
+    "externalId": "https://www.budgetbytes.com/scrambled-eggs-with-rice/",
+    "cuisine": "Japanese",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 5,
+    "cookTime": 10,
+    "totalTime": 15,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "unknown:6 large eggs* ($4.02)",
+        "originalText": "6 large eggs* ($4.02)",
+        "quantity": 6,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "oil",
+        "originalText": "2 Tbsp cooking oil ($0.08)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:韩式辣酱",
+        "originalText": "2 tsp gochujang (or to taste)** ($0.16)",
+        "quantity": 2,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "rice",
+        "originalText": "4 cups cooked rice, warm*** ($0.43)",
+        "quantity": 4,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:普通酱油",
+        "originalText": "3 Tbsp soy sauce ($0.18)",
+        "quantity": 3,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:香油",
+        "originalText": "1 Tbsp toasted sesame oil ($0.30)",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "scallion",
+        "originalText": "4  green onions, sliced ($0.50)",
+        "quantity": 4,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "鸡蛋"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:15.457Z",
+    "updatedAt": "2026-09-30T15:44:15.457Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:15.457Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/chicken-fried-rice/",
+      "sourceRecipeTitle": "Chicken Fried Rice",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.budgetbytes.com/chicken-fried-rice/",
+      "verifiedAt": "2026-09-30T15:44:15.860Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:15.860Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 7,
+    "id": "source:698aff6aac0dbc43bd0be795",
+    "title": "Chicken Fried Rice",
+    "slug": "source:698aff6aac0dbc43bd0be795",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/chicken-fried-rice/",
+    "sourceAuthor": null,
+    "externalId": "https://www.budgetbytes.com/chicken-fried-rice/",
+    "cuisine": "Chinese",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 15,
+    "cookTime": 20,
+    "totalTime": 35,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "garlic",
+        "originalText": "2 cloves garlic, minced ($0.16)",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "ginger",
+        "originalText": "1 tsp grated fresh ginger ($0.10)",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "scallion",
+        "originalText": "3  green onions, sliced ($0.30)",
+        "quantity": 3,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "carrot",
+        "originalText": "1  carrot, diced small ($0.16)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:红椒",
+        "originalText": "1  red bell pepper, diced ($1.50)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:速冻豌豆",
+        "originalText": "1 cup frozen peas ($0.50)",
+        "quantity": 1,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "chicken-breast",
+        "originalText": "1  large boneless skinless chicken breast ($2.62)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "egg",
+        "originalText": "2  large eggs ($0.46)",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "oil",
+        "originalText": "3 Tbsp cooking oil, divided ($0.13)",
+        "quantity": 3,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:香油",
+        "originalText": "3 Tbsp toasted sesame oil ($0.96)",
+        "quantity": 3,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:普通酱油",
+        "originalText": "3 Tbsp soy sauce ($0.15)",
+        "quantity": 3,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:3 cups cooked and cooled rice ($0.62)",
+        "originalText": "3 cups cooked and cooled rice ($0.62)",
+        "quantity": 3,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "鸡蛋"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:15.859Z",
+    "updatedAt": "2026-09-30T15:44:15.859Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:15.859Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/vegetable-fried-rice/",
+      "sourceRecipeTitle": "Vegetable Fried Rice",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.budgetbytes.com/vegetable-fried-rice/",
+      "verifiedAt": "2026-09-30T15:44:16.243Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:16.243Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 6,
+    "id": "source:bc5738774c218a94bf7b9d0c",
+    "title": "Vegetable Fried Rice",
+    "slug": "source:bc5738774c218a94bf7b9d0c",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/vegetable-fried-rice/",
+    "sourceAuthor": null,
+    "externalId": "https://www.budgetbytes.com/vegetable-fried-rice/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 15,
+    "cookTime": 12,
+    "totalTime": 27,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "garlic",
+        "originalText": "2  garlic cloves (minced, $0.12)",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "ginger",
+        "originalText": "1 tsp fresh ginger (grated, $0.12)",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "carrot",
+        "originalText": "1  carrot (diced, $0.16)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:红椒",
+        "originalText": "1  red bell pepper (diced, $1.48)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "scallion",
+        "originalText": "4  green onions (sliced, $0.48)",
+        "quantity": 4,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "egg",
+        "originalText": "2  large eggs ($0.39)",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:速冻豌豆",
+        "originalText": "1 cup frozen peas ($0.49)",
+        "quantity": 1,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "oil",
+        "originalText": "3 Tbsp cooking oil (divided, $0.15*)",
+        "quantity": 3,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:3 cups cooked and cooled rice ($0.38**)",
+        "originalText": "3 cups cooked and cooled rice ($0.38**)",
+        "quantity": 3,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:普通酱油",
+        "originalText": "3 Tbsp soy sauce ($0.15***)",
+        "quantity": 3,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:香油",
+        "originalText": "1 Tbsp toasted sesame oil ($0.30****)",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "鸡蛋"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:16.243Z",
+    "updatedAt": "2026-09-30T15:44:16.243Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:16.243Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/skillet-breakfast-potatoes/",
+      "sourceRecipeTitle": "Skillet Breakfast Potatoes Recipe",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.budgetbytes.com/skillet-breakfast-potatoes/",
+      "verifiedAt": "2026-09-30T15:44:16.594Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:16.594Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 6,
+    "id": "source:6af9dc13bf1921f0158c7359",
+    "title": "Skillet Breakfast Potatoes Recipe",
+    "slug": "source:6af9dc13bf1921f0158c7359",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/skillet-breakfast-potatoes/",
+    "sourceAuthor": null,
+    "externalId": "https://www.budgetbytes.com/skillet-breakfast-potatoes/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 10,
+    "cookTime": 23,
+    "totalTime": 33,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "unknown:1 ½ lbs. Yukon gold potatoes ($1.80)",
+        "originalText": "1 ½ lbs. Yukon gold potatoes ($1.80)",
+        "quantity": 1.5,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:½  yellow onion ($0.20)",
+        "originalText": "½  yellow onion ($0.20)",
+        "quantity": 0.5,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:橄榄油",
+        "originalText": "2 Tbsp olive oil, divided ($0.24)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "1 Tbsp butter ($0.14)",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "1 ½ tsp salt, divided ($0.08)",
+        "quantity": 1.5,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:½ tsp freshly cracked black pepper, divided ($0.04)",
+        "originalText": "½ tsp freshly cracked black pepper, divided ($0.04)",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:蒜粉",
+        "originalText": "½ tsp garlic powder ($0.05)",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:洋葱粉",
+        "originalText": "¼ tsp onion powder ($0.03)",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "牛奶"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:16.594Z",
+    "updatedAt": "2026-09-30T15:44:16.594Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:16.594Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/roasted-broccoli-pasta-with-lemon-and-feta/",
+      "sourceRecipeTitle": "Roasted Broccoli Pasta with Lemon and Feta",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.budgetbytes.com/roasted-broccoli-pasta-with-lemon-and-feta/",
+      "verifiedAt": "2026-09-30T15:44:17.040Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:17.040Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 6,
+    "id": "source:ee73b46d500e07ec654752f6",
+    "title": "Roasted Broccoli Pasta with Lemon and Feta",
+    "slug": "source:ee73b46d500e07ec654752f6",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/roasted-broccoli-pasta-with-lemon-and-feta/",
+    "sourceAuthor": null,
+    "externalId": "https://www.budgetbytes.com/roasted-broccoli-pasta-with-lemon-and-feta/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 15,
+    "cookTime": 25,
+    "totalTime": 40,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "unknown:1 lb. broccoli crowns ($1.79)",
+        "originalText": "1 lb. broccoli crowns ($1.79)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:橄榄油",
+        "originalText": "1 Tbsp olive oil ($0.16)",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 tsp steak seasoning ($0.10)",
+        "originalText": "1 tsp steak seasoning ($0.10)",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:柠檬",
+        "originalText": "1  fresh lemon ($0.39)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:8 oz. whole wheat penne pasta ($0.50)",
+        "originalText": "8 oz. whole wheat penne pasta ($0.50)",
+        "quantity": 8,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "2 Tbsp butter ($0.20)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 oz. crumbled feta ($0.55)",
+        "originalText": "1 oz. crumbled feta ($0.55)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "麸质",
+      "牛奶"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:17.040Z",
+    "updatedAt": "2026-09-30T15:44:17.040Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:17.040Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/oven-roasted-frozen-broccoli/",
+      "sourceRecipeTitle": "Oven Roasted Frozen Broccoli",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.budgetbytes.com/oven-roasted-frozen-broccoli/",
+      "verifiedAt": "2026-09-30T15:38:55.216Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:38:55.216Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 3,
+    "id": "source:5124834135d4b2cd87009326",
+    "title": "Oven Roasted Frozen Broccoli",
+    "slug": "source:5124834135d4b2cd87009326",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/oven-roasted-frozen-broccoli/",
+    "sourceAuthor": null,
+    "externalId": "https://www.budgetbytes.com/oven-roasted-frozen-broccoli/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 5,
+    "cookTime": 30,
+    "totalTime": 35,
+    "servings": 2,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "unknown:1/2 lb. frozen broccoli florets  ($1.00)",
+        "originalText": "1/2 lb. frozen broccoli florets  ($1.00)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:橄榄油",
+        "originalText": "1 Tbsp olive oil  ($0.16)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1/2 Tbsp Montreal steak seasoning  ($0.07)",
+        "originalText": "1/2 Tbsp Montreal steak seasoning  ($0.07)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:38:55.216Z",
+    "updatedAt": "2026-09-30T15:38:55.216Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:38:55.216Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/roasted-carrots/",
+      "sourceRecipeTitle": "Roasted Carrots",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.budgetbytes.com/roasted-carrots/",
+      "verifiedAt": "2026-09-30T15:44:17.759Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:17.759Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 4,
+    "id": "source:00ab5d5604beee7d1d285bf5",
+    "title": "Roasted Carrots",
+    "slug": "source:00ab5d5604beee7d1d285bf5",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/roasted-carrots/",
+    "sourceAuthor": null,
+    "externalId": "https://www.budgetbytes.com/roasted-carrots/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 10,
+    "cookTime": 35,
+    "totalTime": 45,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "unknown:2 lbs. carrots* ($2.00)",
+        "originalText": "2 lbs. carrots* ($2.00)",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:2 Tbsp olive oil* ($0.44)",
+        "originalText": "2 Tbsp olive oil* ($0.44)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "1/4 tsp salt ($0.02)",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1/4 tsp freshly cracked black pepper ($0.02)",
+        "originalText": "1/4 tsp freshly cracked black pepper ($0.02)",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:蒜粉",
+        "originalText": "1/4 tsp  garlic powder ($0.02)",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:17.758Z",
+    "updatedAt": "2026-09-30T15:44:17.758Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:17.758Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/roasted-cauliflower/",
+      "sourceRecipeTitle": "Roasted Cauliflower",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.budgetbytes.com/roasted-cauliflower/",
+      "verifiedAt": "2026-09-30T15:44:18.102Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:18.102Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 3,
+    "id": "source:ea99614aff7c128c12ce8e3d",
+    "title": "Roasted Cauliflower",
+    "slug": "source:ea99614aff7c128c12ce8e3d",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/roasted-cauliflower/",
+    "sourceAuthor": null,
+    "externalId": "https://www.budgetbytes.com/roasted-cauliflower/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 10,
+    "cookTime": 25,
+    "totalTime": 35,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "zh:花菜",
+        "originalText": "1 head cauliflower ($3.49)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:橄榄油",
+        "originalText": "2 Tbsp olive oil ($0.26)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 tsp seasoning of choice ($0.10)",
+        "originalText": "1 tsp seasoning of choice ($0.10)",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1/4 tsp salt* ($0.02)",
+        "originalText": "1/4 tsp salt* ($0.02)",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:18.102Z",
+    "updatedAt": "2026-09-30T15:44:18.102Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:18.102Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/baked-chicken-drumsticks/",
+      "sourceRecipeTitle": "Oven Baked Chicken Drumsticks",
+      "sourceAuthor": "Beth Moncel",
+      "sourceExternalId": "https://www.budgetbytes.com/baked-chicken-drumsticks/",
+      "verifiedAt": "2026-09-30T15:44:19.455Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:19.455Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 4,
+    "id": "source:3172e6a17c724ae2e53460d0",
+    "title": "Oven Baked Chicken Drumsticks",
+    "slug": "source:3172e6a17c724ae2e53460d0",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/baked-chicken-drumsticks/",
+    "sourceAuthor": "Beth Moncel",
+    "externalId": "https://www.budgetbytes.com/baked-chicken-drumsticks/",
+    "cuisine": "General",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 5,
+    "cookTime": 40,
+    "totalTime": 45,
+    "servings": 6,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "unknown:1 tsp smoked paprika ($0.08)",
+        "originalText": "1 tsp smoked paprika ($0.08)",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:蒜粉",
+        "originalText": "½ tsp garlic powder ($0.02)",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:洋葱粉",
+        "originalText": "¼ tsp onion powder ($0.01)",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:⅛ tsp cayenne pepper ($0.02)",
+        "originalText": "⅛ tsp cayenne pepper ($0.02)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:¼ tsp dried oregano ($0.02)",
+        "originalText": "¼ tsp dried oregano ($0.02)",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "½ tsp salt ($0.04)",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "¼ tsp black pepper (freshly cracked, $0.04)",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1.75 lbs. chicken drumsticks (6 pieces, $4.06*)",
+        "originalText": "1.75 lbs. chicken drumsticks (6 pieces, $4.06*)",
+        "quantity": 1.75,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "oil",
+        "originalText": "2 Tbsp cooking oil ($0.08**)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:19.454Z",
+    "updatedAt": "2026-09-30T15:44:19.454Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:19.454Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/honey-garlic-chicken/",
+      "sourceRecipeTitle": "Honey Garlic Chicken",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.budgetbytes.com/honey-garlic-chicken/",
+      "verifiedAt": "2026-09-30T15:44:20.138Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:20.138Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 7,
+    "id": "source:621a85957639ddc147a8d016",
+    "title": "Honey Garlic Chicken",
+    "slug": "source:621a85957639ddc147a8d016",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/honey-garlic-chicken/",
+    "sourceAuthor": null,
+    "externalId": "https://www.budgetbytes.com/honey-garlic-chicken/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 10,
+    "cookTime": 18,
+    "totalTime": 28,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "zh:蜂蜜",
+        "originalText": "1/3 cup honey ($1.08)",
+        "quantity": 0.3333333333333333,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:普通酱油",
+        "originalText": "2 Tbsp soy sauce ($0.14)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:米醋",
+        "originalText": "1 Tbsp rice vinegar ($0.10)",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:是拉差辣酱",
+        "originalText": "1 tsp sriracha ($0.05)",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:香油",
+        "originalText": "2 tsp toasted sesame oil ($0.20)",
+        "quantity": 2,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:玉米淀粉",
+        "originalText": "1 Tbsp cornstarch ($0.05)",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:2  boneless, skinless chicken breasts ($6.49)",
+        "originalText": "2  boneless, skinless chicken breasts ($6.49)",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "1 tsp salt ($0.05)",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "1/2 tsp  black pepper ($0.02)",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:蒜粉",
+        "originalText": "1/2 tsp garlic powder ($0.05)",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:中筋面粉",
+        "originalText": "2 Tbsp all-purpose flour ($0.04)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:橄榄油",
+        "originalText": "3 Tbsp olive oil ($0.48)",
+        "quantity": 3,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "2 Tbsp butter ($0.27)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "4  cloves of garlic, minced ($0.32)",
+        "quantity": 4,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "scallion",
+        "originalText": "2  green onions, sliced ($0.24)",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "牛奶"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:20.137Z",
+    "updatedAt": "2026-09-30T15:44:20.137Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:20.137Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/creamy-garlic-chicken/",
+      "sourceRecipeTitle": "Creamy Garlic Chicken Recipe",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.budgetbytes.com/creamy-garlic-chicken/",
+      "verifiedAt": "2026-09-30T15:44:20.476Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:20.476Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 7,
+    "id": "source:4f2ec4c4a826a9352a2022a8",
+    "title": "Creamy Garlic Chicken Recipe",
+    "slug": "source:4f2ec4c4a826a9352a2022a8",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/creamy-garlic-chicken/",
+    "sourceAuthor": null,
+    "externalId": "https://www.budgetbytes.com/creamy-garlic-chicken/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 10,
+    "cookTime": 30,
+    "totalTime": 40,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "unknown:2  boneless, skinless chicken breasts (about 1.3 lbs/600g total)* ($6.49)",
+        "originalText": "2  boneless, skinless chicken breasts (about 1.3 lbs/600g total)* ($6.49)",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1/2 tsp Italian seasoning ($0.05)",
+        "originalText": "1/2 tsp Italian seasoning ($0.05)",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "1/2 tsp salt ($0.02)",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1/4 tsp freshly cracked black pepper ($0.02)",
+        "originalText": "1/4 tsp freshly cracked black pepper ($0.02)",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1/4 cup all-purpose flour* ($0.06)",
+        "originalText": "1/4 cup all-purpose flour* ($0.06)",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:橄榄油",
+        "originalText": "2 Tbsp olive oil ($0.32)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "2 Tbsp butter, divided ($0.27)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1  whole garlic bulb (about 8-9 garlic cloves)** ($0.64)",
+        "originalText": "1  whole garlic bulb (about 8-9 garlic cloves)** ($0.64)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:鸡汤",
+        "originalText": "1 cup chicken broth ($0.17)",
+        "quantity": 1,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:3/4 cup heavy cream* ($1.08)",
+        "originalText": "3/4 cup heavy cream* ($1.08)",
+        "quantity": 0.75,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:蒜粉",
+        "originalText": "1/2 tsp garlic powder ($0.05)",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Salt and Pepper to taste ($0.04)",
+        "originalText": "Salt and Pepper to taste ($0.04)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "牛奶"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:20.476Z",
+    "updatedAt": "2026-09-30T15:44:20.476Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:20.476Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/easy-vegetable-stir-fry/",
+      "sourceRecipeTitle": "Easy Vegetable Stir Fry",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.budgetbytes.com/easy-vegetable-stir-fry/",
+      "verifiedAt": "2026-09-30T15:44:21.760Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:21.760Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 7,
+    "id": "source:114d65b358be9aa9b8695771",
+    "title": "Easy Vegetable Stir Fry",
+    "slug": "source:114d65b358be9aa9b8695771",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/easy-vegetable-stir-fry/",
+    "sourceAuthor": null,
+    "externalId": "https://www.budgetbytes.com/easy-vegetable-stir-fry/",
+    "cuisine": "Asian",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 15,
+    "cookTime": 10,
+    "totalTime": 25,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "zh:普通酱油",
+        "originalText": "¼ cup soy sauce ($0.24*)",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "water",
+        "originalText": "¼ cup water ($0.00)",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:红糖",
+        "originalText": "2 Tbsp brown sugar ($0.06)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:香油",
+        "originalText": "1 tsp toasted sesame oil ($0.10**)",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "2  garlic cloves (minced, $0.16)",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "ginger",
+        "originalText": "1 tsp fresh ginger (grated, $0.10)",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:玉米淀粉",
+        "originalText": "1 Tbsp cornstarch ($0.03)",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:¾ lb. broccoli ($1.41)",
+        "originalText": "¾ lb. broccoli ($1.41)",
+        "quantity": 0.75,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "carrot",
+        "originalText": "2  carrots ($0.33)",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:8 oz. mushrooms ($1.94)",
+        "originalText": "8 oz. mushrooms ($1.94)",
+        "quantity": 8,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:8 oz. sugar snap peas ($2.47)",
+        "originalText": "8 oz. sugar snap peas ($2.47)",
+        "quantity": 8,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "onion",
+        "originalText": "1 small onion ($0.70)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:红椒",
+        "originalText": "1  red bell pepper ($1.50)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "oil",
+        "originalText": "2 Tbsp cooking oil ($0.16)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 tsp sesame seeds ($0.06)",
+        "originalText": "1 tsp sesame seeds ($0.06)",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:21.760Z",
+    "updatedAt": "2026-09-30T15:44:21.760Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:21.760Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/pan-fried-sesame-tofu-with-broccoli/",
+      "sourceRecipeTitle": "Pan Fried Sesame Tofu with Broccoli",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.budgetbytes.com/pan-fried-sesame-tofu-with-broccoli/",
+      "verifiedAt": "2026-09-30T15:44:22.113Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:22.113Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 7,
+    "id": "source:12d92c1f388f79345d768553",
+    "title": "Pan Fried Sesame Tofu with Broccoli",
+    "slug": "source:12d92c1f388f79345d768553",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/pan-fried-sesame-tofu-with-broccoli/",
+    "sourceAuthor": null,
+    "externalId": "https://www.budgetbytes.com/pan-fried-sesame-tofu-with-broccoli/",
+    "cuisine": "未知",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 45,
+    "cookTime": 15,
+    "totalTime": 60,
+    "servings": 3,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "zh:普通酱油",
+        "originalText": "1/4 cup soy sauce ($0.20)",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "water",
+        "originalText": "2 Tbsp water ($0.00)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:香油",
+        "originalText": "1 Tbsp toasted sesame oil ($0.33)",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:红糖",
+        "originalText": "2 Tbsp brown sugar ($0.08)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:米醋",
+        "originalText": "2 Tbsp rice vinegar ($0.22)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "ginger",
+        "originalText": "1 Tbsp grated fresh ginger ($0.10)",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "2 cloves garlic, minced ($0.16)",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:2 Tbsp sesame seeds ($0.15)",
+        "originalText": "2 Tbsp sesame seeds ($0.15)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:玉米淀粉",
+        "originalText": "1 Tbsp cornstarch ($0.04)",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:14 oz block extra-firm tofu ($1.99)",
+        "originalText": "14 oz block extra-firm tofu ($1.99)",
+        "quantity": 14,
+        "unit": "oz",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Pinch of salt ($0.02)",
+        "originalText": "Pinch of salt ($0.02)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:玉米淀粉",
+        "originalText": "2 Tbsp cornstarch ($0.08)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:2 Tbsp neutral oil (vegetable, canola, peanut) ($0.04)",
+        "originalText": "2 Tbsp neutral oil (vegetable, canola, peanut) ($0.04)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1/2 lb frozen broccoli florets ($1.00)",
+        "originalText": "1/2 lb frozen broccoli florets ($1.00)",
+        "quantity": 0.5,
+        "unit": "lb",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "scallion",
+        "originalText": "3-4  green onions, sliced ($0.23)",
+        "quantity": 3,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "rice",
+        "originalText": "4 cups cooked rice ($0.88)",
+        "quantity": 4,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "花生"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:22.113Z",
+    "updatedAt": "2026-09-30T15:44:22.113Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:22.113Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/easy-pesto-chicken-and-vegetables/",
+      "sourceRecipeTitle": "Easy Pesto Chicken and Vegetables",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.budgetbytes.com/easy-pesto-chicken-and-vegetables/",
+      "verifiedAt": "2026-09-30T15:44:22.755Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:22.755Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 7,
+    "id": "source:0674dcec96b924aa33ccd539",
+    "title": "Easy Pesto Chicken and Vegetables",
+    "slug": "source:0674dcec96b924aa33ccd539",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/easy-pesto-chicken-and-vegetables/",
+    "sourceAuthor": null,
+    "externalId": "https://www.budgetbytes.com/easy-pesto-chicken-and-vegetables/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 15,
+    "cookTime": 15,
+    "totalTime": 30,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "zh:红椒",
+        "originalText": "1  red bell pepper ($1.50)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:西葫芦",
+        "originalText": "1  zucchini ($0.60)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1  yellow squash ($0.50)",
+        "originalText": "1  yellow squash ($0.50)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:红洋葱",
+        "originalText": "1/2  red onion ($0.19)",
+        "quantity": 0.5,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1.3 lbs. boneless, skinless chicken breast ($6.67)",
+        "originalText": "1.3 lbs. boneless, skinless chicken breast ($6.67)",
+        "quantity": 1.3,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "oil",
+        "originalText": "2 Tbsp cooking oil ($0.08)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 cup frozen green beans ($0.67)",
+        "originalText": "1 cup frozen green beans ($0.67)",
+        "quantity": 1,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1/3 cup pesto* ($0.73)",
+        "originalText": "1/3 cup pesto* ($0.73)",
+        "quantity": 0.3333333333333333,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1/8 tsp salt* ($0.01)",
+        "originalText": "1/8 tsp salt* ($0.01)",
+        "quantity": 0.125,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1/8 tsp freshly cracked pepper* ($0.01)",
+        "originalText": "1/8 tsp freshly cracked pepper* ($0.01)",
+        "quantity": 0.125,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 Tbsp grated Parmesan* ($0.11)",
+        "originalText": "1 Tbsp grated Parmesan* ($0.11)",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "牛奶"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:22.755Z",
+    "updatedAt": "2026-09-30T15:44:22.755Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:22.755Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/creamy-tomato-spinach-pasta/",
+      "sourceRecipeTitle": "Creamy Tomato and Spinach Pasta",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.budgetbytes.com/creamy-tomato-spinach-pasta/",
+      "verifiedAt": "2026-09-30T15:44:23.099Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:23.099Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 6,
+    "id": "source:f0d6b07a9ab1bff4635a029e",
+    "title": "Creamy Tomato and Spinach Pasta",
+    "slug": "source:f0d6b07a9ab1bff4635a029e",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/creamy-tomato-spinach-pasta/",
+    "sourceAuthor": null,
+    "externalId": "https://www.budgetbytes.com/creamy-tomato-spinach-pasta/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 5,
+    "cookTime": 20,
+    "totalTime": 25,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "unknown:½ lb penne pasta ($0.49)",
+        "originalText": "½ lb penne pasta ($0.49)",
+        "quantity": 0.5,
+        "unit": "lb",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1  yellow onion (small dice, 340g, 1.5 cups, $0.78)",
+        "originalText": "1  yellow onion (small dice, 340g, 1.5 cups, $0.78)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "2 cloves garlic (minced, 1 Tbsp, $0.12)",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:橄榄油",
+        "originalText": "1 Tbsp olive oil ($0.18)",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:14.5 oz. diced tomatoes (1 can, $0.96)",
+        "originalText": "14.5 oz. diced tomatoes (1 can, $0.96)",
+        "quantity": 14.5,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:½ tsp dried oregano ($0.12)",
+        "originalText": "½ tsp dried oregano ($0.12)",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:½ tsp dried basil ($0.13)",
+        "originalText": "½ tsp dried basil ($0.13)",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:⅛ tsp crushed red pepper ($0.02)",
+        "originalText": "⅛ tsp crushed red pepper ($0.02)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "½ tsp salt ($0.02)",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:½ tsp freshly cracked black pepper ($0.08)",
+        "originalText": "½ tsp freshly cracked black pepper ($0.08)",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:番茄膏",
+        "originalText": "2 Tbsp tomato paste ($0.14)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "water",
+        "originalText": "½ cup water ($0.00)",
+        "quantity": 0.5,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:奶油奶酪",
+        "originalText": "2 oz cream cheese ($0.46)",
+        "quantity": 2,
+        "unit": "oz",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:帕尔马干酪",
+        "originalText": "¼ cup grated Parmesan (30g, $0.51)",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:菠菜",
+        "originalText": "4 oz fresh spinach ($0.79)",
+        "quantity": 4,
+        "unit": "oz",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "麸质",
+      "牛奶"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:23.099Z",
+    "updatedAt": "2026-09-30T15:44:23.099Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:23.099Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/one-pot-creamy-pesto-chicken-pasta/",
+      "sourceRecipeTitle": "One Pot Creamy Pesto Chicken Pasta",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.budgetbytes.com/one-pot-creamy-pesto-chicken-pasta/",
+      "verifiedAt": "2026-09-30T15:44:23.467Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:23.467Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 6,
+    "id": "source:a09b29314f22e2f8a18a6f0e",
+    "title": "One Pot Creamy Pesto Chicken Pasta",
+    "slug": "source:a09b29314f22e2f8a18a6f0e",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/one-pot-creamy-pesto-chicken-pasta/",
+    "sourceAuthor": null,
+    "externalId": "https://www.budgetbytes.com/one-pot-creamy-pesto-chicken-pasta/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 5,
+    "cookTime": 20,
+    "totalTime": 25,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "unknown:1 lb. boneless, skinless chicken breast ($6.25)",
+        "originalText": "1 lb. boneless, skinless chicken breast ($6.25)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "2 Tbsp butter ($0.28)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "2 cloves garlic ($0.16)",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1/2 lb. penne pasta ($0.67)",
+        "originalText": "1/2 lb. penne pasta ($0.67)",
+        "quantity": 0.5,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:鸡汤",
+        "originalText": "1.5 cups chicken broth ($0.20)",
+        "quantity": 1.5,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "milk",
+        "originalText": "1 cup milk ($0.19)",
+        "quantity": 1,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:3 oz. cream cheese* ($0.80)",
+        "originalText": "3 oz. cream cheese* ($0.80)",
+        "quantity": 3,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:罗勒青酱",
+        "originalText": "1/3 cup basil pesto ($0.73)",
+        "quantity": 0.3333333333333333,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:帕尔马干酪",
+        "originalText": "1/4 cup grated Parmesan ($0.44)",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:freshly cracked pepper ($0.03)",
+        "originalText": "freshly cracked pepper ($0.03)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 pinch  crushed red pepper ($0.02)",
+        "originalText": "1 pinch  crushed red pepper ($0.02)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:菠菜",
+        "originalText": "3 cup fresh spinach ($0.90)",
+        "quantity": 3,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1/4 cup sliced sun dried tomatoes ($1.10)",
+        "originalText": "1/4 cup sliced sun dried tomatoes ($1.10)",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "牛奶",
+      "麸质"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:23.466Z",
+    "updatedAt": "2026-09-30T15:44:23.466Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:23.466Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/garlic-butter-baked-cod/",
+      "sourceRecipeTitle": "Garlic Butter Baked Cod",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.budgetbytes.com/garlic-butter-baked-cod/",
+      "verifiedAt": "2026-09-30T15:44:24.797Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:24.797Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 4,
+    "id": "source:2c5b4b9847340c190ed39e23",
+    "title": "Garlic Butter Baked Cod",
+    "slug": "source:2c5b4b9847340c190ed39e23",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/garlic-butter-baked-cod/",
+    "sourceAuthor": null,
+    "externalId": "https://www.budgetbytes.com/garlic-butter-baked-cod/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 10,
+    "cookTime": 20,
+    "totalTime": 30,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "butter",
+        "originalText": "4 Tbsp butter (room temperature) ($0.50)",
+        "quantity": 4,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:橄榄油",
+        "originalText": "2 Tbsp olive oil ($0.32)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "4 cloves garlic, minced ($0.32)",
+        "quantity": 4,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:红椒粉",
+        "originalText": "1/4 tsp paprika ($0.02)",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "1/4 tsp salt ($0.02)",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:2 Tbsp finely chopped parsley ($0.22)",
+        "originalText": "2 Tbsp finely chopped parsley ($0.22)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 lb. cod (4 4 oz. filets) ($5.99)",
+        "originalText": "1 lb. cod (4 4 oz. filets) ($5.99)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:柠檬",
+        "originalText": "1  fresh lemon ($0.69)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "牛奶",
+      "海鲜"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:24.796Z",
+    "updatedAt": "2026-09-30T15:44:24.796Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:24.796Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/lemon-garlic-asparagus-pasta/",
+      "sourceRecipeTitle": "Lemon Garlic Asparagus Pasta",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.budgetbytes.com/lemon-garlic-asparagus-pasta/",
+      "verifiedAt": "2026-09-30T15:44:25.217Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:25.217Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 7,
+    "id": "source:a84aa4694a3fab264782e40a",
+    "title": "Lemon Garlic Asparagus Pasta",
+    "slug": "source:a84aa4694a3fab264782e40a",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/lemon-garlic-asparagus-pasta/",
+    "sourceAuthor": null,
+    "externalId": "https://www.budgetbytes.com/lemon-garlic-asparagus-pasta/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 5,
+    "cookTime": 20,
+    "totalTime": 25,
+    "servings": 3,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "unknown:8 oz. pasta (uncooked, $0.59*)",
+        "originalText": "8 oz. pasta (uncooked, $0.59*)",
+        "quantity": 8,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 bunch asparagus (about 1 lb., $3.67)",
+        "originalText": "1 bunch asparagus (about 1 lb., $3.67)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "2 Tbsp butter ($0.26)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "2  garlic cloves (minced, $0.08)",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:柠檬",
+        "originalText": "1  lemon ($0.68**)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "salt (to taste, $0.02)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "black pepper (to taste, (freshly cracked) $0.03)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "麸质",
+      "牛奶"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:25.216Z",
+    "updatedAt": "2026-09-30T15:44:25.216Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:25.216Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/easy-egg-salad/",
+      "sourceRecipeTitle": "Easy Egg Salad",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.budgetbytes.com/easy-egg-salad/",
+      "verifiedAt": "2026-09-30T15:44:25.854Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:25.854Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 4,
+    "id": "source:8a699c2b41d52ff80ab10124",
+    "title": "Easy Egg Salad",
+    "slug": "source:8a699c2b41d52ff80ab10124",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/easy-egg-salad/",
+    "sourceAuthor": null,
+    "externalId": "https://www.budgetbytes.com/easy-egg-salad/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 10,
+    "cookTime": 15,
+    "totalTime": 25,
+    "servings": 2,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "originalText": "4 large eggs ($2.68*)",
+        "quantity": 4,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:蛋黄酱",
+        "originalText": "3 Tbsp mayonnaise ($0.15**)",
+        "quantity": 3,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 Tbsp dill relish ($0.08***)",
+        "originalText": "1 Tbsp dill relish ($0.08***)",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:第戎芥末",
+        "originalText": "1 tsp Dijon mustard ($0.02)",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:柠檬汁",
+        "originalText": "¼ tsp lemon juice ($0.01)",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "⅛ tsp salt ($0.02)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "⅛ tsp black pepper (freshly cracked, $0.02)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "鸡蛋"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:25.854Z",
+    "updatedAt": "2026-09-30T15:44:25.854Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:25.854Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/classic-three-bean-salad/",
+      "sourceRecipeTitle": "Classic Three Bean Salad",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.budgetbytes.com/classic-three-bean-salad/",
+      "verifiedAt": "2026-09-30T15:44:26.188Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:26.188Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 5,
+    "id": "source:762bec1ae9cb8892d06cf3a0",
+    "title": "Classic Three Bean Salad",
+    "slug": "source:762bec1ae9cb8892d06cf3a0",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/classic-three-bean-salad/",
+    "sourceAuthor": null,
+    "externalId": "https://www.budgetbytes.com/classic-three-bean-salad/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 15,
+    "cookTime": null,
+    "totalTime": 45,
+    "servings": 5,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "unknown:1 15 oz. can kidney beans ($0.94)",
+        "originalText": "1 15 oz. can kidney beans ($0.94)",
+        "quantity": 16,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 15 oz. can cannellini beans ($0.94)",
+        "originalText": "1 15 oz. can cannellini beans ($0.94)",
+        "quantity": 16,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1.5 cups frozen green beans (thawed, $0.59*)",
+        "originalText": "1.5 cups frozen green beans (thawed, $0.59*)",
+        "quantity": 1.5,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:红洋葱",
+        "originalText": "¼ cup red onion (finely diced, $0.12)",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:欧芹",
+        "originalText": "¼ cup fresh parsley (chopped, $0.17)",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:苹果醋",
+        "originalText": "¼ cup apple cider vinegar ($0.24)",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:橄榄油",
+        "originalText": "¼ cup olive oil ($0.64**)",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "sugar",
+        "originalText": "2 Tbsp sugar ($0.12***)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "1 tsp salt ($0.03)",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "¼ tsp black pepper (freshly cracked, $0.02)",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:第戎芥末",
+        "originalText": "1 tsp Dijon mustard ($0.03)",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:26.188Z",
+    "updatedAt": "2026-09-30T15:44:26.188Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:26.188Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/avocado-toast/",
+      "sourceRecipeTitle": "Avocado Toast",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.budgetbytes.com/avocado-toast/",
+      "verifiedAt": "2026-09-30T15:44:26.530Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:26.530Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 4,
+    "id": "source:1c5b1561226f7c5eb1bb7a64",
+    "title": "Avocado Toast",
+    "slug": "source:1c5b1561226f7c5eb1bb7a64",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/avocado-toast/",
+    "sourceAuthor": null,
+    "externalId": "https://www.budgetbytes.com/avocado-toast/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 10,
+    "cookTime": null,
+    "totalTime": 10,
+    "servings": 2,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "unknown:2 slices sturdy bread ($0.40*)",
+        "originalText": "2 slices sturdy bread ($0.40*)",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1  garlic clove (peeled, $0.08)",
+        "originalText": "1  garlic clove (peeled, $0.08)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:牛油果",
+        "originalText": "1  avocado (medium-sized, $1.39**)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:柠檬汁",
+        "originalText": "1 tsp lemon juice (fresh, $0.14)",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "⅛ tsp salt ($0.02)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "⅛ tsp black pepper (freshly cracked, $0.02)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 pinch crushed red pepper ($0.02)",
+        "originalText": "1 pinch crushed red pepper ($0.02)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "麸质"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:26.529Z",
+    "updatedAt": "2026-09-30T15:44:26.529Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:26.529Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Budget Bytes",
+      "sourceUrl": "https://www.budgetbytes.com/one-pot-creamy-mushroom-pasta/",
+      "sourceRecipeTitle": "One Pot Creamy Mushroom Pasta",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.budgetbytes.com/one-pot-creamy-mushroom-pasta/",
+      "verifiedAt": "2026-09-30T15:44:26.943Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:26.943Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 6,
+    "id": "source:8c30822747caab1457b3f0bb",
+    "title": "One Pot Creamy Mushroom Pasta",
+    "slug": "source:8c30822747caab1457b3f0bb",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Budget Bytes",
+    "sourceUrl": "https://www.budgetbytes.com/one-pot-creamy-mushroom-pasta/",
+    "sourceAuthor": null,
+    "externalId": "https://www.budgetbytes.com/one-pot-creamy-mushroom-pasta/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 10,
+    "cookTime": 20,
+    "totalTime": 30,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "garlic",
+        "originalText": "4 cloves garlic ($0.16)",
+        "quantity": 4,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:8 oz. baby bella mushrooms ($2.37)",
+        "originalText": "8 oz. baby bella mushrooms ($2.37)",
+        "quantity": 8,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "2 Tbsp butter ($0.20)",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "1/8 tsp salt ($0.01)",
+        "quantity": 0.125,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1/8 tsp freshly cracked pepper ($0.02)",
+        "originalText": "1/8 tsp freshly cracked pepper ($0.02)",
+        "quantity": 0.125,
+        "unit": "tsp",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:8 oz. fettuccine* ($0.59)",
+        "originalText": "8 oz. fettuccine* ($0.59)",
+        "quantity": 8,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:蔬菜高汤",
+        "originalText": "2.5 cups vegetable broth ($0.20)",
+        "quantity": 2.5,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1/3 cup heavy cream** ($0.98)",
+        "originalText": "1/3 cup heavy cream** ($0.98)",
+        "quantity": 0.3333333333333333,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:帕尔马干酪",
+        "originalText": "1/4 cup grated Parmesan ($0.44)",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "牛奶"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:26.943Z",
+    "updatedAt": "2026-09-30T15:44:26.943Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:26.943Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Love and Lemons",
+      "sourceUrl": "https://www.loveandlemons.com/scrambled-eggs-recipe/",
+      "sourceRecipeTitle": "How to Make Scrambled Eggs",
+      "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+      "sourceExternalId": "https://www.loveandlemons.com/scrambled-eggs-recipe/",
+      "verifiedAt": "2026-09-30T15:44:28.301Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:28.301Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 5,
+    "id": "source:40137b0a31d31356f206a940",
+    "title": "How to Make Scrambled Eggs",
+    "slug": "source:40137b0a31d31356f206a940",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Love and Lemons",
+    "sourceUrl": "https://www.loveandlemons.com/scrambled-eggs-recipe/",
+    "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+    "externalId": "https://www.loveandlemons.com/scrambled-eggs-recipe/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 2,
+    "cookTime": 3,
+    "totalTime": 5,
+    "servings": 1,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "originalText": "3  large eggs",
+        "quantity": 3,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "milk",
+        "originalText": "1 teaspoon milk, plant milk, or water",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Extra-virgin olive oil or butter (for the pan)",
+        "originalText": "Extra-virgin olive oil or butter (for the pan)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Sea salt and freshly ground black pepper",
+        "originalText": "Sea salt and freshly ground black pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Chopped fresh chives (optional, for garnish)",
+        "originalText": "Chopped fresh chives (optional, for garnish)",
+        "quantity": null,
+        "unit": "",
+        "optional": true,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "鸡蛋"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:28.300Z",
+    "updatedAt": "2026-09-30T15:44:28.300Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:28.300Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Love and Lemons",
+      "sourceUrl": "https://www.loveandlemons.com/egg-salad/",
+      "sourceRecipeTitle": "Best Egg Salad Recipe",
+      "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+      "sourceExternalId": "https://www.loveandlemons.com/egg-salad/",
+      "verifiedAt": "2026-09-30T15:44:28.999Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:28.999Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 4,
+    "id": "source:cb3a09fbaffc54edcbc07866",
+    "title": "Best Egg Salad Recipe",
+    "slug": "source:cb3a09fbaffc54edcbc07866",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Love and Lemons",
+    "sourceUrl": "https://www.loveandlemons.com/egg-salad/",
+    "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+    "externalId": "https://www.loveandlemons.com/egg-salad/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 10,
+    "cookTime": 20,
+    "totalTime": 30,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "originalText": "6  large eggs",
+        "quantity": 6,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:蛋黄酱",
+        "originalText": "¼ cup mayonnaise",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:2 to 3 teaspoons Dijon mustard",
+        "originalText": "2 to 3 teaspoons Dijon mustard",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:柠檬汁",
+        "originalText": "1 teaspoon fresh lemon juice",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:海盐",
+        "originalText": "¼ teaspoon sea salt",
+        "quantity": 0.25,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Freshly ground black pepper",
+        "originalText": "Freshly ground black pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:¼ cup finely diced red onion",
+        "originalText": "¼ cup finely diced red onion",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 tablespoon chopped fresh chives",
+        "originalText": "1 tablespoon chopped fresh chives",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:莳萝",
+        "originalText": "1 tablespoon chopped fresh dill",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "鸡蛋"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:28.999Z",
+    "updatedAt": "2026-09-30T15:44:28.999Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:28.999Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Love and Lemons",
+      "sourceUrl": "https://www.loveandlemons.com/roasted-broccoli/",
+      "sourceRecipeTitle": "Roasted Broccoli",
+      "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+      "sourceExternalId": "https://www.loveandlemons.com/roasted-broccoli/",
+      "verifiedAt": "2026-09-30T15:39:16.273Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:39:16.273Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 3,
+    "id": "source:47b2e22440c3a1fe2b4668f0",
+    "title": "Roasted Broccoli",
+    "slug": "source:47b2e22440c3a1fe2b4668f0",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Love and Lemons",
+    "sourceUrl": "https://www.loveandlemons.com/roasted-broccoli/",
+    "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+    "externalId": "https://www.loveandlemons.com/roasted-broccoli/",
+    "cuisine": "未知",
+    "category": "appetizers, dairy free, gluten free, side dishes, vegan, vegetarian",
+    "difficulty": "未知",
+    "prepTime": 5,
+    "cookTime": 20,
+    "totalTime": 25,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "broccoli",
+        "originalText": "12 ounces broccoli florets",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:橄榄油",
+        "originalText": "Extra-virgin olive oil (for drizzling)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Sea salt and freshly ground black pepper",
+        "originalText": "Sea salt and freshly ground black pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Red pepper flakes (optional)",
+        "originalText": "Red pepper flakes (optional)",
+        "quantity": null,
+        "unit": "",
+        "optional": true,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:39:16.273Z",
+    "updatedAt": "2026-09-30T15:39:16.273Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:39:16.273Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Love and Lemons",
+      "sourceUrl": "https://www.loveandlemons.com/sauteed-mushrooms/",
+      "sourceRecipeTitle": "Sauteed Mushrooms",
+      "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+      "sourceExternalId": "https://www.loveandlemons.com/sauteed-mushrooms/",
+      "verifiedAt": "2026-09-30T15:44:29.660Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:29.660Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 2,
+    "id": "source:486f96f7a0f372cfab612398",
+    "title": "Sauteed Mushrooms",
+    "slug": "source:486f96f7a0f372cfab612398",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Love and Lemons",
+    "sourceUrl": "https://www.loveandlemons.com/sauteed-mushrooms/",
+    "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+    "externalId": "https://www.loveandlemons.com/sauteed-mushrooms/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 5,
+    "cookTime": 10,
+    "totalTime": 15,
+    "servings": 2,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "zh:橄榄油",
+        "originalText": "2 tablespoons extra-virgin olive oil",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:16 ounces mixed mushrooms (sliced or chopped)",
+        "originalText": "16 ounces mixed mushrooms (sliced or chopped)",
+        "quantity": 16,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Heaping ¼ teaspoon sea salt",
+        "originalText": "Heaping ¼ teaspoon sea salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:米醋",
+        "originalText": "1 tablespoon rice vinegar",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 tablespoon tamari",
+        "originalText": "1 tablespoon tamari",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1  garlic clove (minced or grated)",
+        "originalText": "1  garlic clove (minced or grated)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 tablespoon finely chopped fresh tarragon",
+        "originalText": "1 tablespoon finely chopped fresh tarragon",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Freshly ground black pepper",
+        "originalText": "Freshly ground black pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:29.660Z",
+    "updatedAt": "2026-09-30T15:44:29.660Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:29.660Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Love and Lemons",
+      "sourceUrl": "https://www.loveandlemons.com/sauteed-spinach/",
+      "sourceRecipeTitle": "Sautéed Spinach",
+      "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+      "sourceExternalId": "https://www.loveandlemons.com/sauteed-spinach/",
+      "verifiedAt": "2026-09-30T15:44:29.986Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:29.986Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 2,
+    "id": "source:b51cfa0eb8e76967429e2c10",
+    "title": "Sautéed Spinach",
+    "slug": "source:b51cfa0eb8e76967429e2c10",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Love and Lemons",
+    "sourceUrl": "https://www.loveandlemons.com/sauteed-spinach/",
+    "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+    "externalId": "https://www.loveandlemons.com/sauteed-spinach/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 2,
+    "cookTime": 3,
+    "totalTime": 5,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "zh:橄榄油",
+        "originalText": "2 teaspoons extra-virgin olive oil",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1  garlic clove (chopped)",
+        "originalText": "1  garlic clove (chopped)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:5 ounces spinach",
+        "originalText": "5 ounces spinach",
+        "quantity": 5,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:海盐",
+        "originalText": "¼ teaspoon sea salt",
+        "quantity": 0.25,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Lemon wedge (for squeezing)",
+        "originalText": "Lemon wedge (for squeezing)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Freshly ground black pepper",
+        "originalText": "Freshly ground black pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:29.985Z",
+    "updatedAt": "2026-09-30T15:44:29.985Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:29.985Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Love and Lemons",
+      "sourceUrl": "https://www.loveandlemons.com/roasted-potatoes/",
+      "sourceRecipeTitle": "Oven Roasted Potatoes",
+      "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+      "sourceExternalId": "https://www.loveandlemons.com/roasted-potatoes/",
+      "verifiedAt": "2026-09-30T15:44:30.320Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:30.320Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 4,
+    "id": "source:480c9eaf98f4e8578ef14a76",
+    "title": "Oven Roasted Potatoes",
+    "slug": "source:480c9eaf98f4e8578ef14a76",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Love and Lemons",
+    "sourceUrl": "https://www.loveandlemons.com/roasted-potatoes/",
+    "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+    "externalId": "https://www.loveandlemons.com/roasted-potatoes/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 5,
+    "cookTime": 30,
+    "totalTime": 35,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "potato",
+        "originalText": "2 pounds small potatoes (halved or quartered (I like a mix of baby red potatoes and Yukon Golds)*)",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:橄榄油",
+        "originalText": "Extra-virgin olive oil (for drizzling)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Sea salt and freshly ground black pepper",
+        "originalText": "Sea salt and freshly ground black pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Finely chopped fresh parsley (for garnish)",
+        "originalText": "Finely chopped fresh parsley (for garnish)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:橄榄油",
+        "originalText": "2 tablespoons extra-virgin olive oil",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:柠檬皮屑",
+        "originalText": "1 teaspoon lemon zest",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:柠檬汁",
+        "originalText": "2 tablespoons fresh lemon juice",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:第戎芥末",
+        "originalText": "1 teaspoon Dijon mustard",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "2  garlic cloves (minced)",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:迷迭香",
+        "originalText": "1 tablespoon minced fresh rosemary (or thyme)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:¼ teaspoon red pepper flakes",
+        "originalText": "¼ teaspoon red pepper flakes",
+        "quantity": 0.25,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:海盐",
+        "originalText": "¼ teaspoon sea salt",
+        "quantity": 0.25,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Freshly ground black pepper",
+        "originalText": "Freshly ground black pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:30.319Z",
+    "updatedAt": "2026-09-30T15:44:30.319Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:30.319Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Love and Lemons",
+      "sourceUrl": "https://www.loveandlemons.com/mashed-potatoes/",
+      "sourceRecipeTitle": "Best Mashed Potatoes Recipe",
+      "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+      "sourceExternalId": "https://www.loveandlemons.com/mashed-potatoes/",
+      "verifiedAt": "2026-09-30T15:44:30.643Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:30.643Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 4,
+    "id": "source:2b8d454b3cd1b67335000500",
+    "title": "Best Mashed Potatoes Recipe",
+    "slug": "source:2b8d454b3cd1b67335000500",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Love and Lemons",
+    "sourceUrl": "https://www.loveandlemons.com/mashed-potatoes/",
+    "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+    "externalId": "https://www.loveandlemons.com/mashed-potatoes/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 15,
+    "cookTime": 30,
+    "totalTime": 45,
+    "servings": 8,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "potato",
+        "originalText": "3 pounds potatoes (russet potatoes, Yukon Golds, or a mix, peeled and cut into large chunks)",
+        "quantity": 3,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "3  garlic cloves",
+        "quantity": 3,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "½ cup unsalted butter (1 stick, plus more for serving)",
+        "quantity": 0.5,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "milk",
+        "originalText": "1 cup whole milk",
+        "quantity": 1,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:海盐",
+        "originalText": "1½ teaspoons sea salt (plus more for the cooking water)",
+        "quantity": 1.5,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Freshly ground black pepper",
+        "originalText": "Freshly ground black pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:¼ to ½ cup sour cream (optional)",
+        "originalText": "¼ to ½ cup sour cream (optional)",
+        "quantity": 0.25,
+        "unit": "",
+        "optional": true,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Chopped fresh chives (for garnish)",
+        "originalText": "Chopped fresh chives (for garnish)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "牛奶"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:30.631Z",
+    "updatedAt": "2026-09-30T15:44:30.631Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:30.631Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Love and Lemons",
+      "sourceUrl": "https://www.loveandlemons.com/creamy-tomato-soup/",
+      "sourceRecipeTitle": "Creamy Tomato Soup",
+      "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+      "sourceExternalId": "https://www.loveandlemons.com/creamy-tomato-soup/",
+      "verifiedAt": "2026-09-30T15:44:31.010Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:31.010Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 6,
+    "id": "source:c5fd8f8ac4ee90779dd779fc",
+    "title": "Creamy Tomato Soup",
+    "slug": "source:c5fd8f8ac4ee90779dd779fc",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Love and Lemons",
+    "sourceUrl": "https://www.loveandlemons.com/creamy-tomato-soup/",
+    "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+    "externalId": "https://www.loveandlemons.com/creamy-tomato-soup/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 15,
+    "cookTime": 30,
+    "totalTime": 45,
+    "servings": 3,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "garlic",
+        "originalText": "3  garlic cloves (unpeeled)",
+        "quantity": 3,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:4  medium fresh tomatoes* (see note)",
+        "originalText": "4  medium fresh tomatoes* (see note)",
+        "quantity": 4,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1  small yellow onion (sliced into quarters)",
+        "originalText": "1  small yellow onion (sliced into quarters)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 (14-oz) can diced tomatoes",
+        "originalText": "1 (14-oz) can diced tomatoes",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1/3 cup cooked chickpeas",
+        "originalText": "1/3 cup cooked chickpeas",
+        "quantity": 0.3333333333333333,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:黑醋",
+        "originalText": "1 tablespoon balsamic vinegar",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:枫糖浆",
+        "originalText": "½ teaspoon maple syrup",
+        "quantity": 0.5,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:2 teaspoons fresh thyme leaves",
+        "originalText": "2 teaspoons fresh thyme leaves",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:橄榄油",
+        "originalText": "1 tablespoon extra-virgin olive oil",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:¼ to ½ teaspoon red pepper flakes",
+        "originalText": "¼ to ½ teaspoon red pepper flakes",
+        "quantity": 0.25,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Heaping ½ teaspoon sea salt",
+        "originalText": "Heaping ½ teaspoon sea salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:freshly ground black pepper",
+        "originalText": "freshly ground black pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:8 slices SimplyNature 7 Grain Bread",
+        "originalText": "8 slices SimplyNature 7 Grain Bread",
+        "quantity": 8,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:heaping ½ cup Earth Grown Vegan Mozzarella",
+        "originalText": "heaping ½ cup Earth Grown Vegan Mozzarella",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "麸质",
+      "牛奶"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:31.010Z",
+    "updatedAt": "2026-09-30T15:44:31.010Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:31.010Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Love and Lemons",
+      "sourceUrl": "https://www.loveandlemons.com/avocado-toast-recipe/",
+      "sourceRecipeTitle": "Avocado Toast",
+      "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+      "sourceExternalId": "https://www.loveandlemons.com/avocado-toast-recipe/",
+      "verifiedAt": "2026-09-30T15:44:31.690Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:31.690Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 2,
+    "id": "source:dcd6bca020ad9e333117383c",
+    "title": "Avocado Toast",
+    "slug": "source:dcd6bca020ad9e333117383c",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Love and Lemons",
+    "sourceUrl": "https://www.loveandlemons.com/avocado-toast-recipe/",
+    "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+    "externalId": "https://www.loveandlemons.com/avocado-toast-recipe/",
+    "cuisine": "未知",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 2,
+    "cookTime": 2,
+    "totalTime": 4,
+    "servings": 2,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "zh:牛油果",
+        "originalText": "1  ripe avocado",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Lemon wedge (for squeezing)",
+        "originalText": "Lemon wedge (for squeezing)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:海盐",
+        "originalText": "Sea salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:2 to 4 slices toasted bread",
+        "originalText": "2 to 4 slices toasted bread",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Desired toppings (listed above, optional)",
+        "originalText": "Desired toppings (listed above, optional)",
+        "quantity": null,
+        "unit": "",
+        "optional": true,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "麸质"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:31.689Z",
+    "updatedAt": "2026-09-30T15:44:31.689Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:31.689Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Love and Lemons",
+      "sourceUrl": "https://www.loveandlemons.com/overnight-oats-blueberry-chia-jam/",
+      "sourceRecipeTitle": "Overnight Oats with Blueberry Chia Jam",
+      "sourceAuthor": null,
+      "sourceExternalId": "https://www.loveandlemons.com/overnight-oats-blueberry-chia-jam/",
+      "verifiedAt": "2026-09-30T15:44:32.023Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:32.023Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 3,
+    "id": "source:fb13499fa7cc59add6a0c2c1",
+    "title": "Overnight Oats with Blueberry Chia Jam",
+    "slug": "source:fb13499fa7cc59add6a0c2c1",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Love and Lemons",
+    "sourceUrl": "https://www.loveandlemons.com/overnight-oats-blueberry-chia-jam/",
+    "sourceAuthor": null,
+    "externalId": "https://www.loveandlemons.com/overnight-oats-blueberry-chia-jam/",
+    "cuisine": "未知",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": null,
+    "servings": 2,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "zh:蓝莓",
+        "originalText": "3 cups blueberries",
+        "quantity": 3,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:枫糖浆",
+        "originalText": "2 tablespoons maple syrup",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:柠檬汁",
+        "originalText": "1 tablespoon fresh lemon juice",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:香草精",
+        "originalText": "½ teaspoon vanilla extract",
+        "quantity": 0.5,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:肉桂粉",
+        "originalText": "½ teaspoon ground cinnamon",
+        "quantity": 0.5,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:3 tablespoons chia seeds",
+        "originalText": "3 tablespoons chia seeds",
+        "quantity": 3,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:pinch of sea salt",
+        "originalText": "pinch of sea salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:½ Cup Quaker® Old Fashioned Oats",
+        "originalText": "½ Cup Quaker® Old Fashioned Oats",
+        "quantity": 0.5,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:½ cup vanilla almond milk",
+        "originalText": "½ cup vanilla almond milk",
+        "quantity": 0.5,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 tablespoon blueberry chia jam",
+        "originalText": "1 tablespoon blueberry chia jam",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:柠檬皮屑",
+        "originalText": "½ teaspoon lemon zest",
+        "quantity": 0.5,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:蓝莓",
+        "originalText": "¼ cup blueberries",
+        "quantity": 0.25,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "坚果"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:32.023Z",
+    "updatedAt": "2026-09-30T15:44:32.023Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:32.023Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Love and Lemons",
+      "sourceUrl": "https://www.loveandlemons.com/tofu-scramble/",
+      "sourceRecipeTitle": "Tofu Scramble",
+      "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+      "sourceExternalId": "https://www.loveandlemons.com/tofu-scramble/",
+      "verifiedAt": "2026-09-30T15:44:32.347Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:32.347Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 2,
+    "id": "source:44f9a303f258b8e4b05a31d7",
+    "title": "Tofu Scramble",
+    "slug": "source:44f9a303f258b8e4b05a31d7",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Love and Lemons",
+    "sourceUrl": "https://www.loveandlemons.com/tofu-scramble/",
+    "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+    "externalId": "https://www.loveandlemons.com/tofu-scramble/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 5,
+    "cookTime": 10,
+    "totalTime": 15,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "unknown:⅓ cup unsweetened almond milk",
+        "originalText": "⅓ cup unsweetened almond milk",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:2 tablespoons nutritional yeast",
+        "originalText": "2 tablespoons nutritional yeast",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "2  garlic cloves (minced)",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:第戎芥末",
+        "originalText": "½ teaspoon Dijon mustard",
+        "quantity": 0.5,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:¼ teaspoon ground turmeric",
+        "originalText": "¼ teaspoon ground turmeric",
+        "quantity": 0.25,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:孜然粉",
+        "originalText": "¼ teaspoon ground cumin",
+        "quantity": 0.25,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1  tablespoon-extra virgin olive oil",
+        "originalText": "1  tablespoon-extra virgin olive oil",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:½ cup diced yellow onion",
+        "originalText": "½ cup diced yellow onion",
+        "quantity": 0.5,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:14 ounces extra-firm tofu (patted dry and crumbled)",
+        "originalText": "14 ounces extra-firm tofu (patted dry and crumbled)",
+        "quantity": 14,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Sea salt and freshly ground black pepper",
+        "originalText": "Sea salt and freshly ground black pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "坚果"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:32.346Z",
+    "updatedAt": "2026-09-30T15:44:32.346Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:32.346Z"
+  },
+  {
+    "provenance": {
+      "type": "SOURCE_LINKED",
+      "sourceName": "Love and Lemons",
+      "sourceUrl": "https://www.loveandlemons.com/garlic-bread/",
+      "sourceRecipeTitle": "Garlic Bread",
+      "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+      "sourceExternalId": "https://www.loveandlemons.com/garlic-bread/",
+      "verifiedAt": "2026-09-30T15:44:32.666Z",
+      "verificationMethod": "schema-org-jsonld",
+      "instructionSource": "none",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Factual metadata and original source link only; no prose, instructions or images redistributed",
+      "lastVerifiedAt": "2026-09-30T15:44:32.666Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "source-linked",
+    "instructionAvailability": "source-only",
+    "sourceInstructionCount": 4,
+    "id": "source:cbb35ddd3033d56bbfc3973e",
+    "title": "Garlic Bread",
+    "slug": "source:cbb35ddd3033d56bbfc3973e",
+    "description": "原站教程；请前往来源页面查看完整步骤。",
+    "image": null,
+    "sourceProvider": "source-index",
+    "sourceName": "Love and Lemons",
+    "sourceUrl": "https://www.loveandlemons.com/garlic-bread/",
+    "sourceAuthor": "Jeanine Donofrio, Phoebe Moore",
+    "externalId": "https://www.loveandlemons.com/garlic-bread/",
+    "cuisine": "American",
+    "category": "",
+    "difficulty": "未知",
+    "prepTime": 10,
+    "cookTime": 10,
+    "totalTime": 20,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "butter",
+        "originalText": "½ cup unsalted butter (1 stick, at room temperature)",
+        "quantity": 0.5,
+        "unit": "cup",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 tablespoon finely chopped fresh parsley or chives (plus more for garnish)",
+        "originalText": "1 tablespoon finely chopped fresh parsley or chives (plus more for garnish)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "2  garlic cloves (grated)",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:海盐",
+        "originalText": "½ teaspoon sea salt",
+        "quantity": 0.5,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 (15-ounce) loaf French bread (or Italian bread or baguette)",
+        "originalText": "1 (15-ounce) loaf French bread (or Italian bread or baguette)",
+        "quantity": 1,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:2 tablespoons grated Parmesan cheese",
+        "originalText": "2 tablespoons grated Parmesan cheese",
+        "quantity": 2,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Flaky sea salt",
+        "originalText": "Flaky sea salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Red pepper flakes (optional)",
+        "originalText": "Red pepper flakes (optional)",
+        "quantity": null,
+        "unit": "",
+        "optional": true,
+        "group": "原料"
+      }
+    ],
+    "instructions": [],
+    "equipment": [],
+    "tags": [],
+    "allergens": [
+      "牛奶"
+    ],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T15:44:32.665Z",
+    "updatedAt": "2026-09-30T15:44:32.665Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T15:44:32.665Z"
   }
 ]

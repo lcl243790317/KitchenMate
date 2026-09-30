@@ -5,11 +5,11 @@
   "multiIngredientBullets": 58,
   "recipesWithGroupedBullets": 34,
   "ingredientRowsBefore": 3024,
-  "ingredientRowsAfter": 3486,
+  "ingredientRowsAfter": 3510,
   "oldGroupedRowsReplaced": 58,
-  "netIngredientRowsAdded": 462,
-  "ambiguousLinesLeftUnresolved": 101,
-  "unknownRows": 543,
+  "netIngredientRowsAdded": 486,
+  "ambiguousLinesLeftUnresolved": 626,
+  "unknownRows": 626,
   "catalogRecipesExcluded": 0,
   "violations": 0,
   "examples": [
@@ -432,7 +432,7 @@
             },
             {
               "text": "小米辣（可选）",
-              "id": "zh:小米",
+              "id": "zh:小米椒",
               "optional": true
             },
             {
@@ -562,7 +562,7 @@
             },
             {
               "text": "`凉水`",
-              "id": "unknown:凉水",
+              "id": "water",
               "optional": false
             },
             {
@@ -825,9 +825,74 @@
   ],
   "ambiguous": [
     {
+      "recipeId": "howtocook:00350cbfad203a1d",
+      "text": "酸笋",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:0175adf06f5fdd01",
-      "text": "无盐黄油",
-      "reason": "unseparated compound"
+      "text": "棉花糖",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:0175adf06f5fdd01",
+      "text": "饼干（非夹心型饼干，推荐小奇福或购买使用雪花酥烘焙专用小饼干）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:01b1d98676a5b225",
+      "text": "云南单山蘸水（代替烧烤料）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:02e515d6befb2d79",
+      "text": "印度综合香料粉(Garam Masala)",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:031354976c677d08",
+      "text": "袋装螺蛳粉一包，其中应该包含：",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:031354976c677d08",
+      "text": "螺蛳肉包（可能放在配料包中）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:031354976c677d08",
+      "text": "汤料包",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:031354976c677d08",
+      "text": "酸笋包",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:031354976c677d08",
+      "text": "花生包",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:031354976c677d08",
+      "text": "豆皮包",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:031354976c677d08",
+      "text": "木耳包等配料包",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:031354976c677d08",
+      "text": "醋包",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:031354976c677d08",
+      "text": "辣椒油等调味包",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:031354976c677d08",
@@ -835,9 +900,69 @@
       "reason": "unresolved alternative or compound"
     },
     {
+      "recipeId": "howtocook:0492c4583aa9e288",
+      "text": "丽滋饼干(Ritz crackers)",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:06a218a8627c1797",
+      "text": "干红椒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:0840396cb2725389",
+      "text": "前腿肉",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:0840396cb2725389",
       "text": "葱姜花椒水",
       "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:0840396cb2725389",
+      "text": "一个鸡蛋的鸡蛋清",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:0840396cb2725389",
+      "text": "熟豆油",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:0840396cb2725389",
+      "text": "黄花",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:0840396cb2725389",
+      "text": "泡好的粉丝（放碗底）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:0840396cb2725389",
+      "text": "鸡粉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:0a5faf76b239b093",
+      "text": "鸡",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:0a5faf76b239b093",
+      "text": "美人辣",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:0d12168d06e9bb21",
+      "text": "厨房用温度计（尽量选用带有夹子的温度计）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:0d12168d06e9bb21",
+      "text": "昆布酱油（一种日式的少盐酱油，用于为温泉蛋调味）",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:0d42f08d156d6500",
@@ -846,13 +971,88 @@
     },
     {
       "recipeId": "howtocook:0e9866e5643e6ccd",
+      "text": "冷饭",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:0e9866e5643e6ccd",
       "text": "灯影牛肉丝/午餐肉/腊肠/卤肉...等熟肉（备选）",
       "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:0eb9f4426ab5d8da",
+      "text": "`大肉`",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:0eb9f4426ab5d8da",
+      "text": "`豆皮`（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:0ed628aba05a38c9",
+      "text": "肉蟹（推荐优先级从高到低：缅甸黑蟹、青蟹、梭子蟹、大闸蟹）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:0ed628aba05a38c9",
+      "text": "海鲜酱（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:0f2b773be2e0b8a3",
+      "text": "250ml 椰树牌椰汁",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:0f2b773be2e0b8a3",
+      "text": "35ml espresso 意式浓缩",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:0f2b773be2e0b8a3",
+      "text": "10g 吉利丁(gelatin)",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:0f2b773be2e0b8a3",
+      "text": "过滤网（可选）",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:0f2b773be2e0b8a3",
       "text": "（那个...有摆盘需求的话，可以来点蓝莓 and/or 咖啡粉）",
       "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:0f850528c9848307",
+      "text": "燕麦",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:11368a20c31b46c4",
+      "text": "耙耙柑（替换物请看附加内容）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:11368a20c31b46c4",
+      "text": "冰块",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:11368a20c31b46c4",
+      "text": "[蔗糖糖浆](../../condiment/蔗糖糖浆/蔗糖糖浆.md)（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1157639fe340eb72",
+      "text": "瘦肉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1157639fe340eb72",
+      "text": "凤梨",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:127edac8e578c1e1",
@@ -861,13 +1061,138 @@
     },
     {
       "recipeId": "howtocook:127edac8e578c1e1",
-      "text": "生抽酱油",
-      "reason": "unseparated compound"
+      "text": "捣药罐（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1282bbd3a9c9b164",
+      "text": "[可选] 分蛋器",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1282bbd3a9c9b164",
+      "text": "赤藓糖醇",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1282bbd3a9c9b164",
+      "text": "魔芋粉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1282bbd3a9c9b164",
+      "text": "塔塔粉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:12863092d2c6437b",
+      "text": "麻辣鲜",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:12a0f2535a3d3305",
+      "text": "原味奥利奥",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:12a0f2535a3d3305",
+      "text": "一个容量在 600 毫升以上且直径小（PS: 需要注意能放得下电动打蛋仪）深度深的容器（如准备了冰淇淋模具 容器需要有尖嘴方便转移）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:12b1c244a100ef85",
+      "text": "乳鸽",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:12b1c244a100ef85",
+      "text": "菌菇",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:12b1c244a100ef85",
+      "text": "玉米",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1473dff6924a687c",
+      "text": "南腐乳",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1473dff6924a687c",
+      "text": "花雕酒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1473dff6924a687c",
+      "text": "白酒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1473dff6924a687c",
+      "text": "甘草",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:150f56720d904551",
+      "text": "肉",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:16663c525e6b39c6",
       "text": "葱姜蒜",
       "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:16663c525e6b39c6",
+      "text": "葱头",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:196eab378a75e74f",
+      "text": "米",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1a5309d32c90a9a3",
+      "text": "意大利面酱",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1a5309d32c90a9a3",
+      "text": "肉沫",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1a5309d32c90a9a3",
+      "text": "白洋葱（紫洋葱也可以）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1a8b110f53c68d13",
+      "text": "青菜（油菜、油麦菜、菠菜）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1a8b110f53c68d13",
+      "text": "无骨肉（猪肉、牛肉、鸡肉、鱼丸、火腿肠）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1a8b110f53c68d13",
+      "text": "干豆腐",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1a8b110f53c68d13",
+      "text": "北京麻辣方便面",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1afcd350dd6d285b",
+      "text": "玉米（推荐甜玉米或糯玉米）",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:1bc98124aec50771",
@@ -876,8 +1201,43 @@
     },
     {
       "recipeId": "howtocook:1bc98124aec50771",
+      "text": "纯猪油 500 g",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1bc98124aec50771",
+      "text": "豆瓣（郫县） 1000 g",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1bc98124aec50771",
       "text": "糍粑辣椒 3000 g",
       "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:1bc98124aec50771",
+      "text": "豆鼓（剁碎）（永川） 10 g",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1bc98124aec50771",
+      "text": "豆母子 140 g",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1bc98124aec50771",
+      "text": "老油 ? 颗粒香料 100 g : 整形香料 150 g",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1bc98124aec50771",
+      "text": "麦芽粉（肉香） 12.5 g",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1bc98124aec50771",
+      "text": "白酒(52%VOL) 150 ml",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:1bc98124aec50771",
@@ -885,14 +1245,189 @@
       "reason": "unseparated compound"
     },
     {
+      "recipeId": "howtocook:1bc98124aec50771",
+      "text": "山奈 5 g",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1bc98124aec50771",
+      "text": "肉桂 10 g",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1bc98124aec50771",
+      "text": "白芷 10 g",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1bc98124aec50771",
+      "text": "荜拨 5 g",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1bc98124aec50771",
+      "text": "香草 10 g",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1bc98124aec50771",
+      "text": "香果 10 g",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1bc98124aec50771",
+      "text": "香茅 10 g",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1bc98124aec50771",
+      "text": "砂仁 10 g",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1bc98124aec50771",
+      "text": "白蔻 10 g",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1bc98124aec50771",
+      "text": "粉碎机",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1bda94c2a4792404",
+      "text": "烤鹰嘴豆粉(Sattu)— 可用炒熟的鹰嘴豆磨粉替代",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1bda94c2a4792404",
+      "text": "芥末油(Mustard Oil)— 可用其他食用油替代",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1bda94c2a4792404",
+      "text": "印度黑盐(Kala Namak)— 可用普通盐替代",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1d22844abab0cf64",
+      "text": "白面煎饼（市售山东煎饼，或自制）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1d22844abab0cf64",
+      "text": "粉条（干）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1d22844abab0cf64",
+      "text": "火腿肠（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1d64ef29c97b798f",
+      "text": "原料",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1d64ef29c97b798f",
+      "text": "米 200 ml",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1d64ef29c97b798f",
+      "text": "红萝卜 1 个",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1d96b8fc5bded0b8",
+      "text": "火腿肠（或午餐肉，可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1e38411f713685dd",
+      "text": "瓠瓜（葫芦）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1e38411f713685dd",
+      "text": "印度综合香料粉(Garam Masala)",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1f6cfac235de433a",
+      "text": "烤盘",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1f6cfac235de433a",
+      "text": "铝箔纸",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1f6cfac235de433a",
+      "text": "新奥尔良烤翅调料（推荐品牌 McCormick 味好美）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:1f6cfac235de433a",
+      "text": "豉油调味汁（推荐品牌 日和，\"薄盐肠粉豉油调味汁\"）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:22a66ee1b18916b6",
+      "text": "青菜（推荐矮脚青菜，又称上海青）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:22a66ee1b18916b6",
+      "text": "咸肉（淡咸肉）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:22a66ee1b18916b6",
+      "text": "冬笋（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:24562260b0e14389",
+      "text": "燃气灶（西红柿去皮用）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:24562260b0e14389",
+      "text": "2cm 两段葱段",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:24562260b0e14389",
+      "text": "姜各 10g",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:24562260b0e14389",
       "text": "料/黄酒",
       "reason": "unresolved alternative or compound"
     },
     {
+      "recipeId": "howtocook:24562260b0e14389",
+      "text": "八角三小片",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:249efab791e10293",
+      "text": "地瓜粉",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:27b738de814e6ba5",
       "text": "五花肉/瘦肉",
       "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:280e1f88f772ec3c",
+      "text": "农村玉米鸡",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:280e1f88f772ec3c",
@@ -905,9 +1440,144 @@
       "reason": "unseparated compound"
     },
     {
+      "recipeId": "howtocook:280e1f88f772ec3c",
+      "text": "酒糟",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:288b3f0b016a90e1",
+      "text": "梅头猪肉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:288b3f0b016a90e1",
+      "text": "罐头菠萝片",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:288b3f0b016a90e1",
+      "text": "茄汁",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:292d0a9d95d851f8",
+      "text": "猪瘦肉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:29dc63b5178d6725",
+      "text": "线椒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:2a46b4b88f72e03b",
+      "text": "巴斯马蒂长粒香米(Basmati Rice)",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:2a46b4b88f72e03b",
+      "text": "薄荷叶",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:2a46b4b88f72e03b",
+      "text": "藏红花(Saffron)— 可用食用黄色素替代",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:2a46b4b88f72e03b",
+      "text": "印度综合香料粉(Garam Masala)",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:2a46b4b88f72e03b",
+      "text": "月桂叶",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:2a46b4b88f72e03b",
+      "text": "面团（封锅口用）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:2a9c58483b71a00d",
+      "text": "定时器",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:2bde2d31169c74e9",
+      "text": "带脚",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:2bde2d31169c74e9",
+      "text": "爪猪前肘",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:2bde2d31169c74e9",
+      "text": "红豆腐乳",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:2bde2d31169c74e9",
+      "text": "红酱油",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:2bde2d31169c74e9",
+      "text": "白酱油",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:2bde2d31169c74e9",
+      "text": "小斧头（砸断骨头用）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:2ce6f52e55265187",
+      "text": "泡发好的海参![海参](./海参.jpeg)",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:2ce6f52e55265187",
       "text": "大葱葱白",
-      "reason": "unseparated compound"
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:2e33e0141c78c027",
+      "text": "未过期的一袋速冻馄饨（自带调味料包更佳）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:2e33e0141c78c027",
+      "text": "电饭煲（推荐品牌小米智能电饭煲）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:2e8d27218fc69e2c",
+      "text": "日本豆腐（玉子豆腐）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:2eb4a45a2e3ddd82",
+      "text": "安琪干酵母粉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:2eb4a45a2e3ddd82",
+      "text": "烘焙油纸",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:2eb4a45a2e3ddd82",
+      "text": "披萨石（有更好，没有普通烤盘也可以）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:2ed6cf0478f173fe",
+      "text": "去皮猪肉（根据喜好选择肥瘦）",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:30eafb2f0a661bd1",
@@ -916,8 +1586,63 @@
     },
     {
       "recipeId": "howtocook:30eafb2f0a661bd1",
+      "text": "冰块",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:30eafb2f0a661bd1",
       "text": "薄荷叶或其他绿叶（可选，装饰使用）",
       "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:342d514cbf79a116",
+      "text": "酸梅晶固体饮料",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:342d514cbf79a116",
+      "text": "方糖（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:343910aaf7673e11",
+      "text": "印度综合香料粉(Garam Masala)",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:378f9d2c3a565ff2",
+      "text": "原料",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:378f9d2c3a565ff2",
+      "text": "果蜜",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:378f9d2c3a565ff2",
+      "text": "冰（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:378f9d2c3a565ff2",
+      "text": "雪克杯",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:38acd3af9efb50f4",
+      "text": "去心莲子",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:38f5fbfaae4052a8",
+      "text": "玉米",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:38f5fbfaae4052a8",
+      "text": "胡箩卜",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:392047faad04360f",
@@ -926,8 +1651,18 @@
     },
     {
       "recipeId": "howtocook:3a181639cf9138dd",
+      "text": "熟透的牛油果",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:3a181639cf9138dd",
       "text": "薄荷叶或坚果碎（可选，用于装饰）",
       "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:3a4b1f2e6d2d06c0",
+      "text": "土豆干粉条",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:3a892c884d6f39e0",
@@ -936,8 +1671,28 @@
     },
     {
       "recipeId": "howtocook:3eaf0a4511855c63",
+      "text": "生鸡肝",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:3eaf0a4511855c63",
       "text": "烧烤料或孜然粉（可选）",
       "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:3edbafd077f73ff3",
+      "text": "肋排",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:401011c583625d48",
+      "text": "猪肉片",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:401011c583625d48",
+      "text": "蕃茄酱",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:40e28313bc713fcc",
@@ -945,9 +1700,154 @@
       "reason": "unseparated compound"
     },
     {
+      "recipeId": "howtocook:414dff648871bbab",
+      "text": "凉粉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:414f79bd9c044d7a",
+      "text": "味素",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:41754f839cbffa65",
+      "text": "猪瘦肉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:4211c36ff61d4f89",
+      "text": "鳊鱼（鱼可以让摊主帮忙处理好）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:4217ebd7f1e5c453",
+      "text": "梅菜",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:43027c68c0009576",
+      "text": "龟苓膏粉 25 克",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:43027c68c0009576",
+      "text": "搅拌工具",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:4541e6c817a96916",
+      "text": "猪前肘",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:4541e6c817a96916",
+      "text": "肉桂皮",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:4541e6c817a96916",
+      "text": "大料",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:45ad36b6133c9eea",
+      "text": "金酒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:45ad36b6133c9eea",
+      "text": "龙舌兰酒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:45ad36b6133c9eea",
+      "text": "伏特加",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:45ad36b6133c9eea",
+      "text": "白朗姆酒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:45ad36b6133c9eea",
+      "text": "橙味甜酒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:45ad36b6133c9eea",
+      "text": "冰块",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:45ad36b6133c9eea",
+      "text": "高球杯（容量 300ml）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:460b515020dec166",
+      "text": "冰粉籽 200g",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:460b515020dec166",
       "text": "薄荷汁 10ml / 薄荷粉 10g",
       "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:460b515020dec166",
+      "text": "一次性透明塑料杯（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:460b515020dec166",
+      "text": "遇水发光冰块（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:4633664c062d3650",
+      "text": "安琪甜酒曲一包 (8g)（虽然按比例为每 1000g 糯米用 3g，但多放酒曲能提高成功概率）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:4633664c062d3650",
+      "text": "温度计（可选但推荐）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:46c174a49499dd04",
+      "text": "红腰豆",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:46c174a49499dd04",
+      "text": "桂圆（去种龙眼干）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:46c174a49499dd04",
+      "text": "栗子",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:46c174a49499dd04",
+      "text": "去壳核桃",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:47b0d27fb06bcb51",
+      "text": "闽星茶树菇",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:47b0d27fb06bcb51",
+      "text": "味极鲜",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:49e499d0553bde8d",
+      "text": "饺子（速冻水饺）",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:49e4e1e85bbfe8f8",
@@ -960,9 +1860,24 @@
       "reason": "unresolved alternative or compound"
     },
     {
+      "recipeId": "howtocook:4a879c3b12a8a4ef",
+      "text": "海虾",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:4a879c3b12a8a4ef",
+      "text": "蒜蓉酱",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:4b816847856fadc6",
       "text": "温水或高汤",
       "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:4c944fb35c21a8aa",
+      "text": "板栗",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:4dbabae176214aaa",
@@ -970,9 +1885,89 @@
       "reason": "unresolved alternative or compound"
     },
     {
+      "recipeId": "howtocook:4de3928e6efae0e0",
+      "text": "小汤圆",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:4de3928e6efae0e0",
+      "text": "醪糟",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:4f64350b4de56e6b",
+      "text": "金酒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:4f64350b4de56e6b",
+      "text": "汤力水气泡水",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:4f64350b4de56e6b",
+      "text": "冰块",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:4f64350b4de56e6b",
+      "text": "新鲜绿叶（可选，装饰用）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:5086f352be3eacfd",
+      "text": "蒲烧汁",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:5097e0e1af4e2096",
+      "text": "日本豆腐（玉子豆腐）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:5097e0e1af4e2096",
+      "text": "火腿肠（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:50cf74d8dc74aa7a",
+      "text": "兔肉",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:50cf74d8dc74aa7a",
       "text": "小葱/大葱/洋葱",
       "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:50cf74d8dc74aa7a",
+      "text": "山奈",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:50cf74d8dc74aa7a",
+      "text": "白蔻",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:5112cfeefccc6edf",
+      "text": "巧克力：38g（只尝试过将普通巧克力融化，在淡奶油那一步加入搅拌均匀即可）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:515e68668fde3909",
+      "text": "燕麦",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:515e68668fde3909",
+      "text": "如菠菜。",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:51a4793a1e08410d",
+      "text": "肉末（可选）",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:51a4793a1e08410d",
@@ -980,9 +1975,49 @@
       "reason": "unresolved alternative or compound"
     },
     {
+      "recipeId": "howtocook:53fc0a69484a797c",
+      "text": "开洋（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:54b72d4f7cf820fb",
+      "text": "白豆腐",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:571da379bc04a550",
+      "text": "肉（猪肉、鸡肉、牛肉均可）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:571da379bc04a550",
+      "text": "花椰菜（清水煮开）",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:571da379bc04a550",
       "text": "煎蛋或[太阳蛋](../../breakfast/太阳蛋.md)",
       "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:575da7e2ff66eabf",
+      "text": "鳜鱼",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:580927b6ab1e41c2",
+      "text": "肉馅",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:580927b6ab1e41c2",
+      "text": "红葱油（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:581d80efc12c2ca8",
+      "text": "炒河粉",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:581d80efc12c2ca8",
@@ -990,9 +2025,29 @@
       "reason": "unresolved alternative or compound"
     },
     {
-      "recipeId": "howtocook:5a753afd111fed65",
-      "text": "生抽酱油",
-      "reason": "unseparated compound"
+      "recipeId": "howtocook:581d80efc12c2ca8",
+      "text": "其他调味料：胡椒粉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:581d80efc12c2ca8",
+      "text": "面筋块",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:598880791fadadb7",
+      "text": "长条青椒（有些叫线椒，后面介绍以“青椒”代替）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:5ab770d281369817",
+      "text": "桂圆",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:5b50c173e66f4a3c",
+      "text": "白芷（可选）",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:5b50c173e66f4a3c",
@@ -1000,14 +2055,129 @@
       "reason": "unresolved alternative or compound"
     },
     {
+      "recipeId": "howtocook:5f3a3719b0e0ae36",
+      "text": "蛋清 1 个",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:5fa782ab3b20344d",
+      "text": "青茄子",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:617957ecce2fc981",
+      "text": "面",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:617957ecce2fc981",
+      "text": "老干妈",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:617f7ae9488e0b06",
+      "text": "凉皮",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:617f7ae9488e0b06",
+      "text": "面筋",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:617f7ae9488e0b06",
+      "text": "蒜臼",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:61c1012b42f158b1",
       "text": "白糖或红糖",
       "reason": "unresolved alternative or compound"
     },
     {
+      "recipeId": "howtocook:61ffbcb05ceb03ee",
+      "text": "活虾",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:632366b21003bc03",
+      "text": "味淋（一种常用日式调料，可在各大电商平台购买，也可用料酒代替）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:632366b21003bc03",
+      "text": "[温泉蛋](../../breakfast/温泉蛋/温泉蛋.md)",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:632366b21003bc03",
+      "text": "出汁（使用柴鱼干和昆布熬制的汤汁，可以用于提鲜）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:636808171f3d3a8b",
+      "text": "印度综合香料粉(Garam Masala)",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:636808171f3d3a8b",
+      "text": "干葫芦巴叶(Kasuri Methi)— 可选但强烈推荐",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:6401f4adb586cfaa",
+      "text": "锡箔纸（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:6401f4adb586cfaa",
+      "text": "汤匙",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:6401f4adb586cfaa",
+      "text": "香料（可选，推荐迷迭香或者百里香，尽量使用新鲜的植物枝条而不是这些香料磨成的粉）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:6401f4adb586cfaa",
+      "text": "预制牛排酱汁（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:6401f4adb586cfaa",
+      "text": "配菜（ 可选，按喜好准备，这里推荐芦笋，口蘑，小番茄，小土豆，选其中的 1-2 种即可）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:6417780c575ca5ed",
+      "text": "阿根廷红虾（选用了速冻虾）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:648523905ae1f658",
+      "text": "瘦肉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:651c621bb1384518",
+      "text": "刷子",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:65787a402898eee6",
-      "text": "无盐黄油（推荐安佳）",
-      "reason": "unseparated compound"
+      "text": "厨房用夹",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:65d4c06a5b4800be",
+      "text": "北方大米",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:677f373658d27bf3",
+      "text": "瓶装椰汁（瓶口较大为佳）",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:677f373658d27bf3",
@@ -1015,9 +2185,29 @@
       "reason": "unseparated compound"
     },
     {
+      "recipeId": "howtocook:678acb8ed4c05c1b",
+      "text": "过滤网",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:683225505a87b9d9",
       "text": "姜蒜",
       "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:68c7a9333f5e4d58",
+      "text": "红腐乳（推荐咸亨牌玫瑰腐乳）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:6a4a7145b1369b5d",
+      "text": "鸭子（必须新鲜现杀的）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:6a4a7145b1369b5d",
+      "text": "蒸肉粉",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:6a4a7145b1369b5d",
@@ -1025,9 +2215,69 @@
       "reason": "unseparated compound"
     },
     {
+      "recipeId": "howtocook:6aa1fa07f6c9c635",
+      "text": "干面条",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:6bb8f801a8b8e8c2",
+      "text": "普通面粉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:6cda991d90ce7cd9",
+      "text": "红柚果肉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:6e1381b6647edbee",
+      "text": "纯瘦肉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:6f41690d80c8a8b2",
+      "text": "甘竹牌鲮鱼罐头",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:7047e23423f0ad9b",
       "text": "加糖炼乳",
       "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:7047e23423f0ad9b",
+      "text": "重奶油",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:708eac43f7297750",
+      "text": "火腿肠",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:711ab5d8b4ee07be",
+      "text": "干辣椒段",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:711ab5d8b4ee07be",
+      "text": "灯笼椒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:72605b6e5df12044",
+      "text": "1 袋 半成品意大利面（推荐品牌圃美多）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:73a12a8bea38553f",
+      "text": "黑椒碎",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:73a12a8bea38553f",
+      "text": "黑椒粉",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:73b34579ff0e4a67",
@@ -1035,9 +2285,119 @@
       "reason": "unresolved alternative or compound"
     },
     {
+      "recipeId": "howtocook:75dec508093166f9",
+      "text": "虫草花",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:77632e4f909da58f",
+      "text": "瘦肉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:77665869d6f51479",
+      "text": "paprika（红甜椒粉）",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:77665869d6f51479",
       "text": "酸奶或牛奶（可选，帮助肉质更滑嫩）",
       "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:7a681fba9fd0dadc",
+      "text": "秒表（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:7ddb62ef1001d348",
+      "text": "螺丝椒（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:801600c707bb7f6a",
+      "text": "牛蛙肉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:801600c707bb7f6a",
+      "text": "泡姜",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:801600c707bb7f6a",
+      "text": "野山椒（也可以用干红辣椒替代）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:801600c707bb7f6a",
+      "text": "青红辣椒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:801600c707bb7f6a",
+      "text": "盐巴",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:801600c707bb7f6a",
+      "text": "藤椒油（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:814045db735286f0",
+      "text": "西洋参",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:814045db735286f0",
+      "text": "石斛",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:814045db735286f0",
+      "text": "玉竹",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:814045db735286f0",
+      "text": "麦冬",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:822fa695f8afb97b",
+      "text": "李大厨牌子的炒菜料",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:822fa695f8afb97b",
+      "text": "李大厨牌子的肉香味",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:824114aa00bd36da",
+      "text": "野山椒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:825601135784ca99",
+      "text": "西洋参",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:825601135784ca99",
+      "text": "石斛",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:825601135784ca99",
+      "text": "玉竹",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:825601135784ca99",
+      "text": "麦冬",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:83c2759e7cb25a73",
@@ -1045,9 +2405,19 @@
       "reason": "unseparated compound"
     },
     {
+      "recipeId": "howtocook:853f4dcc16af4157",
+      "text": "新鲜玉米",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:85c01e8fd94ff747",
       "text": "低筋面粉或普通面粉",
       "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:874ab7d67d2ecf47",
+      "text": "红芸豆(Kidney Beans / Rajma)",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:874ab7d67d2ecf47",
@@ -1060,9 +2430,69 @@
       "reason": "unresolved alternative or compound"
     },
     {
+      "recipeId": "howtocook:874ab7d67d2ecf47",
+      "text": "印度综合香料粉(Garam Masala)",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:874ab7d67d2ecf47",
+      "text": "月桂叶",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:8c3af213e85c417e",
+      "text": "马斯卡彭芝士",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:8c3af213e85c417e",
+      "text": "手指饼干",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:8c3af213e85c417e",
+      "text": "放凉浓缩咖啡",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:8c3af213e85c417e",
+      "text": "朗姆酒（不喜欢酒的朋友可省略，可按照自己口味调节）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:8deffad10bd66074",
+      "text": "烧卖皮",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:8deffad10bd66074",
       "text": "高汤或浓汤宝",
       "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:8deffad10bd66074",
+      "text": "冬笋（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:8deffad10bd66074",
+      "text": "皮冻（可选但推荐）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:8deffad10bd66074",
+      "text": "复配食品增稠剂（κ-卡拉胶 45%、瓜尔胶 35%、氯化钾 20%）（或玉米淀粉）（低脂版本）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:902ce562e2268ddc",
+      "text": "橄榄菜",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:90f04c224709ac2c",
+      "text": "小料",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:90f04c224709ac2c",
@@ -1070,9 +2500,54 @@
       "reason": "unresolved alternative or compound"
     },
     {
-      "recipeId": "howtocook:91bc15e9352de9ea",
-      "text": "无盐黄油（推荐品牌总统）",
-      "reason": "unseparated compound"
+      "recipeId": "howtocook:91b68386ebf30740",
+      "text": "白芷",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:91b68386ebf30740",
+      "text": "烧烤撒料",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:91c84c26992872ca",
+      "text": "茶粉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:91c84c26992872ca",
+      "text": "克称",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:91c84c26992872ca",
+      "text": "港式奶茶过滤袋",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:920d017802b3b131",
+      "text": "面食材料：可以是手工面条",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:920d017802b3b131",
+      "text": "龙须面",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:920d017802b3b131",
+      "text": "面鱼",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:920d017802b3b131",
+      "text": "也可以是泡面面饼",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:920d017802b3b131",
+      "text": "各类规格粉丝",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:920d017802b3b131",
@@ -1081,8 +2556,23 @@
     },
     {
       "recipeId": "howtocook:920d017802b3b131",
+      "text": "菜类材料：建议荤素搭配，选择自己喜欢的食材洗干净即可。例如：",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:920d017802b3b131",
+      "text": "牛羊鱼虾等肉类（生熟皆可）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:920d017802b3b131",
       "text": "鸡蛋鸭蛋鹅蛋鸵鸟蛋等蛋类",
       "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:920d017802b3b131",
+      "text": "豆块豆筋豆腐皮等豆制品类",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:920d017802b3b131",
@@ -1096,13 +2586,113 @@
     },
     {
       "recipeId": "howtocook:93eb7c2440893496",
+      "text": "罗氏虾",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:93eb7c2440893496",
+      "text": "芥末",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:93eb7c2440893496",
       "text": "朗姆酒或啤酒",
       "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:945e60912113bba4",
+      "text": "白鱔（白鳝）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:945e60912113bba4",
+      "text": "耐热盘（适合蒸的盘子）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:946a3f88bdeca579",
+      "text": "叶菜类蔬菜",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:949bd05cd61f985d",
       "text": "羊肉或羊杂",
       "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:95caf6ad1a8ca8c1",
+      "text": "笊篱一个",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:95d7b404d04ee264",
+      "text": "白蘑菇",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:95eb9c00a57faaa5",
+      "text": "盐焗鸡粉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:961ae3ea5f72116b",
+      "text": "美人椒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:96dd22806c801283",
+      "text": "香果",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:96dd22806c801283",
+      "text": "干线椒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:96dd22806c801283",
+      "text": "菜椒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:96dd22806c801283",
+      "text": "甜椒（可以不用，加上配色好看）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:9835d25396e15856",
+      "text": "青菜（油菜或菠菜均可）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:989ccdcae7af8a8f",
+      "text": "甘露咖啡酒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:989ccdcae7af8a8f",
+      "text": "爱尔兰百利甜酒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:989ccdcae7af8a8f",
+      "text": "蓝天原味伏特加",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:989ccdcae7af8a8f",
+      "text": "吧勺",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:989ccdcae7af8a8f",
+      "text": "利口酒杯",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:989ccdcae7af8a8f",
+      "text": "打火机",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:9a222b1883cad0aa",
@@ -1115,9 +2705,79 @@
       "reason": "unresolved alternative or compound"
     },
     {
+      "recipeId": "howtocook:9a222b1883cad0aa",
+      "text": "青菜",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:9d5b2964d96ab532",
+      "text": "芥末 （可以不用）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:9dff14f76013f6e0",
+      "text": "蒸箱",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:9e09ccc87f3f13a4",
       "text": "有盐牛油",
       "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:9e09ccc87f3f13a4",
+      "text": "米",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:9e09ccc87f3f13a4",
+      "text": "粟米（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:9e09ccc87f3f13a4",
+      "text": "金菇（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:9e09ccc87f3f13a4",
+      "text": "冬菇（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:9e09ccc87f3f13a4",
+      "text": "电饭煲",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:a086e2764c0abd41",
+      "text": "白芷",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:a086e2764c0abd41",
+      "text": "当归（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:a086e2764c0abd41",
+      "text": "油泼辣子（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:a086e2764c0abd41",
+      "text": "白芸豆（没有可用海带）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:a1b5c702a8129858",
+      "text": "搅拌器 （可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:a1ba8de42384bd27",
+      "text": "果酱",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:a27c91703f1aaf05",
@@ -1135,6 +2795,71 @@
       "reason": "unresolved alternative or compound"
     },
     {
+      "recipeId": "howtocook:a294a849e9a5f7fe",
+      "text": "莴笋叶",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:a485b0e3ab4646ea",
+      "text": "藤椒油（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:a4b59bbb98523c61",
+      "text": "菜椒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:a4b59bbb98523c61",
+      "text": "西蓝花",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:a5e465c958471c82",
+      "text": "耗油",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:a7f8fdd45ba301f7",
+      "text": "鲜仔鸭肉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:a7f8fdd45ba301f7",
+      "text": "鲜鸭血（宰杀鸭子时加醋接鸭血，用筷子顺时针搅拌防凝固）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:a7f8fdd45ba301f7",
+      "text": "酒（或者白酒、啤酒、米酒皆可）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:a994a8dc42ec743f",
+      "text": "火腿肠（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:abbf66d7a0c12870",
+      "text": "羊腩",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:abbf66d7a0c12870",
+      "text": "柱侯酱",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:abbf66d7a0c12870",
+      "text": "腐乳",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:abbf66d7a0c12870",
+      "text": "南乳",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:abbf66d7a0c12870",
       "text": "洋葱或红葱头",
       "reason": "unresolved alternative or compound"
@@ -1146,8 +2871,58 @@
     },
     {
       "recipeId": "howtocook:abe023d49637389d",
+      "text": "小薄饼（市售现成）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:abe023d49637389d",
+      "text": "芝麻盐",
+      "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:abe023d49637389d",
+      "text": "烧烤炉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:abe023d49637389d",
+      "text": "烤网",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:abe023d49637389d",
       "text": "炭火或燃气",
       "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:ad28ce802c922811",
+      "text": "卤料包（超市即可购买）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:ad28ce802c922811",
+      "text": "南腐乳",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:ad28ce802c922811",
+      "text": "滤网",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:ad951394e7a99fe2",
+      "text": "黑椒混合牛排调味料（懒）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:ad951394e7a99fe2",
+      "text": "蒜蓉酱（推荐川娃子的，同样是因为懒）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:ad951394e7a99fe2",
+      "text": "烧烤料",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:aed4362137768ec1",
@@ -1155,14 +2930,139 @@
       "reason": "unresolved alternative or compound"
     },
     {
+      "recipeId": "howtocook:aef1ffb7e9d0cccd",
+      "text": "手抓饼皮",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:afbed08955789550",
       "text": "生抽 / 味极鲜",
       "reason": "unresolved alternative or compound"
     },
     {
+      "recipeId": "howtocook:afbed08955789550",
+      "text": "藤椒油（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b0ca418ed646e4ec",
+      "text": "红亮，必须水油炒，不加水融化会很慢",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b0ca418ed646e4ec",
+      "text": "绵白糖：可以不加水",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b0ca418ed646e4ec",
+      "text": "火候过了发苦",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b0ca418ed646e4ec",
+      "text": "不够发甜",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b14f5054692bfa3e",
+      "text": "南瓜花",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b14f5054692bfa3e",
+      "text": "笋",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b14f5054692bfa3e",
+      "text": "香芋",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b14f5054692bfa3e",
+      "text": "蛋",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b14f5054692bfa3e",
+      "text": "香菌",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b14f5054692bfa3e",
+      "text": "原则：万物皆可酿",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b14f5054692bfa3e",
+      "text": "猪肉馅（基础款，肥瘦比例 3:7）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b14f5054692bfa3e",
+      "text": "虾滑馅（fork 版本）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b14f5054692bfa3e",
+      "text": "鱼肉馅",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b14f5054692bfa3e",
+      "text": "混合馅（猪肉 + 虾滑，猪肉 + 螺肉等自由组合）",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:b261aa97c4abb8ab",
       "text": "红石榴糖浆",
       "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:b261aa97c4abb8ab",
+      "text": "NFC 橙汁",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b261aa97c4abb8ab",
+      "text": "白朗姆",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b261aa97c4abb8ab",
+      "text": "蓝橙力娇酒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b261aa97c4abb8ab",
+      "text": "冰块",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b261aa97c4abb8ab",
+      "text": "大号的玻璃杯",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b261aa97c4abb8ab",
+      "text": "搅拌棒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b261aa97c4abb8ab",
+      "text": "量酒器",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b261aa97c4abb8ab",
+      "text": "调酒杯",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b261aa97c4abb8ab",
+      "text": "吸管",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:b43bc0d5b054c4a8",
@@ -1171,13 +3071,103 @@
     },
     {
       "recipeId": "howtocook:b43bc0d5b054c4a8",
-      "text": "生抽酱油",
-      "reason": "unseparated compound"
+      "text": "东北酸菜",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b43bc0d5b054c4a8",
+      "text": "大料",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b69537e9b0c4b779",
+      "text": "青蟹（别称：肉蟹）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b80fc917b705e95b",
+      "text": "冷饭（干一点的为佳）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b80fc917b705e95b",
+      "text": "冷冻去皮基围虾",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b80fc917b705e95b",
+      "text": "青豆",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:b898ff51880d2d8b",
-      "text": "生抽酱油",
-      "reason": "unseparated compound"
+      "text": "猪里脊肉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b898ff51880d2d8b",
+      "text": "凤尾",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b898ff51880d2d8b",
+      "text": "红泡椒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b898ff51880d2d8b",
+      "text": "红油豆瓣",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b8b6c7d1722ec85d",
+      "text": "打碎的冰块",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b8b6c7d1722ec85d",
+      "text": "冰镇苏打水",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b8b6c7d1722ec85d",
+      "text": "海波杯",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b8b6c7d1722ec85d",
+      "text": "研杵",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b9a1d9770073562a",
+      "text": "鳝丝",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:b9ce9dd134001c23",
+      "text": "熟松子仁",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:ba3ce0d2e7674607",
+      "text": "肋排",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:ba3ce0d2e7674607",
+      "text": "阳江豆豉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:bc33bad07d07b35e",
+      "text": "荔浦芋头（电商平台购买即可，实惠新鲜）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:bc33bad07d07b35e",
+      "text": "紫薯粉",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:bd0928f82e92505f",
@@ -1185,9 +3175,199 @@
       "reason": "unresolved alternative or compound"
     },
     {
+      "recipeId": "howtocook:bd0928f82e92505f",
+      "text": "漓泉啤酒（一瓶，约 330ml，桂林本地啤酒，最正宗）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:bd0928f82e92505f",
+      "text": "桂林辣椒酱",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:bfaaef2163ddf728",
+      "text": "肉末",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:bfaaef2163ddf728",
+      "text": "水淀粉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:bfc763083371290e",
+      "text": "冷冻青豆（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:bfc763083371290e",
+      "text": "喜欢的沙拉酱（推荐日式 mayo！）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:c1d599a83ce0a500",
+      "text": "家庭铁勺子",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:c1d599a83ce0a500",
+      "text": "草寇（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:c1d599a83ce0a500",
+      "text": "白芷",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:c3250cf8bae4fdf3",
+      "text": "东北米（金龙鱼 30 元 5kg 的就行，推荐使用米家 IH 电饭煲煮，教程用的是米家小饭煲，**不推荐使用高压锅煮饭**）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:c3250cf8bae4fdf3",
+      "text": "鲣鱼海苔碎（JD 和淘宝都有，可以搜索：日式拌饭料）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:c40321c423784be7",
+      "text": "猪通脊肉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:c40321c423784be7",
+      "text": "白熟芝麻（可无）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:c57bcc7e9419062d",
+      "text": "干小米椒🌶（根据个人情况而定）",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:c5aa148342a3c9c0",
       "text": "黑芝麻或白芝麻（可选）",
       "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:c5e2191c72cc18cf",
+      "text": "雪碧",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:c5fddf9813b2dc7a",
+      "text": "血肠",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:c61aa113077b5cef",
+      "text": "罗氏虾",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:c61aa113077b5cef",
+      "text": "青芥末",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:c638d9f85df8f09c",
+      "text": "红萝卜",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:c638d9f85df8f09c",
+      "text": "老干妈",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:c68aaa42a6ac9d71",
+      "text": "内脂豆腐（推荐清美）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:c68aaa42a6ac9d71",
+      "text": "香辣酱（推荐广乐的）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:c75ae014f76e19cd",
+      "text": "茴香",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:c8feda2006c4d215",
+      "text": "Masala 粉（品牌可选 Shan）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:c8feda2006c4d215",
+      "text": "螺丝椒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:c9b72f0464b37584",
+      "text": "翘嘴鱼（肉食性鱼类，肉细腻，口感好）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:c9c1689e47ff765c",
+      "text": "肉类",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:cb3741f4d29d165f",
+      "text": "咖啡液（推荐浓缩或者冷萃）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:cb3741f4d29d165f",
+      "text": "菠萝汁（鲜榨或者 nfc）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:cb3741f4d29d165f",
+      "text": "冰块",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:cb3741f4d29d165f",
+      "text": "奶油",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:cb3741f4d29d165f",
+      "text": "朗姆酒 （可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:cc2c4f786f63e19d",
+      "text": "黑鳕鱼",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:cc2c4f786f63e19d",
+      "text": "带皮",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:cc2c4f786f63e19d",
+      "text": "密封袋",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:ceb4b4a04f909eb2",
+      "text": "肉沫",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:ceb4b4a04f909eb2",
+      "text": "风味调料（如鸡粉、孜然、椒盐，可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:cf3dabc066de2aa0",
+      "text": "电饭煲",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:cf3dabc066de2aa0",
@@ -1195,9 +3375,109 @@
       "reason": "unresolved alternative or compound"
     },
     {
+      "recipeId": "howtocook:d051be3bc11e466c",
+      "text": "冰箱",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d15091497996c3ef",
+      "text": "朝天椒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d18a2e8594150f59",
+      "text": "奇异果",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d18a2e8594150f59",
+      "text": "菠菜叶（ 2-5 片）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d18a2e8594150f59",
+      "text": "榨汁机",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d20888ebc3bf92ff",
+      "text": "乌枣",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d20888ebc3bf92ff",
+      "text": "乌梅",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d20888ebc3bf92ff",
+      "text": "山楂片（生）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d20888ebc3bf92ff",
+      "text": "黄冰糖",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d20888ebc3bf92ff",
+      "text": "甘草",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d20888ebc3bf92ff",
+      "text": "红豆蔻",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d20888ebc3bf92ff",
+      "text": "干桂花",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d22fb95d6bedbc3d",
+      "text": "桂鱼",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d22fb95d6bedbc3d",
+      "text": "蒸笼（含蒸锅）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d22fb95d6bedbc3d",
+      "text": "防烫盘夹（或者防烫手套）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d23cfa9525fbb4e0",
+      "text": "刨丝器",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d3570dbb127b7c8d",
+      "text": "菜油（未脱色的菜籽油，俗称“毛菜油”或“土菜油”，备选花生油）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d36c1927c74c7048",
+      "text": "青豆（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:d36c1927c74c7048",
       "text": "火腿肠或鸡胸肉",
       "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:d3e98d659448e21e",
+      "text": "耗油",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d50d59c1ca77bcd1",
+      "text": "话梅",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:d916492c172d5d9a",
@@ -1205,9 +3485,64 @@
       "reason": "unresolved alternative or compound"
     },
     {
+      "recipeId": "howtocook:d916492c172d5d9a",
+      "text": "菜码（根据个人喜好选择，通常 4-10 种，可选择黄瓜、白菜、萝卜等）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d97323116a825133",
+      "text": "热干面特有的碱水面",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d97323116a825133",
+      "text": "酸豆角",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d97323116a825133",
+      "text": "肉末",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d97323116a825133",
+      "text": "蒜水",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d97323116a825133",
+      "text": "肉汤汁",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d97323116a825133",
+      "text": "萝卜干",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:d9904098db67b351",
+      "text": "凉白开水",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:dacc0e7e690a15f0",
-      "text": "生抽酱油",
-      "reason": "unseparated compound"
+      "text": "青红椒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:dba23a8f0c47ddb1",
+      "text": "带皮羊排肉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:dba23a8f0c47ddb1",
+      "text": "甜椒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:dc93ff485c88a7a2",
+      "text": "半只鸡",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:dc93ff485c88a7a2",
@@ -1215,9 +3550,74 @@
       "reason": "unseparated compound"
     },
     {
+      "recipeId": "howtocook:dccabcb0d4a405aa",
+      "text": "新鲜薄荷叶（一小把，点睛之笔）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:dccabcb0d4a405aa",
+      "text": "紫苏叶（一小把，与田螺是绝配）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:dccabcb0d4a405aa",
+      "text": "桂林三花酒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:dccabcb0d4a405aa",
+      "text": "酸笋（可选，50g）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:ddc763f709d2b5b6",
+      "text": "大料",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:ddc763f709d2b5b6",
+      "text": "白芷",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:dea3a1be2e77f36a",
+      "text": "两个塑料簸箕",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:dea3a1be2e77f36a",
+      "text": "若干吸油纸",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:e1297263237b454a",
+      "text": "香干",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:e2a148eb6cf115e2",
       "text": "葱姜蒜",
       "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:e2a148eb6cf115e2",
+      "text": "郫县豆瓣",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:e38c861fa4b779d7",
+      "text": "菜椒（红/黄椒）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:e38c861fa4b779d7",
+      "text": "黑椒（腌料）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:e403ba22275a0439",
+      "text": "冰块",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:e403ba22275a0439",
@@ -1225,9 +3625,24 @@
       "reason": "unresolved alternative or compound"
     },
     {
+      "recipeId": "howtocook:e4f312a87ba6fab8",
+      "text": "南乳",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:e4f312a87ba6fab8",
+      "text": "柱侯酱",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:e511d3a4430aac99",
       "text": "昂刺鱼或者沙光鱼",
       "reason": "unresolved alternative or compound"
+    },
+    {
+      "recipeId": "howtocook:e53cc385a1a0a9b7",
+      "text": "荔浦芋头（电商平台购买即可，实惠新鲜）",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:e53cc385a1a0a9b7",
@@ -1241,6 +3656,11 @@
     },
     {
       "recipeId": "howtocook:e708c271324aa14e",
+      "text": "碎牛肉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:e708c271324aa14e",
       "text": "干罗勒或百里香（可选）",
       "reason": "unresolved alternative or compound"
     },
@@ -1250,9 +3670,64 @@
       "reason": "unseparated compound"
     },
     {
+      "recipeId": "howtocook:e9b179096587074a",
+      "text": "辣香肠 (Chorizo) 或切块的午餐肉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:e9b179096587074a",
+      "text": "百味来 (Barilla) 拿坡里意面酱 (Napoletana Sauce)",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:e9b179096587074a",
+      "text": "甜椒（青椒或红椒皆可）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:e9b179096587074a",
+      "text": "帕马森干酪（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:e9ddad293a47544b",
+      "text": "小麦粉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:e9ddad293a47544b",
+      "text": "煮熟的腊肉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:eaaaaa89ddc317c1",
+      "text": "蒸肉米粉 100g（推荐使用李锦记或自制）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:eb849be42cbb064b",
+      "text": "蔬菜（比如土豆片/豆芽/花菜/生菜/……）",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:eb849be42cbb064b",
       "text": "红油豆瓣酱",
       "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:eb849be42cbb064b",
+      "text": "藤椒油",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:ebf90ccaf451ad5f",
+      "text": "蛋挞皮 品牌不限",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:ebf90ccaf451ad5f",
+      "text": "克数称",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:ec5179fc88ee1bd5",
@@ -1275,6 +3750,21 @@
       "reason": "unresolved alternative or compound"
     },
     {
+      "recipeId": "howtocook:ec9f0780bddb3fb4",
+      "text": "谷朊粉（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:ecbf1bf555cf90ed",
+      "text": "蕨根粉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:ecbf1bf555cf90ed",
+      "text": "油泼辣子",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:ed29771026e7eed6",
       "text": "全脂奶粉或淡奶",
       "reason": "unresolved alternative or compound"
@@ -1285,14 +3775,94 @@
       "reason": "unresolved alternative or compound"
     },
     {
+      "recipeId": "howtocook:efd96f40d1be05ac",
+      "text": "金酒",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:efd96f40d1be05ac",
+      "text": "苏打气泡水",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:efd96f40d1be05ac",
+      "text": "[蔗糖糖浆](../../condiment/蔗糖糖浆/蔗糖糖浆.md)",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:efd96f40d1be05ac",
+      "text": "冰块",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:efd96f40d1be05ac",
+      "text": "新鲜绿叶（可选，装饰用）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:efd96f40d1be05ac",
+      "text": "雪克瓶（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:f20a63e1bd7e9c71",
+      "text": "黔式腊肠",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:f26c5646a21a3d7e",
       "text": "白醋/米醋",
       "reason": "unresolved alternative or compound"
     },
     {
+      "recipeId": "howtocook:f37f90893ddaa1c1",
+      "text": "鸡全翅",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:f37f90893ddaa1c1",
+      "text": "甜椒粉",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:f3b656b5a03f4aeb",
+      "text": "方形吐司片",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:f3b656b5a03f4aeb",
+      "text": "俄式酸黄瓜汁",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:f3b656b5a03f4aeb",
+      "text": "火腿片（可选）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:f3b656b5a03f4aeb",
+      "text": "轻食机",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:f43c7cdf6c27f066",
+      "text": "大排",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:f43c7cdf6c27f066",
       "text": "葱姜水",
       "reason": "unseparated compound"
+    },
+    {
+      "recipeId": "howtocook:f43c7cdf6c27f066",
+      "text": "吉士粉（增色增香，没有可以不放）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:f5276d1d68214bc8",
+      "text": "电饼铛",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:f64edf0ff4660fb1",
@@ -1310,9 +3880,34 @@
       "reason": "unseparated compound"
     },
     {
+      "recipeId": "howtocook:f64edf0ff4660fb1",
+      "text": "蒸篦子",
+      "reason": "no reliable ingredient head"
+    },
+    {
       "recipeId": "howtocook:f727a804d3184577",
-      "text": "生抽酱油",
-      "reason": "unseparated compound"
+      "text": "手枪腿（或者鸡胸脯肉）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:f727a804d3184577",
+      "text": "油泼辣子",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:f727a804d3184577",
+      "text": "生花生",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:f82a5ad59d69212f",
+      "text": "商芝（又名紫萁，属蕨类，嫩叶可食）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:f82a5ad59d69212f",
+      "text": "摊鸡蛋皮",
+      "reason": "no reliable ingredient head"
     },
     {
       "recipeId": "howtocook:f8c41af7879a19d5",
@@ -1320,14 +3915,44 @@
       "reason": "unresolved alternative or compound"
     },
     {
-      "recipeId": "howtocook:fce469feac21f46a",
-      "text": "生抽酱油",
-      "reason": "unseparated compound"
+      "recipeId": "howtocook:fb61ba750320c4b8",
+      "text": "韩式酱油（或生抽）",
+      "reason": "no reliable ingredient head"
     },
     {
-      "recipeId": "howtocook:fce469feac21f46a",
-      "text": "老抽酱油",
-      "reason": "unseparated compound"
+      "recipeId": "howtocook:fb61ba750320c4b8",
+      "text": "日式味淋",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:fc120554b9fc57fb",
+      "text": "萝卜",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:ff9dea4298f08dcd",
+      "text": "肉（最好为五花肉）",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:ff9dea4298f08dcd",
+      "text": "耗油",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:ffc03aba56cef358",
+      "text": "波旁威士忌",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:ffc03aba56cef358",
+      "text": "可口可乐",
+      "reason": "no reliable ingredient head"
+    },
+    {
+      "recipeId": "howtocook:ffc03aba56cef358",
+      "text": "冰块",
+      "reason": "no reliable ingredient head"
     }
   ]
 }

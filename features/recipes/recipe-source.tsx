@@ -11,8 +11,49 @@ export function RecipeSource({ recipe }: { recipe: Recipe }) {
       <p>原始标题：{recipe.provenance.sourceRecipeTitle}</p>
       <p>
         验证日期：{recipe.provenance.verifiedAt?.slice(0, 10)} ·{" "}
-        {recipe.provenance.type}
+        {recipe.provenance.type === "OPEN_LICENSE"
+          ? "开放授权"
+          : recipe.provenance.type === "LICENSED_API"
+            ? "API 来源"
+            : recipe.provenance.type === "SOURCE_LINKED"
+              ? "原站教程"
+              : recipe.provenance.type === "USER_IMPORTED"
+                ? "本机导入"
+                : "真实来源"}
       </p>
+      {recipe.provenance.licenseName && (
+        <p>
+          许可：
+          <a
+            href={recipe.provenance.licenseUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {recipe.provenance.licenseName}
+          </a>
+        </p>
+      )}
+      {recipe.provenance.sourceRevision && (
+        <p>
+          来源修订：
+          <a
+            href={`https://en.wikibooks.org/w/index.php?oldid=${encodeURIComponent(recipe.provenance.sourceRevision)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {recipe.provenance.sourceRevision}
+          </a>
+        </p>
+      )}
+      {recipe.provenance.attributionText && (
+        <p>{recipe.provenance.attributionText}</p>
+      )}
+      {recipe.titleTranslation && (
+        <p>
+          中文菜名翻译：KitchenMate，基于 Wikibooks
+          原文。教程步骤保留英文原文；译名及内容依 CC BY-SA 4.0 提供。
+        </p>
+      )}
       {recipe.sourceUrl && (
         <a
           className="text-link source-url"

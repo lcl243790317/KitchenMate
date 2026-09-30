@@ -16,9 +16,13 @@ jobs:
       - run: pnpm lint
       - run: pnpm exec next typegen && pnpm typecheck
       - run: pnpm test
-      - run: pnpm recipes:validate
+      - name: Source registry, license metadata and pinned snapshot validation
+        run: pnpm recipes:validate
       - run: pnpm recipes:audit-ingredient-groups
       - run: pnpm recipes:audit-ingredient-completeness
+      - run: pnpm recipes:audit-ingredient-semantics
+      - run: pnpm recipes:coverage
+      - run: pnpm recipes:primary-coverage
       - run: pnpm build
       - run: pnpm exec playwright install --with-deps chromium
       - name: Browser Smoke (static verified catalog)
