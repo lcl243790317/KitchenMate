@@ -1308,7 +1308,7 @@
   {
     "source": "Wikibooks Cookbook",
     "title": "食譜/豆乾炒肉",
-    "sourceUrl": "https://undefined.wikibooks.org/wiki/%E9%A3%9F%E8%AD%9C%2F%E8%B1%86%E4%B9%BE%E7%82%92%E8%82%89",
+    "sourceUrl": "https://zh.wikibooks.org/wiki/%E9%A3%9F%E8%AD%9C%2F%E8%B1%86%E4%B9%BE%E7%82%92%E8%82%89",
     "revisionId": null,
     "licenseOrUsageBasis": "CC BY-SA 4.0; official Wikibooks text policy",
     "decision": "REJECT",
@@ -1323,7 +1323,7 @@
   {
     "source": "Wikibooks Cookbook",
     "title": "食譜/腐竹炒肉",
-    "sourceUrl": "https://undefined.wikibooks.org/wiki/%E9%A3%9F%E8%AD%9C%2F%E8%85%90%E7%AB%B9%E7%82%92%E8%82%89",
+    "sourceUrl": "https://zh.wikibooks.org/wiki/%E9%A3%9F%E8%AD%9C%2F%E8%85%90%E7%AB%B9%E7%82%92%E8%82%89",
     "revisionId": null,
     "licenseOrUsageBasis": "CC BY-SA 4.0; official Wikibooks text policy",
     "decision": "REJECT",
@@ -1338,7 +1338,7 @@
   {
     "source": "Wikibooks Cookbook",
     "title": "食譜/蓮藕排骨湯",
-    "sourceUrl": "https://undefined.wikibooks.org/wiki/%E9%A3%9F%E8%AD%9C%2F%E8%93%AE%E8%97%95%E6%8E%92%E9%AA%A8%E6%B9%AF",
+    "sourceUrl": "https://zh.wikibooks.org/wiki/%E9%A3%9F%E8%AD%9C%2F%E8%93%AE%E8%97%95%E6%8E%92%E9%AA%A8%E6%B9%AF",
     "revisionId": null,
     "licenseOrUsageBasis": "CC BY-SA 4.0; official Wikibooks text policy",
     "decision": "REJECT",
@@ -1353,7 +1353,7 @@
   {
     "source": "Wikibooks Cookbook",
     "title": "食谱/红烧带鱼",
-    "sourceUrl": "https://undefined.wikibooks.org/wiki/%E9%A3%9F%E8%B0%B1%2F%E7%BA%A2%E7%83%A7%E5%B8%A6%E9%B1%BC",
+    "sourceUrl": "https://zh.wikibooks.org/wiki/%E9%A3%9F%E8%B0%B1%2F%E7%BA%A2%E7%83%A7%E5%B8%A6%E9%B1%BC",
     "revisionId": null,
     "licenseOrUsageBasis": "CC BY-SA 4.0; official Wikibooks text policy",
     "decision": "REJECT",
@@ -1368,7 +1368,7 @@
   {
     "source": "Wikibooks Cookbook",
     "title": "食譜/烏冬麵",
-    "sourceUrl": "https://undefined.wikibooks.org/wiki/%E9%A3%9F%E8%AD%9C%2F%E7%83%8F%E5%86%AC%E9%BA%B5",
+    "sourceUrl": "https://zh.wikibooks.org/wiki/%E9%A3%9F%E8%AD%9C%2F%E7%83%8F%E5%86%AC%E9%BA%B5",
     "revisionId": null,
     "licenseOrUsageBasis": "CC BY-SA 4.0; official Wikibooks text policy",
     "decision": "REJECT",
@@ -1383,7 +1383,7 @@
   {
     "source": "Wikibooks Cookbook",
     "title": "食譜/煎帶魚",
-    "sourceUrl": "https://undefined.wikibooks.org/wiki/%E9%A3%9F%E8%AD%9C%2F%E7%85%8E%E5%B8%B6%E9%AD%9A",
+    "sourceUrl": "https://zh.wikibooks.org/wiki/%E9%A3%9F%E8%AD%9C%2F%E7%85%8E%E5%B8%B6%E9%AD%9A",
     "revisionId": null,
     "licenseOrUsageBasis": "CC BY-SA 4.0; official Wikibooks text policy",
     "decision": "REJECT",
@@ -1398,7 +1398,7 @@
   {
     "source": "Wikibooks Cookbook",
     "title": "食譜/紅燒帶魚",
-    "sourceUrl": "https://undefined.wikibooks.org/wiki/%E9%A3%9F%E8%AD%9C%2F%E7%B4%85%E7%87%92%E5%B8%B6%E9%AD%9A",
+    "sourceUrl": "https://zh.wikibooks.org/wiki/%E9%A3%9F%E8%AD%9C%2F%E7%B4%85%E7%87%92%E5%B8%B6%E9%AD%9A",
     "revisionId": null,
     "licenseOrUsageBasis": "CC BY-SA 4.0; official Wikibooks text policy",
     "decision": "REJECT",
@@ -1413,7 +1413,7 @@
   {
     "source": "Wikibooks Cookbook",
     "title": "食譜/蘑菇豆腐",
-    "sourceUrl": "https://undefined.wikibooks.org/wiki/%E9%A3%9F%E8%AD%9C%2F%E8%98%91%E8%8F%87%E8%B1%86%E8%85%90",
+    "sourceUrl": "https://zh.wikibooks.org/wiki/%E9%A3%9F%E8%AD%9C%2F%E8%98%91%E8%8F%87%E8%B1%86%E8%85%90",
     "revisionId": 140732,
     "licenseOrUsageBasis": "CC BY-SA 4.0; official Wikibooks text policy",
     "decision": "DEFER",
