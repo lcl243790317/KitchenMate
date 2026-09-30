@@ -65,4 +65,4 @@ Weakest full coverage: 带鱼 (0)、蛤蜊 (0)、甜玉米 (0)、乌冬面 (0)�
 
 Licensing and source/revision strategy: RECIPE_LICENSES.md. Candidate accept/defer/reject evidence: RECIPE_EXPANSION_CANDIDATES.md. Complete triage evidence: INGREDIENT_SEMANTIC_AUDIT.json.
 
-Local unit: 297 passed / 3 live skipped. Smoke: 15 passed. E2E: 26 passed / 3 live skipped (29 total). Build/lint/typecheck/all recipe audits/coverage passed. AI removed; Pantry inventory remains removed.
+Local unit: 297 passed / 3 live skipped. Smoke: 15 passed. E2E: 26 passed / 3 live skipped in the offline run; a separate headed Chrome live-import run passed those three (29 scenarios tested). Build/lint/typecheck/all recipe audits/coverage passed. AI removed; Pantry inventory remains removed.

@@ -40,7 +40,7 @@ Recipe content CC BY-SA rights are isolated from app licensing, including title 
 
 ## Actual browser regressions
 
-Local production build tested Pantry direct toggles, all recommendation modes, all tutorials, beginner/quick filtering, Chinese search, new licensed detail/cooking, source-only no cooking, browser/detail Back at desktop/390px, import hydration without API 404, Shopping, Backup/migration, offline service worker, Dapan and mushroom chicken. No horizontal overflow. Three live commercial importer flows are reserved for production opt-in Chrome verification.
+Local production build tested Pantry direct toggles, all recommendation modes, all tutorials, beginner/quick filtering, Chinese search, new licensed detail/cooking, source-only no cooking, browser/detail Back at desktop/390px, import hydration without API 404, Shopping, Backup/migration, offline service worker, Dapan and mushroom chicken. No horizontal overflow. A separate headed Chrome run with LIVE_IMPORT_E2E=true passed all three live commercial importer flows (Budget Bytes, BBC Good Food, Gimme Some Oven); production repeats them after deployment.
 
 ## Historical Phase 3.1.2 validation
 

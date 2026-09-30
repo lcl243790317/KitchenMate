@@ -9,6 +9,6 @@ for (const [url,title] of [
   await expect(page.getByRole('region',{name:'导入预览'})).toContainText(title,{timeout:25000});
   await page.getByRole('button',{name:'保存到我的菜谱'}).click();await page.reload();
   await page.getByRole('link',{name:'发现菜谱',exact:true}).first().click();await page.getByRole('button',{name:'我的导入',exact:true}).click();
-  await page.getByRole('button',{name:title,exact:true}).click();await expect(page.getByRole('region',{name:'菜谱来源'})).toContainText('USER_IMPORTED');
+  await page.getByRole('button',{name:title,exact:true}).click();await expect(page.getByRole('region',{name:'菜谱来源'})).toContainText('本机导入');
   await page.getByRole('link',{name:'开始做菜'}).click();await expect(page.locator('.cooking-description')).not.toBeEmpty();
 });
