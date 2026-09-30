@@ -2,10 +2,12 @@ import { recipeSchema } from "./model";
 import catalog from "@/data/verified-recipes/howtocook/recipes.json";
 import linked from "@/data/verified-recipes/source-linked/recipes.json";
 import wikibooks from "@/data/verified-recipes/wikibooks/recipes.json";
+import based from "@/data/verified-recipes/based-cooking/recipes.json";
+import commons from "@/data/verified-recipes/commons/recipes.json";
 import health from "@/data/verified-recipes/source-health.json";
 import { dedupeRecipes } from "./recipe-trust";
 export const verifiedRecipes = dedupeRecipes(
-  [...catalog, ...wikibooks, ...linked].map((recipe) =>
+  [...catalog, ...wikibooks, ...based, ...commons, ...linked].map((recipe) =>
     recipeSchema.parse({
       ...recipe,
       verificationStatus:

@@ -1,7 +1,9 @@
+import { RecipeInstructions } from "./recipe-instructions";
 import { RecipeSource, SourceNotes } from "./recipe-source";
 import Link from "next/link";
 import { Clock, Flame, UtensilsCrossed, ExternalLink } from "lucide-react";
 import type { Recipe } from "@/lib/model";
+import { recipeEquipment } from "@/lib/recipe-equipment";
 import { RecipeActions } from "./recipe-actions";
 import { RecipeBackLink } from "./recipe-back-link";
 
@@ -77,6 +79,11 @@ export function ServerRecipeDetail({ recipe }: { recipe: Recipe }) {
               来源：{recipe.sourceName}
               {recipe.sourceAuthor && ` · ${recipe.sourceAuthor}`}
             </p>
+            {recipeEquipment(recipe).length > 0 && (
+              <p className="subtle">
+                来源提到的工具：{recipeEquipment(recipe).join("、")}
+              </p>
+            )}
             {recipe.sourceUrl && (
               <a
                 className="text-link"
@@ -93,26 +100,7 @@ export function ServerRecipeDetail({ recipe }: { recipe: Recipe }) {
         <SourceNotes recipe={recipe} />
         <div className="detail-layout">
           <RecipeActions recipe={recipe} />
-          <section className="instructions">
-            <h2>一步一步，做顿好饭</h2>
-            {recipe.instructions.map((step) => (
-              <article key={step.stepNumber}>
-                <span className="step-number">
-                  {String(step.stepNumber).padStart(2, "0")}
-                </span>
-                <div>
-                  <h3>{step.title}</h3>
-                  <p>{step.description}</p>
-                  {step.durationSeconds !== null && (
-                    <span className="step-time">
-                      <Clock size={14} /> 约{" "}
-                      {Math.round(step.durationSeconds / 60)} 分钟
-                    </span>
-                  )}
-                </div>
-              </article>
-            ))}
-          </section>
+          <RecipeInstructions recipe={recipe} />
         </div>
         <script
           type="application/ld+json"

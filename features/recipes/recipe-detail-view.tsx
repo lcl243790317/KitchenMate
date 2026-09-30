@@ -1,5 +1,6 @@
 "use client";
-import type { ReactNode } from "react";
+import { RecipeInstructions } from "./recipe-instructions";
+import { type ReactNode } from "react";
 import { RecipeSource, SourceNotes } from "./recipe-source";
 import Link from "next/link";
 import {
@@ -20,6 +21,7 @@ import type { PantryItem, Recipe } from "@/lib/model";
 import { canCookRecipe } from "@/lib/recipe-trust";
 import { scaleQuantity } from "@/lib/units";
 import { RecipeBackLink } from "./recipe-back-link";
+import { recipeEquipment } from "@/lib/recipe-equipment";
 
 type Props = {
   recipe: Recipe;
@@ -75,6 +77,11 @@ export function RecipeDetailView({
             来源：{recipe.sourceName}
             {recipe.sourceAuthor && ` · ${recipe.sourceAuthor}`}
           </p>
+          {recipeEquipment(recipe).length > 0 && (
+            <p className="subtle">
+              来源提到的工具：{recipeEquipment(recipe).join("、")}
+            </p>
+          )}
           {recipe.sourceUrl && (
             <a
               className="text-link"
@@ -178,26 +185,7 @@ export function RecipeDetailView({
             <ShoppingBasket size={16} /> 添加缺少食材到购物清单
           </button>
         </aside>
-        <section className="instructions">
-          <h2>一步一步，做顿好饭</h2>
-          {recipe.instructions.map((step) => (
-            <article key={step.stepNumber}>
-              <span className="step-number">
-                {String(step.stepNumber).padStart(2, "0")}
-              </span>
-              <div>
-                <h3>{step.title}</h3>
-                <p>{step.description}</p>
-                {step.durationSeconds !== null && (
-                  <span className="step-time">
-                    <Clock size={14} /> 约{" "}
-                    {Math.round(step.durationSeconds / 60)} 分钟
-                  </span>
-                )}
-              </div>
-            </article>
-          ))}
-        </section>
+        <RecipeInstructions recipe={recipe} />
       </div>
       {jsonLd}
     </>

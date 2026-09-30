@@ -1,14 +1,16 @@
 {
-  "generatedAt": "2026-09-30T16:05:50.299Z",
+  "generatedAt": "2026-09-30T22:43:50.765Z",
   "totalIngredients": 703,
-  "covered": 324,
-  "uncovered": 379,
+  "covered": 331,
+  "uncovered": 372,
   "englishNames": 546,
   "withAliases": 544,
   "parentRelations": 42,
   "sourceDistribution": {
     "HowToCook": 365,
-    "Wikibooks Cookbook": 27,
+    "Wikibooks Cookbook": 37,
+    "Based Cooking": 13,
+    "Wikimedia Commons": 1,
     "www.budgetbytes.com": 1,
     "www.bbcgoodfood.com": 1,
     "www.loveandlemons.com": 1,
@@ -21,7 +23,7 @@
     {
       "category": "蔬菜",
       "total": 93,
-      "covered": 47
+      "covered": 48
     },
     {
       "category": "肉类",
@@ -66,7 +68,7 @@
     {
       "category": "菌菇",
       "total": 20,
-      "covered": 9
+      "covered": 10
     },
     {
       "category": "猪肉",
@@ -101,7 +103,7 @@
     {
       "category": "贝类",
       "total": 14,
-      "covered": 3
+      "covered": 4
     },
     {
       "category": "虾蟹",
@@ -131,7 +133,7 @@
     {
       "category": "面",
       "total": 21,
-      "covered": 6
+      "covered": 7
     },
     {
       "category": "谷物",
@@ -161,7 +163,7 @@
     {
       "category": "香料",
       "total": 31,
-      "covered": 27
+      "covered": 28
     },
     {
       "category": "中式调味料",
@@ -176,7 +178,7 @@
     {
       "category": "酱料",
       "total": 18,
-      "covered": 5
+      "covered": 6
     },
     {
       "category": "油脂",
@@ -201,7 +203,7 @@
     {
       "category": "饮品",
       "total": 20,
-      "covered": 12
+      "covered": 13
     }
   ],
   "top30UncoveredCommon": [
@@ -218,7 +220,6 @@
     "丝瓜",
     "青萝卜",
     "芋头",
-    "甜玉米",
     "糯玉米",
     "扁豆",
     "豇豆",
@@ -234,7 +235,8 @@
     "羽衣甘蓝",
     "芝麻菜",
     "罗马生菜",
-    "冰草"
+    "冰草",
+    "甜菜根"
   ],
   "allUncovered": [
     "彩椒",
@@ -250,7 +252,6 @@
     "丝瓜",
     "青萝卜",
     "芋头",
-    "甜玉米",
     "糯玉米",
     "扁豆",
     "豇豆",
@@ -312,7 +313,6 @@
     "冬枣",
     "榴莲",
     "甘蔗",
-    "杏鲍菇",
     "海鲜菇",
     "茶树菇",
     "平菇",
@@ -413,7 +413,6 @@
     "鱼片",
     "鱼骨",
     "鱼籽",
-    "蛤蜊",
     "花甲",
     "扇贝",
     "青口贝",
@@ -461,7 +460,6 @@
     "粽子",
     "米纸",
     "手擀面",
-    "乌冬面",
     "拉面",
     "宽面",
     "细面",
@@ -521,7 +519,6 @@
     "榛子",
     "南瓜子",
     "葵花籽",
-    "咖喱粉",
     "牛至",
     "鼠尾草",
     "香草荚",
@@ -547,7 +544,6 @@
     "起酥油",
     "葡萄籽油",
     "牛油果油",
-    "味噌",
     "照烧酱",
     "咖喱酱",
     "泰式甜辣酱",
@@ -603,7 +599,6 @@
     "浓缩咖啡",
     "苹果汁",
     "气泡水",
-    "红葡萄酒",
     "豆乳",
     "巧克力牛奶",
     "米酒酿",

@@ -8,6 +8,7 @@ import {
   browseSource,
 } from "@/lib/recipe-browse";
 import { beginnerSignals } from "@/lib/beginner-recipes";
+import { recipeEquipment } from "@/lib/recipe-equipment";
 import { canDisplayRecipe } from "@/lib/recipe-trust";
 import {
   takeBrowseState,
@@ -217,6 +218,17 @@ export function AllRecipesPage({
                   .map((i) => ingredientName(i.ingredientId))
                   .join("、")}
               </p>
+              {beginner && (
+                <p className="tiny">
+                  {beginnerSignals(recipe).nonStapleIngredientCount} 种主要食材
+                  · {beginnerSignals(recipe).instructionCount} 步
+                </p>
+              )}
+              {recipeEquipment(recipe).length > 0 && (
+                <p className="tiny">
+                  来源提到：{recipeEquipment(recipe).join("、")}
+                </p>
+              )}
               <button className="text-link" onClick={() => open(recipe)}>
                 {recipe.instructionAvailability === "source-only"
                   ? "查看来源与食材"

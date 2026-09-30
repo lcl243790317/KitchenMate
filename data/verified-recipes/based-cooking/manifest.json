@@ -1,0 +1,351 @@
+[
+  {
+    "id": "based-cooking:air-fryer-zucchini",
+    "title": "空气炸锅西葫芦",
+    "path": "content/air-fryer-zucchini.md",
+    "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+    "snapshotPath": "data/verified-recipes/based-cooking/snapshots/air-fryer-zucchini.md",
+    "sha256": "2b1d2d817c8199274978d027b88ed220ee52e166a976da324c46bbd055928d3a",
+    "retrievedAt": "2026-09-30T21:23:38.696Z",
+    "httpStatus": 200,
+    "operationIngredients": []
+  },
+  {
+    "id": "based-cooking:baked-salmon",
+    "title": "烤三文鱼",
+    "path": "content/baked-salmon.md",
+    "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+    "snapshotPath": "data/verified-recipes/based-cooking/snapshots/baked-salmon.md",
+    "sha256": "1e5692c175e01669d4ffa59dc3a00fb3940edbe88865f6dfb8e4d75280ba4be5",
+    "retrievedAt": "2026-09-30T21:23:39.630Z",
+    "httpStatus": 200,
+    "operationIngredients": [
+      {
+        "ingredientId": "salt",
+        "originalText": "salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "black pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      },
+      {
+        "ingredientId": "oil",
+        "originalText": "cooking oil",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      }
+    ]
+  },
+  {
+    "id": "based-cooking:banana-oatmeal-cookies",
+    "title": "香蕉燕麦饼干",
+    "path": "content/banana-oatmeal-cookies.md",
+    "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+    "snapshotPath": "data/verified-recipes/based-cooking/snapshots/banana-oatmeal-cookies.md",
+    "sha256": "d80eaab65ed43c52948fb9bc23713ddb754847dd128856f272107fae17857894",
+    "retrievedAt": "2026-09-30T21:23:39.892Z",
+    "httpStatus": 200,
+    "operationIngredients": []
+  },
+  {
+    "id": "based-cooking:banana-pancakes",
+    "title": "香蕉煎饼",
+    "path": "content/banana-pancakes.md",
+    "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+    "snapshotPath": "data/verified-recipes/based-cooking/snapshots/banana-pancakes.md",
+    "sha256": "f85957ef0996704c8a8989449a4b8a1e5e21449c5a05595091249843735bf7b6",
+    "retrievedAt": "2026-09-30T21:23:40.197Z",
+    "httpStatus": 200,
+    "operationIngredients": [
+      {
+        "ingredientId": "salt",
+        "originalText": "a little bit of salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "some butter",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      }
+    ]
+  },
+  {
+    "id": "based-cooking:beef-and-broccoli",
+    "title": "牛肉炒西兰花",
+    "path": "content/beef-and-broccoli.md",
+    "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+    "snapshotPath": "data/verified-recipes/based-cooking/snapshots/beef-and-broccoli.md",
+    "sha256": "3464871116906546020624e900051e230d18de51a9507826488d7d102833a16f",
+    "retrievedAt": "2026-09-30T21:23:40.544Z",
+    "httpStatus": 200,
+    "operationIngredients": [
+      {
+        "ingredientId": "salt",
+        "originalText": "salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      },
+      {
+        "ingredientId": "water",
+        "originalText": "2 Tbsp water",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      },
+      {
+        "ingredientId": "rice",
+        "originalText": "Serve over rice",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      }
+    ]
+  },
+  {
+    "id": "based-cooking:clam-chowder",
+    "title": "蛤蜊浓汤",
+    "path": "content/clam-chowder.md",
+    "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+    "snapshotPath": "data/verified-recipes/based-cooking/snapshots/clam-chowder.md",
+    "sha256": "602b096a31d912891908cc6ea4caa9e509ba86c8f1fccbee961b983d6005e474",
+    "retrievedAt": "2026-09-30T21:23:41.173Z",
+    "httpStatus": 200,
+    "operationIngredients": []
+  },
+  {
+    "id": "based-cooking:finnish-salmon-soup",
+    "title": "芬兰三文鱼汤",
+    "path": "content/finnish-salmon-soup.md",
+    "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+    "snapshotPath": "data/verified-recipes/based-cooking/snapshots/finnish-salmon-soup.md",
+    "sha256": "ed2aae9974e642d4467733276b0256d501c8a453de6690680ae26d57870253da",
+    "retrievedAt": "2026-09-30T21:23:41.794Z",
+    "httpStatus": 200,
+    "operationIngredients": []
+  },
+  {
+    "id": "based-cooking:fish-curry",
+    "title": "咖喱鱼",
+    "path": "content/fish-curry.md",
+    "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+    "snapshotPath": "data/verified-recipes/based-cooking/snapshots/fish-curry.md",
+    "sha256": "4918e1de0b861a8458dad7f1555342cf4e0e41652ffa4fc84efe6d33e1b40024",
+    "retrievedAt": "2026-09-30T21:23:42.088Z",
+    "httpStatus": 200,
+    "operationIngredients": []
+  },
+  {
+    "id": "based-cooking:ginger-garlic-broccoli",
+    "title": "姜蒜汁西兰花",
+    "path": "content/ginger-garlic-broccoli.md",
+    "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+    "snapshotPath": "data/verified-recipes/based-cooking/snapshots/ginger-garlic-broccoli.md",
+    "sha256": "dcb521b7de1371dd5ffed0a5beb30c951e7e989b2a90378c394dff0555d44e06",
+    "retrievedAt": "2026-09-30T21:23:42.701Z",
+    "httpStatus": 200,
+    "operationIngredients": [
+      {
+        "ingredientId": "water",
+        "originalText": "with water",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      },
+      {
+        "ingredientId": "oil",
+        "originalText": "One teaspoon of oil",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      },
+      {
+        "ingredientId": "zh:红糖",
+        "originalText": "brown sugar",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      },
+      {
+        "ingredientId": "zh:柠檬汁",
+        "originalText": "lemon juice",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      },
+      {
+        "ingredientId": "zh:玉米淀粉",
+        "originalText": "corn starch",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      }
+    ]
+  },
+  {
+    "id": "based-cooking:mushroom-sauce",
+    "title": "蘑菇酱",
+    "path": "content/mushroom-sauce.md",
+    "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+    "snapshotPath": "data/verified-recipes/based-cooking/snapshots/mushroom-sauce.md",
+    "sha256": "20993ae4c3872ad8ed9f13f331fc6548768d0f6d6c805604a50d423cfbbea5da",
+    "retrievedAt": "2026-09-30T21:23:44.563Z",
+    "httpStatus": 200,
+    "operationIngredients": [
+      {
+        "ingredientId": "salt",
+        "originalText": "salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      }
+    ]
+  },
+  {
+    "id": "based-cooking:mushroom-stragonov",
+    "title": "奶油蘑菇意面",
+    "path": "content/mushroom-stragonov.md",
+    "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+    "snapshotPath": "data/verified-recipes/based-cooking/snapshots/mushroom-stragonov.md",
+    "sha256": "56b2e2e55af8c0e0ed3af2cba954e39adff2f3fd41cd18e9a3c5c552e14189fa",
+    "retrievedAt": "2026-09-30T21:23:44.838Z",
+    "httpStatus": 200,
+    "operationIngredients": [
+      {
+        "ingredientId": "water",
+        "originalText": "salted water",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      }
+    ]
+  },
+  {
+    "id": "based-cooking:spiced-apple-pancakes",
+    "title": "香料苹果煎饼",
+    "path": "content/spiced-apple-pancakes.md",
+    "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+    "snapshotPath": "data/verified-recipes/based-cooking/snapshots/spiced-apple-pancakes.md",
+    "sha256": "e5e77d17a323f293742f29e8ebd76b67c1bcb9c771ab7a083b18de764b87e56b",
+    "retrievedAt": "2026-09-30T21:23:45.942Z",
+    "httpStatus": 200,
+    "operationIngredients": [
+      {
+        "ingredientId": "salt",
+        "originalText": "1 pinch of salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "1 tbsp butter",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      }
+    ]
+  },
+  {
+    "id": "based-cooking:tofu-and-cashew-chow-mein",
+    "title": "豆腐腰果炒面",
+    "path": "content/tofu-and-cashew-chow-mein.md",
+    "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+    "snapshotPath": "data/verified-recipes/based-cooking/snapshots/tofu-and-cashew-chow-mein.md",
+    "sha256": "e2201845d2195ef37837556c0b7f581f514eaf611e0b30ce301a52cc8554621f",
+    "retrievedAt": "2026-09-30T21:23:46.490Z",
+    "httpStatus": 200,
+    "operationIngredients": [
+      {
+        "ingredientId": "water",
+        "originalText": "2 Tbsp water",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料",
+        "verificationMethod": "source-operation-explicit"
+      }
+    ]
+  }
+]

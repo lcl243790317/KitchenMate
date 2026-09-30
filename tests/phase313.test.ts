@@ -20,13 +20,20 @@ import { browseRecipes } from "../lib/recipe-browse";
 import { canCookRecipe } from "../lib/recipe-trust";
 import { classifyCalculation } from "../lib/ingredient-semantics";
 describe("Reviewed semantic aliases", () => {
-  it.each(["圆碟子", "蒸架", "煲汤盅", "蘸料碟 1 个"])("%s is explicitly excluded equipment", (text) => {
-    expect(parseHowToCookIngredientBullet(text)).toEqual([]);
-    expect(classifyCalculation(text).category).toBe("Tool");
-  });
+  it.each(["圆碟子", "蒸架", "煲汤盅", "蘸料碟 1 个"])(
+    "%s is explicitly excluded equipment",
+    (text) => {
+      expect(parseHowToCookIngredientBullet(text)).toEqual([]);
+      expect(classifyCalculation(text).category).toBe("Tool");
+    },
+  );
   it("does not classify a food as equipment because its preparation note mentions a pot", () => {
-    expect(classifyCalculation("香油 几滴（出锅用）").category).not.toBe("Tool");
-    expect(classifyCalculation("五花肉的用量为 0.5 斤/男人（正宗回锅肉）").category).not.toBe("Tool");
+    expect(classifyCalculation("香油 几滴（出锅用）").category).not.toBe(
+      "Tool",
+    );
+    expect(
+      classifyCalculation("五花肉的用量为 0.5 斤/男人（正宗回锅肉）").category,
+    ).not.toBe("Tool");
   });
   it.each(
     Object.entries(aliases).flatMap(([id, names]) =>
@@ -92,13 +99,16 @@ describe("Wikibooks licensed pinned source fidelity", () => {
       const raw = fs.readFileSync(entry.snapshotPath, "utf8"),
         snapshot = JSON.parse(raw),
         r = verifiedRecipes.find((r) => r.id === entry.id)!;
-      const parsed = parseWikibooks(snapshot.wikitext);
+      const parsed = parseWikibooks(snapshot.wikitext, snapshot.language);
       expect(createHash("sha256").update(raw).digest("hex")).toBe(entry.sha256);
       expect(r.provenance.sourceRevision).toBe(String(snapshot.revisionId));
       expect(r.provenance.licenseName).toBe("CC BY-SA 4.0");
       expect(r.provenance.attributionText).toContain("Wikibooks contributors");
-      expect(r.originalTitle).toBe(snapshot.title.replace(/^Cookbook:/, ""));
-      expect(r.titleTranslation).toBe("KitchenMate");
+      expect(r.originalTitle).toBe(
+        snapshot.title.replace(/^Cookbook:|^食譜\//, ""),
+      );
+      if (snapshot.language !== "zh")
+        expect(r.titleTranslation).toBe("KitchenMate");
       expect(r.ingredients).toEqual(parsed.ingredients);
       expect(r.instructions.map((i) => i.description)).toEqual(
         parsed.descriptions,

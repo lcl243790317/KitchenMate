@@ -17,6 +17,10 @@ import { validateRecipeSourcePolicy } from "../lib/recipe-source-registry";
 import wikiManifest from "../data/verified-recipes/wikibooks/manifest.json";
 import { parseWikibooks } from "../lib/wikibooks-parser";
 import beginnerEvidence from "../data/recipe-beginner-source-signals.json";
+import basedManifest from "../data/verified-recipes/based-cooking/manifest.json";
+import { parseBasedCooking } from "../lib/based-cooking-parser";
+import commonsManifest from "../data/verified-recipes/commons/manifest.json";
+import { parseCommonsRecipe } from "../lib/commons-recipe-parser";
 const byId = new Map(manifest.map((m) => [m.id, m]));
 const urls = new Set();
 for (const evidence of beginnerEvidence) {
@@ -48,19 +52,53 @@ for (const recipe of verifiedRecipes) {
         String(snapshot.revisionId) !== recipe.provenance.sourceRevision
       )
         throw new Error("Wikibooks revision/checksum mismatch");
-      const parsed = parseWikibooks(snapshot.wikitext);
+      const parsed = parseWikibooks(snapshot.wikitext, snapshot.language);
       if (
-        JSON.stringify(parsed.ingredients) !==
-          JSON.stringify(recipe.ingredients) ||
+        JSON.stringify(
+          recipeSchema.shape.ingredients.parse(parsed.ingredients),
+        ) !== JSON.stringify(recipe.ingredients) ||
         JSON.stringify(parsed.descriptions) !==
           JSON.stringify(recipe.instructions.map((step) => step.description))
       )
-        throw new Error("Wikibooks source fidelity mismatch");
+        throw new Error(`Wikibooks source fidelity mismatch: ${recipe.id}`);
       if (
         recipe.provenance.instructionSource !== "open-license-source" ||
         recipe.provenance.httpStatus !== 200
       )
         throw new Error("Wikibooks verification missing");
+    }
+    if (recipe.sourceProvider === "based-cooking") {
+      const entry = basedManifest.find((e) => e.id === recipe.id);
+      if (!entry) throw Error("Based Cooking snapshot missing");
+      const raw = fs.readFileSync(entry.snapshotPath, "utf8");
+      const parsed = parseBasedCooking(raw, entry.operationIngredients);
+      if (
+        createHash("sha256").update(raw).digest("hex") !== entry.sha256 ||
+        recipe.provenance.sourceRevision !== entry.sourceRevision ||
+        JSON.stringify(recipe.ingredients) !==
+          JSON.stringify(
+            recipeSchema.shape.ingredients.parse(parsed.ingredients),
+          ) ||
+        JSON.stringify(recipe.instructions.map((s) => s.description)) !==
+          JSON.stringify(parsed.descriptions)
+      )
+        throw Error("Based Cooking source identity/content mismatch");
+    }
+    if (recipe.sourceProvider === "commons") {
+      const entry = commonsManifest.find((e) => e.id === recipe.id);
+      if (!entry) throw Error("Commons snapshot missing");
+      const raw = fs.readFileSync(entry.snapshotPath, "utf8"),
+        s = JSON.parse(raw),
+        x = parseCommonsRecipe(s.wikitext);
+      if (
+        createHash("sha256").update(raw).digest("hex") !== entry.sha256 ||
+        String(s.revisionId) !== recipe.provenance.sourceRevision ||
+        JSON.stringify(recipe.ingredients) !==
+          JSON.stringify(recipeSchema.shape.ingredients.parse(x.ingredients)) ||
+        JSON.stringify(recipe.instructions.map((i) => i.description)) !==
+          JSON.stringify(x.descriptions)
+      )
+        throw Error("Commons source content/revision mismatch");
     }
     if (record) {
       assertAtomicHowToCookIngredients(recipe.ingredients);

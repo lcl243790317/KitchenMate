@@ -1,0 +1,197 @@
+[
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ASanuki_udon_noodle_(2223059600).jpg",
+      "sourceRecipeTitle": "Sanuki udon noodle",
+      "sourceAuthor": "pelican",
+      "sourceExternalId": "77826608",
+      "verifiedAt": "2026-09-30T22:00:49.277Z",
+      "verificationMethod": "mediawiki-api",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "Commons unstructured text CC BY-SA 4.0. Original attribution: pelican (Flickr). Image separately CC BY-SA 2.0; not reused.",
+      "sourceRevision": "1177828291",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "pelican / Wikimedia Commons file-description text. Based on the original Sanuki udon noodle description from Flickr. Formatting and Chinese translation: KitchenMate, CC BY-SA 4.0. Image not reused.",
+      "lastVerifiedAt": "2026-09-30T22:00:49.277Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "来源：文件描述中的 Ingredients 与 Directions。Udon soup 是原文预制汤底，未猜测其配方或拆成额外必需食材。图片未复用。",
+    "originalTitle": "Sanuki udon noodle",
+    "titleTranslation": "KitchenMate",
+    "id": "commons:77826608",
+    "title": "讃岐乌冬面",
+    "slug": "commons:77826608",
+    "description": "来源文件描述中明确提供了完整原料与步骤；保留英文原文。",
+    "image": null,
+    "sourceProvider": "commons",
+    "sourceName": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ASanuki_udon_noodle_(2223059600).jpg",
+    "sourceAuthor": "pelican",
+    "externalId": "77826608",
+    "cuisine": "未知",
+    "category": "主食",
+    "difficulty": "未知",
+    "prepTime": null,
+    "cookTime": null,
+    "totalTime": null,
+    "servings": 2,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "zh:乌冬面",
+        "originalText": "2 bunches of udon noodle",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:白萝卜",
+        "originalText": "1/4 Japanese raddish",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "scallion",
+        "originalText": "5 cm of green onion",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Small piece of ginger",
+        "originalText": "Small piece of ginger",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:White sesame",
+        "originalText": "White sesame",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Udon soup (soy sauce, sweet sake,  seaweed and bonito broth)",
+        "originalText": "Udon soup (soy sauce, sweet sake,  seaweed and bonito broth)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "water",
+        "originalText": "cold water",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Peal a radish and grate it. Then, drain excess liquid from the grated radish.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Peal a ginger and grate it.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Slice the green onion.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Crush sesame.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Boil noodle for 13 - 15 minutes. Then, wash the noodle with cold water.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 6,
+        "title": "Original step 6",
+        "description": "Put the noodle in a bowl.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 7,
+        "title": "Original step 7",
+        "description": "Arrange the grated radish, green onion, ginger on the noodle.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 8,
+        "title": "Original step 8",
+        "description": "Put the crushed sesame on the top.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 9,
+        "title": "Original step 9",
+        "description": "Put the udon soup into the bowl.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T22:00:49.277Z",
+    "updatedAt": "2026-09-30T22:00:49.277Z",
+    "sourceUpdatedAt": "2026-04-02T20:03:46Z",
+    "lastFetchedAt": "2026-09-30T22:00:49.277Z"
+  }
+]

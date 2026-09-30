@@ -5,14 +5,17 @@ const signalsById = new Map(
   sourceSignals.map((signal) => [signal.recipeId, signal]),
 );
 
-export function beginnerSignals(recipe: Recipe) {
+export function beginnerSignals(
+  recipe: Recipe,
+  evidence: ReadonlyMap<string, { sourceDifficulty: string }> = signalsById,
+) {
   const required = recipe.ingredients.filter((item) => !item.optional);
   const unknown = required.filter(
     (item) => !ingredientById.has(item.ingredientId),
   ).length;
   const signals = {
     sourceDifficulty:
-      recipe.sourceDifficulty ?? signalsById.get(recipe.id)?.sourceDifficulty,
+      recipe.sourceDifficulty ?? evidence.get(recipe.id)?.sourceDifficulty,
     totalTimeMinutes: recipe.totalTime,
     requiredIngredientCount: required.length,
     nonStapleIngredientCount: required.filter(
@@ -25,7 +28,7 @@ export function beginnerSignals(recipe: Recipe) {
     ).length,
   };
   const sourceEasy =
-    /(?:^(?:Very Easy|Easy|beginner|simple)$|新手|做法.*简单|操作.*简单|制作简单|简单易|初学者.*友好)/i.test(
+    /(?:^(?:Very Easy|Easy|beginner|simple)$|新手|做法.*简单|操作.*简单|制作.{0,4}简单|步骤简单|简单易|初学者.*友好)/i.test(
       signals.sourceDifficulty ?? "",
     );
   const objective =

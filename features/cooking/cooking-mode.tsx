@@ -4,6 +4,12 @@ import { ArrowLeft, ArrowRight, Check, ChefHat, Timer, X } from "lucide-react";
 import type { Recipe } from "@/lib/model";
 import { loadCookingSnapshot, saveCookingSnapshot } from "@/lib/storage/device";
 import { canCookRecipe } from "@/lib/recipe-trust";
+import {
+  localizedInstructions,
+  recipeTranslation,
+  type RecipeLanguage,
+} from "@/lib/recipe-localization";
+import { RecipeLanguageToggle } from "@/features/recipes/recipe-language-toggle";
 export function CookingMode({
   recipe,
   onExit,
@@ -19,7 +25,11 @@ export function CookingMode({
   const [done, setDone] = useState(false);
   const [wake, setWake] = useState(false);
   const [restored, setRestored] = useState(false);
-  const instruction = recipe.instructions[step];
+  const translation = recipeTranslation(recipe);
+  const [language, setLanguage] = useState<RecipeLanguage>(
+    translation ? "zh" : "en",
+  );
+  const instruction = localizedInstructions(recipe, language)[step];
   useEffect(() => {
     let active = true;
     loadCookingSnapshot(recipe.id)
@@ -119,6 +129,9 @@ export function CookingMode({
           STEP {String(step + 1).padStart(2, "0")} /{" "}
           {String(recipe.instructions.length).padStart(2, "0")}
         </p>
+        {translation && (
+          <RecipeLanguageToggle language={language} onChange={setLanguage} />
+        )}
         <h1>{instruction.title}</h1>
         <p className="cooking-description">{instruction.description}</p>
         {instruction.tips && (

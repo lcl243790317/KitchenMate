@@ -1,2 +1,5 @@
 data/verified-recipes/howtocook/snapshots/*.md text eol=lf
 data/verified-recipes/howtocook/LICENSE text eol=lf
+data/verified-recipes/wikibooks/snapshots/*.json text eol=lf
+data/verified-recipes/based-cooking/snapshots/*.md text eol=lf
+data/verified-recipes/commons/*.json text eol=lf

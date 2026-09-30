@@ -160,5 +160,65 @@
     "revisionId": 4587157,
     "snapshotPath": "data/verified-recipes/wikibooks/snapshots/456327.json",
     "sha256": "1a6cb9a9c84122523e308bffa288bf87f0406a41d0950cacabfffb40ea23de97"
+  },
+  {
+    "id": "wikibooks:20904",
+    "revisionId": 4610543,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/20904.json",
+    "sha256": "28ca2b0cedbb37ba4761db2e4e983a63891f90241b4692cf6afe916af538cd7b"
+  },
+  {
+    "id": "wikibooks:38074",
+    "revisionId": 4518378,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/38074.json",
+    "sha256": "8dc04b7894e801dce1803d01da6aa31f3a75bbd40e5371d13838444bbdf0bc72"
+  },
+  {
+    "id": "wikibooks:49868",
+    "revisionId": 4518462,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/49868.json",
+    "sha256": "7cbb2fa01749236840276a3cc20e09b25c7bb1828e563b43436e1425feecdcf6"
+  },
+  {
+    "id": "wikibooks:237543",
+    "revisionId": 4524017,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/237543.json",
+    "sha256": "46d83f28c34cf705f308db6ee25bd313dc6ecc34f8d02e77624bc7b533fcdbd3"
+  },
+  {
+    "id": "wikibooks:281314",
+    "revisionId": 4513028,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/281314.json",
+    "sha256": "ed519cdee825ba4b6f8eb38f684d9c3a736c2d85675c8dee6db8159c4f4e31f6"
+  },
+  {
+    "id": "wikibooks:461953",
+    "revisionId": 4587508,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/461953.json",
+    "sha256": "eb54f9e1710025ae412c65236d152b6759e8dc4f9280a8f9c786cf20fdea24f1"
+  },
+  {
+    "id": "wikibooks:40754",
+    "revisionId": 4525784,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/40754.json",
+    "sha256": "e7eb7b7e2eb0805f279ded58cfd296f2801c5e9685b5bdfb241dbcda0c931189"
+  },
+  {
+    "id": "wikibooks:450507",
+    "revisionId": 4587466,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/450507.json",
+    "sha256": "c314a9f42a865f67205d0853ce32ce695d011ab14859a9242efc071b66d20ba3"
+  },
+  {
+    "id": "wikibooks:127951",
+    "revisionId": 4506487,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/127951.json",
+    "sha256": "ee87bf539ed076758549a27eb8aa20094cb8b6870dfeddc1caa28052a76f4ce7"
+  },
+  {
+    "id": "wikibooks:zh:24476",
+    "revisionId": 93224,
+    "snapshotPath": "data/verified-recipes/wikibooks/snapshots/24476.json",
+    "sha256": "ef1bc621542a0ae0640f9d757693ecd20390e756cf69d3de4d8e7185692117d7"
   }
 ]

@@ -179,6 +179,7 @@
       "garlic",
       "scallion",
       "carrot",
+      "chicken",
       "rice",
       "oyster-sauce",
       "salt",
@@ -188,7 +189,6 @@
     ],
     "unresolvedIngredients": [
       "2 red chiles, cut into 1 cm pieces",
-      "200 g minced raw chicken",
       "Fried egg",
       "Pickles"
     ],
@@ -325,6 +325,7 @@
     "primaryIngredientCoverage": [
       "potato",
       "bacon",
+      "onion",
       "sugar",
       "flour",
       "vinegar",
@@ -332,7 +333,6 @@
       "black-pepper"
     ],
     "unresolvedIngredients": [
-      "½ cup (120 g) finely-chopped yellow onion",
       "½ teaspoon celery seed",
       "2 hard boiled eggs"
     ],
@@ -1788,18 +1788,17 @@
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMicrowaved_Basmati_Rice",
     "licenseOrUsageBasis": "CC BY-SA 4.0",
     "candidateReason": "Curated everyday ingredients / beginner category research",
-    "decision": "DEFER",
+    "decision": "FULL",
     "sourceDifficulty": "Very Easy",
     "sourceTime": "40 minutes",
     "ingredientCount": 3,
     "instructionCount": 9,
     "primaryIngredientCoverage": [
+      "zh:大米",
       "salt"
     ],
-    "unresolvedIngredients": [
-      "57 g uncooked Basmati rice"
-    ],
-    "reason": "Error: Beginner/identity gate: too many ingredients, steps or unknowns"
+    "unresolvedIngredients": [],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
   },
   {
     "title": "Cookbook:Boiled Chicken with Broth",
@@ -1940,5 +1939,203 @@
     "candidateReason": "Curated everyday ingredients / beginner category research",
     "decision": "DEFER",
     "reason": "Error: Ingredient prose/table requires manual parsing review"
+  },
+  {
+    "title": "Cookbook:Miso Soup",
+    "revisionId": 4610543,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMiso_Soup",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Easy",
+    "sourceTime": null,
+    "ingredientCount": 8,
+    "instructionCount": 5,
+    "primaryIngredientCoverage": [
+      "zh:香油",
+      "scallion",
+      "tofu",
+      "mushroom",
+      "shrimp"
+    ],
+    "unresolvedIngredients": [
+      "Some pieces of seaweed (optional)"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Corn Soup",
+    "revisionId": 4518378,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ACorn_Soup",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Easy",
+    "sourceTime": null,
+    "ingredientCount": 7,
+    "instructionCount": 6,
+    "primaryIngredientCoverage": [
+      "butter",
+      "flour",
+      "egg",
+      "salt",
+      "black-pepper"
+    ],
+    "unresolvedIngredients": [],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Mushroom Tofu Soup",
+    "revisionId": 4518462,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMushroom_Tofu_Soup",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Easy",
+    "sourceTime": null,
+    "ingredientCount": 8,
+    "instructionCount": 7,
+    "primaryIngredientCoverage": [
+      "onion",
+      "mushroom",
+      "zh:普通酱油",
+      "salt"
+    ],
+    "unresolvedIngredients": [
+      "10.5 oz soft (silken) tofu"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Cream of Mushroom Soup",
+    "revisionId": 4524017,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ACream_of_Mushroom_Soup",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": null,
+    "sourceTime": null,
+    "ingredientCount": 10,
+    "instructionCount": 7,
+    "primaryIngredientCoverage": [
+      "mushroom",
+      "butter",
+      "flour",
+      "onion",
+      "cream",
+      "mushroom"
+    ],
+    "unresolvedIngredients": [
+      "180 ml milk or white stock",
+      "Seasoning to taste"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Fried Bananas",
+    "revisionId": 4587508,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AFried_Bananas",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Easy",
+    "sourceTime": "About 20 minutes",
+    "ingredientCount": 5,
+    "instructionCount": 5,
+    "primaryIngredientCoverage": [
+      "zh:香蕉",
+      "butter"
+    ],
+    "unresolvedIngredients": [
+      "1 teaspoon cinnamon (optional)"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Zucchini Pasta Bake",
+    "revisionId": 4525784,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AZucchini_Pasta_Bake",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Easy",
+    "sourceTime": "60 minutes",
+    "ingredientCount": 9,
+    "instructionCount": 8,
+    "primaryIngredientCoverage": [
+      "cheese",
+      "egg",
+      "milk",
+      "butter",
+      "zh:西葫芦",
+      "salt",
+      "black-pepper"
+    ],
+    "unresolvedIngredients": [
+      "400 g any small pasta",
+      "Vegetable stock base"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Banana Cream II",
+    "revisionId": 4587466,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABanana_Cream_II",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Easy",
+    "sourceTime": "25–30 minutes plus chilling",
+    "ingredientCount": 6,
+    "instructionCount": 5,
+    "primaryIngredientCoverage": [
+      "milk",
+      "zh:香蕉"
+    ],
+    "unresolvedIngredients": [],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "Cookbook:Herbed Corn",
+    "revisionId": 4506487,
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AHerbed_Corn",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": "Easy",
+    "sourceTime": "20 minutes",
+    "ingredientCount": 7,
+    "instructionCount": 4,
+    "primaryIngredientCoverage": [
+      "butter",
+      "salt",
+      "zh:甜玉米"
+    ],
+    "unresolvedIngredients": [
+      "2 tablespoons minced fresh chives",
+      "¼ teaspoon cayenne pepper"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
+  },
+  {
+    "title": "食譜/三杯杏鮑菇",
+    "revisionId": 93224,
+    "sourceUrl": "https://zh.wikibooks.org/wiki/%E9%A3%9F%E8%AD%9C%2F%E4%B8%89%E6%9D%AF%E6%9D%8F%E9%AE%91%E8%8F%87",
+    "licenseOrUsageBasis": "CC BY-SA 4.0",
+    "candidateReason": "Curated everyday ingredients / beginner category research",
+    "decision": "FULL",
+    "sourceDifficulty": null,
+    "sourceTime": null,
+    "ingredientCount": 5,
+    "instructionCount": 6,
+    "primaryIngredientCoverage": [
+      "zh:杏鲍菇",
+      "zh:香油",
+      "vinegar"
+    ],
+    "unresolvedIngredients": [
+      "醬油（膏）"
+    ],
+    "reason": "Explicit ingredient/procedure sections, pinned revision, beginner signals and source policy passed"
   }
 ]

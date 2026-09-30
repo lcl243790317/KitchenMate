@@ -1,0 +1,29 @@
+[
+  {
+    "sourceUrl": "https://thewoksoflife.com/pan-fried-belt-fish/",
+    "source": "The Woks of Life",
+    "decision": "DEFER",
+    "licenseOrUsageBasis": "Factual metadata and link only; no full instruction or image rights",
+    "coverageTarget": "zh:带鱼",
+    "httpStatus": 403,
+    "reason": "Error: HTTP 403; no bypass"
+  },
+  {
+    "sourceUrl": "https://thewoksoflife.com/yaki-udon/",
+    "source": "The Woks of Life",
+    "decision": "DEFER",
+    "licenseOrUsageBasis": "Factual metadata and link only; no full instruction or image rights",
+    "coverageTarget": "zh:乌冬面",
+    "httpStatus": 403,
+    "reason": "Error: HTTP 403; no bypass"
+  },
+  {
+    "sourceUrl": "https://thewoksoflife.com/lotus-root-recipe-stir-fry/",
+    "source": "The Woks of Life",
+    "decision": "DEFER",
+    "licenseOrUsageBasis": "Factual metadata and link only; no full instruction or image rights",
+    "coverageTarget": "zh:莲藕",
+    "httpStatus": 403,
+    "reason": "Error: HTTP 403; no bypass"
+  }
+]

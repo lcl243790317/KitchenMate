@@ -984,6 +984,8 @@ footer > span {
 .detail-ingredient > span:last-child {
   color: var(--muted);
   text-align: right;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 .has {
   color: #5d8050;
@@ -997,6 +999,16 @@ footer > span {
 .detail-ingredient small {
   font-size: 9px;
   color: var(--muted);
+}
+.recipe-language {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+.recipe-language button[aria-pressed="true"] {
+  border-color: var(--green);
+  font-weight: 700;
 }
 .ingredient-list .secondary {
   margin-top: 15px;

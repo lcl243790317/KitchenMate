@@ -23,6 +23,17 @@ export function validateRecipeSourcePolicy(recipe: Recipe) {
   if (recipe.image && !source.imagesAllowed)
     throw new Error(`Image reuse not authorized: ${recipe.id}`);
   if (
+    recipe.instructionAvailability === "full" &&
+    recipe.provenance.type === "OPEN_LICENSE" &&
+    source.id !== "howtocook" &&
+    (!recipe.provenance.licenseName ||
+      !recipe.provenance.licenseUrl ||
+      !recipe.provenance.attributionText ||
+      !recipe.provenance.sourceRevision ||
+      recipe.provenance.licenseName !== source.licenseName)
+  )
+    throw Error(`Open-license notice/revision missing: ${recipe.id}`);
+  if (
     source.id === "wikibooks" &&
     (recipe.provenance.licenseName !== "CC BY-SA 4.0" ||
       !recipe.provenance.licenseUrl ||

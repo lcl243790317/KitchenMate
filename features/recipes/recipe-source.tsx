@@ -1,4 +1,5 @@
 import type { Recipe } from "@/lib/model";
+import { recipeTranslation } from "@/lib/recipe-localization";
 export function RecipeSource({ recipe }: { recipe: Recipe }) {
   return (
     <section className="source-panel" aria-label="菜谱来源">
@@ -37,7 +38,13 @@ export function RecipeSource({ recipe }: { recipe: Recipe }) {
         <p>
           来源修订：
           <a
-            href={`https://en.wikibooks.org/w/index.php?oldid=${encodeURIComponent(recipe.provenance.sourceRevision)}`}
+            href={
+              ["wikibooks", "commons"].includes(recipe.sourceProvider)
+                ? `${new URL(recipe.sourceUrl!).origin}/w/index.php?oldid=${encodeURIComponent(recipe.provenance.sourceRevision)}`
+                : recipe.sourceProvider === "based-cooking"
+                  ? `https://github.com/LukeSmithxyz/based.cooking/blob/${recipe.provenance.sourceRevision}/${recipe.externalId}`
+                  : recipe.sourceUrl!
+            }
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -50,8 +57,9 @@ export function RecipeSource({ recipe }: { recipe: Recipe }) {
       )}
       {recipe.titleTranslation && (
         <p>
-          中文菜名翻译：KitchenMate，基于 Wikibooks
-          原文。教程步骤保留英文原文；译名及内容依 CC BY-SA 4.0 提供。
+          {recipeTranslation(recipe)
+            ? `原文：${recipe.sourceName}；中文翻译：KitchenMate。英文原文保留；中文翻译同样按 ${recipe.provenance.licenseName} 提供。`
+            : `中文菜名翻译：KitchenMate，基于 ${recipe.sourceName} 原文。教程步骤保留来源原文；内容许可：${recipe.provenance.licenseName}。`}
         </p>
       )}
       {recipe.sourceUrl && (

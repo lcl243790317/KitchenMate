@@ -77,6 +77,45 @@ const heads: Record<string, string> = {
   "rice wine vinegar": "zh:米醋",
   "whole-wheat spaghetti": "pasta",
   "tomato pasta sauce": "zh:番茄酱",
+  "corn off the cob": "zh:玉米粒",
+  "chopped clams": "zh:蛤蜊",
+  "salmon steaks": "salmon",
+  "salmon fillet": "salmon",
+  "salmon fillets": "salmon",
+  "plain white flour": "flour",
+  "dry red wine": "zh:红葡萄酒",
+  "warm water": "water",
+  "uncooked basmati rice": "zh:大米",
+  "tinned sweetcorn": "zh:玉米罐头",
+  "ground cinnamon": "zh:肉桂粉",
+  "cinnamon powder": "zh:肉桂粉",
+  "soft brown sugar": "zh:红糖",
+  "melted butter": "butter",
+  "broccoli pieces": "broccoli",
+  "vegetable oil": "oil",
+  "neutral oil": "oil",
+  "fish fillet": "fish",
+  "fish fillet (white fish)": "fish",
+  "raw spinach": "zh:菠菜",
+  "red onion": "onion",
+  "yellow onion": "onion",
+  "rolled oats": "zh:燕麦片",
+  "sea salt": "salt",
+  "sesame oil": "zh:香油",
+  "king oyster mushrooms": "zh:杏鲍菇",
+  "udon noodles": "zh:乌冬面",
+  "udon noodle": "zh:乌冬面",
+  "japanese raddish": "zh:白萝卜",
+  "sweet corn": "zh:甜玉米",
+  "heavy cream": "cream",
+  "general purpose flour": "flour",
+  "all-purpose flour": "flour",
+  "wheat flour": "flour",
+  "dried thyme": "zh:百里香",
+  zucchinis: "zh:西葫芦",
+  champignons: "zh:口蘑",
+  "uncooked pasta": "pasta",
+  "corn starch": "zh:玉米淀粉",
 };
 export function parseWikiIngredient(
   text: string,
@@ -86,7 +125,7 @@ export function parseWikiIngredient(
     .replace(/^About\s+/i, "")
     .replace(/\([^)]*\d[^)]*\)/g, "")
     .replace(
-      /^[\d¼½¾⅛⅓⅔⅜⅝⅞./–—\s-]+\s*(?:(?:kg|g|oz|ounces?|lb|ml|l|cup|cups|tbsp|tsp|tablespoons?|teaspoons?|cloves?|pints?|head|heads|slice|slices|grams?|kilograms?|pounds?|liters?|pinch)\b\s*(?:of\s*)?)?/i,
+      /^[\d¼½¾⅛⅓⅔⅜⅝⅞./–—\s-]+\s*(?:(?:kg|g|oz|ounces?|lb|ml|l|cup|cups|tbsp|tsp|tablespoons?|teaspoons?|cloves?|pints?|quarts?|head|heads|slice|slices|grams?|kilograms?|pounds?|liters?|pinch|pcs|cake|mugfuls|table spoon|ears|cm|T|bunches)\b\s*(?:of\s*)?)?/i,
       "",
     )
     .trim();
@@ -94,7 +133,7 @@ export function parseWikiIngredient(
     .split(/,|\s*\(/)[0]
     .replace(/\s+(?:to taste|as needed)$/i, "")
     .replace(
-      /^(?:(?:large|small|medium|standard|fresh|finely-chopped|chopped|minced|grated|ripe|medium-size|diced|shredded)\s+)+/i,
+      /^(?:(?:large|small|medium|standard|fresh|finely-chopped|chopped|minced|grated|ripe|medium-size|diced|shredded|very ripe)\s+)+/i,
       "",
     )
     .trim();
@@ -112,15 +151,15 @@ export function parseWikiIngredient(
     group: "原料",
   };
 }
-export function parseWikibooks(wikitext: string) {
+export function parseWikibooks(wikitext: string, language = "en") {
   const sections = [
     ...wikitext.matchAll(
       /^==\s*([^=\n]+?)\s*==\s*\n([^]*?)(?=^==[^=]|$(?![^]))/gm,
     ),
   ];
-  const material = sections.find((s) => /^ingredients?$/i.test(s[1]));
+  const material = sections.find((s) => /^(ingredients?|材料)$/i.test(s[1]));
   const procedure = sections.find((s) =>
-    /^(procedure|directions|method|preparation)$/i.test(s[1]),
+    /^(procedure|directions|method|preparation|做法)$/i.test(s[1]),
   );
   if (!material || !procedure)
     throw new Error("Explicit Ingredients and Procedure sections required");
@@ -130,7 +169,12 @@ export function parseWikibooks(wikitext: string) {
     if (/^===/.test(line)) optional = /optional/i.test(line);
     if (/^\s*\*\s*\S/.test(line))
       items.push(
-        parseWikiIngredient(wikiText(line.replace(/^\s*\*\s*/, "")), optional),
+        language === "zh"
+          ? parseChineseWikiIngredient(wikiText(line.replace(/^\s*\*\s*/, "")))
+          : parseWikiIngredient(
+              wikiText(line.replace(/^\s*\*\s*/, "")),
+              optional,
+            ),
       );
     else if (line.trim() && !/^\s*(?:===|<!--)/.test(line))
       throw new Error("Ingredient prose/table requires manual parsing review");
@@ -138,8 +182,14 @@ export function parseWikibooks(wikitext: string) {
   // Keep nested steps in their parent block, with original numbering markers intact.
   const descriptions = procedure[2]
     .trim()
-    .split(/\n(?=#(?!#))/)
-    .map((block) => wikiText(block.replace(/^#\s*/, "")))
+    .split(/\n(?=#(?![#*:]))/)
+    .map((block) =>
+      wikiText(
+        block
+          .replace(/^#\s*/, "")
+          .replace(/\{\{noteTag\|1=([^}]+)\}\}/g, "（来源注释：$1）"),
+      ),
+    )
     .filter(Boolean);
   if (
     !descriptions.length ||
@@ -147,13 +197,27 @@ export function parseWikibooks(wikitext: string) {
     descriptions.some((s) => /\{\{|\}\}/.test(s))
   )
     throw new Error("Procedure is not a supported complete numbered list");
+  // Reviewed explicit operation phrase in the pinned Chinese recipe, not general prose extraction.
+  if (
+    language === "zh" &&
+    procedure[2].includes("加入半杯水（讓料稍微浸著的量）")
+  )
+    items.push({
+      ingredientId: "water",
+      originalText: "加入半杯水（讓料稍微浸著的量）",
+      quantity: null,
+      unit: "",
+      optional: false,
+      group: "原料",
+      verificationMethod: "source-operation-explicit",
+    });
   const params = (key: string) =>
     wikitext
       .match(new RegExp(`\\|\\s*${key}\\s*=\\s*([^|}]+)`, "i"))?.[1]
       .trim();
   const time = params("time");
   // Only an explicit single total duration, never sum preparation/cooking or guess a range.
-  const minutes = time?.match(/^(\d+)\s*(minutes?|mins?)$/i);
+  const minutes = time?.match(/^(?:About\s+)?(\d+)\s*(minutes?|mins?)$/i);
   const hours = time?.match(/^(\d+)\s*hours?$/i);
   const difficulty = params("difficulty");
   const sourceDifficulty =
@@ -178,7 +242,12 @@ export function parseWikibooks(wikitext: string) {
           ...wikitext.matchAll(
             /\[\[Cookbook:(Oven|Microwave|Blender|Food Processor|Pressure Cooker|Thermometer)(?:\||\]\])/gi,
           ),
-        ].map((m) => m[1]),
+        ]
+          .map((m) => m[1])
+          .concat(
+            /\boven\b/i.test(procedure[2]) ? ["烤箱"] : [],
+            /\bmicrowave\b/i.test(procedure[2]) ? ["微波炉"] : [],
+          ),
       ),
     ],
     sourceNotes: sections
@@ -186,5 +255,21 @@ export function parseWikibooks(wikitext: string) {
       .map((s) => `${s[1]}\n${wikiText(s[2])}`)
       .filter((s) => s.trim())
       .join("\n\n"),
+  };
+}
+
+function parseChineseWikiIngredient(text: string): RecipeIngredient {
+  const identities: Record<string, string> = {
+    杏鮑菇數支: "zh:杏鲍菇",
+    麻油: "zh:香油",
+    "醋，烏醋白醋皆可": "vinegar",
+  };
+  return {
+    ingredientId: identities[text] ?? `unknown:${text}`,
+    originalText: text,
+    quantity: null,
+    unit: "",
+    optional: false,
+    group: "原料",
   };
 }

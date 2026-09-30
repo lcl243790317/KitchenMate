@@ -14,6 +14,8 @@ type WikiPage = {
   }[];
   retrievedAt?: string;
   httpStatus?: number;
+  lang?: string;
+  reviewedCoverageTarget?: string;
 };
 const pages: WikiPage[] = process.argv.includes("--research")
   ? JSON.parse(fs.readFileSync(".cache/phase313/wiki-reviewed.json", "utf8"))
@@ -34,6 +36,8 @@ const pages: WikiPage[] = process.argv.includes("--research")
         title: s.title,
         retrievedAt: s.retrievedAt,
         httpStatus: s.httpStatus,
+        lang: s.language ?? "en",
+        reviewedCoverageTarget: s.reviewedCoverageTarget,
         revisions: [
           {
             revid: s.revisionId,
@@ -51,6 +55,15 @@ const dir = "data/verified-recipes/wikibooks";
 fs.mkdirSync(dir + "/snapshots", { recursive: true });
 fs.mkdirSync("data/recipe-candidates", { recursive: true });
 const translations: Record<string, string> = {
+  "Herbed Corn": "香草甜玉米",
+  "Miso Soup": "味噌汤",
+  "Corn Soup": "玉米汤",
+  "Mushroom Tofu Soup": "蘑菇豆腐汤",
+  "Microwaved Basmati Rice": "微波煮米饭",
+  "Fried Bananas": "煎香蕉",
+  "Zucchini Pasta Bake": "西葫芦焗意面",
+  "Banana Cream II": "香蕉奶油甜品",
+  "Cream of Mushroom Soup": "奶油蘑菇汤",
   "Mashed Pumpkin": "南瓜泥",
   "Mushy Peas": "豌豆泥",
   "Cabbage Salad": "包菜沙拉",
@@ -110,7 +123,7 @@ const translations: Record<string, string> = {
 for (const p of pages) {
   const revision = p.revisions?.[0];
   const sourceUrl =
-    "https://en.wikibooks.org/wiki/" +
+    `https://${p.lang ?? "en"}.wikibooks.org/wiki/` +
     encodeURIComponent(p.title.replaceAll(" ", "_"));
   const c: Record<string, unknown> = {
     title: p.title,
@@ -124,7 +137,7 @@ for (const p of pages) {
   try {
     if (!revision) throw Error("Missing original source page");
     const wikitext = revision.slots.main.content;
-    const x = parseWikibooks(wikitext);
+    const x = parseWikibooks(wikitext, p.lang);
     const unknown = x.ingredients.filter((i) =>
       i.ingredientId.startsWith("unknown:"),
     );
@@ -149,19 +162,28 @@ for (const p of pages) {
       throw Error(
         "Beginner/identity gate: too many ingredients, steps or unknowns",
       );
-    if (!x.sourceDifficulty && !(x.totalTime !== null && x.totalTime <= 30))
+    if (
+      !x.sourceDifficulty &&
+      !(x.totalTime !== null && x.totalTime <= 30) &&
+      !p.reviewedCoverageTarget
+    )
       throw Error("No strong beginner difficulty or time signal");
-    const id = "wikibooks:" + p.pageid;
+    const id = "wikibooks:" + (p.lang === "zh" ? "zh:" : "") + p.pageid;
     const now = p.retrievedAt ?? new Date().toISOString();
-    const original = p.title.replace(/^Cookbook:/, "");
+    const original = p.title.replace(/^Cookbook:|^食譜\//, "");
     const r = recipeSchema.parse({
       id,
       slug: id,
-      title: translations[original] ?? original,
+      title:
+        original === "三杯杏鮑菇"
+          ? "三杯杏鲍菇"
+          : (translations[original] ?? original),
       originalTitle: original,
       ...(translations[original] ? { titleTranslation: "KitchenMate" } : {}),
       description:
-        "Wikibooks 开放授权教程。步骤保留英文原文；中文菜名由 KitchenMate 翻译。",
+        p.lang === "zh"
+          ? "Wikibooks 开放授权中文教程；步骤保留来源原文。"
+          : "Wikibooks 开放授权教程；原始步骤保留，中文翻译由 KitchenMate 提供。",
       sourceProvider: "wikibooks",
       sourceName: "Wikibooks Cookbook",
       sourceUrl,
@@ -218,7 +240,8 @@ for (const p of pages) {
         durationSeconds: null,
       })),
       sourceNotes:
-        "英文原文；原始说明、可选变化及作者记录见来源页面。\n" +
+        (p.lang === "zh" ? "中文来源原文；" : "英文来源原文；") +
+        "原始说明、可选变化及作者记录见来源页面。\n" +
         x.sourceNotes +
         "\n" +
         (wikitext.includes("{{1881}}")
@@ -243,6 +266,12 @@ for (const p of pages) {
       retrievedAt: now,
       httpStatus: 200,
       apiUrl: "https://en.wikibooks.org/w/api.php",
+      ...(p.lang === "zh"
+        ? { language: "zh", apiUrl: "https://zh.wikibooks.org/w/api.php" }
+        : {}),
+      ...(p.reviewedCoverageTarget
+        ? { reviewedCoverageTarget: p.reviewedCoverageTarget }
+        : {}),
       wikitext,
     };
     const snapshotPath = dir + "/snapshots/" + p.pageid + ".json";

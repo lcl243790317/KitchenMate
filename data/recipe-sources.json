@@ -22,7 +22,8 @@
       "wikibooks"
     ],
     "hosts": [
-      "en.wikibooks.org"
+      "en.wikibooks.org",
+      "zh.wikibooks.org"
     ],
     "sourceType": "OPEN_LICENSE",
     "allowedReuse": "licensed text",
@@ -131,5 +132,41 @@
     "licenseName": "Facts and attribution links only",
     "verificationMethod": "pinned snapshot / schema-org-jsonld",
     "notes": "No images reused. Source snapshots are pinned; no automatic instruction replacement."
+  },
+  {
+    "id": "based-cooking",
+    "name": "Based Cooking",
+    "providers": [
+      "based-cooking"
+    ],
+    "hosts": [
+      "based.cooking"
+    ],
+    "sourceType": "OPEN_LICENSE",
+    "allowedReuse": "public-domain text, preserved source instructions",
+    "fullInstructionsAllowed": true,
+    "imagesAllowed": false,
+    "attributionRequired": true,
+    "licenseName": "The Unlicense",
+    "verificationMethod": "pinned GitHub snapshot",
+    "notes": "README expressly dedicates all website content to public domain. Exact commit pinned; no images reused; contributors credited."
+  },
+  {
+    "id": "commons",
+    "name": "Wikimedia Commons",
+    "providers": [
+      "commons"
+    ],
+    "hosts": [
+      "commons.wikimedia.org"
+    ],
+    "sourceType": "OPEN_LICENSE",
+    "allowedReuse": "Explicit ingredient/direction description text only; Commons unstructured text CC BY-SA 4.0",
+    "fullInstructionsAllowed": true,
+    "imagesAllowed": false,
+    "attributionRequired": true,
+    "licenseName": "CC BY-SA 4.0",
+    "verificationMethod": "mediawiki-api",
+    "notes": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia#Requirements_of_frequently-used_licenses expressly licenses text CC BY-SA 4.0. Image license CC BY-SA 2.0 is separate; no image reused. Original writer pelican credited, exact revision retained."
   }
 ]

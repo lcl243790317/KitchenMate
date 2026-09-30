@@ -2,6 +2,7 @@ import { test, expect } from "@playwright/test";
 import { verifiedRecipes } from "../../lib/verified-recipes";
 import { beginnerSignals } from "../../lib/beginner-recipes";
 import { expectNoHorizontalOverflow } from "./assert-layout";
+import { localizedInstructions } from "../../lib/recipe-localization";
 const wiki = verifiedRecipes.find((r) => r.title === "鸡肉炒饭")!;
 test("beginner and quick browse filters retain URL and back position at 390px", async ({
   page,
@@ -44,7 +45,7 @@ test("Wikibooks Chinese and English search opens licensed source and cooking mod
   await page.getByRole("button", { name: "鸡肉炒饭", exact: true }).click();
   await expect(page.getByText("CC BY-SA 4.0", { exact: true })).toBeVisible();
   await expect(
-    page.getByText("中文菜名翻译：KitchenMate", { exact: false }),
+    page.getByText("中文翻译：KitchenMate", { exact: false }),
   ).toBeVisible();
   await expect(
     page.getByRole("link", {
@@ -55,7 +56,7 @@ test("Wikibooks Chinese and English search opens licensed source and cooking mod
   await page.getByRole("link", { name: "开始做菜" }).click();
   await expect(page).toHaveURL(/\/cook$/);
   await expect(page.locator(".cooking-description")).toHaveText(
-    wiki.instructions[0].description,
+    localizedInstructions(wiki, "zh")[0].description,
   );
 });
 test("new commercial source keeps original link and forbids cooking mode", async ({

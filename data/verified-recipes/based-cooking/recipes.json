@@ -1,0 +1,2507 @@
+[
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Based Cooking",
+      "sourceUrl": "https://based.cooking/air-fryer-zucchini/",
+      "sourceRecipeTitle": "Air Fryer Zucchini",
+      "sourceAuthor": "Ronald L",
+      "sourceExternalId": "content/air-fryer-zucchini.md",
+      "verifiedAt": "2026-09-30T21:23:38.696Z",
+      "verificationMethod": "open-license-dataset",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "README dedicates all website content to public domain; repository Unlicense. Images not reused.",
+      "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+      "licenseName": "The Unlicense",
+      "licenseUrl": "https://github.com/LukeSmithxyz/based.cooking/blob/9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2/LICENSE.md",
+      "attributionText": "Ronald L / Based Cooking. Original text preserved; Chinese title translated by KitchenMate.",
+      "lastVerifiedAt": "2026-09-30T21:23:38.696Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "This is a quick and easy zucchini recipe for the air fryer.\n\n- ⏲️ Prep time: 10 min\n- 🍳 Cook time: 8 min\n- 🍽️ Servings: 2\n\nKitchenMate 总时间：来源明确列出的准备时间 + 烹饪时间；未补算其他时间。",
+    "sourceDifficulty": "Easy",
+    "originalTitle": "Air Fryer Zucchini",
+    "titleTranslation": "KitchenMate",
+    "id": "based-cooking:air-fryer-zucchini",
+    "title": "空气炸锅西葫芦",
+    "slug": "based-cooking:air-fryer-zucchini",
+    "description": "Based Cooking 开放授权教程；原始步骤和用量保持来源内容。",
+    "image": null,
+    "sourceProvider": "based-cooking",
+    "sourceName": "Based Cooking",
+    "sourceUrl": "https://based.cooking/air-fryer-zucchini/",
+    "sourceAuthor": "Ronald L",
+    "externalId": "content/air-fryer-zucchini.md",
+    "cuisine": "未知",
+    "category": "其他",
+    "difficulty": "简单",
+    "prepTime": 10,
+    "cookTime": 8,
+    "totalTime": 18,
+    "servings": 2,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "zh:西葫芦",
+        "originalText": "2 zucchinis",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Pinch of season salt",
+        "originalText": "Pinch of season salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:橄榄油",
+        "originalText": "Olive oil",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:蒜粉",
+        "originalText": "Garlic powder (optional)",
+        "quantity": null,
+        "unit": "",
+        "optional": true,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:洋葱粉",
+        "originalText": "Onion powder (optional)",
+        "quantity": null,
+        "unit": "",
+        "optional": true,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Chop the zucchinis into medium-sized squares",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Put zucchini into a bowl and lightly add olive oil, season salt, garlic powder (optional), and onion powder (optional)",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Cook in air fryer for 8 minutes at 400 F or until crispy.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [
+      "空气炸锅"
+    ],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T21:23:38.696Z",
+    "updatedAt": "2026-09-30T21:23:38.696Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T21:23:38.696Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Based Cooking",
+      "sourceUrl": "https://based.cooking/baked-salmon/",
+      "sourceRecipeTitle": "Baked Salmon",
+      "sourceAuthor": "carl-zimmerman",
+      "sourceExternalId": "content/baked-salmon.md",
+      "verifiedAt": "2026-09-30T21:23:39.630Z",
+      "verificationMethod": "open-license-dataset",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "README dedicates all website content to public domain; repository Unlicense. Images not reused.",
+      "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+      "licenseName": "The Unlicense",
+      "licenseUrl": "https://github.com/LukeSmithxyz/based.cooking/blob/9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2/LICENSE.md",
+      "attributionText": "carl-zimmerman / Based Cooking. Original text preserved; Chinese title translated by KitchenMate.",
+      "lastVerifiedAt": "2026-09-30T21:23:39.630Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "Simple method for making a good serving of salmon. Goes well with just about anything.\n\n- ⏲️ Prep time: 5 min\n- 🍳 Cook time: 19 min\n\nKitchenMate 总时间：来源明确列出的准备时间 + 烹饪时间；未补算其他时间。",
+    "sourceDifficulty": "simple",
+    "originalTitle": "Baked Salmon",
+    "titleTranslation": "KitchenMate",
+    "id": "based-cooking:baked-salmon",
+    "title": "烤三文鱼",
+    "slug": "based-cooking:baked-salmon",
+    "description": "Based Cooking 开放授权教程；原始步骤和用量保持来源内容。",
+    "image": null,
+    "sourceProvider": "based-cooking",
+    "sourceName": "Based Cooking",
+    "sourceUrl": "https://based.cooking/baked-salmon/",
+    "sourceAuthor": "carl-zimmerman",
+    "externalId": "content/baked-salmon.md",
+    "cuisine": "未知",
+    "category": "其他",
+    "difficulty": "简单",
+    "prepTime": 5,
+    "cookTime": 19,
+    "totalTime": 24,
+    "servings": 1,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "salmon",
+        "originalText": "Salmon Steaks",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Red Pepper Flakes",
+        "originalText": "Red Pepper Flakes",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:柠檬汁",
+        "originalText": "Lemon Juice",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "Butter",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Cooking oil / spray",
+        "originalText": "Cooking oil / spray",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "salt",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "black pepper",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "oil",
+        "originalText": "cooking oil",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Season salmon with salt, black pepper, and red pepper to taste.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Spray or rub in cooking oil on aluminum foil and place on cookie sheet or in baking pan.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Squeeze lemon juice and place a teaspoon of butter on each salmon steak.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Bake at 400°F / 200°C for 19 mins.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [
+      "铝箔",
+      "烤箱"
+    ],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T21:23:39.630Z",
+    "updatedAt": "2026-09-30T21:23:39.630Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T21:23:39.630Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Based Cooking",
+      "sourceUrl": "https://based.cooking/banana-oatmeal-cookies/",
+      "sourceRecipeTitle": "Banana and oatmeal cookies",
+      "sourceAuthor": "Éric G.",
+      "sourceExternalId": "content/banana-oatmeal-cookies.md",
+      "verifiedAt": "2026-09-30T21:23:39.892Z",
+      "verificationMethod": "open-license-dataset",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "README dedicates all website content to public domain; repository Unlicense. Images not reused.",
+      "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+      "licenseName": "The Unlicense",
+      "licenseUrl": "https://github.com/LukeSmithxyz/based.cooking/blob/9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2/LICENSE.md",
+      "attributionText": "Éric G. / Based Cooking. Original text preserved; Chinese title translated by KitchenMate.",
+      "lastVerifiedAt": "2026-09-30T21:23:39.892Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "- ⏲️ Prep time: 3 min\n- 🍳 Cook time: 20 min\n- 🍽️ Serving : 3\n\n![Banana and oatmeal cookies](/pix/banana-oatmeal-cookies.webp \"Banana and oatmeal cookies\")\n\nKitchenMate 总时间：来源明确列出的准备时间 + 烹饪时间；未补算其他时间。",
+    "originalTitle": "Banana and oatmeal cookies",
+    "titleTranslation": "KitchenMate",
+    "id": "based-cooking:banana-oatmeal-cookies",
+    "title": "香蕉燕麦饼干",
+    "slug": "based-cooking:banana-oatmeal-cookies",
+    "description": "Based Cooking 开放授权教程；原始步骤和用量保持来源内容。",
+    "image": null,
+    "sourceProvider": "based-cooking",
+    "sourceName": "Based Cooking",
+    "sourceUrl": "https://based.cooking/banana-oatmeal-cookies/",
+    "sourceAuthor": "Éric G.",
+    "externalId": "content/banana-oatmeal-cookies.md",
+    "cuisine": "未知",
+    "category": "主食",
+    "difficulty": "未知",
+    "prepTime": 3,
+    "cookTime": 20,
+    "totalTime": 23,
+    "servings": 1,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "zh:香蕉",
+        "originalText": "2 ripe bananas (250 g/9 oz peeled)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:100g (3.5 oz) of oatmeal",
+        "originalText": "100g (3.5 oz) of oatmeal",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:肉桂粉",
+        "originalText": "1 table spoon of cinnamon powder (optional)",
+        "quantity": null,
+        "unit": "",
+        "optional": true,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:蜂蜜",
+        "originalText": "1 table spoon of honey (optional)",
+        "quantity": null,
+        "unit": "",
+        "optional": true,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Pre-heat the oven to 180°C (350°F)",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Peel the bananas and squash them not too finely in a bowl.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Incorporate the oatmeal.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Incorporate cinnamon powder and/or honey (optional).",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "On the oven tray, place parchment paper and form discs of the mix, each around 8 cm (3 in)",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 6,
+        "title": "Original step 6",
+        "description": "Cook with rotating heat for around 20 minutes, until outside becomes golden and slightly crispy.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 7,
+        "title": "Original step 7",
+        "description": "Eat warm or cold. Can be kept a couple of days in a sealed container.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [
+      "烤箱"
+    ],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T21:23:39.892Z",
+    "updatedAt": "2026-09-30T21:23:39.892Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T21:23:39.892Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Based Cooking",
+      "sourceUrl": "https://based.cooking/banana-pancakes/",
+      "sourceRecipeTitle": "Banana Pancakes",
+      "sourceAuthor": "ricky-linden",
+      "sourceExternalId": "content/banana-pancakes.md",
+      "verifiedAt": "2026-09-30T21:23:40.197Z",
+      "verificationMethod": "open-license-dataset",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "README dedicates all website content to public domain; repository Unlicense. Images not reused.",
+      "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+      "licenseName": "The Unlicense",
+      "licenseUrl": "https://github.com/LukeSmithxyz/based.cooking/blob/9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2/LICENSE.md",
+      "attributionText": "ricky-linden / Based Cooking. Original text preserved; Chinese title translated by KitchenMate.",
+      "lastVerifiedAt": "2026-09-30T21:23:40.197Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "- ⏲️ Prep time: 10 minutes\n- 🍳 Cook time: 10 minutes\n- 🍽️ Servings: 4 people\n\nKitchenMate 总时间：来源明确列出的准备时间 + 烹饪时间；未补算其他时间。",
+    "originalTitle": "Banana Pancakes",
+    "titleTranslation": "KitchenMate",
+    "id": "based-cooking:banana-pancakes",
+    "title": "香蕉煎饼",
+    "slug": "based-cooking:banana-pancakes",
+    "description": "Based Cooking 开放授权教程；原始步骤和用量保持来源内容。",
+    "image": null,
+    "sourceProvider": "based-cooking",
+    "sourceName": "Based Cooking",
+    "sourceUrl": "https://based.cooking/banana-pancakes/",
+    "sourceAuthor": "ricky-linden",
+    "externalId": "content/banana-pancakes.md",
+    "cuisine": "未知",
+    "category": "主食",
+    "difficulty": "未知",
+    "prepTime": 10,
+    "cookTime": 10,
+    "totalTime": 20,
+    "servings": 4,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "originalText": "1 cup flour (2.5 dl)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "sugar",
+        "originalText": "1 tablespoon sugar",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:泡打粉",
+        "originalText": "2 teaspoon baking powder",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "milk",
+        "originalText": "1 cup milk (2.5 dl)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "egg",
+        "originalText": "1 egg",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:香蕉",
+        "originalText": "2 very ripe bananas",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "a little bit of salt",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "some butter",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Combine flour, sugar, baking powder and a little bit of salt in a large mixing bowl.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Whisk milk and egg into the flour mixture until no clumps remain in the resulting batter.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Add mashed bananas and mix well.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Add some butter to a medium warm frying pan.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Make smaller or bigger pancakes, up to you. Wait until tiny air bubbles form on top (2 to 5 minutes), turn and continue frying until the bottom is browned. Repeat.\n\nEither eat the pancakes as they get ready or put a plate in a preheated oven (low degree) to keep the ready pancakes warm.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [
+      "烤箱"
+    ],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T21:23:40.197Z",
+    "updatedAt": "2026-09-30T21:23:40.197Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T21:23:40.197Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Based Cooking",
+      "sourceUrl": "https://based.cooking/beef-and-broccoli/",
+      "sourceRecipeTitle": "Beef and Broccoli",
+      "sourceAuthor": "joel-maxuel",
+      "sourceExternalId": "content/beef-and-broccoli.md",
+      "verifiedAt": "2026-09-30T21:23:40.544Z",
+      "verificationMethod": "open-license-dataset",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "README dedicates all website content to public domain; repository Unlicense. Images not reused.",
+      "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+      "licenseName": "The Unlicense",
+      "licenseUrl": "https://github.com/LukeSmithxyz/based.cooking/blob/9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2/LICENSE.md",
+      "attributionText": "joel-maxuel / Based Cooking. Original text preserved; Chinese title translated by KitchenMate.",
+      "lastVerifiedAt": "2026-09-30T21:23:40.544Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "- ⏲️ Prep time: 15 min\n- 🍳 Cook time: 20 min\n- 🍽️ Servings: 3\n\nKitchenMate 总时间：来源明确列出的准备时间 + 烹饪时间；未补算其他时间。",
+    "originalTitle": "Beef and Broccoli",
+    "titleTranslation": "KitchenMate",
+    "id": "based-cooking:beef-and-broccoli",
+    "title": "牛肉炒西兰花",
+    "slug": "based-cooking:beef-and-broccoli",
+    "description": "Based Cooking 开放授权教程；原始步骤和用量保持来源内容。",
+    "image": null,
+    "sourceProvider": "based-cooking",
+    "sourceName": "Based Cooking",
+    "sourceUrl": "https://based.cooking/beef-and-broccoli/",
+    "sourceAuthor": "joel-maxuel",
+    "externalId": "content/beef-and-broccoli.md",
+    "cuisine": "未知",
+    "category": "其他",
+    "difficulty": "未知",
+    "prepTime": 15,
+    "cookTime": 20,
+    "totalTime": 35,
+    "servings": 3,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "beef",
+        "originalText": "1/2 lb Beef, cut into strips",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "oil",
+        "originalText": "2 Tbsp Vegetable Oil",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "ginger",
+        "originalText": "1 Tbsp Ginger, minced",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "2 cloves Garlic, minced",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "carrot",
+        "originalText": "1 cup Carrots, sliced",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:荷兰豆",
+        "originalText": "Snow Peas",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:豆芽",
+        "originalText": "Bean Sprouts",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "broccoli",
+        "originalText": "1 cup Broccoli Pieces",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1/2 cup Beef Bouillon",
+        "originalText": "1/2 cup Beef Bouillon",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:玉米淀粉",
+        "originalText": "1 Tbsp Corn starch",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:普通酱油",
+        "originalText": "1 Tbsp Soy Sauce",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "salt",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "pepper",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "water",
+        "originalText": "2 Tbsp water",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "rice",
+        "originalText": "Serve over rice",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Heat oil, add beef and stir-fry until meat is browned and push to sides of pan.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Add broccoli and carrots. Cover and steam vegetables until they are only slightly crunchy.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Remove vegetables to a bowl. Add bouillon, salt and pepper to meat.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Combine corn starch, 2 Tbsp water, and soy sauce. Add to meat to thicken sauce.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Add vegetables and heat. Serve over rice.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T21:23:40.544Z",
+    "updatedAt": "2026-09-30T21:23:40.544Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T21:23:40.544Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Based Cooking",
+      "sourceUrl": "https://based.cooking/clam-chowder/",
+      "sourceRecipeTitle": "Clam Chowder",
+      "sourceAuthor": "Tim L",
+      "sourceExternalId": "content/clam-chowder.md",
+      "verifiedAt": "2026-09-30T21:23:41.173Z",
+      "verificationMethod": "open-license-dataset",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "README dedicates all website content to public domain; repository Unlicense. Images not reused.",
+      "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+      "licenseName": "The Unlicense",
+      "licenseUrl": "https://github.com/LukeSmithxyz/based.cooking/blob/9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2/LICENSE.md",
+      "attributionText": "Tim L / Based Cooking. Original text preserved; Chinese title translated by KitchenMate.",
+      "lastVerifiedAt": "2026-09-30T21:23:41.173Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "Basic recipe on creating the clam chowder-base. Ingredient requirements are based on approximate minimums.\n\n- ⏲️ Prep time: 10 min\n- 🍳 Cook time: 60 min\n- 🍽️ Servings: 4-6, 3.75 QT pot.\n\nKitchenMate 总时间：来源明确列出的准备时间 + 烹饪时间；未补算其他时间。",
+    "originalTitle": "Clam Chowder",
+    "titleTranslation": "KitchenMate",
+    "id": "based-cooking:clam-chowder",
+    "title": "蛤蜊浓汤",
+    "slug": "based-cooking:clam-chowder",
+    "description": "Based Cooking 开放授权教程；原始步骤和用量保持来源内容。",
+    "image": null,
+    "sourceProvider": "based-cooking",
+    "sourceName": "Based Cooking",
+    "sourceUrl": "https://based.cooking/clam-chowder/",
+    "sourceAuthor": "Tim L",
+    "externalId": "content/clam-chowder.md",
+    "cuisine": "未知",
+    "category": "汤",
+    "difficulty": "未知",
+    "prepTime": 10,
+    "cookTime": 60,
+    "totalTime": 70,
+    "servings": 1,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "bacon",
+        "originalText": "Bacon, at least enough to create at least 2 tablespoons of drippings for the base",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "Butter, 2 tablespoons",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "onion",
+        "originalText": "1 Onion, diced",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "3 Cloves of Garlic, minced",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "flour",
+        "originalText": "1/3 cup of flour",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:3 cups half and half",
+        "originalText": "3 cups half and half",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:鸡汤",
+        "originalText": "1 cup of chicken broth, other stocks likely are no issue.",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 cup of clam juice or dashi stock.",
+        "originalText": "1 cup of clam juice or dashi stock.",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:蛤蜊",
+        "originalText": "Chopped clams",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "Salt",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "potato",
+        "originalText": "Potatoes, diced",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Cook bacon in stew or soup pot, remove bacon to chop up and add back in later.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Add butter and cook onions and garlic: Season as desired.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Add and cook flour.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Stir in broth, then stir in half and half.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Add dashi or clam juice, bring to gentle boil and simmer for 20 minutes.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 6,
+        "title": "Original step 6",
+        "description": "Add potatoes and simmer till cooked, usually around 25 minutes.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 7,
+        "title": "Original step 7",
+        "description": "Add clams, cook for about 5 minutes.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 8,
+        "title": "Original step 8",
+        "description": "Garnish and ready to serve.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T21:23:41.173Z",
+    "updatedAt": "2026-09-30T21:23:41.173Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T21:23:41.173Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Based Cooking",
+      "sourceUrl": "https://based.cooking/finnish-salmon-soup/",
+      "sourceRecipeTitle": "Finnish Salmon Soup",
+      "sourceAuthor": "tara-brennan",
+      "sourceExternalId": "content/finnish-salmon-soup.md",
+      "verifiedAt": "2026-09-30T21:23:41.794Z",
+      "verificationMethod": "open-license-dataset",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "README dedicates all website content to public domain; repository Unlicense. Images not reused.",
+      "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+      "licenseName": "The Unlicense",
+      "licenseUrl": "https://github.com/LukeSmithxyz/based.cooking/blob/9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2/LICENSE.md",
+      "attributionText": "tara-brennan / Based Cooking. Original text preserved; Chinese title translated by KitchenMate.",
+      "lastVerifiedAt": "2026-09-30T21:23:41.794Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "This soup is also known as Lohikeitto.\n\n- ⏲️  Prep time: 20 min\n- 🍳 Cook time: 30 min\n- 🍽️  Servings: 6-8\n\nKitchenMate 总时间：来源明确列出的准备时间 + 烹饪时间；未补算其他时间。",
+    "sourceDifficulty": "Easy",
+    "originalTitle": "Finnish Salmon Soup",
+    "titleTranslation": "KitchenMate",
+    "id": "based-cooking:finnish-salmon-soup",
+    "title": "芬兰三文鱼汤",
+    "slug": "based-cooking:finnish-salmon-soup",
+    "description": "Based Cooking 开放授权教程；原始步骤和用量保持来源内容。",
+    "image": null,
+    "sourceProvider": "based-cooking",
+    "sourceName": "Based Cooking",
+    "sourceUrl": "https://based.cooking/finnish-salmon-soup/",
+    "sourceAuthor": "tara-brennan",
+    "externalId": "content/finnish-salmon-soup.md",
+    "cuisine": "未知",
+    "category": "汤",
+    "difficulty": "简单",
+    "prepTime": 20,
+    "cookTime": 30,
+    "totalTime": 50,
+    "servings": 1,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "salmon",
+        "originalText": "2 pcs salmon fillet",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:4 cups water or stock",
+        "originalText": "4 cups water or stock",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 leek",
+        "originalText": "1 leek",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "1/4 cup butter",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "potato",
+        "originalText": "5-7 potatoes",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "carrot",
+        "originalText": "1-2 carrots",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "cream",
+        "originalText": "1 cup heavy cream",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "salt and pepper to taste",
+        "sourceGroupText": "salt and pepper to taste",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "salt and pepper to taste",
+        "sourceGroupText": "salt and pepper to taste",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:dill to garnish",
+        "originalText": "dill to garnish",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Wash, clean, and dice all vegetables.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Remove scales from salmon fillet or remove skin entirely, up to you. Dice.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "In a pot, melt butter. Add diced leeks and cook on medium-high about 5 minutes until the leeks wilt a bit.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Add water (or stock) and other vegetables. Bring to a boil and cook on medium heat about 10-15 minutes until the potatoes are ready.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Add diced salmon fillet and heavy cream. Cook for additional 5-10 minutes to cook the salmon.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 6,
+        "title": "Original step 6",
+        "description": "Add salt and pepper to taste at the end. Serve with dill as garnish.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T21:23:41.794Z",
+    "updatedAt": "2026-09-30T21:23:41.794Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T21:23:41.794Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Based Cooking",
+      "sourceUrl": "https://based.cooking/fish-curry/",
+      "sourceRecipeTitle": "Fish Curry",
+      "sourceAuthor": "thijs-wester",
+      "sourceExternalId": "content/fish-curry.md",
+      "verifiedAt": "2026-09-30T21:23:42.088Z",
+      "verificationMethod": "open-license-dataset",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "README dedicates all website content to public domain; repository Unlicense. Images not reused.",
+      "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+      "licenseName": "The Unlicense",
+      "licenseUrl": "https://github.com/LukeSmithxyz/based.cooking/blob/9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2/LICENSE.md",
+      "attributionText": "thijs-wester / Based Cooking. Original text preserved; Chinese title translated by KitchenMate.",
+      "lastVerifiedAt": "2026-09-30T21:23:42.088Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "Best served with white rice\n\n- 🍳 Cook time: 30 min\n- 🍽️ Servings:5\n\n来源未明确给出可计算的总时间。",
+    "originalTitle": "Fish Curry",
+    "titleTranslation": "KitchenMate",
+    "id": "based-cooking:fish-curry",
+    "title": "咖喱鱼",
+    "slug": "based-cooking:fish-curry",
+    "description": "Based Cooking 开放授权教程；原始步骤和用量保持来源内容。",
+    "image": null,
+    "sourceProvider": "based-cooking",
+    "sourceName": "Based Cooking",
+    "sourceUrl": "https://based.cooking/fish-curry/",
+    "sourceAuthor": "thijs-wester",
+    "externalId": "content/fish-curry.md",
+    "cuisine": "未知",
+    "category": "其他",
+    "difficulty": "未知",
+    "prepTime": null,
+    "cookTime": 30,
+    "totalTime": null,
+    "servings": 5,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "oil",
+        "originalText": "3T neutral oil",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "onion",
+        "originalText": "1 onion",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "onion",
+        "originalText": "1 red onion",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "2 cloves of garlic",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "ginger",
+        "originalText": "4cm ginger",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:红椒",
+        "originalText": "1 red pepper",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:咖喱粉",
+        "originalText": "1t curry powder",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:四季豆",
+        "originalText": "250g green beans",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "tomato",
+        "originalText": "4 tomatoes",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:200ml fish broth",
+        "originalText": "200ml fish broth",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:椰奶",
+        "originalText": "200ml coconut milk",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "fish",
+        "originalText": "400g fish fillet (white fish)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Boil green beans for 10 minutes",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Cut onions, tomato, garlic and fish.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Heat oil on a wok and sauté the onion and garlic",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Add beans, tomato, broth and spices and boil for 6 minutes",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Add coconut milk, fish and pepper (whole) and boil for an additional 6 minutes.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T21:23:42.088Z",
+    "updatedAt": "2026-09-30T21:23:42.088Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T21:23:42.088Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Based Cooking",
+      "sourceUrl": "https://based.cooking/ginger-garlic-broccoli/",
+      "sourceRecipeTitle": "Broccoli with Ginger and Garlic Sauce",
+      "sourceAuthor": "mjt91",
+      "sourceExternalId": "content/ginger-garlic-broccoli.md",
+      "verifiedAt": "2026-09-30T21:23:42.701Z",
+      "verificationMethod": "open-license-dataset",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "README dedicates all website content to public domain; repository Unlicense. Images not reused.",
+      "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+      "licenseName": "The Unlicense",
+      "licenseUrl": "https://github.com/LukeSmithxyz/based.cooking/blob/9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2/LICENSE.md",
+      "attributionText": "mjt91 / Based Cooking. Original text preserved; Chinese title translated by KitchenMate.",
+      "lastVerifiedAt": "2026-09-30T21:23:42.701Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "Asian inspired broccoli dish with tasty sauce. Sauce can be used for all kinds of Asian inspired sauted vegetables.\n\n- ⏲️ Prep time: 5 min\n- 🍳 Cook time: 10 min\n- 🍽️ Servings: 2\n\nKitchenMate 总时间：来源明确列出的准备时间 + 烹饪时间；未补算其他时间。",
+    "originalTitle": "Broccoli with Ginger and Garlic Sauce",
+    "titleTranslation": "KitchenMate",
+    "id": "based-cooking:ginger-garlic-broccoli",
+    "title": "姜蒜汁西兰花",
+    "slug": "based-cooking:ginger-garlic-broccoli",
+    "description": "Based Cooking 开放授权教程；原始步骤和用量保持来源内容。",
+    "image": null,
+    "sourceProvider": "based-cooking",
+    "sourceName": "Based Cooking",
+    "sourceUrl": "https://based.cooking/ginger-garlic-broccoli/",
+    "sourceAuthor": "mjt91",
+    "externalId": "content/ginger-garlic-broccoli.md",
+    "cuisine": "未知",
+    "category": "其他",
+    "difficulty": "未知",
+    "prepTime": 5,
+    "cookTime": 10,
+    "totalTime": 15,
+    "servings": 2,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "broccoli",
+        "originalText": "1-2 Broccoli (fresh best, frozen works too)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "Minced garlic (1 tablespoon)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "ginger",
+        "originalText": "Minced ginger (1 tablespoon)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:Sherry or regular white wine (you cook with what you drink with!) (1 tablespoon)",
+        "originalText": "Sherry or regular white wine (you cook with what you drink with!) (1 tablespoon)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:普通酱油",
+        "originalText": "Soy sauce (1-2 tablespoon)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "water",
+        "originalText": "with water",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "oil",
+        "originalText": "One teaspoon of oil",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:红糖",
+        "originalText": "brown sugar",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:柠檬汁",
+        "originalText": "lemon juice",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:玉米淀粉",
+        "originalText": "corn starch",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Cut broccoli into little flourettes (hold the broccoli upside down and cut around the stem with a pairing knife)",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Fill your pan (or wok) around half inch (1.57cm) with water and bring to a rapid boil.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Put broccoli in and steam with lid on for approx. 3 minutes.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Drain broccoli and wipe pan dry.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "One teaspoon of oil and saute garlic and ginger (use sesame seed oil for Asian touch, but neutral or olive oil works well too).",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 6,
+        "title": "Original step 6",
+        "description": "Deglaze with sherry, put half a cup (approx 120 ml) of warm water or chicken stock. Reduce on medium-high heat.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 7,
+        "title": "Original step 7",
+        "description": "Stir in soy sauce, brown sugar and lemon juice to your taste.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 8,
+        "title": "Original step 8",
+        "description": "Thicken sauce with corn starch.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 9,
+        "title": "Original step 9",
+        "description": "Put dry cooked broccoli back in and saute for very short time (you want it nice and crunchy).",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T21:23:42.701Z",
+    "updatedAt": "2026-09-30T21:23:42.701Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T21:23:42.701Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Based Cooking",
+      "sourceUrl": "https://based.cooking/mushroom-sauce/",
+      "sourceRecipeTitle": "Mushroom sauce",
+      "sourceAuthor": "i4k1",
+      "sourceExternalId": "content/mushroom-sauce.md",
+      "verifiedAt": "2026-09-30T21:23:44.563Z",
+      "verificationMethod": "open-license-dataset",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "README dedicates all website content to public domain; repository Unlicense. Images not reused.",
+      "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+      "licenseName": "The Unlicense",
+      "licenseUrl": "https://github.com/LukeSmithxyz/based.cooking/blob/9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2/LICENSE.md",
+      "attributionText": "i4k1 / Based Cooking. Original text preserved; Chinese title translated by KitchenMate.",
+      "lastVerifiedAt": "2026-09-30T21:23:44.563Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "This is a simple mushroom sauce recipe. Goes great with [pasta](/pasta/).\n\n- ⏲️ Prep time: 5 min\n- 🍳 Cook time: 30 min\n- 🍽️ Servings: 3\n\nKitchenMate 总时间：来源明确列出的准备时间 + 烹饪时间；未补算其他时间。",
+    "originalTitle": "Mushroom sauce",
+    "titleTranslation": "KitchenMate",
+    "id": "based-cooking:mushroom-sauce",
+    "title": "蘑菇酱",
+    "slug": "based-cooking:mushroom-sauce",
+    "description": "Based Cooking 开放授权教程；原始步骤和用量保持来源内容。",
+    "image": null,
+    "sourceProvider": "based-cooking",
+    "sourceName": "Based Cooking",
+    "sourceUrl": "https://based.cooking/mushroom-sauce/",
+    "sourceAuthor": "i4k1",
+    "externalId": "content/mushroom-sauce.md",
+    "cuisine": "未知",
+    "category": "其他",
+    "difficulty": "未知",
+    "prepTime": 5,
+    "cookTime": 30,
+    "totalTime": 35,
+    "servings": 3,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "zh:口蘑",
+        "originalText": "Champignons",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "onion",
+        "originalText": "Onion",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:A glass of cream or milk",
+        "originalText": "A glass of cream or milk",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "Butter",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "flour",
+        "originalText": "Wheat flour",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "salt",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "pepper",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Place the butter in a frying pan and place over medium heat.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Add all the chopped onions, mix well and leave for 10 minutes until the onions turn a little translucent golden.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Add finely chopped champignons, mix well and add salt. Close the lid for 5 minutes.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Add a tablespoon of flour, stir.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "After 3 minutes, add a glass of cream (or milk), mix well and close the lid for 10 minutes.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 6,
+        "title": "Original step 6",
+        "description": "Add salt, pepper and mix.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T21:23:44.563Z",
+    "updatedAt": "2026-09-30T21:23:44.563Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T21:23:44.563Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Based Cooking",
+      "sourceUrl": "https://based.cooking/mushroom-stragonov/",
+      "sourceRecipeTitle": "Mushroom Stroganov",
+      "sourceAuthor": "aayla-semyonova",
+      "sourceExternalId": "content/mushroom-stragonov.md",
+      "verifiedAt": "2026-09-30T21:23:44.838Z",
+      "verificationMethod": "open-license-dataset",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "README dedicates all website content to public domain; repository Unlicense. Images not reused.",
+      "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+      "licenseName": "The Unlicense",
+      "licenseUrl": "https://github.com/LukeSmithxyz/based.cooking/blob/9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2/LICENSE.md",
+      "attributionText": "aayla-semyonova / Based Cooking. Original text preserved; Chinese title translated by KitchenMate.",
+      "lastVerifiedAt": "2026-09-30T21:23:44.838Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "Prep time: 10 Minutes\nCook time: 20 Minutes\nServings: 2\n\nKitchenMate 总时间：来源明确列出的准备时间 + 烹饪时间；未补算其他时间。",
+    "originalTitle": "Mushroom Stroganov",
+    "titleTranslation": "KitchenMate",
+    "id": "based-cooking:mushroom-stragonov",
+    "title": "奶油蘑菇意面",
+    "slug": "based-cooking:mushroom-stragonov",
+    "description": "Based Cooking 开放授权教程；原始步骤和用量保持来源内容。",
+    "image": null,
+    "sourceProvider": "based-cooking",
+    "sourceName": "Based Cooking",
+    "sourceUrl": "https://based.cooking/mushroom-stragonov/",
+    "sourceAuthor": "aayla-semyonova",
+    "externalId": "content/mushroom-stragonov.md",
+    "cuisine": "未知",
+    "category": "其他",
+    "difficulty": "未知",
+    "prepTime": 10,
+    "cookTime": 20,
+    "totalTime": 30,
+    "servings": 2,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "pasta",
+        "originalText": "8 oz uncooked pasta (spaghetti or any other long noodle will work. Stroganov can also be served over rice.)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "mushroom",
+        "originalText": "12 oz mushrooms (I reccommend shitake, but white, portabello, or maitake will also work.)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "2 cloves of garlic, minced",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "onion",
+        "originalText": "1 small yellow onion, minced",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "2 Tbsp butter",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "flour",
+        "originalText": "1 Tbsp general purpose flour",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:蔬菜高汤",
+        "originalText": "1 Cup vegetable broth",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:第戎芥末",
+        "originalText": "1 Tsp dijon mustard",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 Tsp Smoked paprika",
+        "originalText": "1 Tsp Smoked paprika",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:4 Tbsp creme fraiche (can be made by mixing equal parts heavy and sour cream)",
+        "originalText": "4 Tbsp creme fraiche (can be made by mixing equal parts heavy and sour cream)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:2 Tbsp parsely",
+        "originalText": "2 Tbsp parsely",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "water",
+        "originalText": "salted water",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "salt",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "black-pepper",
+        "originalText": "pepper",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Bring a large pot of salted water to a boil and cook pasta al dente",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "In a cup, combine flour, mustard, smoked paprika, salt and pepper. Add broth and whisk until no lumps remain.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "While pasta is cooking, melt butter in a medium skillet and over medium heat.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "When the butter is melted, add onions and cook until softened.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Add mushrooms and cook until all water evaporates and mushrooms are slightly browned, about 7 minutes.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 6,
+        "title": "Original step 6",
+        "description": "Add garlic and cook for another 30 seconds.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 7,
+        "title": "Original step 7",
+        "description": "Pour the flour and broth mixture into the mushrooms and cook until thickens, about 2 minutes.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 8,
+        "title": "Original step 8",
+        "description": "Stir in Creme Fraiche.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 9,
+        "title": "Original step 9",
+        "description": "Add the strained pasta to the mushroom sauce and stir to coat the pasta completely.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 10,
+        "title": "Original step 10",
+        "description": "Serve immediately.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T21:23:44.838Z",
+    "updatedAt": "2026-09-30T21:23:44.838Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T21:23:44.838Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Based Cooking",
+      "sourceUrl": "https://based.cooking/spiced-apple-pancakes/",
+      "sourceRecipeTitle": "Spiced Apple Pancakes",
+      "sourceAuthor": "Elsie Bee",
+      "sourceExternalId": "content/spiced-apple-pancakes.md",
+      "verifiedAt": "2026-09-30T21:23:45.942Z",
+      "verificationMethod": "open-license-dataset",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "README dedicates all website content to public domain; repository Unlicense. Images not reused.",
+      "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+      "licenseName": "The Unlicense",
+      "licenseUrl": "https://github.com/LukeSmithxyz/based.cooking/blob/9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2/LICENSE.md",
+      "attributionText": "Elsie Bee / Based Cooking. Original text preserved; Chinese title translated by KitchenMate.",
+      "lastVerifiedAt": "2026-09-30T21:23:45.942Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "- ⏲️ Prep time: 15 min\n- 🍳 Cook time: 10 min\n- 🍽️ Servings: 8 pancakes\n\nKitchenMate 总时间：来源明确列出的准备时间 + 烹饪时间；未补算其他时间。",
+    "originalTitle": "Spiced Apple Pancakes",
+    "titleTranslation": "KitchenMate",
+    "id": "based-cooking:spiced-apple-pancakes",
+    "title": "香料苹果煎饼",
+    "slug": "based-cooking:spiced-apple-pancakes",
+    "description": "Based Cooking 开放授权教程；原始步骤和用量保持来源内容。",
+    "image": null,
+    "sourceProvider": "based-cooking",
+    "sourceName": "Based Cooking",
+    "sourceUrl": "https://based.cooking/spiced-apple-pancakes/",
+    "sourceAuthor": "Elsie Bee",
+    "externalId": "content/spiced-apple-pancakes.md",
+    "cuisine": "未知",
+    "category": "主食",
+    "difficulty": "未知",
+    "prepTime": 15,
+    "cookTime": 10,
+    "totalTime": 25,
+    "servings": 1,
+    "servingsEstimated": true,
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "originalText": "1 cup flour",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:苹果",
+        "originalText": "1 large apple, peeled",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "sugar",
+        "originalText": "1 tbsp sugar",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1 tbsp cinnamon (or more to taste)",
+        "originalText": "1 tbsp cinnamon (or more to taste)",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:泡打粉",
+        "originalText": "1/2 tsp baking powder",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:香草精",
+        "originalText": "1 tsp vanilla extract",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "milk",
+        "originalText": "2/3 cup milk",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "egg",
+        "originalText": "1 egg",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "salt",
+        "originalText": "1 pinch of salt",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "butter",
+        "originalText": "1 tbsp butter",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "In a medium bowl, combine flour, sugar, cinnamon, baking powder, and 1 pinch of salt.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Separate the egg yolk and egg white. Add the egg yolk to the dry ingredients.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Whisk the egg white until foamy.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Slice the peeled apple into thin strips. Alternatively, grate the apple.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Combine dry ingredients, apple, vanilla extract, egg white, and milk into a homogenous batter.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 6,
+        "title": "Original step 6",
+        "description": "To a large pan, add 1 tbsp butter. Add the batter (about 3 tbsp per pancake) and cook for 2 min per side on medium-high heat.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T21:23:45.942Z",
+    "updatedAt": "2026-09-30T21:23:45.942Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T21:23:45.942Z"
+  },
+  {
+    "provenance": {
+      "type": "OPEN_LICENSE",
+      "sourceName": "Based Cooking",
+      "sourceUrl": "https://based.cooking/tofu-and-cashew-chow-mein/",
+      "sourceRecipeTitle": "Tofu and Cashew Chow Mein",
+      "sourceAuthor": "joel-maxuel",
+      "sourceExternalId": "content/tofu-and-cashew-chow-mein.md",
+      "verifiedAt": "2026-09-30T21:23:46.490Z",
+      "verificationMethod": "open-license-dataset",
+      "instructionSource": "open-license-source",
+      "imageSource": null,
+      "licenseOrUsageBasis": "README dedicates all website content to public domain; repository Unlicense. Images not reused.",
+      "sourceRevision": "9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2",
+      "licenseName": "The Unlicense",
+      "licenseUrl": "https://github.com/LukeSmithxyz/based.cooking/blob/9d4a31a040eedd61e4fb608cb0c114ff9a7c4dd2/LICENSE.md",
+      "attributionText": "joel-maxuel / Based Cooking. Original text preserved; Chinese title translated by KitchenMate.",
+      "lastVerifiedAt": "2026-09-30T21:23:46.490Z",
+      "httpStatus": 200
+    },
+    "verificationStatus": "verified",
+    "instructionAvailability": "full",
+    "sourceNotes": "Precooked thick wheat noodles are typically found in the refrigerated section of the supermarket. Preparing soba noodles is a worthy substitute.\n\n- ⏲️ Prep time: 15 min\n- 🍳 Cook time: 10 min\n- 🍽️ Servings: 3\n\nKitchenMate 总时间：来源明确列出的准备时间 + 烹饪时间；未补算其他时间。",
+    "originalTitle": "Tofu and Cashew Chow Mein",
+    "titleTranslation": "KitchenMate",
+    "id": "based-cooking:tofu-and-cashew-chow-mein",
+    "title": "豆腐腰果炒面",
+    "slug": "based-cooking:tofu-and-cashew-chow-mein",
+    "description": "Based Cooking 开放授权教程；原始步骤和用量保持来源内容。",
+    "image": null,
+    "sourceProvider": "based-cooking",
+    "sourceName": "Based Cooking",
+    "sourceUrl": "https://based.cooking/tofu-and-cashew-chow-mein/",
+    "sourceAuthor": "joel-maxuel",
+    "externalId": "content/tofu-and-cashew-chow-mein.md",
+    "cuisine": "未知",
+    "category": "其他",
+    "difficulty": "未知",
+    "prepTime": 15,
+    "cookTime": 10,
+    "totalTime": 25,
+    "servings": 3,
+    "servingsEstimated": false,
+    "ingredients": [
+      {
+        "ingredientId": "unknown:10 oz Precooked Thick Wheat Noodles",
+        "originalText": "10 oz Precooked Thick Wheat Noodles",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:普通酱油",
+        "originalText": "3 Tbsp Soy Sauce",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "oyster-sauce",
+        "originalText": "2 Tbsp Oyster Sauce",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:香油",
+        "originalText": "2 tsp Sesame Oil",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:2 Tbsp Peanut Oil or other suitable frying oil",
+        "originalText": "2 Tbsp Peanut Oil or other suitable frying oil",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "zh:老豆腐",
+        "originalText": "6 oz Firm Tofu, cut into cubes",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "carrot",
+        "originalText": "1 Carrot, julienned",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "broccoli",
+        "originalText": "2 cups Small Broccoli Florets",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "garlic",
+        "originalText": "2 cloves Garlic, minced",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "ginger",
+        "originalText": "2 tsp Ginger, finely grated",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "unknown:1/2 cup Roasted Cashews",
+        "originalText": "1/2 cup Roasted Cashews",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      },
+      {
+        "ingredientId": "water",
+        "originalText": "2 Tbsp water",
+        "verificationMethod": "source-operation-explicit",
+        "quantity": null,
+        "unit": "",
+        "optional": false,
+        "group": "原料"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "title": "Original step 1",
+        "description": "Loosen the precooked noodles by soaking in a bowl of hot water for 2-3 minutes, then drain and set aside.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 2,
+        "title": "Original step 2",
+        "description": "Mix together the soy sauce, oyster sauce, sesame oil and 2 Tbsp water in a bowl.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 3,
+        "title": "Original step 3",
+        "description": "Heat a wok or large frying pan over a high heat, add the oil and stir-fry the carrot and broccoli for 2 minutes.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 4,
+        "title": "Original step 4",
+        "description": "Add the tofu and stir-fry for 4 minutes.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 5,
+        "title": "Original step 5",
+        "description": "Add the garlic and ginger and stir-fry for a minute.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      },
+      {
+        "stepNumber": 6,
+        "title": "Original step 6",
+        "description": "Stir through the noodles and then add the sauce mixture and cashews and mix until thoroughly combined and heated through.",
+        "durationSeconds": null,
+        "image": null,
+        "tips": "",
+        "temperature": null
+      }
+    ],
+    "equipment": [],
+    "tags": [],
+    "allergens": [],
+    "nutrition": null,
+    "rating": null,
+    "createdAt": "2026-09-30T21:23:46.490Z",
+    "updatedAt": "2026-09-30T21:23:46.490Z",
+    "sourceUpdatedAt": null,
+    "lastFetchedAt": "2026-09-30T21:23:46.490Z"
+  }
+]

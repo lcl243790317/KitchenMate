@@ -5,6 +5,8 @@ import manifest from "../data/verified-recipes/howtocook/manifest.json";
 import { safeFetchHtml } from "../lib/safe-fetch";
 import { parseRecipeHtml } from "../lib/recipe-parser";
 import wikiManifest from "../data/verified-recipes/wikibooks/manifest.json";
+import basedManifest from "../data/verified-recipes/based-cooking/manifest.json";
+import commonsManifest from "../data/verified-recipes/commons/manifest.json";
 async function main() {
   if (process.env.LIVE_RECIPE_VERIFICATION !== "true")
     throw new Error("Opt in with LIVE_RECIPE_VERIFICATION=true");
@@ -23,31 +25,54 @@ async function main() {
     status: string;
     detail: string;
   }[] = [];
-  // One official API request for all Wikibooks sources. No per-page burst and no live CI dependency.
+  // Official API batches by language; no per-page burst and no live CI dependency.
   const wikiRecipes = verifiedRecipes.filter(
     (r) => r.sourceProvider === "wikibooks",
   );
-  const wikiUrl = new URL("https://en.wikibooks.org/w/api.php");
-  wikiUrl.search = new URLSearchParams({
-    action: "query",
-    prop: "revisions",
-    pageids: wikiRecipes.map((r) => r.externalId).join("|"),
-    rvprop: "ids|content",
-    rvslots: "main",
-    format: "json",
-    formatversion: "2",
-    maxlag: "5",
-  }).toString();
-  const wikiResponse = await fetch(wikiUrl, {
-    signal: AbortSignal.timeout(30000),
-    headers: {
-      "User-Agent":
-        "KitchenMate source verification (github.com/lcl243790317/KitchenMate)",
-    },
-  });
-  const wikiData = wikiResponse.ok
-    ? await wikiResponse.json()
-    : { query: { pages: [] } };
+  const wikiLatest = new Map<
+    string,
+    { status: number; latest?: { revid: number } }
+  >();
+  const wikiGroups = [
+    ...new Set(wikiRecipes.map((r) => new URL(r.sourceUrl!).origin)),
+  ];
+  for (const origin of wikiGroups) {
+    const group = wikiRecipes.filter(
+      (r) => new URL(r.sourceUrl!).origin === origin,
+    );
+    for (let offset = 0; offset < group.length; offset += 50) {
+      const batch = group.slice(offset, offset + 50);
+      const wikiUrl = new URL(origin + "/w/api.php");
+      wikiUrl.search = new URLSearchParams({
+        action: "query",
+        prop: "revisions",
+        pageids: batch.map((r) => r.externalId).join("|"),
+        rvprop: "ids|content",
+        rvslots: "main",
+        format: "json",
+        formatversion: "2",
+        maxlag: "5",
+      }).toString();
+      const wikiResponse = await fetch(wikiUrl, {
+        signal: AbortSignal.timeout(30000),
+        headers: {
+          "User-Agent":
+            "KitchenMate source verification (github.com/lcl243790317/KitchenMate)",
+        },
+      });
+      const wikiData = wikiResponse.ok
+        ? await wikiResponse.json()
+        : { query: { pages: [] } };
+      for (const recipe of batch)
+        wikiLatest.set(recipe.id, {
+          status: wikiResponse.status,
+          latest: wikiData.query?.pages.find(
+            (p: { pageid: number }) => String(p.pageid) === recipe.externalId,
+          )?.revisions?.[0],
+        });
+      if (wikiResponse.status === 429) break;
+    }
+  }
   const oldPath = "docs/LIVE_RECIPE_VERIFICATION.json";
   const previous: { sourceUrl: string; consecutiveFailures?: number }[] =
     fs.existsSync(oldPath) ? JSON.parse(fs.readFileSync(oldPath, "utf8")) : [];
@@ -73,10 +98,9 @@ async function main() {
         const local = JSON.parse(
           fs.readFileSync(snapshot.snapshotPath, "utf8"),
         );
-        const latest = wikiData.query?.pages.find(
-          (p: { pageid: number }) => String(p.pageid) === recipe.externalId,
-        )?.revisions?.[0];
-        data.httpStatus = wikiResponse.status;
+        const result = wikiLatest.get(recipe.id);
+        const latest = result?.latest;
+        data.httpStatus = result?.status ?? 0;
         if (!latest)
           throw new Error(
             "Official MediaWiki API unavailable; no snapshot changed",
@@ -89,6 +113,48 @@ async function main() {
           detail: changed
             ? `Pinned ${local.revisionId}; upstream ${latest.revid}; manual content/license review required`
             : "Exact revision unchanged",
+        });
+        data.ingredientCount = recipe.ingredients.length;
+        data.instructionCount = recipe.instructions.length;
+      } else if (recipe.sourceProvider === "based-cooking") {
+        const entry = basedManifest.find((e) => e.id === recipe.id)!;
+        const response = await fetch(
+          `https://raw.githubusercontent.com/LukeSmithxyz/based.cooking/${entry.sourceRevision}/${entry.path}`,
+          { signal: AbortSignal.timeout(15000) },
+        );
+        data.httpStatus = response.status;
+        if (
+          !response.ok ||
+          createHash("sha256")
+            .update(await response.text())
+            .digest("hex") !== entry.sha256
+        )
+          throw Error(
+            "Based Cooking pinned source changed/unavailable; review required",
+          );
+        data.ingredientCount = recipe.ingredients.length;
+        data.instructionCount = recipe.instructions.length;
+      } else if (recipe.sourceProvider === "commons") {
+        const entry = commonsManifest.find((e) => e.id === recipe.id)!;
+        const response = await fetch(
+          `https://commons.wikimedia.org/w/api.php?action=query&prop=revisions&pageids=${recipe.externalId}&rvprop=ids&format=json&formatversion=2`,
+          { signal: AbortSignal.timeout(15000) },
+        );
+        data.httpStatus = response.status;
+        if (!response.ok)
+          throw Error("Commons API unavailable; no source changed");
+        const latest = (await response.json()).query?.pages?.[0]
+          ?.revisions?.[0];
+        if (!latest)
+          throw Error("Commons revision unavailable; no source changed");
+        sourceChanges.push({
+          id: recipe.id,
+          source: recipe.sourceName,
+          status:
+            latest?.revid === entry.revisionId
+              ? "unchanged"
+              : "updated upstream",
+          detail: `Pinned ${entry.revisionId}; upstream ${latest?.revid}; never automatically replace instructions/license`,
         });
         data.ingredientCount = recipe.ingredients.length;
         data.instructionCount = recipe.instructions.length;
@@ -137,7 +203,7 @@ async function main() {
       data.error = String(error);
     }
     records.push(data);
-    if (recipe.sourceProvider !== "wikibooks")
+    if (!["wikibooks", "commons"].includes(recipe.sourceProvider))
       sourceChanges.push({
         id: recipe.id,
         source: recipe.sourceName,
